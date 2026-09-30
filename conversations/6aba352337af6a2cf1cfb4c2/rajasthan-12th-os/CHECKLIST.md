@@ -114,3 +114,6 @@
 - [x] LDC 2024 P1 VERIFIED 2026-09-30: 153 questions provably verified (dual-archive cross-check + 14 adjudications). Ready for bank merge (next content wave).
 - [~] NEW STAGED SOURCES 2026-09-30 (4-pass verification pending, then merge): Patwari 2025 S1+S2 (197), CET 28-Sep-2024 S1 (147), Stenographer 2024 S1 (128, merge decision pending — check exam scope).
 - [ ] App source index.html was gitignored by workspace pattern — force-added 2026-09-30; verify on next clone that build works from repo alone.
+- [x] LDC WAVE COMPLETE + DEPLOYED 2026-09-30: 142 verified real PYQs live (bank 1666). Dual-archive verification + 13 adjudications + subject tagging. Q70 formula-loss caught by validator, excluded. Live hash verified.
+- [~] NOTE 2026-09-30: app/index.html keeps disappearing from working tree (workspace gitignore pattern). Force-added to main; restore via `git checkout origin/main -- app/index.html` if build fails with missing entry.
+- [ ] REMAINING CONTENT WAVES (staged, 4-pass verification pending): Patwari 2025 S1+S2 (197), CET 28-Sep-2024 S1 (147), Stenographer 2024 S1 (128, scope decision pending).

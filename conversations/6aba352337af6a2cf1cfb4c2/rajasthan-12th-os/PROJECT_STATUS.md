@@ -1,17 +1,18 @@
 # PROJECT_STATUS.md — Rajasthan 12th-Level Exam OS
 *Living document. Honest status only. Never report planned work as completed.*
 
-**Last updated:** 2026-09-30 14:30 IST (Police wave shipped)
-**Current phase:** Phase 2 — BUILD + CONTENT (app LIVE on GitHub Pages; bank 1524 shippable; real-PYQ waves: CET 2024 (149) + Police Constable 2022 (608) merged; LDC 2024 P1 + Patwari 2025 + CET 28-Sep + Stenographer staged, verification in progress)
+**Last updated:** 2026-09-30 15:45 IST (Police + LDC waves shipped)
+**Current phase:** Phase 2 — BUILD + CONTENT (app LIVE on GitHub Pages; bank 1666 shippable; real-PYQ waves live: CET 2024 (149) + Police 2022 (608) + LDC 2024 P1 (142); staged pending verification: Patwari 2025 (197), CET 28-Sep (147), Stenographer (128))
 
 ## Snapshot (verified 2026-09-30)
 - Live URL: https://somilsharma2000.github.io/rajasthan-12th-exam-os/ (deploy hash verified each release)
-- Bank: 1524 shippable / 1524 total (validate-bank: ZERO ISSUES) — real PYQ: CET 2024 S1 149 + Police 2022 608; rest agent-authored, firewall-labeled
+- Bank: 1666 shippable / 1666 total (validate-bank: ZERO ISSUES) — real PYQ: CET 149 + Police 608 + LDC 142 (validate-bank: ZERO ISSUES) — real PYQ: CET 2024 S1 149 + Police 2022 608; rest agent-authored, firewall-labeled
 - Engine: Practice / full-length Mock / Error Book (persistent, 1-3-7-15-30 revision ladder) / Exam DNA / Exam Hubs (12) / Progress report / Saved questions / glossary
 - Workflow audit (2026-09-30): fixed full-bank reachability (Fisher-Yates sampling), timer resume on background, persistent Error Book, Agriculture Supervisor pattern fix (100Q × 3 marks, 2 hr, 1/3 negative — CROSS_CHECKED, official PDF pending)
 
 
 ## Completed (verified)
+0. 2026-09-30 LDC WAVE SHIPPED: 142 verified real PYQs (LDC/Junior Assistant 2024 P1, 11 Aug 2024) merged live. Dual-archive cross-check (TEP Hindi × StudyFry English): 125 dual-agree, 13 adjudicated, 3 solo-verified (mean/median 5.75, 2×median−mode=11, sodium→kerosene), 1 dual-text-match (Q24/Q68 dedupe). Q71 archive key corrected by independent solve (200√3/3, option 0). Excluded per zero-fake-data: Q9/Q26/Q70/Q95/Q96/Q141/Q142 (figure/formula/unsolvable). Content-based subject tagging 143→142 (india-gk 48, science 40, maths 33, raj-gk 22, ~1 lost in dedupe). Bank 1524→1666, validator ZERO ISSUES, live hash verified.
 0. 2026-09-30 POLICE WAVE SHIPPED: 608 verified real PYQs (Rajasthan Police Constable 2022, 5 shifts, 13-16 May) merged into live bank. 4-pass audit: 632 staged → 10 wrong archive answers corrected → 19 excluded (13 UNSURE, 4 BROKEN, 1 unfixable, 1 duplicate-options). Content-based subject re-tagging: broken archive section split fully overridden (632/632 re-tagged). Duplicate vs existing bank: 0. Commit + deploy + live hash verified.
 0. 2026-09-30 LDC 2024 P1 (11 Aug 2024) VERIFIED: 153/150-solvable questions — 141 double-archive agreement (TEP Hindi × StudyFry English, 90% match), 14 disputes adjudicated (TEP 0 right, SF 12 right, both wrong: Q32 trig 100√3 fixed, Q141 unsolvable excluded), Q24 recovered from StudyFry. 4 figure-dependent excluded.
 0. 2026-09-30 NEW PYQ SOURCES STAGED (verification pending): Patwari 17-Aug-2025 S1+S2 (197), CET 28-Sep-2024 S1 (147), Stenographer 5-Oct-2024 S1 (128, bonus source)
