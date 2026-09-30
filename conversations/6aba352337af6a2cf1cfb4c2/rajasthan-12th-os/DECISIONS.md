@@ -73,3 +73,8 @@
 1. New decisions get the next number; date mandatory.
 2. Never delete entries; supersede with a new entry that references the old one.
 3. Founder-level domains (brand, pricing, scope changes, spending, legal) always require explicit founder approval before execution.
+
+## D-2026-09-30-05: CET 28-Sep-2024 wave EXCLUDED (Graduate-level, not 12th)
+**Date:** 2026-09-30 | **Status:** FINAL
+
+The staged wave `cet-2024-0928-s1-staging.json` (147 questions) is from the CET **Graduation Level** exam of 27-28 September 2024, NOT the 12th-level CET (which was held 22-24 October 2024 and is already shipped as the CET 2024 wave). Confirmed via multiple independent sources (Financial Express, Hindustan Times, JagranJosh: 27-28 Sep 2024 = Graduate CET; Telegraph India / News18 / AajTak Campus: 22-24 Oct 2024 = 12th-level CET). Per scope discipline (graduate exams are OUT of the 12th-level OS), the entire wave is excluded from the bank. Never merge graduate-level PYQ content into this app.
