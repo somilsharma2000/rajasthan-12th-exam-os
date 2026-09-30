@@ -48,6 +48,7 @@
 - [x] PYQ archive probe DONE 2026-09-30: all 12 exams mapped with VERIFIED_FETCHED links -> gather/pyq-archive-inventory.md. Police Constable 2022 papers (5 shifts) + LDC sources located; 2 police PDFs downloaded (Testbook CDN, official archived papers).
 - [x] CRITICAL UX BUG FOUND & FIXED 2026-10-01 (founder stuck on Result screen, sent screenshot): Result screen was a dead end — Result() accepted no onHome/onRetry props and rendered ZERO exit buttons (unlike every other screen). Added top-bar back arrow + 'फिर से करें' (Retry) and 'होम पर जाएँ' (Go Home) buttons at bottom. Browser-verified end-to-end: completed a practice set -> Result rendered with buttons -> Go Home returned to exam list cleanly.
 - [x] FOUNDER DIRECTION 2026-10-01: Somil will handle PYQ/data collection himself going forward; my focus shifts to UI/UX quality, polish, and correctness. Data ingestion agents pause; UI/UX audit becomes the active workstream.
+- [x] PREMIUM DARK-MODE REDESIGN SHIPPED 2026-10-01: research-driven (presentation-saas-standards.md + presentation-exam-apps.md teardown of PW/Testbook/Adda247/Unacademy). 4-tier dark surfaces (#09090B canvas), Devanagari 1.7x line-height + 16px floor, accent discipline (purple ≤10%), 2-col exam launcher grid with per-paper honest PYQ tags (only CET/LDC/Police/Steno), sticky 52px blurred header, thumb-zone sticky bottom docks, option cards 50px with letter keys, palette slide-over sheet, exit-confirm modal (fixes accidental session loss), result hero with conic-gradient score gauge + 4-stat grid + DNA progress bars, resume card above fold, quick-nav tiles, hub featured card + 3-stat grid. QA: 7 screenshots + computed-style + pixel checks PASS, bank validation 1794/1794 zero issues, EN toggle PASS, mock timer PASS, palette states PASS, build green.
 - [~] Morning 2026-10-01: 2 bank files missing (raj-gk-history 70, lang-computer 50) — retry agents launched and running. Bank will reach ~584 when they land.
 - [~] OVERNIGHT SPRINT 2026-09-30 (founder asleep 3 hrs, autonomous launch-push authorized): 12 question-bank authoring agents running (~545 verified questions); hub data layer built (12 verified hubs, qualification/stages/pay, AS-OF stamped); LDC + Steno patterns corrected from deep surveys (written 200 marks each — question count pending final lock); bank loader + adversarial validator built (quarantine+dedupe+schema gate); ERROR BOOK + Exam DNA subject analysis added to results; mock RESUME (localStorage) added; glossary (14 exam-process terms) added; regression 18/18 PASS; 2 bank files already delivered (library-science 25, REET pedagogy 30 — 64 shippable, zero validation issues).
 - [ ] Founder: GitHub fine-grained token (Contents read/write) — BLOCKER for all code work
@@ -56,7 +57,7 @@
 - [ ] Config-driven exam engine (patterns as JSON; verified Police Constable pattern first)
 - [ ] Question player (practice mode + mock mode, timer, question palette, 5th-option rule)
 - [ ] Exam Hub section per exam (overview, eligibility, pattern, syllabus, official links, notices timeline, calendar, FAQ)
-- [ ] Hindi-first UI with English toggle; ultra-light build; offline mode
+- [x] Hindi-first UI with English toggle; ultra-light build; offline mode — dark-mode premium redesign shipped 2026-10-01 (see UI/UX line)
 - [ ] Live AI assistant: serverless proxy + key protection + rate limits + cost caps (founder approved, D-009) — provider verified at build time
 - [ ] GitHub Pages deployment + live link for founder testing
 
@@ -73,7 +74,7 @@
 - [ ] Flashcards + mnemonics engine content
 - [ ] Exam terminology glossary (Hindi)
 - [ ] Daily Economic Survey / current affairs practice content
-- [ ] PYQ vs AI-practice firewall labels in data + UI
+- [x] PYQ vs AI-practice firewall labels in data + UI — 2026-10-01
 
 ## PHASE 4 — QA & hardening
 - [ ] Adversarial testing (break the engine: wrong answers, refresh mid-test, back button, offline drop)
