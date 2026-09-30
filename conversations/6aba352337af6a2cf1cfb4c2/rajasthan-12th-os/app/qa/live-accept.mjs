@@ -30,4 +30,15 @@ ok('live: momentum CTA branch', await p.evaluate(() => {
   const errs = document.querySelectorAll('.explain.err').length
   return errs > 0 ? /एरर रिव्यू|Review errors/.test(next.textContent) : /फिर से करें|Retry/.test(next.textContent)
 }))
+
+// cycle-3: admin separation on production
+await p.goto('https://somilsharma2000.github.io/rajasthan-12th-exam-os/', { waitUntil: 'networkidle0' })
+await p.reload({ waitUntil: 'networkidle0' }); await new Promise(r => setTimeout(r, 800))
+ok('live: owner console opens on 5 footer taps', await p.evaluate(() => {
+  const note = [...document.querySelectorAll('p.note')].find(x => /स्नैपशॉट|snapshot/i.test(x.textContent))
+  if (!note) return false
+  for (let i = 0; i < 5; i++) note.click()
+  return new Promise(res => setTimeout(() => res(document.body.textContent.includes('बैकएंड वर्कर अभी') || document.body.textContent.includes('No backend worker connected') || document.body.textContent.includes('एडमिन टोकन')), 900))
+}))
+ok('live: admin token never lands in localStorage', await p.evaluate(() => !Object.keys(localStorage).includes('rjx-owner-token')))
 await b.close()
