@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/gen-bank-manifest.mjs && vite build",
+    "build": "node scripts/gen-bank-manifest.mjs && node scripts/ensure-index.js && vite build",
     "preview": "vite preview",
     "manifest": "node scripts/gen-bank-manifest.mjs"
   },

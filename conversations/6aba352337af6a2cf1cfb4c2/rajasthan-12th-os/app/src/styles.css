@@ -329,3 +329,16 @@ button:disabled { opacity: .35; pointer-events: none; }
 .typeArea:focus { border-color: var(--pr); }
 .subBtn.on { background: var(--pr); color: var(--pr-tx); border-color: var(--pr); }
 .subBtn.on em { color: var(--pr-tx); }
+
+/* ---- AI Coach ---- */
+.coachInput {
+  flex: 1; background: var(--card); color: var(--tx); border: 1px solid var(--bd);
+  border-radius: 8px; padding: 10px 12px; font-size: 14px; font-family: inherit; outline: none;
+}
+.coachInput:focus { border-color: var(--pr); }
+.coachBox { max-height: 44vh; overflow-y: auto; margin-top: 12px; display: flex; flex-direction: column; gap: 8px; }
+.coachMsg {
+  max-width: 86%; padding: 10px 12px; border-radius: 12px; font-size: 14px; line-height: 1.6;
+  background: var(--elev); border: 1px solid var(--bd); white-space: pre-wrap; word-break: break-word;
+}
+.coachMsg.me { align-self: flex-end; background: var(--pr); color: var(--pr-tx); border-color: var(--pr); }

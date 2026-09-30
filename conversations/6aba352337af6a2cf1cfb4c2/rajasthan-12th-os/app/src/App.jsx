@@ -5,6 +5,7 @@ import { HUBS, AS_OF } from './data/hubs.js'
 import { GLOSSARY } from './data/glossary.js'
 import { T } from './i18n.js'
 const TypingTest = lazy(() => import('./typing/TypingTest.jsx'))
+const Coach = lazy(() => import('./coach/Coach.jsx'))
 import { SUBJECT_LABELS, buildSession, scoreSession, fmtTime } from './engine.js'
 
 const VERSION_NOTE = { hi: 'डेटा स्नैपशॉट: 30 सितंबर 2026 · प्रश्न-बैंक पाइपलाइन से बढ़ रहा है', en: 'Data snapshot: 30 Sep 2026 · question bank growing via pipeline' }
@@ -363,6 +364,7 @@ function Player({ session, setSession, lang, bookmarks, toggleBookmark, onFinish
   const [idx, setIdx] = useState(0)
   const [now, setNow] = useState(Date.now())
   const [showPal, setShowPal] = useState(false)
+  const [coachCtx, setCoachCtx] = useState(null)
   const [confirmExit, setConfirmExit] = useState(false)
   const q = session.questions[idx]
   const endAt = session.startedAt + (session.durationMin || session.config.pattern.durationMin) * 60000
@@ -429,8 +431,13 @@ function Player({ session, setSession, lang, bookmarks, toggleBookmark, onFinish
           <div className="explain">
             <b>{t.explanation}:</b> {q.explanation[lang]}
             <div className="note">स्रोत: {q.provenance.source} · {q.provenance.evidence}</div>
+            <button className="ghost" style={{ marginTop: 8 }} onClick={() => setCoachCtx({
+              question: q.q[lang], options: q.options[lang], answer: q.answer,
+              chosen: a?.choice, explanation: q.explanation[lang], subject: q.subject, origin: q.origin
+            })}>{lang === 'hi' ? 'AI कोच से पूछें' : 'Ask AI Coach'}</button>
           </div>
         )}
+        {coachCtx && <Suspense fallback={<div className="paletteOverlay"><div className="paletteSheet"><p className="note">…</p></div></div>}><Coach lang={lang} context={coachCtx} onClose={() => setCoachCtx(null)} /></Suspense>}
       </div>
       <div className="dock"><div className="row">
         <button className="ghost dockPrev" disabled={idx === 0} onClick={() => setIdx(i => i - 1)}>{t.prev}</button>
