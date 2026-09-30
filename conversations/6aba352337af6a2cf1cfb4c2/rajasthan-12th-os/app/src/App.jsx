@@ -400,6 +400,37 @@ function Player({ session, setSession, lang, bookmarks, toggleBookmark, onFinish
 
   const nextQ = () => idx < session.questions.length - 1 ? setIdx(i => i + 1) : finish()
 
+  // MOTION/UX: reset scroll on question change
+  useEffect(() => { window.scrollTo({ top: 0 }) }, [idx])
+
+  // TOAST: transient, non-blocking feedback
+  const [toast, setToast] = useState('')
+  const toastTimer = useRef(null)
+  const flash = (msg) => { setToast(msg); clearTimeout(toastTimer.current); toastTimer.current = setTimeout(() => setToast(''), 1500) }
+
+  // KEYBOARD: 1-5 pick option, E = option-E, arrows navigate, ESC closes overlays
+  useEffect(() => {
+    const onKey = (e) => {
+      if (coachCtx || showPal || confirmExit) { if (e.key === 'Escape') { setCoachCtx(null); setShowPal(false); setConfirmExit(false) } return }
+      const tag = (document.activeElement || {}).tagName
+      if (tag === 'INPUT' || tag === 'TEXTAREA') return
+      if (e.key === 'Escape') { requestExit(); return }
+      const n = Number(e.key)
+      if (n >= 1 && n <= q.options[lang].length) { setAnswer(n - 1); return }
+      if (e.key === 'e' || e.key === 'E') { if (session.config.pattern.fifthOptionRule?.enabled) markE(); return }
+      if (e.key === 'ArrowRight') { e.preventDefault(); nextQ() }
+      if (e.key === 'ArrowLeft' && idx > 0) { e.preventDefault(); setIdx(i => i - 1) }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [idx, q, lang, coachCtx, showPal, confirmExit, session])
+
+  const bookmark = () => {
+    const was = bookmarks.includes(q.id)
+    toggleBookmark(q.id)
+    flash(lang === 'hi' ? (was ? 'सहेजे से हटाया गया' : 'सहेज लिया गया') : (was ? 'Removed from Saved' : 'Saved'))
+  }
+
   return (
     <div className="wrap" style={{ paddingBottom: 104 }}>
       <div className="bar">
@@ -415,7 +446,7 @@ function Player({ session, setSession, lang, bookmarks, toggleBookmark, onFinish
           <span>{t.question} {idx + 1}/{session.questions.length}</span>
           <span className="spacer" />
           {q.origin === 'real_pyq' ? <span className="badge pyq">{t.pyq} · {t.verified}</span> : <span className="badge ai">{t.agentAuthored}</span>}
-          <button className={'iconBtn' + (bookmarks.includes(q.id) ? ' bmOn' : '')} onClick={() => toggleBookmark(q.id)}>{bookmarks.includes(q.id) ? '★' : '☆'}</button>
+          <button className={'iconBtn' + (bookmarks.includes(q.id) ? ' bmOn' : '')} onClick={bookmark}>{bookmarks.includes(q.id) ? '★' : '☆'}</button>
         </div>
         <p className="qText">{q.q[lang]}</p>
         {q.options[lang].map((opt, i) => {
@@ -447,6 +478,7 @@ function Player({ session, setSession, lang, bookmarks, toggleBookmark, onFinish
         <button className="ghost" onClick={() => setShowPal(true)} title={lang === 'hi' ? 'प्रश्न पैलेट' : 'Question palette'}>▦</button>
         <button className="primary dockNext" onClick={nextQ}>{idx < session.questions.length - 1 ? t.next : (session.mode === 'mock' ? t.submit : t.finish)}</button>
       </div></div>
+      {toast && <div className="toast">{toast}</div>}
       {showPal && (
         <div className="paletteOverlay" onClick={() => setShowPal(false)}>
           <div className="paletteSheet" onClick={e => e.stopPropagation()}>
@@ -508,7 +540,7 @@ function Result({ session, lang, onRecord, onHome, onRetry }) {
       <TopBar title={t.result} t={t} lang={lang} toggleLang={() => {}} />
       <div className="resultHero">
         <h2 style={{ fontSize: 15, color: 'var(--tx2)' }}>{session.config.name[lang]}</h2>
-        <div className="gauge" style={{ '--pct': pct }}>
+        <div className="gauge" style={{ '--pctg': pct }}>
           <b>{Math.round(r.score * 100) / 100}</b>
           <span>/ {maxMarks}</span>
         </div>

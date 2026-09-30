@@ -30,6 +30,11 @@ export default function Coach({ lang, context, onClose }) {
   }
 
   useEffect(() => { boxRef.current?.scrollTo(0, 1e6) }, [msgs.length, busy])
+  useEffect(() => {
+    const esc = (e) => { if (e.key === 'Escape') onClose() }
+    window.addEventListener('keydown', esc)
+    return () => window.removeEventListener('keydown', esc)
+  }, [onClose])
 
   const send = async () => {
     const text = input.trim(); if (!text || busy || used >= DAILY_CAP) return

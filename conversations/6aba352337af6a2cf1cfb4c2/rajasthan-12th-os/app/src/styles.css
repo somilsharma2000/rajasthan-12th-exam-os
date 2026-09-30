@@ -342,3 +342,97 @@ button:disabled { opacity: .35; pointer-events: none; }
   background: var(--elev); border: 1px solid var(--bd); white-space: pre-wrap; word-break: break-word;
 }
 .coachMsg.me { align-self: flex-end; background: var(--pr); color: var(--pr-tx); border-color: var(--pr); }
+
+/* ═══════════════════════════════════════════════════════════════
+   MOTION & POLISH LAYER (2026-10-01) — entrance, hover, feedback
+   Rule: motion clarifies, never decorates. All ≤400ms, eased.
+   ═══════════════════════════════════════════════════════════════ */
+
+@keyframes screenIn { from { opacity: 0; transform: translateY(10px) } }
+@keyframes fadeIn { from { opacity: 0 } }
+@keyframes pop { 0% { transform: scale(.97) } 55% { transform: scale(1.012) } 100% { transform: scale(1) } }
+@keyframes sheetUp { from { transform: translateY(100%) } }
+@keyframes slideRight { from { opacity: 0; transform: translateX(-10px) } }
+@keyframes pulse { 50% { opacity: .55 } }
+@keyframes shimmer { from { background-position: -400px 0 } to { background-position: 400px 0 } }
+@keyframes gaugeIn { from { --pctg: 0 } }
+@keyframes toastIn { from { opacity: 0; transform: translateY(-8px) } }
+@keyframes barGrow { from { transform: scaleX(0) } }
+
+@property --pctg { syntax: '<number>'; inherits: false; initial-value: 0; }
+
+/* Screen mount (each screen is a distinct component → remounts) */
+.wrap { animation: screenIn .32s cubic-bezier(.22,1,.36,1) both; }
+
+/* Staggered entrances */
+.grid .examCard, .tiles .tile, .subjects .subBtn, .modeCard, .resultGrid .stat, .listRow, .card { animation: slideRight .3s cubic-bezier(.22,1,.36,1) both; }
+.grid .examCard:nth-child(1) { animation-delay: .02s } .grid .examCard:nth-child(2) { animation-delay: .05s }
+.grid .examCard:nth-child(3) { animation-delay: .08s } .grid .examCard:nth-child(4) { animation-delay: .11s }
+.grid .examCard:nth-child(5) { animation-delay: .14s } .grid .examCard:nth-child(6) { animation-delay: .17s }
+.grid .examCard:nth-child(7) { animation-delay: .20s } .grid .examCard:nth-child(8) { animation-delay: .23s }
+.grid .examCard:nth-child(9) { animation-delay: .26s } .grid .examCard:nth-child(n+10) { animation-delay: .29s }
+.tiles .tile:nth-child(1) { animation-delay: .02s } .tiles .tile:nth-child(2) { animation-delay: .06s }
+.tiles .tile:nth-child(3) { animation-delay: .10s } .tiles .tile:nth-child(4) { animation-delay: .14s }
+.opt { animation: fadeIn .26s ease both; }
+.opt:nth-child(1) { animation-delay: .03s } .opt:nth-child(2) { animation-delay: .07s }
+.opt:nth-child(3) { animation-delay: .11s } .opt:nth-child(4) { animation-delay: .15s }
+.opt:nth-child(5) { animation-delay: .19s }
+.dnaRow { animation: slideRight .3s ease both; }
+.dnaRow:nth-child(2) { animation-delay: .04s } .dnaRow:nth-child(3) { animation-delay: .08s } .dnaRow:nth-child(n+4) { animation-delay: .12s }
+.dnaFill { transform-origin: left; animation: barGrow .6s cubic-bezier(.22,1,.36,1) both; }
+
+/* Desktop hover states (touch unaffected: no hover on tap) */
+@media (hover: hover) {
+  .examCard:hover { background: var(--elev); border-color: rgba(124, 58, 237, .4); transform: translateY(-2px); box-shadow: 0 8px 24px -12px rgba(124, 58, 237, .45); }
+  .examCard:hover .ic { background: var(--violet); color: #fff; }
+  .tile:hover { background: var(--elev); border-color: var(--border-strong); transform: translateY(-1px); }
+  .tile:hover .ic { color: var(--tx); }
+  .modeCard:hover { background: var(--elev); border-color: var(--border-strong); }
+  .modeCard.hero:hover { border-color: rgba(124, 58, 237, .6); }
+  .subBtn:hover { background: var(--elev); border-color: var(--border-strong); }
+  .listRow:hover { border-color: var(--border-strong); }
+  button.ghost:hover { color: var(--tx); border-color: rgba(124, 58, 237, .45); background: rgba(124, 58, 237, .08); }
+  button.primary:hover { background: var(--violet-2); box-shadow: 0 0 22px rgba(124, 58, 237, .4); }
+  .opt:hover { border-color: var(--border-strong); background: var(--elev); }
+  .opt:hover .key { border-color: var(--border-strong); color: var(--tx); }
+  .pal:hover { border-color: var(--border-strong); transform: scale(1.08); }
+  .iconBtn:hover { color: var(--tx); background: var(--elev); }
+}
+
+/* Selection feedback */
+.opt.chosen { animation: pop .2s cubic-bezier(.22,1,.36,1); }
+.opt.e.chosen { animation: pop .2s cubic-bezier(.22,1,.36,1); }
+
+/* Timer urgency */
+.timer.low { animation: pulse 1.1s ease-in-out infinite; }
+
+/* Progress fill: animated shine */
+.progressFill { background-image: linear-gradient(90deg, var(--violet) 0%, var(--lav) 50%, var(--violet) 100%); background-size: 400px 100%; animation: shimmer 2.4s linear infinite; }
+
+/* Overlays: drawer + modal + coach */
+.paletteOverlay { animation: fadeIn .18s ease both; }
+.paletteSheet { animation: sheetUp .26s cubic-bezier(.22,1,.36,1) both; }
+.modalWrap { animation: fadeIn .16s ease both; }
+.modal { animation: pop .22s cubic-bezier(.22,1,.36,1) both; }
+
+/* Result gauge: sweep-in on mount */
+.gauge { background: conic-gradient(var(--violet) calc(var(--pctg) * 1%), var(--elev) 0); animation: gaugeIn 1s cubic-bezier(.22,1,.36,1) both; }
+.gauge b { animation: fadeIn .5s ease .3s both; }
+
+/* Explanation slide-in */
+.explain { animation: slideRight .28s cubic-bezier(.22,1,.36,1) both; }
+
+/* Toast */
+.toast {
+  position: fixed; top: 62px; left: 50%; transform: translateX(-50%); z-index: 80;
+  background: var(--pop); border: 1px solid var(--border-strong); color: var(--tx);
+  font-size: 12.5px; font-weight: 500; padding: 7px 14px; border-radius: 999px;
+  box-shadow: 0 8px 28px -10px rgba(0,0,0,.7); pointer-events: none;
+  animation: toastIn .22s cubic-bezier(.22,1,.36,1) both;
+}
+
+/* Accessibility: visible focus + motion respect */
+:focus-visible { outline: 2px solid var(--lav); outline-offset: 2px; border-radius: 4px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
