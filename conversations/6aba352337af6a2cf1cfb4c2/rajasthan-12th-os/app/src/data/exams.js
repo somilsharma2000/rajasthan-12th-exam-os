@@ -99,10 +99,10 @@ export const EXAMS = [
     id: 'stenographer',
     name: { hi: 'स्टेनोग्राफर / पीए ग्रेड-II', en: 'Stenographer / PA Grade-II' },
     family: 'DIRECT', verification: 'OFFICIAL_CONFIRMED',
-    pattern: { totalQuestions: 100, marksPerQuestion: 2, totalMarks: 200, durationMin: 120, negative: { wrong: '1/3' }, fifthOptionRule: null,
+    pattern: { totalQuestions: 100, marksPerQuestion: 2, totalMarks: 200, durationMin: 120, negative: { wrong: '1/3' }, fifthOptionRule: { enabled: true, unattemptedPenalty: '1/3', disqualificationThreshold: 0.10, noteHi: 'खाली छोड़े प्रश्न पर विकल्प-E भरना अनिवार्य; बिना E के 10% से अधिक खाली = अपात्र', noteEn: 'Option E must be bubbled on unattempted; >10% blank without E = disqualification' },
       questionCountVerified: 'PENDING_FINAL_LOCK',
       extraStage: { hi: 'चरण-1: लिखित 200 अंक → चरण-2: डिक्टेशन 100 अंक (अंग्रेजी 100 wpm/10 मिनट + 60 मिनट ट्रांसक्रिप्शन; हिंदी 80 wpm/10 मिनट + 70 मिनट; न्यूनतम 36%) → DV', en: 'Phase-1: Written 200 marks -> Phase-2: Dictation 100 marks (English 100 wpm/10min + 60min transcription; Hindi 80 wpm/10min + 70min; min 36%) -> DV' } },
-    subjects: ['raj-gk', 'india-gk', 'english', 'hindi', 'reasoning']
+    subjects: ['raj-gk', 'india-gk', 'science', 'english', 'hindi', 'reasoning']
   },
   {
     id: 'librarian-grade3',
