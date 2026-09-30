@@ -1,8 +1,8 @@
 # PROJECT_STATUS.md — Rajasthan 12th-Level Exam OS
 *Living document. Honest status only. Never report planned work as completed.*
 
-**Last updated:** 2026-09-30 15:45 IST (Police + LDC waves shipped)
-**Current phase:** Phase 2 — BUILD + CONTENT (app LIVE on GitHub Pages; bank 1666 shippable; real-PYQ waves live: CET 2024 (149) + Police 2022 (608) + LDC 2024 P1 (142); staged pending verification: Patwari 2025 (197), CET 28-Sep (147), Stenographer (128))
+**Last updated:** 2026-10-01 02:10 IST (Product-polish wave shipped: performance, typing module, AI Coach, E-rule settled)
+**Current phase:** Phase 2 — BUILD + CONTENT (app LIVE on GitHub Pages; bank 1794 shippable; real-PYQ waves live: CET 2024 (149) + Police 2022 (608) + LDC 2024 P1 (142) + Stenographer 2024 (128); graduate waves EXCLUDED: Patwari 2025, CET 28-Sep — D-2026-09-30-05/06)
 
 ## Snapshot (verified 2026-09-30)
 - Live URL: https://somilsharma2000.github.io/rajasthan-12th-exam-os/ (deploy hash verified each release)
@@ -12,6 +12,12 @@
 
 
 ## Completed (verified)
+- 2026-10-01 PERFORMANCE WAVE: bank lazy-loaded per exam — first load 439KB->62KB gzip (7x); subject counts from build-time meta. Deployed + live-verified.
+- 2026-10-01 TYPING MODULE (Module A): exact RSSB scoring (20/8000 x netKDPH, 9-marks qualifying, -5/word), 8+8 hi/en passages, exam-real split-pane, word-level review, history. Unit + real-browser QA. Deployed + live-verified.
+- 2026-10-01 AI COACH (client side): panel from explanation view, question-context injection, honest setup state, 15/day cap; proxy Worker code shipped (serverless/ai-coach-worker.js, Gemini, per-IP KV cap). Deployed + live-verified (client). Worker deploy = founder action. D-010.
+- 2026-10-01 STENO E-RULE SETTLED: official Advt 07/2024 archived; image-only scan (direct read impossible in sandbox). Threshold 0.10 retained at CROSS_CHECKED. D-011; gather/verify-steno-e-rule.md.
+- 2026-10-01 PAYMENTS DESIGN: docs/payments-plan.md — Razorpay + Worker license architecture, blockers on founder Razorpay account. D-012.
+- 2026-10-01 BUILD GUARD: scripts/ensure-index.js auto-restores vanishing index.html.
 0. 2026-09-30 LDC WAVE SHIPPED: 142 verified real PYQs (LDC/Junior Assistant 2024 P1, 11 Aug 2024) merged live. Dual-archive cross-check (TEP Hindi × StudyFry English): 125 dual-agree, 13 adjudicated, 3 solo-verified (mean/median 5.75, 2×median−mode=11, sodium→kerosene), 1 dual-text-match (Q24/Q68 dedupe). Q71 archive key corrected by independent solve (200√3/3, option 0). Excluded per zero-fake-data: Q9/Q26/Q70/Q95/Q96/Q141/Q142 (figure/formula/unsolvable). Content-based subject tagging 143→142 (india-gk 48, science 40, maths 33, raj-gk 22, ~1 lost in dedupe). Bank 1524→1666, validator ZERO ISSUES, live hash verified.
 0. 2026-09-30 POLICE WAVE SHIPPED: 608 verified real PYQs (Rajasthan Police Constable 2022, 5 shifts, 13-16 May) merged into live bank. 4-pass audit: 632 staged → 10 wrong archive answers corrected → 19 excluded (13 UNSURE, 4 BROKEN, 1 unfixable, 1 duplicate-options). Content-based subject re-tagging: broken archive section split fully overridden (632/632 re-tagged). Duplicate vs existing bank: 0. Commit + deploy + live hash verified.
 0. 2026-09-30 LDC 2024 P1 (11 Aug 2024) VERIFIED: 153/150-solvable questions — 141 double-archive agreement (TEP Hindi × StudyFry English, 90% match), 14 disputes adjudicated (TEP 0 right, SF 12 right, both wrong: Q32 trig 100√3 fixed, Q141 unsolvable excluded), Q24 recovered from StudyFry. 4 figure-dependent excluded.

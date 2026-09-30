@@ -82,3 +82,25 @@ The staged wave `cet-2024-0928-s1-staging.json` (147 questions) is from the CET 
 **Date:** 2026-09-30 | **Status:** FINAL
 
 D-003 (Patwari = graduate-level, excluded from the 12th-level OS) is CONFIRMED for the 2025 recruitment via multiple independent sources: RSSB Patwari 2025 (exam held 17-Aug-2025) requires a Bachelor's degree in any stream + computer certificate (RojgarKiKhoj notification summary, Infoeazy, JagranJosh "CET graduates can apply", Scribd advt table "Patwari — Bachelor's + RS-CIT"). The fully rebuilt 295-record wave (S1 148 + S2 147, raw-sourced, archived in gather/pyq-raw/patwari-2025-*.json) is therefore OUT OF SCOPE and is NOT merged. Data remains archived in the repo as a future graduate-level product asset. Verification agents for the wave were stopped mid-run (2 of 4 ranges had completed: S1 76-150 and S2 1-75, both ~96% AGREE — archive quality was good, scope is the sole blocker). Official notification PDF remains the final basis for D-003 wording refinement.
+
+## D-010 — AI Coach architecture: key behind serverless proxy, never in client
+- **Date:** 2026-10-01
+- **Founder approval:** Yes (D-009 approved live AI; security model is implementation of that approval)
+- **Chosen:** Cloudflare Worker proxy (serverless/ai-coach-worker.js) holding GEMINI_API_KEY as Worker secret; static client (GitHub Pages) only sends question context + history. Per-IP daily cap (15) enforced server-side (KV), mirrored client-side as UX.
+- **Reason:** Static hosting cannot custody secrets; client-side keys are extractable and abusable. Honest setup state (no fake replies) until founder deploys the Worker.
+- **Consequences:** Coach works only after founder runs `wrangler deploy` + sets GEMINI_API_KEY. No key = no coach, by design.
+
+## D-011 — Steno E-rule threshold: 0.10 retained, evidence status CROSS_CHECKED (not direct-read)
+- **Date:** 2026-10-01
+- **Founder approval:** N/A (verification discipline; per standing rule founder must be told evidence grade)
+- **Context:** Official Advt 07/2024 PDF archived; it is an image-only scan (pypdf/pdfminer extract 0 chars; easyocr Hindi fails on its fonts). Direct machine re-read is impossible with current sandbox tooling.
+- **Chosen:** Keep `disqualificationThreshold: 0.10`. Evidence: deep-research chain quoting Advt §13 + the identical, officially-confirmed CET rule (readable official PDF) + multi-source corroboration, zero contrary sources.
+- **Reason:** Founder rule "NOT VERIFIED over PROBABLY CORRECT" — honest grade is CROSS_CHECKED, so we label it CROSS_CHECKED rather than the research doc's OFFICIAL_CONFIRMED. Trail: gather/verify-steno-e-rule.md.
+- **Consequences:** If a text-based scheme PDF or exam-day instruction sheet surfaces, promote to OFFICIAL_CONFIRMED.
+
+## D-012 — Payments: Razorpay via Worker, DESIGN_APPROVED, not built
+- **Date:** 2026-10-01
+- **Founder approval:** Design yes; pricing target ₹99 already set (D-007); go-live decision pending
+- **Chosen:** Razorpay (UPI-first) order->checkout->signature-verify flow in a Cloudflare Worker; HMAC-signed license keys stored in Worker KV; client unlocks PRO locally. Doc: docs/payments-plan.md.
+- **Reason:** Static host cannot custody Razorpay secrets or handle webhooks; Razorpay is the India-standard UPI checkout.
+- **Consequences:** Blocked on founder Razorpay account + keys. ~1 day build + adversarial tests once keys exist.
