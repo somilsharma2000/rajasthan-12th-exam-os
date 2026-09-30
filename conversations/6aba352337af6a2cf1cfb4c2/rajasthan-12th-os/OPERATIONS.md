@@ -33,3 +33,15 @@ Update mechanics:
 1. I cannot subscribe to paid notification services; official portals are checked via public access
 2. Frequency of monitoring is bounded by plan credits — priority goes to exam-calendar critical windows
 3. Between data releases the app runs on the last verified snapshot — offline-first means the student always has SOMETHING, even if it's one release old
+
+## Coach proxy deploy (OWNER, one-time ~2 min; agent cannot deploy Cloudflare)
+
+Worker is production-ready: `serverless/ai-coach-worker.js` (hardened + 14 unit tests pass: `node serverless/worker.test.mjs`), config `serverless/wrangler.toml`.
+
+1. `cd serverless && wrangler login`
+2. `wrangler kv namespace create COACH_KV` → paste the printed id into wrangler.toml (uncomment the `[[kv_namespaces]]` block)
+3. `wrangler secret put GEMINI_API_KEY` (Google AI Studio key)
+4. `wrangler deploy` → note the workers.dev URL
+5. Tell the agent the URL → agent sets `VITE_COACH_URL` in `app/.env.production`, rebuilds, redeploys gh-pages. Until then the Coach panel shows the honest setup state (paste URL or hidden) — never fake replies.
+
+Security model: LLM key lives ONLY in Worker secrets. Per-IP daily cap (KV, 15/day default) enforced BEFORE upstream call — a capped request cannot burn tokens. History bounded to last 8 messages, inputs sliced, 20s upstream timeout. Foreign origins 403.

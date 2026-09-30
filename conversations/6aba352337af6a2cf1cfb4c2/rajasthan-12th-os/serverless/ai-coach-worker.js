@@ -22,6 +22,8 @@ Rules:
 4. If the official explanation conflicts with your knowledge, trust the given explanation and say so.
 5. Never invent exam facts, dates or rules. If unsure, say you are unsure.`
 
+const memCap = {}
+
 export default {
   async fetch(request, env) {
     if (request.method === 'OPTIONS') return cors(new Response(null, { status: 204 }), env)
@@ -43,12 +45,25 @@ export default {
       used = parseInt((await env.COACH_KV.get(key)) || '0', 10)
       if (used >= cap) return cors(json({ error: 'daily_limit' }), env)
       await env.COACH_KV.put(key, String(used + 1), { expirationTtl: 86400 })
+    } else {
+      // Fallback cap (per-isolate Map): best-effort but NEVER unlimited
+      memCap.count ||= {}
+      const k = `${ip}:${today}`
+      used = memCap.count[k] || 0
+      if (used >= cap) return cors(json({ error: 'daily_limit' }), env)
+      memCap.count[k] = used + 1
     }
 
     let body
     try { body = await request.json() } catch { return cors(json({ error: 'bad_json' }, 400), env) }
     const { context, history = [], lang = 'hi' } = body
     if (!context || !context.question) return cors(json({ error: 'bad_request' }, 400), env)
+    // Input bounds: no field may blow up the prompt size (cost + abuse defense)
+    const S = (x, n) => (typeof x === 'string' ? x.slice(0, n) : '')
+    context.question = S(context.question, 2000)
+    context.explanation = S(context.explanation, 3000)
+    if (Array.isArray(context.options)) context.options = context.options.map(o => S(o, 400)).slice(0, 6)
+    const boundedHistory = Array.isArray(history) ? history.slice(-8).map(m => ({ role: m.role, text: S(m.text, 1000) })) : []
 
     const contextText = `Current question the student is viewing:
 Subject: ${context.subject || '-'} | Origin: ${context.origin || '-'}
@@ -59,11 +74,12 @@ Student chose: ${context.chosen !== undefined && context.chosen !== null ? Strin
 Official explanation: ${context.explanation || '-'}`
 
     const contents = []
-    history.forEach(m => contents.push({ role: m.role === 'coach' ? 'model' : 'user', parts: [{ text: m.text }] }))
+    boundedHistory.forEach(m => contents.push({ role: m.role === 'coach' ? 'model' : 'user', parts: [{ text: m.text }] }))
     contents.push({ role: 'user', parts: [{ text: contextText + `\n\n(${lang === 'hi' ? 'हिंदी में उत्तर दें।' : 'Answer in English.'} छात्र का सवाल आगे दिया गया है।)` }] })
 
     const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${env.MODEL || 'gemini-2.0-flash'}:generateContent?key=${env.GEMINI_API_KEY}`, {
       method: 'POST',
+      signal: AbortSignal.timeout(20000), // never hang a worker invocation on a slow upstream
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },

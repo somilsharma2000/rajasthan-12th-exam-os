@@ -12,7 +12,11 @@ const DAILY_CAP = 15
 // configured, the panel shows an honest setup state — no fake replies.
 export default function Coach({ lang, context, onClose }) {
   const t = T(lang)
-  const [endpoint, setEndpoint] = useState(() => { try { return localStorage.getItem(LS_EP) || '' } catch { return '' } })
+  // Endpoint priority: owner-pasted override > build-time baked URL (VITE_COACH_URL, set after the
+  // Cloudflare worker is deployed) > empty. Empty = honest setup state, never fake replies.
+  const [endpoint, setEndpoint] = useState(() => {
+    try { return localStorage.getItem(LS_EP) || (import.meta.env.VITE_COACH_URL || '') } catch { return (import.meta.env.VITE_COACH_URL || '') }
+  })
   const [draftEp, setDraftEp] = useState('')
   const [msgs, setMsgs] = useState([])
   const [input, setInput] = useState('')
