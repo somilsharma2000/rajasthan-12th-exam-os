@@ -54,6 +54,20 @@ const EXAM_ICON = {
   en: { 'cet-12th': 'C', 'ldc-junior-assistant': 'L', 'police-constable': 'P', 'forester': 'F', 'jail-prahari': 'J', 'hostel-superintendent': 'H', 'jamadar-excise': 'E', 'lab-assistant': 'LA', 'agriculture-supervisor': 'A', 'reet-level1': 'R', 'stenographer': 'S', 'librarian-grade3': 'LB' }
 }
 
+// ICONS: stroke-based, currentColor — replaces emoji glyphs (visual audit 2026-10-01)
+const SW = '1.6'
+function Ic({ d, size = 18, fill = 'none' }) {
+  return <svg width={size} height={size} viewBox="0 0 24 24" fill={fill} stroke="currentColor" strokeWidth={SW} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={{ flex: 'none' }}>{d}</svg>
+}
+export const IcKeyboard = () => <Ic d={<><rect x="2" y="6" width="20" height="12" rx="2" /><path d="M6 10h.01M10 10h.01M14 10h.01M18 10h.01M6 14h.01M18 14h.01M9 14h6" /></>} />
+export const IcBook = () => <Ic d={<><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" /></>} />
+export const IcChart = () => <Ic d={<><path d="M3 3v18h18" /><path d="M7 15l4-6 4 4 5-8" /></>} />
+export const IcStar = ({ fill = 'none' }) => <Ic fill={fill} d={<><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5-5.9-3.2-5.9 3.2 1.2-6.5L2.5 9.4l6.6-.9z" /></>} />
+export const IcRefresh = () => <Ic d={<><path d="M21 12a9 9 0 1 1-2.6-6.4" /><path d="M21 3v6h-6" /></>} />
+export const IcGrid = () => <Ic d={<><rect x="3" y="3" width="7" height="7" rx="1" /><rect x="14" y="3" width="7" height="7" rx="1" /><rect x="3" y="14" width="7" height="7" rx="1" /><rect x="14" y="14" width="7" height="7" rx="1" /></>} />
+export const IcPencil = () => <Ic d={<><path d="M12 20h9" /><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z" /></>} />
+export const IcTimer = () => <Ic d={<><circle cx="12" cy="13" r="8" /><path d="M12 9v4l2.5 2.5M9 2h6" /></>} />
+
 export default function App() {
   const [lang, setLang] = useState(() => { try { return localStorage.getItem('rjx-lang') === 'en' ? 'en' : 'hi' } catch { return 'hi' } })
   const [screen, setScreen] = useState('home') // home | hub | setup | player | result | glossary | progress | saved | errorbook
@@ -151,7 +165,7 @@ export default function App() {
   }
 
   if (screen === 'player') return <Player session={session} setSession={setSession} lang={lang} bookmarks={bms} toggleBookmark={toggleBookmark} onFinish={() => setScreen('result')} onExit={() => { setSession(null); setScreen('hub') }} />
-  if (screen === 'result') return <Result session={session} lang={lang} onRecord={recordAttempt} onHome={() => { setSession(null); setScreen('home') }} onRetry={() => { const mode = session.mode; startSession(mode) }} />
+  if (screen === 'result') return <Result session={session} lang={lang} onRecord={recordAttempt} onHome={() => { setSession(null); setScreen('home') }} onErrorReview={() => { setSession(null); setScreen('errorbook') }} onRetry={() => { const mode = session.mode; startSession(mode) }} />
   if (screen === 'progress') return <Progress lang={lang} onHome={() => setScreen('home')} />
   if (screen === 'saved') return <Saved lang={lang} bookmarks={bms} toggleBookmark={toggleBookmark} bank={bank} onHome={() => setScreen('home')} />
   if (screen === 'typing') return <Suspense fallback={<div className="wrap"><p className="note">{lang === 'hi' ? 'लोड हो रहा है…' : 'Loading…'}</p></div>}><TypingTest lang={lang} onHome={() => setScreen('home')} /></Suspense>
@@ -166,11 +180,11 @@ export default function App() {
       <p className="sectionTitle">{lang === 'hi' ? 'मोड चुनें' : 'Choose mode'}</p>
       <div className="row" style={{ marginTop: 0 }}>
         <button className="modeCard hero" onClick={() => startSession('practice')}>
-          <span className="t">📖 {t.practice}</span>
+          <span className="t"><IcPencil size={15} /> {t.practice}</span>
           <span className="d">{lang === 'hi' ? '10 मिश्रित प्रश्न · तुरंत व्याख्या · बिना टाइमर' : '10 mixed questions · instant explanations · no timer'}</span>
         </button>
         <button className="modeCard" onClick={() => startSession('mock')}>
-          <span className="t">⏱ {t.mock}</span>
+          <span className="t"><IcTimer size={15} /> {t.mock}</span>
           <span className="d">{lang === 'hi' ? 'पूरा पैटर्न · टाइमर · नकारात्मक अंकन' : 'Full pattern · timer · negative marking'}</span>
         </button>
       </div>
@@ -254,11 +268,11 @@ export default function App() {
         </div>
       )}
       <div className="tiles">
-        <button className="tile" onClick={() => setScreen('typing')}><span className="ic">⌨</span>{lang === 'hi' ? 'टाइपिंग' : 'Typing'}</button>
-        <button className="tile" onClick={() => setScreen('glossary')}><span className="ic">📖</span>{lang === 'hi' ? 'शब्दावली' : 'Glossary'}</button>
-        <button className="tile" onClick={() => setScreen('progress')}><span className="ic">📈</span>{lang === 'hi' ? 'प्रगति' : 'Progress'}</button>
-        <button className="tile" onClick={() => setScreen('saved')}><span className="ic">★</span>{lang === 'hi' ? 'सहेजे' : 'Saved'} {bms.length ? `(${bms.length})` : ''}</button>
-        <button className="tile" onClick={() => setScreen('errorbook')}><span className="ic">🔁</span>{lang === 'hi' ? 'त्रुटि' : 'Errors'}{dueErr ? ` (${dueErr})` : ''}</button>
+        <button className="tile" onClick={() => setScreen('typing')}><span className="ic"><IcKeyboard /></span>{lang === 'hi' ? 'टाइपिंग' : 'Typing'}</button>
+        <button className="tile" onClick={() => setScreen('glossary')}><span className="ic"><IcBook /></span>{lang === 'hi' ? 'शब्दावली' : 'Glossary'}</button>
+        <button className="tile" onClick={() => setScreen('progress')}><span className="ic"><IcChart /></span>{lang === 'hi' ? 'प्रगति' : 'Progress'}</button>
+        <button className="tile" onClick={() => setScreen('saved')}><span className="ic"><IcStar /></span>{lang === 'hi' ? 'सहेजे' : 'Saved'} {bms.length ? `(${bms.length})` : ''}</button>
+        <button className="tile" onClick={() => setScreen('errorbook')}><span className="ic"><IcRefresh /></span>{lang === 'hi' ? 'त्रुटि' : 'Errors'}{dueErr ? ` (${dueErr})` : ''}</button>
       </div>
       <p className="sectionTitle">{t.chooseExam}</p>
       <div className="grid">
@@ -494,7 +508,7 @@ function Player({ session, setSession, lang, bookmarks, toggleBookmark, onFinish
           <span>{t.question} {idx + 1}/{session.questions.length}</span>
           <span className="spacer" />
           {q.origin === 'real_pyq' ? <span className="badge pyq">{t.pyq} · {t.verified}</span> : <span className="badge ai">{t.agentAuthored}</span>}
-          <button className={'iconBtn' + (bookmarks.includes(q.id) ? ' bmOn' : '')} onClick={bookmark}>{bookmarks.includes(q.id) ? '★' : '☆'}</button>
+          <button className={'iconBtn' + (bookmarks.includes(q.id) ? ' bmOn' : '')} onClick={bookmark} aria-label={lang === 'hi' ? 'सहेजें' : 'Bookmark'}>{bookmarks.includes(q.id) ? <IcStar fill="currentColor" size={17} /> : <IcStar size={17} />}</button>
         </div>
         <p className="qText">{q.q[lang]}</p>
         {q.options[lang].map((opt, i) => {
@@ -523,7 +537,7 @@ function Player({ session, setSession, lang, bookmarks, toggleBookmark, onFinish
       </div>
       <div className="dock"><div className="row">
         <button className="ghost dockPrev" disabled={idx === 0} onClick={() => setIdx(i => i - 1)}>{t.prev}</button>
-        <button className="ghost" onClick={() => setShowPal(true)} title={lang === 'hi' ? 'प्रश्न पैलेट' : 'Question palette'}>▦</button>
+        <button className="ghost" onClick={() => setShowPal(true)} title={lang === 'hi' ? 'प्रश्न पैलेट' : 'Question palette'} aria-label={lang === 'hi' ? 'प्रश्न पैलेट' : 'Question palette'}><IcGrid size={16} /></button>
         <button className="primary dockNext" onClick={nextQ}>{idx < session.questions.length - 1 ? t.next : (session.mode === 'mock' ? t.submit : t.finish)}</button>
       </div></div>
       {toast && <div className="toast" role="status" aria-live="polite">{toast}</div>}
@@ -563,7 +577,7 @@ function Player({ session, setSession, lang, bookmarks, toggleBookmark, onFinish
   )
 }
 
-function Result({ session, lang, onRecord, onHome, onRetry }) {
+function Result({ session, lang, onRecord, onHome, onRetry, onErrorReview }) {
   const t = T(lang)
   const r = scoreSession(session)
   const conf = session.config
@@ -625,6 +639,7 @@ function Result({ session, lang, onRecord, onHome, onRetry }) {
       </div>}
       <div className="dock"><div className="row">
         <button className="ghost" onClick={onRetry}>{lang === 'hi' ? 'फिर से करें' : 'Retry'}</button>
+        {wrongQs.length > 0 && <button className="ghost" onClick={onErrorReview}>{lang === 'hi' ? `एरर रिव्यू (${wrongQs.length})` : `Review errors (${wrongQs.length})`}</button>}
         <button className="primary big dockNext" onClick={onHome}>{lang === 'hi' ? 'होम पर जाएँ' : 'Go Home'}</button>
       </div></div>
     </div>

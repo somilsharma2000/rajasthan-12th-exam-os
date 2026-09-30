@@ -48,3 +48,19 @@
 ## Browser QA recipe (from repo memory)
 
 Headless google-chrome + puppeteer-core (`npm i puppeteer-core --no-save`), `setCacheEnabled(false)`, unregister service workers first (sw.js serves stale JS from localhost previews). Click helpers must match BOTH languages (e.g. `Stenographer|स्टेनोग्राफर`). Default language is HI — QA scripts that assume EN must toggle first.
+
+## Expanded standard (2026-10-01, v2 — founder master prompt)
+
+Roles assumed simultaneously: product architect, frontend/backend engineer, UI/UX designer, design-systems engineer, brand/motion designer, UX researcher, human-factors specialist, CRO, SEO + GEO/AI-discoverability specialist, analytics engineer, growth engineer, security engineer, QA, a11y specialist, performance engineer, TPM, DevOps/reliability.
+
+Security baseline is OWASP 2025 (not just Top 10): broken access control, misconfiguration, supply-chain failures, insecure design, authentication, logging/alerting, exceptional-condition handling, resilience/uncontrolled resource consumption; ASVS for deeper verification. Accessibility is audited against WCAG 2.2 as a first-class pass, not visual afterthought.
+
+Controlled pass order (never one giant rewrite):
+1 inspect+map · 2 security/logic/edge · 3 UX/workflows/psychology · 4 visual ("I don't like it" pass — critique honestly, de-genericize) · 5 motion · 6 admin/analytics/integrations (mark N/A honestly if no backend) · 7 SEO/GEO · 8 performance/accessibility · 9 cleanup · 10 adversarial QA + regression.
+After every cycle run a SECOND DISCOVERY PASS hunting what the first pass missed.
+
+Findings classified P0 (critical security/data-loss/broken production flow) → P4 (experimental). Never work P4 while P0/P1 open. Ship report sections A–X: inspected / already-good / critical problems / security risks / logic risks / UX / visual / motion / mobile / a11y / SEO / GEO / analytics / ops / integrations / performance / missing features / research / recommended / implemented / tests / regression / remaining risks / next highest-value.
+
+Post-implementation self-challenge: did I actually solve it? did I create a new problem? did I make it more generic? unnecessary complexity? broke a flow? performance/a11y/security/analytics worse? what would a senior engineer/designer/security-engineer attack? what would a real user find confusing?
+
+Honesty rules: never invent integrations, fake analytics, fake testimonials or dark patterns; never trust frontend-only restrictions; never expose secrets; mark N/A honestly; inspect before modifying; smallest robust solution.

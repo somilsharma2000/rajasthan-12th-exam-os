@@ -90,7 +90,7 @@ export default function Coach({ lang, context, onClose }) {
               : 'Coach not configured. This app runs without a backend, so the AI key must stay behind a serverless proxy (code: serverless/ai-coach-worker.js in the repo). Paste your proxy URL:'}</p>
             <div className="row">
               <input className="coachInput" placeholder="https://…workers.dev" value={draftEp} onChange={e => setDraftEp(e.target.value)} />
-              <button className="primary" onClick={() => { if (draftEp.startsWith('https://')) { localStorage.setItem(LS_EP, draftEp); setEndpoint(draftEp) } }}>{hi ? 'सेव' : 'Save'}</button>
+              <button className="primary" onClick={() => { if (draftEp.startsWith('https://')) { try { localStorage.setItem(LS_EP, draftEp); setEndpoint(draftEp) } catch {} } }}>{hi ? 'सेव' : 'Save'}</button>
             </div>
           </div>
         ) : (
