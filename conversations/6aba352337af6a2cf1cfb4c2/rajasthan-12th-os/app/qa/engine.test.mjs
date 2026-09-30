@@ -1,0 +1,49 @@
+// ENGINE UNIT TESTS — pure functions, node only (no browser needed).
+// Run: npm test   (part of the release gate; see docs/QA-MASTER-PROMPT.md module 20_TESTING)
+import { buildSession, scoreSession, fmtTime, availableQuestions, shuffle } from '../src/engine.js'
+import assert from 'node:assert'
+
+// shapes mirror the real bank: q.answer is a number; pattern carries scoring config
+const PATTERN = { totalQuestions: 10, durationMin: 10, marksPerQuestion: 1, negative: { wrong: '1/3' }, fifthOptionRule: { enabled: false } }
+const EXAM = { id: 'test-exam', name: { hi: 'ट', en: 'T' }, subjects: ['gk'], pattern: PATTERN }
+const mkQ = (id, correct, n = 4) => ({ id, subject: 'gk', options: { hi: Array(n).fill('o'), en: Array(n).fill('o') }, answer: correct, verification: 'VERIFIED', provenance: { level: 'VERIFIED', evidence: 'PYQ', source: 'unit-test' } })
+const Q5 = [mkQ('q1', 0), mkQ('q2', 1), mkQ('q3', 2), mkQ('q4', 3), mkQ('q5', 0)]
+
+// 1. scoreSession basics + negative marking (1 correct +1, 1 wrong -1/3 → 0.67)
+const r = scoreSession({ mode: 'mock', config: EXAM, questions: Q5, answers: { q1: { choice: 0 }, q2: { choice: 0 }, q3: { choice: null } } })
+assert.equal(r.correct, 1); assert.equal(r.wrong, 1); assert.equal(r.attempted, 2)
+assert.ok(Math.abs(r.score - 0.67) < 0.011, 'score ' + r.score)
+
+// 2. 'none' penalty mode: wrong costs nothing
+const rn = scoreSession({ mode: 'mock', config: { ...EXAM, pattern: { ...PATTERN, negative: { wrong: 'none' } } }, questions: Q5, answers: { q1: { choice: 1 }, q2: { choice: 1 } } })
+assert.ok(Math.abs(rn.score - 1) < 1e-9, 'no-penalty: only correct counts, ' + rn.score)
+
+// 3. 1/4 penalty
+const rq = scoreSession({ mode: 'mock', config: { ...EXAM, pattern: { ...PATTERN, negative: { wrong: '1/4' } } }, questions: Q5, answers: { q1: { choice: 1 } } })
+assert.ok(Math.abs(rq.score + 0.25) < 1e-9, 'quarter penalty ' + rq.score)
+
+// 4. E-rule (5th option): blank without E penalized; with E safe; disqualification threshold
+const E_EXAM = { ...EXAM, pattern: { ...PATTERN, marksPerQuestion: 1, fifthOptionRule: { enabled: true, disqualificationThreshold: 0.7 } } }
+const re = scoreSession({ mode: 'mock', config: E_EXAM, questions: Q5, answers: { q1: { choice: 0 }, q2: { choice: null, markedE: true }, q3: { choice: null, markedE: true }, q4: { choice: null, markedE: true }, q5: { choice: null, markedE: true } } })
+assert.equal(re.blankWithoutE, 0); assert.ok(Math.abs(re.score - 1) < 1e-9, 'E-rule safe blanks, ' + re.score)
+assert.equal(re.disqualified, false)
+const rd = scoreSession({ mode: 'mock', config: E_EXAM, questions: Q5, answers: { q1: { choice: 0 } } })
+assert.equal(rd.blankWithoutE, 4, 'all blanks counted'); assert.equal(rd.disqualified, true, '4/5=0.8 > 0.7 → DQ')
+
+// 5. fmtTime
+assert.equal(fmtTime(0), '00:00'); assert.equal(fmtTime(65 * 1000), '01:05'); assert.equal(fmtTime(75 * 60000), '1:15:00') // >1h formats as h:mm:ss
+
+// 6. buildSession: count cap, no duplicates, scaled duration floor of 5 min
+const bs = buildSession(EXAM, Q5, 'mock', 'hi', 3)
+assert.ok(bs.questions.length <= 3)
+assert.equal(new Set(bs.questions.map(q => q.id)).size, bs.questions.length)
+assert.equal(bs.durationMin, 5, 'scaled to 5-min floor')
+
+// 7. availableQuestions + shuffle integrity
+assert.equal(availableQuestions(Q5, { ...EXAM, subjects: ['gk'] }).length, 5)
+const arr = [1, 2, 3, 4, 5]
+const sh = shuffle(arr)
+assert.equal(arr.length, 5)
+assert.equal([...sh].sort((a, b) => a - b).join(), '1,2,3,4,5')
+
+console.log('engine tests: ALL PASS (7 groups)')

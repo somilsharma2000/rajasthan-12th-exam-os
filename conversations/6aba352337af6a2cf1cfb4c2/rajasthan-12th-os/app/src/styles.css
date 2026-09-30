@@ -32,6 +32,8 @@
   --r-sm: 10px; --r: 12px; --r-lg: 16px; --r-xl: 20px;
   /* legacy aliases (typing/coach css) — defined so borders/fills render */
   --bd: var(--border); --pr: var(--violet); --pr-tx: #fff;
+  /* semantic additions (token audit 2026-10-01): danger + violet-alpha fill */
+  --danger: #e11d48; --violet-bg: rgba(124, 58, 237, .2);
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -72,7 +74,7 @@ button {
   background: var(--elev); color: var(--tx); cursor: pointer;
   transition: background .15s, transform .12s, border-color .15s;
 }
-button:active { background: #26262B; transform: scale(.98); }
+button:active { background: var(--elev); transform: scale(.98); }
 button:disabled { opacity: .35; pointer-events: none; }
 .primary {
   background: var(--violet); color: #fff; font-weight: 600;

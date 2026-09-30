@@ -74,6 +74,9 @@ export default function App() {
   const [exam, setExam] = useState(null)
   const [session, setSession] = useState(null)
   const [resumable, setResumable] = useState(null)
+  const [appToast, setAppToast] = useState('')
+  const appToastTimer = useRef(null)
+  const toastApp = (msg) => { setAppToast(msg); clearTimeout(appToastTimer.current); appToastTimer.current = setTimeout(() => setAppToast(''), 3000) }
   const [bms, setBms] = useState([])
   useEffect(() => { setBms(loadBM()) }, [])
   // ROUTING (audit F2): browser Back must not silently exit the app mid-session.
@@ -116,13 +119,28 @@ export default function App() {
       accuracy: r.accuracy, correct: r.correct, wrong: r.wrong, total: r.total
     })
   }
-  useEffect(() => { const a = loadActive(); if (a && a.ids && a.ids.length) setResumable(a) }, [])
+  useEffect(() => {
+    // Validate BEFORE offering resume: reject unknown exam, expired timer, empty ids (state-audit 2026-10-01)
+    const a = loadActive()
+    if (a && a.ids && a.ids.length) {
+      const ex = EXAMS.find(e => e.id === a.examId)
+      const durMs = (ex?.pattern?.durationMin || 0) * 60000
+      const expired = durMs > 0 && (a.elapsedMs || 0) >= durMs
+      if (ex && !expired) setResumable(a)
+      else clearActive() // stale/corrupt state silently cleaned, fresh start offered
+    }
+  }, [])
   const resumeMock = async () => {
     const ex = EXAMS.find(e => e.id === resumable.examId)
     if (!ex) { clearActive(); setResumable(null); return }
     const b = await ensureBank()
     const byId = Object.fromEntries(b.ALL_QUESTIONS.map(q => [q.id, q]))
     const questions = resumable.ids.map(id => byId[id]).filter(Boolean)
+    if (!questions.length) { // ids no longer in bank (stale snapshot) — never enter Player with empty questions
+      clearActive(); setResumable(null)
+      toastApp(lang === 'hi' ? 'यह सत्र अमान्य हो गया — नया टेस्ट शुरू करें' : 'Session invalid — start a fresh test')
+      return
+    }
     // Resume from REMAINING time: rebuild startedAt from saved active-elapsed so backgrounded/sleep time is not counted (fixes instant auto-submit)
     setSession({ examId: ex.id, mode: 'mock', lang, questions, answers: resumable.answers || {}, startedAt: Date.now() - (resumable.elapsedMs || 0), submitted: false, config: ex })
     setResumable(null); setScreen('player')
@@ -290,6 +308,7 @@ export default function App() {
       </div>
       <p className="note">{VERSION_NOTE[lang]}</p>
       <p className="note">{lang === 'hi' ? 'सत्यापित प्रश्न-बैंक' : 'Verified question bank'}: {BANK_META.shippable} ({lang === 'hi' ? 'असत्यापित कभी शामिल नहीं' : 'unverified never included'}) · {SHELF.map(s => s.name[lang]).join(' · ')}</p>
+      {appToast && <div className="toast" role="status" aria-live="polite">{appToast}</div>}
     </div>
   )
 }
@@ -353,6 +372,11 @@ function ErrorBook({ lang, onHome, onPractice }) {
 }
 
 function Progress({ lang, onHome }) {
+  const [confirmWipe, setConfirmWipe] = useState(false)
+  const wipeAll = () => {
+    try { ['examos-history', 'examos-bookmarks', 'examos-error-book', 'examos-active-mock', 'examos-typing-history', 'examos-coach-usage', 'examos-errlog'].forEach(k => localStorage.removeItem(k)) } catch {}
+    location.reload()
+  }
   const hist = loadHist()
   const t = T(lang)
   const mocks = hist.length
@@ -379,6 +403,21 @@ function Progress({ lang, onHome }) {
             <div key={h.key} className="listRow"><b>{h.examName}</b> <div>{new Date(h.date).toLocaleDateString('hi-IN')} · {h.score}/{h.max} · {h.accuracy}%</div></div>
           ))}
         </div>}
+        <p className="sectionTitle" style={{ marginTop: 28 }}>{lang === 'hi' ? 'डेटा' : 'Data'}</p>
+        <div className="row" style={{ marginTop: 0 }}>
+          <button className="danger" onClick={() => setConfirmWipe(true)}>{lang === 'hi' ? 'सारा डेटा मिटाएँ' : 'Clear all data'}</button>
+        </div>
+        {confirmWipe && (
+          <div className="scrim" onClick={() => setConfirmWipe(false)}>
+            <div className="modal" onClick={e => e.stopPropagation()}>
+              <p style={{ margin: '0 0 14px' }}>{lang === 'hi' ? 'पक्का? इससे इतिहास, बुकमार्क, एरर बुक, टाइपिंग स्कोर और सेव सत्र — सब हमेशा के लिए मिट जाएंगे।' : 'Sure? History, bookmarks, error book, typing scores and any saved session will be permanently deleted.'}</p>
+              <div className="row"><div className="row" style={{ flex: 1 }}>
+                <button className="ghost" onClick={() => setConfirmWipe(false)}>{lang === 'hi' ? 'रद्द करें' : 'Cancel'}</button>
+                <button className="danger" onClick={wipeAll}>{lang === 'hi' ? 'हाँ, मिटाएँ' : 'Yes, delete'}</button>
+              </div></div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   )

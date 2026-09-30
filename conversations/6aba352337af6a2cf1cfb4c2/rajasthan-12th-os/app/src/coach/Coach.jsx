@@ -99,7 +99,7 @@ export default function Coach({ lang, context, onClose }) {
               {msgs.length === 0 && <p className="note">{hi ? 'प्रश्न के बारे में पूछें — कोच को पूरा प्रश्न, विकल्प और व्याख्या दिख रही है।' : 'Ask about this question — the coach sees the full question, options and explanation.'}</p>}
               {msgs.map((m, i) => <div key={i} className={'coachMsg ' + (m.role === 'user' ? 'me' : '')}>{m.text}</div>)}
               {busy && <div className="note">{hi ? 'सोच रहा है…' : 'Thinking…'}</div>}
-              {err && <div className="note" style={{ color: '#e11d48' }}>{err}</div>}
+              {err && <div className="note" style={{ color: 'var(--danger)' }}>{err}</div>}
             </div>
             <div className="row" style={{ marginTop: 10 }}>
               <input className="coachInput" value={input} onChange={e => setInput(e.target.value)}
@@ -108,7 +108,7 @@ export default function Coach({ lang, context, onClose }) {
                 disabled={used >= DAILY_CAP} />
               <button className="primary" onClick={send} disabled={busy || used >= DAILY_CAP || !input.trim()}>{hi ? 'भेजें' : 'Send'}</button>
             </div>
-            {used >= DAILY_CAP && <p className="note" style={{ color: '#e11d48' }}>{hi ? 'आज की सीमा पूरी हो गई। कल फिर पूछें।' : 'Daily limit reached. Come back tomorrow.'}</p>}
+            {used >= DAILY_CAP && <p className="note" style={{ color: 'var(--danger)' }}>{hi ? 'आज की सीमा पूरी हो गई। कल फिर पूछें।' : 'Daily limit reached. Come back tomorrow.'}</p>}
           </>
         )}
       </div>

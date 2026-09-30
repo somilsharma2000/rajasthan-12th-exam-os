@@ -66,7 +66,7 @@ export default function TypingTest({ lang, onHome }) {
         <p className="note">{lang === 'hi'
           ? 'लिपिक ग्रेड-II / कनिष्ठ सहायक / आशुलिपिक की द्वितीय चरण की प्रणाली: प्रति घंटा 8000 कुंजी-अंकन की गति। अंक = (20/8000) × शुद्ध KDPH, अधिकतम 25। न्यूनतम उत्तीर्ण 9 अंक।'
           : 'LDC / Junior Assistant / Stenographer Phase-II standard: 8000 key depressions per hour. Marks = (20/8000) x Net KDPH, max 25. Qualifying: 9 marks.'}</p>
-        <p className="note" style={{ color: 'var(--danger, #e11d48)' }}>{lang === 'hi'
+        <p className="note" style={{ color: 'var(--danger)' }}>{lang === 'hi'
           ? 'मोबाइल टच कीबोर्ड से स्पीड टेस्ट असंभव है — डेस्कटॉप या OTG/USB कीबोर्ड उपयोग करें।'
           : 'Speed test requires a physical keyboard — use desktop or attach a USB/OTG keyboard.'}</p>
       </div>
@@ -103,7 +103,7 @@ export default function TypingTest({ lang, onHome }) {
       <TopBar title={lang === 'hi' ? 'टाइपिंग परिणाम' : 'Typing Result'} onHome={onHome} lang={lang} />
       <div className="featured">
         <div className="head"><h2>{r.marks}/25 {lang === 'hi' ? 'अंक' : 'marks'}</h2>
-          <span className={r.qualifying ? 'trust' : ''} style={r.qualifying ? {} : { color: '#e11d48' }}>{r.qualifying ? (lang === 'hi' ? '✓ उत्तीर्ण (36%)' : '✓ Qualifying (36%)') : (lang === 'hi' ? '✗ अनुत्तीर्ण' : '✗ Not qualifying')}</span></div>
+          <span className={r.qualifying ? 'trust' : ''} style={r.qualifying ? {} : { color: 'var(--danger)' }}>{r.qualifying ? (lang === 'hi' ? '✓ उत्तीर्ण (36%)' : '✓ Qualifying (36%)') : (lang === 'hi' ? '✗ अनुत्तीर्ण' : '✗ Not qualifying')}</span></div>
         <div className="stats">
           <div className="stat"><b>{r.netKdph}</b><span>{lang === 'hi' ? 'शुद्ध KDPH (लक्ष्य 8000)' : 'Net KDPH (target 8000)'}</span></div>
           <div className="stat"><b>{r.grossKdph}</b><span>{lang === 'hi' ? 'सकल KDPH' : 'Gross KDPH'}</span></div>
@@ -117,7 +117,7 @@ export default function TypingTest({ lang, onHome }) {
         <p className="sectionTitle" style={{ marginTop: 0 }}>{lang === 'hi' ? 'शब्द-स्तरीय समीक्षा' : 'Word-level review'}</p>
         <div style={{ lineHeight: 1.9 }}>
           {diffWords(typed, passage.text).slice(0, 120).map((w, i) => (
-            <span key={i} style={{ color: w.ok ? 'var(--tx-2, #9aa0a6)' : '#e11d48', textDecoration: w.ok ? 'none' : 'underline' }}>
+            <span key={i} style={{ color: w.ok ? 'var(--tx2)' : 'var(--danger)', textDecoration: w.ok ? 'none' : 'underline' }}>
               {(w.typed !== undefined ? w.typed : '␣') }{' '}
             </span>
           ))}
@@ -144,7 +144,7 @@ export default function TypingTest({ lang, onHome }) {
       </div>
       <div className="card" style={{ maxHeight: '38vh', overflowY: 'auto', lineHeight: 2, fontSize: 15 }}>
         {highlight
-          ? words.map((w, i) => <span key={i} style={i === typedWordCount ? { background: '#7C3AED33', borderRadius: 3 } : {}}>{w} </span>)
+          ? words.map((w, i) => <span key={i} style={i === typedWordCount ? { background: 'var(--violet-bg)', borderRadius: 3 } : {}}>{w} </span>)
           : passage.text}
       </div>
       <textarea
