@@ -1,0 +1,632 @@
+[
+  {
+    "term": "CEN (Centralised Employment Notice)",
+    "category": "EXAM_PROCESS",
+    "definition": "The official recruitment advertisement published by Indian Railways announcing vacancies, eligibility, and exam rules across all Railway Recruitment Boards.",
+    "student_note": "Always check the CEN number to ensure you are downloading official notices and syllabus for your specific exam batch."
+  },
+  {
+    "term": "Notification",
+    "category": "EXAM_PROCESS",
+    "definition": "The official document containing complete information about job vacancies, eligibility criteria, exam scheme, syllabus, and application instructions.",
+    "student_note": "Read the detailed notification carefully before applying to verify age limits, educational qualifications, and post preferences."
+  },
+  {
+    "term": "Application Status",
+    "category": "EXAM_PROCESS",
+    "definition": "An online status update provided by RRB showing whether your application has been accepted or provisionally rejected.",
+    "student_note": "Check your status as soon as the link opens so you can address any issues during the correction window if allowed."
+  },
+  {
+    "term": "Application Fee",
+    "category": "EXAM_PROCESS",
+    "definition": "The mandatory fee paid online while submitting the RRB application form, which differs by candidate category.",
+    "student_note": "A major portion of this fee is refunded to candidates who actually appear for the CBT-1 exam."
+  },
+  {
+    "term": "Fee Refund",
+    "category": "EXAM_PROCESS",
+    "definition": "The partial reimbursement of the application fee credited back to the candidate's bank account after attending CBT-1.",
+    "student_note": "Ensure you provide accurate bank details during application so your refund is processed smoothly."
+  },
+  {
+    "term": "One-Time Registration (OTR)",
+    "category": "EXAM_PROCESS",
+    "definition": "A central profile creation system where candidates store basic details and credentials once for multiple recruitment notifications.",
+    "student_note": "Keep your OTR login credentials and registered mobile number safe as they will be required for all future RRB forms."
+  },
+  {
+    "term": "Admit Card / E-Call Letter",
+    "category": "EXAM_PROCESS",
+    "definition": "An official hall ticket issued online by RRB that grants entry to the exam hall and details your roll number, venue, shift, and timing.",
+    "student_note": "Download and print your call letter 4 days prior to your exam date and carry a original photo ID."
+  },
+  {
+    "term": "Exam City Intimation Slip",
+    "category": "EXAM_PROCESS",
+    "definition": "An advance notification released about 10 days before the exam informing you of your exam city, state, and test date.",
+    "student_note": "Use this slip to book travel and lodging arrangements well before the final call letter is released."
+  },
+  {
+    "term": "Travel Pass (Free SC/ST Travel Authority)",
+    "category": "EXAM_PROCESS",
+    "definition": "A free railway travel pass issued to eligible SC/ST candidates along with the city intimation slip for appearing in the exam.",
+    "student_note": "Carry your original caste certificate along with the travel pass while traveling by train to the exam venue."
+  },
+  {
+    "term": "Exam Date",
+    "category": "EXAM_PROCESS",
+    "definition": "The specific calendar date scheduled by RRB for a candidate to take the Computer Based Test.",
+    "student_note": "Plan your final revision strategy around your allotted date to maintain peak readiness."
+  },
+  {
+    "term": "Exam Shift",
+    "category": "EXAM_PROCESS",
+    "definition": "The specific slot of the day (e.g., Shift 1 Morning, Shift 2 Afternoon) assigned to a candidate for taking the exam.",
+    "student_note": "Arrive at the exam center at least 1 hour before the reporting time mentioned for your shift."
+  },
+  {
+    "term": "Reporting Time",
+    "category": "EXAM_PROCESS",
+    "definition": "The exact time by which candidates must reach the examination center for identity check and biometric registration.",
+    "student_note": "Gates close strictly at the designated time, after which no entry is permitted under any circumstances."
+  },
+  {
+    "term": "Biometric Verification",
+    "category": "EXAM_PROCESS",
+    "definition": "An electronic identity check collecting fingerprint impressions and digital photographs at the exam center.",
+    "student_note": "Ensure your fingers are clean and free of ink or henna on the exam day to avoid scanning errors."
+  },
+  {
+    "term": "Modification Window",
+    "category": "EXAM_PROCESS",
+    "definition": "A specific period granted by RRB after application closure to edit non-critical details in your application form for a nominal fee.",
+    "student_note": "Use this window immediately if you discover minor typing errors in your submitted details."
+  },
+  {
+    "term": "Scribe Facility",
+    "category": "EXAM_PROCESS",
+    "definition": "An assistant facility permitted for Persons with Benchmark Disabilities (PwBD) who require assistance in operating the computer or reading.",
+    "student_note": "Submit required medical declarations and scribe details in advance according to notification rules."
+  },
+  {
+    "term": "Provisional Appointment Letter",
+    "category": "EXAM_PROCESS",
+    "definition": "An initial offer of appointment issued to empaneled candidates subject to final background, character, and document verification.",
+    "student_note": "Keep all original certificates and character documents ready as joining depends on their final verification."
+  },
+  {
+    "term": "Document Verification (DV)",
+    "category": "EXAM_PROCESS",
+    "definition": "The stage where shortlisted candidates present their original educational certificates, caste certificates, and identity proofs for validation.",
+    "student_note": "Ensure your name and date of birth match exactly across 10th/12th marksheets and identity cards."
+  },
+  {
+    "term": "Medical Examination",
+    "category": "EXAM_PROCESS",
+    "definition": "A comprehensive physical and clinical health check conducted by Railway medical authorities to ensure fitness for the post.",
+    "student_note": "Different posts require specific vision standards, so check your eye power against the required medical grade."
+  },
+  {
+    "term": "Medical Standard (A-2, A-3, B-2, C-1)",
+    "category": "EXAM_PROCESS",
+    "definition": "Grades of physical and visual fitness specified by Indian Railways for different post categories.",
+    "student_note": "Posts with safety duties require strict vision tests without eyeglasses, while clerk posts allow glasses."
+  },
+  {
+    "term": "Typing Skill Test (TST)",
+    "category": "EXAM_PROCESS",
+    "definition": "A qualifying practical exam assessing typing speed in English (30 wpm) or Hindi (25 wpm) on a computer for typing posts.",
+    "student_note": "Regular daily typing practice is necessary because marks are not added to final merit, but qualifying is mandatory."
+  },
+  {
+    "term": "Computer Based Aptitude Test (CBAT)",
+    "category": "EXAM_PROCESS",
+    "definition": "A psychological and aptitude assessment designed to evaluate speed, spatial orientation, and decision-making for posts like Station Master.",
+    "student_note": "You must qualify in each test battery of CBAT separately with a minimum T-score."
+  },
+  {
+    "term": "Empanelment",
+    "category": "EXAM_PROCESS",
+    "definition": "The process of placing successful candidates on the official list recommended to railway zones for appointment.",
+    "student_note": "Once empaneled, candidates receive joining instructions directly from the respective zonal railway headquarters."
+  },
+  {
+    "term": "Provisional Panel",
+    "category": "EXAM_PROCESS",
+    "definition": "A merit-wise list of shortlisted candidates published by RRB prior to final post allocation and joining formalities.",
+    "student_note": "Your rank in the panel determines your seniority and allocation within the railway zone."
+  },
+  {
+    "term": "Waiting List / Standby List",
+    "category": "EXAM_PROCESS",
+    "definition": "A reserve candidate pool maintained to fill vacancies arising if empaneled candidates fail to join or report.",
+    "student_note": "VERIFY"
+  },
+  {
+    "term": "CBT-1 (First Stage Computer Based Test)",
+    "category": "PAPER_PATTERN",
+    "definition": "The initial screening examination consisting of objective MCQs on General Awareness, Mathematics, and Reasoning.",
+    "student_note": "CBT-1 is qualifying in nature for shortlisting candidates for CBT-2, but high scores build confidence."
+  },
+  {
+    "term": "CBT-2 (Second Stage Computer Based Test)",
+    "category": "PAPER_PATTERN",
+    "definition": "The second level computer-based exam with a higher difficulty level and question count used directly for final merit ranking.",
+    "student_note": "Your score in CBT-2 determines whether you reach typing tests, aptitude tests, or direct document verification."
+  },
+  {
+    "term": "Negative Marking (1/3rd)",
+    "category": "PAPER_PATTERN",
+    "definition": "A penalty system where one-third (0.33) of the marks assigned to a question are deducted for every incorrect response.",
+    "student_note": "Avoid blind guessing; 3 wrong answers completely cancel out 1 correct answer."
+  },
+  {
+    "term": "MCQ (Multiple Choice Question)",
+    "category": "PAPER_PATTERN",
+    "definition": "A test item format presenting a question stem along with four alternative answer options from which one must be selected.",
+    "student_note": "Use elimination techniques to rule out obviously wrong options quickly."
+  },
+  {
+    "term": "Option Marking",
+    "category": "PAPER_PATTERN",
+    "definition": "The act of selecting a radio button corresponding to your chosen answer option on the digital exam interface.",
+    "student_note": "Always click 'Save & Next' after marking an option to ensure your selection is recorded."
+  },
+  {
+    "term": "Save and Next",
+    "category": "PAPER_PATTERN",
+    "definition": "The interface button used to submit your selected answer for a question and proceed to the next item.",
+    "student_note": "Unsaved responses are not evaluated, so always confirm before moving ahead."
+  },
+  {
+    "term": "Mark for Review",
+    "category": "PAPER_PATTERN",
+    "definition": "A feature that flags a question so you can re-examine it later during the examination.",
+    "student_note": "Remember that flagged questions with marked options may be evaluated depending on the specific exam software rules."
+  },
+  {
+    "term": "Response Sheet",
+    "category": "PAPER_PATTERN",
+    "definition": "An official candidate copy released after the exam displaying your chosen answers alongside the test questions.",
+    "student_note": "Cross-check your response sheet with the official answer key to calculate your estimated raw score."
+  },
+  {
+    "term": "Answer Key",
+    "category": "PAPER_PATTERN",
+    "definition": "The official document published by RRB listing the correct answers for all questions in all exam shifts.",
+    "student_note": "Compare your attempted options with this key during the challenge window."
+  },
+  {
+    "term": "Provisional Answer Key",
+    "category": "PAPER_PATTERN",
+    "definition": "The initial answer key released for public viewing and candidate objections prior to final evaluation.",
+    "student_note": "Review it immediately to identify any genuine errors in RRB's official answers."
+  },
+  {
+    "term": "Final Answer Key",
+    "category": "PAPER_PATTERN",
+    "definition": "The revised official answer key published after considering all candidate objections, used for final evaluation.",
+    "student_note": "No further objections or changes are entertained after the final key is declared."
+  },
+  {
+    "term": "Objection Window",
+    "category": "PAPER_PATTERN",
+    "definition": "A limited period provided by RRB for candidates to challenge wrong questions or incorrect answer keys online.",
+    "student_note": "Submit clear documentary proof for valid objections before the closing date."
+  },
+  {
+    "term": "Representation Fee",
+    "category": "PAPER_PATTERN",
+    "definition": "A fee charged per question challenged during the objection window, which is refunded if the challenge is upheld.",
+    "student_note": "Challenge only clear errors with valid standard references to ensure a refund."
+  },
+  {
+    "term": "Question Paper Level",
+    "category": "PAPER_PATTERN",
+    "definition": "The standard of academic difficulty and depth tailored to 10th, 12th (Undergraduate), or Graduate eligibility requirements.",
+    "student_note": "Undergraduate NTPC papers focus on Class 10/12 level concepts in Math and Reasoning."
+  },
+  {
+    "term": "Undergraduate Posts (10+2 Level)",
+    "category": "PAPER_PATTERN",
+    "definition": "NTPC post categories requiring a minimum educational qualification of Higher Secondary (10+2) or equivalent.",
+    "student_note": "Includes posts like Junior Clerk, Accounts Clerk, Trains Clerk, and Commercial cum Ticket Clerk."
+  },
+  {
+    "term": "Difficulty Level",
+    "category": "PAPER_PATTERN",
+    "definition": "The relative complexity of questions in a shift, categorized as easy, moderate, or hard.",
+    "student_note": "Shift difficulty variation is balanced out later through the normalization process."
+  },
+  {
+    "term": "Attempt",
+    "category": "PAPER_PATTERN",
+    "definition": "A question for which a candidate has selected an answer option and saved it during the exam.",
+    "student_note": "Focus on high-accuracy attempts rather than rushing to maximize total question count."
+  },
+  {
+    "term": "Unattempted Question",
+    "category": "PAPER_PATTERN",
+    "definition": "A test question left unanswered or unselected by the candidate during the exam duration.",
+    "student_note": "Unattempted questions carry zero marks and incur no negative marking penalty."
+  },
+  {
+    "term": "Test Duration",
+    "category": "PAPER_PATTERN",
+    "definition": "The total time allocated to complete the examination, typically 90 minutes for standard RRB CBTs (120 minutes for PwBD).",
+    "student_note": "Pace yourself to allocate around 45-50 seconds per question on average."
+  },
+  {
+    "term": "Question Palette",
+    "category": "PAPER_PATTERN",
+    "definition": "An onscreen grid showing color-coded status indicators for answered, unanswered, and flagged questions.",
+    "student_note": "Use the palette to quickly jump between questions and monitor your overall attempt status."
+  },
+  {
+    "term": "Free Navigation",
+    "category": "PAPER_PATTERN",
+    "definition": "The ability to switch freely between different test sections and questions at any time during the test duration.",
+    "student_note": "Start with your strongest subject first to build speed and score early points."
+  },
+  {
+    "term": "RRB (Railway Recruitment Board)",
+    "category": "RRB_SYSTEM",
+    "definition": "A government organization under Indian Railways responsible for recruiting Group C non-technical staff across various regional divisions.",
+    "student_note": "India has 21 operational RRBs, and you apply specifically to one RRB region during recruitment."
+  },
+  {
+    "term": "RRC (Railway Recruitment Cell)",
+    "category": "RRB_SYSTEM",
+    "definition": "A railway recruitment body operating at zonal headquarters primarily handling Group D recruitments and internal promotions.",
+    "student_note": "Distinguish between RRB (Group C/NTPC) and RRC (Group D / Level 1) notifications when applying."
+  },
+  {
+    "term": "Railway Board",
+    "category": "RRB_SYSTEM",
+    "definition": "The apex administrative body heading the Ministry of Railways that decides recruitment policies, vacancies, and service conditions.",
+    "student_note": "All national railway exam rules and notification approvals originate from the Railway Board."
+  },
+  {
+    "term": "Ministry of Railways",
+    "category": "RRB_SYSTEM",
+    "definition": "The Indian government ministry controlling the state-owned rail network and governing body of Indian Railways.",
+    "student_note": "RRB jobs are central government employment offers under the Ministry of Railways."
+  },
+  {
+    "term": "Railway Zones",
+    "category": "RRB_SYSTEM",
+    "definition": "Administrative divisions of Indian Railways (such as Northern Railway, Western Railway, or Eastern Railway) managing local network operations.",
+    "student_note": "Your chosen RRB decides the primary railway zone where you will be posted upon selection."
+  },
+  {
+    "term": "Railway Divisions",
+    "category": "RRB_SYSTEM",
+    "definition": "Smaller operational units under each Railway Zone responsible for section-level administration and train operations.",
+    "student_note": "After zonal allocation, candidates are posted to specific divisions within that zone."
+  },
+  {
+    "term": "Group C Posts",
+    "category": "RRB_SYSTEM",
+    "definition": "Non-gazetted supervisory, clerical, technical, and operational cadres in Indian Railways recruited through RRB NTPC and ALP.",
+    "student_note": "All NTPC Undergraduate posts belong to Group C service cadre."
+  },
+  {
+    "term": "Group D Posts",
+    "category": "RRB_SYSTEM",
+    "definition": "Level-1 entry cadre operational posts in railways such as Track Maintainer, Helper, and Assistant Pointsman managed by RRC.",
+    "student_note": "Group D is separate from NTPC, requiring 10th pass or ITI qualifications."
+  },
+  {
+    "term": "NTPC (Non-Technical Popular Categories)",
+    "category": "RRB_SYSTEM",
+    "definition": "A major recruitment drive for non-technical railway posts across clerical, commercial, traffic, and station management cadres.",
+    "student_note": "NTPC offers both 10+2 (Undergraduate) and Graduate entry level career paths in railways."
+  },
+  {
+    "term": "Junior Clerk cum Typist",
+    "category": "RRB_SYSTEM",
+    "definition": "An NTPC Undergraduate (10+2) clerical post in Pay Level 2 responsible for office correspondence, filing, and record maintenance.",
+    "student_note": "Requires clearing the computer typing skill test after CBT-2."
+  },
+  {
+    "term": "Accounts Clerk cum Typist",
+    "category": "RRB_SYSTEM",
+    "definition": "An NTPC Undergraduate (10+2) post in Pay Level 2 handling financial accounts, ledger entries, and bookkeeping in railway offices.",
+    "student_note": "A clerical post in the accounts department requiring a computer typing test."
+  },
+  {
+    "term": "Junior Time Keeper",
+    "category": "RRB_SYSTEM",
+    "definition": "An NTPC Undergraduate (10+2) post in Pay Level 2 handling time registers, shift records, and operational timetables.",
+    "student_note": "Requires a typing test and offers office-based work hours."
+  },
+  {
+    "term": "Trains Clerk",
+    "category": "RRB_SYSTEM",
+    "definition": "An NTPC Undergraduate (10+2) operational post in Pay Level 2 recording train movements, wagon numbers, and yard data.",
+    "student_note": "Does not require a typing skill test; selection is directly based on CBT-2 score."
+  },
+  {
+    "term": "Commercial cum Ticket Clerk",
+    "category": "RRB_SYSTEM",
+    "definition": "An NTPC Undergraduate (10+2) post in Pay Level 3 handling ticket issuing, booking counters, luggage, and passenger assistance.",
+    "student_note": "Pay Level 3 post with high vacancy count; no typing skill test required."
+  },
+  {
+    "term": "Goods Guard (Goods Train Manager)",
+    "category": "RRB_SYSTEM",
+    "definition": "An NTPC post responsible for train safety, brake operation, and movement of freight trains.",
+    "student_note": "VERIFY"
+  },
+  {
+    "term": "Station Master",
+    "category": "RRB_SYSTEM",
+    "definition": "An NTPC post in charge of overall station management, signaling, and safe train passage.",
+    "student_note": "VERIFY"
+  },
+  {
+    "term": "Pay Level",
+    "category": "RRB_SYSTEM",
+    "definition": "The basic pay scale matrix level under the 7th CPC determining standard salary bands for government jobs.",
+    "student_note": "NTPC UG posts generally fall under Pay Level 2 and Pay Level 3."
+  },
+  {
+    "term": "7th CPC (Central Pay Commission)",
+    "category": "RRB_SYSTEM",
+    "definition": "The government commission that structured current pay scales, allowances, and benefits for central government employees.",
+    "student_note": "Determines basic pay standards, allowance percentages, and annual increments."
+  },
+  {
+    "term": "Basic Pay",
+    "category": "RRB_SYSTEM",
+    "definition": "The core starting salary fixed for a specific pay level before adding allowances or deducting taxes and pensions.",
+    "student_note": "Level 2 basic pay starts at Rs. 19,900 and Level 3 starts at Rs. 21,700."
+  },
+  {
+    "term": "Gross Salary",
+    "category": "RRB_SYSTEM",
+    "definition": "The total monthly pay computed by adding all applicable allowances (DA, HRA, TA) to the basic pay.",
+    "student_note": "Gross salary is significantly higher than basic pay depending on your posted city category."
+  },
+  {
+    "term": "Net Salary (In-hand Salary)",
+    "category": "RRB_SYSTEM",
+    "definition": "The actual amount credited to your bank account monthly after mandatory deductions like NPS, professional tax, and insurance.",
+    "student_note": "In-hand salary equals gross salary minus mandatory monthly deductions."
+  },
+  {
+    "term": "Allowances (DA, HRA, TA)",
+    "category": "RRB_SYSTEM",
+    "definition": "Additional monthly allowances paid above basic pay including Dearness Allowance, House Rent Allowance, and Transport Allowance.",
+    "student_note": "HRA varies by city class (X, Y, Z), while DA is periodically revised for inflation."
+  },
+  {
+    "term": "Raw Score",
+    "category": "RESULT_PROCESS",
+    "definition": "The initial candidate score calculated directly by adding marks for correct answers and subtracting negative marks for wrong answers.",
+    "student_note": "Calculated as: (Correct Answers × 1) - (Wrong Answers × 0.33)."
+  },
+  {
+    "term": "Normalized Score",
+    "category": "RESULT_PROCESS",
+    "definition": "A statistical score calculated across multiple exam shifts to equalize variations in question paper difficulty levels.",
+    "student_note": "Your normalized score determines your qualification for CBT-2 and final ranking."
+  },
+  {
+    "term": "Percentile Score",
+    "category": "RESULT_PROCESS",
+    "definition": "A relative score indicating the percentage of candidates in a shift who scored equal to or lower than your score.",
+    "student_note": "Used in some exam sessions to compare performance fairly across different shifts."
+  },
+  {
+    "term": "Scorecard",
+    "category": "RESULT_PROCESS",
+    "definition": "An official digital performance document showing raw marks, normalized score, category status, and shortlisting result.",
+    "student_note": "Log in with your registration number and date of birth to download your scorecard."
+  },
+  {
+    "term": "Minimum Qualifying Marks",
+    "category": "RESULT_PROCESS",
+    "definition": "The baseline percentage of marks set by RRB required to be eligible for selection consideration (e.g., UR 40%, OBC/SC 30%, ST 25%).",
+    "student_note": "Scoring above qualifying percentage is mandatory, but final shortlisting depends on merit cutoff."
+  },
+  {
+    "term": "Category-wise Cutoff",
+    "category": "RESULT_PROCESS",
+    "definition": "The minimum normalized score required by candidates in each social category (UR, OBC, SC, ST, EWS) to qualify for the next stage.",
+    "student_note": "Cutoffs vary significantly by RRB zone based on vacancy count and candidate competition."
+  },
+  {
+    "term": "Community Reservation (UR/OBC/SC/ST/EWS)",
+    "category": "RESULT_PROCESS",
+    "definition": "Statutory reservation of seats allotted to specific social categories as per Central Government norms.",
+    "student_note": "Ensure you possess a valid central format caste certificate issued before the prescribed cut-off date."
+  },
+  {
+    "term": "Horizontal Reservation (PwBD/Ex-Servicemen)",
+    "category": "RESULT_PROCESS",
+    "definition": "Special category reservations provided across all vertical communities for PwBD candidates and Ex-Servicemen.",
+    "student_note": "Horizontal quotas are filled from within respective vertical categories (UR, OBC, SC, ST)."
+  },
+  {
+    "term": "Merit List",
+    "category": "RESULT_PROCESS",
+    "definition": "A rank-ordered list of candidates arranged according to normalized scores obtained in CBT-2.",
+    "student_note": "Higher merit rank increases your chances of securing your top-preferred post."
+  },
+  {
+    "term": "Shortlisting Ratio",
+    "category": "RESULT_PROCESS",
+    "definition": "The multiple of total vacancies used by RRB to call candidates for subsequent stages (e.g., 20 times for CBT-2, 8 times for skill test).",
+    "student_note": "VERIFY"
+  },
+  {
+    "term": "Tie-Breaking Rule",
+    "category": "RESULT_PROCESS",
+    "definition": "The established RRB criteria used to resolve identical normalized scores between two or more candidates.",
+    "student_note": "VERIFY"
+  },
+  {
+    "term": "Final Selection List",
+    "category": "RESULT_PROCESS",
+    "definition": "The authoritative list of candidates selected for appointment after passing CBTs, skill tests, DV, and medical exams.",
+    "student_note": "Selection in this list guarantees appointment subject to successful joining verification."
+  },
+  {
+    "term": "Rejection List",
+    "category": "RESULT_PROCESS",
+    "definition": "A published list of candidate applications disqualified due to invalid photograph, signature, duplicate submission, or eligibility failure.",
+    "student_note": "Check this list if your admit card is not generated during candidate download cycles."
+  },
+  {
+    "term": "Post Preference",
+    "category": "RESULT_PROCESS",
+    "definition": "The order of job preference submitted by candidates in their application form among all eligible NTPC posts.",
+    "student_note": "Fill post preferences wisely as allocation is strictly based on your merit rank and submitted preference order."
+  },
+  {
+    "term": "Zone Preference",
+    "category": "RESULT_PROCESS",
+    "definition": "The selection of a specific regional RRB zone made at the time of application submission.",
+    "student_note": "You cannot change your RRB zone preference once the application submission is finalized."
+  },
+  {
+    "term": "Merit Position",
+    "category": "RESULT_PROCESS",
+    "definition": "An individual candidate's numerical rank in the overall combined performance list across the RRB zone.",
+    "student_note": "Your merit position determines whether you get your 1st post choice or a lower preference."
+  },
+  {
+    "term": "Normalized Cutoff Score",
+    "category": "RESULT_PROCESS",
+    "definition": "The lowest normalized score among shortlisted candidates in a particular category for a given post.",
+    "student_note": "Compare your normalized score directly against this cutoff to verify qualification."
+  },
+  {
+    "term": "Provisional Selection",
+    "category": "RESULT_PROCESS",
+    "definition": "A conditional qualification status subject to clearing identity, medical, and document validation phases.",
+    "student_note": "Maintain your original documents in good condition until final onboarding."
+  },
+  {
+    "term": "Community Cutoff",
+    "category": "RESULT_PROCESS",
+    "definition": "The specific qualifying score mark established for candidates belonging to a designated reserved community.",
+    "student_note": "Reserved community candidates clearing UR cutoff on merit without concessions are counted against UR vacancies."
+  },
+  {
+    "term": "PYQ (Previous Year Question)",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "Actual exam questions from past RRB NTPC papers used to understand question patterns, topic weightage, and difficulty.",
+    "student_note": "Solving PYQs is the single most effective way to grasp official exam question trends."
+  },
+  {
+    "term": "Mock Test",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "A simulated full-length exam designed to replicate real CBT timing, interface, and difficulty conditions.",
+    "student_note": "Take mock tests regularly under timed conditions to build exam temperament and endurance."
+  },
+  {
+    "term": "Full-Length Test (FLT)",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "A complete practice paper covering all sections with full question count and standard exam duration.",
+    "student_note": "Use FLTs in the final weeks before exam to refine your section attempt strategy."
+  },
+  {
+    "term": "Syllabus",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "The official list of topics and subjects prescribed by RRB for Mathematics, Reasoning, and General Awareness.",
+    "student_note": "Keep a printed syllabus handy and mark off topics as you complete them."
+  },
+  {
+    "term": "Topic-wise Test",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "A focused practice quiz targeting a single concept or chapter (e.g., Profit & Loss or Coding-Decoding).",
+    "student_note": "Attempt topic tests immediately after learning a concept to lock in understanding."
+  },
+  {
+    "term": "Sectional Test",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "A targeted test covering one complete subject section of the exam, such as General Science or Quantitative Aptitude.",
+    "student_note": "Helps strengthen subject-specific speed and spot section weaknesses."
+  },
+  {
+    "term": "Revision",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "The structured process of re-studying short notes, formulas, and key facts to reinforce memory prior to the exam.",
+    "student_note": "Reserve the final 10 days before the exam exclusively for revision and light mock tests."
+  },
+  {
+    "term": "Error Book / Error Log",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "A personalized notebook where a student records mistakes, unattempted questions, and tricky formulas from mock tests.",
+    "student_note": "Review your error book daily so you never repeat the same mistake in the real exam."
+  },
+  {
+    "term": "Error Analysis",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "The habit of post-test review to categorize errors into conceptual gaps, silly mistakes, or time pressure errors.",
+    "student_note": "Spending 30 minutes analyzing a mock test is more valuable than blindly taking another test."
+  },
+  {
+    "term": "Speed Test",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "A short timed drill aimed at increasing calculation speed and quick question recognition.",
+    "student_note": "Use speed tests for basic math calculations, tables, squares, and cubes."
+  },
+  {
+    "term": "Accuracy Rate",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "The proportion of correct answers out of total attempted questions, expressed as a percentage.",
+    "student_note": "Aim for an accuracy rate above 85-90% to minimize loss from negative marking."
+  },
+  {
+    "term": "Time Management",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "The strategic allocation of exam time across different test sections and questions to maximize net score.",
+    "student_note": "Never spend more than 1 minute on any single tricky reasoning puzzle or math problem."
+  },
+  {
+    "term": "General Awareness",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "The exam section testing current affairs, Indian history, polity, geography, economics, and general science.",
+    "student_note": "This section carries 40 marks in CBT-1 and 50 marks in CBT-2, making it a key score booster."
+  },
+  {
+    "term": "Mathematics (Quantitative Aptitude)",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "The exam section evaluating numerical ability, arithmetic, algebra, geometry, trigonometry, and data interpretation.",
+    "student_note": "Master basic concepts first before learning shortcut formulas and tricks."
+  },
+  {
+    "term": "General Intelligence & Reasoning",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "The section testing logical reasoning, analogies, syllogisms, coding-decoding, and pattern identification.",
+    "student_note": "Reasoning is generally high-scoring, so aim for near-100% accuracy here."
+  },
+  {
+    "term": "Elimination Technique",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "A problem-solving strategy of identifying and discarding impossible or illogical options to find the right answer.",
+    "student_note": "Even if you are uncertain of the answer, eliminating 2 options doubles your chance of guessing correctly."
+  },
+  {
+    "term": "Target Score",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "A pre-calculated goal score set by a student based on previous year cutoff trends for their target zone.",
+    "student_note": "Set your target score 5-10 marks above last year's cutoff to build a comfortable safe margin."
+  },
+  {
+    "term": "Formula Sheet",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "A concise summary sheet of essential mathematical formulas, identities, and shortcut rules.",
+    "student_note": "Revise your formula sheet every morning during the final 2 weeks before the exam."
+  },
+  {
+    "term": "Current Affairs",
+    "category": "GENERAL_ACADEMIC",
+    "definition": "Events of national and international importance, achievements, awards, appointments, and sports news from the past 6-12 months.",
+    "student_note": "Focus on the last 6 months of current affairs prior to your exam month for maximum question overlap."
+  }
+]

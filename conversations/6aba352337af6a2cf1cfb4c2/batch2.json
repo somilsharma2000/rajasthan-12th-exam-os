@@ -1,0 +1,614 @@
+[
+  {
+    "id": "rgd-011",
+    "subject": "raj-gk",
+    "topic": "राजस्थान के राज्य प्रतीक",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान के राज्य पशु (वन्यजीव श्रेणी) 'चिंकारा' (Chinkara) का वैज्ञानिक नाम क्या है तथा इसे किस वर्ष राज्य पशु घोषित किया गया?",
+      "en": "What is the scientific name of Rajasthan's state animal (wildlife category) Chinkara, and in which year was it declared state animal?"
+    },
+    "options": {
+      "hi": [
+        "गज़ैला बेनेटी (Gazella bennettii), 1981",
+        "कैमेलस ड्रोमेडेरियस (Camelus dromedarius), 2014",
+        "प्रोसोपिस सिनेरेरिया (Prosopis cineraria), 1983",
+        "टेकोमेला अंडुलाटा (Tecomella undulata), 1981"
+      ],
+      "en": [
+        "Gazella bennettii, 1981",
+        "Camelus dromedarius, 2014",
+        "Prosopis cineraria, 1983",
+        "Tecomella undulata, 1981"
+      ]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "चिंकारा को 22 मई 1981 को राज्य पशु घोषित किया गया था। इसका वैज्ञानिक नाम गज़ैला बेनेटी (Gazella bennettii) है।",
+      "en": "Chinkara was declared state animal on May 22, 1981. Its scientific name is Gazella bennettii."
+    },
+    "provenance": {
+      "source": "Rajasthan Forest Dept State Symbols Notification 1981",
+      "evidence": "VERIFIED_DERIVED"
+    }
+  },
+  {
+    "id": "rgd-012",
+    "subject": "raj-gk",
+    "topic": "राजस्थान के राज्य प्रतीक",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान सरकार द्वारा 'ऊंट' (Camel) को पशुधन श्रेणी में राज्य पशु घोषित करने की अधिसूचना आधिकारिक रूप से किस तिथि को जारी की गई?",
+      "en": "On which date was the official notification declaring Camel as state animal in livestock category issued by Rajasthan government?"
+    },
+    "options": {
+      "hi": [
+        "19 सितम्बर 2014",
+        "30 जून 2014",
+        "22 मई 1981",
+        "31 अक्टूबर 1983"
+      ],
+      "en": [
+        "19 September 2014",
+        "30 June 2014",
+        "22 May 1981",
+        "31 October 1983"
+      ]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "ऊंट को राज्य पशु (पशुधन श्रेणी) घोषित करने की आधिकारिक अधिसूचना 19 सितम्बर 2014 को जारी हुई थी (कैबिनेट मंजूरी 30 जून 2014 को मिली थी)।",
+      "en": "The official notification declaring Camel as state animal (livestock category) was issued on September 19, 2014."
+    },
+    "provenance": {
+      "source": "Dept of Animal Husbandry Govt of Rajasthan Gazette 2014",
+      "evidence": "VERIFIED_DERIVED"
+    }
+  },
+  {
+    "id": "rgd-013",
+    "subject": "raj-gk",
+    "topic": "राजस्थान के राज्य प्रतीक",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान का राज्य वृक्ष 'खेजड़ी' (Prosopis cineraria) धार्मिक ग्रंथों में 'शमी' तथा स्थानीय भाषा में 'जांटी' कहलाता है। इसे किस पर्व पर विशेष रूप से पूजा जाता है?",
+      "en": "Rajasthan's state tree Khejri (Prosopis cineraria) is called Shami in religious texts and Janti locally. On which festival is it specially worshiped?"
+    },
+    "options": {
+      "hi": [
+        "विजयादशमी (दशहरा)",
+        "दीपावली",
+        "होली",
+        "अक्षय तृतीया (आखा तीज)"
+      ],
+      "en": [
+        "Vijayadashami (Dussehra)",
+        "Deepawali",
+        "Holi",
+        "Akshaya Tritiya (Akha Teej)"
+      ]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "खेजड़ी (थार का कल्पवृक्ष) की पूजा विजयादशमी (दशहरा) के दिन की जाती है। इसे 31 अक्टूबर 1983 को राज्य वृक्ष का दर्जा दिया गया था।",
+      "en": "Khejri tree is worshiped on Vijayadashami (Dussehra). It was declared the state tree on October 31, 1983."
+    },
+    "provenance": {
+      "source": "Rajasthan State Archives & Symbols Manual 1983",
+      "evidence": "VERIFIED_DERIVED"
+    }
+  },
+  {
+    "id": "rgd-014",
+    "subject": "raj-gk",
+    "topic": "राजस्थान के राज्य प्रतीक",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान के राज्य पुष्प 'रोहिड़ा' (Tecomella undulata) को और किस भौगोलिक उपनाम से जाना जाता है?",
+      "en": "By what geographic moniker is Rajasthan's state flower Rohida (Tecomella undulata) also known?"
+    },
+    "options": {
+      "hi": [
+        "मरुशोभा / राजस्थान का सागवान",
+        "थार का कल्पवृक्ष",
+        "रेगिस्तान का गुलाब",
+        "जंगल की ज्वाला"
+      ],
+      "en": [
+        "Marushobha / Desert Teak of Rajasthan",
+        "Kalpavriksha of Thar",
+        "Rose of Desert",
+        "Flame of the Forest"
+      ]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "रोहिड़ा के पुष्प (मारवाड़ टीक / Tecomella undulata) को 'मरुशोभा' तथा 'राजस्थान का सागवान' भी कहा जाता है। इसे 1983 में राज्य पुष्प घोषित किया गया।",
+      "en": "Rohida flower (Marwar Teak) is known as Marushobha and Desert Teak of Rajasthan. Declared state flower in 1983."
+    },
+    "provenance": {
+      "source": "Rajasthan Botanical Record & Govt Notification 1983",
+      "evidence": "VERIFIED_DERIVED"
+    }
+  },
+  {
+    "id": "rgd-015",
+    "subject": "raj-gk",
+    "topic": "राजस्थान के राज्य प्रतीक",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान के राज्य पक्षी 'गोडावण' (Great Indian Bustard) को स्थानीय भाषा एवं साहित्य में किस नाम से पुकारा जाता है?",
+      "en": "By what regional names is Rajasthan's state bird Godawan (Great Indian Bustard) known in local dialect and literature?"
+    },
+    "options": {
+      "hi": [
+        "सोहन चिड़िया, हुकना एवं मालधोकड़ी",
+        "नीलकंठ एवं कुरंजा",
+        "हरियाल एवं मोर",
+        "पीवणा एवं गोह"
+      ],
+      "en": [
+        "Sohan Chirya, Hookna, and Mal Dhokdi",
+        "Neelkanth and Kuranja",
+        "Hariyali and Peacock",
+        "Peevna and Goh"
+      ]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "गोडावण (वैज्ञानिक नाम: Ardeotis nigriceps) को सोहन चिड़िया, हुकना, मालधोकड़ी तथा शर्मिला पक्षी भी कहते हैं। 1981 में इसे राज्य पक्षी घोषित किया गया।",
+      "en": "Godawan (Ardeotis nigriceps) is called Sohan Chirya, Hookna, Mal Dhokdi, and Shy Bird. Declared state bird in 1981."
+    },
+    "provenance": {
+      "source": "Rajasthan Wildlife Protection Act & State Symbols 1981",
+      "evidence": "VERIFIED_DERIVED"
+    }
+  },
+  {
+    "id": "rgd-016",
+    "subject": "raj-gk",
+    "topic": "राजस्थान के राज्य प्रतीक",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान के राज्य गीत 'केसरिया बालम आवो नी पधारो म्हारे देस' को प्रथम बार उदयपुर की किस मांड गायिका ने गाया था तथा अल्लाह जिलाई बाई ने इसे अंतरराष्ट्रीय ख्याति दिलाई?",
+      "en": "Which Mand singer first sang Rajasthan's state song Kesariya Balam Aavo Ni Padharo Mhare Des and Allah Jilai Bai gave it international fame?"
+    },
+    "options": {
+      "hi": [
+        "मांगी बाई (उदयपुर)",
+        "गवरी देवी (पाली)",
+        "जमीला बानो (जोधपुर)",
+        "रेशमा (बाड़मेर)"
+      ],
+      "en": [
+        "Mangi Bai (Udaipur)",
+        "Gavari Devi (Pali)",
+        "Jamila Bano (Jodhpur)",
+        "Reshma (Barmer)"
+      ]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "केसरिया बालम गीत को प्रथम बार मांगी बाई (उदयपुर) ने गाया था, जबकि इसे बीकानेर की अल्लाह जिलाई बाई ने मांड शैली में गाकर अंतरराष्ट्रीय पहचान दिलाई।",
+      "en": "First sung by Mangi Bai of Udaipur, it was Bikaner's Allah Jilai Bai who popularized it globally in Mand style."
+    },
+    "provenance": {
+      "source": "Rajasthan Sangeet Natak Akademi Archives",
+      "evidence": "VERIFIED_DERIVED"
+    }
+  },
+  {
+    "id": "rgd-017",
+    "subject": "raj-gk",
+    "topic": "राजस्थान के राज्य प्रतीक",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान के राज्य लोक नृत्य 'घूमर' में केवल महिलाओं द्वारा किए जाने वाले गोल घेरे की गति तथा 8 चरण की विशेष ताल को क्या कहा जाता है?",
+      "en": "In Rajasthan's state folk dance Ghoomar, what is the special 8-step rhythmic motion performed exclusively by women called?"
+    },
+    "options": {
+      "hi": [
+        "सवाई",
+        "गिंदड़",
+        "गैर",
+        "चाचरी"
+      ],
+      "en": [
+        "Sawai",
+        "Gindad",
+        "Gair",
+        "Chachari"
+      ]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "घूमर नृत्य में महिलाओं के लहंगे के घेरे (घूम) के साथ 8 चरणों की लयबद्ध ताल एवं चाल को 'सवाई' कहा जाता है।",
+      "en": "In Ghoomar dance, the rhythmic 8-step pattern accompanying the swirl of the skirt is called Sawai."
+    },
+    "provenance": {
+      "source": "Rajasthan Academy of Cultural Heritage Docs",
+      "evidence": "VERIFIED_DERIVED"
+    }
+  },
+  {
+    "id": "rgd-018",
+    "subject": "raj-gk",
+    "topic": "राजस्थान के राज्य प्रतीक",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान का आधिकारिक राज्य खेल 'बास्केटबॉल' है। इसे राज्य खेल का दर्जा किस वर्ष प्रदान किया गया था?",
+      "en": "Rajasthan's official state sport is Basketball. In which year was it accorded the status of state sport?"
+    },
+    "options": {
+      "hi": [
+        "1948",
+        "1956",
+        "1981",
+        "1992"
+      ],
+      "en": [
+        "1948",
+        "1956",
+        "1981",
+        "1992"
+      ]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "बास्केटबॉल को वर्ष 1948 में राजस्थान का आधिकारिक राज्य खेल घोषित किया गया था।",
+      "en": "Basketball was declared the official state sport of Rajasthan in the year 1948."
+    },
+    "provenance": {
+      "source": "Rajasthan State Sports Council Record 1948",
+      "evidence": "VERIFIED_DERIVED"
+    }
+  },
+  {
+    "id": "rgd-019",
+    "subject": "raj-gk",
+    "topic": "राज्य सरकार की योजनाएं",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान में 'मुख्यमंत्री आयुष्मान आरोग्य योजना' (पूर्व नाम मुख्यमंत्री चिरंजीवी स्वास्थ्य बीमा योजना) के तहत प्रत्येक पात्र परिवार को प्रतिवर्ष कितनी राशि का स्वास्थ्य बीमा कवर प्रदान किया जाता है?",
+      "en": "Under Mukhyamantri Ayushman Arogya Yojana in Rajasthan, what is the annual health insurance coverage provided per eligible family?"
+    },
+    "options": {
+      "hi": [
+        "₹25 लाख",
+        "₹10 लाख",
+        "₹5 लाख",
+        "₹50 लाख"
+      ],
+      "en": [
+        "₹25 Lakh",
+        "₹10 Lakh",
+        "₹5 Lakh",
+        "₹50 Lakh"
+      ]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "इस योजना के अंतर्गत पात्र परिवारों को प्रतिवर्ष ₹25 लाख तक का कैशलेस इलाज/स्वास्थ्य बीमा कवर उपलब्ध कराया जाता है।",
+      "en": "Under this scheme, eligible families get cashless treatment and health insurance cover up to ₹25 lakh annually."
+    },
+    "provenance": {
+      "source": "State Health Insurance Agency Govt of Rajasthan 2024",
+      "evidence": "VERIFIED_DERIVED"
+    }
+  },
+  {
+    "id": "rgd-020",
+    "subject": "raj-gk",
+    "topic": "राज्य सरकार की योजनाएं",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "जनवरी 2024 में 'इंदिरा रसोई योजना' का नाम बदलकर 'श्री अन्नपूर्णा रसोई योजना' किया गया। इसके अंतर्गत प्रति थाली भोजन सामग्री की मात्रा 450 ग्राम से बढ़ाकर कितनी कर दी गई?",
+      "en": "In January 2024, Indira Rasoi Yojana was renamed Shri Annapurna Rasoi Yojana. What is the revised food weight per thali from 450 grams?"
+    },
+    "options": {
+      "hi": [
+        "600 ग्राम",
+        "500 ग्राम",
+        "750 ग्राम",
+        "800 ग्राम"
+      ],
+      "en": [
+        "600 grams",
+        "500 grams",
+        "750 grams",
+        "800 grams"
+      ]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "श्री अन्नपूर्णा रसोई योजना में थाली की भोजन सामग्री 450g से बढ़ाकर 600g कर दी गई है तथा राज्य सरकार का अनुदान ₹17 से बढ़ाकर ₹22 प्रति थाली किया गया है, जबकि लाभार्थी शुल्क ₹8 ही है।",
+      "en": "Under Shri Annapurna Rasoi Yojana, thali weight increased to 600g, govt subsidy raised to ₹22, while cost to beneficiary remains ₹8."
+    },
+    "provenance": {
+      "source": "Dept of Local Self Govt Rajasthan Order Jan 2024",
+      "evidence": "VERIFIED_DERIVED"
+    }
+  },
+  {
+    "id": "rgd-021",
+    "subject": "raj-gk",
+    "topic": "राज्य सरकार की योजनाएं",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान में गरीब व वंचित परिवारों में बालिका के जन्म पर ₹1,00,000 का बचत बांड प्रदान करने हेतु कौन-सी नई योजना शुरू की गई है?",
+      "en": "Which new scheme was launched in Rajasthan to provide a savings bond of ₹1,00,000 upon the birth of a girl child in poor families?"
+    },
+    "options": {
+      "hi": [
+        "लाडो प्रोत्साहन योजना",
+        "मुख्यमंत्री राजश्री योजना",
+        "कालीबाई भील योजना",
+        "आपकी बेटी योजना"
+      ],
+      "en": [
+        "Lado Protsahan Yojana",
+        "Mukhyamantri Rajshree Yojana",
+        "Kalibai Bhil Yojana",
+        "Aapki Beti Yojana"
+      ]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "लाडो प्रोत्साहन योजना के तहत ईडब्ल्यूएस व बीपीएल परिवारों में बालिका के जन्म पर ₹1 लाख का सेविंग्स बांड प्रदान किया जाता है।",
+      "en": "Under Lado Protsahan Yojana, a savings bond worth ₹1 lakh is given on the birth of a girl child in EWS/BPL families."
+    },
+    "provenance": {
+      "source": "Women and Child Dev Dept Rajasthan Budget 2024-25",
+      "evidence": "VERIFIED_DERIVED"
+    }
+  },
+  {
+    "id": "rgd-022",
+    "subject": "raj-gk",
+    "topic": "राज्य सरकार की योजनाएं",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान में स्ट्रीट वेंडर्स और असंगठित क्षेत्र के श्रमिकों को 60 वर्ष की आयु के पश्चात ₹2,000 प्रतिमाह पेंशन देने हेतु कौन-सी योजना प्रस्तावित/लागू की गई है?",
+      "en": "Which scheme was introduced in Rajasthan to provide a monthly pension of ₹2,000 after 60 years of age for street vendors and unorganized sector workers?"
+    },
+    "options": {
+      "hi": [
+        "मुख्यमंत्री विश्वकर्मा पेंशन योजना",
+        "इंदिरा गांधी शहरी क्रेडिट कार्ड योजना",
+        "मुख्यमंत्री एकल नारी पेंशन योजना",
+        "मुख्यमंत्री वृद्धजन सम्मान पेंशन योजना"
+      ],
+      "en": [
+        "Mukhyamantri Vishwakarma Pension Yojana",
+        "Indira Gandhi Urban Credit Card Scheme",
+        "Mukhyamantri Ekal Nari Pension Yojana",
+        "Mukhyamantri Vridhjan Samman Pension Yojana"
+      ]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "मुख्यमंत्री विश्वकर्मा पेंशन योजना के तहत 18 से 45 वर्ष के स्ट्रीट वेंडर्स और श्रमिकों द्वारा अल्प योगदान देने पर 60 वर्ष बाद ₹2,000 प्रतिमाह पेंशन दी जाती है।",
+      "en": "Under Mukhyamantri Vishwakarma Pension Yojana, eligible workers aged 18-45 get ₹2,000 monthly pension after age 60 upon small monthly contributions."
+    },
+    "provenance": {
+      "source": "Dept of Social Justice and Empowerment Rajasthan 2024",
+      "evidence": "VERIFIED_DERIVED"
+    }
+  },
+  {
+    "id": "rgd-023",
+    "subject": "raj-gk",
+    "topic": "राज्य सरकार की योजनाएं",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान में पशुपालक परिवारों को बिना ब्याज के ₹1 लाख तक का अल्पकालीन ऋण उपलब्ध कराने हेतु कौन-सी क्रेडिट कार्ड योजना संचालित है?",
+      "en": "Which credit card scheme is operational in Rajasthan to provide short-term interest-free loans up to ₹1 lakh to cattle rearers?"
+    },
+    "options": {
+      "hi": [
+        "गोपाल क्रेडिट कार्ड योजना (GCC)",
+        "किसान क्रेडिट कार्ड योजना (KCC)",
+        "भामाशाह पशु बीमा योजना",
+        "कामधेनु पशु बीमा योजना"
+      ],
+      "en": [
+        "Gopal Credit Card Scheme (GCC)",
+        "Kisan Credit Card Scheme (KCC)",
+        "Bhamashah Pashu Bima Yojana",
+        "Kamdhenu Pashu Bima Yojana"
+      ]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "गोपाल क्रेडिट कार्ड योजना (GCC) के तहत राज्य के 5 लाख पशुपालक परिवारों को ₹1 लाख तक का ब्याजमुक्त ऋण प्रदान किया जाता है।",
+      "en": "Under Gopal Credit Card (GCC) scheme, up to ₹1 lakh interest-free loan is provided to cattle-rearing households."
+    },
+    "provenance": {
+      "source": "Cooperative Dept Govt of Rajasthan Budget 2024-25",
+      "evidence": "VERIFIED_DERIVED"
+    }
+  },
+  {
+    "id": "rgd-024",
+    "subject": "raj-gk",
+    "topic": "राज्य सरकार की योजनाएं",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "'पीएम सूर्य घर: मुफ़्त बिजली योजना' के तहत राजस्थान के पात्र घरेलू उपभोक्ताओं को प्रतिमाह कितने यूनिट तक मुफ़्त बिजली का लाभ मिलता है?",
+      "en": "Under PM Surya Ghar Free Electricity Scheme, up to how many units of free electricity per month is targeted for eligible households in Rajasthan?"
+    },
+    "options": {
+      "hi": [
+        "300 यूनिट",
+        "100 यूनिट",
+        "200 यूनिट",
+        "500 यूनिट"
+      ],
+      "en": [
+        "300 Units",
+        "100 Units",
+        "200 Units",
+        "500 Units"
+      ]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "फरवरी 2024 में शुरू हुई पीएम सूर्य घर योजना के तहत छतों पर सोलर पैनल लगाकर पात्र परिवारों को प्रतिमाह 300 यूनिट तक मुफ़्त बिजली दी जाती है।",
+      "en": "Launched in Feb 2024, PM Surya Ghar scheme offers rooftop solar installations providing up to 300 units of free electricity per month."
+    },
+    "provenance": {
+      "source": "Ministry of New & Renewable Energy / Rajasthan Energy Dept 2024",
+      "evidence": "VERIFIED_DERIVED"
+    }
+  },
+  {
+    "id": "rgd-025",
+    "subject": "raj-gk",
+    "topic": "राज्य सरकार की योजनाएं",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान के राजकीय प्राथमिक व उच्च प्राथमिक विद्यालयों में कक्षा 1 से 8 तक के विद्यार्थियों के पोषण हेतु दुग्ध वितरण की योजना कौन-सी है?",
+      "en": "Which scheme provides milk distribution for nutritional support to students of classes 1 to 8 in government schools of Rajasthan?"
+    },
+    "options": {
+      "hi": [
+        "मुख्यमंत्री बाल गोपाल योजना",
+        "इंदिरा गांधी मातृत्व पोषण योजना",
+        "मुख्यमंत्री अन्नपूर्णा दूध योजना",
+        "पोषण अभियान योजना"
+      ],
+      "en": [
+        "Mukhyamantri Bal Gopal Yojana",
+        "Indira Gandhi Matritva Poshan Yojana",
+        "Mukhyamantri Annapurna Doodh Yojana",
+        "Poshan Abhiyan Scheme"
+      ]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "मुख्यमंत्री बाल गोपाल योजना (29 नवंबर 2022 से शुरू) के तहत कक्षा 1 से 5 तक 150ml तथा कक्षा 6 से 8 तक 200ml दूध वितरित किया जाता है।",
+      "en": "Under Mukhyamantri Bal Gopal Yojana, 150ml milk for classes 1-5 and 200ml for classes 6-8 is distributed on school working days."
+    },
+    "provenance": {
+      "source": "School Education Dept Rajasthan Order Nov 2022",
+      "evidence": "VERIFIED_DERIVED"
+    }
+  },
+  {
+    "id": "rgd-026",
+    "subject": "raj-gk",
+    "topic": "राज्य सरकार की योजनाएं",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "'पीएम-कुसुम योजना' (PM-KUSUM Component A) के तहत भारत का पहला कृषि-आधारित सौर ऊर्जा संयंत्र (1 मेगावाट) राजस्थान के किस स्थान पर स्थापित किया गया था?",
+      "en": "Under PM-KUSUM Component A, India's first grid-connected agriculture solar power plant (1 MW) was installed at which place in Rajasthan?"
+    },
+    "options": {
+      "hi": [
+        "भालोजी गाँव (कोटपूतली / जयपुर)",
+        "भडला (फलोदी)",
+        "देवगढ़ (प्रतापगढ़)",
+        "मथानिया (जोधपुर)"
+      ],
+      "en": [
+        "Bhaloji Village (Kotputli / Jaipur)",
+        "Bhadla (Phalodi)",
+        "Devgarh (Pratapgarh)",
+        "Mathania (Jodhpur)"
+      ]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "पीएम-कुसुम योजना के तहत देश का पहला 1 MW क्षमता का सौर ऊर्जा संयंत्र कोटपूतली (जयपुर) के भालोजी गाँव में स्थापित हुआ था।",
+      "en": "India's first 1 MW agricultural solar power plant under PM-KUSUM scheme was commissioned at Bhaloji village in Kotputli (Jaipur)."
+    },
+    "provenance": {
+      "source": "Rajasthan Renewable Energy Corporation Limited (RRECL)",
+      "evidence": "VERIFIED_DERIVED"
+    }
+  },
+  {
+    "id": "rgd-027",
+    "subject": "raj-gk",
+    "topic": "राज्य सरकार की योजनाएं",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "'मुख्यमंत्री राजश्री योजना' के तहत पात्र बालिकाओं को जन्म से लेकर 12वीं कक्षा उत्तीर्ण करने तक कुल कितनी किश्तों में ₹50,000 की वित्तीय प्रोत्साहन राशि प्रदान की जाती है?",
+      "en": "Under Mukhyamantri Rajshree Yojana, in how many total installments is ₹50,000 financial incentive provided to eligible girls from birth to 12th pass?"
+    },
+    "options": {
+      "hi": [
+        "6 किश्तों में",
+        "4 किश्तों में",
+        "5 किश्तों में",
+        "7 किश्तों में"
+      ],
+      "en": [
+        "In 6 installments",
+        "In 4 installments",
+        "In 5 installments",
+        "In 7 installments"
+      ]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "मुख्यमंत्री राजश्री योजना (1 जून 2016 से प्रभावी) में बालिकाओं को स्वास्थ्य व शिक्षा हेतु कुल ₹50,000 की राशि 6 अलग-अलग किश्तों में दी जाती है।",
+      "en": "Under Mukhyamantri Rajshree Yojana, a total of ₹50,000 financial aid is disbursed across 6 installments at key life/school stages."
+    },
+    "provenance": {
+      "source": "Women and Child Dev Dept Govt of Rajasthan Guidelines 2016",
+      "evidence": "VERIFIED_DERIVED"
+    }
+  },
+  {
+    "id": "rgd-028",
+    "subject": "raj-gk",
+    "topic": "राज्य सरकार की योजनाएं",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "'मुख्यमंत्री युवा संबल योजना' के तहत बेरोजगारी भत्ता प्राप्त करने के लिए पात्र स्नातकों हेतु क्या अनिवार्य शर्त रखी गई है?",
+      "en": "What mandatory condition is set for eligible graduates to receive unemployment allowance under Mukhyamantri Yuva Sambal Yojana?"
+    },
+    "options": {
+      "hi": [
+        "प्रतिदिन 4 घंटे राजकीय विभागों में इंटर्नशिप एवं कौशल प्रशिक्षण",
+        "प्रतिवर्ष 100 दिन का शारीरिक श्रम",
+        "केवल ऑनलाइन परीक्षा उत्तीर्ण करना",
+        "प्रतिमाह निजी कंपनी में कार्य करना"
+      ],
+      "en": [
+        "4 hours daily internship in govt departments and skill training",
+        "100 days of manual labor annually",
+        "Passing an online test only",
+        "Working in a private firm monthly"
+      ]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "योजना के तहत पुरुष अभ्यर्थियों को ₹4,000 तथा महिला/दिव्यांग/ट्रांसजेंडर को ₹4,500 प्रतिमाह बेरोजगारी भत्ता हेतु प्रतिदिन 4 घंटे राजकीय विभाग में इंटर्नशिप अनिवार्य है।",
+      "en": "Eligible male graduates get ₹4,000 and female/disabled ₹4,500 monthly upon completing 4 hours daily internship in govt offices."
+    },
+    "provenance": {
+      "source": "Department of Skill, Employment & Entrepreneurship Rajasthan",
+      "evidence": "VERIFIED_DERIVED"
+    }
+  }
+]

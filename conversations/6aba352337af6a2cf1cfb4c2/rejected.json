@@ -1,0 +1,54 @@
+[
+  {
+    "url": "https://prepp.in/question/a-researcher-calculates-the-final-performance-scor-69da34508c0aae9bee82e2b9",
+    "reason": "Garbled/misplaced option text detected: ['Assignments (weight 40%)', 'Exams (weight 60%)', 'A student scores:', '75 in assignments']"
+  },
+  {
+    "url": "https://prepp.in/question/which-of-the-given-letter-number-clusters-will-rep-69da34508c0aae9bee82e2ba",
+    "reason": "Garbled/misplaced option text detected: ['MPW 30 HKR 25 CFM 20 XAH 15 ?', 'BYM 13', 'DLV 12', 'SVC 10']"
+  },
+  {
+    "url": "https://prepp.in/question/which-of-the-following-letter-number-clusters-will-69da34508c0aae9bee82e2bb",
+    "reason": "Garbled/misplaced option text detected: ['HAK 8, GYH 11, FWE 14, EUB 17, ?', 'DTA 21', 'DSY 20', 'DSX 20']"
+  },
+  {
+    "url": "https://prepp.in/question/which-of-the-following-letter-number-clusters-will-69d7474d3316a4fb788b5d6b",
+    "reason": "Garbled/misplaced option text detected: ['HGH 85 FEF 74 DCD 63 BAB 52 ?', 'ZXY 40', 'ZYZ 41', 'ZZY 41']"
+  },
+  {
+    "url": "https://prepp.in/question/which-of-the-following-letter-clusters-should-repl-69d7474d3316a4fb788b5d6c",
+    "reason": "Garbled/misplaced option text detected: ['# : RWU :: KPN : %', '# = TXY , % = JLM', '# = TYX , % = KLI', '# = SXV , % = JOM']"
+  },
+  {
+    "url": "https://prepp.in/question/what-percentage-of-the-workforce-in-india-was-self-687566cd8b66b7785f3cf173",
+    "reason": "Garbled/misplaced option text detected: ['52.6 %', '58.4 %', '48.2 %', '62.8 %']"
+  },
+  {
+    "url": "https://prepp.in/question/in-a-certain-code-language-a-b-means-a-is-the-moth-687566cd8b66b7785f3cf174",
+    "reason": "Correct answer string 'Wife's mother's father' could not be matched to options [\"'A + B' means 'A is the mother of B'\", \"'A - B' means 'A is the brother of B'\", \"'A x B' means 'A is the wife of B'\", \"'A ÷ B' means 'A is the father of B'\"]"
+  },
+  {
+    "url": "https://prepp.in/question/a-b-c-d-e-f-and-g-are-sitting-around-a-circular-ta-687566cd8b66b7785f3cf175",
+    "reason": "Garbled/misplaced option text detected: ['Only C sits between A and E. E sits third to the left of D. B sits to the immediate left of D. G is not an immediate neighbour of E.', 'How many people sit between C and G when counted from the right of C?', 'Four', 'Two']"
+  },
+  {
+    "url": "https://prepp.in/question/in-a-certain-code-language-pant-is-coded-as-6129-a-6872ba6927edd8c928b89f9a",
+    "reason": "Garbled/misplaced option text detected: [\"What is the code for 'E' in the given code language?\", '9', '6', '2']"
+  },
+  {
+    "url": "https://prepp.in/question/which-of-the-following-letter-number-clusters-will-68756a44568d57c5a21cf8cd",
+    "reason": "Garbled/misplaced option text detected: ['DJ26 EK37 FL48 GM59 ?', 'HM71', 'HN70', 'HM70']"
+  },
+  {
+    "url": "https://prepp.in/question/below-are-given-two-sets-of-numbers-in-each-set-of-69db57d4cb3dafb8115448e7",
+    "reason": "Garbled/misplaced option text detected: ['(NOTE: A two-/three-digit number cannot be broken into individual digits for operations, e.g. if 37 is followed by 10, the operation cannot be 3 + 7, as a two-digit number cannot be broken into individual digits.)', '50 – 10 – 5 – 15 ; 200 – 40 – 20 – 30', '160 – 40 – 20 – 30', '120 – 60 – 30 – 40']"
+  },
+  {
+    "url": "https://prepp.in/question/seven-boxes-a-b-c-d-e-f-and-g-are-kept-one-over-th-69d897f83316a4fb78eeb1a3",
+    "reason": "Garbled/misplaced option text detected: ['Only two boxes are kept below B. Only one box is kept above G. Only one box is kept between G and A. C is kept immediately above F. E is kept at some place below D.', 'How many boxes are kept below E?', '5', '2']"
+  },
+  {
+    "url": "https://prepp.in/question/the-marks-scored-by-100-students-in-mathematics-ex-69d62abef5a20fc1088a9ab8",
+    "reason": "No 'Solution' section found on page"
+  }
+]

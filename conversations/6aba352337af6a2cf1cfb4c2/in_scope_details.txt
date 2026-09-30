@@ -1,0 +1,425 @@
+=== Q8 ===
+Q: Vikram Sarabhai Space Centre is located at –
+Opts: ['Bengaluru', 'Thiruvananthapuram', 'Sriharikota', 'Hyderabad']
+Marked Ans: 1 -> Thiruvananthapuram
+
+=== Q9 ===
+Q: A coil of wire has an area of 600 sq cm and has 500 turns. If it carries 1.5 A current, its magnetic dipole moment is –
+Opts: ['10 Am 2', '15 Am 2', '30 Am 2', '45 Am 2']
+Marked Ans: 3 -> 45 Am 2
+
+=== Q10 ===
+Q: When the cornea is not spherical in shape, the defect of vision in this eye is called-
+Opts: ['Myopia', 'Hypermetropia', 'Astigmatism', 'Cataract']
+Marked Ans: 2 -> Astigmatism
+
+=== Q16 ===
+Q: Ethanoic acid reacts with carbonates to form-
+Opts: ['Salt, nitrogen dioxide and water only', 'Salt, carbon dioxide and water only', 'Salt, ethane and water only', 'Salt and water only']
+Marked Ans: 1 -> Salt, carbon dioxide and water only
+
+=== Q17 ===
+Q: The property of carbon which is responsible for the formation of long chains is called :
+Opts: ['Catenation', 'Sublimation', 'Carbonation', 'Hydrogenation']
+Marked Ans: 0 -> Catenation
+
+=== Q22 ===
+Q: Which of the following is the transistor’s capacity of the first microprocessor produced by Intel Corporation ?
+Opts: ['1700', '1800', '2300', '2700']
+Marked Ans: 2 -> 2300
+
+=== Q23 ===
+Q: Which of the following command of excel will take you to the next workbook window ?
+Opts: ['F6 / Shift + F6', 'Ctrl + Page Up', 'Ctrl + Shift + F6 / Tab', 'Ctrl + F6 / Tab']
+Marked Ans: 3 -> Ctrl + F6 / Tab
+
+=== Q24 ===
+Q: Which is the dialect of Kota, Bundi and Jhalawar region of Rajasthan ? (Choose the most appropriate option form below:)
+Opts: ['Wagadi', 'Malvi', 'Hadoti', 'Bhili']
+Marked Ans: 2 -> Hadoti
+
+=== Q25 ===
+Q: In Rajasthan Bichchiyo, Lalar, Nokhila and Shikhar are :-
+Opts: ['Folk Dramas', 'Folk Songs', 'Folk Dances', 'Playing Instruments']
+Marked Ans: 1 -> Folk Songs
+
+=== Q26 ===
+Q: Who is worshipped as a warrior with spear in hand, or as a snake demigod in Rajasthan ?
+Opts: ['Ramdevji', 'Gogaji', 'Pabu ji', 'Devnarayan ji']
+Marked Ans: 1 -> Gogaji
+
+=== Q31 ===
+Q: Out of 2000 employees in an office, 52% are graduates. 60% of the employees are male and 50% of the male employees are graduates. Then how many female employees are graduates ?
+Opts: ['410', '430', '440', '460']
+Marked Ans: 2 -> 440
+
+=== Q39 ===
+Q: ‘Pangong Tso’ lake is situated in which of the following sub divisions of the Himalayas ? (Choose the most appropriate option from below:)
+Opts: ['Himachal and Uttarakhand Himalayas', 'Darjiling and Sikkim Himalayas', 'Arunachal Himalayas', 'Kashmir/ Ladakh or Northwestern Himalayas']
+Marked Ans: 3 -> Kashmir/ Ladakh or Northwestern Himalayas
+
+=== Q40 ===
+Q: Which is not a function of the State Human Rights Commission ? (Choose the most appropriate option from below:)
+Opts: ['To undertake and promote research in the field of Human Rights.', 'To discourage the efforts of Non-Governmental Organizations working in the field of Human Rights.', 'To visit jails and study the living condition of inmates.', 'To spread human rights literacy among the people.']
+Marked Ans: 1 -> To discourage the efforts of Non-Governmental Organizations working in the field of Human Rights.
+
+=== Q41 ===
+Q: By which Indian Constitutional Amendment the ‘Gram Sabha’ has been given a Constitutional Status ?
+Opts: ['72 nd', '73 rd', '74 th', '75 th']
+Marked Ans: 1 -> 73 rd
+
+=== Q42 ===
+Q: Who can remove the Governor of a State ? (Choose the most appropriate from below:)
+Opts: ['Chief Justice of India', 'Chief Minister', 'President', 'Prime Minister']
+Marked Ans: 2 -> President
+
+=== Q46 ===
+Q: The Preamble of the Indian Constitution starts with the phrase :
+Opts: ['“We the people of India” …….', 'With the name of God ……', 'India a Sovereign, socialist ……', 'To secure all citizen of India ……']
+Marked Ans: 0 -> “We the people of India” …….
+
+=== Q47 ===
+Q: In 1983, which of the following Commission/ Committee was appointed by the Central Government to examine and review the Centre-State relations in all spheres and recommend appropriate changes ?
+Opts: ['Hanumanthaiya Commission', 'Sarkaria Commission', 'Rajamannar Committee', 'Ashok Mehta Commission']
+Marked Ans: 1 -> Sarkaria Commission
+
+=== Q48 ===
+Q: Chairman of Rajasthan Public Service Commission is appointed by which one of the following ?
+Opts: ['Chief Minister', 'Governor', 'Chief Justice of High Court', 'Chairman UPSC']
+Marked Ans: 1 -> Governor
+
+=== Q49 ===
+Q: Shri Lal Joshi, Phad artist, belongs to which place in Rajasthan ?
+Opts: ['Bhilwara', 'Jaipur', 'Sikar', 'Churu']
+Marked Ans: 0 -> Bhilwara
+
+=== Q50 ===
+Q: Select the incorrect statement in context of Bhils of Rajasthan and Govind Guru.
+Opts: ['For social and moral upliftment of the Bhils of Rajasthan, Govind Guru established the Samp Sabha.', 'To keep them in Hinduism he started the Bhagat Movement.', 'The Britishers felt that the objective of this social reform movement run by Govind Guru was the formation of a Bhil State.', 'He organised monthly meetings of Samp Sabha on the Managarh Hills.']
+Marked Ans: 3 -> He organised monthly meetings of Samp Sabha on the Managarh Hills.
+
+=== Q51 ===
+Q: The ancient name of Jaisalmer was _________ .
+Opts: ['Vagad', 'Mand', 'Hadoti', 'Shekhawati']
+Marked Ans: 1 -> Mand
+
+=== Q52 ===
+Q: Select the incorrect statement about subtropical mountain forests. (Choose the most appropriate option from below:)
+Opts: ['These forests are found only in Rajasthan and Uttar Pradesh.', 'Subtropical Mountain forests are found only in Mount Abu region in Rajasthan.', 'In these forests, greenery is available permanently.', 'These forests can be found in Sirohi which is situated in Rajasthan.']
+Marked Ans: 0 -> These forests are found only in Rajasthan and Uttar Pradesh.
+
+=== Q53 ===
+Q: Which of the following is the biggest geographical region (area wise) of Rajasthan ?
+Opts: ['Semi dry region', 'Aravali region', 'Western desert plain region', 'Eastern plain region']
+Marked Ans: 2 -> Western desert plain region
+
+=== Q54 ===
+Q: Which of the following Indian states/union territory has the highest number of wildlife sancturies ?
+Opts: ['Himachal Pradesh', 'West Bengal', 'Andaman and Nicobar Islands', 'Lakshadweep']
+Marked Ans: 2 -> Andaman and Nicobar Islands
+
+=== Q55 ===
+Q: What is Himalayan yew (Taxus Wallichiana) ?
+Opts: ['A type of Tribe', 'A type of soil which is found in Himalayan region', 'A folk song of Himachal Pradesh', 'A Medicinal tree']
+Marked Ans: 3 -> A Medicinal tree
+
+=== Q56 ===
+Q: Who became the second Indian to win a gold medal at the Asian Marathan Championship in 2024 ?
+Opts: ['Kartik Kumar', 'Srinu Bugatha', 'Man Singh', 'Gopi T']
+Marked Ans: 2 -> Man Singh
+
+=== Q57 ===
+Q: Which country has emerged as the world’s second largest producer of Mobile phones ?
+Opts: ['Vietnam', 'Germany', 'India', 'United States']
+Marked Ans: 2 -> India
+
+=== Q59 ===
+Q: Where is marble dumping yard in Rajasthan ?
+Opts: ['Kishangarh', 'Bundi', 'Kumbhalgarh', 'Bikaner']
+Marked Ans: 0 -> Kishangarh
+
+=== Q60 ===
+Q: Mukhyamantri Laghu Vanijyik Vahan Swarojgar Yojna in Rajasthan has been notified on :
+Opts: ['12 December 2021', '11 October 2022', '15 November 2023', '19 December 2023']
+Marked Ans: 1 -> 11 October 2022
+
+=== Q61 ===
+Q: As cited in the ancient text of Rajasthan that fort of Rajasthan where soldiers who were skilled in the planning and strategy of wars, lived in was called as – (Choose the most appropriate option from below:)
+Opts: ['Sahay Durg', 'Sainya Durg', 'Parikh Durg', 'Paaridh Durg']
+Marked Ans: 1 -> Sainya Durg
+
+=== Q62 ===
+Q: People of which Civilization buried their dead with jewellery and ornaments ?
+Opts: ['Gilund', 'Kalibangan', 'Ahad', 'Bagor']
+Marked Ans: 2 -> Ahad
+
+=== Q63 ===
+Q: Karpur Chand Kulish was the founder of which newspaper ?
+Opts: ['Dainik Jagran', 'Punjab Kesari', 'Rajasthan Kesari', 'Rajasthan Patrika']
+Marked Ans: 3 -> Rajasthan Patrika
+
+=== Q64 ===
+Q: Which of the following words has been added to the Preamble by the 42 th Constitutional Amendment ?
+Opts: ['Liberty', 'Equality', 'Integrity', 'Fraternity']
+Marked Ans: 2 -> Integrity
+
+=== Q65 ===
+Q: Which of the following is a violation of Fundamental Rights in India ? (Choose the most appropriate option from below:)
+Opts: ['Banning of tobacco products', 'Not paying minimum wages to workers', 'Banning the use of loudspeaker after 9 pm', 'Delivering a speech']
+Marked Ans: 1 -> Not paying minimum wages to workers
+
+=== Q66 ===
+Q: Which of the following is shortcut command for print in MS Office ?
+Opts: ['Alt + P', 'Shift + P', 'Ctrl + P', 'Alt + Ctrl + P']
+Marked Ans: 2 -> Ctrl + P
+
+=== Q68 ===
+Q: Select the most appropriately matched pair of crops.
+Opts: ['Wheat – Rabi – Sonara', 'Rice – Rabi – Basmati', 'Maize – Rabi – Vijay', 'Rice – Kharif – Shakti']
+Marked Ans: 0 -> Wheat – Rabi – Sonara
+
+=== Q69 ===
+Q: Who classified blood in different groups ?
+Opts: ['Edward Jenner', 'Karl Landsteiner', 'Louis Pasteur', 'Robert Koch']
+Marked Ans: 1 -> Karl Landsteiner
+
+=== Q70 ===
+Q: Which of the following antibody is found more in mother’s milk ?
+Opts: ['IgA', 'IgD', 'IgG', 'IgM']
+Marked Ans: 0 -> IgA
+
+=== Q71 ===
+Q: Match List-I with List-II : List-I (Deficiency disease (name)) List-II (Symptoms of the disease) (a) Pellagra (I) Memory loss (b) Beri-Beri (II) Weakness in muscles and nerves (c) Scurvy (III) Appearance of dry scales on tongue and skin (d) Riboflavinosis (IV) Bleeding from gums Choose the most appropriate answer from the options given below :
+Opts: ['a-III, b-II, c-IV, d-I', 'a-II, b-III, c-I, d-IV', 'a-IV, b-I, c-II, d-III', 'a-I, b-II, c-III, d-IV']
+Marked Ans: 0 -> a-III, b-II, c-IV, d-I
+
+=== Q73 ===
+Q: Which of the following storage device can store maximum amount of data ?
+Opts: ['Hard disk', 'Floppy disk', 'Compact disk', 'Optical disk']
+Marked Ans: 0 -> Hard disk
+
+=== Q74 ===
+Q: Which of the following is used for spell checking in excel ?
+Opts: ['F4', 'F5', 'F6', 'F7']
+Marked Ans: 3 -> F7
+
+=== Q75 ===
+Q: Which of the following function displays current system date in spreadsheet ?
+Opts: ['Today [ ]', 'Today ( )', 'Today { }', 'Today @']
+Marked Ans: 1 -> Today ( )
+
+=== Q76 ===
+Q: Which of the following is NOT a character formatting in word processing tool ?
+Opts: ['Font colour', 'Alignment', 'Underline', 'Effects']
+Marked Ans: 1 -> Alignment
+
+=== Q77 ===
+Q: The spread of which revolution enabled India to achieve self sufficiency in food grains ?
+Opts: ['Green Revolution', 'Yellow Revolution', 'Blue Revolution', 'White Revolution']
+Marked Ans: 0 -> Green Revolution
+
+=== Q78 ===
+Q: Planning Commission was set up under the Chairmanship of-
+Opts: ['Prime Minister', 'President', 'Vice President', 'Chief Minister']
+Marked Ans: 0 -> Prime Minister
+
+=== Q79 ===
+Q: To protect goods produced in India from imports, Government made use of-
+Opts: ['Quotas', 'Tariffs', 'Both Quotas and Tariffs', 'Neither Quotas nor Tariffs']
+Marked Ans: 2 -> Both Quotas and Tariffs
+
+=== Q84 ===
+Q: Integrated circuits (ICs) are related to which generation of computers ?
+Opts: ['First Generation', 'Second Generation', 'Third Generation', 'Fourth Generation']
+Marked Ans: 2 -> Third Generation
+
+=== Q85 ===
+Q: India – Japan 5 th edition Joint Military Exercise ‘DHARMA GUARDIAN’ commenced in which state of India ?
+Opts: ['Andhra Pradesh', 'Rajasthan', 'Tamil Nadu', 'Himachal Pradesh']
+Marked Ans: 1 -> Rajasthan
+
+=== Q86 ===
+Q: Which of the following team emerged champion of the Santosh Trophy (2023-24) ?
+Opts: ['Goa', 'Manipur', 'Mizoram', 'Services']
+Marked Ans: 3 -> Services
+
+=== Q87 ===
+Q: In India General elections for 18 th Lok Sabha were completed in how many phases ?
+Opts: ['4', '6', '7', '8']
+Marked Ans: 2 -> 7
+
+=== Q88 ===
+Q: In which Indian state the rare butterfly ‘Neptis Philyra’ has been discovered ?
+Opts: ['Uttarakhand', 'Arunachal Pradesh', 'Himachal Pradesh', 'Jammu and Kashmir']
+Marked Ans: 1 -> Arunachal Pradesh
+
+=== Q91 ===
+Q: Select the incorrectly matched pair of National Park and the state. (Choose the most appropriate option from below:)
+Opts: ['Bandipur National Park – Karnataka', 'Satpura National Park – Tamil Nadu', 'Kevla Dev National Park – Rajasthan', 'Kajiranga National Park – Assam']
+Marked Ans: 1 -> Satpura National Park – Tamil Nadu
+
+=== Q92 ===
+Q: Which of the following input devices allows to input alphanumeric characters and special characters into the computer ?
+Opts: ['\\frac{Purity percent}{Germination percent}\\times 100', '\\frac{Germination percent\\times Purity percent}{100}', '\\frac{Germination percent}{Purity percent}\\times 100', '\\frac{2 (Germination percent + Purity percent)}{100}']
+Marked Ans: 1 -> \frac{Germination percent\times Purity percent}{100}
+
+=== Q93 ===
+Q: Select the incorrectly matched pair of biosphere reserve and its region.
+Opts: ['Nilgiri – Karnataka, Kerala', 'Thar Desert – Rajasthan', 'Kanha – Madhya Pradesh, Uttar Pradesh', 'Manas – Assam']
+Marked Ans: 2 -> Kanha – Madhya Pradesh, Uttar Pradesh
+
+=== Q99 ===
+Q: An bio-active molecule, __________ , that is used as an immunosuppressive agent in organ-transplant patients, produced by a fungus.
+Opts: ['streptokinase', 'statins', 'cyclosporin A', 'lactic acid']
+Marked Ans: 2 -> cyclosporin A
+
+=== Q100 ===
+Q: Select the incorrectly matched pair of plant and its economically important part.
+Opts: ['Centella asiatica – Bark', 'Papaver somniferum – fruit', 'Emblica officinalis – fruit', 'Cinchona officinalis – Bark']
+Marked Ans: 0 -> Centella asiatica – Bark
+
+=== Q101 ===
+Q: The river of Rajasthan that drains into Arabian Sea is.
+Opts: ['Luni', 'Banas', 'Chambal', 'Kantali']
+Marked Ans: 0 -> Luni
+
+=== Q102 ===
+Q: Which one of the following rivers flows in a rift-valley ?
+Opts: ['The Yamuna', 'The Narmada', 'The Ravi', 'The Gandak']
+Marked Ans: 1 -> The Narmada
+
+=== Q103 ===
+Q: “Namcha Barwa Peak” is located in which of the following regions of the Himalayas ?
+Opts: ['The Darjeeling and Sikkim Himalayas', 'The Arunachal Himalayas', 'The Himachal and Uttarakhand Himalayas', 'Kashmir Himalayas']
+Marked Ans: 1 -> The Arunachal Himalayas
+
+=== Q104 ===
+Q: Thewa Art is associated with which of the following areas of Rajasthan ?
+Opts: ['Churu', 'Jaipur', 'Pratapgarh', 'Jhalawar']
+Marked Ans: 2 -> Pratapgarh
+
+=== Q105 ===
+Q: “Mahi Bajaj Sagar Project” is a joint Venture of which of the following Indian states ?
+Opts: ['Rajasthan and Madhya Pradesh', 'Madhya Pradesh and Gujarat', 'Rajasthan and Gujarat', 'Madhya Pradesh and Punjab']
+Marked Ans: 2 -> Rajasthan and Gujarat
+
+=== Q106 ===
+Q: Given below are two statements : Statement (I) : Alluvial soil is found in Western desert plains of Rajasthan. Statement (II) : This soil contains enough quantity of Nitrogen but lacks in Potash and Iron. In light of the above statements, choose the most appropriate answer from the options given below.
+Opts: ['Both Statement I and Statement II are true.', 'Both Statement I and Statement II are false.', 'Statement I is true and Statement II is false.', 'Statement I is false and Statement II is true.']
+Marked Ans: 1 -> Both Statement I and Statement II are false.
+
+=== Q107 ===
+Q: What is “Fly in” in MS power point ?
+Opts: ['Colour scheme', 'Page design', 'Animation effect', 'System command']
+Marked Ans: 1 -> Page design
+
+=== Q108 ===
+Q: Which of the following statements is NOT true about floppy disk ?
+Opts: ['Only 1.44 MB can be stored in some versions.', 'Data can only be read or write when write protect notch is closed or covered.', 'Floppy disks are made up of Mylar Plastic.', 'Mylar Plastic surface is coated with iron oxide (magnetic substance).']
+Marked Ans: 1 -> Data can only be read or write when write protect notch is closed or covered.
+
+=== Q109 ===
+Q: Where was the World Future Energy Summit 2024 organized ?
+Opts: ['London', 'Paris', 'New Delhi', 'Abu Dhabi p']
+Marked Ans: 3 -> Abu Dhabi p
+
+=== Q110 ===
+Q: A ray of light is incident on a plane mirror normal to its surface. The angle of incidence and the angle of reflection are
+Opts: ['90°, 90° respectively', '90°, 0° respectively', '0°, 90° respectively', '0°, 0° respectively']
+Marked Ans: 3 -> 0°, 0° respectively
+
+=== Q111 ===
+Q: Two identical prism P 1 and P 2 are placed as shown in the figure. A narrow beam of white light is incident on glass prism P 1 as shown in the figure. The emergent beam from the prism P 1 falls on the second prism P 2 . The resulting emergent beam from prism P 2 on the screen contains :
+Opts: ['Spectrum of light as VIBGYOR form top to bottom on the screen', 'Spectrum of light as VIBGYOR form bottom to top on the screen', 'Beam of white light on the screen', 'No light is obtained on the screen']
+Marked Ans: 2 -> Beam of white light on the screen
+
+=== Q112 ===
+Q: On 2 nd October 1959, who inaugurated the modern three tier system of Panchayati Raj in the Nagour (Rajasthan).
+Opts: ['Lal Bahadur Shastri', 'Mahatma Gandhi', 'Jawahar Lal Nehru', 'Sarojini Naidu']
+Marked Ans: 2 -> Jawahar Lal Nehru
+
+=== Q113 ===
+Q: The idea of ‘Welfare State’ in the Indian Constitution is enshrined in its __________ .
+Opts: ['Directive Principles of State Policy', 'Fundamental Rights', 'Preamble', 'Seventh Schedule']
+Marked Ans: 0 -> Directive Principles of State Policy
+
+=== Q117 ===
+Q: Select the incorrect statement about the genetic code.
+Opts: ['The codon is triplet.', '61 codons code for amino acids.', 'UUU code for phenylalanine.', 'AUG only acts as initiator codon and has no other function.']
+Marked Ans: 3 -> AUG only acts as initiator codon and has no other function.
+
+=== Q118 ===
+Q: Which of the following nitrogenous base is not a component of DNA ?
+Opts: ['Uracil', 'Cytosine', 'Adenine', 'Guanine']
+Marked Ans: 0 -> Uracil
+
+=== Q119 ===
+Q: Select the incorrectly matched combination of characters and contrasting traits studied by Mendel in pea plant.
+Opts: ['Seed Colour : Yellow/ green', 'Seed Shape : Round/ Wrinkled', 'Flower position : Axial/ terminal', 'Pod Colour : White/ yellow']
+Marked Ans: 3 -> Pod Colour : White/ yellow
+
+=== Q125 ===
+Q: Chief Minister Corona Sahayata Yojana is operated in the entire Rajasthan since __________ .
+Opts: ['March 2021', 'April 2021', 'May 2021', 'June 2021']
+Marked Ans: 3 -> June 2021
+
+=== Q126 ===
+Q: BHADLA SOLAR PARK is located in :
+Opts: ['Jaipur', 'Jodhpur', 'Udaipur', 'Bikaner']
+Marked Ans: 1 -> Jodhpur
+
+=== Q127 ===
+Q: To boost economy and getting State Government approvals Rajasthan Micro, Small and Medium Enterprises (Facilitation of Establishment and Enforcement Amendment Act, 2023) has increased the period of exemption to MSME from :
+Opts: ['3 years to 4 years', '2 years to 4 years', '4 years to 5 years', '3 years to 5 years']
+Marked Ans: 3 -> 3 years to 5 years
+
+=== Q128 ===
+Q: The Rajasthan Panchayti Raj Act (RPRA) came into force from :
+Opts: ['January 1994', 'April 1992', 'January 1992', 'April 1994']
+Marked Ans: 3 -> April 1994
+
+=== Q129 ===
+Q: The monetary assistance given by Government for production activities is called –
+Opts: ['GDP', 'Subsidy', 'Quota', 'Licence']
+Marked Ans: 1 -> Subsidy
+
+=== Q130 ===
+Q: Heating the sulphide ores in the presence of excess of air is called :
+Opts: ['Calcination', 'Roasting', 'Reduction', 'Electrolysis']
+Marked Ans: 1 -> Roasting
+
+=== Q131 ===
+Q: Anodising is :
+Opts: ['painting the metal surface', 'forming a thick oxide layer on the metal surface', 'depositing a layer of zinc on metal surface', 'oiling the metal surface']
+Marked Ans: 1 -> forming a thick oxide layer on the metal surface
+
+=== Q132 ===
+Q: The electronic configurations of three elements A, B and C are: A -2, 8 ; B -2, 8, 7 and C – 2, 8, 2. Which of the following statements is true ?
+Opts: ['A is a metal.', 'B is a metal.', 'C is a non-metal.', 'B is a non-metal and C is a metal.']
+Marked Ans: 3 -> B is a non-metal and C is a metal.
+
+=== Q136 ===
+Q: Who has become the first woman scientist to win the ‘G. D. Birla Award’ for scientific research ?
+Opts: ['Sipra Guha Mukherjee', 'Dr. Aditi Sen De', 'Dr. Rani Chatterjee', 'M. Fatima Bibi']
+Marked Ans: 1 -> Dr. Aditi Sen De
+
+=== Q137 ===
+Q: The fourth edition of the ‘Shanghai Cooperation Organization (SCO) Startup Forum’ was organised on 19 March 2024 in ________ .
+Opts: ['Shanghai', 'New Delhi', 'Moscow', 'Bishkek']
+Marked Ans: 1 -> New Delhi
+
+=== Q138 ===
+Q: Match List-I with List-II List-I (Country) List-II (Position of medals tally in Paris Olympics 2024) (a) China (I) 3 rd (b) Britain (II) 4 th (c) Netherlands (III) 2 nd (d) USA (IV) 1 st Choose the most appropriate options from below :
+Opts: ['a-IV, b-III, c-I, d-II', 'a-II, b-I, c-IV, d-III', 'a-III, b-IV, c-II, d-I', 'a-I, b-II, c-III, d-IV']
+Marked Ans: 3 -> a-I, b-II, c-III, d-IV
+
+=== Q145 ===
+Q: Which of the following is the precipitate in the given reaction ? Na 2 SO 4 (aq) + BaCl 2 (aq) → BaSO 4 (s) + 2NaCl (aq)
+Opts: ['Na 2 SO 4 (aq)', 'BaSO 4 (s)', 'BaCl 2 (aq)', 'NaCl (aq)']
+Marked Ans: 1 -> BaSO 4 (s)
+
+=== Q146 ===
+Q: Match List-I with List-II : List-I (Reaction/Reactant) List-II (Effect) (a) Oxidation (I) Gain of electron (b) Reduction (II) Electron accepting species (c) Reducing agent (III) Electron loosing species (d) Oxidising agent (IV) Loss of electron Choose the most appropriate answer from the options given below :
+Opts: ['a-IV, b-I, c-III, d-II', 'a-III, b-II, c-IV, d-I', 'a-II, b-IV, c-I, d-III', 'a-I, b-IV, c-II, d-III']
+Marked Ans: 0 -> a-IV, b-I, c-III, d-II
+

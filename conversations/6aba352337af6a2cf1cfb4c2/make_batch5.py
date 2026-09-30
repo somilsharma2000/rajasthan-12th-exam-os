@@ -1,0 +1,392 @@
+import json
+
+questions = [
+  # Group 8: Panchayati Raj Structure & Local Governance (rgd-063 to rgd-068)
+  {
+    "id": "rgd-063",
+    "subject": "raj-gk",
+    "topic": "पंचायती राज एवं स्थानीय स्वशासन",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "2 अक्टूबर 1959 को तत्कालीन प्रधानमंत्री जवाहरलाल नेहरू द्वारा भारत में त्रिस्तरीय पंचायती राज व्यवस्था का उद्घाटन राजस्थान के किस गाँव से किया गया था?",
+      "en": "From which village in Rajasthan was the 3-tier Panchayati Raj system in India inaugurated by PM Jawaharlal Nehru on Oct 2, 1959?"
+    },
+    "options": {
+      "hi": ["बगदरी गाँव (नागौर जिला)", "खांदू गाँव (बांसवाड़ा)", "पीपलांत्री गाँव (राजसमंद)", "सिलोरा गाँव (अजमेर)"],
+      "en": ["Bagdari Village (Nagaur District)", "Khandu Village (Banswara)", "Piplantri Village (Rajsamand)", "Silora Village (Ajmer)"]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "बलवंत राय मेहता समिति की सिफारिशों पर 2 अक्टूबर 1959 को नागौर जिले के बगदरी गाँव में देश की पहली त्रिस्तरीय पंचायत व्यवस्था का उद्घाटन हुआ।",
+      "en": "Based on Balwant Rai Mehta committee recommendations, India's first 3-tier Panchayati Raj was launched at Bagdari village in Nagaur on Oct 2, 1959."
+    },
+    "provenance": { "source": "Panchayati Raj Dept Govt of Rajasthan History", "evidence": "VERIFIED_DERIVED" }
+  },
+  {
+    "id": "rgd-064",
+    "subject": "raj-gk",
+    "topic": "पंचायती राज एवं स्थानीय स्वशासन",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "73वें संविधान संशोधन अधिनियम 1992 के संदर्भ में 'राजस्थान पंचायती राज अधिनियम 1994' किस तिथि से लागू हुआ?",
+      "en": "In alignment with 73rd Constitutional Amendment Act 1992, on which exact date did Rajasthan Panchayati Raj Act 1994 come into force?"
+    },
+    "options": {
+      "hi": ["23 अप्रैल 1994", "24 अप्रैल 1993", "2 अक्टूबर 1994", "1 जनवरी 1995"],
+      "en": ["23 April 1994", "24 April 1993", "2 October 1994", "1 January 1995"]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "राजस्थान पंचायती राज अधिनियम 1994 सम्पूर्ण राज्य में 23 अप्रैल 1994 से प्रभावी हुआ (जबकि केंद्रीय अधिनियम 24 अप्रैल 1993 को लागू हुआ था)।",
+      "en": "Rajasthan Panchayati Raj Act 1994 came into force across the state on April 23, 1994 (national act took effect on April 24, 1993)."
+    },
+    "provenance": { "source": "Rajasthan Gazette Extraordinary April 23, 1994", "evidence": "VERIFIED_DERIVED" }
+  },
+  {
+    "id": "rgd-065",
+    "subject": "raj-gk",
+    "topic": "पंचायती राज एवं स्थानीय स्वशासन",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान पंचायती राज (संशोधन) अधिनियम 2008 द्वारा पंचायती राज संस्थाओं के सभी स्तरों पर महिलाओं के लिए आरक्षण कितना प्रतिशत कर दिया गया है?",
+      "en": "By Rajasthan Panchayati Raj (Amendment) Act 2008, what percentage of reservation was mandated for women across all tiers of PRIs?"
+    },
+    "options": {
+      "hi": ["50 प्रतिशत", "33 प्रतिशत", "30 प्रतिशत", "40 प्रतिशत"],
+      "en": ["50 Percent", "33 Percent", "30 Percent", "40 Percent"]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "राजस्थान सरकार ने अप्रैल 2008 में कानून संशोधित कर पंचायती राज संस्थाओं (ग्राम पंचायत, समिति, जिला परिषद) में महिलाओं का आरक्षण 33% से बढ़ाकर 50% कर दिया।",
+      "en": "In April 2008, Rajasthan amended PR Act to enhance reservation for women in Panchayati Raj Institutions from 33% to 50%."
+    },
+    "provenance": { "source": "Rajasthan PR Amendment Act 2008 Gazette", "evidence": "VERIFIED_DERIVED" }
+  },
+  {
+    "id": "rgd-066",
+    "subject": "raj-gk",
+    "topic": "पंचायती राज एवं स्थानीय स्वशासन",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "भारतीय संविधान के अनुच्छेद 243K के तहत जुलाई 1994 में गठित 'राजस्थान राज्य निर्वाचन आयोग' के प्रथम राज्य निर्वाचन आयुक्त कौन थे?",
+      "en": "Constituted under Article 243K in July 1994, who was the 1st State Election Commissioner of Rajasthan?"
+    },
+    "options": {
+      "hi": ["अमर सिंह राठौड़ (Amar Singh Rathore)", "एन.आर. भसीन", "इंद्रजीत खन्ना", "मधुकर गुप्ता"],
+      "en": ["Amar Singh Rathore", "N.R. Bhasin", "Inderjit Khanna", "Madhukar Gupta"]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "राजस्थान राज्य निर्वाचन आयोग एक एक-सदस्यीय निकाय है जिसका गठन जुलाई 1994 में हुआ और प्रथम आयुक्त अमर सिंह राठौड़ बने।",
+      "en": "Rajasthan State Election Commission is a single-member constitutional body formed in July 1994 with Amar Singh Rathore as its 1st Commissioner."
+    },
+    "provenance": { "source": "Rajasthan State Election Commission Official Gazette", "evidence": "VERIFIED_DERIVED" }
+  },
+  {
+    "id": "rgd-067",
+    "subject": "raj-gk",
+    "topic": "पंचायती राज एवं स्थानीय स्वशासन",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "संविधान के अनुच्छेद 243-I के अंतर्गत गठित राजस्थान के छठे राज्य वित्त आयोग (6th State Finance Commission) के अध्यक्ष कौन नियुक्त किए गए थे?",
+      "en": "Under Article 243-I of Constitution, who was appointed Chairman of the 6th State Finance Commission of Rajasthan?"
+    },
+    "options": {
+      "hi": ["प्रद्युम्न सिंह (Pradyuman Singh)", "डॉ. ज्योति किरण", "कृष्ण कुमार गोयल", "माणिकचंद सुराना"],
+      "en": ["Pradyuman Singh", "Dr. Jyoti Kiran", "Krishna Kumar Goyal", "Manik Chand Surana"]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "छठे राज्य वित्त आयोग (2020-21 से 2024-25) के अध्यक्ष प्रद्युम्न सिंह तथा सदस्य लक्ष्मण सिंह व अशोक लाहोटी थे। प्रथम आयोग के अध्यक्ष कृष्ण कुमार गोयल थे।",
+      "en": "6th State Finance Commission was headed by Pradyuman Singh (members: Lakshman Singh and Ashok Lahoti). 1st SFC Chairman was K.K. Goyal."
+    },
+    "provenance": { "source": "Finance Dept Govt of Rajasthan Notification 2021", "evidence": "VERIFIED_DERIVED" }
+  },
+  {
+    "id": "rgd-068",
+    "subject": "raj-gk",
+    "topic": "पंचायती राज एवं स्थानीय स्वशासन",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान पंचायती राज नियमों के अनुसार, एक ग्राम पंचायत में वर्ष में कम से कम कितनी 'ग्राम सभा' की बैठकें आयोजित करना अनिवार्य है?",
+      "en": "As per Rajasthan Panchayati Raj rules, how many minimum Gram Sabha meetings are mandatory per year in a Gram Panchayat?"
+    },
+    "options": {
+      "hi": ["4 अनिवार्य बैठकें (26 जन, 1 मई, 15 अग, 2 अक्टू)", "2 बैठकें", "6 बैठकें", "12 बैठकें"],
+      "en": ["4 Mandatory Meetings (26 Jan, 1 May, 15 Aug, 2 Oct)", "2 Meetings", "6 Meetings", "12 Meetings"]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "राजस्थान में ग्राम सभा की वर्ष में न्यूनतम 4 बैठकें (26 जनवरी, 1 मई, 15 अगस्त एवं 2 अक्टूबर) आयोजित करना वैधानिक रूप से अनिवार्य है।",
+      "en": "In Rajasthan, holding at least 4 Gram Sabha meetings annually (Jan 26, May 1, Aug 15, Oct 2) is statutorily mandatory."
+    },
+    "provenance": { "source": "Panchayati Raj Rules Rajasthan", "evidence": "VERIFIED_DERIVED" }
+  },
+
+  # Group 9: Governor and Chief Minister Lineage & Executive Polity (rgd-069 to rgd-074)
+  {
+    "id": "rgd-069",
+    "subject": "raj-gk",
+    "topic": "राजस्थान की राजव्यवस्था",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "1 नवंबर 1956 को राज्य पुनर्गठन के पश्चात् बने राजस्थान के प्रथम राज्यपाल सरदार गुरुमुख निहाल सिंह का कार्यकाल सबसे लंबा रहा, यह कार्यकाल कितना था?",
+      "en": "Sardar Gurmukh Nihal Singh became Rajasthan's 1st Governor after state reorganization on Nov 1, 1956. What was his tenure duration (longest in state)?"
+    },
+    "options": {
+      "hi": ["1 नवंबर 1956 से 15 अप्रैल 1962 तक (~5.5 वर्ष)", "1950 से 1956 तक", "1956 से 1965 तक", "1962 से 1967 तक"],
+      "en": ["1 Nov 1956 to 15 April 1962 (~5.5 years)", "1950 to 1956", "1956 to 1965", "1962 to 1967"]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "सरदार गुरुमुख निहाल सिंह राजस्थान के प्रथम राज्यपाल थे, जिन्होंने 1 नव 1956 से 15 अप्रैल 1962 तक सर्वाधिक समय तक पद भार संभाला।",
+      "en": "Sardar Gurmukh Nihal Singh served as the first Governor of Rajasthan from 1 Nov 1956 to 15 April 1962, holding the longest tenure in state history."
+    },
+    "provenance": { "source": "Raj Bhavan Rajasthan Governor Directory", "evidence": "VERIFIED_DERIVED" }
+  },
+  {
+    "id": "rgd-070",
+    "subject": "raj-gk",
+    "topic": "राजस्थान की राजव्यवस्था",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान के प्रथम मनोनीत मुख्यमंत्री पंडित हीरालाल शास्त्री द्वारा रचित प्रसिद्ध आत्मकथा का क्या नाम है?",
+      "en": "What is the title of the famous autobiography authored by Pandit Hira Lal Shastri, Rajasthan's first nominated Chief Minister?"
+    },
+    "options": {
+      "hi": ["प्रत्यक्ष जीवन शास्त्र (Pratyaksha Jeevan Shastra)", "मेरा जीवन सफर", "राजस्थान री अवस्था", "मेवाड़ का इतिहास"],
+      "en": ["Pratyaksha Jeevan Shastra", "Mera Jeevan Safar", "Rajasthan Ri Awastha", "Mewar Ka Itihas"]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "हीरालाल शास्त्री (7 अप्रैल 1949 को बने प्रथम मनोनीत CM) की आत्मकथा 'प्रत्यक्ष जीवन शास्त्र' है। उनका प्रसिद्ध गीत 'प्रलय प्रतीक्षा पण रो' है।",
+      "en": "Pandit Hira Lal Shastri authored the autobiography 'Pratyaksha Jeevan Shastra'. He was Rajasthan's 1st nominated Chief Minister."
+    },
+    "provenance": { "source": "Rajasthan Legislative Assembly Archives & Literature", "evidence": "VERIFIED_DERIVED" }
+  },
+  {
+    "id": "rgd-071",
+    "subject": "raj-gk",
+    "topic": "राजस्थान की राजव्यवस्था",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "3 मार्च 1952 को राजस्थान के प्रथम निर्वाचित मुख्यमंत्री बनने वाले 'टीकाराम पालीवाल' किस विधानसभा सीट से चुनाव जीते थे?",
+      "en": "Tika Ram Paliwal became Rajasthan's first elected Chief Minister on March 3, 1952. From which Assembly seat was he elected?"
+    },
+    "options": {
+      "hi": ["महुआ (दौसा district)", "जयपुर शहर", "जोधपुर शहर", "अजमेर दक्षिण"],
+      "en": ["Mahuwa (Dausa district)", "Jaipur City", "Jodhpur City", "Ajmer South"]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "टीकाराम पालीवाल महुआ (दौसा) सीट से विधायक चुने गए थे। वे राज्य के प्रथम निर्वाचित मुख्यमंत्री तथा बाद में प्रथम उपमुख्यमंत्री भी बने।",
+      "en": "Tika Ram Paliwal was elected from Mahuwa (Dausa). He was the first elected CM and later also served as the first Deputy CM."
+    },
+    "provenance": { "source": "Election Commission of India - Rajasthan 1952 Assembly Records", "evidence": "VERIFIED_DERIVED" }
+  },
+  {
+    "id": "rgd-072",
+    "subject": "raj-gk",
+    "topic": "राजस्थान की राजव्यवस्था",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान की प्रथम महिला राज्यपाल बनने का गौरव किसे प्राप्त है, जो बाद में भारत की प्रथम महिला राष्ट्रपति भी बनीं?",
+      "en": "Who holds the distinction of becoming Rajasthan's 1st female Governor, who later became the 1st female President of India?"
+    },
+    "options": {
+      "hi": ["श्रीमती प्रतिभा पाटिल (Pratibha Patil)", "श्रीमती प्रभा राव", "श्रीमती मार्गरेट अल्वा", "श्रीमती सरोजिनी नायडू"],
+      "en": ["Mrs. Pratibha Patil", "Mrs. Prabha Rau", "Mrs. Margaret Alva", "Mrs. Sarojini Naidu"]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "श्रीमती प्रतिभा पाटिल नवंबर 2004 से जून 2007 तक राजस्थान की 1ली महिला राज्यपाल रहीं, फिर 2007 में भारत की 12वीं (प्रथम महिला) राष्ट्रपति बनीं।",
+      "en": "Pratibha Patil served as Rajasthan's 1st woman Governor (Nov 2004–June 2007) before becoming India's 1st female President in July 2007."
+    },
+    "provenance": { "source": "Raj Bhavan Rajasthan Official Directory", "evidence": "VERIFIED_DERIVED" }
+  },
+  {
+    "id": "rgd-073",
+    "subject": "raj-gk",
+    "topic": "राजस्थान की राजव्यवस्था",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान में सर्वाधिक समय (लगभग 17 वर्ष, 4 कार्यकाल) तक मुख्यमंत्री पद पर रहने वाले नेता जिन्हें 'आधुनिक राजस्थान का निर्माता' कहते हैं, कौन थे?",
+      "en": "Who was the leader known as the \"Architect of Modern Rajasthan\" who served as CM for the longest total duration (~17 years across 4 terms)?"
+    },
+    "options": {
+      "hi": ["मोहन लाल सुखाड़िया (Mohan Lal Sukhadia)", "हरिदेव जोशी", "भैरोंसिंह शेखावत", "अशोक गहलोत"],
+      "en": ["Mohan Lal Sukhadia", "Haridev Joshi", "Bhairon Singh Shekhawat", "Ashok Gehlot"]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "मोहन लाल सुखाड़िया 1954 से 1971 तक कुल 16 वर्ष 262 दिन (~17 वर्ष) राजस्थान के मुख्यमंत्री रहे।",
+      "en": "Mohan Lal Sukhadia served as Chief Minister of Rajasthan from 1954 to 1971 (~17 years in total), the longest overall tenure in state history."
+    },
+    "provenance": { "source": "Rajasthan Vidhan Sabha Official Records", "evidence": "VERIFIED_DERIVED" }
+  },
+  {
+    "id": "rgd-074",
+    "subject": "raj-gk",
+    "topic": "राजस्थान की राजव्यवस्था",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "जुलाई 2024 में राजस्थान के राज्यपाल के रूप में पदभार ग्रहण करने वाले वरिष्ठ राजनेता कौन हैं?",
+      "en": "Who is the senior leader who assumed office as the Governor of Rajasthan in July 2024?"
+    },
+    "options": {
+      "hi": ["हरिभाऊ किसनराव बागड़े (Haribhau Bagde)", "कलराज मिश्र", "आनंदीबेन पटेल", "गुलाब चंद कटारिया"],
+      "en": ["Haribhau Kisanrao Bagde", "Kalraj Mishra", "Anandiben Patel", "Gulab Chand Kataria"]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "महाराष्ट्र विधानसभा के पूर्व अध्यक्ष हरिभाऊ बागड़े ने 31 जुलाई 2024 को राजस्थान के 42वें राज्यपाल के रूप में शपथ ली।",
+      "en": "Former Maharashtra Assembly Speaker Haribhau Bagde took oath as the Governor of Rajasthan on July 31, 2024, succeeding Kalraj Mishra."
+    },
+    "provenance": { "source": "Raj Bhavan Gazette Notification July 2024", "evidence": "VERIFIED_DERIVED" }
+  },
+
+  # Group 10: Rajasthan in News 2025-26 & Recent Economy/Infrastructure (rgd-075 to rgd-080)
+  {
+    "id": "rgd-075",
+    "subject": "raj-gk",
+    "topic": "राजस्थान की राजव्यवस्था",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "दिसंबर 2023 में गठित 16वीं राजस्थान विधानसभा के अध्यक्ष (Speaker) के रूप में सर्वसम्मति से किसे चुना गया?",
+      "en": "Who was unanimously elected as the Speaker of the 16th Rajasthan Legislative Assembly constituted in December 2023?"
+    },
+    "options": {
+      "hi": ["वासुदेव देवनानी (Vasudev Devnani)", "डॉ. सीपी जोशी", "कालीचरण सराफ", "राजेन्द्र राठौड़"],
+      "en": ["Vasudev Devnani", "Dr. C.P. Joshi", "Kalicharan Saraf", "Rajendra Rathore"]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "16वीं राजस्थान विधानसभा के अध्यक्ष वासुदेव देवनानी (अजमेर उत्तर से विधायक) बने, जबकि प्रोटेम स्पीकर कालीचरण सराफ चुने गए थे।",
+      "en": "Vasudev Devnani (MLA from Ajmer North) was elected Speaker of the 16th Rajasthan Assembly in December 2023."
+    },
+    "provenance": { "source": "16th Rajasthan Legislative Assembly Proceedings Dec 2023", "evidence": "VERIFIED_DERIVED" }
+  },
+  {
+    "id": "rgd-076",
+    "subject": "raj-gk",
+    "topic": "राजस्थान की अर्थव्यवस्था",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान में वैश्विक निवेश आकर्षित करने हेतु 9-11 दिसंबर 2024 को जयपुर के सीतापुरा स्थित JECC में आयोजित वैश्विक निवेश सम्मेलन का नाम क्या था?",
+      "en": "What was the name of the global investment summit held at JECC Sitapura, Jaipur on Dec 9-11, 2024 to attract global investments?"
+    },
+    "options": {
+      "hi": ["राइजिंग राजस्थान ग्लोबल इन्वेस्टमेंट समिट 2024", "इन्वेस्ट राजस्थान 2022", "रेशमी राजस्थान 2015", "राजस्थान इनवेस्टर्स कॉन्क्लेव"],
+      "en": ["Rising Rajasthan Global Investment Summit 2024", "Invest Rajasthan 2022", "Resurgent Rajasthan 2015", "Rajasthan Investors Conclave"]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "राजस्थान सरकार द्वारा 9-11 दिसंबर 2024 को जयपुर में 'राइजिंग राजस्थान 2024' समिट का आयोजन वृहद् निवेश समझौतों के लिए किया गया।",
+      "en": "'Rising Rajasthan Global Investment Summit 2024' was held in Jaipur on December 9-11, 2024 to boost industrial investments."
+    },
+    "provenance": { "source": "Bureau of Investment Promotion (BIP) Rajasthan 2024", "evidence": "VERIFIED_DERIVED" }
+  },
+  {
+    "id": "rgd-077",
+    "subject": "raj-gk",
+    "topic": "राष्ट्रीय उद्यान एवं अभयारण्य",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "धौलपुर-करौली के नए टाइगर रिजर्व बनने के बाद वर्तमान में राजस्थान में कुल कितने अधिसूचित बाघ अभयारण्य (Tiger Reserves) क्रियाशील हैं?",
+      "en": "With the notification of Dholpur-Karauli, how many total functional Tiger Reserves are there in Rajasthan currently?"
+    },
+    "options": {
+      "hi": ["5 (रणथंभौर, सरिस्का, मुकुंदरा, रामगढ़, धौलपुर-करौली)", "4", "6", "3"],
+      "en": ["5 (Ranthambore, Sariska, Mukundra, Ramgarh, Dholpur-Karauli)", "4", "6", "3"]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "राजस्थान में कुल 5 बाघ अभयारण्य हैं: 1. रणथंभौर (1973), 2. सरिस्का (1978), 3. मुकुंदरा हिल्स (2013), 4. रामगढ़ विषधारी (2022) और 5. धौलपुर-करौली (2023)।",
+      "en": "Rajasthan has 5 Tiger Reserves: Ranthambore (1973), Sariska (1978), Mukundra Hills (2013), Ramgarh Vishdhari (2022), and Dholpur-Karauli (2023)."
+    },
+    "provenance": { "source": "NTCA & Rajasthan Wildlife Dept Official Directory 2024", "evidence": "VERIFIED_DERIVED" }
+  },
+  {
+    "id": "rgd-078",
+    "subject": "raj-gk",
+    "topic": "राजस्थान की अर्थव्यवस्था",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "पूर्वी राजस्थान के 13-21 जिलों में पेयजल व सिंचाई हेतु जनवरी 2024 में राजस्थान, मध्य प्रदेश व जल शक्ति मंत्रालय के मध्य किस संशोधित नदी जोड़ो समझौते (MoU) पर हस्ताक्षर हुए?",
+      "en": "In Jan 2024, which modified inter-state river linking MoU was signed between Rajasthan, MP, and Union Jal Shakti Ministry for water supply?"
+    },
+    "options": {
+      "hi": ["पीकेसी-ईआरसीपी (PKC-ERCP - Parbati-Kalisindh-Chambal ERCP Link)", "नर्मदा कैनाल प्रोजेक्ट", "माहिया लिंक प्रोजेक्ट", "केने-बेतवा लिंक प्रोजेक्ट"],
+      "en": ["PKC-ERCP (Parbati-Kalisindh-Chambal ERCP Link)", "Narmada Canal Project", "Mahiya Link Project", "Ken-Betwa Link Project"]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "28 जनवरी 2024 को संशोधित पार्वती-कालीसिंध-चंबल एवं पूर्वी राजस्थान नहर परियोजना (PKC-ERCP) का ऐतिहासिक त्रिपक्षीय समझौता हस्ताक्षरित हुआ।",
+      "en": "On Jan 28, 2024, the tripartite MoU for Modified Parbati-Kalisindh-Chambal with ERCP (PKC-ERCP) was signed."
+    },
+    "provenance": { "source": "Ministry of Jal Shakti Govt of India Press Release Jan 2024", "evidence": "VERIFIED_DERIVED" }
+  },
+  {
+    "id": "rgd-079",
+    "subject": "raj-gk",
+    "topic": "राजस्थान की अर्थव्यवस्था",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "बीकानेर जिले के छत्तरगढ़/बरसिंगसर में 810 मेगावाट का बड़ा सौर ऊर्जा संयंत्र स्थापित करने वाली सार्वजनिक क्षेत्र की कंपनी (PSU) कौन-सी है?",
+      "en": "Which Public Sector Undertaking (PSU) is setting up an 810 MW large solar power project at Chhatargarh/Barsingsar in Bikaner district?"
+    },
+    "options": {
+      "hi": ["एनएलसी इंडिया लिमिटेड (NLC India Limited)", "एनटीपीसी (NTPC)", "एसजेविएन (SJVN)", "एनएचपीसी (NHPC)"],
+      "en": ["NLC India Limited", "NTPC", "SJVN", "NHPC"]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "नेवेली लिग्नाइट कॉर्पोरेशन (NLC India Ltd) बीकानेर के बरसिंगसर/छत्तरगढ़ में 810 MW सोलर प्रोजेक्ट तथा लिग्नाइट आधारित थर्मल पावर प्रोजेक्ट विकसित कर रही है।",
+      "en": "NLC India Limited is setting up an 810 MW solar power project along with lignite-based thermal power infrastructure in Bikaner."
+    },
+    "provenance": { "source": "Ministry of Coal & RRECL Press Release 2024", "evidence": "VERIFIED_DERIVED" }
+  },
+  {
+    "id": "rgd-080",
+    "subject": "raj-gk",
+    "topic": "राजस्थान की अर्थव्यवस्था",
+    "origin": "agent_authored",
+    "verification": "VERIFIED_DERIVED",
+    "q": {
+      "hi": "राजस्थान सरकार की 'एम-सैंड नीति' (M-Sand Policy 2021) का मुख्य उद्देश्य निर्माण कार्यों में किस प्राकृतिक संसाधन के पर्यावरण-अनुकूल विकल्प के उपयोग को बढ़ावा देना है?",
+      "en": "What is the primary objective of Rajasthan's M-Sand Policy 2021 regarding natural resources in construction?"
+    },
+    "options": {
+      "hi": ["नदी बजरी (River Bed Sand) के विकल्प के रूप में मैन्युफैक्चर्ड सैंड", "चूना पत्थर का विकल्प", "संगमरमर का विकल्प", "जिप्सम का विकल्प"],
+      "en": ["Manufactured Sand as an eco-friendly alternative to River Bed Sand", "Alternative to Limestone", "Alternative to Marble", "Alternative to Gypsum"]
+    },
+    "answer": 0,
+    "explanation": {
+      "hi": "एम-सैंड (Manufactured Sand) नीति जनवरी 2021 में लागू की गई ताकि नदियों के अवैध खनन पर रोक लगाकर निर्माण में नदी बजरी का विकल्प उपलब्ध कराया जा सके।",
+      "en": "The M-Sand Policy (Jan 2021) promotes manufactured sand from crushed stones as an eco-friendly substitute for river bed sand/bajri."
+    },
+    "provenance": { "source": "Mines & Geology Department Govt of Rajasthan Policy Doc 2021", "evidence": "VERIFIED_DERIVED" }
+  }
+]
+
+with open("batch5.json", "w", encoding="utf-8") as f:
+    json.dump(questions, f, ensure_ascii=False, indent=2)
+
+print("Batch 5 written successfully!")
