@@ -58,7 +58,8 @@ export default function App() {
   const t = T(lang)
   const toggleLang = () => setLang(l => l === 'hi' ? 'en' : 'hi')
 
-  const availFor = ex => ALL_QUESTIONS.filter(q => q.verification !== 'UNVERIFIED' && !(q.provenance && q.provenance.evidence && String(q.provenance.evidence).includes('QUARANTINED')) && ex.subjects.includes(q.subject)).length
+  const ex_ok = q => q.verification !== 'UNVERIFIED' && !(q.provenance && q.provenance.evidence && String(q.provenance.evidence).includes('QUARANTINED'))
+  const availFor = ex => ALL_QUESTIONS.filter(q => ex_ok(q) && ex.subjects.includes(q.subject)).length
   const startSession = (mode, subject) => {
     const target = mode === 'mock' ? exam.pattern.totalQuestions : 10
     const pool = subject ? ALL_QUESTIONS.filter(q => ex_ok(q) && q.subject === subject) : ALL_QUESTIONS
@@ -72,7 +73,7 @@ export default function App() {
   if (screen === 'result') return <Result session={session} lang={lang} onRecord={recordAttempt} onHome={() => { setSession(null); setScreen('home') }} onRetry={() => { const mode = session.mode; startSession(mode) }} />
   if (screen === 'progress') return <Progress lang={lang} onHome={() => setScreen('home')} />
   if (screen === 'saved') return <Saved lang={lang} bookmarks={bms} toggleBookmark={toggleBookmark} onHome={() => setScreen('home')} />
-  const avail = availFor(exam)
+  const avail = exam ? availFor(exam) : 0
   if (screen === 'setup') return (
     <div className="wrap">
       <Bar t={t} lang={lang} toggleLang={toggleLang} onHome={() => setScreen('home')} />
