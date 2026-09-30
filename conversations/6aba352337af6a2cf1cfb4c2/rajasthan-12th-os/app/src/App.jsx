@@ -7,7 +7,7 @@ import { T } from './i18n.js'
 const TypingTest = lazy(() => import('./typing/TypingTest.jsx'))
 const Coach = lazy(() => import('./coach/Coach.jsx'))
 const OwnerConsole = lazy(() => import('./coach/OwnerConsole.jsx'))
-import { SUBJECT_LABELS, buildSession, scoreSession, speedStats, fmtTime } from './engine.js'
+import { SUBJECT_LABELS, buildSession, scoreSession, speedStats, fmtTime, REV_LADDER, reviseErrorRecord } from './engine.js'
 
 const VERSION_NOTE = { hi: 'डेटा स्नैपशॉट: 30 सितंबर 2026 · प्रश्न-बैंक पाइपलाइन से बढ़ रहा है', en: 'Data snapshot: 30 Sep 2026 · question bank growing via pipeline' }
 
@@ -23,23 +23,26 @@ function clearActive() { try { localStorage.removeItem(LS_KEY) } catch {} }
 const LS_HIST = 'examos-history', LS_BM = 'examos-bookmarks', LS_ERR = 'examos-error-book'
 function loadErr() { try { return JSON.parse(localStorage.getItem(LS_ERR)) || {} } catch { return {} } }
 function saveErr(eb) { try { localStorage.setItem(LS_ERR, JSON.stringify(eb)) } catch {} }
-const REV_LADDER = [1, 3, 7, 15, 30] // days; wrongCount picks the rung (capped)
 function updateErrorBook(session) {
   try {
     const eb = loadErr()
+    let changed = false
     for (const q of session.questions) {
       const a = session.answers[q.id]
       const attempted = a && a.choice !== null && a.choice !== undefined
       const wasWrong = attempted ? a.choice !== q.answer : true // skipped also lands in revision
-      if (!wasWrong) continue
-      const rec = eb[q.id] || { wrongCount: 0, subject: q.subject }
-      rec.wrongCount++
-      rec.lastWrongAt = Date.now()
-      rec.nextReviewAt = Date.now() + (REV_LADDER[Math.min(rec.wrongCount - 1, REV_LADDER.length - 1)] * 86400000)
-      rec.skipped = !attempted
-      eb[q.id] = rec
+      const existing = eb[q.id]
+      if (!existing) {
+        if (!wasWrong) continue
+        eb[q.id] = { id: q.id, wrongCount: 1, rung: 0, subject: q.subject, lastWrongAt: Date.now(), nextReviewAt: Date.now() + REV_LADDER[0] * 86400000, skipped: !attempted }
+        changed = true
+      } else {
+        const next = reviseErrorRecord(existing, wasWrong, !attempted) // ladder advance/reset/mastered (engine, cycle 5)
+        if (next === null) { delete eb[q.id]; changed = true } // mastered past the 30-day rung
+        else { eb[q.id] = next; changed = true }
+      }
     }
-    saveErr(eb)
+    if (changed) saveErr(eb)
   } catch {}
 }
 function loadHist() { try { return JSON.parse(localStorage.getItem(LS_HIST)) || [] } catch { return [] } }
@@ -171,12 +174,12 @@ export default function App() {
   }
 
   const startErrSession = async () => {
-    const eb = Object.values(loadErr())
+    const eb = Object.entries(loadErr()) // [qid, rec] — records are keyed, the id lives in the KEY (latent bug fixed 2026-10-01: old code read e.id and silently no-oped)
     if (!eb.length) return
     const b = await ensureBank()
     const byId = Object.fromEntries(b.ALL_QUESTIONS.map(q => [q.id, q]))
-    const dueIds = eb.filter(e => e.nextReviewAt <= Date.now()).map(e => e.id)
-    const ids = (dueIds.length ? dueIds : eb.map(e => e.id)).filter(id => byId[id] && ex_ok(byId[id]))
+    const dueIds = eb.filter(([, e]) => e.nextReviewAt <= Date.now()).map(([id]) => id)
+    const ids = (dueIds.length ? dueIds : eb.map(([id]) => id)).filter(id => byId[id] && ex_ok(byId[id]))
     if (!ids.length) return
     const pool = ids.map(id => byId[id])
     const ex = exam || EXAMS.find(e => e.id === 'cet-12th') || EXAMS[0]
@@ -303,6 +306,13 @@ export default function App() {
           </div>
         </div>
       )}
+      {dueErr > 0 && (
+        <div className="card" style={{ padding: 14 }}>
+          <b style={{ fontSize: 14 }}>{lang === 'hi' ? `आज का रिवीजन: ${dueErr} प्रश्न` : `Today's revision: ${dueErr} questions`}</b>
+          <p className="note" style={{ margin: '6px 0 10px' }}>{lang === 'hi' ? 'त्रुटि-बुक से दोहराने का समय आ गया है — एक टैप में शुरू करें।' : 'Due from your error book — start in one tap.'}</p>
+          <button className="primary big" onClick={startErrSession}>{lang === 'hi' ? 'रिवीजन शुरू करें' : 'Start revision'}</button>
+        </div>
+      )}
       <div className="tiles">
         <button className="tile" onClick={() => setScreen('typing')}><span className="ic"><IcKeyboard /></span>{lang === 'hi' ? 'टाइपिंग' : 'Typing'}</button>
         <button className="tile" onClick={() => setScreen('glossary')}><span className="ic"><IcBook /></span>{lang === 'hi' ? 'शब्दावली' : 'Glossary'}</button>
@@ -388,7 +398,7 @@ function ErrorBook({ lang, onHome, onPractice }) {
           </div>
           <h3 style={{ marginTop: 18, marginBottom: 8 }}>{lang === 'hi' ? 'दोहराव अनुसूची' : 'Revision schedule'}</h3>
           {due.slice(0, 12).map(e => <div key={e.lastWrongAt} className="listRow"><span className="badge pyq" style={{ marginRight: 6 }}>Due</span> {SUBJECT_LABELS[e.subject] ? SUBJECT_LABELS[e.subject][lang] : e.subject} · {lang === 'hi' ? 'गलत' : 'wrong'} ×{e.wrongCount}</div>)}
-          {later.slice(0, 8).map(e => <div key={e.lastWrongAt} className="listRow">{fmtDue(e.nextReviewAt)} · {SUBJECT_LABELS[e.subject] ? SUBJECT_LABELS[e.subject][lang] : e.subject} · ×{e.wrongCount}</div>)}
+          {later.slice(0, 8).map(e => <div key={e.lastWrongAt} className="listRow">{fmtDue(e.nextReviewAt)} · {SUBJECT_LABELS[e.subject] ? SUBJECT_LABELS[e.subject][lang] : e.subject} · ×{e.wrongCount} · {lang === 'hi' ? `दौर ${(e.rung || 0) + 1}/5` : `rung ${(e.rung || 0) + 1}/5`}</div>)}
         </div>}
       </div>
     </div>

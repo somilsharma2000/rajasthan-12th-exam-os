@@ -81,6 +81,18 @@ export function scoreSession(session) {
     accuracy: attempted ? Math.round((correct / attempted) * 100) : 0 }
 }
 
+// SPACED REVISION (v4 cycle 5) — the 1-3-7-15-30 ladder, pure and testable.
+// Wrong again → rung resets to 0 (1 day). Correct → rung advances (3,7,15,30 days).
+// Correct past the 30-day rung → MASTERED: returns null (record deleted — the question earned its exit).
+export const REV_LADDER = [1, 3, 7, 15, 30]
+export function reviseErrorRecord(rec, wasWrong, skipped = false, now = Date.now()) {
+  const DAY = 86400000
+  if (wasWrong) return { ...rec, wrongCount: rec.wrongCount + 1, rung: 0, lastWrongAt: now, nextReviewAt: now + REV_LADDER[0] * DAY, skipped }
+  const rung = (rec.rung || 0) + 1
+  if (rung >= REV_LADDER.length) return null
+  return { ...rec, rung, nextReviewAt: now + REV_LADDER[rung] * DAY }
+}
+
 // SPEED & ACCURACY ANALYTICS (v4 cycle 4) — pure, testable. Honesty rule: compares
 // ONLY the student's own measured data against the exam's own time budget. No invented
 // "topper averages" (we have no real topper dataset for these exams — showing a fake

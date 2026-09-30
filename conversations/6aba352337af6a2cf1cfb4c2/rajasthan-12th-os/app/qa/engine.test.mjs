@@ -1,6 +1,6 @@
 // ENGINE UNIT TESTS — pure functions, node only (no browser needed).
 // Run: npm test   (part of the release gate; see docs/QA-MASTER-PROMPT.md module 20_TESTING)
-import { buildSession, scoreSession, speedStats, fmtTime, availableQuestions, shuffle } from '../src/engine.js'
+import { buildSession, scoreSession, speedStats, fmtTime, availableQuestions, shuffle, REV_LADDER, reviseErrorRecord } from '../src/engine.js'
 import assert from 'node:assert'
 
 // shapes mirror the real bank: q.answer is a number; pattern carries scoring config
@@ -67,4 +67,24 @@ assert.equal(spNone.hasData, false, 'no times → hasData false → UI hides car
 const spPrac = speedStats({ mode: 'practice', config: EXAM, questions: Q5, answers: { q1: { choice: 0 } }, times: { q1: 8000 } }, scoreSession({ mode: 'practice', config: EXAM, questions: Q5, answers: { q1: { choice: 0 } } }))
 assert.equal(spPrac.budgetSec, null, 'practice has no exam budget — no invented benchmark')
 
-console.log('engine tests: ALL PASS (8 groups)')
+// 9. spaced-revision ladder: reset on wrong, advance on right, master past 30-day rung
+const DAY = 86400000, T0 = 1700000000000
+let rec = reviseErrorRecord({ wrongCount: 0, subject: 'gk' }, true, false, T0) // first wrong
+assert.equal(rec.wrongCount, 1); assert.equal(rec.rung, 0); assert.equal(rec.nextReviewAt - T0, 1 * DAY)
+rec = reviseErrorRecord(rec, true, false, T0 + DAY) // wrong again → rung resets, still 1 day
+assert.equal(rec.wrongCount, 2); assert.equal(rec.rung, 0); assert.equal(rec.nextReviewAt - (T0 + DAY), 1 * DAY)
+rec = reviseErrorRecord(rec, false, false, T0 + 2 * DAY) // correct → rung 1 → 3 days
+assert.equal(rec.rung, 1); assert.equal(rec.nextReviewAt - (T0 + 2 * DAY), 3 * DAY); assert.equal(rec.wrongCount, 2, 'wrongCount is lifetime, not reset by success')
+rec = reviseErrorRecord(rec, false, false, T0 + 5 * DAY) // → rung 2 → 7 days
+assert.equal(rec.rung, 2); assert.equal(rec.nextReviewAt - (T0 + 5 * DAY), 7 * DAY)
+rec = reviseErrorRecord(rec, false, false, T0 + 12 * DAY)
+assert.equal(rec.rung, 3); assert.equal(rec.nextReviewAt - (T0 + 12 * DAY), 15 * DAY)
+rec = reviseErrorRecord(rec, false, false, T0 + 27 * DAY)
+assert.equal(rec.rung, 4); assert.equal(rec.nextReviewAt - (T0 + 27 * DAY), 30 * DAY)
+const mastered = reviseErrorRecord(rec, false, false, T0 + 57 * DAY) // correct past 30-day rung
+assert.equal(mastered, null, 'mastered → null → caller deletes record')
+const relapse = reviseErrorRecord(rec, true, true, T0 + 40 * DAY) // wrong at the last rung → back to square 1
+assert.ok(relapse && relapse.rung === 0 && relapse.skipped === true, 'relapse resets rung and flags skipped')
+assert.deepEqual(REV_LADDER, [1, 3, 7, 15, 30], 'ladder contract unchanged')
+
+console.log('engine tests: ALL PASS (9 groups)')
