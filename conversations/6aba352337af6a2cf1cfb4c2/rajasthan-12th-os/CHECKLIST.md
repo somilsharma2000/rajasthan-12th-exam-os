@@ -110,3 +110,7 @@
 - 2026-09-30 AUDIT-001: full adversarial audit done (findings + fixes in AUDIT-001.md); deep audits 06/07/08 marked delivered; REET/Steno verification, legal notes, tester-recruitment plan, AI cost cap added; features 48-49 re-architected (paid gating loophole); shelf section renamed.
 
 - [x] Exam Hub data files created for all 12 confirmed exams in `gather/exam-hubs/` (00-index.md + 01 to 12 files with field-level evidence & source URLs) — 2026-09-30
+- [x] POLICE WAVE COMPLETE + DEPLOYED 2026-09-30: 608 verified real PYQs live in app (bank 1524). 4-pass audit done (632 staged, 10 answers corrected, 19 excluded per zero-fake-data, subject re-tagging 632/632, 0 overlaps, validator ZERO ISSUES, live hash verified).
+- [x] LDC 2024 P1 VERIFIED 2026-09-30: 153 questions provably verified (dual-archive cross-check + 14 adjudications). Ready for bank merge (next content wave).
+- [~] NEW STAGED SOURCES 2026-09-30 (4-pass verification pending, then merge): Patwari 2025 S1+S2 (197), CET 28-Sep-2024 S1 (147), Stenographer 2024 S1 (128, merge decision pending — check exam scope).
+- [ ] App source index.html was gitignored by workspace pattern — force-added 2026-09-30; verify on next clone that build works from repo alone.

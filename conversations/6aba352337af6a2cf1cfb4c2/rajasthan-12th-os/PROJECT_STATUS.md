@@ -1,10 +1,20 @@
 # PROJECT_STATUS.md — Rajasthan 12th-Level Exam OS
 *Living document. Honest status only. Never report planned work as completed.*
 
-**Last updated:** 2026-09-30 (Founder OS adopted)
-**Current phase:** Phase 2 — BUILD + CONTENT (overnight sprint in progress: 12 bank-authoring agents writing ~545 questions; hub/error-book/DNA/resume/glossary features shipped; regression 18/18; awaiting founder token for repo)
+**Last updated:** 2026-09-30 14:30 IST (Police wave shipped)
+**Current phase:** Phase 2 — BUILD + CONTENT (app LIVE on GitHub Pages; bank 1524 shippable; real-PYQ waves: CET 2024 (149) + Police Constable 2022 (608) merged; LDC 2024 P1 + Patwari 2025 + CET 28-Sep + Stenographer staged, verification in progress)
+
+## Snapshot (verified 2026-09-30)
+- Live URL: https://somilsharma2000.github.io/rajasthan-12th-exam-os/ (deploy hash verified each release)
+- Bank: 1524 shippable / 1524 total (validate-bank: ZERO ISSUES) — real PYQ: CET 2024 S1 149 + Police 2022 608; rest agent-authored, firewall-labeled
+- Engine: Practice / full-length Mock / Error Book (persistent, 1-3-7-15-30 revision ladder) / Exam DNA / Exam Hubs (12) / Progress report / Saved questions / glossary
+- Workflow audit (2026-09-30): fixed full-bank reachability (Fisher-Yates sampling), timer resume on background, persistent Error Book, Agriculture Supervisor pattern fix (100Q × 3 marks, 2 hr, 1/3 negative — CROSS_CHECKED, official PDF pending)
+
 
 ## Completed (verified)
+0. 2026-09-30 POLICE WAVE SHIPPED: 608 verified real PYQs (Rajasthan Police Constable 2022, 5 shifts, 13-16 May) merged into live bank. 4-pass audit: 632 staged → 10 wrong archive answers corrected → 19 excluded (13 UNSURE, 4 BROKEN, 1 unfixable, 1 duplicate-options). Content-based subject re-tagging: broken archive section split fully overridden (632/632 re-tagged). Duplicate vs existing bank: 0. Commit + deploy + live hash verified.
+0. 2026-09-30 LDC 2024 P1 (11 Aug 2024) VERIFIED: 153/150-solvable questions — 141 double-archive agreement (TEP Hindi × StudyFry English, 90% match), 14 disputes adjudicated (TEP 0 right, SF 12 right, both wrong: Q32 trig 100√3 fixed, Q141 unsolvable excluded), Q24 recovered from StudyFry. 4 figure-dependent excluded.
+0. 2026-09-30 NEW PYQ SOURCES STAGED (verification pending): Patwari 17-Aug-2025 S1+S2 (197), CET 28-Sep-2024 S1 (147), Stenographer 5-Oct-2024 S1 (128, bonus source)
 1. Market research: exam inventory (research/01), Rajasthan GK + PYQ strategy (research/02), competitor teardown (research/03), positioning + monetization (research/04) — all delivered with source URLs
 2. Exam inventory: 12 exams profiled, 3 candidates identified for verification
 3. Independent recheck of my own research (found 2 load-bearing conflicts — see below) — verification discipline is active, not just claimed
