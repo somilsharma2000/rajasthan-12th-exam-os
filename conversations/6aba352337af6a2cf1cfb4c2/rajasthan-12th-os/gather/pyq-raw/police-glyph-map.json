@@ -1,0 +1,314 @@
+{
+ "U+1C76": {
+  "repl": "ए",
+  "conf": "high"
+ },
+ "U+1B45": {
+  "repl": "र्",
+  "conf": "high"
+ },
+ "U+1CF0": {
+  "repl": "ि",
+  "conf": "high"
+ },
+ "U+1B6D": {
+  "repl": "स्",
+  "conf": "high"
+ },
+ "U+1CF1": {
+  "repl": "े",
+  "conf": "high"
+ },
+ "U+1BA7": {
+  "repl": "प्र",
+  "conf": "high"
+ },
+ "U+1B68": {
+  "repl": "ल्",
+  "conf": "high"
+ },
+ "U+1B4E": {
+  "repl": "ख्",
+  "conf": "high"
+ },
+ "U+1B4D": {
+  "repl": "क्",
+  "conf": "high"
+ },
+ "U+1B60": {
+  "repl": "न्य",
+  "conf": "high"
+ },
+ "U+1BA2": {
+  "repl": "त्र",
+  "conf": "high"
+ },
+ "U+1CDC": {
+  "repl": "म्न",
+  "conf": "medium"
+ },
+ "U+1B43": {
+  "repl": "क्ष",
+  "conf": "high"
+ },
+ "U+1C82": {
+  "repl": "ं",
+  "conf": "high"
+ },
+ "U+1C79": {
+  "repl": "ैं",
+  "conf": "high"
+ },
+ "U+1C84": {
+  "repl": "ों",
+  "conf": "medium"
+ },
+ "U+1C90": {
+  "repl": "ाएँ",
+  "conf": "medium"
+ },
+ "U+1CE1": {
+  "repl": "श्व",
+  "conf": "high"
+ },
+ "U+1B4F": {
+  "repl": "ग्",
+  "conf": "high"
+ },
+ "U+1CEF": {
+  "repl": "रि",
+  "conf": "medium"
+ },
+ "U+1CF6": {
+  "repl": "क्र",
+  "conf": "low"
+ },
+ "U+1C6D": {
+  "repl": "ीं",
+  "conf": "medium"
+ },
+ "U+1CA6": {
+  "repl": "त्त",
+  "conf": "medium"
+ },
+ "U+1B95": {
+  "repl": "ग्र",
+  "conf": "high"
+ },
+ "U+1C6B": {
+  "repl": "त्",
+  "conf": "medium"
+ },
+ "U+1C68": {
+  "repl": "ु",
+  "conf": "medium"
+ },
+ "U+1BB0": {
+  "repl": "थ",
+  "conf": "medium"
+ },
+ "U+1CDE": {
+  "repl": "त्त",
+  "conf": "medium"
+ },
+ "U+1B5F": {
+  "repl": "ा",
+  "conf": "low"
+ },
+ "U+1CD2": {
+  "repl": "्",
+  "conf": "low"
+ },
+ "U+1B61": {
+  "repl": "स्",
+  "conf": "high"
+ },
+ "U+1B93": {
+  "repl": "त्र",
+  "conf": "high"
+ },
+ "U+1B63": {
+  "repl": "ब्द",
+  "conf": "high"
+ },
+ "U+1C5F": {
+  "repl": "य",
+  "conf": "high"
+ },
+ "U+1CC7": {
+  "repl": "न",
+  "conf": "medium"
+ },
+ "U+1CD9": {
+  "repl": "ति",
+  "conf": "low"
+ },
+ "U+1CE6": {
+  "repl": "्र",
+  "conf": "medium"
+ },
+ "U+1C6E": {
+  "repl": "े",
+  "conf": "low"
+ },
+ "U+1BA4": {
+  "repl": "्र",
+  "conf": "medium"
+ },
+ "U+1CCD": {
+  "repl": "्",
+  "conf": "high"
+ },
+ "U+1B9D": {
+  "repl": "ं",
+  "conf": "medium"
+ },
+ "U+1CF3": {
+  "repl": "ि",
+  "conf": "medium"
+ },
+ "U+1CDF": {
+  "repl": "ि",
+  "conf": "low"
+ },
+ "U+1C67": {
+  "repl": "ा",
+  "conf": "medium"
+ },
+ "U+1CAC": {
+  "repl": "च",
+  "conf": "medium"
+ },
+ "U+1B6B": {
+  "repl": "ों",
+  "conf": "medium"
+ },
+ "U+1BA9": {
+  "repl": "श",
+  "conf": "low"
+ },
+ "U+1BAB": {
+  "repl": "ा",
+  "conf": "medium"
+ },
+ "U+1CEB": {
+  "repl": "्न",
+  "conf": "medium"
+ },
+ "U+1CA4": {
+  "repl": "ो",
+  "conf": "low"
+ },
+ "U+1CF8": {
+  "repl": "र्ण",
+  "conf": "medium"
+ },
+ "U+1B6C": {
+  "repl": "ष्ट",
+  "conf": "medium"
+ },
+ "U+1CB5": {
+  "repl": "ट",
+  "conf": "medium"
+ },
+ "U+1CE9": {
+  "repl": "गु",
+  "conf": "medium"
+ },
+ "U+1BA5": {
+  "repl": "ध्र",
+  "conf": "high"
+ },
+ "U+1B57": {
+  "repl": "र्ट",
+  "conf": "medium"
+ },
+ "U+1CE5": {
+  "repl": "ा",
+  "conf": "low"
+ },
+ "U+1C7C": {
+  "repl": "्य",
+  "conf": "medium"
+ },
+ "U+1CB9": {
+  "repl": "क",
+  "conf": "low"
+ },
+ "U+1CBB": {
+  "repl": "ला",
+  "conf": "medium"
+ },
+ "U+1CB7": {
+  "repl": "ं",
+  "conf": "medium"
+ },
+ "U+1B5B": {
+  "repl": "ण",
+  "conf": "medium"
+ },
+ "U+1C77": {
+  "repl": "र",
+  "conf": "low"
+ },
+ "U+1CBD": {
+  "repl": "ल",
+  "conf": "medium"
+ },
+ "U+1BAF": {
+  "repl": "र",
+  "conf": "low"
+ },
+ "U+1CEC": {
+  "repl": "रि",
+  "conf": "low"
+ },
+ "U+1B5D": {
+  "repl": "श",
+  "conf": "low"
+ },
+ "U+1B6E": {
+  "repl": "त्र",
+  "conf": "low"
+ },
+ "U+1CC0": {
+  "repl": "णा",
+  "conf": "low"
+ },
+ "U+1C8A": {
+  "repl": "ह",
+  "conf": "low"
+ },
+ "U+1CA5": {
+  "repl": "भी",
+  "conf": "low"
+ },
+ "U+1C83": {
+  "repl": "ि",
+  "conf": "low"
+ },
+ "U+1CF4": {
+  "repl": "मै",
+  "conf": "low"
+ },
+ "U+1BA8": {
+  "repl": "ो",
+  "conf": "low"
+ },
+ "U+1C78": {
+  "repl": "ज",
+  "conf": "low"
+ },
+ "U+1CC3": {
+  "repl": "घा",
+  "conf": "medium"
+ },
+ "U+1CE3": {
+  "repl": "ज",
+  "conf": "low"
+ },
+ "U+1CE7": {
+  "repl": "ृ",
+  "conf": "high"
+ }
+}

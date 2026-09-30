@@ -1,3 +1,14 @@
+.agents/.env
 node_modules/
-dist/
-.github/
+.npm/
+__pycache__/
+.cache/
+.venv/
+venv/
+.gradle/
+.dart_tool/
+.pub-cache/
+Pods/
+DerivedData/
+
+conversations/**/slices/
