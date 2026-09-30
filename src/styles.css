@@ -32,3 +32,4 @@ button:disabled { opacity: .4; }
 .hubRow { font-size: .88rem; margin: 6px 0; line-height: 1.45; }
 .hubRow b { color: #4c1d95; }
 .hubRow a { color: #7c3aed; word-break: break-all; }
+.bmOn { color: #f59e0b; }

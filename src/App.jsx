@@ -18,6 +18,11 @@ function saveActive(session, idx) {
 }
 function loadActive() { try { return JSON.parse(localStorage.getItem(LS_KEY)) } catch { return null } }
 function clearActive() { try { localStorage.removeItem(LS_KEY) } catch {} }
+const LS_HIST = 'examos-history', LS_BM = 'examos-bookmarks'
+function loadHist() { try { return JSON.parse(localStorage.getItem(LS_HIST)) || [] } catch { return [] } }
+function pushHist(rec) { try { const h = loadHist(); if (h.some(x => x.key === rec.key)) return; h.unshift(rec); localStorage.setItem(LS_HIST, JSON.stringify(h.slice(0, 50))) } catch {} }
+function loadBM() { try { return JSON.parse(localStorage.getItem(LS_BM)) || [] } catch { return [] } }
+function saveBM(ids) { try { localStorage.setItem(LS_BM, JSON.stringify(ids)) } catch {} }
 
 export default function App() {
   const [lang, setLang] = useState('hi')
@@ -25,6 +30,22 @@ export default function App() {
   const [exam, setExam] = useState(null)
   const [session, setSession] = useState(null)
   const [resumable, setResumable] = useState(null)
+  const [bms, setBms] = useState([])
+  useEffect(() => { setBms(loadBM()) }, [])
+  const toggleBookmark = (id) => setBms(prev => {
+    const next = prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]
+    saveBM(next); return next
+  })
+  const recordAttempt = (session, r) => {
+    if (session.mode !== 'mock') return
+    pushHist({
+      key: session.startedAt + '-' + session.examId,
+      examId: session.examId, examName: session.config.name.hi,
+      date: Date.now(), score: Math.round(r.score * 100) / 100,
+      max: r.total * session.config.pattern.marksPerQuestion,
+      accuracy: r.accuracy, correct: r.correct, wrong: r.wrong, total: r.total
+    })
+  }
   useEffect(() => { const a = loadActive(); if (a && a.ids && a.ids.length) setResumable(a) }, [])
   const resumeMock = () => {
     const ex = EXAMS.find(e => e.id === resumable.examId)
@@ -46,8 +67,10 @@ export default function App() {
     setSession(s); setScreen('player')
   }
 
-  if (screen === 'player') return <Player session={session} setSession={setSession} lang={lang} onFinish={() => setScreen('result')} onExit={() => { setSession(null); setScreen('hub') }} />
-  if (screen === 'result') return <Result session={session} lang={lang} onHome={() => { setSession(null); setScreen('home') }} onRetry={() => { const mode = session.mode; startSession(mode) }} />
+  if (screen === 'player') return <Player session={session} setSession={setSession} lang={lang} bookmarks={bms} toggleBookmark={toggleBookmark} onFinish={() => setScreen('result')} onExit={() => { setSession(null); setScreen('hub') }} />
+  if (screen === 'result') return <Result session={session} lang={lang} onRecord={recordAttempt} onHome={() => { setSession(null); setScreen('home') }} onRetry={() => { const mode = session.mode; startSession(mode) }} />
+  if (screen === 'progress') return <Progress lang={lang} onHome={() => setScreen('home')} />
+  if (screen === 'saved') return <Saved lang={lang} bookmarks={bms} toggleBookmark={toggleBookmark} onHome={() => setScreen('home')} />
   const avail = availFor(exam)
   if (screen === 'setup') return (
     <div className="wrap">
@@ -118,7 +141,9 @@ export default function App() {
         </div>
       )}
       <div className="row">
-        <button onClick={() => setScreen('glossary')}>{lang === 'hi' ? 'शब्दावली (परीक्षा शब्द)' : 'Glossary (exam terms)'}</button>
+        <button onClick={() => setScreen('glossary')}>{lang === 'hi' ? 'शब्दावली' : 'Glossary'}</button>
+        <button onClick={() => setScreen('progress')}>{lang === 'hi' ? 'प्रगति रिपोर्ट' : 'Progress'}</button>
+        <button onClick={() => setScreen('saved')}>{lang === 'hi' ? 'सहेजे गए' : 'Saved'} ({bms.length})</button>
       </div>
       <h2>{t.chooseExam}</h2>
       {EXAMS.map(ex => (
@@ -129,6 +154,57 @@ export default function App() {
       ))}
       <p className="note">{VERSION_NOTE[lang]}</p>
       <p className="note">{lang === 'hi' ? 'सत्यापित प्रश्न-बैंक' : 'Verified question bank'}: {BANK_STATS.shippable} ({lang === 'hi' ? 'असत्यापित कभी शामिल नहीं' : 'unverified never included'}) · {SHELF.map(s => s.name[lang]).join(' · ')}</p>
+    </div>
+  )
+}
+
+function Progress({ lang, onHome }) {
+  const hist = loadHist()
+  const t = T(lang)
+  const mocks = hist.length
+  const avgAcc = mocks ? Math.round(hist.reduce((s, h) => s + h.accuracy, 0) / mocks) : 0
+  const byExam = {}
+  hist.forEach(h => { const e = byExam[h.examId] = byExam[h.examId] || { name: h.examName, n: 0, best: -Infinity, sumAcc: 0 }; e.n++; e.best = Math.max(e.best, h.score); e.sumAcc += h.accuracy })
+  return (
+    <div className="wrap">
+      <div className="bar"><button className="ghost" onClick={onHome}>←</button><b style={{color:'#fff'}}>{t.appName}</b><span /></div>
+      <div className="card">
+        <h2>{lang === 'hi' ? 'प्रगति रिपोर्ट' : 'Progress Report'}</h2>
+        {mocks === 0 && <p className="note">{lang === 'hi' ? 'अभी कोई पूर्ण मॉक नहीं। मॉक टेस्ट देने के बाद यहाँ आपका ट्रैकिंग रिकॉर्ड बनेगा।' : 'No completed mocks yet. Your tracking record will appear here after you take a mock.'}</p>}
+        {mocks > 0 && <div>
+          <p>{lang === 'hi' ? 'कुल मॉक:' : 'Total mocks:'} <b>{mocks}</b> · {lang === 'hi' ? 'औसत शुद्धता:' : 'Avg accuracy:'} <b>{avgAcc}%</b></p>
+          <h3>{lang === 'hi' ? 'परीक्षा-वार' : 'Per exam'}</h3>
+          {Object.entries(byExam).map(([id, e]) => (
+            <div key={id} className="hubRow"><b>{e.name}:</b> <span>{e.n} {lang === 'hi' ? 'मॉक' : 'mocks'} · {lang === 'hi' ? 'सर्वश्रेष्ठ' : 'Best'}: {e.best} · {lang === 'hi' ? 'औसत शुद्धता' : 'avg acc'}: {Math.round(e.sumAcc / e.n)}%</span></div>
+          ))}
+          <h3>{lang === 'hi' ? 'हाल के प्रयास' : 'Recent attempts'}</h3>
+          {hist.slice(0, 10).map(h => (
+            <div key={h.key} className="hubRow"><b>{h.examName}</b> <span>{new Date(h.date).toLocaleDateString('hi-IN')} · {h.score}/{h.max} · {h.accuracy}%</span></div>
+          ))}
+        </div>}
+      </div>
+    </div>
+  )
+}
+
+function Saved({ lang, bookmarks, toggleBookmark, onHome }) {
+  const t = T(lang)
+  const qs = ALL_QUESTIONS.filter(q => bookmarks.includes(q.id))
+  return (
+    <div className="wrap">
+      <div className="bar"><button className="ghost" onClick={onHome}>←</button><b style={{color:'#fff'}}>{t.appName}</b><span /></div>
+      <div className="card">
+        <h2>{lang === 'hi' ? 'सहेजे गए प्रश्न' : 'Saved Questions'}</h2>
+        {qs.length === 0 && <p className="note">{lang === 'hi' ? 'कोई प्रश्न सहेजा नहीं गया। प्रश्न पर ☆ दबाकर रिवीजन के लिए सहेजें।' : 'No saved questions yet. Tap ☆ on a question to save it for revision.'}</p>}
+        {qs.map(q => (
+          <div key={q.id} className="explain" style={{background:'#f8fafc'}}>
+            <div className="qText">{q.q[lang]}</div>
+            <div>{lang === 'hi' ? 'सही उत्तर' : 'Correct answer'}: <b>{String.fromCharCode(65 + q.answer)}. {q.options[lang][q.answer]}</b></div>
+            <div className="note">{q.explanation[lang]}</div>
+            <button className="ghost" onClick={() => toggleBookmark(q.id)}>{lang === 'hi' ? 'हटाएँ' : 'Remove'}</button>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
@@ -154,7 +230,7 @@ function PatternCard({ exam, lang }) {
   </div>
 }
 
-function Player({ session, setSession, lang, onFinish, onExit }) {
+function Player({ session, setSession, lang, bookmarks, toggleBookmark, onFinish, onExit }) {
   const t = T(lang)
   const [idx, setIdx] = useState(0)
   const [now, setNow] = useState(Date.now())
@@ -196,6 +272,7 @@ function Player({ session, setSession, lang, onFinish, onExit }) {
       <div className="card">
         <div className="qHead">
           <span>{t.question} {idx + 1}/{session.questions.length}</span>
+          <button className={'ghost' + (bookmarks.includes(q.id) ? ' bmOn' : '')} onClick={() => toggleBookmark(q.id)}>{bookmarks.includes(q.id) ? '★' : '☆'}</button>
           {q.origin === 'real_pyq' ? <span className="badge pyq">{t.pyq} · {t.verified}</span> : <span className="badge ai">{t.agentAuthored}</span>}
         </div>
         <p className="qText">{q.q[lang]}</p>
@@ -234,10 +311,11 @@ function Player({ session, setSession, lang, onFinish, onExit }) {
   )
 }
 
-function Result({ session, lang }) {
+function Result({ session, lang, onRecord }) {
   const t = T(lang)
   const r = scoreSession(session)
   const conf = session.config
+  useEffect(() => { if (onRecord) onRecord(session, r) }, [])
   // EXAM DNA: per-subject breakdown
   const bySub = {}
   session.questions.forEach(q => {
