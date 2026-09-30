@@ -1,0 +1,717 @@
+[
+  {
+    "i": 0,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 1,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 2,
+    "subject": "india-gk",
+    "note": "Main question asks about Jain Tirthankaras (Ancient India history); English text field contained extraneous statistics text."
+  },
+  {
+    "i": 3,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 4,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 5,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 6,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 7,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 8,
+    "subject": "maths",
+    "note": "Data interpretation table question classified as maths per prompt guidelines."
+  },
+  {
+    "i": 9,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 10,
+    "subject": "raj-gk",
+    "note": "Udaipur in Rajasthan nominated as India's first wetland city; tagged raj-gk as specific Rajasthan current affairs."
+  },
+  {
+    "i": 11,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 12,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 13,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 14,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 15,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 16,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 17,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 18,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 19,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 20,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 21,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 22,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 23,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 24,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 25,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 26,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 27,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 28,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 29,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 30,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 31,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 32,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 33,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 34,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 35,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 36,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 37,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 38,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 39,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 40,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 41,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 42,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 43,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 44,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 45,
+    "subject": "science",
+    "note": "Space technology / satellite mission categorized under science (Science & Tech)."
+  },
+  {
+    "i": 46,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 47,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 48,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 49,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 50,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 51,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 52,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 53,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 54,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 55,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 56,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 57,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 58,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 59,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 60,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 61,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 62,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 63,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 64,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 65,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 66,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 67,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 68,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 69,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 70,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 71,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 72,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 73,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 74,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 75,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 76,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 77,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 78,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 79,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 80,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 81,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 82,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 83,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 84,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 85,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 86,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 87,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 88,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 89,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 90,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 91,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 92,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 93,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 94,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 95,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 96,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 97,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 98,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 99,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 100,
+    "subject": "raj-gk",
+    "note": "Acharya Tulsi launched the Anuvrat Movement in Rajaldesar, Rajasthan in 1949; a classic Rajasthan history/personality question."
+  },
+  {
+    "i": 101,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 102,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 103,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 104,
+    "subject": "maths",
+    "note": "Data interpretation table question classified as maths per prompt guidelines."
+  },
+  {
+    "i": 105,
+    "subject": "maths",
+    "note": "Data interpretation pie-chart question classified as maths per prompt guidelines."
+  },
+  {
+    "i": 106,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 107,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 108,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 109,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 110,
+    "subject": "science",
+    "note": "Geology / petrology rock types categorized under science."
+  },
+  {
+    "i": 111,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 112,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 113,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 114,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 115,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 116,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 117,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 118,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 119,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 120,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 121,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 122,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 123,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 124,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 125,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 126,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 127,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 128,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 129,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 130,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 131,
+    "subject": "raj-gk",
+    "note": ""
+  },
+  {
+    "i": 132,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 133,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 134,
+    "subject": "science",
+    "note": ""
+  },
+  {
+    "i": 135,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 136,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 137,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 138,
+    "subject": "maths",
+    "note": ""
+  },
+  {
+    "i": 139,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 140,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 141,
+    "subject": "india-gk",
+    "note": ""
+  },
+  {
+    "i": 142,
+    "subject": "raj-gk",
+    "note": ""
+  }
+]
