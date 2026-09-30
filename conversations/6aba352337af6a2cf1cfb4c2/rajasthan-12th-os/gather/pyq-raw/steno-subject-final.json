@@ -1,0 +1,514 @@
+[
+ {
+  "n": 1,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 2,
+  "subject": "science"
+ },
+ {
+  "n": 3,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 4,
+  "subject": "science"
+ },
+ {
+  "n": 5,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 6,
+  "subject": "science"
+ },
+ {
+  "n": 7,
+  "subject": "science"
+ },
+ {
+  "n": 8,
+  "subject": "india-gk"
+ },
+ {
+  "n": 9,
+  "subject": "science"
+ },
+ {
+  "n": 10,
+  "subject": "science"
+ },
+ {
+  "n": 11,
+  "subject": "science"
+ },
+ {
+  "n": 12,
+  "subject": "india-gk"
+ },
+ {
+  "n": 13,
+  "subject": "science"
+ },
+ {
+  "n": 14,
+  "subject": "science"
+ },
+ {
+  "n": 15,
+  "subject": "science"
+ },
+ {
+  "n": 16,
+  "subject": "science"
+ },
+ {
+  "n": 17,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 18,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 19,
+  "subject": "science"
+ },
+ {
+  "n": 20,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 21,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 23,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 24,
+  "subject": "science"
+ },
+ {
+  "n": 25,
+  "subject": "science"
+ },
+ {
+  "n": 26,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 27,
+  "subject": "science"
+ },
+ {
+  "n": 28,
+  "subject": "science"
+ },
+ {
+  "n": 31,
+  "subject": "india-gk"
+ },
+ {
+  "n": 32,
+  "subject": "india-gk"
+ },
+ {
+  "n": 33,
+  "subject": "science"
+ },
+ {
+  "n": 34,
+  "subject": "science"
+ },
+ {
+  "n": 35,
+  "subject": "india-gk"
+ },
+ {
+  "n": 36,
+  "subject": "science"
+ },
+ {
+  "n": 37,
+  "subject": "science"
+ },
+ {
+  "n": 39,
+  "subject": "science"
+ },
+ {
+  "n": 40,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 42,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 43,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 44,
+  "subject": "science"
+ },
+ {
+  "n": 45,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 47,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 48,
+  "subject": "india-gk"
+ },
+ {
+  "n": 49,
+  "subject": "science"
+ },
+ {
+  "n": 50,
+  "subject": "science"
+ },
+ {
+  "n": 51,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 52,
+  "subject": "science"
+ },
+ {
+  "n": 53,
+  "subject": "science"
+ },
+ {
+  "n": 54,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 55,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 56,
+  "subject": "science"
+ },
+ {
+  "n": 58,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 59,
+  "subject": "india-gk"
+ },
+ {
+  "n": 60,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 61,
+  "subject": "science"
+ },
+ {
+  "n": 62,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 63,
+  "subject": "science"
+ },
+ {
+  "n": 64,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 65,
+  "subject": "science"
+ },
+ {
+  "n": 66,
+  "subject": "science"
+ },
+ {
+  "n": 68,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 69,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 70,
+  "subject": "science"
+ },
+ {
+  "n": 71,
+  "subject": "science"
+ },
+ {
+  "n": 72,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 73,
+  "subject": "science"
+ },
+ {
+  "n": 74,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 76,
+  "subject": "india-gk"
+ },
+ {
+  "n": 78,
+  "subject": "india-gk"
+ },
+ {
+  "n": 79,
+  "subject": "science"
+ },
+ {
+  "n": 81,
+  "subject": "india-gk"
+ },
+ {
+  "n": 82,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 83,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 84,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 85,
+  "subject": "india-gk"
+ },
+ {
+  "n": 86,
+  "subject": "science"
+ },
+ {
+  "n": 87,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 90,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 92,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 93,
+  "subject": "science"
+ },
+ {
+  "n": 95,
+  "subject": "india-gk"
+ },
+ {
+  "n": 96,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 97,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 98,
+  "subject": "science"
+ },
+ {
+  "n": 99,
+  "subject": "science"
+ },
+ {
+  "n": 100,
+  "subject": "india-gk"
+ },
+ {
+  "n": 101,
+  "subject": "science"
+ },
+ {
+  "n": 102,
+  "subject": "science"
+ },
+ {
+  "n": 103,
+  "subject": "science"
+ },
+ {
+  "n": 104,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 105,
+  "subject": "science"
+ },
+ {
+  "n": 106,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 107,
+  "subject": "science"
+ },
+ {
+  "n": 109,
+  "subject": "science"
+ },
+ {
+  "n": 110,
+  "subject": "science"
+ },
+ {
+  "n": 111,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 112,
+  "subject": "science"
+ },
+ {
+  "n": 113,
+  "subject": "science"
+ },
+ {
+  "n": 114,
+  "subject": "india-gk"
+ },
+ {
+  "n": 115,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 117,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 119,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 120,
+  "subject": "science"
+ },
+ {
+  "n": 121,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 122,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 123,
+  "subject": "science"
+ },
+ {
+  "n": 124,
+  "subject": "science"
+ },
+ {
+  "n": 125,
+  "subject": "science"
+ },
+ {
+  "n": 127,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 128,
+  "subject": "science"
+ },
+ {
+  "n": 131,
+  "subject": "science"
+ },
+ {
+  "n": 132,
+  "subject": "india-gk"
+ },
+ {
+  "n": 133,
+  "subject": "india-gk"
+ },
+ {
+  "n": 134,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 135,
+  "subject": "science"
+ },
+ {
+  "n": 137,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 138,
+  "subject": "science"
+ },
+ {
+  "n": 139,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 140,
+  "subject": "science"
+ },
+ {
+  "n": 141,
+  "subject": "science"
+ },
+ {
+  "n": 142,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 143,
+  "subject": "india-gk"
+ },
+ {
+  "n": 144,
+  "subject": "science"
+ },
+ {
+  "n": 145,
+  "subject": "science"
+ },
+ {
+  "n": 146,
+  "subject": "india-gk"
+ },
+ {
+  "n": 147,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 148,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 149,
+  "subject": "india-gk"
+ },
+ {
+  "n": 150,
+  "subject": "raj-gk"
+ }
+]
