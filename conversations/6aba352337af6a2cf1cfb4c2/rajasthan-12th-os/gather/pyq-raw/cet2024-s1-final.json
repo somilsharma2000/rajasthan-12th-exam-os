@@ -1,0 +1,1791 @@
+[
+ {
+  "n": 1,
+  "q": "‘अन्वीक्षण’ में प्रयुक्त स्वर सन्धि है-",
+  "opts": [
+   "यण्",
+   "दीर्घ",
+   "अयादि",
+   "गुण"
+  ],
+  "ans": 0,
+  "subject": "india-gk"
+ },
+ {
+  "n": 2,
+  "q": "निम्नलिखित में से किसमें स्वर संधि नहीं है ?",
+  "opts": [
+   "मतैक्य",
+   "भवन",
+   "नायिका",
+   "शब्द"
+  ],
+  "ans": 3,
+  "subject": "hindi"
+ },
+ {
+  "n": 3,
+  "q": "काल के आधार पर क्रिया के कितने मुख्य भेद होते हैं ?",
+  "opts": [
+   "दो",
+   "तीन",
+   "सात",
+   "आठ"
+  ],
+  "ans": 1,
+  "subject": "hindi"
+ },
+ {
+  "n": 4,
+  "q": "If ‘MEDICAL’ is written as ‘DEMILAC’ in a certain code language, then how is ‘COMPILE’ written in that code ?",
+  "opts": [
+   "MOCPELO",
+   "MOCQELI",
+   "OMCPILE",
+   "MOCPELI"
+  ],
+  "ans": 3,
+  "subject": "reasoning"
+ },
+ {
+  "n": 5,
+  "q": "If the series S=1+\\frac{1}{1+2}+\\frac{1}{1+2+3}+\\frac{1}{1+2+3+4}+......., then sum of its infinite terms is :",
+  "opts": [
+   "\\frac{1}{2}",
+   "1",
+   "\\frac{3}{2}",
+   "2"
+  ],
+  "ans": 3,
+  "subject": "maths"
+ },
+ {
+  "n": 6,
+  "q": "Some girls are standing in a queue. If Kavita who is 11 th from the left end and Babita who is 9 th from the right end interchange their positions, Kavita becomes 15 th from the left end. How many girls are there in the queue ?",
+  "opts": [
+   "21",
+   "23",
+   "25",
+   "27"
+  ],
+  "ans": 1,
+  "subject": "reasoning"
+ },
+ {
+  "n": 7,
+  "q": "Some students are standing in a row facing in same direction. If the position of John from left is 32 and from right is 15, then how many students are there in the row ?",
+  "opts": [
+   "45",
+   "47",
+   "46",
+   "48"
+  ],
+  "ans": 2,
+  "subject": "maths"
+ },
+ {
+  "n": 8,
+  "q": "Vikram Sarabhai Space Centre is located at –",
+  "opts": [
+   "Bengaluru",
+   "Thiruvananthapuram",
+   "Sriharikota",
+   "Hyderabad"
+  ],
+  "ans": 1,
+  "subject": "science"
+ },
+ {
+  "n": 9,
+  "q": "A coil of wire has an area of 600 sq cm and has 500 turns. If it carries 1.5 A current, its magnetic dipole moment is –",
+  "opts": [
+   "10 Am 2",
+   "15 Am 2",
+   "30 Am 2",
+   "45 Am 2"
+  ],
+  "ans": 3,
+  "subject": "science"
+ },
+ {
+  "n": 10,
+  "q": "When the cornea is not spherical in shape, the defect of vision in this eye is called-",
+  "opts": [
+   "Myopia",
+   "Hypermetropia",
+   "Astigmatism",
+   "Cataract"
+  ],
+  "ans": 2,
+  "subject": "science"
+ },
+ {
+  "n": 11,
+  "q": "निम्नलिखित में अन्य पुरुषवाचक सर्वनाम है-",
+  "opts": [
+   "हम",
+   "मैं",
+   "वे",
+   "आप"
+  ],
+  "ans": 2,
+  "subject": "hindi"
+ },
+ {
+  "n": 12,
+  "q": "निम्नलिखित में जातिवाचक संज्ञा नहीं है-",
+  "opts": [
+   "ठगी",
+   "विद्वान",
+   "गाँव",
+   "सती"
+  ],
+  "ans": 0,
+  "subject": "hindi"
+ },
+ {
+  "n": 13,
+  "q": "सूची-I को सूची-II से सुमेलित कीजिए : सूची-I (वाक्य) सूची-II (क्रिया) (a) राम रोटी खाता है। (I) संयुक्त क्रिया (b) वेदांत पढ़ता है। (II) प्रेरणार्थक क्रिया (c) शिक्षक विद्यार्थी से किताब पढ़वाता है। (III) अकर्मक क्रिया (d) वह लड़का चल बसा। (IV) सकर्मक क्रिया नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :",
+  "opts": [
+   "a-II, b-I, c-III, d-IV",
+   "a-IV, b-II, c-I, d-III",
+   "a-IV, b-III, c-II, d-I",
+   "a-III, b-IV, c-I, d-II"
+  ],
+  "ans": 2,
+  "subject": "hindi"
+ },
+ {
+  "n": 14,
+  "q": "सूची-I को सूची-II से सुमेलित कीजिए : सूची-I (शब्द) सूची-II (विपरीतार्थक शब्द) (a) ऊर्ध्व (I) मधुर (b) अवसान (II) अधः (c) तिक्त (III) आरंभ (d) सुधा (IV) गरल नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :",
+  "opts": [
+   "a-IV, b-II, c-I, d-III",
+   "a-I, b-III, c-II, d-IV",
+   "a-II, b-III, c-I, d-IV",
+   "a-III, b-IV, c-I, d-II"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 15,
+  "q": "‘धीरे-धीरे’ में कौन-सा समास है ?",
+  "opts": [
+   "अव्ययीभाव",
+   "कर्मधारय",
+   "द्वन्द्व",
+   "द्विगु"
+  ],
+  "ans": 0,
+  "subject": "hindi"
+ },
+ {
+  "n": 16,
+  "q": "Ethanoic acid reacts with carbonates to form-",
+  "opts": [
+   "Salt, nitrogen dioxide and water only",
+   "Salt, carbon dioxide and water only",
+   "Salt, ethane and water only",
+   "Salt and water only"
+  ],
+  "ans": 1,
+  "subject": "science"
+ },
+ {
+  "n": 17,
+  "q": "The property of carbon which is responsible for the formation of long chains is called :",
+  "opts": [
+   "Catenation",
+   "Sublimation",
+   "Carbonation",
+   "Hydrogenation"
+  ],
+  "ans": 0,
+  "subject": "science"
+ },
+ {
+  "n": 18,
+  "q": "The numbers 24, 34, 46, 48, 2x+1, 4x+3, 105, 110, 114, 123 are written in ascending order and the median is 77. The value of x is :",
+  "opts": [
+   "20",
+   "22",
+   "25",
+   "30"
+  ],
+  "ans": 2,
+  "subject": "maths"
+ },
+ {
+  "n": 19,
+  "q": "There is 50% increase in an amount of money in 5 years, at simple interest. What will be the compound interest on ₹ 15,000 after 3 years at the same rate ?",
+  "opts": [
+   "₹ 4,960",
+   "₹ 4,800",
+   "₹ 4,900",
+   "₹ 4,965"
+  ],
+  "ans": 3,
+  "subject": "maths"
+ },
+ {
+  "n": 20,
+  "q": "Two numbers are in ratio of 21 : 26. If 8 is added to each number, then new numbers are in ratio of 5 : 6. Find the ratio of numbers, if 2 is subtracted from each number.",
+  "opts": [
+   "2 : 3",
+   "1 : 4",
+   "4 : 5",
+   "18 : 25"
+  ],
+  "ans": 2,
+  "subject": "maths"
+ },
+ {
+  "n": 21,
+  "q": "The angles of elevation of the top of a tower from two points A and B at distance p and q respectively, from the base of tower and in the same straight line with it are complimentary. The height of the tower is :",
+  "opts": [
+   "p.q",
+   "\\sqrt{p.q}",
+   "(pq)^{\\frac{1}{3}}",
+   "p\\sqrt{q}"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 22,
+  "q": "Which of the following is the transistor’s capacity of the first microprocessor produced by Intel Corporation ?",
+  "opts": [
+   "1700",
+   "1800",
+   "2300",
+   "2700"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 23,
+  "q": "Which of the following command of excel will take you to the next workbook window ?",
+  "opts": [
+   "F6 / Shift + F6",
+   "Ctrl + Page Up",
+   "Ctrl + Shift + F6 / Tab",
+   "Ctrl + F6 / Tab"
+  ],
+  "ans": 3,
+  "subject": "computer"
+ },
+ {
+  "n": 24,
+  "q": "Which is the dialect of Kota, Bundi and Jhalawar region of Rajasthan ? (Choose the most appropriate option form below:)",
+  "opts": [
+   "Wagadi",
+   "Malvi",
+   "Hadoti",
+   "Bhili"
+  ],
+  "ans": 2,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 25,
+  "q": "In Rajasthan Bichchiyo, Lalar, Nokhila and Shikhar are :-",
+  "opts": [
+   "Folk Dramas",
+   "Folk Songs",
+   "Folk Dances",
+   "Playing Instruments"
+  ],
+  "ans": 1,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 26,
+  "q": "Who is worshipped as a warrior with spear in hand, or as a snake demigod in Rajasthan ?",
+  "opts": [
+   "Ramdevji",
+   "Gogaji",
+   "Pabu ji",
+   "Devnarayan ji"
+  ],
+  "ans": 1,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 27,
+  "q": "‘जिसके समान दूसरा नहीं है, वह’ इस विग्रह के लिए समस्तपद होगा-",
+  "opts": [
+   "अपूर्व",
+   "अद्वितीय",
+   "द्वैत",
+   "द्वापर"
+  ],
+  "ans": 1,
+  "subject": "hindi"
+ },
+ {
+  "n": 28,
+  "q": "‘आठ वार नौ त्योहार’ लोकोक्ति का अर्थ है-",
+  "opts": [
+   "दुगुना लाभ",
+   "तालमेल न होना",
+   "मौजमस्ती से जीवन बिताना",
+   "देखा-देखी परिवर्तन आना"
+  ],
+  "ans": 2,
+  "subject": "hindi"
+ },
+ {
+  "n": 29,
+  "q": "कार्यालयी पत्र में अधोलेख में प्रयुक्त होने वाला शब्द है-",
+  "opts": [
+   "सेवा में",
+   "भवदीय",
+   "श्रीमान",
+   "महोदय"
+  ],
+  "ans": 1,
+  "subject": "hindi"
+ },
+ {
+  "n": 30,
+  "q": "A shopkeeper bought 6 articles for ₹ 5 and sold them at 4 articles for ₹ 6. Then what is his gain percent ?",
+  "opts": [
+   "29%",
+   "65%",
+   "72%",
+   "80%"
+  ],
+  "ans": 3,
+  "subject": "maths"
+ },
+ {
+  "n": 31,
+  "q": "Out of 2000 employees in an office, 52% are graduates. 60% of the employees are male and 50% of the male employees are graduates. Then how many female employees are graduates ?",
+  "opts": [
+   "410",
+   "430",
+   "440",
+   "460"
+  ],
+  "ans": 2,
+  "corrected": "source answer letter garbled (D \"2133 1/3\"); independent solve gives 440 = C",
+  "subject": "india-gk"
+ },
+ {
+  "n": 32,
+  "q": "The value of log 9 27 + log 27 9 is :",
+  "opts": [
+   "5/6",
+   "13/6",
+   "1/2",
+   "9/5"
+  ],
+  "ans": 1,
+  "subject": "maths"
+ },
+ {
+  "n": 33,
+  "q": "Choose the most appropriate option to fill in the blanks : Do you know __________ in London ? Yes, my friend Arun lives __________ near London. But in case he is out of town, I will have _________ to go.",
+  "opts": [
+   "someone, x, somewhere",
+   "anyone, nowhere, nothing",
+   "anybody, somewhere, nowhere",
+   "nobody, anywhere, something"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 34,
+  "q": "Choose the most appropriate option to complete the sentence. In an official letter the ‘subject’ is ___________ .",
+  "opts": [
+   "as long as possible",
+   "stretched and relevant",
+   "brief, clear and relevant",
+   "vague and precise"
+  ],
+  "ans": 2,
+  "subject": "english"
+ },
+ {
+  "n": 35,
+  "q": "Choose the most appropriate word to complete the given sentence : I was advised not to loiter _________ the streets after sunset.",
+  "opts": [
+   "about",
+   "for",
+   "with",
+   "to"
+  ],
+  "ans": 0,
+  "subject": "english"
+ },
+ {
+  "n": 36,
+  "q": "अनेकार्थी शब्द ‘पतंग’ का निम्नलिखित में से एक अर्थ नहीं है-",
+  "opts": [
+   "पक्षी",
+   "सूर्य",
+   "बादल",
+   "फतिंगा"
+  ],
+  "ans": 2,
+  "subject": "hindi"
+ },
+ {
+  "n": 37,
+  "q": "क्रिया के अंत में लगने वाले प्रत्यय कहलाते हैं-",
+  "opts": [
+   "तद्धित",
+   "तद्भव",
+   "उपसर्ग",
+   "कृदन्त"
+  ],
+  "ans": 3,
+  "subject": "hindi"
+ },
+ {
+  "n": 38,
+  "q": "‘अपितु’ शब्द में निहित उपसर्ग है-",
+  "opts": [
+   "अ",
+   "अपि",
+   "तु",
+   "उ"
+  ],
+  "ans": 1,
+  "subject": "hindi"
+ },
+ {
+  "n": 39,
+  "q": "‘Pangong Tso’ lake is situated in which of the following sub divisions of the Himalayas ? (Choose the most appropriate option from below:)",
+  "opts": [
+   "Himachal and Uttarakhand Himalayas",
+   "Darjiling and Sikkim Himalayas",
+   "Arunachal Himalayas",
+   "Kashmir/ Ladakh or Northwestern Himalayas"
+  ],
+  "ans": 3,
+  "subject": "india-gk"
+ },
+ {
+  "n": 40,
+  "q": "Which is not a function of the State Human Rights Commission ? (Choose the most appropriate option from below:)",
+  "opts": [
+   "To undertake and promote research in the field of Human Rights.",
+   "To discourage the efforts of Non-Governmental Organizations working in the field of Human Rights.",
+   "To visit jails and study the living condition of inmates.",
+   "To spread human rights literacy among the people."
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 41,
+  "q": "By which Indian Constitutional Amendment the ‘Gram Sabha’ has been given a Constitutional Status ?",
+  "opts": [
+   "72 nd",
+   "73 rd",
+   "74 th",
+   "75 th"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 42,
+  "q": "Who can remove the Governor of a State ? (Choose the most appropriate from below:)",
+  "opts": [
+   "Chief Justice of India",
+   "Chief Minister",
+   "President",
+   "Prime Minister"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 44,
+  "q": "Take the given statements to be true, even if they seem to be at variance from commonly known facts. Then decide which of the given conclusion logically follows from the given statements : Statements : No magazine is newspaper. Some newspapers are books. All books are spoons. Conclusions : (I) Some magazines are books. (II) Some newspapers are spoons.",
+  "opts": [
+   "Only conclusion I follows.",
+   "Only conclusion II follows.",
+   "Both conclusions I and II follows.",
+   "Neither conclusion I nor conclusion II follows."
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 45,
+  "q": "निम्नलिखित में से ‘जलद-जलज’ शब्द युग्म का संगत अर्थ है-",
+  "opts": [
+   "हाथी – सरोवर",
+   "कपास – लहर",
+   "बादल – कमल",
+   "समुद्र – हाथी"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 46,
+  "q": "The Preamble of the Indian Constitution starts with the phrase :",
+  "opts": [
+   "“We the people of India” …….",
+   "With the name of God ……",
+   "India a Sovereign, socialist ……",
+   "To secure all citizen of India ……"
+  ],
+  "ans": 0,
+  "subject": "india-gk"
+ },
+ {
+  "n": 47,
+  "q": "In 1983, which of the following Commission/ Committee was appointed by the Central Government to examine and review the Centre-State relations in all spheres and recommend appropriate changes ?",
+  "opts": [
+   "Hanumanthaiya Commission",
+   "Sarkaria Commission",
+   "Rajamannar Committee",
+   "Ashok Mehta Commission"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 48,
+  "q": "Chairman of Rajasthan Public Service Commission is appointed by which one of the following ?",
+  "opts": [
+   "Chief Minister",
+   "Governor",
+   "Chief Justice of High Court",
+   "Chairman UPSC"
+  ],
+  "ans": 1,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 49,
+  "q": "Shri Lal Joshi, Phad artist, belongs to which place in Rajasthan ?",
+  "opts": [
+   "Bhilwara",
+   "Jaipur",
+   "Sikar",
+   "Churu"
+  ],
+  "ans": 0,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 50,
+  "q": "Select the incorrect statement in context of Bhils of Rajasthan and Govind Guru.",
+  "opts": [
+   "For social and moral upliftment of the Bhils of Rajasthan, Govind Guru established the Samp Sabha.",
+   "To keep them in Hinduism he started the Bhagat Movement.",
+   "The Britishers felt that the objective of this social reform movement run by Govind Guru was the formation of a Bhil State.",
+   "He organised monthly meetings of Samp Sabha on the Managarh Hills."
+  ],
+  "ans": 3,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 51,
+  "q": "The ancient name of Jaisalmer was _________ .",
+  "opts": [
+   "Vagad",
+   "Mand",
+   "Hadoti",
+   "Shekhawati"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 52,
+  "q": "Select the incorrect statement about subtropical mountain forests. (Choose the most appropriate option from below:)",
+  "opts": [
+   "These forests are found only in Rajasthan and Uttar Pradesh.",
+   "Subtropical Mountain forests are found only in Mount Abu region in Rajasthan.",
+   "In these forests, greenery is available permanently.",
+   "These forests can be found in Sirohi which is situated in Rajasthan."
+  ],
+  "ans": 0,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 53,
+  "q": "Which of the following is the biggest geographical region (area wise) of Rajasthan ?",
+  "opts": [
+   "Semi dry region",
+   "Aravali region",
+   "Western desert plain region",
+   "Eastern plain region"
+  ],
+  "ans": 2,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 54,
+  "q": "Which of the following Indian states/union territory has the highest number of wildlife sancturies ?",
+  "opts": [
+   "Himachal Pradesh",
+   "West Bengal",
+   "Andaman and Nicobar Islands",
+   "Lakshadweep"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 55,
+  "q": "What is Himalayan yew (Taxus Wallichiana) ?",
+  "opts": [
+   "A type of Tribe",
+   "A type of soil which is found in Himalayan region",
+   "A folk song of Himachal Pradesh",
+   "A Medicinal tree"
+  ],
+  "ans": 3,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 56,
+  "q": "Who became the second Indian to win a gold medal at the Asian Marathan Championship in 2024 ?",
+  "opts": [
+   "Kartik Kumar",
+   "Srinu Bugatha",
+   "Man Singh",
+   "Gopi T"
+  ],
+  "ans": 2,
+  "subject": "current-affairs"
+ },
+ {
+  "n": 57,
+  "q": "Which country has emerged as the world’s second largest producer of Mobile phones ?",
+  "opts": [
+   "Vietnam",
+   "Germany",
+   "India",
+   "United States"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 58,
+  "q": "परिभाषिक शब्द ‘Valid’ का उपयुक्त हिंदी अर्थ है-",
+  "opts": [
+   "विधिमान्य",
+   "सुयोग्य",
+   "अवैध",
+   "वृति"
+  ],
+  "ans": 0,
+  "subject": "india-gk"
+ },
+ {
+  "n": 59,
+  "q": "Where is marble dumping yard in Rajasthan ?",
+  "opts": [
+   "Kishangarh",
+   "Bundi",
+   "Kumbhalgarh",
+   "Bikaner"
+  ],
+  "ans": 0,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 60,
+  "q": "Mukhyamantri Laghu Vanijyik Vahan Swarojgar Yojna in Rajasthan has been notified on :",
+  "opts": [
+   "12 December 2021",
+   "11 October 2022",
+   "15 November 2023",
+   "19 December 2023"
+  ],
+  "ans": 1,
+  "subject": "current-affairs"
+ },
+ {
+  "n": 61,
+  "q": "As cited in the ancient text of Rajasthan that fort of Rajasthan where soldiers who were skilled in the planning and strategy of wars, lived in was called as – (Choose the most appropriate option from below:)",
+  "opts": [
+   "Sahay Durg",
+   "Sainya Durg",
+   "Parikh Durg",
+   "Paaridh Durg"
+  ],
+  "ans": 1,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 62,
+  "q": "People of which Civilization buried their dead with jewellery and ornaments ?",
+  "opts": [
+   "Gilund",
+   "Kalibangan",
+   "Ahad",
+   "Bagor"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 63,
+  "q": "Karpur Chand Kulish was the founder of which newspaper ?",
+  "opts": [
+   "Dainik Jagran",
+   "Punjab Kesari",
+   "Rajasthan Kesari",
+   "Rajasthan Patrika"
+  ],
+  "ans": 3,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 64,
+  "q": "Which of the following words has been added to the Preamble by the 42 th Constitutional Amendment ?",
+  "opts": [
+   "Liberty",
+   "Equality",
+   "Integrity",
+   "Fraternity"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 65,
+  "q": "Which of the following is a violation of Fundamental Rights in India ? (Choose the most appropriate option from below:)",
+  "opts": [
+   "Banning of tobacco products",
+   "Not paying minimum wages to workers",
+   "Banning the use of loudspeaker after 9 pm",
+   "Delivering a speech"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 66,
+  "q": "Which of the following is shortcut command for print in MS Office ?",
+  "opts": [
+   "Alt + P",
+   "Shift + P",
+   "Ctrl + P",
+   "Alt + Ctrl + P"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 67,
+  "q": "There is certain relationship between the two terms to the left of : : and the same relationship exists between the two terms to its right. Then find which option would replace the question mark ? GKLP : QUVZ : : AEFJ : ?",
+  "opts": [
+   "KOPT",
+   "KLPT",
+   "MOPT",
+   "MOTR"
+  ],
+  "ans": 0,
+  "subject": "india-gk"
+ },
+ {
+  "n": 68,
+  "q": "Select the most appropriately matched pair of crops.",
+  "opts": [
+   "Wheat – Rabi – Sonara",
+   "Rice – Rabi – Basmati",
+   "Maize – Rabi – Vijay",
+   "Rice – Kharif – Shakti"
+  ],
+  "ans": 0,
+  "subject": "india-gk"
+ },
+ {
+  "n": 69,
+  "q": "Who classified blood in different groups ?",
+  "opts": [
+   "Edward Jenner",
+   "Karl Landsteiner",
+   "Louis Pasteur",
+   "Robert Koch"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 70,
+  "q": "Which of the following antibody is found more in mother’s milk ?",
+  "opts": [
+   "IgA",
+   "IgD",
+   "IgG",
+   "IgM"
+  ],
+  "ans": 0,
+  "subject": "india-gk"
+ },
+ {
+  "n": 71,
+  "q": "Match List-I with List-II : List-I (Deficiency disease (name)) List-II (Symptoms of the disease) (a) Pellagra (I) Memory loss (b) Beri-Beri (II) Weakness in muscles and nerves (c) Scurvy (III) Appearance of dry scales on tongue and skin (d) Riboflavinosis (IV) Bleeding from gums Choose the most appropriate answer from the options given below :",
+  "opts": [
+   "a-III, b-II, c-IV, d-I",
+   "a-II, b-III, c-I, d-IV",
+   "a-IV, b-I, c-II, d-III",
+   "a-I, b-II, c-III, d-IV"
+  ],
+  "ans": 0,
+  "subject": "computer"
+ },
+ {
+  "n": 72,
+  "q": "If the lengths of diagonals of two squares are in the ratio 4 : 7, then the ratio of their areas is :",
+  "opts": [
+   "4 : 7",
+   "16 : 49",
+   "64 : 343",
+   "2 : 1"
+  ],
+  "ans": 1,
+  "subject": "maths"
+ },
+ {
+  "n": 73,
+  "q": "Which of the following storage device can store maximum amount of data ?",
+  "opts": [
+   "Hard disk",
+   "Floppy disk",
+   "Compact disk",
+   "Optical disk"
+  ],
+  "ans": 0,
+  "subject": "computer"
+ },
+ {
+  "n": 74,
+  "q": "Which of the following is used for spell checking in excel ?",
+  "opts": [
+   "F4",
+   "F5",
+   "F6",
+   "F7"
+  ],
+  "ans": 3,
+  "subject": "computer"
+ },
+ {
+  "n": 75,
+  "q": "Which of the following function displays current system date in spreadsheet ?",
+  "opts": [
+   "Today [ ]",
+   "Today ( )",
+   "Today { }",
+   "Today @"
+  ],
+  "ans": 1,
+  "subject": "science"
+ },
+ {
+  "n": 76,
+  "q": "Which of the following is NOT a character formatting in word processing tool ?",
+  "opts": [
+   "Font colour",
+   "Alignment",
+   "Underline",
+   "Effects"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 77,
+  "q": "The spread of which revolution enabled India to achieve self sufficiency in food grains ?",
+  "opts": [
+   "Green Revolution",
+   "Yellow Revolution",
+   "Blue Revolution",
+   "White Revolution"
+  ],
+  "ans": 0,
+  "subject": "india-gk"
+ },
+ {
+  "n": 78,
+  "q": "Planning Commission was set up under the Chairmanship of-",
+  "opts": [
+   "Prime Minister",
+   "President",
+   "Vice President",
+   "Chief Minister"
+  ],
+  "ans": 0,
+  "subject": "india-gk"
+ },
+ {
+  "n": 79,
+  "q": "To protect goods produced in India from imports, Government made use of-",
+  "opts": [
+   "Quotas",
+   "Tariffs",
+   "Both Quotas and Tariffs",
+   "Neither Quotas nor Tariffs"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 80,
+  "q": "Choose the most appropriate option to fill in the blank : Aditi has been working here __________ .",
+  "opts": [
+   "since six months",
+   "six months ago",
+   "six months before",
+   "for six months"
+  ],
+  "ans": 3,
+  "subject": "english"
+ },
+ {
+  "n": 81,
+  "q": "Choose the most appropriate passive form of the word : ‘declare’ to fill in the blank- The old house in town ______________ unsafe by the authorities.",
+  "opts": [
+   "declared",
+   "are declaring",
+   "have been declared",
+   "declare"
+  ],
+  "ans": 2,
+  "subject": "english"
+ },
+ {
+  "n": 82,
+  "q": "Choose the most appropriate option to fill in the blanks : ___________ postman’s little boy said that he’d rather be __________ dentist than ______________ cardiologist, because ____________ dentists don’t get called out at __________ night.",
+  "opts": [
+   "x, a, a, a, the",
+   "The, a, a, x, x",
+   "A, the, the, a, x",
+   "The, the a, x, x"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 83,
+  "q": "Choose the word which is similar in meaning to RELINQUISH",
+  "opts": [
+   "residue",
+   "offensive",
+   "persist",
+   "abandon"
+  ],
+  "ans": 3,
+  "subject": "india-gk"
+ },
+ {
+  "n": 84,
+  "q": "Integrated circuits (ICs) are related to which generation of computers ?",
+  "opts": [
+   "First Generation",
+   "Second Generation",
+   "Third Generation",
+   "Fourth Generation"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 85,
+  "q": "India – Japan 5 th edition Joint Military Exercise ‘DHARMA GUARDIAN’ commenced in which state of India ?",
+  "opts": [
+   "Andhra Pradesh",
+   "Rajasthan",
+   "Tamil Nadu",
+   "Himachal Pradesh"
+  ],
+  "ans": 1,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 86,
+  "q": "Which of the following team emerged champion of the Santosh Trophy (2023-24) ?",
+  "opts": [
+   "Goa",
+   "Manipur",
+   "Mizoram",
+   "Services"
+  ],
+  "ans": 3,
+  "subject": "india-gk"
+ },
+ {
+  "n": 87,
+  "q": "In India General elections for 18 th Lok Sabha were completed in how many phases ?",
+  "opts": [
+   "4",
+   "6",
+   "7",
+   "8"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 88,
+  "q": "In which Indian state the rare butterfly ‘Neptis Philyra’ has been discovered ?",
+  "opts": [
+   "Uttarakhand",
+   "Arunachal Pradesh",
+   "Himachal Pradesh",
+   "Jammu and Kashmir"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 89,
+  "q": "In the figure given below, PQR is a triangle. QR is parallel to PM. If QR = PR, then what is the value of \\angle RPM ?",
+  "opts": [
+   "70°",
+   "80°",
+   "100°",
+   "95°"
+  ],
+  "ans": 1,
+  "subject": "maths"
+ },
+ {
+  "n": 90,
+  "q": "The point A (13, 18), B (-5, 10), C (-13, -8) and D (5, 0) taken in that order are the vertices of a __________ .",
+  "opts": [
+   "Rectangle",
+   "Trapezium",
+   "Square",
+   "Rhombus"
+  ],
+  "ans": 3,
+  "subject": "india-gk"
+ },
+ {
+  "n": 91,
+  "q": "Select the incorrectly matched pair of National Park and the state. (Choose the most appropriate option from below:)",
+  "opts": [
+   "Bandipur National Park – Karnataka",
+   "Satpura National Park – Tamil Nadu",
+   "Kevla Dev National Park – Rajasthan",
+   "Kajiranga National Park – Assam"
+  ],
+  "ans": 1,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 92,
+  "q": "Which of the following input devices allows to input alphanumeric characters and special characters into the computer ?",
+  "opts": [
+   "\\frac{Purity percent}{Germination percent}\\times 100",
+   "\\frac{Germination percent\\times Purity percent}{100}",
+   "\\frac{Germination percent}{Purity percent}\\times 100",
+   "\\frac{2 (Germination percent + Purity percent)}{100}"
+  ],
+  "ans": 1,
+  "subject": "maths"
+ },
+ {
+  "n": 93,
+  "q": "Select the incorrectly matched pair of biosphere reserve and its region.",
+  "opts": [
+   "Nilgiri – Karnataka, Kerala",
+   "Thar Desert – Rajasthan",
+   "Kanha – Madhya Pradesh, Uttar Pradesh",
+   "Manas – Assam"
+  ],
+  "ans": 2,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 94,
+  "q": "Identify statements which are true with respect to the passage : (a) Our settled perspective towards a problem makes us focus on one line of thought only. (b) Leonardo Da Vinci always solved a problem in the first attempt. (c) Albert Einstein would look for as many alternatives as he could to solve a problem. (d) Exclusive thinking enhances creativity and imagination. Choose the most appropriate answer from the options given below :",
+  "opts": [
+   "a and b only",
+   "b and c only",
+   "a and c only",
+   "c and d only"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 95,
+  "q": "Which of the following statements are not true with respect to the passage ? (a) With creative thinking, one generates as many alternative approaches as one can. (b) Exclusive thinking leads us to the important pieces of the puzzle. (c) Inclusive thinking makes one look for different ways to look at the problem. (d) Exclusive thinking makes us broaden our attention and look at the problem. (e) Creativity and inclusive approach go hand in hand. Choose the most appropriate answer from the options given below :",
+  "opts": [
+   "a and e only",
+   "b and d only",
+   "c and e only",
+   "d and a only"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 96,
+  "q": "The features that define creative thinking are : (a) Multi dimensional approach (b) Willingness to explore (c) Biased approach (d) Not easily satisfied Choose the most appropriate answer from the options given below :",
+  "opts": [
+   "a, b and c only",
+   "b, c and d only",
+   "a, b and d only",
+   "a, c and d only"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 97,
+  "q": "According to the passage, the most important thing with respect to solving a problem is :",
+  "opts": [
+   "Learn to look for facts",
+   "To change our education system",
+   "The willingness to explore all alternatives",
+   "To be focused with one line of thought"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 98,
+  "q": "Choose the Antonym of the word SURPLUS from the options given :",
+  "opts": [
+   "Smother",
+   "Inhibit",
+   "Biased",
+   "Deficit"
+  ],
+  "ans": 3,
+  "subject": "english"
+ },
+ {
+  "n": 99,
+  "q": "An bio-active molecule, __________ , that is used as an immunosuppressive agent in organ-transplant patients, produced by a fungus.",
+  "opts": [
+   "streptokinase",
+   "statins",
+   "cyclosporin A",
+   "lactic acid"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 100,
+  "q": "Select the incorrectly matched pair of plant and its economically important part.",
+  "opts": [
+   "Centella asiatica – Bark",
+   "Papaver somniferum – fruit",
+   "Emblica officinalis – fruit",
+   "Cinchona officinalis – Bark"
+  ],
+  "ans": 0,
+  "subject": "india-gk"
+ },
+ {
+  "n": 101,
+  "q": "The river of Rajasthan that drains into Arabian Sea is.",
+  "opts": [
+   "Luni",
+   "Banas",
+   "Chambal",
+   "Kantali"
+  ],
+  "ans": 0,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 102,
+  "q": "Which one of the following rivers flows in a rift-valley ?",
+  "opts": [
+   "The Yamuna",
+   "The Narmada",
+   "The Ravi",
+   "The Gandak"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 103,
+  "q": "“Namcha Barwa Peak” is located in which of the following regions of the Himalayas ?",
+  "opts": [
+   "The Darjeeling and Sikkim Himalayas",
+   "The Arunachal Himalayas",
+   "The Himachal and Uttarakhand Himalayas",
+   "Kashmir Himalayas"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 104,
+  "q": "Thewa Art is associated with which of the following areas of Rajasthan ?",
+  "opts": [
+   "Churu",
+   "Jaipur",
+   "Pratapgarh",
+   "Jhalawar"
+  ],
+  "ans": 2,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 105,
+  "q": "“Mahi Bajaj Sagar Project” is a joint Venture of which of the following Indian states ?",
+  "opts": [
+   "Rajasthan and Madhya Pradesh",
+   "Madhya Pradesh and Gujarat",
+   "Rajasthan and Gujarat",
+   "Madhya Pradesh and Punjab"
+  ],
+  "ans": 2,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 106,
+  "q": "Given below are two statements : Statement (I) : Alluvial soil is found in Western desert plains of Rajasthan. Statement (II) : This soil contains enough quantity of Nitrogen but lacks in Potash and Iron. In light of the above statements, choose the most appropriate answer from the options given below.",
+  "opts": [
+   "Both Statement I and Statement II are true.",
+   "Both Statement I and Statement II are false.",
+   "Statement I is true and Statement II is false.",
+   "Statement I is false and Statement II is true."
+  ],
+  "ans": 1,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 107,
+  "q": "What is “Fly in” in MS power point ?",
+  "opts": [
+   "Colour scheme",
+   "Page design",
+   "Animation effect",
+   "System command"
+  ],
+  "ans": 1,
+  "subject": "computer"
+ },
+ {
+  "n": 108,
+  "q": "Which of the following statements is NOT true about floppy disk ?",
+  "opts": [
+   "Only 1.44 MB can be stored in some versions.",
+   "Data can only be read or write when write protect notch is closed or covered.",
+   "Floppy disks are made up of Mylar Plastic.",
+   "Mylar Plastic surface is coated with iron oxide (magnetic substance)."
+  ],
+  "ans": 1,
+  "subject": "science"
+ },
+ {
+  "n": 109,
+  "q": "Where was the World Future Energy Summit 2024 organized ?",
+  "opts": [
+   "London",
+   "Paris",
+   "New Delhi",
+   "Abu Dhabi p"
+  ],
+  "ans": 3,
+  "subject": "current-affairs"
+ },
+ {
+  "n": 110,
+  "q": "A ray of light is incident on a plane mirror normal to its surface. The angle of incidence and the angle of reflection are",
+  "opts": [
+   "90°, 90° respectively",
+   "90°, 0° respectively",
+   "0°, 90° respectively",
+   "0°, 0° respectively"
+  ],
+  "ans": 3,
+  "subject": "india-gk"
+ },
+ {
+  "n": 111,
+  "q": "Two identical prism P 1 and P 2 are placed as shown in the figure. A narrow beam of white light is incident on glass prism P 1 as shown in the figure. The emergent beam from the prism P 1 falls on the second prism P 2 . The resulting emergent beam from prism P 2 on the screen contains :",
+  "opts": [
+   "Spectrum of light as VIBGYOR form top to bottom on the screen",
+   "Spectrum of light as VIBGYOR form bottom to top on the screen",
+   "Beam of white light on the screen",
+   "No light is obtained on the screen"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 112,
+  "q": "On 2 nd October 1959, who inaugurated the modern three tier system of Panchayati Raj in the Nagour (Rajasthan).",
+  "opts": [
+   "Lal Bahadur Shastri",
+   "Mahatma Gandhi",
+   "Jawahar Lal Nehru",
+   "Sarojini Naidu"
+  ],
+  "ans": 2,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 113,
+  "q": "The idea of ‘Welfare State’ in the Indian Constitution is enshrined in its __________ .",
+  "opts": [
+   "Directive Principles of State Policy",
+   "Fundamental Rights",
+   "Preamble",
+   "Seventh Schedule"
+  ],
+  "ans": 0,
+  "subject": "india-gk"
+ },
+ {
+  "n": 114,
+  "q": "Total surface area of cube is numerically equal to the volume of the cube, then find the diagonal of cube.",
+  "opts": [
+   "6 units",
+   "6\\sqrt{3} units",
+   "\\sqrt{3} units",
+   "2\\sqrt{3} units"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 115,
+  "q": "Four players A, B, C and D are standing in a field in such a way that B in to East of A, C is to the South of A and D is to North of A. D is standing in which direction of B ?",
+  "opts": [
+   "West",
+   "North",
+   "North-West",
+   "South"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 116,
+  "q": "When the minute hand covers a distance of 1 hr 25 min, then what is the angular distance covered by it ?",
+  "opts": [
+   "375°",
+   "510°",
+   "480°",
+   "450°"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 117,
+  "q": "Select the incorrect statement about the genetic code.",
+  "opts": [
+   "The codon is triplet.",
+   "61 codons code for amino acids.",
+   "UUU code for phenylalanine.",
+   "AUG only acts as initiator codon and has no other function."
+  ],
+  "ans": 3,
+  "subject": "india-gk"
+ },
+ {
+  "n": 118,
+  "q": "Which of the following nitrogenous base is not a component of DNA ?",
+  "opts": [
+   "Uracil",
+   "Cytosine",
+   "Adenine",
+   "Guanine"
+  ],
+  "ans": 0,
+  "subject": "india-gk"
+ },
+ {
+  "n": 119,
+  "q": "Select the incorrectly matched combination of characters and contrasting traits studied by Mendel in pea plant.",
+  "opts": [
+   "Seed Colour : Yellow/ green",
+   "Seed Shape : Round/ Wrinkled",
+   "Flower position : Axial/ terminal",
+   "Pod Colour : White/ yellow"
+  ],
+  "ans": 3,
+  "subject": "india-gk"
+ },
+ {
+  "n": 120,
+  "q": "Choose the most appropriate English translation of the given sentence रुद्र ने किताब क्यों फाड़ी ?",
+  "opts": [
+   "Why the book was torn by Rudra?",
+   "The book was torn by Rudra why?",
+   "Why tear the book, Rudra?",
+   "Why did Rudra tear the book?"
+  ],
+  "ans": 3,
+  "subject": "india-gk"
+ },
+ {
+  "n": 121,
+  "q": "Choose the most appropriate reported form of the sentence given : He said to us, “Don’t walk on ice; it isn’t safe.”",
+  "opts": [
+   "He said not to walk on ice as its not safe.",
+   "He warned us not to walk on ice as it wasn’t safe.",
+   "He ordered us not to walked on ice as it weren’t safe.",
+   "He told us to avoid walking on ice as it isn’t safe."
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 122,
+  "q": "Choose the most appropriate option to fill in the blanks: I _________ her _________ a long time, _________ she was a child.",
+  "opts": [
+   "know, since, for",
+   "knew, x, since",
+   "have known, for, since",
+   "was knowing, since, since"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 123,
+  "q": "Choose the word opposite in meaning to ERUDITE",
+  "opts": [
+   "Boring",
+   "Illiterate",
+   "Crude",
+   "Learned"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 124,
+  "q": "Choose the word closest in meaning to the underlined word : People thronged to pay homage to the departed leader.",
+  "opts": [
+   "humility",
+   "obedience",
+   "tribute",
+   "alienation"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 125,
+  "q": "Chief Minister Corona Sahayata Yojana is operated in the entire Rajasthan since __________ .",
+  "opts": [
+   "March 2021",
+   "April 2021",
+   "May 2021",
+   "June 2021"
+  ],
+  "ans": 3,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 126,
+  "q": "BHADLA SOLAR PARK is located in :",
+  "opts": [
+   "Jaipur",
+   "Jodhpur",
+   "Udaipur",
+   "Bikaner"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 127,
+  "q": "To boost economy and getting State Government approvals Rajasthan Micro, Small and Medium Enterprises (Facilitation of Establishment and Enforcement Amendment Act, 2023) has increased the period of exemption to MSME from :",
+  "opts": [
+   "3 years to 4 years",
+   "2 years to 4 years",
+   "4 years to 5 years",
+   "3 years to 5 years"
+  ],
+  "ans": 3,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 128,
+  "q": "The Rajasthan Panchayti Raj Act (RPRA) came into force from :",
+  "opts": [
+   "January 1994",
+   "April 1992",
+   "January 1992",
+   "April 1994"
+  ],
+  "ans": 3,
+  "subject": "raj-gk"
+ },
+ {
+  "n": 129,
+  "q": "The monetary assistance given by Government for production activities is called –",
+  "opts": [
+   "GDP",
+   "Subsidy",
+   "Quota",
+   "Licence"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 130,
+  "q": "Heating the sulphide ores in the presence of excess of air is called :",
+  "opts": [
+   "Calcination",
+   "Roasting",
+   "Reduction",
+   "Electrolysis"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 131,
+  "q": "Anodising is :",
+  "opts": [
+   "painting the metal surface",
+   "forming a thick oxide layer on the metal surface",
+   "depositing a layer of zinc on metal surface",
+   "oiling the metal surface"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 132,
+  "q": "The electronic configurations of three elements A, B and C are: A -2, 8 ; B -2, 8, 7 and C – 2, 8, 2. Which of the following statements is true ?",
+  "opts": [
+   "A is a metal.",
+   "B is a metal.",
+   "C is a non-metal.",
+   "B is a non-metal and C is a metal."
+  ],
+  "ans": 3,
+  "subject": "india-gk"
+ },
+ {
+  "n": 133,
+  "q": "Match List-I with List-II List-I List-II (a) Munich is a large city _________ the south of Germany. (I) at (b) Were there many people _________ the concert of Friday? (II) during (c) We shouldn’t speak ________ eating. (III) in (d) We didn’t speak ________ the meal. (IV) while Choose the most appropriate answer from the options given below :",
+  "opts": [
+   "a-III, b-I, c-IV, d-II",
+   "a-II, b-IV, c-III, d-I",
+   "a-I, b-II, c-III, d-IV",
+   "a-IV, b-III, c-II, d-I"
+  ],
+  "ans": 0,
+  "subject": "india-gk"
+ },
+ {
+  "n": 134,
+  "q": "Choose the most appropriate English word for the given word- अभिग्रहण.",
+  "opts": [
+   "Deferred",
+   "Seizure",
+   "Regulation",
+   "Abatement"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 135,
+  "q": "Choose the most appropriate word to complete the following sentence : An inscription on a tombstone is termed as __________ .",
+  "opts": [
+   "a cemetery",
+   "a grave",
+   "an epitaph",
+   "a sermon"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 136,
+  "q": "Who has become the first woman scientist to win the ‘G. D. Birla Award’ for scientific research ?",
+  "opts": [
+   "Sipra Guha Mukherjee",
+   "Dr. Aditi Sen De",
+   "Dr. Rani Chatterjee",
+   "M. Fatima Bibi"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 137,
+  "q": "The fourth edition of the ‘Shanghai Cooperation Organization (SCO) Startup Forum’ was organised on 19 March 2024 in ________ .",
+  "opts": [
+   "Shanghai",
+   "New Delhi",
+   "Moscow",
+   "Bishkek"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 138,
+  "q": "Match List-I with List-II List-I (Country) List-II (Position of medals tally in Paris Olympics 2024) (a) China (I) 3 rd (b) Britain (II) 4 th (c) Netherlands (III) 2 nd (d) USA (IV) 1 st Choose the most appropriate options from below :",
+  "opts": [
+   "a-IV, b-III, c-I, d-II",
+   "a-II, b-I, c-IV, d-III",
+   "a-III, b-IV, c-II, d-I",
+   "a-I, b-II, c-III, d-IV"
+  ],
+  "ans": 3,
+  "subject": "india-gk"
+ },
+ {
+  "n": 139,
+  "q": "P is the son of R; R and Q are sisters; Z is the mother of Q and M is the son of Z. Which of the following statement is true ?",
+  "opts": [
+   "M and P are cousins.",
+   "M is the maternal uncle of P.",
+   "R and M are sisters.",
+   "Q is the grandmother of P."
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 140,
+  "q": "Find the number of triangles in the given figures :",
+  "opts": [
+   "13",
+   "15",
+   "17",
+   "14"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 141,
+  "q": "If it is given that for two right angled triangles PQR and ABC, \\angle P = 25°, \\angle C = 25°, \\angle Q = \\angle B = 90° and PR = CA, then which of the following is true ?",
+  "opts": [
+   "\\Delta PQR\\cong\\Delta BAC",
+   "\\Delta PQR\\cong\\Delta ACB",
+   "\\Delta PQR\\cong\\Delta CBA",
+   "\\Delta PQR\\cong\\Delta CAB"
+  ],
+  "ans": 2,
+  "subject": "india-gk"
+ },
+ {
+  "n": 142,
+  "q": "If = cosec\\theta=\\frac{x}{y} , then \\frac{\\sqrt{3}cot\\theta+1}{tan\\theta+\\sqrt{3}} is equal to:",
+  "opts": [
+   "\\frac{\\sqrt{x^{2}-y^{2}}}{y}",
+   "\\frac{\\sqrt{x^{2}-y^{2}}}{x}",
+   "\\frac{\\sqrt{x^{2}+y^{2}}}{y}",
+   "\\frac{\\sqrt{x^{2}+y^{2}}}{x}"
+  ],
+  "ans": 0,
+  "subject": "india-gk"
+ },
+ {
+  "n": 143,
+  "q": "If a = 0.1069, then the value of \\sqrt{4a^{2}+1-4a+3a} is :",
+  "opts": [
+   "1.1069",
+   "2.1069",
+   "0.4655",
+   "1.5345"
+  ],
+  "ans": 0,
+  "subject": "maths"
+ },
+ {
+  "n": 144,
+  "q": "Electrolysis of dilute aqueous NaCl solution was carried out by passing 20 milliampere current. The time required to liberate 0.02 mol of hydrogen gas at the cathode is :",
+  "opts": [
+   "9.65 × 10 4 s",
+   "28.95 × 10 4 s",
+   "19.3 × 10 4 s",
+   "38.6 × 10 4 s"
+  ],
+  "ans": 2,
+  "subject": "science"
+ },
+ {
+  "n": 145,
+  "q": "Which of the following is the precipitate in the given reaction ? Na 2 SO 4 (aq) + BaCl 2 (aq) → BaSO 4 (s) + 2NaCl (aq)",
+  "opts": [
+   "Na 2 SO 4 (aq)",
+   "BaSO 4 (s)",
+   "BaCl 2 (aq)",
+   "NaCl (aq)"
+  ],
+  "ans": 1,
+  "subject": "india-gk"
+ },
+ {
+  "n": 146,
+  "q": "Match List-I with List-II : List-I (Reaction/Reactant) List-II (Effect) (a) Oxidation (I) Gain of electron (b) Reduction (II) Electron accepting species (c) Reducing agent (III) Electron loosing species (d) Oxidising agent (IV) Loss of electron Choose the most appropriate answer from the options given below :",
+  "opts": [
+   "a-IV, b-I, c-III, d-II",
+   "a-III, b-II, c-IV, d-I",
+   "a-II, b-IV, c-I, d-III",
+   "a-I, b-IV, c-II, d-III"
+  ],
+  "ans": 0,
+  "subject": "science"
+ },
+ {
+  "n": 147,
+  "q": "‘पके हुए अन्न की भिक्षा’ इस वाक्यांश के लिए एक शब्द है-",
+  "opts": [
+   "दुर्भिक्ष",
+   "मधुकरी",
+   "दुर्घर्ष",
+   "लोमश"
+  ],
+  "ans": 1,
+  "subject": "hindi"
+ },
+ {
+  "n": 148,
+  "q": "निम्नलिखित में शुद्ध वर्तनीयुक्त शब्द है-",
+  "opts": [
+   "विस्मरण",
+   "चर्तुथ",
+   "व्यूत्पत्ती",
+   "पैत्रिक"
+  ],
+  "ans": 0,
+  "subject": "hindi"
+ },
+ {
+  "n": 149,
+  "q": "शब्द व उसके पर्यायवाची बेमेल जोड़े का चयन करें-",
+  "opts": [
+   "आम्र – रसाल",
+   "आनंद – वासव",
+   "रमा – लक्ष्मी",
+   "वायुसखा – कृशानु"
+  ],
+  "ans": 1,
+  "subject": "hindi"
+ },
+ {
+  "n": 150,
+  "q": "निम्नलिखित में अशुद्ध लिखित वाक्य है –",
+  "opts": [
+   "कृपया यहाँ बैठिए।",
+   "जल्दी वापस लौटकर आना।",
+   "मै प्रातः काल घूमने जाता हूँ।",
+   "वह वहाँ से चल दिया।"
+  ],
+  "ans": 1,
+  "subject": "hindi"
+ }
+]

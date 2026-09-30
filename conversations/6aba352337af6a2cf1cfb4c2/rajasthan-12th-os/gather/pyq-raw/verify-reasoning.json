@@ -1,0 +1,261 @@
+[
+  {
+    "i": 30,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: both conclusions follow from statement"
+  },
+  {
+    "i": 34,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: school is called ROOM"
+  },
+  {
+    "i": 35,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: Delhi is coded as nst"
+  },
+  {
+    "i": 66,
+    "verdict": "BROKEN",
+    "corrected_ans": null,
+    "broken": true,
+    "note": "Missing referenced statements 1, 2, and 3 in question text"
+  },
+  {
+    "i": 83,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: HSRA was founded in 1928 at Feroz Shah Kotla"
+  },
+  {
+    "i": 102,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: assumption II is implicit"
+  },
+  {
+    "i": 103,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: argument II is strong"
+  },
+  {
+    "i": 104,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: code for 'and' is 9"
+  },
+  {
+    "i": 105,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: GLASS is coded as 25177"
+  },
+  {
+    "i": 108,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: final position relative to origin is West"
+  },
+  {
+    "i": 145,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: UJM maps to YGP (+4, -3, +3 pattern)"
+  },
+  {
+    "i": 148,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: reverse word and shift +3 gives QDJB"
+  },
+  {
+    "i": 151,
+    "verdict": "BROKEN",
+    "corrected_ans": null,
+    "broken": true,
+    "note": "Malformed operator definitions: duplicate A+B definition and missing minus definition"
+  },
+  {
+    "i": 154,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: neither conclusion follows"
+  },
+  {
+    "i": 156,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: both assumptions I and II are implicit"
+  },
+  {
+    "i": 242,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: POCSO Act Section 39 provides guidelines for child assistance"
+  },
+  {
+    "i": 289,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: reverse word and add (+1,+2,+3,+4,+5) gives TRKMG"
+  },
+  {
+    "i": 291,
+    "verdict": "BROKEN",
+    "corrected_ans": null,
+    "broken": true,
+    "note": "Correct reverse-alphabetically sorted string 'UTSONMLIIBA' is absent from all options"
+  },
+  {
+    "i": 292,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: THEY = (20+8+5+25)*2 = 116"
+  },
+  {
+    "i": 293,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: COLLEGE reverse letter sum is 130"
+  },
+  {
+    "i": 296,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: Raman is South-West of Reshma"
+  },
+  {
+    "i": 297,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: Manjula's house is South-West of Sushma's house"
+  },
+  {
+    "i": 301,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: only conclusion II follows"
+  },
+  {
+    "i": 302,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: only assumption I is implicit"
+  },
+  {
+    "i": 306,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: CXOPB is odd-one-out (lacks opposite letter pair)"
+  },
+  {
+    "i": 307,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: acaaacba forms repeating sequence 'abaca'"
+  },
+  {
+    "i": 308,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: mnmmmnmmn forms repeating sequence 'nmmnmp'"
+  },
+  {
+    "i": 309,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: 20th element from right in modified sequence is E"
+  },
+  {
+    "i": 434,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: EUR maps to AXP (-4, +3, -2 pattern)"
+  },
+  {
+    "i": 436,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: CAPTION substitutes to TOAIPNC"
+  },
+  {
+    "i": 437,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: PEON = 7565 (sum of digits of letter positions)"
+  },
+  {
+    "i": 439,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: TAT LOR transforms to ATJMRO"
+  },
+  {
+    "i": 441,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: North-West rotated 45 degrees clockwise becomes North"
+  },
+  {
+    "i": 442,
+    "verdict": "BROKEN",
+    "corrected_ans": null,
+    "broken": true,
+    "note": "Incomplete premises: conclusions reference carrots and jackfruits absent from statement"
+  },
+  {
+    "i": 445,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: neither assumption I nor II is implicit"
+  },
+  {
+    "i": 584,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: M is Q's mother's sister (मौसी)"
+  },
+  {
+    "i": 585,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "broken": false,
+    "note": "Independently verified correct: both assumptions I and II are implicit"
+  }
+]

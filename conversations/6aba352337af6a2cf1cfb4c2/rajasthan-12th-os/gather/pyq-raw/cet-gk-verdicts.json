@@ -1,0 +1,512 @@
+[
+  {
+    "n": 8,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Vikram Sarabhai Space Centre is located in Thiruvananthapuram, Kerala."
+  },
+  {
+    "n": 9,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Magnetic dipole moment M = N * I * A = 500 * 1.5 * 0.06 m^2 = 45 A m^2."
+  },
+  {
+    "n": 10,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Astigmatism is the vision defect caused by non-spherical curvature of the cornea."
+  },
+  {
+    "n": 16,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Ethanoic acid reacts with carbonates to give salt, carbon dioxide and water."
+  },
+  {
+    "n": 17,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Catenation is the property of carbon atoms to form long chains."
+  },
+  {
+    "n": 22,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Intel 4004 (first microprocessor) contained 2,300 transistors."
+  },
+  {
+    "n": 23,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Ctrl + F6 / Ctrl + Tab switches to the next workbook window in MS Excel."
+  },
+  {
+    "n": 24,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Hadoti is spoken in Kota, Bundi, Baran, and Jhalawar districts of Rajasthan."
+  },
+  {
+    "n": 25,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Bichchiyo, Lalar, Nokhila, and Shikhar/Machhar are popular folk songs of Rajasthan."
+  },
+  {
+    "n": 26,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Gogaji is revered as a snake deity and warrior with a spear."
+  },
+  {
+    "n": 31,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Verified calculation: 2000 total, 52% grads = 1040; 60% male = 1200, 50% male grads = 600; female grads = 1040 - 600 = 440 (Option C / index 2)."
+  },
+  {
+    "n": 39,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Pangong Tso lake is in Ladakh (Kashmir/Ladakh/Northwestern Himalayas)."
+  },
+  {
+    "n": 40,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Discouraging human rights NGOs is contrary to SHRC functions under Protection of Human Rights Act."
+  },
+  {
+    "n": 41,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "73rd Constitutional Amendment Act 1992 granted constitutional status to Gram Sabha."
+  },
+  {
+    "n": 42,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "The Governor of a State holds office during the pleasure of the President (Article 156)."
+  },
+  {
+    "n": 46,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "The Preamble begins with 'We, the people of India...'."
+  },
+  {
+    "n": 47,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Sarkaria Commission was set up in 1983 to examine Centre-State relations."
+  },
+  {
+    "n": 48,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Chairman of RPSC is appointed by the Governor of Rajasthan (Article 316)."
+  },
+  {
+    "n": 49,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Shri Lal Joshi was a renowned Phad painting artist from Bhilwara."
+  },
+  {
+    "n": 50,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Samp Sabha meetings were annual (on Ashwin Purnima at Mangarh), not monthly."
+  },
+  {
+    "n": 51,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Mand (Dugal) was the ancient name of Jaisalmer region."
+  },
+  {
+    "n": 52,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Subtropical mountain forests exist in Western Ghats, Nilgiris, Himalayas, etc., not only Rajasthan and UP."
+  },
+  {
+    "n": 53,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Western Desert Plain (Thar) covers ~61.11% area of Rajasthan."
+  },
+  {
+    "n": 54,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Andaman and Nicobar Islands has 96 wildlife sanctuaries, highest among Indian states/UTs."
+  },
+  {
+    "n": 55,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Taxus wallichiana (Himalayan Yew) is a medicinal tree yielding taxol."
+  },
+  {
+    "n": 56,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Man Singh won gold at Asian Marathon Championship 2024 in Hong Kong."
+  },
+  {
+    "n": 57,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "India is the 2nd largest producer of mobile phones globally after China."
+  },
+  {
+    "n": 59,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Kishangarh (Ajmer) is home to Rajasthan's famous marble dumping yard."
+  },
+  {
+    "n": 60,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Mukhyamantri Laghu Vanijyik Vahan Swarojgar Yojna was notified on 11 October 2022."
+  },
+  {
+    "n": 61,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Fort housing skilled soldiers and army strategy units is termed Sainya Durg."
+  },
+  {
+    "n": 62,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "At Ahad civilization, dead bodies were buried with ornaments and jewellery."
+  },
+  {
+    "n": 63,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Karpur Chand Kulish founded Rajasthan Patrika newspaper in 1956."
+  },
+  {
+    "n": 64,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "42nd Amendment (1976) added Socialist, Secular, and Integrity to the Preamble."
+  },
+  {
+    "n": 65,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Non-payment of minimum wages constitutes forced labor/begar violating Article 23."
+  },
+  {
+    "n": 66,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Ctrl + P is the standard print shortcut in MS Office."
+  },
+  {
+    "n": 68,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Sonara 64 is a well-known high-yielding Rabi wheat variety."
+  },
+  {
+    "n": 69,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Karl Landsteiner discovered and classified ABO blood groups in 1900."
+  },
+  {
+    "n": 70,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "IgA is the predominant antibody class present in mother's milk / colostrum."
+  },
+  {
+    "n": 71,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Deficiency match: Pellagra-dry scales (III), Beri-Beri-muscle weakness (II), Scurvy-bleeding gums (IV), Riboflavinosis-memory loss (I)."
+  },
+  {
+    "n": 73,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Hard disk offers maximum storage capacity (terabytes) among listed optical/floppy drives."
+  },
+  {
+    "n": 74,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "F7 key triggers spelling and grammar check in MS Excel."
+  },
+  {
+    "n": 75,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "TODAY() returns current system date in spreadsheet tools."
+  },
+  {
+    "n": 76,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Text alignment is a paragraph formatting property, not character formatting."
+  },
+  {
+    "n": 77,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Green Revolution made India self-sufficient in food grain production."
+  },
+  {
+    "n": 78,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "The Prime Minister served as ex-officio Chairman of Planning Commission."
+  },
+  {
+    "n": 79,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Both import tariffs and import quotas were used for domestic industry protection."
+  },
+  {
+    "n": 84,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Integrated Circuits (ICs) characterize Third Generation computers."
+  },
+  {
+    "n": 85,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Dharma Guardian 2024 (5th edition) was held at Mahajan Field Firing Range, Rajasthan."
+  },
+  {
+    "n": 86,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Services football team won the 77th Santosh Trophy 2023-24."
+  },
+  {
+    "n": 87,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "18th Lok Sabha general elections were conducted in 7 phases."
+  },
+  {
+    "n": 88,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Neptis philyra (Long-banded Sailor butterfly) was discovered in Tale Valley, Arunachal Pradesh."
+  },
+  {
+    "n": 91,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Satpura National Park is located in Madhya Pradesh, not Tamil Nadu."
+  },
+  {
+    "n": 92,
+    "verdict": "UNCERTAIN",
+    "correct_idx": null,
+    "note": "Question text 'input device' is mismatched with seed real value formula options in raw JSON (option 1 is correct formula for Seed Real Value)."
+  },
+  {
+    "n": 93,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Kanha Biosphere Reserve is located in Madhya Pradesh only, not Uttar Pradesh."
+  },
+  {
+    "n": 99,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Cyclosporin A is an immunosuppressive drug obtained from fungus Trichoderma polysporum."
+  },
+  {
+    "n": 100,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Centella asiatica (Gotu Kola) economically uses leaves/whole plant, not bark."
+  },
+  {
+    "n": 101,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Luni river flows towards Rann of Kutch / Arabian Sea drainage system."
+  },
+  {
+    "n": 102,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Narmada river flows through a rift valley between Vindhya and Satpura ranges."
+  },
+  {
+    "n": 103,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Namcha Barwa peak is situated in the Arunachal / Eastern Himalayas."
+  },
+  {
+    "n": 104,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Thewa Art (gold glass filigree) originated in Pratapgarh, Rajasthan."
+  },
+  {
+    "n": 105,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Mahi Bajaj Sagar Project is a joint venture between Rajasthan (45%) and Gujarat (55%)."
+  },
+  {
+    "n": 106,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Both statements false: Alluvial soil is in Eastern Rajasthan, and contains adequate potash but lacks nitrogen."
+  },
+  {
+    "n": 107,
+    "verdict": "WRONG",
+    "correct_idx": 2,
+    "note": "Fly In is an entrance animation effect in MS PowerPoint, not page design."
+  },
+  {
+    "n": 108,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Floppy disks can be read regardless of whether the write protect notch is open or closed."
+  },
+  {
+    "n": 109,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "World Future Energy Summit 2024 was hosted in Abu Dhabi, UAE."
+  },
+  {
+    "n": 110,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "For normal incidence on plane mirror, both angle of incidence and reflection are 0°."
+  },
+  {
+    "n": 111,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Recombination using inverted second prism yields a beam of white light."
+  },
+  {
+    "n": 112,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Jawaharlal Nehru inaugurated 3-tier Panchayati Raj at Nagaur on 2 Oct 1959."
+  },
+  {
+    "n": 113,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Concept of Welfare State is enshrined in Directive Principles of State Policy (Part IV)."
+  },
+  {
+    "n": 117,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "AUG acts as initiator codon AND codes for amino acid Methionine."
+  },
+  {
+    "n": 118,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Uracil is present in RNA instead of Thymine, absent from DNA."
+  },
+  {
+    "n": 119,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Mendel studied pod colour as Green/Yellow; white is not a pod colour trait."
+  },
+  {
+    "n": 125,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Chief Minister Corona Sahayata Yojana was launched in June 2021 (25 June 2021)."
+  },
+  {
+    "n": 126,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Bhadla Solar Park is located in Jodhpur district, Rajasthan."
+  },
+  {
+    "n": 127,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Rajasthan MSME Amendment Act 2023 extended exemption period from 3 years to 5 years."
+  },
+  {
+    "n": 128,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Rajasthan Panchayati Raj Act 1994 came into force on 23 April 1994."
+  },
+  {
+    "n": 129,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Financial assistance provided by government to producers is called subsidy."
+  },
+  {
+    "n": 130,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Heating sulphide ores strongly in excess air is called roasting."
+  },
+  {
+    "n": 131,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Anodising forms a protective thick oxide layer on aluminum metal surface."
+  },
+  {
+    "n": 132,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Config A: Noble gas (2,8); B: Non-metal Cl (2,8,7); C: Metal Mg (2,8,2). B is non-metal and C is metal."
+  },
+  {
+    "n": 136,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Prof. Aditi Sen De became the first female scientist awarded G.D. Birla Award (2023)."
+  },
+  {
+    "n": 137,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "4th SCO Startup Forum was held on 19 March 2024 in New Delhi."
+  },
+  {
+    "n": 138,
+    "verdict": "WRONG",
+    "correct_idx": null,
+    "note": "Paris 2024 standings among these 4 countries: USA (1st/IV), China (2nd/III), Netherlands (3rd/I), Britain (4th/II) -> correct match a-III, b-II, c-I, d-IV. Marked option 3 (a-I, b-II, c-III, d-IV) incorrectly maps China as 3rd and Netherlands as 2nd."
+  },
+  {
+    "n": 145,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "BaSO4 is the insoluble white precipitate formed in double displacement reaction."
+  },
+  {
+    "n": 146,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Oxidation-loss of e- (IV), Reduction-gain of e- (I), Reducing agent-loses e- (III), Oxidising agent-accepts e- (II)."
+  }
+]

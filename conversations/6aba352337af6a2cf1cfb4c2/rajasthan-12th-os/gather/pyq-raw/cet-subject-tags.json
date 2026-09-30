@@ -1,0 +1,598 @@
+[
+  {
+    "n": 1,
+    "subject": "hindi"
+  },
+  {
+    "n": 2,
+    "subject": "hindi"
+  },
+  {
+    "n": 3,
+    "subject": "hindi"
+  },
+  {
+    "n": 4,
+    "subject": "reasoning"
+  },
+  {
+    "n": 5,
+    "subject": "maths"
+  },
+  {
+    "n": 6,
+    "subject": "reasoning"
+  },
+  {
+    "n": 7,
+    "subject": "reasoning"
+  },
+  {
+    "n": 8,
+    "subject": "india-gk"
+  },
+  {
+    "n": 9,
+    "subject": "science"
+  },
+  {
+    "n": 10,
+    "subject": "science"
+  },
+  {
+    "n": 11,
+    "subject": "hindi"
+  },
+  {
+    "n": 12,
+    "subject": "hindi"
+  },
+  {
+    "n": 13,
+    "subject": "hindi"
+  },
+  {
+    "n": 14,
+    "subject": "hindi"
+  },
+  {
+    "n": 15,
+    "subject": "hindi"
+  },
+  {
+    "n": 16,
+    "subject": "science"
+  },
+  {
+    "n": 17,
+    "subject": "science"
+  },
+  {
+    "n": 18,
+    "subject": "maths"
+  },
+  {
+    "n": 19,
+    "subject": "maths"
+  },
+  {
+    "n": 20,
+    "subject": "maths"
+  },
+  {
+    "n": 21,
+    "subject": "maths"
+  },
+  {
+    "n": 22,
+    "subject": "computer"
+  },
+  {
+    "n": 23,
+    "subject": "computer"
+  },
+  {
+    "n": 24,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 25,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 26,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 27,
+    "subject": "hindi"
+  },
+  {
+    "n": 28,
+    "subject": "hindi"
+  },
+  {
+    "n": 29,
+    "subject": "hindi"
+  },
+  {
+    "n": 30,
+    "subject": "maths"
+  },
+  {
+    "n": 31,
+    "subject": "maths"
+  },
+  {
+    "n": 32,
+    "subject": "maths"
+  },
+  {
+    "n": 33,
+    "subject": "english"
+  },
+  {
+    "n": 34,
+    "subject": "english"
+  },
+  {
+    "n": 35,
+    "subject": "english"
+  },
+  {
+    "n": 36,
+    "subject": "hindi"
+  },
+  {
+    "n": 37,
+    "subject": "hindi"
+  },
+  {
+    "n": 38,
+    "subject": "hindi"
+  },
+  {
+    "n": 39,
+    "subject": "india-gk"
+  },
+  {
+    "n": 40,
+    "subject": "india-gk"
+  },
+  {
+    "n": 41,
+    "subject": "india-gk"
+  },
+  {
+    "n": 42,
+    "subject": "india-gk"
+  },
+  {
+    "n": 44,
+    "subject": "reasoning"
+  },
+  {
+    "n": 45,
+    "subject": "hindi"
+  },
+  {
+    "n": 46,
+    "subject": "india-gk"
+  },
+  {
+    "n": 47,
+    "subject": "india-gk"
+  },
+  {
+    "n": 48,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 49,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 50,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 51,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 52,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 53,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 54,
+    "subject": "india-gk"
+  },
+  {
+    "n": 55,
+    "subject": "science"
+  },
+  {
+    "n": 56,
+    "subject": "current-affairs"
+  },
+  {
+    "n": 57,
+    "subject": "current-affairs"
+  },
+  {
+    "n": 58,
+    "subject": "hindi"
+  },
+  {
+    "n": 59,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 60,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 61,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 62,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 63,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 64,
+    "subject": "india-gk"
+  },
+  {
+    "n": 65,
+    "subject": "india-gk"
+  },
+  {
+    "n": 66,
+    "subject": "computer"
+  },
+  {
+    "n": 67,
+    "subject": "reasoning"
+  },
+  {
+    "n": 68,
+    "subject": "science"
+  },
+  {
+    "n": 69,
+    "subject": "science"
+  },
+  {
+    "n": 70,
+    "subject": "science"
+  },
+  {
+    "n": 71,
+    "subject": "science"
+  },
+  {
+    "n": 72,
+    "subject": "maths"
+  },
+  {
+    "n": 73,
+    "subject": "computer"
+  },
+  {
+    "n": 74,
+    "subject": "computer"
+  },
+  {
+    "n": 75,
+    "subject": "computer"
+  },
+  {
+    "n": 76,
+    "subject": "computer"
+  },
+  {
+    "n": 77,
+    "subject": "india-gk"
+  },
+  {
+    "n": 78,
+    "subject": "india-gk"
+  },
+  {
+    "n": 79,
+    "subject": "india-gk"
+  },
+  {
+    "n": 80,
+    "subject": "english"
+  },
+  {
+    "n": 81,
+    "subject": "english"
+  },
+  {
+    "n": 82,
+    "subject": "english"
+  },
+  {
+    "n": 83,
+    "subject": "english"
+  },
+  {
+    "n": 84,
+    "subject": "computer"
+  },
+  {
+    "n": 85,
+    "subject": "current-affairs"
+  },
+  {
+    "n": 86,
+    "subject": "current-affairs"
+  },
+  {
+    "n": 87,
+    "subject": "current-affairs"
+  },
+  {
+    "n": 88,
+    "subject": "current-affairs"
+  },
+  {
+    "n": 89,
+    "subject": "maths"
+  },
+  {
+    "n": 90,
+    "subject": "maths"
+  },
+  {
+    "n": 91,
+    "subject": "india-gk"
+  },
+  {
+    "n": 92,
+    "subject": "computer"
+  },
+  {
+    "n": 93,
+    "subject": "india-gk"
+  },
+  {
+    "n": 94,
+    "subject": "english"
+  },
+  {
+    "n": 95,
+    "subject": "english"
+  },
+  {
+    "n": 96,
+    "subject": "english"
+  },
+  {
+    "n": 97,
+    "subject": "english"
+  },
+  {
+    "n": 98,
+    "subject": "english"
+  },
+  {
+    "n": 99,
+    "subject": "science"
+  },
+  {
+    "n": 100,
+    "subject": "science"
+  },
+  {
+    "n": 101,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 102,
+    "subject": "india-gk"
+  },
+  {
+    "n": 103,
+    "subject": "india-gk"
+  },
+  {
+    "n": 104,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 105,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 106,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 107,
+    "subject": "computer"
+  },
+  {
+    "n": 108,
+    "subject": "computer"
+  },
+  {
+    "n": 109,
+    "subject": "current-affairs"
+  },
+  {
+    "n": 110,
+    "subject": "science"
+  },
+  {
+    "n": 111,
+    "subject": "science"
+  },
+  {
+    "n": 112,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 113,
+    "subject": "india-gk"
+  },
+  {
+    "n": 114,
+    "subject": "maths"
+  },
+  {
+    "n": 115,
+    "subject": "reasoning"
+  },
+  {
+    "n": 116,
+    "subject": "reasoning"
+  },
+  {
+    "n": 117,
+    "subject": "science"
+  },
+  {
+    "n": 118,
+    "subject": "science"
+  },
+  {
+    "n": 119,
+    "subject": "science"
+  },
+  {
+    "n": 120,
+    "subject": "english"
+  },
+  {
+    "n": 121,
+    "subject": "english"
+  },
+  {
+    "n": 122,
+    "subject": "english"
+  },
+  {
+    "n": 123,
+    "subject": "english"
+  },
+  {
+    "n": 124,
+    "subject": "english"
+  },
+  {
+    "n": 125,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 126,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 127,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 128,
+    "subject": "raj-gk"
+  },
+  {
+    "n": 129,
+    "subject": "india-gk"
+  },
+  {
+    "n": 130,
+    "subject": "science"
+  },
+  {
+    "n": 131,
+    "subject": "science"
+  },
+  {
+    "n": 132,
+    "subject": "science"
+  },
+  {
+    "n": 133,
+    "subject": "english"
+  },
+  {
+    "n": 134,
+    "subject": "english"
+  },
+  {
+    "n": 135,
+    "subject": "english"
+  },
+  {
+    "n": 136,
+    "subject": "current-affairs"
+  },
+  {
+    "n": 137,
+    "subject": "current-affairs"
+  },
+  {
+    "n": 138,
+    "subject": "current-affairs"
+  },
+  {
+    "n": 139,
+    "subject": "reasoning"
+  },
+  {
+    "n": 140,
+    "subject": "reasoning"
+  },
+  {
+    "n": 141,
+    "subject": "maths"
+  },
+  {
+    "n": 142,
+    "subject": "maths"
+  },
+  {
+    "n": 143,
+    "subject": "maths"
+  },
+  {
+    "n": 144,
+    "subject": "science"
+  },
+  {
+    "n": 145,
+    "subject": "science"
+  },
+  {
+    "n": 146,
+    "subject": "science"
+  },
+  {
+    "n": 147,
+    "subject": "hindi"
+  },
+  {
+    "n": 148,
+    "subject": "hindi"
+  },
+  {
+    "n": 149,
+    "subject": "hindi"
+  },
+  {
+    "n": 150,
+    "subject": "hindi"
+  }
+]

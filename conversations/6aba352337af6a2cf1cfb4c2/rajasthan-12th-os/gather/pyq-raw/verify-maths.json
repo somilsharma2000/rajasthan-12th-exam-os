@@ -1,0 +1,1143 @@
+[
+  {
+    "i": 2,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Shevaroy Hills are located in Tamil Nadu, not Purvanchal range.",
+    "broken": false
+  },
+  {
+    "i": 9,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Memory management tracks memory allocation.",
+    "broken": false
+  },
+  {
+    "i": 10,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Ctrl + Shift + Down arrow selects text to paragraph end.",
+    "broken": false
+  },
+  {
+    "i": 11,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Shift + Page Up selects text up to screen top.",
+    "broken": false
+  },
+  {
+    "i": 12,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Arrow keys move around preview page when zoomed in.",
+    "broken": false
+  },
+  {
+    "i": 19,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Double left click launches applications.",
+    "broken": false
+  },
+  {
+    "i": 21,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "V is at 1st position, so adjacent U must be at 2nd position.",
+    "broken": false
+  },
+  {
+    "i": 24,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "All are measuring instruments.",
+    "broken": false
+  },
+  {
+    "i": 31,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "(First + Third digit) - Middle digit = 10.",
+    "broken": false
+  },
+  {
+    "i": 33,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Mango is not a citrus fruit, unlike lemon, sweet lime, and orange.",
+    "broken": false
+  },
+  {
+    "i": 45,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Pashupatinath temple is in Nepal, not part of Dilwara Temples.",
+    "broken": false
+  },
+  {
+    "i": 46,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Beejak ki Pahari is located at Bairat.",
+    "broken": false
+  },
+  {
+    "i": 55,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Kalibangan is a major Harappan city.",
+    "broken": false
+  },
+  {
+    "i": 57,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Nagabhata II was a Gurjara-Pratihara king.",
+    "broken": false
+  },
+  {
+    "i": 59,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Prabhavaka Charitra was written by Prabhachandra.",
+    "broken": false
+  },
+  {
+    "i": 65,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Section 31 prescribes max 1 year imprisonment.",
+    "broken": false
+  },
+  {
+    "i": 75,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Pollutants combined with condensed moisture is smog.",
+    "broken": false
+  },
+  {
+    "i": 89,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Both Bubblejet and Laser printers are hard copy output devices.",
+    "broken": false
+  },
+  {
+    "i": 90,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Command Line Interface.",
+    "broken": false
+  },
+  {
+    "i": 92,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Red Hat Linux is a GUI multi-user, multi-tasking OS.",
+    "broken": false
+  },
+  {
+    "i": 98,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "51/3 * 4 + 6 - 2 + 3 = 75.",
+    "broken": false
+  },
+  {
+    "i": 99,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Swapping 4 & 8, and - & * gives 9 + 7*8/2 - 5 = 32.",
+    "broken": false
+  },
+  {
+    "i": 109,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Jaivana cannon is located at Jaigarh Fort.",
+    "broken": false
+  },
+  {
+    "i": 113,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Ghoomar dance was originated by Bhil tribe.",
+    "broken": false
+  },
+  {
+    "i": 122,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Thakur Kesari Singh Barhath.",
+    "broken": false
+  },
+  {
+    "i": 138,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Sunil Chhetri equalled Pele with 77th international goal.",
+    "broken": false
+  },
+  {
+    "i": 139,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Jeddah hosted 2021 IWF Youth World Championship.",
+    "broken": false
+  },
+  {
+    "i": 146,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "108/9 = 12, 180/15 = 12, 132/11 = 12.",
+    "broken": false
+  },
+  {
+    "i": 149,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Code is (reverse alphabet position + 5).",
+    "broken": false
+  },
+  {
+    "i": 152,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "A is at (0,2), B is at (0,-10); dist = 12 km, direction of B from A is South.",
+    "broken": false
+  },
+  {
+    "i": 153,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Distance sqrt(60^2+80^2)=100 km, direction of Office from destination is South-West.",
+    "broken": false
+  },
+  {
+    "i": 155,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Age on 30 Sept 2022 is 28+ years, exceeding max age 27 by >6 months, so rejected.",
+    "broken": false
+  },
+  {
+    "i": 158,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "EKI, ZFD, NTR have pattern +6, -2; RWV has +5, -1.",
+    "broken": false
+  },
+  {
+    "i": 160,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "1st letter position = 2nd * 3rd letter position in TBJ, TDE, LFB.",
+    "broken": false
+  },
+  {
+    "i": 161,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Differences increase by +1, +2, +3, +4, +5. Missing is P.",
+    "broken": false
+  },
+  {
+    "i": 162,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "1st letter -2, -4 pattern; 2nd letter +1, +2 pattern; 3rd letter -4 pattern -> JXC.",
+    "broken": false
+  },
+  {
+    "i": 163,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Differences double each step: +1, +2, +4, +8, +16. Missing is 19.",
+    "broken": false
+  },
+  {
+    "i": 164,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Swapping ÷ and – gives 24/8 - 4 + 5*3 = 14.",
+    "broken": false
+  },
+  {
+    "i": 165,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "(37 - 13) / 6 + 3 = 7.",
+    "broken": false
+  },
+  {
+    "i": 170,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "GUI requires more processing power and memory than CLI.",
+    "broken": false
+  },
+  {
+    "i": 172,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Cookies store site info and credentials.",
+    "broken": false
+  },
+  {
+    "i": 175,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Plug-ins run within the browser environment, not independently outside.",
+    "broken": false
+  },
+  {
+    "i": 179,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Associative memory allows single clock cycle search operations.",
+    "broken": false
+  },
+  {
+    "i": 191,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Linux is open-source.",
+    "broken": false
+  },
+  {
+    "i": 192,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Windows is proprietary, not open-source.",
+    "broken": false
+  },
+  {
+    "i": 194,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Fonts and effects are in the Font command group.",
+    "broken": false
+  },
+  {
+    "i": 199,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Humayun succeeded Babur in 1530.",
+    "broken": false
+  },
+  {
+    "i": 200,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Muhammad Ali Jinnah.",
+    "broken": false
+  },
+  {
+    "i": 201,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Bardoli Satyagraha occurred in 1928.",
+    "broken": false
+  },
+  {
+    "i": 204,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Patkai Hills are part of Purvanchal range.",
+    "broken": false
+  },
+  {
+    "i": 206,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Indian Desert (Thar Desert).",
+    "broken": false
+  },
+  {
+    "i": 208,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Narmada flows West.",
+    "broken": false
+  },
+  {
+    "i": 209,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Rice is a cereal/food crop, not a plantation crop.",
+    "broken": false
+  },
+  {
+    "i": 212,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Paper industry is forest-based.",
+    "broken": false
+  },
+  {
+    "i": 214,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Assam population density is 398/sq km in 2011.",
+    "broken": false
+  },
+  {
+    "i": 218,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Established in 1986.",
+    "broken": false
+  },
+  {
+    "i": 220,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "42nd Amendment was in 1976.",
+    "broken": false
+  },
+  {
+    "i": 221,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "44th Amendment removed right to property from fundamental rights.",
+    "broken": false
+  },
+  {
+    "i": 224,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Herath festival.",
+    "broken": false
+  },
+  {
+    "i": 225,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Kashidakari embroidery of J&K.",
+    "broken": false
+  },
+  {
+    "i": 227,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Bhuta Aradhane is from Karnataka.",
+    "broken": false
+  },
+  {
+    "i": 229,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Cricket.",
+    "broken": false
+  },
+  {
+    "i": 231,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Dabang Delhi won PKL Season 8.",
+    "broken": false
+  },
+  {
+    "i": 232,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Shri Nivetha, Esha Singh, Ruchita Vinerkar.",
+    "broken": false
+  },
+  {
+    "i": 256,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Declared National Park in 1980.",
+    "broken": false
+  },
+  {
+    "i": 262,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Jaisalmer Desert Festival is held in February.",
+    "broken": false
+  },
+  {
+    "i": 278,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Kundan jewelry is famous in Rajasthan.",
+    "broken": false
+  },
+  {
+    "i": 279,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Thewa art is famous in Pratapgarh, Rajasthan.",
+    "broken": false
+  },
+  {
+    "i": 287,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Meri Policy Mere Hath campaign.",
+    "broken": false
+  },
+  {
+    "i": 288,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "(n+1)^2 + (n+1): (5+1)^2+6 = 42, (3+1)^2+4 = 20.",
+    "broken": false
+  },
+  {
+    "i": 290,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Bibliography is a list of citations/books, whereas dictionary, glossary, and thesaurus define words.",
+    "broken": false
+  },
+  {
+    "i": 295,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "A and E are children of siblings B and C, so A is cousin of E.",
+    "broken": false
+  },
+  {
+    "i": 298,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Rohan citizenship status (criterion IV) is not specified in the question.",
+    "broken": false
+  },
+  {
+    "i": 299,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Samir was 35 in 2010, making him ~45.5 in 2021, exceeding max age 40.",
+    "broken": false
+  },
+  {
+    "i": 300,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Z voted FOR A (since Y was against) and AGAINST C (given).",
+    "broken": false
+  },
+  {
+    "i": 304,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "TRAP -> PART has same letter rearrangement as EARTH -> HEART.",
+    "broken": false
+  },
+  {
+    "i": 305,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Insomnia affects sleep, stammering affects speech.",
+    "broken": false
+  },
+  {
+    "i": 310,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Alternating series; even terms are powers of 3: 243 * 3 = 729.",
+    "broken": false
+  },
+  {
+    "i": 311,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Swapping 4 and 6 gives 8 - 6/3 + 5*4 = 26.",
+    "broken": false
+  },
+  {
+    "i": 312,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Swapping x and - gives 7*3/7 + 5 - 2 = 6.",
+    "broken": false
+  },
+  {
+    "i": 313,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "0.33*3001 + 0.2*1998 = 990.33 + 399.6 = 1389.93 ≈ 1390.",
+    "broken": false
+  },
+  {
+    "i": 320,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Class B IP address range starts at 128.0.0.0.",
+    "broken": false
+  },
+  {
+    "i": 321,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "130.130.255.20 starts with 130, which is in Class B range (128-191).",
+    "broken": false
+  },
+  {
+    "i": 326,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "(i) is true, (ii) is false as hard disk is secondary storage.",
+    "broken": false
+  },
+  {
+    "i": 334,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Projector.",
+    "broken": false
+  },
+  {
+    "i": 335,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Processor management.",
+    "broken": false
+  },
+  {
+    "i": 337,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "DOS is single-tasking, not multitasking.",
+    "broken": false
+  },
+  {
+    "i": 339,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Justify aligns text to both left and right margins.",
+    "broken": false
+  },
+  {
+    "i": 340,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Strikethrough.",
+    "broken": false
+  },
+  {
+    "i": 343,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Ctrl + W closes active workbook.",
+    "broken": false
+  },
+  {
+    "i": 345,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Akbar and Hemu in 1556.",
+    "broken": false
+  },
+  {
+    "i": 348,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Tamil Nadu was 2nd largest coconut producer in 2019-20.",
+    "broken": false
+  },
+  {
+    "i": 349,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Ratio between two population components.",
+    "broken": false
+  },
+  {
+    "i": 350,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Ramgarh coalfield is in Jharkhand.",
+    "broken": false
+  },
+  {
+    "i": 352,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Lombok is an island in Indonesia.",
+    "broken": false
+  },
+  {
+    "i": 354,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Kamarupa kingdom was in Assam.",
+    "broken": false
+  },
+  {
+    "i": 355,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "BHU inauguration in Feb 1916.",
+    "broken": false
+  },
+  {
+    "i": 358,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Delhi 11297, UP 828, WB 1029, Puducherry 2598.",
+    "broken": false
+  },
+  {
+    "i": 363,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Sher Shah Suri died in gunpowder explosion at Kalinjar fort.",
+    "broken": false
+  },
+  {
+    "i": 364,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Bal Gangadhar Tilak.",
+    "broken": false
+  },
+  {
+    "i": 365,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Assam was the top natural gas producer state in 2018-19.",
+    "broken": false
+  },
+  {
+    "i": 366,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "CHAMPIONS is a technology-enabled control room-cum-MIS portal.",
+    "broken": false
+  },
+  {
+    "i": 367,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "All statements A, B, and C are correct according to 2011 census data.",
+    "broken": false
+  },
+  {
+    "i": 368,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "NMP was launched by Finance Minister Nirmala Sitharaman, so B, C, D are correct.",
+    "broken": false
+  },
+  {
+    "i": 372,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Jawaharlal Nehru was President, declared Purna Swaraj, hoisted flag on Ravi.",
+    "broken": false
+  },
+  {
+    "i": 374,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Option 2 is marked incorrect in revised MSME definitions.",
+    "broken": false
+  },
+  {
+    "i": 376,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "All four are parts of tree trunk structure.",
+    "broken": false
+  },
+  {
+    "i": 377,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Dhokra art uses brass/bell-metal non-ferrous metal casting.",
+    "broken": false
+  },
+  {
+    "i": 386,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Under 18 years of age.",
+    "broken": false
+  },
+  {
+    "i": 392,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Ajmer brought under Delhi Sultanate control.",
+    "broken": false
+  },
+  {
+    "i": 396,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Bijolia Movement was initially led by Sadhu Sitaram Das.",
+    "broken": false
+  },
+  {
+    "i": 410,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Consumer Price Index (CPI).",
+    "broken": false
+  },
+  {
+    "i": 411,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "CPI (Rural, Urban, Combined) is compiled and released by NSO, not Labour Bureau.",
+    "broken": false
+  },
+  {
+    "i": 421,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Mehrangarh Fort is in Jodhpur.",
+    "broken": false
+  },
+  {
+    "i": 424,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Ranthambore Fort.",
+    "broken": false
+  },
+  {
+    "i": 427,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Tonk is famous for Namda (felted rug) craft.",
+    "broken": false
+  },
+  {
+    "i": 428,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Dadu Dayal was born in Ahmedabad, Gujarat, not Allahabad.",
+    "broken": false
+  },
+  {
+    "i": 433,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "A mechanic works in a garage.",
+    "broken": false
+  },
+  {
+    "i": 435,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "15/27 = 5/9, 45/81 = 5/9, 100/180 = 5/9.",
+    "broken": false
+  },
+  {
+    "i": 438,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Opposite alphabet positions written in reverse letter order.",
+    "broken": false
+  },
+  {
+    "i": 446,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Both arguments I and II are strong.",
+    "broken": false
+  },
+  {
+    "i": 447,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "MOQS, FHJL, RTVX have step +2; DEGI starts with +1.",
+    "broken": false
+  },
+  {
+    "i": 448,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Fork and knife are complementary items, others are item and category.",
+    "broken": false
+  },
+  {
+    "i": 451,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Differences are +1, +2, +3, +4, +5 -> Q.",
+    "broken": false
+  },
+  {
+    "i": 452,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "1st letter (+1,+2,+1,+2), 2nd (+2), 3rd (+1,+3,+5,+7) -> VYU.",
+    "broken": false
+  },
+  {
+    "i": 453,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "1st letter (+5,-3), number (-5,-7,-9,-11), 2nd letter (-5,+3) -> T42G.",
+    "broken": false
+  },
+  {
+    "i": 454,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Differences are 14, 22, 30, 38, 46 -> 72 + 38 = 110.",
+    "broken": false
+  },
+  {
+    "i": 455,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Swapping + and ÷ gives 20 - 4*3 + 8/2 = 12.",
+    "broken": false
+  },
+  {
+    "i": 456,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "10*2 - 16/4 + 3 = 20 - 4 + 3 = 19.",
+    "broken": false
+  },
+  {
+    "i": 457,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "(8/4) - 3 + 5 = 4.",
+    "broken": false
+  },
+  {
+    "i": 470,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "YB > ZB > GB > KB.",
+    "broken": false
+  },
+  {
+    "i": 471,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "CPU consists of Control Unit and Arithmetic Logic Unit.",
+    "broken": false
+  },
+  {
+    "i": 473,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Output unit presents data to users.",
+    "broken": false
+  },
+  {
+    "i": 482,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "SUSE Linux is an Operating System.",
+    "broken": false
+  },
+  {
+    "i": 492,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Jejakabhukti was the ancient/medieval name of Bundelkhand.",
+    "broken": false
+  },
+  {
+    "i": 494,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Kol uprising of 1831-32.",
+    "broken": false
+  },
+  {
+    "i": 495,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Sir Syed Ahmad Khan.",
+    "broken": false
+  },
+  {
+    "i": 496,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Coastal areas have maritime/moderate climate.",
+    "broken": false
+  },
+  {
+    "i": 498,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Saline soil is infertile and unsuitable for vegetation.",
+    "broken": false
+  },
+  {
+    "i": 499,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Mahanadi length is ~858 km, not 680 km.",
+    "broken": false
+  },
+  {
+    "i": 504,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Thane was the most populous district in 2011 Census.",
+    "broken": false
+  },
+  {
+    "i": 505,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Tripura literacy rate in 2011 Census was 87.22%.",
+    "broken": false
+  },
+  {
+    "i": 506,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Jain population percentage in 2011 Census is 0.37%.",
+    "broken": false
+  },
+  {
+    "i": 508,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "NALCO bauxite mines and alumina refinery are at Koraput.",
+    "broken": false
+  },
+  {
+    "i": 512,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Article 80.",
+    "broken": false
+  },
+  {
+    "i": 515,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Onion (Allium cepa) is a monocot plant.",
+    "broken": false
+  },
+  {
+    "i": 516,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Uttarakhand.",
+    "broken": false
+  },
+  {
+    "i": 518,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Pattachitra is traditional cloth scroll painting of Odisha.",
+    "broken": false
+  },
+  {
+    "i": 519,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Ghoomar and Gangaur are folk dances of Rajasthan.",
+    "broken": false
+  },
+  {
+    "i": 520,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Chakri is popular folk music of Jammu & Kashmir.",
+    "broken": false
+  },
+  {
+    "i": 522,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Manika Batra is a Table Tennis player.",
+    "broken": false
+  },
+  {
+    "i": 523,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "USA won 2021 Concacaf Gold Cup.",
+    "broken": false
+  },
+  {
+    "i": 524,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Lee Zii Jia is a Malaysian badminton player.",
+    "broken": false
+  },
+  {
+    "i": 527,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Section 16 provides for in-camera proceedings.",
+    "broken": false
+  },
+  {
+    "i": 528,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Section 45 deals with opinion of experts.",
+    "broken": false
+  },
+  {
+    "i": 538,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Kakka was the Pratihara ruler of Mandor known for his scholarship.",
+    "broken": false
+  },
+  {
+    "i": 541,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Hammir Deva army defeated Jalaluddin Khalji near Jhain.",
+    "broken": false
+  },
+  {
+    "i": 542,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Bharatpur saw widespread communal violence in 1947.",
+    "broken": false
+  },
+  {
+    "i": 544,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "AISPC 7th session was held in Udaipur in Dec 1945 - Jan 1946 under Nehru.",
+    "broken": false
+  },
+  {
+    "i": 546,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Berach, Kothari, Khari are tributaries of Banas river.",
+    "broken": false
+  },
+  {
+    "i": 575,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Bhavai dance involves balancing brass pots/glasses.",
+    "broken": false
+  },
+  {
+    "i": 582,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Reverse alphabet position + 5.",
+    "broken": false
+  },
+  {
+    "i": 596,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Windows is proprietary.",
+    "broken": false
+  }
+]

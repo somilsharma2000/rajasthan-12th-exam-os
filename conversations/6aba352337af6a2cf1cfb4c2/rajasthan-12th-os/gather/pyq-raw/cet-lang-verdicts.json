@@ -1,0 +1,242 @@
+[
+  {
+    "n": 1,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'अन्वीक्षण' = अनु + ईक्षण (यण् स्वर सन्धि)"
+  },
+  {
+    "n": 2,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'शब्द' is a base noun with no vowel sandhi"
+  },
+  {
+    "n": 3,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Three main types of verbs based on tense (भूत, वर्तमान, भविष्यत्)"
+  },
+  {
+    "n": 11,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'वे' is third person pronoun (अन्य पुरुषवाचक)"
+  },
+  {
+    "n": 12,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'ठगी' is an abstract noun (भाववाचक संज्ञा), not caste/class noun (जातिवाचक)"
+  },
+  {
+    "n": 13,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Correct matching: a-IV (सकर्मक), b-III (अकर्मक), c-II (प्रेरणार्थक), d-I (संयुक्त)"
+  },
+  {
+    "n": 14,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Correct antonym matching: a-II (ऊर्ध्व-अधः), b-III (अवसान-आरंभ), c-I (तिक्त-मधुर), d-IV (सुधा-गरल)"
+  },
+  {
+    "n": 15,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'धीरे-धीरे' consists of word repetition acting as adverb (अव्ययीभाव समास)"
+  },
+  {
+    "n": 27,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'जिसके समान दूसरा नहीं है' = अद्वितीय"
+  },
+  {
+    "n": 28,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'आठ वार नौ त्योहार' means enjoying/living life merrily"
+  },
+  {
+    "n": 29,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'भवदीय' is used in the subscription (अधोलेख) of official letters"
+  },
+  {
+    "n": 33,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'anybody, somewhere, nowhere' correctly fills the blanks grammatically"
+  },
+  {
+    "n": 34,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Subject in official letters should be brief, clear and relevant"
+  },
+  {
+    "n": 35,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'loiter about the streets' is standard prepositional usage"
+  },
+  {
+    "n": 36,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'पतंग' means bird, sun, moth/grasshopper, kite; 'बादल' (cloud) is not an meaning"
+  },
+  {
+    "n": 37,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Suffixes attached to verbs are called कृत् / कृदन्त"
+  },
+  {
+    "n": 38,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'अपितु' contains prefix 'अपि'"
+  },
+  {
+    "n": 45,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "जलद = बादल, जलज = कमल"
+  },
+  {
+    "n": 58,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'Valid' translates to 'विधिमान्य'"
+  },
+  {
+    "n": 80,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'for six months' expresses duration of time with present perfect continuous"
+  },
+  {
+    "n": 81,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'have been declared' is the passive form matching option index 2"
+  },
+  {
+    "n": 82,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Correct article sequence: 'The, a, a, x, x'"
+  },
+  {
+    "n": 83,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "RELINQUISH means to abandon"
+  },
+  {
+    "n": 94,
+    "verdict": "UNCERTAIN",
+    "correct_idx": null,
+    "note": "Passage text missing from transcription"
+  },
+  {
+    "n": 95,
+    "verdict": "UNCERTAIN",
+    "correct_idx": null,
+    "note": "Passage text missing from transcription"
+  },
+  {
+    "n": 96,
+    "verdict": "UNCERTAIN",
+    "correct_idx": null,
+    "note": "Passage text missing from transcription"
+  },
+  {
+    "n": 97,
+    "verdict": "UNCERTAIN",
+    "correct_idx": null,
+    "note": "Passage text missing from transcription"
+  },
+  {
+    "n": 98,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Antonym of SURPLUS is Deficit"
+  },
+  {
+    "n": 120,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'Why did Rudra tear the book?' is the correct active past interrogative translation"
+  },
+  {
+    "n": 121,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'He warned us not to walk on ice as it wasn’t safe.' is correct reported speech"
+  },
+  {
+    "n": 122,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'have known, for, since' fills time prepositions and present perfect correctly"
+  },
+  {
+    "n": 123,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "ERUDITE (learned) opposite is Illiterate"
+  },
+  {
+    "n": 124,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "homage = tribute"
+  },
+  {
+    "n": 133,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "Correct matching: a-III (in), b-I (at), c-IV (while), d-II (during)"
+  },
+  {
+    "n": 134,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'अभिग्रहण' in legal/official terminology means 'Seizure'"
+  },
+  {
+    "n": 135,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "An inscription on a tombstone is an epitaph"
+  },
+  {
+    "n": 147,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'पके हुए अन्न की भिक्षा' = मधुकरी"
+  },
+  {
+    "n": 148,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'विस्मरण' is spelled correctly; others are misspelled (चतुर्थ, व्युत्पत्ति, पैतृक)"
+  },
+  {
+    "n": 149,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'आनंद – वासव' is mismatched ('वासव' means Indra, not joy)"
+  },
+  {
+    "n": 150,
+    "verdict": "CONFIRMED",
+    "correct_idx": null,
+    "note": "'जल्दी वापस लौटकर आना।' contains redundancy (वापस and लौटकर)"
+  }
+]

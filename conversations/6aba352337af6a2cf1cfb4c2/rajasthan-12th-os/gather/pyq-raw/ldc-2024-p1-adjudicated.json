@@ -1,0 +1,114 @@
+[
+  {
+    "n": 15,
+    "final_answer_text": "फोकस दूरी के दोगुनी दूरी पर",
+    "final_ans": 0,
+    "tep_right": false,
+    "sf_right": true,
+    "note": "To obtain a real image of the same size as the object using a convex lens, the object must be placed at twice the focal length (2F). TEP selected at principal focus which gives an image at infinity, whereas SF selected the correct option."
+  },
+  {
+    "n": 17,
+    "final_answer_text": "59°",
+    "final_ans": 1,
+    "tep_right": false,
+    "sf_right": true,
+    "note": "The angle formed by exterior angle bisectors is angle BOC = 90° - A/2 = 90° - 31° = 59°. TEP incorrectly picked 62° (angle A itself), whereas SF correctly calculated 59°."
+  },
+  {
+    "n": 18,
+    "final_answer_text": "अंतिम पुष्प स्थिति",
+    "final_ans": 0,
+    "tep_right": false,
+    "sf_right": true,
+    "note": "In Mendel's pea plant experiments, axial flower position is dominant and terminal flower position is recessive. TEP chose green pod color (which is dominant), whereas SF correctly identified terminal flower position."
+  },
+  {
+    "n": 19,
+    "final_answer_text": "कथन I सत्य है किंतु कथन II असत्य है।",
+    "final_ans": 1,
+    "tep_right": false,
+    "sf_right": true,
+    "note": "Statement I is correct as SCP serves as an alternate protein source, but Statement II is false because growing Spirulina utilizes waste and reduces environmental pollution. TEP incorrectly considered both statements true, while SF correctly identified Statement II as false."
+  },
+  {
+    "n": 31,
+    "final_answer_text": "4.5 मीटर",
+    "final_ans": 0,
+    "tep_right": false,
+    "sf_right": true,
+    "note": "Ceiling area = 5000/25 = 200 m², giving breadth = 10m and length = 20m. Four walls area = 64800/240 = 270 m², so height = 270 / (2 * 30) = 4.5m. TEP incorrectly calculated 3.5m, while SF correctly got 4.5m."
+  },
+  {
+    "n": 32,
+    "final_answer_text": "100√3",
+    "final_ans": 1,
+    "tep_right": false,
+    "sf_right": false,
+    "note": "Distance to ground point x = 300/tan(60°) = 100√3 m; lower plane height h = x * tan(45°) = 100√3 m. Both archives erred: TEP picked 150(√3+1) and SF picked 100/√3 instead of 100√3."
+  },
+  {
+    "n": 46,
+    "final_answer_text": "लाइव तार और न्यूट्रल तार एक दूसरे से सीधे संपर्क में आते हैं।",
+    "final_ans": 1,
+    "tep_right": false,
+    "sf_right": true,
+    "note": "Short-circuiting happens when the live wire comes in direct contact with the neutral wire, causing a large current flow. TEP erroneously chose accidental neutral wire contact between appliances, while SF correctly selected direct live-neutral contact."
+  },
+  {
+    "n": 47,
+    "final_answer_text": "a-Ill, b-IV, c-II, d-I",
+    "final_ans": 3,
+    "tep_right": false,
+    "sf_right": true,
+    "note": "Current is Coulomb/s (III), Resistance is Volt/Ampere (IV), Power is Volt-Ampere (II), and Charge is Ampere-second (I), giving matching a-III, b-IV, c-II, d-I. TEP mistakenly matched Resistance to I and Charge to IV, whereas SF matched all correctly."
+  },
+  {
+    "n": 65,
+    "final_answer_text": "समंजन क्षमता (पावर ऑफ एकॉमोडेशन)",
+    "final_ans": 0,
+    "tep_right": false,
+    "sf_right": true,
+    "note": "The ability of the eye lens to adjust its focal length is termed the Power of Accommodation. TEP incorrectly selected Power of Adjustment, whereas SF correctly chose Power of Accommodation."
+  },
+  {
+    "n": 99,
+    "final_answer_text": "₹4000",
+    "final_ans": 2,
+    "tep_right": false,
+    "sf_right": true,
+    "note": "A, B, C investment weights are 1680, 480, and 432, forming a ratio of 35:10:9 with sum 54. B's share of ₹21,600 total profit is 21600 * (10/54) = ₹4000. TEP calculated ₹3600, while SF correctly got ₹4000."
+  },
+  {
+    "n": 114,
+    "final_answer_text": "श्यामजी कृष्ण वर्मा",
+    "final_ans": 1,
+    "tep_right": false,
+    "sf_right": true,
+    "note": "India House in London was founded in 1905 by Shyamji Krishna Varma to promote Indian nationalism. TEP misidentified Madan Lal Dhingra (a member) as founder, whereas SF correctly named Shyamji Krishna Varma."
+  },
+  {
+    "n": 135,
+    "final_answer_text": "केवल a और d",
+    "final_ans": 0,
+    "tep_right": false,
+    "sf_right": true,
+    "note": "Carbon compounds form covalent bonds and long chains (statements a and d are true), but have low melting/boiling points and poor conductivity (b and c are false). TEP incorrectly chose statements a and c, whereas SF correctly selected a and d."
+  },
+  {
+    "n": 141,
+    "final_answer_text": null,
+    "final_ans": null,
+    "tep_right": false,
+    "sf_right": false,
+    "note": "The mathematical expression for this question is missing in both JSON sources because it was embedded as an image in the raw HTML files. As the numerical formula is absent from the text, the question cannot be solved."
+  },
+  {
+    "n": 145,
+    "final_answer_text": "ΔABC और ΔPQR समरुप हो सकते हैं अथवा नहीं भी हो सकते हैं",
+    "final_ans": 2,
+    "tep_right": false,
+    "sf_right": true,
+    "note": "Given only one equal side (AB=PQ) and one equal angle (∠B=∠Q), congruence or similarity cannot be definitively established without further information. TEP incorrectly assumed congruence, whereas SF correctly concluded they may or may not be similar."
+  }
+]

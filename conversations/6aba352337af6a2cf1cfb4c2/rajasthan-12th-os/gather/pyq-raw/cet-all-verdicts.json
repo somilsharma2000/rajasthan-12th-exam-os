@@ -1,0 +1,896 @@
+[
+ {
+  "n": 8,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Vikram Sarabhai Space Centre is located in Thiruvananthapuram, Kerala."
+ },
+ {
+  "n": 9,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "M = N * I * A = 500 * 1.5 * 0.06 = 45 A m^2 matching option index 3."
+ },
+ {
+  "n": 10,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Non-spherical cornea defect is astigmatism matching option index 2."
+ },
+ {
+  "n": 16,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Ethanoic acid + carbonate -> Salt + CO2 + H2O matching option index 1."
+ },
+ {
+  "n": 17,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Carbon long chain formation property is catenation matching option index 0."
+ },
+ {
+  "n": 22,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Intel 4004 (first microprocessor) contained 2,300 transistors."
+ },
+ {
+  "n": 23,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Ctrl + F6 / Ctrl + Tab switches to the next workbook window in MS Excel."
+ },
+ {
+  "n": 24,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Hadoti is spoken in Kota, Bundi, Baran, and Jhalawar districts of Rajasthan."
+ },
+ {
+  "n": 25,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Bichchiyo, Lalar, Nokhila, and Shikhar/Machhar are popular folk songs of Rajasthan."
+ },
+ {
+  "n": 26,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Gogaji is revered as a snake deity and warrior with a spear."
+ },
+ {
+  "n": 31,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Total 2000, graduates = 1040, males = 1200, male grads = 600. Female grads = 1040 - 600 = 440 matching option index 2."
+ },
+ {
+  "n": 39,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Pangong Tso lake is in Ladakh (Kashmir/Ladakh/Northwestern Himalayas)."
+ },
+ {
+  "n": 40,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Discouraging human rights NGOs is contrary to SHRC functions under Protection of Human Rights Act."
+ },
+ {
+  "n": 41,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "73rd Constitutional Amendment Act 1992 granted constitutional status to Gram Sabha."
+ },
+ {
+  "n": 42,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "The Governor of a State holds office during the pleasure of the President (Article 156)."
+ },
+ {
+  "n": 46,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "The Preamble begins with 'We, the people of India...'."
+ },
+ {
+  "n": 47,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Sarkaria Commission was set up in 1983 to examine Centre-State relations."
+ },
+ {
+  "n": 48,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Chairman of RPSC is appointed by the Governor of Rajasthan (Article 316)."
+ },
+ {
+  "n": 49,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Shri Lal Joshi was a renowned Phad painting artist from Bhilwara."
+ },
+ {
+  "n": 50,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Samp Sabha meetings were annual (on Ashwin Purnima at Mangarh), not monthly."
+ },
+ {
+  "n": 51,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Mand (Dugal) was the ancient name of Jaisalmer region."
+ },
+ {
+  "n": 52,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Subtropical mountain forests exist in Western Ghats, Nilgiris, Himalayas, etc., not only Rajasthan and UP."
+ },
+ {
+  "n": 53,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Western Desert Plain (Thar) covers ~61.11% area of Rajasthan."
+ },
+ {
+  "n": 54,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Andaman and Nicobar Islands has 96 wildlife sanctuaries, highest among Indian states/UTs."
+ },
+ {
+  "n": 55,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Taxus wallichiana (Himalayan Yew) is a medicinal tree yielding taxol."
+ },
+ {
+  "n": 56,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Man Singh won gold at Asian Marathon Championship 2024 in Hong Kong."
+ },
+ {
+  "n": 57,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "India is the 2nd largest producer of mobile phones globally after China."
+ },
+ {
+  "n": 59,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Kishangarh (Ajmer) is home to Rajasthan's famous marble dumping yard."
+ },
+ {
+  "n": 60,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Mukhyamantri Laghu Vanijyik Vahan Swarojgar Yojna was notified on 11 October 2022."
+ },
+ {
+  "n": 61,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Fort housing skilled soldiers and army strategy units is termed Sainya Durg."
+ },
+ {
+  "n": 62,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "At Ahad civilization, dead bodies were buried with ornaments and jewellery."
+ },
+ {
+  "n": 63,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Karpur Chand Kulish founded Rajasthan Patrika newspaper in 1956."
+ },
+ {
+  "n": 64,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "42nd Amendment (1976) added Socialist, Secular, and Integrity to the Preamble."
+ },
+ {
+  "n": 65,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Non-payment of minimum wages constitutes forced labor/begar violating Article 23."
+ },
+ {
+  "n": 66,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Ctrl + P is the standard print shortcut in MS Office."
+ },
+ {
+  "n": 68,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Sonara 64 is a well-known high-yielding Rabi wheat variety."
+ },
+ {
+  "n": 69,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Karl Landsteiner discovered and classified ABO blood groups in 1900."
+ },
+ {
+  "n": 70,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "IgA is the predominant antibody class present in mother's milk / colostrum."
+ },
+ {
+  "n": 71,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Deficiency match: Pellagra-dry scales (III), Beri-Beri-muscle weakness (II), Scurvy-bleeding gums (IV), Riboflavinosis-memory loss (I)."
+ },
+ {
+  "n": 73,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Hard disk offers maximum storage capacity (terabytes) among listed optical/floppy drives."
+ },
+ {
+  "n": 74,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "F7 key triggers spelling and grammar check in MS Excel."
+ },
+ {
+  "n": 75,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "TODAY() returns current system date in spreadsheet tools."
+ },
+ {
+  "n": 76,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Text alignment is a paragraph formatting property, not character formatting."
+ },
+ {
+  "n": 77,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Green Revolution made India self-sufficient in food grain production."
+ },
+ {
+  "n": 78,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "The Prime Minister served as ex-officio Chairman of Planning Commission."
+ },
+ {
+  "n": 79,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Both import tariffs and import quotas were used for domestic industry protection."
+ },
+ {
+  "n": 84,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Integrated Circuits (ICs) characterize Third Generation computers."
+ },
+ {
+  "n": 85,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Dharma Guardian 2024 (5th edition) was held at Mahajan Field Firing Range, Rajasthan."
+ },
+ {
+  "n": 86,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Services football team won the 77th Santosh Trophy 2023-24."
+ },
+ {
+  "n": 87,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "18th Lok Sabha general elections were conducted in 7 phases."
+ },
+ {
+  "n": 88,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Neptis philyra (Long-banded Sailor butterfly) was discovered in Tale Valley, Arunachal Pradesh."
+ },
+ {
+  "n": 91,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Satpura National Park is located in Madhya Pradesh, not Tamil Nadu."
+ },
+ {
+  "n": 92,
+  "verdict": "UNCERTAIN",
+  "correct_idx": null,
+  "note": "Garbled transcription: question asks about computer input devices, but options contain germination/purity formulas."
+ },
+ {
+  "n": 93,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Kanha Biosphere Reserve is located in Madhya Pradesh only, not Uttar Pradesh."
+ },
+ {
+  "n": 99,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Cyclosporin A is an immunosuppressive drug obtained from fungus Trichoderma polysporum."
+ },
+ {
+  "n": 100,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Centella asiatica (Gotu Kola) economically uses leaves/whole plant, not bark."
+ },
+ {
+  "n": 101,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Luni river flows towards Rann of Kutch / Arabian Sea drainage system."
+ },
+ {
+  "n": 102,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Narmada river flows through a rift valley between Vindhya and Satpura ranges."
+ },
+ {
+  "n": 103,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Namcha Barwa peak is situated in the Arunachal / Eastern Himalayas."
+ },
+ {
+  "n": 104,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Thewa Art (gold glass filigree) originated in Pratapgarh, Rajasthan."
+ },
+ {
+  "n": 105,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Mahi Bajaj Sagar Project is a joint venture between Rajasthan (45%) and Gujarat (55%)."
+ },
+ {
+  "n": 106,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Both statements false: Alluvial soil is in Eastern Rajasthan, and contains adequate potash but lacks nitrogen."
+ },
+ {
+  "n": 107,
+  "verdict": "WRONG",
+  "correct_idx": 2,
+  "note": "Fly In is an entrance animation effect in MS PowerPoint, not page design."
+ },
+ {
+  "n": 108,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Floppy disks can be read regardless of whether the write protect notch is open or closed."
+ },
+ {
+  "n": 109,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "World Future Energy Summit 2024 was hosted in Abu Dhabi, UAE."
+ },
+ {
+  "n": 110,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Normal incidence on plane mirror gives angle of incidence = 0° and angle of reflection = 0° matching option index 3."
+ },
+ {
+  "n": 111,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Second inverted identical prism recombines dispersed spectrum back into a beam of white light matching option index 2."
+ },
+ {
+  "n": 112,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Jawaharlal Nehru inaugurated 3-tier Panchayati Raj at Nagaur on 2 Oct 1959."
+ },
+ {
+  "n": 113,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Concept of Welfare State is enshrined in Directive Principles of State Policy (Part IV)."
+ },
+ {
+  "n": 117,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "AUG acts as initiator codon AND codes for amino acid Methionine."
+ },
+ {
+  "n": 118,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Uracil is present in RNA instead of Thymine, absent from DNA."
+ },
+ {
+  "n": 119,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Mendel studied pod colour as Green/Yellow; white is not a pod colour trait."
+ },
+ {
+  "n": 125,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Chief Minister Corona Sahayata Yojana was launched in June 2021 (25 June 2021)."
+ },
+ {
+  "n": 126,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Bhadla Solar Park is located in Jodhpur district, Rajasthan."
+ },
+ {
+  "n": 127,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Rajasthan MSME Amendment Act 2023 extended exemption period from 3 years to 5 years."
+ },
+ {
+  "n": 128,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Rajasthan Panchayati Raj Act 1994 came into force on 23 April 1994."
+ },
+ {
+  "n": 129,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Financial assistance provided by government to producers is called subsidy."
+ },
+ {
+  "n": 130,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Heating sulphide ores in excess air is roasting matching option index 1."
+ },
+ {
+  "n": 131,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Anodising is forming a thick oxide layer on metal surface matching option index 1."
+ },
+ {
+  "n": 132,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "B (2,8,7) is Chlorine (non-metal) and C (2,8,2) is Magnesium (metal) matching option index 3."
+ },
+ {
+  "n": 136,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Prof. Aditi Sen De became the first female scientist awarded G.D. Birla Award (2023)."
+ },
+ {
+  "n": 137,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "4th SCO Startup Forum was held on 19 March 2024 in New Delhi."
+ },
+ {
+  "n": 138,
+  "verdict": "WRONG",
+  "correct_idx": null,
+  "note": "Paris 2024 standings among these 4 countries: USA (1st/IV), China (2nd/III), Netherlands (3rd/I), Britain (4th/II) -> correct match a-III, b-II, c-I, d-IV. Marked option 3 (a-I, b-II, c-III, d-IV) incorrectly maps China as 3rd and Netherlands as 2nd."
+ },
+ {
+  "n": 145,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "BaSO4(s) is insoluble precipitate formed matching option index 1."
+ },
+ {
+  "n": 146,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Oxidation (loss of e- -> IV), Reduction (gain of e- -> I), Reducing agent (loosing species -> III), Oxidising agent (accepting species -> II) matching option index 0."
+ },
+ {
+  "n": 4,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Pattern shifts letter positions (3,2,1,4,7,6,5). COMPILE -> MOCPELI matching option index 3."
+ },
+ {
+  "n": 5,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "T_n = 2/(n(n+1)) = 2(1/n - 1/(n+1)). Infinite sum S = 2 matching option index 3."
+ },
+ {
+  "n": 6,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Kavita post-interchange is 15th from left and 9th from right. Total = 15 + 9 - 1 = 23 matching option index 1."
+ },
+ {
+  "n": 7,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "John position: 32 from left, 15 from right. Total = 32 + 15 - 1 = 46 matching option index 2."
+ },
+ {
+  "n": 18,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Median = ((2x+1) + (4x+3))/2 = 3x + 2 = 77 => 3x = 75 => x = 25 matching option index 2."
+ },
+ {
+  "n": 19,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "50% SI in 5 yrs => R = 10% p.a. CI = 15000 * (1.1^3 - 1) = 4965 matching option index 3."
+ },
+ {
+  "n": 20,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "(21k+8)/(26k+8) = 5/6 => k = 2. Numbers are 42, 52. (42-2)/(52-2) = 40/50 = 4:5 matching option index 2."
+ },
+ {
+  "n": 21,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Height h = sqrt(p*q) for complementary elevation angles matching option index 1."
+ },
+ {
+  "n": 30,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "CP = 5/6, SP = 6/4 = 3/2. Gain% = ((3/2 - 5/6)/(5/6)) * 100 = 80% matching option index 3."
+ },
+ {
+  "n": 32,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "log_9(27) + log_27(9) = 3/2 + 2/3 = 13/6 matching option index 1."
+ },
+ {
+  "n": 44,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Some newspapers are books and all books are spoons => Some newspapers are spoons. Only conclusion II follows matching option index 1."
+ },
+ {
+  "n": 67,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Letter shift +10: GKLP -> QUVZ, AEFJ -> KOPT matching option index 0."
+ },
+ {
+  "n": 72,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Ratio of areas = (d1/d2)^2 = (4/7)^2 = 16:49 matching option index 1."
+ },
+ {
+  "n": 89,
+  "verdict": "UNCERTAIN",
+  "correct_idx": null,
+  "note": "Missing figure and angle measurements in transcribed text; angle RPM cannot be calculated deterministically without the diagram."
+ },
+ {
+  "n": 90,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "All 4 sides equal (sqrt(388)) and diagonals unequal (sqrt(1352) != sqrt(200)) => Rhombus matching option index 3."
+ },
+ {
+  "n": 114,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "6a^2 = a^3 => a = 6. Diagonal = a*sqrt(3) = 6*sqrt(3) matching option index 1."
+ },
+ {
+  "n": 115,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Vector from B(1,0) to D(0,1) is (-1,1), which is North-West matching option index 2."
+ },
+ {
+  "n": 116,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Minute hand in 85 min moves 85 * 6° = 510° matching option index 1."
+ },
+ {
+  "n": 139,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "M is brother of R and P is son of R => M is maternal uncle of P matching option index 1."
+ },
+ {
+  "n": 140,
+  "verdict": "UNCERTAIN",
+  "correct_idx": null,
+  "note": "Missing figure in transcribed text; number of triangles cannot be counted without the diagram."
+ },
+ {
+  "n": 141,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Angles P=25°, C=25°, Q=B=90°, PR=CA => Delta PQR ≅ Delta CBA matching option index 2."
+ },
+ {
+  "n": 142,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Expression simplifies to cot(theta) = sqrt(x^2 - y^2)/y matching option index 0."
+ },
+ {
+  "n": 143,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "sqrt((2a-1)^2) + 3a = (1 - 2a) + 3a = 1 + a = 1.1069 matching option index 0."
+ },
+ {
+  "n": 144,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Charge Q = 0.02 * 2 * 96500 = 3860 C. Time t = 3860 / 0.020 A = 1.93 * 10^5 s = 19.3 * 10^4 s matching option index 2."
+ },
+ {
+  "n": 1,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'अन्वीक्षण' = अनु + ईक्षण (यण् स्वर सन्धि)"
+ },
+ {
+  "n": 2,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'शब्द' is a base noun with no vowel sandhi"
+ },
+ {
+  "n": 3,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Three main types of verbs based on tense (भूत, वर्तमान, भविष्यत्)"
+ },
+ {
+  "n": 11,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'वे' is third person pronoun (अन्य पुरुषवाचक)"
+ },
+ {
+  "n": 12,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'ठगी' is an abstract noun (भाववाचक संज्ञा), not caste/class noun (जातिवाचक)"
+ },
+ {
+  "n": 13,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Correct matching: a-IV (सकर्मक), b-III (अकर्मक), c-II (प्रेरणार्थक), d-I (संयुक्त)"
+ },
+ {
+  "n": 14,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Correct antonym matching: a-II (ऊर्ध्व-अधः), b-III (अवसान-आरंभ), c-I (तिक्त-मधुर), d-IV (सुधा-गरल)"
+ },
+ {
+  "n": 15,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'धीरे-धीरे' consists of word repetition acting as adverb (अव्ययीभाव समास)"
+ },
+ {
+  "n": 27,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'जिसके समान दूसरा नहीं है' = अद्वितीय"
+ },
+ {
+  "n": 28,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'आठ वार नौ त्योहार' means enjoying/living life merrily"
+ },
+ {
+  "n": 29,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'भवदीय' is used in the subscription (अधोलेख) of official letters"
+ },
+ {
+  "n": 33,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'anybody, somewhere, nowhere' correctly fills the blanks grammatically"
+ },
+ {
+  "n": 34,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Subject in official letters should be brief, clear and relevant"
+ },
+ {
+  "n": 35,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'loiter about the streets' is standard prepositional usage"
+ },
+ {
+  "n": 36,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'पतंग' means bird, sun, moth/grasshopper, kite; 'बादल' (cloud) is not an meaning"
+ },
+ {
+  "n": 37,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Suffixes attached to verbs are called कृत् / कृदन्त"
+ },
+ {
+  "n": 38,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'अपितु' contains prefix 'अपि'"
+ },
+ {
+  "n": 45,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "जलद = बादल, जलज = कमल"
+ },
+ {
+  "n": 58,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'Valid' translates to 'विधिमान्य'"
+ },
+ {
+  "n": 80,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'for six months' expresses duration of time with present perfect continuous"
+ },
+ {
+  "n": 81,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'have been declared' is the passive form matching option index 2"
+ },
+ {
+  "n": 82,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Correct article sequence: 'The, a, a, x, x'"
+ },
+ {
+  "n": 83,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "RELINQUISH means to abandon"
+ },
+ {
+  "n": 94,
+  "verdict": "UNCERTAIN",
+  "correct_idx": null,
+  "note": "Passage text missing from transcription"
+ },
+ {
+  "n": 95,
+  "verdict": "UNCERTAIN",
+  "correct_idx": null,
+  "note": "Passage text missing from transcription"
+ },
+ {
+  "n": 96,
+  "verdict": "UNCERTAIN",
+  "correct_idx": null,
+  "note": "Passage text missing from transcription"
+ },
+ {
+  "n": 97,
+  "verdict": "UNCERTAIN",
+  "correct_idx": null,
+  "note": "Passage text missing from transcription"
+ },
+ {
+  "n": 98,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Antonym of SURPLUS is Deficit"
+ },
+ {
+  "n": 120,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'Why did Rudra tear the book?' is the correct active past interrogative translation"
+ },
+ {
+  "n": 121,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'He warned us not to walk on ice as it wasn’t safe.' is correct reported speech"
+ },
+ {
+  "n": 122,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'have known, for, since' fills time prepositions and present perfect correctly"
+ },
+ {
+  "n": 123,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "ERUDITE (learned) opposite is Illiterate"
+ },
+ {
+  "n": 124,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "homage = tribute"
+ },
+ {
+  "n": 133,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "Correct matching: a-III (in), b-I (at), c-IV (while), d-II (during)"
+ },
+ {
+  "n": 134,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'अभिग्रहण' in legal/official terminology means 'Seizure'"
+ },
+ {
+  "n": 135,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "An inscription on a tombstone is an epitaph"
+ },
+ {
+  "n": 147,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'पके हुए अन्न की भिक्षा' = मधुकरी"
+ },
+ {
+  "n": 148,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'विस्मरण' is spelled correctly; others are misspelled (चतुर्थ, व्युत्पत्ति, पैतृक)"
+ },
+ {
+  "n": 149,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'आनंद – वासव' is mismatched ('वासव' means Indra, not joy)"
+ },
+ {
+  "n": 150,
+  "verdict": "CONFIRMED",
+  "correct_idx": null,
+  "note": "'जल्दी वापस लौटकर आना।' contains redundancy (वापस and लौटकर)"
+ }
+]
