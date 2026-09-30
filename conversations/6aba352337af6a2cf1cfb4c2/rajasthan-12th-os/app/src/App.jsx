@@ -75,6 +75,7 @@ export default function App() {
   const [session, setSession] = useState(null)
   const [resumable, setResumable] = useState(null)
   const [appToast, setAppToast] = useState('')
+  const [onboardDone, setOnboardDone] = useState(() => { try { return !!localStorage.getItem('rjx-onboard') } catch { return true } }) // hooks-rule: must run before any conditional return
   const appToastTimer = useRef(null)
   const toastApp = (msg) => { setAppToast(msg); clearTimeout(appToastTimer.current); appToastTimer.current = setTimeout(() => setAppToast(''), 3000) }
   const [bms, setBms] = useState([])
@@ -268,6 +269,8 @@ export default function App() {
   )
   // HOME
   const dueErr = Object.values(loadErr()).filter(e => e.nextReviewAt <= Date.now()).length
+  const firstVisit = !onboardDone && !loadHist().length && !Object.keys(loadErr()).length && !loadBM().length
+  const dismissOnboard = () => { try { localStorage.setItem('rjx-onboard', '1') } catch {} setOnboardDone(true) }
   return (
     <div className="wrap">
       <TopBar title={t.appName} t={t} lang={lang} toggleLang={toggleLang} />
@@ -275,6 +278,17 @@ export default function App() {
         <h1>{t.appName}</h1>
         <p>{t.tagline} · {t.disclaimer}</p>
       </div>
+      {firstVisit && (
+        <div className="onboard" role="note">
+          <div className="onbHead">
+            <b>{lang === 'hi' ? 'पहली बार? तरीका 30 सेकंड में' : 'New here? The method in 30 seconds'}</b>
+            <button className="iconBtn" aria-label={lang === 'hi' ? 'बंद करें' : 'Dismiss'} onClick={dismissOnboard}>✕</button>
+          </div>
+          <div className="onbStep"><span className="onbKey">1</span><span>{lang === 'hi' ? <>परीक्षा चुनें — पैटर्न, पात्रता और नकारात्मक अंकन हर कार्ड पर सत्यापित (✓)</> : <>Pick your exam — pattern, eligibility and negative marking verified (✓) on every card</>}</span></div>
+          <div className="onbStep"><span className="onbKey">2</span><span>{lang === 'hi' ? <>सत्यापित PYQ पर अभ्यास (तुरंत व्याख्या) या पूर्ण-पैटर्न मॉक टेस्ट</> : <>Practice on verified PYQs (instant explanations) or take full-pattern mocks</>}</span></div>
+          <div className="onbStep"><span className="onbKey">3</span><span>{lang === 'hi' ? <>गलत/छूटे प्रश्न अपने-आप त्रुटि-बुक में — 1-3-7-15-30 दिन के रिवीजन schedule पर लौटते हैं</> : <>Wrong/skipped questions auto-enter the error book and return on a 1-3-7-15-30 day revision schedule</>}</span></div>
+        </div>
+      )}
       {resumable && (
         <div className="resume">
           <b>{lang === 'hi' ? 'अधूरा मॉक टेस्ट' : 'Unfinished mock test'}</b>
@@ -677,9 +691,15 @@ function Result({ session, lang, onRecord, onHome, onRetry, onErrorReview }) {
         ))}
       </div>}
       <div className="dock"><div className="row">
-        <button className="ghost" onClick={onRetry}>{lang === 'hi' ? 'फिर से करें' : 'Retry'}</button>
-        {wrongQs.length > 0 && <button className="ghost" onClick={onErrorReview}>{lang === 'hi' ? `एरर रिव्यू (${wrongQs.length})` : `Review errors (${wrongQs.length})`}</button>}
-        <button className="primary big dockNext" onClick={onHome}>{lang === 'hi' ? 'होम पर जाएँ' : 'Go Home'}</button>
+        {wrongQs.length > 0 ? (<>
+          {/* Momentum CTA: the highest-value next step after a test is to close the error loop, not to leave */}
+          <button className="ghost" onClick={onHome}>{lang === 'hi' ? 'होम पर जाएँ' : 'Go Home'}</button>
+          <button className="ghost" onClick={onRetry}>{lang === 'hi' ? 'फिर से करें' : 'Retry'}</button>
+          <button className="primary big dockNext" onClick={onErrorReview}>{lang === 'hi' ? `एरर रिव्यू करें (${wrongQs.length})` : `Review errors (${wrongQs.length})`}</button>
+        </>) : (<>
+          <button className="ghost" onClick={onHome}>{lang === 'hi' ? 'होम पर जाएँ' : 'Go Home'}</button>
+          <button className="primary big dockNext" onClick={onRetry}>{lang === 'hi' ? 'फिर से करें' : 'Retry'}</button>
+        </>)}
       </div></div>
     </div>
   )

@@ -1,4 +1,6 @@
-# MASTER OPERATING PROTOCOL — rajasthan-12th-exam-os (v3, 2026-10-01)
+# MASTER OPERATING PROTOCOL — rajasthan-12th-exam-os (v4, 2026-10-01)
+
+**Governing standard: docs/MASTER-PROMPT-V4.md** (founder-provided 55-section Autonomous Product Transformation Engine, adopted 2026-10-01). This file is the in-repo execution mapping of it — same rules, module numbers, so each pass can be invoked by number without re-reading the full engine.
 
 Not one instruction blob: a modular protocol. Run ONE specialist pass at a time, per this doc's
 applicability status. Never regenerate the site to run a pass. Full standard history at bottom.

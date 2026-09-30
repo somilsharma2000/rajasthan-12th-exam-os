@@ -16,6 +16,10 @@ try {
   await p.goto(`http://localhost:${PORT}`, { waitUntil: 'networkidle0' })
   await p.evaluate(() => localStorage.clear()); await p.reload({ waitUntil: 'networkidle0' })
   ok('home renders with exam cards', await p.evaluate(() => !!document.querySelector('.examCard')))
+  ok('first-visit strip shown to true first-timer', await p.evaluate(() => !!document.querySelector('.onboard') && document.querySelectorAll('.onbStep').length === 3))
+  await p.evaluate(() => document.querySelector('.onboard .iconBtn').click())
+  ok('strip dismissed + persists across reload', await p.evaluate(() => !document.querySelector('.onboard')) && (await p.reload({ waitUntil: 'networkidle0' }), await p.evaluate(() => !document.querySelector('.onboard'))))
+  await p.evaluate(() => { localStorage.setItem('rjx-onboard', '1'); localStorage.removeItem('examos-history') }) // keep deterministic practice state for flow below
   ok('icons are SVG (no emoji glyphs)', await p.evaluate(() => !!document.querySelector('.tile svg') && !['⌨', '📖', '▦'].some(e => document.body.textContent.includes(e))))
 
   // practice flow: answer via keyboard
@@ -42,6 +46,11 @@ try {
   await new Promise(r => setTimeout(r, 1200))
   ok('mock → result gauge with aria', await p.evaluate(() => { const g = document.querySelector('.gauge'); return !!g && !!g.getAttribute('aria-label') }))
   ok('10x submit spam → exactly 1 history record', await p.evaluate(() => JSON.parse(localStorage.getItem('examos-history') || '[]').length === 1))
+  ok('result momentum CTA correct (errors→review primary, else retry)', await p.evaluate(() => {
+    const next = document.querySelector('.dockNext'); if (!next) return false
+    const errs = document.querySelectorAll('.explain.err').length
+    return errs > 0 ? /एरर रिव्यू|Review errors/.test(next.textContent) : /फिर से करें|Retry/.test(next.textContent)
+  }))
 
   // back safety + traps
   await p.goBack(); await new Promise(r => setTimeout(r, 500))
@@ -58,4 +67,4 @@ try {
   if (errors.length) console.log('errors:', errors)
   await b.close()
   process.exit(FAIL ? 1 : 0)
-} catch (e) { console.error('SMOKE CRASHED:', e.message); process.exit(1) }
+} catch (e) { console.error('SMOKE CRASHED:', e.stack); process.exit(1) }

@@ -1,0 +1,41 @@
+// Visual audit capture — mobile 375 (primary) + desktop 1280
+import puppeteer from 'puppeteer-core'
+import { mkdirSync } from 'fs'
+mkdirSync('qa/shots', { recursive: true })
+const b = await puppeteer.launch({ executablePath: '/usr/bin/google-chrome', args: ['--no-sandbox', '--disable-gpu'] })
+const p = await b.newPage(); await p.setViewport({ width: 375, height: 812, deviceScaleFactor: 2 })
+await p.setCacheEnabled(false)
+await p.evaluate(async () => { const rs = await navigator.serviceWorker?.getRegistrations?.() || []; await Promise.all(rs.map(r => r.unregister())) }).catch(() => {})
+const shot = async (name) => { await new Promise(r => setTimeout(r, 900)); await p.screenshot({ path: `qa/shots/${name}.png` }); console.log('shot', name) }
+const click = async (re) => { await p.evaluate(rx => { const x = [...document.querySelectorAll('button')].find(b2 => new RegExp(rx).test(b2.textContent)); if (x) x.click() }, re); await new Promise(r => setTimeout(r, 600)) }
+await p.goto('http://localhost:4173', { waitUntil: 'networkidle0' })
+await p.evaluate(() => localStorage.clear()); await p.reload({ waitUntil: 'networkidle0' })
+await shot('01-home')
+await click('Stenographer|स्टेनोग्राफर'); await shot('02-hub')
+await click('शुरू|Start'); await shot('03-setup')
+await p.evaluate(() => [...document.querySelectorAll('button')].find(x => /अभ्यास मोड/.test(x.textContent)).click()); await new Promise(r => setTimeout(r, 1500))
+await shot('04-player-practice')
+await p.keyboard.press('2'); await new Promise(r => setTimeout(r, 800)); await shot('05-player-answered')
+await p.evaluate(() => { const x = [...document.querySelectorAll('button')].find(b2 => b2.textContent.trim() === '←'); if (x) x.click() })
+await p.evaluate(() => { const m = [...document.querySelectorAll('.modal button')]; const leave = m.find(b2 => /छोड़ें|Leave/.test(b2.textContent)); if (leave) leave.click() })
+await new Promise(r => setTimeout(r, 600))
+await click('मॉक टेस्ट'); await new Promise(r => setTimeout(r, 1500))
+await shot('06-player-mock')
+await p.evaluate(() => document.querySelector('.dock button[aria-label]').click()); await new Promise(r => setTimeout(r, 600)); await shot('07-palette')
+await p.evaluate(() => document.querySelector('.pal-over')?.click() || [...document.querySelectorAll('.pal button')].slice(-1)[0].click()); await new Promise(r => setTimeout(r, 400))
+await p.evaluate(() => { const x = [...document.querySelectorAll('.dock button')].find(b2 => /जमा|Submit/.test(b2.textContent)); for (let i = 0; i < 6; i++) x.click() })
+await new Promise(r => setTimeout(r, 1500)); await shot('08-result')
+// nav screens
+await p.evaluate(() => localStorage.setItem('rjx-lang', 'en')); await p.reload({ waitUntil: 'networkidle0' })
+await shot('09-home-en')
+await p.evaluate(() => [...document.querySelectorAll('.nav button')].forEach(b2 => { if (/Progress|प्रगति/.test(b2.textContent)) b2.click() })); await shot('10-progress')
+await p.evaluate(() => [...document.querySelectorAll('.nav button')].forEach(b2 => { if (/Error Book|त्रुटि/.test(b2.textContent)) b2.click() })); await shot('11-errorbook')
+await p.evaluate(() => [...document.querySelectorAll('.nav button')].forEach(b2 => { if (/Saved|सहेजे/.test(b2.textContent)) b2.click() })); await shot('12-saved')
+await p.evaluate(() => [...document.querySelectorAll('.nav button')].forEach(b2 => { if (/Typing|टाइपिंग/.test(b2.textContent)) b2.click() })); await shot('13-typing')
+// desktop
+const d = await b.newPage(); await d.setViewport({ width: 1280, height: 800, deviceScaleFactor: 1.5 }); await d.setCacheEnabled(false)
+await d.evaluate(async () => { const rs = await navigator.serviceWorker?.getRegistrations?.() || []; await Promise.all(rs.map(r => r.unregister())) }).catch(() => {})
+await d.goto('http://localhost:4173', { waitUntil: 'networkidle0' })
+await d.evaluate(() => localStorage.clear()); await d.reload({ waitUntil: 'networkidle0' })
+await new Promise(r => setTimeout(r, 900)); await d.screenshot({ path: 'qa/shots/14-desktop-home.png' }); console.log('shot 14-desktop-home')
+await b.close()

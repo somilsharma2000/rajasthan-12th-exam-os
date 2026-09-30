@@ -386,6 +386,23 @@ button:disabled { opacity: .35; pointer-events: none; }
 .dnaFill { transform-origin: left; animation: barGrow .6s cubic-bezier(.22,1,.36,1) both; }
 
 /* Desktop hover states (touch unaffected: no hover on tap) */
+/* ── First-visit method strip (home, true first-timers only) ──── */
+.onboard {
+  background: var(--card); border: 1px solid rgba(124, 58, 237, .35);
+  border-radius: var(--r-lg); padding: 14px 16px; margin: 0 0 18px;
+  animation: slideRight .4s cubic-bezier(.22, 1, .36, 1) both;
+}
+.onbHead { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 10px; }
+.onbHead b { font-size: 14px; }
+.onbStep { display: flex; gap: 10px; align-items: flex-start; padding: 5px 0; font-size: 13.5px; color: var(--tx2); line-height: 1.6; }
+.onbKey {
+  flex: none; width: 22px; height: 22px; border-radius: 7px; margin-top: 2px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--violet-bg); color: var(--lav);
+  font-size: 11.5px; font-weight: 700;
+  border: 1px solid rgba(124, 58, 237, .3);
+}
+
 @media (hover: hover) {
   .examCard:hover { background: var(--elev); border-color: rgba(124, 58, 237, .4); transform: translateY(-2px); box-shadow: 0 8px 24px -12px rgba(124, 58, 237, .45); }
   .examCard:hover .ic { background: var(--violet); color: #fff; }
