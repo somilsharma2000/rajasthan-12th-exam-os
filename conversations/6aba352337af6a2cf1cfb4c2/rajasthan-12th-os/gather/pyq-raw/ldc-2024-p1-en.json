@@ -1,0 +1,1564 @@
+{
+ "1": {
+  "q": "Which one of the following was in-charge of collecting revenue, keeping record of income in the Mauryan administrative system?",
+  "opts": [
+   "Purohit",
+   "Sannidhata",
+   "Samaharta",
+   "Lunadhyaksha"
+  ],
+  "ans": 2,
+  "src": "sf-1.html"
+ },
+ "2": {
+  "q": "Which of the following was the capital of Malla Mahajanpada?",
+  "opts": [
+   "Videha and Mithila",
+   "Kaushambi",
+   "Kushawati (Kushinara)",
+   "Rajpur / Hatak"
+  ],
+  "ans": 2,
+  "src": "sf-1.html"
+ },
+ "3": {
+  "q": "डेटा 6, 16, 12, 4, 7, 35, 39 और 3 के माध्य (मीन) और माध्यिका (मिडियन) का अंतर ज्ञात करें:",
+  "opts": [
+   "4.25",
+   "5.75",
+   "9.75",
+   "0"
+  ],
+  "ans": 1,
+  "src": "sf-3.html"
+ },
+ "4": {
+  "q": "Which one of the following acts as a &#8220;Nodal Industry&#8221; for synthetic textile?",
+  "opts": [
+   "Plastic Industry",
+   "Petro Chemical Industry",
+   "Paper Industry",
+   "Sugar Mills"
+  ],
+  "ans": 1,
+  "src": "sf-1.html"
+ },
+ "5": {
+  "q": "Arrange the following copper mine centres of Rajasthan, from North to South direction. a. Bhilwara b. Udaipur c. Alwar d. Khetri राजस्थान के निम्नलिखित तांबा खदान केन्द्रों को उत्तर से दक्षिण दिशा की ओर व्यवस्थित करें: a. भीलवाड़ा b. उदयपुर c. अलवर d. खेतड़ी Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें :",
+  "opts": [
+   "d, c, a, b",
+   "c, d, a, b",
+   "c, a, b, d",
+   "d, a, c, b"
+  ],
+  "ans": 0,
+  "src": "sf-1.html"
+ },
+ "6": {
+  "q": "Which one of the following port is situated on the western coast of India?",
+  "opts": [
+   "Tuticorin Port",
+   "Paradwip Port",
+   "Kochi Port",
+   "Haldia Port"
+  ],
+  "ans": 2,
+  "src": "sf-1.html"
+ },
+ "7": {
+  "q": "Which one of the following Indian state does not share its state boundary with Bangladesh?",
+  "opts": [
+   "Manipur",
+   "Tripura",
+   "Meghalaya",
+   "Assam"
+  ],
+  "ans": 0,
+  "src": "sf-1.html"
+ },
+ "8": {
+  "q": "cosec (65°+θ) – cot (25°–θ) – sec (25°–θ) + tan (65°+θ) =",
+  "opts": [
+   "2",
+   "0",
+   "1-",
+   "-2"
+  ],
+  "ans": 1,
+  "src": "sf-1.html"
+ },
+ "10": {
+  "q": "The table shows the number of students of Humanities, science and commerce streams who were admitted in a University in the years 2005, 2006, 2007 and 2008 तालिका में वर्ष 2005, 2006, 2007 और 2008 में विश्वविद्यालय में प्रवेश पाने वाले मानविकी, विज्ञान और वाणिज्य संकाय के छात्रों की संख्या दर्शायी गयी है: What is the average number of students per year who got admission in Commerce stream during the given years? दर्शाए गए वर्षों के दौरान प्रति वर्ष वाणिज्य संकाय में प्रवेश पाने वाले छात्रों की प्रति वर्ष औसत संख्या क्या है?",
+  "opts": [
+   "908",
+   "912",
+   "915",
+   "903"
+  ],
+  "ans": 2,
+  "src": "sf-1.html"
+ },
+ "91": {
+  "q": "What is the ratio in which the line segment joining (1, -5) and (4, 5) is divided by the x-axis? वह अनुपात क्या है जिसमें (1-5) और (4, 5) को जोड़ने वाला रेखा खंड x-axis से विभाजित होता है?",
+  "opts": [
+   "3:2",
+   "2:3",
+   "1:1",
+   "1:4"
+  ],
+  "ans": 2,
+  "src": "sf-10.html"
+ },
+ "92": {
+  "q": "A rectangular garden of length 100m and width 80m is to be surrounded outside by a 2.5m wide path. What is the cost of paving the path at the rate of 120 per m 2 ? 100 मीटर लंबाई और 80 मीटर चौड़ाई वाले एक आयताकार बगीचे को बाहर से 2.5 मीटर चौड़े मार्ग से घेरा जाता है। ₹120 प्रति वर्ग मीटर की दर से मार्ग को पक्का करने की लागत क्या है?",
+  "opts": [
+   "₹1,10,000",
+   "₹1,11,000",
+   "₹1,16,000",
+   "₹1,08,000"
+  ],
+  "ans": 1,
+  "src": "sf-10.html"
+ },
+ "93": {
+  "q": "The length of a rectangle is 30 cm and its area is 720 cm 2 . Its area is increased to 1 ¼ times than original area by increasing its length only. The perimeter. (in cm) of the new rectangle is: एक आयत की लंबाई 30 से.मी है और इसका क्षेत्रफल 720 सेमी 2 है। केवल लंबाई वृद्धि करने में इस का क्षेत्रफल मूल क्षेत्रफल से 1 ¼ गुना बढ़ जाता है। नए आयत का परिमाप (सेमी में) है:",
+  "opts": [
+   "125",
+   "119",
+   "121",
+   "123"
+  ],
+  "ans": 3,
+  "src": "sf-10.html"
+ },
+ "94": {
+  "q": "If mean of the data k, (2k-1), (3k+2), 5, 8, 10 is 9, then what is its median? यदि डेटा k, (2k-1), (3k + 2), 5,8,10 का माध्य (मीन) 9 है, तो इसका माध्यिका (मिडियन) क्या है?",
+  "opts": [
+   "8.5",
+   "7.7",
+   "8",
+   "11"
+  ],
+  "ans": 0,
+  "src": "sf-10.html"
+ },
+ "97": {
+  "q": "If two numbers differ by 24 and their product is 112, then the sum of the numbers is: यदि दो संख्याओं में 24 का अंतर है और उनका गुणनफल 112 है तो संख्याओं का योग है –",
+  "opts": [
+   "40",
+   "32",
+   "36",
+   "28"
+  ],
+  "ans": 1,
+  "src": "sf-10.html"
+ },
+ "98": {
+  "q": "A started a business by investing ₹1,00,000. After 3 months, B joined him with certain investment. At the end of the year, out of the total profit of ₹1,80,000, A received ₹36,000 less than B as his share in the profit. How much investment was made by B? A ने ₹ 1,00,000 निवेश करके एक व्यवसाय आरंभ किया, 3 माह पश्चात B कुछ निवेश के साथ उससे जुड़ गया। वर्ष के अंत में, ₹ 1,80,000 के कुल लाभ में से A को लाभ के रूप में B के हिस्से से ₹ 36,000 कम मिले| B ने कितना निवेश किया था?",
+  "opts": [
+   "₹1,90,000",
+   "₹1,95,000",
+   "₹2,00,000",
+   "₹1,84,000"
+  ],
+  "ans": 2,
+  "src": "sf-10.html"
+ },
+ "99": {
+  "q": "A, B and C entered into a partnership with investments in the ratio of , after 4 months, A increased his share by 50%. If the total profit at the end of one year be ₹21,600, then B's share in the profit is: A, B और C एक साझेदारी में के अनुपात में निवेश करते हैं, 4 माह पश्चात A ने अपने हिस्से मे 50% वृद्धि की यदि एक वर्ष के अंत में कुल लाभ ₹21,600 आता है तो लाभ में B का हिस्सा हैं :",
+  "opts": [
+   "₹2400",
+   "₹3600",
+   "₹4000",
+   "₹2100"
+  ],
+  "ans": 2,
+  "src": "sf-10.html"
+ },
+ "100": {
+  "q": "Vipul is on tour and he has ₹360 for his expenses. If he exceeds his tour by 4 days. He must cut down his daily expenses by ₹3. For how many days is Vipul on tour? विपुल टूर पर है और उसके पास अपने खर्चे के लिए 360 रुपये हैं। यदि वह अपने टूर से 4 दिन आगे निकल जाता है, तो उसे अपने दैनिक खर्चों में 3 रुपये की कटौती करनी होगी। विपुल कितने दिनों के लिए टूर पर है?",
+  "opts": [
+   "21",
+   "19",
+   "20",
+   "18"
+  ],
+  "ans": 2,
+  "src": "sf-10.html"
+ },
+ "101": {
+  "q": "&#8220;Operation Flood&#8221; was associated with:",
+  "opts": [
+   "Green Revolution",
+   "Pink Revolution",
+   "White Revolution",
+   "Disaster Management"
+  ],
+  "ans": 2,
+  "src": "sf-11.html"
+ },
+ "102": {
+  "q": "Which one of the following is NOT an agricultural problem of India ?",
+  "opts": [
+   "Encouragement to organic farming",
+   "Decline in the land Fertility",
+   "Question not attempted",
+   "Lack of irrigation facilities"
+  ],
+  "ans": 0,
+  "src": "sf-11.html"
+ },
+ "103": {
+  "q": "Which of the following statement is NOT correct about the foot loose industries?",
+  "opts": [
+   "They are dependent on specific raw material",
+   "They produce in small quantity",
+   "These are generally not polluting industries",
+   "It can be located in a wide variety of places"
+  ],
+  "ans": 0,
+  "src": "sf-11.html"
+ },
+ "104": {
+  "q": "Who was the king in France, at the time of French Revolution ?",
+  "opts": [
+   "Louis 18th",
+   "Louis 19th",
+   "Louis 20th",
+   "Louis 16th"
+  ],
+  "ans": 3,
+  "src": "sf-11.html"
+ },
+ "105": {
+  "q": "Where did Gautam Buddha gave his first sermon ?",
+  "opts": [
+   "Kapilvastu",
+   "Bodhgaya",
+   "Sarnath",
+   "Gaya"
+  ],
+  "ans": 2,
+  "src": "sf-11.html"
+ },
+ "106": {
+  "q": "Who was the pioneer of &#8216;Anuvrat Movement' ?",
+  "opts": [
+   "Dayanand Sarswati",
+   "Vivekanand",
+   "Acharya Tulsi",
+   "Keshav Chandra Sen"
+  ],
+  "ans": 2,
+  "src": "sf-11.html"
+ },
+ "107": {
+  "q": "Which of the following statement about the arid soil of Rajasthan is not correct? (Choose the most appropriate option from below)",
+  "opts": [
+   "Arid soil is generally sandy in structure and saline in nature.",
+   "It has sufficient amount of nitrogen and humus.",
+   "Arid soil is poor as it contains little humus.",
+   "Arid soil range from red to brown in colour."
+  ],
+  "ans": 1,
+  "src": "sf-11.html"
+ },
+ "108": {
+  "q": "Arrange the following rivers of India as placed from North to South on Indian map. a. Godavari b. Kaveri c. Chambal d. Narmada निम्नलिखित नदियों को भारत के नक्शे पर बताये अनुसार उत्तर से दक्षिण की तरफ व्यवस्थित करें: a. गोदावरी b. कावेरी c. चम्बल d. नर्मदा Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर का चयन कीजिए:",
+  "opts": [
+   "c, d, a, b",
+   "c, a, d, b",
+   "c, b, a, d",
+   "c, a, b, d"
+  ],
+  "ans": 0,
+  "src": "sf-11.html"
+ },
+ "109": {
+  "q": "Who issued a new Calendar “Ilahi Era”?",
+  "opts": [
+   "Shahjahan",
+   "Akbar",
+   "Jahangir",
+   "Humayun"
+  ],
+  "ans": 1,
+  "src": "sf-11.html"
+ },
+ "110": {
+  "q": "The given table shows the number of students of Humanities, Science and Commerce streams who were admitted in a university in the years 2005, 2006, 2007 and 2008 तालिका में वर्ष 2005, 2006, 2007 और 2008 में विश्वविद्यालय में प्रवेश पाने वाले मानविकी, विज्ञान और वाणिज्य संस्थान के छात्रों की संख्या दर्शायी गयी है। The ratio of the number of students admitted in Humanities-stream in 2005 and 2006 taken together to that in science stream in 2007 and 2008 taken together is 2005 और 2006 में मानविकी संकाय में प्रवेश लेनेवाले छात्रों की संख्या का अनुपात 2007 और 2008 में विज्ञान संकाय में एक साथ प्रवेश लिए गए का अनुपात है :",
+  "opts": [
+   "11:12",
+   "12:13",
+   "13:15",
+   "10:11"
+  ],
+  "ans": 0,
+  "src": "sf-11.html"
+ },
+ "111": {
+  "q": "In the pie chart given below A, B, C, D and E represent the cost of paper, printing, miscellaneous work, binding and the royalty respectively in publishing a book. नीचे दिए गए पाई-चार्ट में A, B, C, D और B एक पुस्तक के प्रकाशन में क्रमश: कागज, मुद्रण, विविध कार्य, बाइंडिंग और रॉयलटी की लागत का प्रतिनिधित्व करते हैं: How much is spent on miscellaneous work for publishing 10000 copies of a book, costing ₹ 185 per book? ₹185/- प्रति पुस्तक की लागत वाली पुस्तक की 10,000 प्रतियां प्रकाशित करने के लिए विविध कार्यों पर कितना खर्च किया जाता है?",
+  "opts": [
+   "₹5,25,000",
+   "₹5,40,000",
+   "₹5,55,000",
+   "₹5,00,000"
+  ],
+  "ans": 2,
+  "src": "sf-12.html"
+ },
+ "112": {
+  "q": "Which of the following metals can easily be cut with a knife ?",
+  "opts": [
+   "Magnesium",
+   "Aluminium",
+   "Copper",
+   "Lithium"
+  ],
+  "ans": 3,
+  "src": "sf-12.html"
+ },
+ "113": {
+  "q": "Propanol is an:-",
+  "opts": [
+   "Alkyne",
+   "Aldehyde",
+   "Alcohol",
+   "Alkane"
+  ],
+  "ans": 2,
+  "src": "sf-12.html"
+ },
+ "114": {
+  "q": "Who was the founder of the &#8221; India House” in London ?",
+  "opts": [
+   "Balkrishna Hari Chapekar",
+   "Shyamji Krishna Varma",
+   "V. D. Savarkar",
+   "Madan Lal Dhingra"
+  ],
+  "ans": 1,
+  "src": "sf-12.html"
+ },
+ "115": {
+  "q": "Which one of the following is an example of Agro-based industry ?",
+  "opts": [
+   "Iron – steel Industry",
+   "Petro Chemical Industry",
+   "Sugar Industry",
+   "Cement Industry"
+  ],
+  "ans": 2,
+  "src": "sf-12.html"
+ },
+ "116": {
+  "q": "Which of the following is an example of Igneous rock ?",
+  "opts": [
+   "Shale",
+   "Granite",
+   "Marble",
+   "Sandstone"
+  ],
+  "ans": 1,
+  "src": "sf-12.html"
+ },
+ "117": {
+  "q": "The angles of elevation of the top of a tower from two points P and Q at distances 10 m and 5 m respectively, from the base and in the same straight line with it, are complimentary. The height of the tower is _____.",
+  "opts": [
+   "5√2 m",
+   "5√3 m",
+   "5.5 m",
+   "6m"
+  ],
+  "ans": 0,
+  "src": "sf-12.html"
+ },
+ "118": {
+  "q": "The radius of the base and the height of a solid cylinder are in the ratio of 2:3 and its volume is 1617 cm 3 . What is the total surface area of the cylinder (in cm 2 ) ? (π = 22/7) एक ठोस सिलेंडर के आधार की त्रिज्या और ऊंचाई का अनुपात 2:3 है और इसका आयतन 1617 सेमी 3 है। सिलेंडर का कुल सतह क्षेत्रफल (सेमी 2 में) क्या है? (π = 22/7)",
+  "opts": [
+   "616",
+   "770",
+   "786",
+   "462"
+  ],
+  "ans": 1,
+  "src": "sf-12.html"
+ },
+ "119": {
+  "q": "How many small cubes, each having surface area of 96 cm 2 can be formed from the material obtained by melting a larger cube having surface area of 384 cm 2 ? एक 384 सेमी 2 के सतह क्षेत्र वाले बड़े घन को पिघलाकर प्राप्त सामग्री से कितने छोटे घन बनाए जा सकते हैं, जिनमें प्रत्येक का सतह क्षेत्र 96 सेमी 2 है?",
+  "opts": [
+   "50",
+   "80",
+   "4",
+   "8"
+  ],
+  "ans": 3,
+  "src": "sf-12.html"
+ },
+ "120": {
+  "q": "Amrita Devi Vishnoi is famous for –",
+  "opts": [
+   "Village Development",
+   "Saving the Khejri Trees",
+   "Bhagat Aandolan",
+   "Women Empowerment"
+  ],
+  "ans": 1,
+  "src": "sf-12.html"
+ },
+ "121": {
+  "q": "Tejaji was born in which district ?",
+  "opts": [
+   "Nagaur",
+   "Sikar",
+   "Jodhpur",
+   "Ajmer"
+  ],
+  "ans": 0,
+  "src": "sf-13.html"
+ },
+ "122": {
+  "q": "Name the renowned &#8220;Mand Singer&#8221; who immortalized the song &#8216;Kesaria Balam Aao Ni Padharo Mahare Des'.",
+  "opts": [
+   "Shyamal Das",
+   "Gavari Devi",
+   "Allah Jilai Bai",
+   "Pitu Singh"
+  ],
+  "ans": 2,
+  "src": "sf-13.html"
+ },
+ "123": {
+  "q": "Which of the following is not an alkali metal?",
+  "opts": [
+   "Sodium",
+   "Potassium",
+   "Mercury",
+   "Lithium"
+  ],
+  "ans": 2,
+  "src": "sf-13.html"
+ },
+ "124": {
+  "q": "The blue colour of the sky is because of the phenomenon of",
+  "opts": [
+   "Scattering of light",
+   "Atmospheric refraction of light",
+   "Reflection of light",
+   "Dispersion of light"
+  ],
+  "ans": 0,
+  "src": "sf-13.html"
+ },
+ "125": {
+  "q": "Sex determination in humans is based on ____ type chromosome मनुष्यों में लिंग निर्धारण ___ प्रकार के गुणसूत्र पर आधारित होता है।",
+  "opts": [
+   "XX",
+   "XO",
+   "YO",
+   "XY"
+  ],
+  "ans": 3,
+  "src": "sf-13.html"
+ },
+ "126": {
+  "q": "Identify the correct process for DNA to Protein formation-",
+  "opts": [
+   "a. transcription b: translation",
+   "a. replication b: transcription",
+   "a. replication b: translation",
+   "a. translation b: transcription"
+  ],
+  "ans": 0,
+  "src": "sf-13.html"
+ },
+ "127": {
+  "q": "Select-the primary consumers from their food chain: (Choose the most appropriate option from below)",
+  "opts": [
+   "grasshopper, deer, sugarcane stem borer",
+   "sugarcane stem borer, frog, tiger",
+   "snake, fish, bird",
+   "fishes, frog, grasshopper"
+  ],
+  "ans": 0,
+  "src": "sf-13.html"
+ },
+ "128": {
+  "q": "Which of the following techniques is useful identification tool in forensic science ?",
+  "opts": [
+   "DNA fingerprinting",
+   "Autoradiography",
+   "Gene therapy",
+   "Question not attempted"
+  ],
+  "ans": 0,
+  "src": "sf-13.html"
+ },
+ "129": {
+  "q": "Match List – I with List-II List-I – List-II Blood Group – Antibodies in plasma a. A I. Anti-A b. B II. Anti- A, B c. AB III. Anti-B d. O. IV. Nil सूची-I को सूची-II से सुमेलित कीजिए : सूची-I – सूची-II ब्लड ग्रूप – प्लाज्मा में एण्टीबॉडीज a. A I. Anti-A b. B II. Anti-A, B c. AB III. Anti-B d. O. IV. Nil Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :",
+  "opts": [
+   "a-II, b-I, c – IV, d – III",
+   "a- IV, b-I, c – II, d – III",
+   "a-III, b-I, c- IV, d-II",
+   "a-l, b-IV, c – III, d – II"
+  ],
+  "ans": 2,
+  "src": "sf-13.html"
+ },
+ "130": {
+  "q": "When a current carrying aluminum rod is placed in a magnetic field, the displacement of the rod is largest when the direction of current is –",
+  "opts": [
+   "at right angle to the direction of the magnetic field",
+   "at 60° to the direction of the magnetic field",
+   "less than 90° to the direction of magnetic field",
+   "parallel to the direction of the magnetic field"
+  ],
+  "ans": 0,
+  "src": "sf-13.html"
+ },
+ "131": {
+  "q": "Which of the following is NOT an outcome of transgenic organism ?",
+  "opts": [
+   "Bt cotton Kind",
+   "Golden rice",
+   "Pusa Swarnim (Karan Rai)",
+   "Flavr savr variety of tomato"
+  ],
+  "ans": 2,
+  "src": "sf-14.html"
+ },
+ "132": {
+  "q": "The amoebiasis is categorised as a ___ diseases.",
+  "opts": [
+   "fungal",
+   "bacterial",
+   "viral",
+   "protozoan"
+  ],
+  "ans": 3,
+  "src": "sf-14.html"
+ },
+ "133": {
+  "q": "Four resistance 1 Ω, 2 Ω, 4 Ω and 4 Ω have been joined in a circuit to obtain lowest resistance of the combination of the four. Its value will be: चार प्रतिरोध 1 Ω, 2 Ω, 4 Ω और 4 Ω को संयोजन का सबसे कम प्रतिरोध प्राप्त करने के लिए चारो को एक सर्किट में जोड़ा गया है इसका परिणाम होगा:",
+  "opts": [
+   "0.25 Ω",
+   "1 Ω",
+   "1.5 Ω",
+   "0.5 Ω"
+  ],
+  "ans": 3,
+  "src": "sf-14.html"
+ },
+ "134": {
+  "q": "The gap between two neurons is called a –",
+  "opts": [
+   "synaptic cleft",
+   "axon",
+   "impulse",
+   "dendrite"
+  ],
+  "ans": 0,
+  "src": "sf-14.html"
+ },
+ "135": {
+  "q": "Identify from the following statements which are true for carbon compounds: a. They form long chains of carbon atoms which are arranged in branch and ring structures. b. They are good conductors of electricity. c. They have high melting and boiling points. d. They form covalent bonds. Choose the most appropriate answer from the options given below:",
+  "opts": [
+   "a and d only",
+   "a, c and d only",
+   "a, b and d only",
+   "a and c only"
+  ],
+  "ans": 0,
+  "src": "sf-14.html"
+ },
+ "136": {
+  "q": "In which part of Himalayas is the &#8216;karewa' land form found?-",
+  "opts": [
+   "Kashmir Himalayas",
+   "North Eastern Himalayas",
+   "Himachal – Uttarakhand Himalayas",
+   "Eastern Himalayas"
+  ],
+  "ans": 0,
+  "src": "sf-14.html"
+ },
+ "137": {
+  "q": "Which of the following wild life sanctuary is situated in Rajasthan.",
+  "opts": [
+   "Govind",
+   "Chinnar",
+   "Ramgarh Vishdhari",
+   "Periyar"
+  ],
+  "ans": 3,
+  "src": "sf-14.html"
+ },
+ "138": {
+  "q": "Aizawl is capital of:",
+  "opts": [
+   "Tripura",
+   "Manipur",
+   "Nagaland",
+   "Mizoram"
+  ],
+  "ans": 3,
+  "src": "sf-14.html"
+ },
+ "140": {
+  "q": "Match List-I with List-II List-I (vitamin) – List-II (use) a. Vitamin A I. Helps body to use calcium for bones and teeth b. Vitamin C II. Blood clotting c. Vitamin D III. Keeps eyes healthy d. Vitamin K IV. Help body to fight against diseases सूची-I को सूची-II से सुमेलित कीजिए : सूची-I (विटामिन) – सूची – II (उपयोग) a. विटामिन A I. हड्डियों और दांतों के लिए शरीर में कैल्शियम के प्रयोग में सहायता करता है b. विटामिन C II. ब्लड क्लोटिंग c. विटामिन D III. नेत्रों को स्वस्थ रखता है d. विटामिन K IV. रोगों के विरुद्ध लड़ने में शरीर की सहायता करता है Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :",
+  "opts": [
+   "a-III, b – IV, c – II, d – I",
+   "a-III, b-IV, c- I, d- II",
+   "a-IV, b – III, c – II, d – I",
+   "a-I, b-II, c – III, d – IV"
+  ],
+  "ans": 1,
+  "src": "sf-14.html"
+ },
+ "141": {
+  "q": "The value of is का मान है –",
+  "opts": [
+   "7/2",
+   "7",
+   "19/6",
+   "4"
+  ],
+  "ans": 2,
+  "src": "sf-15.html"
+ },
+ "143": {
+  "q": "Which of the following is/are factors of (x + y) 3 – (x 3 +y 3 )? a. x 2 + y 2 + 2xy b. x 2 + y 2 – xy c. xy 2 d. xy Choose the most appropriate answer from the options given below:",
+  "opts": [
+   "d only",
+   "a and c only",
+   "a, c and d only",
+   "b and d only"
+  ],
+  "ans": 0,
+  "src": "sf-15.html"
+ },
+ "144": {
+  "q": "ΔABC and ΔPQR are congruent triangles. If ∠ABC=52°, and ∠PRQ=80°, then ∠CAB is: ΔABC और ΔPQR सर्वांगसम त्रिभुज हैं, यदि ∠ ABC = 52°, और ∠ PRQ = 80°, तब ∠CAB है",
+  "opts": [
+   "48°",
+   "52°",
+   "80°",
+   "40°"
+  ],
+  "ans": 0,
+  "src": "sf-15.html"
+ },
+ "145": {
+  "q": "In ΔABC and ΔPQR, AB=PQ, ∠B=∠Q, then which of the following statements is true?",
+  "opts": [
+   "ΔABC and ΔPQR are similar",
+   "ΔABC and ΔPQR are not similar",
+   "ΔABC and ΔPQR may or may not be similar",
+   "ΔABC and ΔPQR are congruent"
+  ],
+  "ans": 2,
+  "src": "sf-15.html"
+ },
+ "146": {
+  "q": "D is a point on the side BC of a ΔABC such that AD bisects ∠BAC. Then which of the following is correct त्रिभुज ABC की भुजा BC पर बिंदु D इस प्रकार है कि AD, ∠BAC को समद्विभाजित करता है तो निम्न में से कौन सा सही है",
+  "opts": [
+   "BD=CD",
+   "BA&gt;BD",
+   "BA=BD",
+   "BD&gt;BA"
+  ],
+  "ans": 1,
+  "src": "sf-15.html"
+ },
+ "147": {
+  "q": "Which of the following is a poitical consequence of industrial revolution?",
+  "opts": [
+   "The Colonial Competition gained momentum through industrial revolution.",
+   "Production and commerce grew on a large scale and economic imbalance occured.",
+   "A new social class emerged, moral values declined and the joint family system got scattered.",
+   "Cottage industries were destroyed."
+  ],
+  "ans": 0,
+  "src": "sf-15.html"
+ },
+ "148": {
+  "q": "Where is the secretariat of SAARC, located?",
+  "opts": [
+   "Thimpu (BHUTAN)",
+   "Kathmandu (NEPAL)",
+   "Dhaka (BANGLA DESH)",
+   "New Delhi (INDIA)"
+  ],
+  "ans": 1,
+  "src": "sf-15.html"
+ },
+ "149": {
+  "q": "Write the full form of &#8216;NATO’",
+  "opts": [
+   "New Atlantic Treaty Office",
+   "New Atlantic Treaty Organisation",
+   "North Asian Treaty Organisation",
+   "North Atlantic Treaty Organisation"
+  ],
+  "ans": 3,
+  "src": "sf-15.html"
+ },
+ "150": {
+  "q": "Which of the following statement is NOT correct about various folk dance forms of Rajasthan?",
+  "opts": [
+   "Bum dance is a famous dance of Bharatpur and Alwar region.",
+   "In 2022, UNESCO included Valar dance form in its intangible cultural heritage list.",
+   "Agni dance form of Jasanathi cult originated in Katriyasar village of Bikaner.",
+   "Ghudla dance is performed only by women."
+  ],
+  "ans": 1,
+  "src": "sf-15.html"
+ },
+ "11": {
+  "q": "‘Battan Ri Phulwari' from the collection of folk tales (1960-1975) writer was:",
+  "opts": [
+   "Vijaydan Detha",
+   "Kanhiya Lal Sethia",
+   "Gaveri Devi",
+   "Birbal Singh"
+  ],
+  "ans": 0,
+  "src": "sf-2.html"
+ },
+ "12": {
+  "q": "Which one of the following cities has become India's First Wetland city?",
+  "opts": [
+   "Udaipur",
+   "Bhopal",
+   "Indore",
+   "Shillong"
+  ],
+  "ans": 0,
+  "src": "sf-2.html"
+ },
+ "13": {
+  "q": "Who imposed tax named &#8220;Chanwari tax&#8221; on the farmers ?",
+  "opts": [
+   "Hamid Hussain",
+   "Prithvi Singh",
+   "Rao Krishna Singh",
+   "Gangaram"
+  ],
+  "ans": 2,
+  "src": "sf-2.html"
+ },
+ "14": {
+  "q": "Widal test is done to confirm which disease?",
+  "opts": [
+   "Typhoid fever",
+   "AIDS",
+   "Dengue",
+   "Malaria"
+  ],
+  "ans": 0,
+  "src": "sf-2.html"
+ },
+ "15": {
+  "q": "Where should be an object be placed in front of convex lens to get a real image of the size of the object?",
+  "opts": [
+   "at twice the focal length",
+   "at infinity",
+   "between the optical centre of the lens and its principal focus",
+   "at the principal focus of the lens"
+  ],
+  "ans": 0,
+  "src": "sf-2.html"
+ },
+ "16": {
+  "q": "If 150% is the measure of each interior angle of a regular polygon, then the number of its sides are: यदि एक बहुभुज के प्रत्येक आंतरिक कोण का माप 150° है, तो इसकी भुजाओं की संख्या है:",
+  "opts": [
+   "6",
+   "5",
+   "12",
+   "8"
+  ],
+  "ans": 2,
+  "src": "sf-2.html"
+ },
+ "17": {
+  "q": "In ∆ ABC, bisectors of exterior angles ∠B and ∠C meet at point O. If ∠A= 62°, then the measure of ∠BOC is : एक ∆ ABC में बाह्य कोण ∠B और ∠C के समद्विभाजित बिन्दु O पर मिलते हैं, यदि ∠A = 62°, तब ∠BOC का माप है-",
+  "opts": [
+   "60°",
+   "59°",
+   "56°",
+   "62°"
+  ],
+  "ans": 1,
+  "src": "sf-2.html"
+ },
+ "18": {
+  "q": "Which of the following is NOT a dominant trait in a Garden Pea as studied by Mendal?",
+  "opts": [
+   "Terminal flower position",
+   "Yellow seed colour",
+   "Green pod colour",
+   "Full/inflated pod"
+  ],
+  "ans": 0,
+  "src": "sf-2.html"
+ },
+ "19": {
+  "q": "Given below are two statements: Statement (I): Single Cell Protein (SCP) is an alternate source of protein for animal and plant nutrition. Statement (II): Spirulina is one of the Single Cell Protein that can serve as a rich source of protein, minerals and vitamins etc but its growth increases environmental pollution. In light of the above statements, choose the most appropriate answer from the options given below.",
+  "opts": [
+   "Both Statement (I) and Statement (II) are incorrect.",
+   "Statement (I) is correct but Statement (II) is incorrect.",
+   "Statement (I) is incorrect but Statement (II) is correct.",
+   "Both Statement (I) and Statement (II) are correct."
+  ],
+  "ans": 1,
+  "src": "sf-2.html"
+ },
+ "20": {
+  "q": "Where is Satish Dhawan Space Centre (SDSC) located in India?",
+  "opts": [
+   "Bengaluru",
+   "Sriharikota",
+   "Hyderabad",
+   "Thiruvantpuram"
+  ],
+  "ans": 1,
+  "src": "sf-2.html"
+ },
+ "21": {
+  "q": "Identify the true statements related to soaps and detergents. a. Soaps are sodium or potassium salts of long chain of sulphuric acids while detergents are generally sodium salts of carboxylic acids b. The soap molecules form micelles when they interact with water and dirt (Oil) c. These micelles are able to pull out the dirt in water d. Soaps are effective in hardwater also e. The detergent remain ineffective in hard water Choose the most appropirate answer from the options given below:",
+  "opts": [
+   "b and e",
+   "b and c",
+   "a and d",
+   "a, b and e"
+  ],
+  "ans": 1,
+  "src": "sf-3.html"
+ },
+ "23": {
+  "q": "In a class, the number of girls is one less than the number of boys. If the product of the number of boys and that of girls is 272, then the number of girls in the class is: एक कक्षा में लड़कियों की संख्या लड़कों की संख्या से एक कम है। यदि लड़कों और लड़कियों की संख्या का गुणनफल 272 है, तो कक्षा में लड़कियों की संख्या कितनी है?",
+  "opts": [
+   "14",
+   "16",
+   "17",
+   "15"
+  ],
+  "ans": 1,
+  "src": "sf-3.html"
+ },
+ "24": {
+  "q": "डेटा 5, 3, 8, 11, 13, 8, 19 और 24 में से (2 माध्यिका (मिडियन) माइनस मोड) मान ज्ञात कीजिए:",
+  "opts": [
+   "9.5",
+   "10",
+   "11",
+   "8"
+  ],
+  "ans": 2,
+  "src": "sf-7.html"
+ },
+ "25": {
+  "q": "If 2x+1 is a factor of 4x 3 + kx , then the value of k is: यदि 4x 3 + kx का गुणनखंड 2x + 1 है, तो k का मान होगा?",
+  "opts": [
+   "– ½",
+   "-1",
+   "4",
+   "2"
+  ],
+  "ans": 1,
+  "src": "sf-3.html"
+ },
+ "26": {
+  "q": "If , then यदि , तो",
+  "opts": [
+   "210",
+   "216",
+   "238",
+   "198"
+  ],
+  "ans": 3,
+  "src": "sf-3.html"
+ },
+ "27": {
+  "q": "Which of the following fundamental right allows, citizens to move the court, if they believe, that any of their fundamental rights have been violated by the state?",
+  "opts": [
+   "Right to Equality",
+   "Right to Constitutional Remedies",
+   "Right to freedom of Religion",
+   "Right against Exploitation"
+  ],
+  "ans": 1,
+  "src": "sf-3.html"
+ },
+ "28": {
+  "q": "Which of the following is a demerit of Capitalistic economy?",
+  "opts": [
+   "Economic liberty",
+   "Rise of Monopolies",
+   "Optimum use of resources",
+   "Increase in production capacity and efficiency"
+  ],
+  "ans": 1,
+  "src": "sf-3.html"
+ },
+ "29": {
+  "q": "Which Constitution Amendment Act is related to anti-defection law?",
+  "opts": [
+   "44th Constitution Amendment- 1978",
+   "52nd Constitution Amendment- 1985",
+   "64th Constitution Amendment- 1989",
+   "42nd Constitution Amendment- 1976"
+  ],
+  "ans": 1,
+  "src": "sf-3.html"
+ },
+ "30": {
+  "q": "Find the coordinator of the point A where AB is the diameter of a circle whose centre is (2,-3) and B is (1, 4). बिन्दु A के निर्देशक ज्ञात करें जहां पर कि AB एक वृत्त का व्यास है जिसका केंद्र (2, −3) और B (1, 4) है।",
+  "opts": [
+   "(5,-2)",
+   "(3, −10)",
+   "(4, 3)",
+   "(0, 11)"
+  ],
+  "ans": 1,
+  "src": "sf-3.html"
+ },
+ "31": {
+  "q": "The length of a room is double that of its breadth. The cost of colouring the ceiling at 25 per m2 is ₹ 5000 and the cost of painting the four walls at ₹ 240 per m is ₹ 64,800. The height of the room is:",
+  "opts": [
+   "4.5m",
+   "3.5m",
+   "5m",
+   "4m"
+  ],
+  "ans": 0,
+  "src": "sf-4.html"
+ },
+ "32": {
+  "q": "An aeroplane flying at a height of 300 m above the ground passes vertically above another plane at an instant when the angles of elevation of the two planes from the same point on the ground are 60° and 45°, respectively. The height of the lower plane from the ground (in m) is: जमीन से 300 मीटर की ऊंचाई पर उड़ने वाला एक हवाई जहाज उसी क्षण उर्ध्वाधर से दूसरे विमान के उपर से गुजरता है जब जमीन पर एक ही बिन्दु से दो विमानों का उन्नयन कोण 60° और 45° क्रमशः हो। जमीन से निचले विमान की ऊंचाई (मीटर में) है –",
+  "opts": [
+   "100/√3",
+   "100√3",
+   "150(√3+1)",
+   "50"
+  ],
+  "ans": 0,
+  "src": "sf-4.html"
+ },
+ "33": {
+  "q": "A birthday cap is in the form of a cone having base radius 7 cm and height 24 cm. The area of the sheet (in cm 2 ) required to make five such caps is (π = 22/7) एक जन्मदिन की टोपी एक शंकु के आकार की है जिसका आधार त्रिज्या 7 से.मी और ऊंचाई 24 से.मी है। ऐसी पांच टोपियां बनाने हेतु आवश्यक शीट का क्षेत्रफल (सेमी 2 में) है (π = 22/7)",
+  "opts": [
+   "2700",
+   "2750",
+   "3000",
+   "2640"
+  ],
+  "ans": 1,
+  "src": "sf-4.html"
+ },
+ "34": {
+  "q": "The value of + 2 tan11° tan 31° tan 45° tan 59° tan 79° -3 (sin 2 20+ sin 2 70°) is – + 2 tan11° tan 31° tan 45° tan 59° tan 79° -3 (sin 2 20+ sin 2 70°) का मान है",
+  "opts": [
+   "-1",
+   "1",
+   "0",
+   "2"
+  ],
+  "ans": 2,
+  "src": "sf-4.html"
+ },
+ "35": {
+  "q": "Gangaur festival is devoted to –",
+  "opts": [
+   "Goddess Parvati",
+   "Lord Ram",
+   "Lord Krishna",
+   "Goddess Lakshmi"
+  ],
+  "ans": 0,
+  "src": "sf-4.html"
+ },
+ "36": {
+  "q": "Lacchiram is related to which folk drama art?",
+  "opts": [
+   "Hela Khayal",
+   "Kuchamani Khayal",
+   "Shekhawati Khayal",
+   "Jaipuri Khayal"
+  ],
+  "ans": 1,
+  "src": "sf-4.html"
+ },
+ "37": {
+  "q": "In which of the following city iron and steel plant is situated in Karnataka?",
+  "opts": [
+   "Bhadravati",
+   "Salem",
+   "Burnpur",
+   "Durgapur"
+  ],
+  "ans": 0,
+  "src": "sf-4.html"
+ },
+ "38": {
+  "q": "Who gave the famous speech &#8216;Tryst with Destiny &#8216;?",
+  "opts": [
+   "Pt. J. L. Nehru",
+   "Sardar Vallabh bhai Patel",
+   "Dr. Bhimrao Ambedker",
+   "Question not attempted"
+  ],
+  "ans": 0,
+  "src": "sf-4.html"
+ },
+ "39": {
+  "q": "Koraput Mining Centre is located in which of the following state.?",
+  "opts": [
+   "Maharashtra",
+   "Karnataka",
+   "Odisha",
+   "Andhra Pradesh"
+  ],
+  "ans": 2,
+  "src": "sf-4.html"
+ },
+ "40": {
+  "q": "Which one of the following component is NOT reflected in Age-Sex pyramid?",
+  "opts": [
+   "Number of females in percentage",
+   "Number of males in percentage",
+   "Percentage of men and women in each age group",
+   "Population density"
+  ],
+  "ans": 3,
+  "src": "sf-4.html"
+ },
+ "41": {
+  "q": "CaO+H 2 O→Ca(OH) 2 + Heat The given chemical equation is: a double displacement reaction b. a combination reaction a decomposition reaction d. exothermic reaction Choose the most appropriate answer from the options given below:",
+  "opts": [
+   "b and d only",
+   "b and c only",
+   "a and d only",
+   "a and c only"
+  ],
+  "ans": 0,
+  "src": "sf-5.html"
+ },
+ "42": {
+  "q": "The aerated drinks (soda water) constitute a. A mixture of gases b. Gas in liquid solution c. Liquid in gas solution d. Carbon dioxide as solute and water as solvent e. Carbon dioxide as solvent and water as solute Choose the most appropriate answer from the options given below:",
+  "opts": [
+   "b and d only",
+   "a, c and d only",
+   "b, d and e only",
+   "c and d only"
+  ],
+  "ans": 0,
+  "src": "sf-5.html"
+ },
+ "43": {
+  "q": "&#8216;Beti Bachao, Beti Padhao' scheme was launched in which year all over India? &#8216;बेटी बचाओ, बेटी पढ़ाओं', योजना किस वर्ष सम्पूर्ण भारतवर्ष में लागू हुई?",
+  "opts": [
+   "2015",
+   "2016",
+   "2017",
+   "2014"
+  ],
+  "ans": 0,
+  "src": "sf-5.html"
+ },
+ "44": {
+  "q": "2014 In which year was the IX Asian Games organised in New Delhi? नई दिल्ली में 9वें एशियन खेल किस वर्ष आयोजित हुए?",
+  "opts": [
+   "1981",
+   "1982",
+   "1983",
+   "1980"
+  ],
+  "ans": 1,
+  "src": "sf-5.html"
+ },
+ "45": {
+  "q": "Who is known as the father of the Indian Constitution?",
+  "opts": [
+   "Sardar Patel",
+   "Mahatma Gandhi",
+   "Dr. B. R. Ambedkar",
+   "Jawahar Lal Nehru"
+  ],
+  "ans": 2,
+  "src": "sf-5.html"
+ },
+ "46": {
+  "q": "Short-Circuiting occurs in the circuit when",
+  "opts": [
+   "Many appliances are connected to the same socket.",
+   "Live wire and neutral wire come into direct contact with each other",
+   "Neutral wires of two appliances are connected accidentally",
+   "Flow of current in the circuit reduces abruptly"
+  ],
+  "ans": 1,
+  "src": "sf-5.html"
+ },
+ "47": {
+  "q": "Match List – I with List – II List-I – List-II Physical Quantity – Unit of Measurement a. Current I. Ampere second b. Resistance II. Volt! ampere C. Power III. Coulomb/second d. Charge IV. Velt/ampere सूची-I को सूची-II से सुमेलित कीजिए : सूची-I – सूची-II भौतिक मात्रा – मापने की इकाई a. विद्युतधारा I. एम्पीयरे. सेकंड b. प्रतिरोधकता II. वोल्ट एम्पीयर c. शक्ति III. कुलाम / सेकंड कुलाम/सेकंड d. आवेश IV. वोल्ट / एम्पीयर Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :",
+  "opts": [
+   "a-IV, b-III, c-I, d-II",
+   "a-IV, b-III, c-II, d-I",
+   "a-III, b-II, c-IV, d-I",
+   "a-III, b-IV, c-II, d-I"
+  ],
+  "ans": 3,
+  "src": "sf-5.html"
+ },
+ "48": {
+  "q": "Which one was the first geostationary satellite launched by ISRO in 1981?",
+  "opts": [
+   "Aryabhatta",
+   "APPLE",
+   "GSAT",
+   "INSAT-B"
+  ],
+  "ans": 1,
+  "src": "sf-5.html"
+ },
+ "49": {
+  "q": "About which of the following fort has it been said that it is an armoured (Bakhtarband) fort?",
+  "opts": [
+   "Taragarh",
+   "Nahargarh",
+   "Ranthambhore",
+   "Siwana"
+  ],
+  "ans": 2,
+  "src": "sf-5.html"
+ },
+ "50": {
+  "q": "Who constructed Hawa Mahal?",
+  "opts": [
+   "Sawai Jai Singh",
+   "Raja Man Singh",
+   "Raja Bhati",
+   "Sawai Pratap Singh"
+  ],
+  "ans": 3,
+  "src": "sf-5.html"
+ },
+ "51": {
+  "q": "Captain Hawkins and Sir Thomas Roe visited the court of which Mughal Emperor?",
+  "opts": [
+   "Jehangir",
+   "Shahjahan",
+   "Humayun",
+   "Akbar"
+  ],
+  "ans": 0,
+  "src": "sf-6.html"
+ },
+ "52": {
+  "q": "Vedika, Amalak, Shikhar are associated with",
+  "opts": [
+   "Havelis",
+   "Temples",
+   "Forts",
+   "Paintings"
+  ],
+  "ans": 1,
+  "src": "sf-6.html"
+ },
+ "53": {
+  "q": "Given below are two statements: Statement (I) : The British Government formed a commission in 1927 under the chairmanship of Sir John Simon which was called Simon Commission. Statement (II): There were seven members in the commission but none of them was an Indian. In light of the above statements, choose the most appropriate answer from the options given below.",
+  "opts": [
+   "Both Statement (I) and Statement (II) are false.",
+   "Statement (I) is true but Statement (II) is false.",
+   "Statement (I) is false but Statement (II) is true.",
+   "Both Statement (I) and Statement (II) are true."
+  ],
+  "ans": 3,
+  "src": "sf-6.html"
+ },
+ "54": {
+  "q": "&#8220;Uparmal Panch Board&#8221; was formed by ____.",
+  "opts": [
+   "Ram Milan Lohia",
+   "Brahmadeo",
+   "Vijay Singh Pathik",
+   "Rao Krishna Singh"
+  ],
+  "ans": 2,
+  "src": "sf-6.html"
+ },
+ "55": {
+  "q": "Ahmednagar was merged with Mughal Empire during the reign of:",
+  "opts": [
+   "Jehangir",
+   "Shahjahan",
+   "Akbar",
+   "Aurangzeb"
+  ],
+  "ans": 1,
+  "src": "sf-6.html"
+ },
+ "56": {
+  "q": "In which year was the National Statistical Commission (NSC) setup through a resolution? राष्ट्रीय सांख्यिकी आयोग (N.S.C.) किस वर्ष में संकल्प के साथ स्थापित हुआ था ?",
+  "opts": [
+   "2005",
+   "2008",
+   "2009",
+   "2004"
+  ],
+  "ans": 0,
+  "src": "sf-6.html"
+ },
+ "57": {
+  "q": "Given below are two statements: Statement (I): Sindhu Saraswati civilization was famous for town planning. Statement (II): The advanced Sindhu Saraswati civilization was developed amongst Sindhu, its tributaries and Saraswati river area. In light of the above statements, choose the most appropriate answer from the options given below.",
+  "opts": [
+   "Both Statement (I) and Statement (II) are incorrect.",
+   "Statement (I) is correct but Statement (II) is incorrect.",
+   "Statement (I) is incorrect but Statement (II) is correct.",
+   "Both Statement (I) and Statement (II) are correct."
+  ],
+  "ans": 3,
+  "src": "sf-6.html"
+ },
+ "58": {
+  "q": "In 1800 A. D. who was the first person to call present day Rajasthan as Rajputana ?",
+  "opts": [
+   "James Tod",
+   "James Rizu",
+   "George Calony",
+   "George Thomas"
+  ],
+  "ans": 3,
+  "src": "sf-6.html"
+ },
+ "59": {
+  "q": "Ozone layer of the atmosphere acts as a natural shield against:",
+  "opts": [
+   "Gamma radiation",
+   "Ultraviolet radiation",
+   "X-rays",
+   "Infrared radiation"
+  ],
+  "ans": 1,
+  "src": "sf-6.html"
+ },
+ "60": {
+  "q": "Given below are two statements: Statement (I): The feeding of cattle should be carried out in a scientific manner-with special emphasis in the quality and quantity of fodder. Statement (II): Milk yield is primarily dependent on the quality of breeds kept in the farm. In light of the above statements, choose the most appropriate answer from the options given below.",
+  "opts": [
+   "Both Statement (I) and Statement (II) are incorrect.",
+   "Statement (I) is correct but Statement (II) is incorrect.",
+   "Statement (I) is incorrect but Statement (II) is correct.",
+   "Both Statement (I) and Statement (II) are correct."
+  ],
+  "ans": 3,
+  "src": "sf-6.html"
+ },
+ "61": {
+  "q": "Where is Mauritius island located:",
+  "opts": [
+   "Atlantic Ocean",
+   "Pacific Ocean",
+   "Arctic Ocean",
+   "Indian Ocean"
+  ],
+  "ans": 3,
+  "src": "sf-7.html"
+ },
+ "62": {
+  "q": "Which one of the following introduced the practice of Sijda and Paibos in the royal court?",
+  "opts": [
+   "Jalal ud-din Firoz Khilji",
+   "Balban",
+   "Razia Sultan",
+   "Iltutmish"
+  ],
+  "ans": 1,
+  "src": "sf-7.html"
+ },
+ "63": {
+  "q": "Which fort of the Sisodia Rajputs is situated on the banks of river Gambhiri and Berach?",
+  "opts": [
+   "Taragarh Fort",
+   "Bhainsrodgarh Fort",
+   "Mandalgarh Fort",
+   "Chittorgarh Fort"
+  ],
+  "ans": 3,
+  "src": "sf-7.html"
+ },
+ "64": {
+  "q": "Identify the statement, which is NOT correct for an Hypermetropic eye",
+  "opts": [
+   "The defect can be corrected by using a convex lens of appropriate power",
+   "The light rays are focused in front of the retina",
+   "The person is not able to see the nearby objects clearly",
+   "The near point of the eye is farther away from the normal near point (i.e. 25 cm)"
+  ],
+  "ans": 1,
+  "src": "sf-7.html"
+ },
+ "65": {
+  "q": "Ability of the eye lens to change its focal length to see objects placed at different places is called:",
+  "opts": [
+   "Power of Accommodation",
+   "Power of Adjustment",
+   "Power of Regulation",
+   "Question not attempted"
+  ],
+  "ans": 0,
+  "src": "sf-7.html"
+ },
+ "66": {
+  "q": "Who is the author of “ Justice for the Judge : An Autobiography&#8221; ?",
+  "opts": [
+   "Ranjan Gogoi",
+   "Sandeep Sahu",
+   "Namita Gokhale",
+   "Amrit Mathur"
+  ],
+  "ans": 0,
+  "src": "sf-7.html"
+ },
+ "67": {
+  "q": "RTI (Right to Information) bill received Presidential assent in which year?",
+  "opts": [
+   "April 2015",
+   "July 1994",
+   "June 2000",
+   "June 2005"
+  ],
+  "ans": 3,
+  "src": "sf-7.html"
+ },
+ "69": {
+  "q": "If a 40 m ladder is placed against a 20√3 m high wall such that it just reaches the top of the wall, then the angle of elevation of the top of the wall from the base of the ladder is यदि 40 मीटर लम्बी सीढ़ी को 20√3 मीटर ऊंची दीवार के सम्मुख इस प्रकार से रखा जाए कि वह दीवार के शीर्ष तक पहुंच जाए, तो सीढ़ी के आधार से दीवार के शीर्ष की ऊंचाई का कोण है:",
+  "opts": [
+   "45°",
+   "60°",
+   "50°",
+   "30°"
+  ],
+  "ans": 1,
+  "src": "sf-7.html"
+ },
+ "70": {
+  "q": "The value of is- का मान है-",
+  "opts": [
+   "15/17",
+   "15/19",
+   "13/20",
+   "13/17"
+  ],
+  "ans": 2,
+  "src": "sf-7.html"
+ },
+ "72": {
+  "q": "What kind of lens is present in the human eye?",
+  "opts": [
+   "Biconcave",
+   "Planoconvex",
+   "Planoconcave",
+   "Biconvex"
+  ],
+  "ans": 3,
+  "src": "sf-8.html"
+ },
+ "73": {
+  "q": "Burning of coal to form carbon dioxide is a/an ____ reaction",
+  "opts": [
+   "Displacement",
+   "Oxidation",
+   "Decomposition",
+   "Reduction"
+  ],
+  "ans": 1,
+  "src": "sf-8.html"
+ },
+ "74": {
+  "q": "Which of the given nutrient cycles is sedimentary type? (Choose the most appropriate option from below)",
+  "opts": [
+   "carbon and nitrogen cycle",
+   "phosphorus and carbon cycle",
+   "sulphur and phosphorus cycle",
+   "carbon and sulphur cycle"
+  ],
+  "ans": 2,
+  "src": "sf-8.html"
+ },
+ "75": {
+  "q": "Which district was NOT a part of Indira Gandhi Canal project in First Stage?",
+  "opts": [
+   "Hanumangarh",
+   "Ganganagar",
+   "Bikaner",
+   "Jodhpur"
+  ],
+  "ans": 2,
+  "src": "sf-8.html"
+ },
+ "76": {
+  "q": "Who was selected as a President of the World Bank in 2023?",
+  "opts": [
+   "Amit Agrawal",
+   "Ajay Banga",
+   "Janardan Prasad",
+   "Praveen Sood"
+  ],
+  "ans": 1,
+  "src": "sf-8.html"
+ },
+ "77": {
+  "q": "Match List – I with List-II List-I – List-II Disease – Causal Organism a. Filariasis I. Haemophilus influenzae b. Pneumonia II. Plasmodium c. Malaria III. Salmonella d. Typhoid IV. Wuchereria सूची-I को सूची-II से सुमेलित कीजिए : सूची-I – सूची-II रोग – कारक जीव a. फाइलेरियासिस I. हेमोफिलस इन्फ्लुएंजा b. न्यूमोनिया II. प्लास्मोडियम c. मलेरिया III. सालमोनेला d. टाइफाइड IV. वुचेरेरिया Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :",
+  "opts": [
+   "a-II, b-III, c – IV, d – I",
+   "a- IV, b- I, c – II, d – III",
+   "a- I, b- IV, c – III, d – II",
+   "a-I, b – III, c – II, d – IV"
+  ],
+  "ans": 1,
+  "src": "sf-8.html"
+ },
+ "78": {
+  "q": "Which one of the following converts mechanical energy into electrical energy using Faraday's Law?",
+  "opts": [
+   "Electric generator",
+   "Battery",
+   "Rectifier",
+   "Electric Motor"
+  ],
+  "ans": 0,
+  "src": "sf-8.html"
+ },
+ "79": {
+  "q": "Identify the statement which are incorrect with respect to rusting. a. coat of paint on iron rods prevents rusting b. galvanised water pipes are not normally used in homes c. rusting is a physical change d. salt water makes the process of rust formation faster Choose the most appropriate answer from the options given below:",
+  "opts": [
+   "a, b and d only",
+   "a, b and c only",
+   "b and c only",
+   "a and d only"
+  ],
+  "ans": 2,
+  "src": "sf-8.html"
+ },
+ "80": {
+  "q": "Match List-I with List-II List-I – List-II Folk Art – Material a. Paane I. Wood b. Phad II. Wall & floor c. Mandana III. Cloth d. Kavad IV. Paper सूची-I के साथ सूची -II का मिलान कीजिए सूची-I – सूची-II लोक कला – सामग्री a. पाने I. लकड़ी b. फड़ II. दीवार और फर्श c. मांडना III. कपड़ा d. कावड़ IV. कागज Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर का चयन कीजिए",
+  "opts": [
+   "a-I, b-II, c – III, d – IV",
+   "a – III, b – IV c – II, d – I",
+   "a-II, b-III, C- I, d – Iv",
+   "a- IV, b- III, c – II, d – I"
+  ],
+  "ans": 3,
+  "src": "sf-8.html"
+ },
+ "81": {
+  "q": "To which place of Rajasthan does Theva Art belong?",
+  "opts": [
+   "Jhalawar",
+   "Churu",
+   "Pratapgarh",
+   "Udaipur"
+  ],
+  "ans": 2,
+  "src": "sf-9.html"
+ },
+ "82": {
+  "q": "In which year the United Nations was established? संयुक्तराष्ट्र संघ की स्थापना कब हुई ?",
+  "opts": [
+   "1945",
+   "1947",
+   "1948",
+   "1944"
+  ],
+  "ans": 0,
+  "src": "sf-9.html"
+ },
+ "83": {
+  "q": "The nitrogenous base not present in DNA is –",
+  "opts": [
+   "Thymine",
+   "Guanine",
+   "Adenine",
+   "Uracil"
+  ],
+  "ans": 3,
+  "src": "sf-9.html"
+ },
+ "84": {
+  "q": "The name of the first transgenic cow that produced human-protein enriched milk was:",
+  "opts": [
+   "Rosie",
+   "Eli Lilly",
+   "Kamdhenu",
+   "Dolly"
+  ],
+  "ans": 0,
+  "src": "sf-9.html"
+ },
+ "85": {
+  "q": "East-West Corridor connects With reference to the Golden Quadrilateral Super highway-project-",
+  "opts": [
+   "Imphal – Porbandar",
+   "Rajkot – Silchar",
+   "Silchar – Porbandar",
+   "Imphal – Rajkot"
+  ],
+  "ans": 2,
+  "src": "sf-9.html"
+ },
+ "86": {
+  "q": "Arrange the following ports of India from North to South direction. a. Vishakhapatnam b. Paradwip c. Tuticorin d. Chennai भारत के निम्नलिखित पत्तनो (बंदरगाह) को उत्तर से दक्षिण दिशा की ओर व्यवस्थित करें: a. विशाखापत्तनम् b. पाराद्वीप c. तूतीकोरिन d. चेन्नई Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर का चयन कीजिए:",
+  "opts": [
+   "a, b, d, c",
+   "c, b, a, d",
+   "b, a, d, c",
+   "b, a, c, d"
+  ],
+  "ans": 2,
+  "src": "sf-9.html"
+ },
+ "87": {
+  "q": "Which is the highest mountain peak in India?",
+  "opts": [
+   "Mt. Kanchenjunga",
+   "Mt. Nanda Devi",
+   "Mt. Annapurna",
+   "Mt. Everest"
+  ],
+  "ans": 0,
+  "src": "sf-9.html"
+ },
+ "88": {
+  "q": "Haldia port was developed as a subsidiary port, in order to relieve growing pressure on the which port ?",
+  "opts": [
+   "Paradwip",
+   "Kolkata",
+   "Tuticorin",
+   "Chennai"
+  ],
+  "ans": 1,
+  "src": "sf-9.html"
+ },
+ "89": {
+  "q": "Who was author of the novel “Anand Math&#8221;?",
+  "opts": [
+   "Veer Savarkar",
+   "Lokmanya Tilak",
+   "Rang Bapuji",
+   "Bankim Chandra Chattopadhyay"
+  ],
+  "ans": 3,
+  "src": "sf-9.html"
+ },
+ "90": {
+  "q": "Rajasthan State Industrial Development and Investment Corporation Limited (RIICO) has developed Agro Food Park in which of the following district?",
+  "opts": [
+   "Churu",
+   "Udaipur",
+   "Kota",
+   "Jaipur"
+  ],
+  "ans": 2,
+  "src": "sf-9.html"
+ }
+}
