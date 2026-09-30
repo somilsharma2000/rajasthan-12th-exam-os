@@ -49,10 +49,13 @@ function saveBM(ids) { try { localStorage.setItem(LS_BM, JSON.stringify(ids)) } 
 // Only exams whose OWN paper's real PYQs exist in bank (id prefixes: cet24-, ldc24-, pol22-, sten24-)
 const PYQ_PREFIX = { 'cet-12th': 'cet', 'ldc-junior-assistant': 'ldc', 'police-constable': 'pol', 'stenographer': 'sten' }
 
-const EXAM_ICON = { 'cet-12th': 'सी', 'ldc-junior-assistant': 'एल', 'police-constable': 'पु', 'forester': 'वन', 'jail-prahari': 'जे', 'hostel-superintendent': 'हॉ', 'jamadar-excise': 'ज', 'lab-assistant': 'लै', 'agriculture-supervisor': 'कृ', 'reet-level1': 'री', 'stenographer': 'स्टे', 'librarian-grade3': 'पु' }
+const EXAM_ICON = {
+  hi: { 'cet-12th': 'सी', 'ldc-junior-assistant': 'एल', 'police-constable': 'पु', 'forester': 'वन', 'jail-prahari': 'जे', 'hostel-superintendent': 'हॉ', 'jamadar-excise': 'ज', 'lab-assistant': 'लै', 'agriculture-supervisor': 'कृ', 'reet-level1': 'री', 'stenographer': 'स्टे', 'librarian-grade3': 'पु' },
+  en: { 'cet-12th': 'C', 'ldc-junior-assistant': 'L', 'police-constable': 'P', 'forester': 'F', 'jail-prahari': 'J', 'hostel-superintendent': 'H', 'jamadar-excise': 'E', 'lab-assistant': 'LA', 'agriculture-supervisor': 'A', 'reet-level1': 'R', 'stenographer': 'S', 'librarian-grade3': 'LB' }
+}
 
 export default function App() {
-  const [lang, setLang] = useState('hi')
+  const [lang, setLang] = useState(() => { try { return localStorage.getItem('rjx-lang') === 'en' ? 'en' : 'hi' } catch { return 'hi' } })
   const [screen, setScreen] = useState('home') // home | hub | setup | player | result | glossary | progress | saved | errorbook
   const [exam, setExam] = useState(null)
   const [session, setSession] = useState(null)
@@ -92,7 +95,7 @@ export default function App() {
     setResumable(null); setScreen('player')
   }
   const t = T(lang)
-  const toggleLang = () => setLang(l => l === 'hi' ? 'en' : 'hi')
+  const toggleLang = () => setLang(l => { const n = l === 'hi' ? 'en' : 'hi'; try { localStorage.setItem('rjx-lang', n) } catch {} return n })
 
   const ex_ok = q => q.verification !== 'UNVERIFIED' && !(q.provenance && q.provenance.evidence && String(q.provenance.evidence).includes('QUARANTINED'))
   const availFor = ex => ex.subjects.reduce((n, s) => n + (BANK_META.bySubject[s] || 0), 0)
@@ -244,7 +247,7 @@ export default function App() {
           const pyq = pyqFor(ex)
           return <button key={ex.id} className="examCard" onClick={() => { setExam(ex); setScreen('hub') }}>
             <span className="top">
-              <span className="ic">{EXAM_ICON[ex.id] || 'प'}</span>
+              <span className="ic">{(EXAM_ICON[lang] || {})[ex.id] || (lang === 'hi' ? 'प' : '?')}</span>
               {pyq > 0 && <span className="pyqTag">PYQ ✓</span>}
             </span>
             <span className="name">{ex.name[lang]}</span>
@@ -430,7 +433,7 @@ function Player({ session, setSession, lang, bookmarks, toggleBookmark, onFinish
         {showFeedback && (
           <div className="explain">
             <b>{t.explanation}:</b> {q.explanation[lang]}
-            <div className="note">स्रोत: {q.provenance.source} · {q.provenance.evidence}</div>
+            <div className="note">{lang === 'hi' ? 'स्रोत' : 'Source'}: {q.provenance.source} · {q.provenance.evidence}</div>
             <button className="ghost" style={{ marginTop: 8 }} onClick={() => setCoachCtx({
               question: q.q[lang], options: q.options[lang], answer: q.answer,
               chosen: a?.choice, explanation: q.explanation[lang], subject: q.subject, origin: q.origin

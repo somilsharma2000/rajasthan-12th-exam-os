@@ -1,7 +1,7 @@
 # PROJECT_STATUS.md — Rajasthan 12th-Level Exam OS
 *Living document. Honest status only. Never report planned work as completed.*
 
-**Last updated:** 2026-10-01 02:10 IST (Product-polish wave shipped: performance, typing module, AI Coach, E-rule settled)
+**Last updated:** 2026-10-01 02:40 IST (English UI pass shipped)
 **Current phase:** Phase 2 — BUILD + CONTENT (app LIVE on GitHub Pages; bank 1794 shippable; real-PYQ waves live: CET 2024 (149) + Police 2022 (608) + LDC 2024 P1 (142) + Stenographer 2024 (128); graduate waves EXCLUDED: Patwari 2025, CET 28-Sep — D-2026-09-30-05/06)
 
 ## Snapshot (verified 2026-09-30)
@@ -12,6 +12,7 @@
 
 
 ## Completed (verified)
+- 2026-10-01 ENGLISH UI COMPLETE: full audit + fixes (Source label, EN icons, lang persistence); EN-mode QA all screens clean. Deployed + live-verified.
 - 2026-10-01 PERFORMANCE WAVE: bank lazy-loaded per exam — first load 439KB->62KB gzip (7x); subject counts from build-time meta. Deployed + live-verified.
 - 2026-10-01 TYPING MODULE (Module A): exact RSSB scoring (20/8000 x netKDPH, 9-marks qualifying, -5/word), 8+8 hi/en passages, exam-real split-pane, word-level review, history. Unit + real-browser QA. Deployed + live-verified.
 - 2026-10-01 AI COACH (client side): panel from explanation view, question-context injection, honest setup state, 15/day cap; proxy Worker code shipped (serverless/ai-coach-worker.js, Gemini, per-IP KV cap). Deployed + live-verified (client). Worker deploy = founder action. D-010.
