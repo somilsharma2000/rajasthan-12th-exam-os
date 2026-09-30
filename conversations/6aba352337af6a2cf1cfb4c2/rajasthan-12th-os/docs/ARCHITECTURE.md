@@ -44,9 +44,10 @@ home ──── <App> screen state ──── resumable ← examos-active-mo
 | examos-typing-history | TypingTest finish | TypingTest stats | yes |
 | examos-coach-usage | Coach send | Coach cap | yes |
 | examos-errlog | global error handler | debugging only | yes |
+| rjx-onboard | Home dismissOnboard | Home firstVisit check | no (preference — returning users with cleared data are NOT first-timers; strip is for the method, not data) |
 | rjx-lang | toggleLang | App boot | no (preference) |
 | examos-coach-endpoint | Coach save | Coach fetch | no (config) |
 
 ## Release gate (never ship without)
 
-`npm run release` = `npm test` (engine unit) → `npm run build` → `npm run qa` (browser smoke, 9 checks). Deploy = rsync dist → gh-pages WITH `--delete` (stale hashed chunks accumulate otherwise). Live-verify: chunk hash in served index.html matches dist.
+`npm run release` = `npm test` (engine unit) → `npm run build` → `npm run qa` (browser smoke, 9 checks). Deploy = rsync dist → gh-pages WITH `--delete` (stale hashed chunks accumulate otherwise). Live-verify: chunk hash in served index.html matches dist; then `node qa/live-accept.mjs` (post-deploy production acceptance: fresh-user onboarding strip, dismiss persistence, mock journey, result momentum CTA).

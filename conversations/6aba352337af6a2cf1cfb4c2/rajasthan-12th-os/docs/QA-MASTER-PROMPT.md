@@ -48,7 +48,8 @@ applicability status. Never regenerate the site to run a pass. Full standard his
 - Tokens only: no hardcoded hex outside :root (lint: grep src/ *.jsx)
 - SVG icon system (no emoji glyphs); palette/dock selectors use aria-label (smoke tests depend on it)
 - index.html is gitignored — verify head after snapshot restores (restore via git blob)
-- Release gate: npm run release; deploy: rsync --delete; live chunk-hash verify
+- Release gate: npm run release; deploy: rsync --delete; live chunk-hash verify + qa/live-accept.mjs on production
+- Home first-visit strip: renders ONLY for true first-timers (no history/err/bookmarks/flag); hooks must stay above all conditional returns (2026-10-01 regression caught by smoke pre-deploy)
 
 ## History
 
