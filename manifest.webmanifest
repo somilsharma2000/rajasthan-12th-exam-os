@@ -1,0 +1,9 @@
+{
+  "name": "Rajasthan 12th Level Exam OS",
+  "short_name": "ExamOS",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#7c3aed",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
