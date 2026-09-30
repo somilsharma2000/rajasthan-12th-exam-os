@@ -81,6 +81,42 @@ export function scoreSession(session) {
     accuracy: attempted ? Math.round((correct / attempted) * 100) : 0 }
 }
 
+// SPEED & ACCURACY ANALYTICS (v4 cycle 4) — pure, testable. Honesty rule: compares
+// ONLY the student's own measured data against the exam's own time budget. No invented
+// "topper averages" (we have no real topper dataset for these exams — showing a fake
+// benchmark would violate the no-fake-data rule). session.times: { [qId]: ms }
+export function speedStats(session, r) {
+  const times = session.times || {}
+  const perQ = session.questions.map((q, i) => {
+    const a = session.answers[q.id]
+    const status = a && a.choice !== null && a.choice !== undefined ? (a.choice === q.answer ? 'correct' : 'wrong') : 'skipped'
+    return { n: i + 1, subject: q.subject, ms: times[q.id] || 0, status }
+  })
+  const answeredTimed = perQ.filter(x => x.ms > 300) // ignore sub-300ms taps/palette jumps
+  const avg = xs => xs.length ? Math.round(xs.reduce((s, x) => s + x.ms, 0) / xs.length) : 0
+  const avgMs = avg(answeredTimed)
+  const correctAvgMs = avg(answeredTimed.filter(x => x.status === 'correct'))
+  const wrongAvgMs = avg(answeredTimed.filter(x => x.status === 'wrong'))
+  const budgetSec = session.mode === 'mock' && session.config.pattern.durationMin
+    ? Math.round(session.config.pattern.durationMin * 60 / Math.max(1, session.questions.length)) : null
+  const slowest = answeredTimed.length ? perQ.reduce((a, b) => (b.ms > a.ms ? b : a)) : null
+  const sec = ms => Math.round(ms / 1000)
+  const insights = []
+  if (budgetSec && avgMs && sec(avgMs) > Math.round(budgetSec * 1.15)) {
+    insights.push({ hi: `औसत ${sec(avgMs)} सेकंड/प्रश्न — इस परीक्षा की समय-सीमा ~${budgetSec} सेकंड/प्रश्न है। गति बढ़ाने का अभ्यास करें।`, en: `Average ${sec(avgMs)}s/question vs this exam's ~${budgetSec}s/question budget — practice pacing.` })
+  }
+  if (correctAvgMs && wrongAvgMs && wrongAvgMs > correctAvgMs * 1.4) {
+    insights.push({ hi: `जहाँ ज़्यादा समय लगा वहीं गलती हुई: गलत प्रश्नों पर औसत ${sec(wrongAvgMs)}s, सही प्रश्नों पर ${sec(correctAvgMs)}s।`, en: `Slow meant wrong: ${sec(wrongAvgMs)}s avg on wrong vs ${sec(correctAvgMs)}s on correct.` })
+  }
+  if (correctAvgMs && wrongAvgMs && wrongAvgMs < correctAvgMs * 0.6 && wrongAvgMs > 0) {
+    insights.push({ hi: `जल्दबाज़ी में गलतियाँ: गलत प्रश्नों पर सिर्फ ${sec(wrongAvgMs)}s लगा (सही प्रश्नों पर ${sec(correctAvgMs)}s)। भरोसे से तय करें, अंदाज़े से नहीं।`, en: `Rushed answers: only ${sec(wrongAvgMs)}s on wrong questions vs ${sec(correctAvgMs)}s on correct — decide, don't guess.` })
+  }
+  if (slowest && slowest.ms > avgMs * 2.5 && slowest.ms > 60000) {
+    insights.push({ hi: `प्रश्न ${slowest.n} पर सबसे ज़्यादा समय (${Math.floor(slowest.ms / 60000)}:${String(sec(slowest.ms % 60000)).padStart(2, '0')}) — ऐसे प्रश्न परीक्षा में छोड़ना सीखें।`, en: `Question ${slowest.n} ate ${sec(slowest.ms)}s — learn to skip time sinks in the real exam.` })
+  }
+  return { perQ, avgMs, budgetSec, correctAvgMs, wrongAvgMs, insights, hasData: answeredTimed.length > 0, timedCount: answeredTimed.length }
+}
+
 export function fmtTime(ms) {
   const s = Math.max(0, Math.floor(ms / 1000))
   const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), sec = s % 60

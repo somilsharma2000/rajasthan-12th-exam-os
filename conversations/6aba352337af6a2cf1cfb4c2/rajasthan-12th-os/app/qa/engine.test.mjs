@@ -1,6 +1,6 @@
 // ENGINE UNIT TESTS — pure functions, node only (no browser needed).
 // Run: npm test   (part of the release gate; see docs/QA-MASTER-PROMPT.md module 20_TESTING)
-import { buildSession, scoreSession, fmtTime, availableQuestions, shuffle } from '../src/engine.js'
+import { buildSession, scoreSession, speedStats, fmtTime, availableQuestions, shuffle } from '../src/engine.js'
 import assert from 'node:assert'
 
 // shapes mirror the real bank: q.answer is a number; pattern carries scoring config
@@ -46,4 +46,25 @@ const sh = shuffle(arr)
 assert.equal(arr.length, 5)
 assert.equal([...sh].sort((a, b) => a - b).join(), '1,2,3,4,5')
 
-console.log('engine tests: ALL PASS (7 groups)')
+// 8. speedStats: honest own-data analytics (v4 cycle 4)
+const TS = { mode: 'mock', config: EXAM, questions: Q5, answers: { q1: { choice: 0 }, q2: { choice: 3 } }, // q1 correct (ans 0), q2 wrong (ans 1)
+  times: { q1: 30000, q2: 300000, q3: 100000, q4: 0, q5: 100 } } // q5 sub-300ms → excluded as tap, q4=0 → untimed
+const sp = speedStats(TS, scoreSession(TS))
+assert.ok(sp.hasData, 'timed data present')
+assert.equal(sp.timedCount, 3, 'q1,q2,q3 timed; q4 zero and q5 sub-300ms excluded')
+assert.equal(sp.avgMs, 143333, '(30000+300000+100000)/3 → 143333 rounded') // (430000/3 = 143333.33 → Math.round 143333
+assert.equal(sp.correctAvgMs, 30000, 'correct avg = q1 only')
+assert.equal(sp.wrongAvgMs, 300000, 'wrong avg = q2 only')
+assert.equal(sp.budgetSec, 120, 'budget: 10-min pattern / 5 questions = 120s/question')
+assert.ok(sp.insights.some(i => /जहाँ ज़्यादा समय/.test(i.hi)), 'slow-meant-wrong insight fires (300s wrong vs 30s correct)')
+assert.ok(sp.insights.some(i => /143 सेकंड/.test(i.hi) && /120 सेकंड/.test(i.hi)), 'over-budget insight fires (143s avg vs 120s budget)')
+assert.equal(sp.perQ.length, 5, 'one row per question')
+assert.equal(sp.perQ[0].status, 'correct'); assert.equal(sp.perQ[1].status, 'wrong'); assert.equal(sp.perQ[2].status, 'skipped')
+// honest absence: no times → hidden
+const spNone = speedStats({ mode: 'mock', config: EXAM, questions: Q5, answers: {} }, scoreSession({ mode: 'mock', config: EXAM, questions: Q5, answers: {} }))
+assert.equal(spNone.hasData, false, 'no times → hasData false → UI hides card')
+// practice mode: no fake exam budget
+const spPrac = speedStats({ mode: 'practice', config: EXAM, questions: Q5, answers: { q1: { choice: 0 } }, times: { q1: 8000 } }, scoreSession({ mode: 'practice', config: EXAM, questions: Q5, answers: { q1: { choice: 0 } } }))
+assert.equal(spPrac.budgetSec, null, 'practice has no exam budget — no invented benchmark')
+
+console.log('engine tests: ALL PASS (8 groups)')

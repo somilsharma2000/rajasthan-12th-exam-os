@@ -7,7 +7,7 @@ import { T } from './i18n.js'
 const TypingTest = lazy(() => import('./typing/TypingTest.jsx'))
 const Coach = lazy(() => import('./coach/Coach.jsx'))
 const OwnerConsole = lazy(() => import('./coach/OwnerConsole.jsx'))
-import { SUBJECT_LABELS, buildSession, scoreSession, fmtTime } from './engine.js'
+import { SUBJECT_LABELS, buildSession, scoreSession, speedStats, fmtTime } from './engine.js'
 
 const VERSION_NOTE = { hi: 'डेटा स्नैपशॉट: 30 सितंबर 2026 · प्रश्न-बैंक पाइपलाइन से बढ़ रहा है', en: 'Data snapshot: 30 Sep 2026 · question bank growing via pipeline' }
 
@@ -15,7 +15,7 @@ const LS_KEY = 'examos-active-mock'
 function saveActive(session, idx) {
   try {
     if (!session || session.mode !== 'mock') return
-    localStorage.setItem(LS_KEY, JSON.stringify({ examId: session.examId, mode: session.mode, ids: session.questions.map(q => q.id), answers: session.answers, idx, startedAt: session.startedAt, elapsedMs: Date.now() - session.startedAt }))
+    localStorage.setItem(LS_KEY, JSON.stringify({ examId: session.examId, mode: session.mode, ids: session.questions.map(q => q.id), answers: session.answers, idx, startedAt: session.startedAt, elapsedMs: Date.now() - session.startedAt, times: session.times || {} }))
   } catch {}
 }
 function loadActive() { try { return JSON.parse(localStorage.getItem(LS_KEY)) } catch { return null } }
@@ -146,7 +146,7 @@ export default function App() {
       return
     }
     // Resume from REMAINING time: rebuild startedAt from saved active-elapsed so backgrounded/sleep time is not counted (fixes instant auto-submit)
-    setSession({ examId: ex.id, mode: 'mock', lang, questions, answers: resumable.answers || {}, startedAt: Date.now() - (resumable.elapsedMs || 0), submitted: false, config: ex })
+    setSession({ examId: ex.id, mode: 'mock', lang, questions, answers: resumable.answers || {}, times: resumable.times || {}, startedAt: Date.now() - (resumable.elapsedMs || 0), submitted: false, config: ex })
     setResumable(null); setScreen('player')
   }
   const t = T(lang)
@@ -495,6 +495,27 @@ function Player({ session, setSession, lang, bookmarks, toggleBookmark, onFinish
     return () => window.removeEventListener('examos-back', onBack)
   }, [])
   const q = session.questions[idx]
+  // SPEED ANALYTICS: accumulate per-question time. tickRef = when current question came into view;
+  // prevQRef = which question that was. Flush on idx change and on finish (incl. timer expiry).
+  const tickRef = useRef(Date.now())
+  const prevQRef = useRef(null)
+  const flushTime = () => {
+    const id = prevQRef.current; if (!id) return
+    const delta = Date.now() - tickRef.current
+    if (delta > 300) setSession(s => { // sub-300ms visits are palette jumps, not thinking time
+      if (!s) return s // session already cleared (exit) — nothing to record, never crash the unmount path
+      const times = { ...(s.times || {}), [id]: (s.times || {})[id] || 0 }
+      times[id] += delta
+      return { ...s, times }
+    })
+    tickRef.current = Date.now()
+  }
+  useEffect(() => {
+    // after a question change: begin tracking the NEW question (cleanup already flushed the old one)
+    prevQRef.current = q.id
+    tickRef.current = Date.now()
+    return () => { flushTime() } // cleanup runs with the OLD closure, before this body re-assigns
+  }, [idx, q.id])
   const endAt = session.startedAt + (session.durationMin || session.config.pattern.durationMin) * 60000
   useEffect(() => {
     if (session.mode !== 'mock') return
@@ -521,7 +542,7 @@ function Player({ session, setSession, lang, bookmarks, toggleBookmark, onFinish
   const lowTime = session.mode === 'mock' && (endAt - now) < 5 * 60000
   const requestExit = () => { if (answeredCount > 0) setConfirmExit(true); else onExit() }
 
-  function finish() { clearActive(); onFinish() }
+  function finish() { flushTime(); clearActive(); onFinish() }
 
   const nextQ = () => idx < session.questions.length - 1 ? setIdx(i => i + 1) : finish()
 
@@ -689,6 +710,31 @@ function Result({ session, lang, onRecord, onHome, onRetry, onErrorReview }) {
           </div>
         })}
       </div>
+      {(() => { // SPEED & ACCURACY (v4 cycle 4) — honest own-data analytics; hidden when no times captured
+        const sp = speedStats(session, r)
+        if (!sp.hasData) return null
+        const hi = lang === 'hi'
+        const sec = ms => Math.round(ms / 1000)
+        const maxMs = Math.max(sp.budgetSec ? sp.budgetSec * 2000 : 0, ...sp.perQ.map(x => x.ms), 30000)
+        return <div className="card">
+          <h3 style={{ marginBottom: 6 }}>{hi ? 'गति विश्लेषण' : 'Speed analysis'}</h3>
+          <p className="note" style={{ marginTop: 0 }}>{hi
+            ? `औसत ${sec(sp.avgMs)} सेकंड/प्रश्न${sp.budgetSec ? ` · परीक्षा सीमा ~${sp.budgetSec} सेकंड/प्रश्न` : ''} (मापा गया: ${sp.timedCount} प्रश्न)`
+            : `Avg ${sec(sp.avgMs)}s/question${sp.budgetSec ? ` · exam budget ~${sp.budgetSec}s/question` : ''} (${sp.timedCount} questions measured)`}</p>
+          <div className="timeBars" role="img" aria-label={hi ? 'प्रति-प्रश्न समय' : 'Time per question'}>
+            {sp.perQ.map(x => (
+              <div key={x.n} className="timeRow" title={hi ? `प्रश्न ${x.n}: ${sec(x.ms)} सेकंड` : `Q${x.n}: ${sec(x.ms)}s`}>
+                <span className="tN">{x.n}</span>
+                <span className="tTrack"><span className={'tFill ' + x.status} style={{ width: `${Math.min(100, x.ms / maxMs * 100)}%` }} /></span>
+                <span className="tS">{x.ms ? sec(x.ms) + 's' : '—'}</span>
+              </div>
+            ))}
+          </div>
+          {sp.insights.length > 0 && <div style={{ marginTop: 8 }}>
+            {sp.insights.map((ins, i) => <p key={i} className="note" style={{ margin: '4px 0' }}>• {hi ? ins.hi : ins.en}</p>)}
+          </div>}
+        </div>
+      })()}
       {wrongQs.length > 0 && <div className="card">
         <h3 style={{ marginBottom: 6 }}>{lang === 'hi' ? `एरर बुक (${wrongQs.length} गलत)` : `Error book (${wrongQs.length} wrong)`}</h3>
         {wrongQs.map(q => (

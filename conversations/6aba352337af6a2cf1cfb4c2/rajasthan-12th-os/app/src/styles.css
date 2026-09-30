@@ -457,3 +457,14 @@ button:disabled { opacity: .35; pointer-events: none; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* SPEED ANALYTICS (v4 cycle 4) — token-only colors, compact time-per-question rows */
+.timeBars { display: flex; flex-direction: column; gap: 3px; max-height: 240px; overflow-y: auto; }
+.timeRow { display: flex; align-items: center; gap: 8px; }
+.timeRow .tN { width: 26px; font-size: 11px; color: var(--tx2); text-align: right; flex: none; }
+.timeRow .tTrack { flex: 1; height: 10px; border-radius: 6px; background: var(--bg2, var(--bg)); overflow: hidden; }
+.timeRow .tFill { display: block; height: 100%; border-radius: 6px; }
+.timeRow .tFill.correct { background: var(--ok); }
+.timeRow .tFill.wrong { background: var(--danger); }
+.timeRow .tFill.skipped { background: var(--tx3, var(--tx2)); opacity: 0.45; }
+.timeRow .tS { width: 34px; font-size: 11px; color: var(--tx2); flex: none; }

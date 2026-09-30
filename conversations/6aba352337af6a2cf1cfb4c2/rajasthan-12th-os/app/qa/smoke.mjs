@@ -46,6 +46,12 @@ try {
   await new Promise(r => setTimeout(r, 1200))
   ok('mock → result gauge with aria', await p.evaluate(() => { const g = document.querySelector('.gauge'); return !!g && !!g.getAttribute('aria-label') }))
   ok('10x submit spam → exactly 1 history record', await p.evaluate(() => JSON.parse(localStorage.getItem('examos-history') || '[]').length === 1))
+  ok('result shows speed analytics (bars + measured avg)', await p.evaluate(() => {
+    const card = [...document.querySelectorAll('.card h3')].find(h => /गति विश्लेषण|Speed analysis/.test(h.textContent))
+    if (!card) return false
+    const box = card.closest('.card')
+    return box.querySelectorAll('.timeRow').length > 0 && /औसत \d+ सेकंड|Avg \d+s/.test(box.textContent)
+  }))
   ok('result momentum CTA correct (errors→review primary, else retry)', await p.evaluate(() => {
     const next = document.querySelector('.dockNext'); if (!next) return false
     const errs = document.querySelectorAll('.explain.err').length

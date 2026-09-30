@@ -22,4 +22,12 @@ await p.evaluate(() => { const x = [...document.querySelectorAll('button')].find
 for (const w of W) { await p.setViewport({ width: w, height: 860 }); await new Promise(r => setTimeout(r, 300)); ok(`setup ${w}px no overflow`, await p.evaluate(overflow) <= 0) }
 await p.evaluate(() => { const x = [...document.querySelectorAll('button')].find(b2 => /अभ्यास मोड/.test(b2.textContent)); x.click() }); await new Promise(r => setTimeout(r, 1000))
 for (const w of W) { await p.setViewport({ width: w, height: 860 }); await new Promise(r => setTimeout(r, 300)); ok(`player ${w}px no overflow`, await p.evaluate(overflow) <= 0) }
+// result screen incl. speed-analytics card
+for (let i = 0; i < 12 && !(await p.evaluate(() => !!document.querySelector('.gauge'))); i++) { // practice = 10Q: click next until finish → result
+  await p.evaluate(() => { [...document.querySelectorAll('.dock button')].find(b2 => /अगला|समाप्त|जमा|Next|Finish|Submit/.test(b2.textContent))?.click() })
+  await new Promise(r => setTimeout(r, 350))
+}
+ok('result actually rendered (not a player false-positive)', await p.evaluate(() => !!document.querySelector('.gauge')))
+for (const w of W) { await p.setViewport({ width: w, height: 860 }); await new Promise(r => setTimeout(r, 300)); ok(`result ${w}px no overflow`, await p.evaluate(overflow) <= 0) }
+ok('speed bars render at 320px', await p.evaluate(() => { const card = [...document.querySelectorAll('.card h3')].find(h => /गति विश्लेषण|Speed analysis/.test(h.textContent)); return card ? card.closest('.card').querySelectorAll('.timeRow').length > 0 : false }))
 await b.close()

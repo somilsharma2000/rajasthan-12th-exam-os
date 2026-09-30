@@ -25,7 +25,11 @@ await new Promise(r => setTimeout(r, 400))
 await p.evaluate(() => { const x = [...document.querySelectorAll('.dock button')].find(b2 => /जमा/.test(b2.textContent)); for (let i = 0; i < 6; i++) x.click() })
 await new Promise(r => setTimeout(r, 1500))
 ok('live: result renders', await p.evaluate(() => !!document.querySelector('.gauge')))
-ok('live: momentum CTA branch', await p.evaluate(() => {
+ok('live: speed analytics card renders with measured bars', await p.evaluate(() => {
+    const card = [...document.querySelectorAll('.card h3')].find(h => /गति विश्लेषण|Speed analysis/.test(h.textContent))
+    return card ? card.closest('.card').querySelectorAll('.timeRow').length > 0 : false
+  }))
+  ok('live: momentum CTA branch', await p.evaluate(() => {
   const next = document.querySelector('.dockNext'); if (!next) return false
   const errs = document.querySelectorAll('.explain.err').length
   return errs > 0 ? /एरर रिव्यू|Review errors/.test(next.textContent) : /फिर से करें|Retry/.test(next.textContent)
