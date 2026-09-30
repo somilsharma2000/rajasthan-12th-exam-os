@@ -62,6 +62,25 @@ export default function App() {
   const [resumable, setResumable] = useState(null)
   const [bms, setBms] = useState([])
   useEffect(() => { setBms(loadBM()) }, [])
+  // ROUTING (audit F2): browser Back must not silently exit the app mid-session.
+  // Sentinel pattern: one pushed entry per app lifetime; popstate = "go one screen back".
+  useEffect(() => {
+    try { history.replaceState({ examos: 'root' }, ''); history.pushState({ examos: 'guard' }, '') } catch {}
+    const onPop = () => {
+      try { history.pushState({ examos: 'guard' }, '') } catch {} // keep intercepting
+      setScreen(cur => {
+        if (cur === 'player' || cur === 'result') {
+          // answered work in progress → ask, don't discard
+          window.dispatchEvent(new CustomEvent('examos-back'))
+          return cur
+        }
+        if (cur === 'home') return cur
+        return 'home'
+      })
+    }
+    window.addEventListener('popstate', onPop)
+    return () => window.removeEventListener('popstate', onPop)
+  }, [])
   // LAZY BANK: heavy question-bank chunk loads after first paint; shell renders from tiny BANK_META.
   const bankRef = useRef(null)
   const [bank, setBank] = useState(null)
@@ -261,6 +280,27 @@ export default function App() {
   )
 }
 
+// A11Y: trap Tab focus inside overlays (modal/palette/coach) + focus first control on open
+function useTrap(open) {
+  const ref = useRef(null)
+  useEffect(() => {
+    if (!open) return
+    const el = ref.current; if (!el) return
+    const first = el.querySelector('button, input, textarea'); if (first) first.focus()
+    const onKey = (e) => {
+      if (e.key !== 'Tab') return
+      const items = [...el.querySelectorAll('button, input, textarea')].filter(x => !x.disabled)
+      if (!items.length) return
+      const f = items[0], l = items[items.length - 1]
+      if (e.shiftKey && document.activeElement === f) { e.preventDefault(); l.focus() }
+      else if (!e.shiftKey && document.activeElement === l) { e.preventDefault(); f.focus() }
+    }
+    el.addEventListener('keydown', onKey)
+    return () => el.removeEventListener('keydown', onKey)
+  }, [open])
+  return ref
+}
+
 function TopBar({ title, t, lang, toggleLang, onHome }) {
   return <div className="bar">
     {onHome ? <button className="iconBtn" onClick={onHome}>←</button> : <span />}
@@ -369,6 +409,14 @@ function Player({ session, setSession, lang, bookmarks, toggleBookmark, onFinish
   const [showPal, setShowPal] = useState(false)
   const [coachCtx, setCoachCtx] = useState(null)
   const [confirmExit, setConfirmExit] = useState(false)
+  const palRef = useTrap(showPal)
+  const modalRef = useTrap(confirmExit)
+  // browser Back during session → same confirm as ← (answers are protected)
+  useEffect(() => {
+    const onBack = () => setConfirmExit(true)
+    window.addEventListener('examos-back', onBack)
+    return () => window.removeEventListener('examos-back', onBack)
+  }, [])
   const q = session.questions[idx]
   const endAt = session.startedAt + (session.durationMin || session.config.pattern.durationMin) * 60000
   useEffect(() => {
@@ -478,10 +526,10 @@ function Player({ session, setSession, lang, bookmarks, toggleBookmark, onFinish
         <button className="ghost" onClick={() => setShowPal(true)} title={lang === 'hi' ? 'प्रश्न पैलेट' : 'Question palette'}>▦</button>
         <button className="primary dockNext" onClick={nextQ}>{idx < session.questions.length - 1 ? t.next : (session.mode === 'mock' ? t.submit : t.finish)}</button>
       </div></div>
-      {toast && <div className="toast">{toast}</div>}
+      {toast && <div className="toast" role="status" aria-live="polite">{toast}</div>}
       {showPal && (
         <div className="paletteOverlay" onClick={() => setShowPal(false)}>
-          <div className="paletteSheet" onClick={e => e.stopPropagation()}>
+          <div className="paletteSheet" ref={palRef} onClick={e => e.stopPropagation()}>
             <h3>{lang === 'hi' ? 'प्रश्न पैलेट' : 'Question palette'}</h3>
             <div className="legend">
               <span><i style={{ background: 'rgba(124,58,237,.5)' }} />{lang === 'hi' ? 'उत्तरित' : 'Answered'}</span>
@@ -499,7 +547,7 @@ function Player({ session, setSession, lang, bookmarks, toggleBookmark, onFinish
       )}
       {confirmExit && (
         <div className="modalWrap" onClick={() => setConfirmExit(false)}>
-          <div className="modal" onClick={e => e.stopPropagation()}>
+          <div className="modal" ref={modalRef} onClick={e => e.stopPropagation()}>
             <h3>{lang === 'hi' ? 'सत्र छोड़ें?' : 'Leave session?'}</h3>
             <p>{session.mode === 'mock'
               ? (lang === 'hi' ? 'आपके उत्तर सहेजे जाएँगे — होम से मॉक फिर से जारी रख सकते हैं।' : 'Your answers are saved — you can resume the mock from Home.')
@@ -540,7 +588,7 @@ function Result({ session, lang, onRecord, onHome, onRetry }) {
       <TopBar title={t.result} t={t} lang={lang} toggleLang={() => {}} />
       <div className="resultHero">
         <h2 style={{ fontSize: 15, color: 'var(--tx2)' }}>{session.config.name[lang]}</h2>
-        <div className="gauge" style={{ '--pctg': pct }}>
+        <div className="gauge" style={{ '--pctg': pct }} role="img" aria-label={lang === 'hi' ? `स्कोर ${Math.round(r.score * 100) / 100} / ${maxMarks}` : `Score ${Math.round(r.score * 100) / 100} / ${maxMarks}`}>
           <b>{Math.round(r.score * 100) / 100}</b>
           <span>/ {maxMarks}</span>
         </div>

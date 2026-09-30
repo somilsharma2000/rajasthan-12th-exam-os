@@ -17,7 +17,7 @@
   /* Text tokens */
   --tx: #FAFAFA;        /* primary (AAA) */
   --tx2: #A1A1AA;       /* secondary */
-  --tx3: #71717A;       /* muted/disabled */
+  --tx3: #8B8B93;       /* muted/disabled — AA on card+bg (audit 2026-10-01) */
 
   /* Accent (≤10% of any screen) */
   --violet: #7C3AED;    /* solid fills only */
@@ -30,6 +30,8 @@
   --wn: #FBBF24;  --wn-bg: rgba(251, 191, 36, .09);  --wn-bd: rgba(251, 191, 36, .25);
 
   --r-sm: 10px; --r: 12px; --r-lg: 16px; --r-xl: 20px;
+  /* legacy aliases (typing/coach css) — defined so borders/fills render */
+  --bd: var(--border); --pr: var(--violet); --pr-tx: #fff;
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -85,7 +87,7 @@ button:disabled { opacity: .35; pointer-events: none; }
 .ghost:active { background: var(--elev); }
 .iconBtn {
   background: transparent; border: none; color: var(--tx2);
-  font-size: 18px; min-height: 40px; min-width: 40px; padding: 4px 8px;
+  font-size: 18px; min-height: 44px; min-width: 44px; padding: 4px 8px;
 }
 .iconBtn:active { background: transparent; color: var(--tx); }
 .timer {

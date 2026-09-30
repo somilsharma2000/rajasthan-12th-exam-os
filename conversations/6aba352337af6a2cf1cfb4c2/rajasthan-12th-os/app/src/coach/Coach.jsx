@@ -19,6 +19,7 @@ export default function Coach({ lang, context, onClose }) {
   const [busy, setBusy] = useState(false)
   const [err, setErr] = useState('')
   const boxRef = useRef(null)
+  const panelRef = useRef(null)
 
   const [used, setUsed] = useState(() => {
     try { const u = JSON.parse(localStorage.getItem(LS_USAGE)); return u && u.date === new Date().toDateString() ? u.count : 0 } catch { return 0 }
@@ -35,6 +36,21 @@ export default function Coach({ lang, context, onClose }) {
     window.addEventListener('keydown', esc)
     return () => window.removeEventListener('keydown', esc)
   }, [onClose])
+  // A11Y: focus first control + trap Tab inside the sheet
+  useEffect(() => {
+    const el = panelRef.current; if (!el) return
+    const first = el.querySelector('button, input, textarea'); if (first) first.focus()
+    const onKey = (e) => {
+      if (e.key !== 'Tab') return
+      const items = [...el.querySelectorAll('button, input, textarea')].filter(x => !x.disabled)
+      if (!items.length) return
+      const f = items[0], l = items[items.length - 1]
+      if (e.shiftKey && document.activeElement === f) { e.preventDefault(); l.focus() }
+      else if (!e.shiftKey && document.activeElement === l) { e.preventDefault(); f.focus() }
+    }
+    el.addEventListener('keydown', onKey)
+    return () => el.removeEventListener('keydown', onKey)
+  }, [])
 
   const send = async () => {
     const text = input.trim(); if (!text || busy || used >= DAILY_CAP) return
@@ -61,7 +77,7 @@ export default function Coach({ lang, context, onClose }) {
 
   return (
     <div className="paletteOverlay" onClick={onClose}>
-      <div className="paletteSheet" onClick={e => e.stopPropagation()} style={{ maxWidth: 640 }}>
+      <div className="paletteSheet" ref={panelRef} onClick={e => e.stopPropagation()} style={{ maxWidth: 640 }}>
         <div className="row" style={{ justifyContent: 'space-between', alignItems: 'center' }}>
           <h3 style={{ margin: 0 }}>{hi ? 'AI कोच' : 'AI Coach'} <span className="note" style={{ display: 'inline' }}>· {used}/{DAILY_CAP}</span></h3>
           <button className="iconBtn" onClick={onClose}>✕</button>
