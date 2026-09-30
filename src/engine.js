@@ -23,11 +23,16 @@ export function availableQuestions(bank, exam) {
 
 export function buildSession(exam, bank, mode, lang, count) {
   const pool = availableQuestions(bank, exam)
-  const questions = pool.slice(0, Math.min(count || exam.pattern.totalQuestions, pool.length))
+  const target = count || exam.pattern.totalQuestions
+  const questions = pool.slice(0, Math.min(target, pool.length))
+  // Scaled duration: short mocks get proportional time (honest timing, min 5 min)
+  const durationMin = mode === 'mock'
+    ? Math.max(5, Math.round(exam.pattern.durationMin * questions.length / exam.pattern.totalQuestions))
+    : null
   return {
     examId: exam.id, mode, lang,
     questions, answers: {}, // qId -> {choice: 0-3 | null, markedE: bool}
-    startedAt: Date.now(), submitted: false
+    durationMin, startedAt: Date.now(), submitted: false
   }
 }
 

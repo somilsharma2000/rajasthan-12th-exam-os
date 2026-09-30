@@ -39,7 +39,8 @@ export default function App() {
 
   const availFor = ex => ALL_QUESTIONS.filter(q => q.verification !== 'UNVERIFIED' && !(q.provenance && q.provenance.evidence && String(q.provenance.evidence).includes('QUARANTINED')) && ex.subjects.includes(q.subject)).length
   const startSession = (mode) => {
-    const s = buildSession(exam, ALL_QUESTIONS, mode, lang, 10)
+    const target = mode === 'mock' ? exam.pattern.totalQuestions : 10
+    const s = buildSession(exam, ALL_QUESTIONS, mode, lang, target)
     if (!s.questions.length) return
     s.config = exam
     setSession(s); setScreen('player')
@@ -158,7 +159,7 @@ function Player({ session, setSession, lang, onFinish, onExit }) {
   const [idx, setIdx] = useState(0)
   const [now, setNow] = useState(Date.now())
   const q = session.questions[idx]
-  const endAt = session.startedAt + session.config.pattern.durationMin * 60000
+  const endAt = session.startedAt + (session.durationMin || session.config.pattern.durationMin) * 60000
   useEffect(() => {
     if (session.mode !== 'mock') return
     const iv = setInterval(() => setNow(Date.now()), 1000)
@@ -187,7 +188,7 @@ function Player({ session, setSession, lang, onFinish, onExit }) {
     <div className="wrap">
       <div className="bar">
         <button className="ghost" onClick={onExit}>←</button>
-        <b style={{color:'#fff'}}>{session.mode === 'mock' ? t.mock : t.practice}</b>
+        <b style={{color:'#fff'}}>{session.mode === 'mock' ? t.mock : t.practice}{session.mode === 'mock' && session.questions.length < session.config.pattern.totalQuestions ? ' (' + session.questions.length + 'Q)' : ''}</b>
         {session.mode === 'mock'
           ? <span className="timer">{t.timeLeft}: {fmtTime(endAt - now)}</span>
           : <span className="badge">{q.subject && SUBJECT_LABELS[q.subject][lang]}</span>}

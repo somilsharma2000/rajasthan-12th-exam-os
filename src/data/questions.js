@@ -4,12 +4,12 @@
 // Every question: Hindi-first, options, answer, explanation, provenance.
 
 export const QUESTIONS = [
-  { id: 'q001', subject: 'raj-gk', topic: 'राजस्थान का इतिहास', origin: 'agent_authored', verification: 'OFFICIAL_CONFIRMED',
-    q: { hi: 'राजस्थान के एकीकरण (18 वर्षों का युद्ध) के अंतिम चरण में अंतिम शासक किस रियासत ने विलय पत्र पर हस्ताक्षर किए?', en: 'Which princely state was the last to sign the instrument of accession during Rajasthan\'s integration?' },
-    options: { hi: ['जयपुर', 'उदयपुर', 'जोधपुर', 'बीकानेर'], en: ['Jaipur', 'Udaipur', 'Jodhpur', 'Bikaner'] },
-    answer: 1,
-    explanation: { hi: 'राजस्थान का एकीकरण सात चरणों में 1948-49 में पूर्ण हुआ; उदयपुर रियासत ने 18 अप्रैल 1948 को विलय पत्र पर हस्ताक्षर कर राजस्थान संघ में प्रवेश किया — यह सातवें चरण का प्रमुख घटनाक्रम था।', en: 'Rajasthan\'s integration completed in seven stages (1948-49); Udaipur signed on 18 April 1948 to join the union — the key event of the final stage.' },
-    provenance: { source: 'Rajasthan state gazette history records (standard reference)', evidence: 'OFFICIAL_CONFIRMED' } },
+  { id: 'q001', subject: 'raj-gk', topic: 'राजस्थान का इतिहास', origin: 'agent_authored', verification: 'VERIFIED_DERIVED',
+    q: { hi: 'राजस्थान का एकीकरण कुल कितने चरणों में पूर्ण हुआ?', en: 'In how many stages was the integration of Rajasthan completed?' },
+    options: { hi: ['5 चरण', '6 चरण', '7 चरण', '8 चरण'], en: ['5 stages', '6 stages', '7 stages', '8 stages'] },
+    answer: 2,
+    explanation: { hi: 'राजस्थान का एकीकरण 7 चरणों में पूर्ण हुआ: 18 मार्च 1948 को राजस्थान संघ के गठन से शुरुआत और 30 मार्च 1949 को वृहद् राजस्थान के गठन के साथ पूर्ण (उदयपुर का विलय 18 अप्रैल 1948 को तीसरे चरण में हुआ था)।', en: 'Rajasthan\'s integration completed in 7 stages: from the Rajasthan Union (18 March 1948) to the formation of Greater Rajasthan (30 March 1949); Udaipur merged in stage 3 on 18 April 1948.' },
+    provenance: { source: 'Standard Rajasthan integration chronology (state textbooks); audit-fixed after catching an incorrect earlier claim', evidence: 'VERIFIED_DERIVED' } },
   { id: 'q002', subject: 'raj-gk', topic: 'राजस्थान की राजधानी व प्रशासन', origin: 'agent_authored', verification: 'OFFICIAL_CONFIRMED',
     q: { hi: 'राजस्थान के मुख्यमंत्री के पास राज्य में कौन-सा विभाग प्रमुखता से सुरक्षा व गृह कार्य का प्रभार है?', en: 'Which department primarily handles home affairs in Rajasthan?' },
     options: { hi: ['गृह विभाग', 'वित्त विभाग', 'शिक्षा विभाग', 'कृषि विभाग'], en: ['Home Department', 'Finance Department', 'Education Department', 'Agriculture Department'] },

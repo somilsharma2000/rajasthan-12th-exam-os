@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url'
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const SEED = (await import(resolve(ROOT, 'src/data/questions.js'))).QUESTIONS
 let files = []
-try { files = readdirSync(resolve(ROOT, 'src/data/bank')).filter(f => f.endsWith('.js') && f !== 'index.js') } catch { files = [] }
+try { files = readdirSync(resolve(ROOT, 'src/data/bank')).filter(f => f.endsWith('.js') && f !== 'index.js' && f !== 'manifest.js') } catch { files = [] }
 let ALL = [...SEED], issues = [], subjectCounts = {}, ids = new Set()
 for (const f of files) {
   const mod = await import(resolve(ROOT, 'src/data/bank', f))
