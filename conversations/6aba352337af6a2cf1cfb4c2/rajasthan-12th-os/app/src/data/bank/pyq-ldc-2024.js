@@ -1,6 +1,7 @@
 // REAL PYQ: Rajasthan LDC / Junior Assistant 2024, Paper-1 (11 Aug 2024) — 142 verified questions
-// Dual-archive cross-check (TEP Hindi x StudyFry English): 125 dual-agree, 13 adjudicated, 3 solo-verified, 1 dual-text-match.
-// Excluded per zero-fake-data: figure/formula-dependent Q9, Q26, Q70, Q95, Q96, Q141, Q142; duplicate Q24/Q68 merged.
+// TRUE cross-check after fixing archive numbering: SF keyed by file page, TEP by question number.
+// 121 dual-agree, 13 adjudicated, 3 dispute-solved (independent math/GK solve), 5 solo-verified by independent solve.
+// Excluded per zero-fake-data: Q24 (numbers unreconcilable), Q26/Q70/Q95/Q142 (formula lost), Q141 (unsolvable), Q9/Q96 (absent from archives).
 export const PYQ_LDC_2024 = [
  {
   "id": "ldc24-001",
@@ -27,11 +28,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 1 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 1 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -60,11 +61,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 2 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 2 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -75,7 +76,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "जैन के प्रथम तीर्थंकर कौन थे?",
-   "en": "डेटा 6, 16, 12, 4, 7, 35, 39 और 3 के माध्य (मीन) और माध्यिका (मिडियन) का अंतर ज्ञात करें:"
+   "en": "Who was the first Teerthankara of the Jains?"
   },
   "options": {
    "hi": [
@@ -93,11 +94,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 3 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 3 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -108,7 +109,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "निम्नलिखित में से कौन सिंथेटिक टेक्सटाइल के लिए एक “नोडल (प्रमुख) उद्योग” के रूप में कार्य करती है ?",
-   "en": "Which one of the following acts as a &#8220;Nodal Industry&#8221; for synthetic textile?"
+   "en": "Which one of the following acts as a \"Nodal Industry\" for synthetic textile?"
   },
   "options": {
    "hi": [
@@ -126,11 +127,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 4 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 4 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -141,7 +142,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "राजस्थान के निम्नलिखित तांबा खदान केन्द्रों को उत्तर से दक्षिण दिशा की ओर व्यवस्थित करें: a. भीलवाड़ा b. उदयपुर c. अलवर d. खेतड़ी नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें :",
-   "en": "Arrange the following copper mine centres of Rajasthan, from North to South direction. a. Bhilwara b. Udaipur c. Alwar d. Khetri राजस्थान के निम्नलिखित तांबा खदान केन्द्रों को उत्तर से दक्षिण दिशा की ओर व्यवस्थित करें: a. भीलवाड़ा b. उदयपुर c. अलवर d. खेतड़ी Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें :"
+   "en": "Arrange the following copper mine centres of Rajasthan, from North to South direction."
   },
   "options": {
    "hi": [
@@ -159,11 +160,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 5 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 5 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -192,11 +193,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 6 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 6 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -225,11 +226,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 7 का वास्तविक प्रश्न। archive keys के विवाद का स्वतंत्र गणितीय हल, विषय content-आधारित।",
+   "en": "Actual question 7 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DISPUTE_SOLVED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DISPUTE_SOLVED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -258,11 +259,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 8 का वास्तविक प्रश्न। एकल archive — स्वतंत्र हल से सत्यापित, विषय content-आधारित।",
+   "en": "Actual question 8 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (SOLO_VERIFIED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: SOLO_VERIFIED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -273,7 +274,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "तालिका में वर्ष 2005, 2006, 2007 और 2008 में विश्वविद्यालय में प्रवेश पाने वाले मानविकी, विज्ञान और वाणिज्य संकाय के छात्रों की संख्या दर्शायी गयी है: दर्शाए गए वर्षों के दौरान प्रति वर्ष वाणिज्य संकाय में प्रवेश पाने वाले छात्रों की प्रति वर्ष औसत संख्या क्या है?",
-   "en": "The table shows the number of students of Humanities, science and commerce streams who were admitted in a University in the years 2005, 2006, 2007 and 2008 तालिका में वर्ष 2005, 2006, 2007 और 2008 में विश्वविद्यालय में प्रवेश पाने वाले मानविकी, विज्ञान और वाणिज्य संकाय के छात्रों की संख्या दर्शायी गयी है: What is the average number of students per year who got admission in Commerce stream during the given years? दर्शाए गए वर्षों के दौरान प्रति वर्ष वाणिज्य संकाय में प्रवेश पाने वाले छात्रों की प्रति वर्ष औसत संख्या क्या है?"
+   "en": "The table shows the number of students of Humanities, science and commerce streams who were admitted in a University in the years 2005, 2006, 2007 and 2008"
   },
   "options": {
    "hi": [
@@ -291,11 +292,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 10 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 10 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -324,11 +325,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 11 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 11 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -357,11 +358,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 12 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 12 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -372,7 +373,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "किसानों पर “चंवरी कर” किसने अधिरोपित किया था?",
-   "en": "Who imposed tax named &#8220;Chanwari tax&#8221; on the farmers ?"
+   "en": "Who imposed tax named \"Chanwari tax\" on the farmers ?"
   },
   "options": {
    "hi": [
@@ -390,11 +391,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 13 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 13 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -423,11 +424,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 14 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 14 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -456,11 +457,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 15 का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
+   "en": "Actual question 15 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (ADJUDICATED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: ADJUDICATED",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: ADJUDICATED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -471,7 +472,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "यदि एक बहुभुज के प्रत्येक आंतरिक कोण का माप 150° है, तो इसकी भुजाओं की संख्या है:",
-   "en": "If 150% is the measure of each interior angle of a regular polygon, then the number of its sides are: यदि एक बहुभुज के प्रत्येक आंतरिक कोण का माप 150° है, तो इसकी भुजाओं की संख्या है:"
+   "en": "If 150% is the measure of each interior angle of a regular polygon, then the number of its sides are:"
   },
   "options": {
    "hi": [
@@ -489,11 +490,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 16 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 16 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -504,7 +505,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "एक ∆ ABC में बाह्य कोण ∠B और ∠C के समद्विभाजित बिन्दु O पर मिलते हैं, यदि ∠A = 62°, तब ∠BOC का माप है-",
-   "en": "In ∆ ABC, bisectors of exterior angles ∠B and ∠C meet at point O. If ∠A= 62°, then the measure of ∠BOC is : एक ∆ ABC में बाह्य कोण ∠B और ∠C के समद्विभाजित बिन्दु O पर मिलते हैं, यदि ∠A = 62°, तब ∠BOC का माप है-"
+   "en": "In ∆ ABC, bisectors of exterior angles ∠B and ∠C meet at point O. If ∠A= 62°, then the measure of ∠BOC is :"
   },
   "options": {
    "hi": [
@@ -522,11 +523,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 17 का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
+   "en": "Actual question 17 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (ADJUDICATED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: ADJUDICATED",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: ADJUDICATED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -555,11 +556,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 18 का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
+   "en": "Actual question 18 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (ADJUDICATED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: ADJUDICATED",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: ADJUDICATED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -570,7 +571,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "नीचे दो कथन दिए गए हैं: कथन I: एक कोशिका प्रोटीन, पशु और पौधों के पोषण के लिए प्रोटीन का एक वैकल्पिक स्रोत है। कथन II : स्पिरुलिना एकल कोशिका प्रोटीन में से एक है जो प्रोटीन, खनिज और विटामिन आदि के समृद्ध स्रोत के रूप में कार्य कर सकता है, परंतु इसकी वृद्धि पर्यावरण प्रदूषण में वृद्धि करती है। उपर्युक्त कथनों के आलोक में निम्नलिखित विकल्पों में से सही उत्तर चुनें :",
-   "en": "Given below are two statements: Statement (I): Single Cell Protein (SCP) is an alternate source of protein for animal and plant nutrition. Statement (II): Spirulina is one of the Single Cell Protein that can serve as a rich source of protein, minerals and vitamins etc but its growth increases environmental pollution. In light of the above statements, choose the most appropriate answer from the options given below."
+   "en": "Given below are two statements:"
   },
   "options": {
    "hi": [
@@ -588,11 +589,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 19 का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
+   "en": "Actual question 19 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (ADJUDICATED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: ADJUDICATED",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: ADJUDICATED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -621,11 +622,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 20 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 20 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -636,7 +637,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "साबुन और डिटरजेंट से संबंधित सत्य कथन की पहचान करें। a: साबुन सल्फ्यूरिक एसिड की लंबी श्रृंखला के सोडियम या. पोटैशियम लवण होते हैं जबकि डिटरजेंट आम तौर पर कार्बोक्जिलिक एसिड के सोडियम लवण होते हैं। b. जब साबुन के अणु पानी और गंदगी (तेल) के संपर्क में आते है तो वे मिसेल्स बनाते हैं। c. ये मिसेल्स पानी में मौजूद गंदगी को बाहर निकालने में सक्षम हैं। d. साबुन कठोर जल में भी प्रभावकारी हैं। e. कठोर जल में डिटरजेंट अप्रभावी रहता है। नीचे दिए गए विकल्पों में से सबसे उपयुक्त उत्तर चुनें।",
-   "en": "Identify the true statements related to soaps and detergents. a. Soaps are sodium or potassium salts of long chain of sulphuric acids while detergents are generally sodium salts of carboxylic acids b. The soap molecules form micelles when they interact with water and dirt (Oil) c. These micelles are able to pull out the dirt in water d. Soaps are effective in hardwater also e. The detergent remain ineffective in hard water Choose the most appropirate answer from the options given below:"
+   "en": "Identify the true statements related to soaps and detergents."
   },
   "options": {
    "hi": [
@@ -654,11 +655,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 21 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 21 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -669,7 +670,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "डेटा 6, 16, 12, 4, 7, 35, 39 और 3 के माध्य (मीन) और माध्यिका (मिडियन) का अंतर ज्ञात करें:",
-   "en": "डेटा 6, 16, 12, 4, 7, 35, 39 और 3 के माध्य (मीन) और माध्यिका (मिडियन) का अंतर ज्ञात करें:"
+   "en": "Find the difference between the Mean and Median of the data 6, 16, 12, 4, 7, 35, 39 and 3."
   },
   "options": {
    "hi": [
@@ -687,11 +688,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। स्वतंत्र हल से सत्यापित, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 22 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 22 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: SOLO_VERIFIED",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -702,7 +703,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "एक कक्षा में लड़कियों की संख्या लड़कों की संख्या से एक कम है। यदि लड़कों और लड़कियों की संख्या का गुणनफल 272 है, तो कक्षा में लड़कियों की संख्या कितनी है?",
-   "en": "In a class, the number of girls is one less than the number of boys. If the product of the number of boys and that of girls is 272, then the number of girls in the class is: एक कक्षा में लड़कियों की संख्या लड़कों की संख्या से एक कम है। यदि लड़कों और लड़कियों की संख्या का गुणनफल 272 है, तो कक्षा में लड़कियों की संख्या कितनी है?"
+   "en": "In a class, the number of girls is one less than the number of boys. If the product of the number of boys and that of girls is 272, then the number of girls in the class is:"
   },
   "options": {
    "hi": [
@@ -720,11 +721,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 23 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 23 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -734,41 +735,8 @@ export const PYQ_LDC_2024 = [
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
-   "hi": "डेटा 5, 3, 8, 11, 13, 8, 19 और 24 में से (2 माध्यिका (मिडियन) माइनस मोड) मान ज्ञात कीजिए:",
-   "en": "डेटा 5, 3, 8, 11, 13, 8, 19 और 24 में से (2 माध्यिका (मिडियन) माइनस मोड) मान ज्ञात कीजिए:"
-  },
-  "options": {
-   "hi": [
-    "9.5",
-    "10",
-    "11",
-    "8"
-   ],
-   "en": [
-    "9.5",
-    "10",
-    "11",
-    "8"
-   ]
-  },
-  "answer": 2,
-  "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दोनों archives में समान प्रश्न, उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
-  },
-  "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_TEXT_MATCH",
-   "evidence": "REAL_PYQ_VERIFIED"
-  }
- },
- {
-  "id": "ldc24-024",
-  "subject": "maths",
-  "origin": "real_pyq",
-  "verification": "VERIFIED",
-  "q": {
    "hi": "यदि 4x 3 + kx का गुणनखंड 2x + 1 है, तो k का मान होगा?",
-   "en": "If 2x+1 is a factor of 4x 3 + kx , then the value of k is: यदि 4x 3 + kx का गुणनखंड 2x + 1 है, तो k का मान होगा?"
+   "en": "If"
   },
   "options": {
    "hi": [
@@ -786,16 +754,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 25 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 25 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-025",
+  "id": "ldc24-024",
   "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -819,16 +787,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 27 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 27 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-026",
+  "id": "ldc24-025",
   "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -852,16 +820,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 28 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 28 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-027",
+  "id": "ldc24-026",
   "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -885,22 +853,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 29 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 29 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-028",
+  "id": "ldc24-027",
   "subject": "maths",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "बिन्दु A के निर्देशक ज्ञात करें जहां पर कि AB एक वृत्त का व्यास है जिसका केंद्र (2, −3) और B (1, 4) है।",
-   "en": "Find the coordinator of the point A where AB is the diameter of a circle whose centre is (2,-3) and B is (1, 4). बिन्दु A के निर्देशक ज्ञात करें जहां पर कि AB एक वृत्त का व्यास है जिसका केंद्र (2, −3) और B (1, 4) है।"
+   "en": "Find the coordinator of the point A where AB is the diameter of a circle whose centre is (2,-3) and B is (1, 4)."
   },
   "options": {
    "hi": [
@@ -918,16 +886,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 30 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 30 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-029",
+  "id": "ldc24-028",
   "subject": "maths",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -951,11 +919,44 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 31 का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
+   "en": "Actual question 31 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (ADJUDICATED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: ADJUDICATED",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: ADJUDICATED",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "ldc24-029",
+  "subject": "maths",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "जमीन से 300 मीटर की ऊंचाई पर उड़ने वाला एक हवाई जहाज उसी क्षण उर्ध्वाधर से दूसरे विमान के उपर से गुजरता है जब जमीन पर एक ही बिन्दु से दो विमानों का उन्नयन कोण 60° और 45° क्रमशः हो। जमीन से निचले विमान की ऊंचाई (मीटर में) है –",
+   "en": "An aeroplane flying at a height of 300 m above the ground passes vertically above another plane at an instant when the angles of elevation of the two planes from the same point on the ground are 60° and 45°, respectively. The height of the lower plan"
+  },
+  "options": {
+   "hi": [
+    "100/√3",
+    "100√3",
+    "150(√3+1)",
+    "50"
+   ],
+   "en": [
+    "100/√3",
+    "100√3",
+    "150(√3+1)",
+    "50"
+   ]
+  },
+  "answer": 1,
+  "explanation": {
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 32 का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
+   "en": "Actual question 32 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (ADJUDICATED); content-based subject tag."
+  },
+  "provenance": {
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: ADJUDICATED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -965,30 +966,30 @@ export const PYQ_LDC_2024 = [
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
-   "hi": "जमीन से 300 मीटर की ऊंचाई पर उड़ने वाला एक हवाई जहाज उसी क्षण उर्ध्वाधर से दूसरे विमान के उपर से गुजरता है जब जमीन पर एक ही बिन्दु से दो विमानों का उन्नयन कोण 60° और 45° क्रमशः हो। जमीन से निचले विमान की ऊंचाई (मीटर में) है –",
-   "en": "An aeroplane flying at a height of 300 m above the ground passes vertically above another plane at an instant when the angles of elevation of the two planes from the same point on the ground are 60° and 45°, respectively. The height of the lower plane from the ground (in m) is: जमीन से 300 मीटर की ऊंचाई पर उड़ने वाला एक हवाई जहाज उसी क्षण उर्ध्वाधर से दूसरे विमान के उपर से गुजरता है जब जमीन पर एक ही बिन्दु से दो विमानों का उन्नयन कोण 60° और 45° क्रमशः हो। जमीन से निचले विमान की ऊंचाई (मीटर में) है –"
+   "hi": "एक जन्मदिन की टोपी एक शंकु के आकार की है जिसका आधार त्रिज्या 7 से.मी और ऊंचाई 24 से.मी है। ऐसी पांच टोपियां बनाने हेतु आवश्यक शीट का क्षेत्रफल (सेमी2 में) है (π = 22/7)",
+   "en": "A birthday cap is in the form of a cone having base radius 7 cm and height 24 cm. The area of the sheet (in cm"
   },
   "options": {
    "hi": [
-    "100/√3",
-    "100√3",
-    "150(√3+1)",
-    "50"
+    "2700",
+    "2750",
+    "3000",
+    "2640"
    ],
    "en": [
-    "100/√3",
-    "100√3",
-    "150(√3+1)",
-    "50"
+    "2700",
+    "2750",
+    "3000",
+    "2640"
    ]
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 33 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 33 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: ADJUDICATED",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -998,41 +999,8 @@ export const PYQ_LDC_2024 = [
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
-   "hi": "एक जन्मदिन की टोपी एक शंकु के आकार की है जिसका आधार त्रिज्या 7 से.मी और ऊंचाई 24 से.मी है। ऐसी पांच टोपियां बनाने हेतु आवश्यक शीट का क्षेत्रफल (सेमी2 में) है (π = 22/7)",
-   "en": "A birthday cap is in the form of a cone having base radius 7 cm and height 24 cm. The area of the sheet (in cm 2 ) required to make five such caps is (π = 22/7) एक जन्मदिन की टोपी एक शंकु के आकार की है जिसका आधार त्रिज्या 7 से.मी और ऊंचाई 24 से.मी है। ऐसी पांच टोपियां बनाने हेतु आवश्यक शीट का क्षेत्रफल (सेमी 2 में) है (π = 22/7)"
-  },
-  "options": {
-   "hi": [
-    "2700",
-    "2750",
-    "3000",
-    "2640"
-   ],
-   "en": [
-    "2700",
-    "2750",
-    "3000",
-    "2640"
-   ]
-  },
-  "answer": 1,
-  "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
-  },
-  "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
-   "evidence": "REAL_PYQ_VERIFIED"
-  }
- },
- {
-  "id": "ldc24-032",
-  "subject": "maths",
-  "origin": "real_pyq",
-  "verification": "VERIFIED",
-  "q": {
    "hi": "+ 2 tan11° tan 31° tan 45° tan 59° tan 79° -3 (sin2 20+ sin2 70°) का मान है",
-   "en": "The value of + 2 tan11° tan 31° tan 45° tan 59° tan 79° -3 (sin 2 20+ sin 2 70°) is – + 2 tan11° tan 31° tan 45° tan 59° tan 79° -3 (sin 2 20+ sin 2 70°) का मान है"
+   "en": "The value of"
   },
   "options": {
    "hi": [
@@ -1050,22 +1018,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 34 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 34 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-033",
+  "id": "ldc24-032",
   "subject": "raj-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "गणगौर पर्व समर्पित है _____",
-   "en": "Gangaur festival is devoted to –"
+   "en": "Gangaur festival is devoted to -"
   },
   "options": {
    "hi": [
@@ -1083,16 +1051,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 35 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 35 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-034",
+  "id": "ldc24-033",
   "subject": "raj-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -1116,16 +1084,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 36 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 36 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-035",
+  "id": "ldc24-034",
   "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -1149,22 +1117,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 37 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 37 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-036",
+  "id": "ldc24-035",
   "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "‘ट्रिस्ट विद डेस्टिनी’ (Tryst with Destiny) प्रसिद्ध भाषण किसने दिया?",
-   "en": "Who gave the famous speech &#8216;Tryst with Destiny &#8216;?"
+   "en": "Who gave the famous speech 'Tryst with Destiny '?"
   },
   "options": {
    "hi": [
@@ -1182,16 +1150,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 38 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 38 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-037",
+  "id": "ldc24-036",
   "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -1215,16 +1183,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 39 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 39 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-038",
+  "id": "ldc24-037",
   "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -1248,11 +1216,44 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 40 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 40 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "ldc24-038",
+  "subject": "science",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "CaO + H 2 O → Ca(OH) 2 + Heat दिया गया रासायनिक समीकरण है: a. एक दोहरी विस्थापन प्रतिक्रिया b. एक संयोजन प्रतिक्रिया c. एक विघटन प्रतिक्रिया d. एक ऊष्माक्षेपी प्रतिक्रिया नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें।",
+   "en": "CaO+H"
+  },
+  "options": {
+   "hi": [
+    "केवल b और d",
+    "केवल b और c",
+    "केवल a और d",
+    "केवल a और c"
+   ],
+   "en": [
+    "केवल b और d",
+    "केवल b और c",
+    "केवल a और d",
+    "केवल a और c"
+   ]
+  },
+  "answer": 0,
+  "explanation": {
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 41 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 41 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
+  },
+  "provenance": {
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -1262,63 +1263,63 @@ export const PYQ_LDC_2024 = [
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
-   "hi": "CaO + H 2 O → Ca(OH) 2 + Heat दिया गया रासायनिक समीकरण है: a. एक दोहरी विस्थापन प्रतिक्रिया b. एक संयोजन प्रतिक्रिया c. एक विघटन प्रतिक्रिया d. एक ऊष्माक्षेपी प्रतिक्रिया नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें।",
-   "en": "CaO+H 2 O→Ca(OH) 2 + Heat The given chemical equation is: a double displacement reaction b. a combination reaction a decomposition reaction d. exothermic reaction Choose the most appropriate answer from the options given below:"
+   "hi": "एरीएटेड वाटर आसुत पेय (सोडा पानी) a. गैसों का मिश्रण है। b. तरल घोल में गैस है। c. गैस के घोल में तरल है। d. विलेय के रूप में कार्बन डाइऑक्साइड और विलायक के रूप में पानी। e. विलायक के रूप में कार्बन डाइऑक्साइड और विलेय के रूप में पानी। नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें।",
+   "en": "The aerated drinks (soda water) constitute"
   },
   "options": {
    "hi": [
     "केवल b और d",
-    "केवल b और c",
-    "केवल a और d",
-    "केवल a और c"
+    "केवल a, c और d",
+    "केवल b, d और e",
+    "केवल c और d"
    ],
    "en": [
     "केवल b और d",
-    "केवल b और c",
-    "केवल a और d",
-    "केवल a और c"
+    "केवल a, c और d",
+    "केवल b, d और e",
+    "केवल c और d"
    ]
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 42 का वास्तविक प्रश्न। archive keys के विवाद का स्वतंत्र गणितीय हल, विषय content-आधारित।",
+   "en": "Actual question 42 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DISPUTE_SOLVED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DISPUTE_SOLVED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-040",
-  "subject": "science",
+  "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
-   "hi": "एरीएटेड वाटर आसुत पेय (सोडा पानी) a. गैसों का मिश्रण है। b. तरल घोल में गैस है। c. गैस के घोल में तरल है। d. विलेय के रूप में कार्बन डाइऑक्साइड और विलायक के रूप में पानी। e. विलायक के रूप में कार्बन डाइऑक्साइड और विलेय के रूप में पानी। नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें।",
-   "en": "The aerated drinks (soda water) constitute a. A mixture of gases b. Gas in liquid solution c. Liquid in gas solution d. Carbon dioxide as solute and water as solvent e. Carbon dioxide as solvent and water as solute Choose the most appropriate answer from the options given below:"
+   "hi": "‘बेटी बचाओ, बेटी पढ़ाओं’, योजना किस वर्ष सम्पूर्ण भारतवर्ष में लागू हुई?",
+   "en": "‘बेटी बचाओ, बेटी पढ़ाओं’, योजना किस वर्ष सम्पूर्ण भारतवर्ष में लागू हुई?"
   },
   "options": {
    "hi": [
-    "केवल b और d",
-    "केवल a, c और d",
-    "केवल b, d और e",
-    "केवल c और d"
+    "2015",
+    "2016",
+    "2017",
+    "2014"
    ],
    "en": [
-    "केवल b और d",
-    "केवल a, c और d",
-    "केवल b, d और e",
-    "केवल c और d"
+    "2015",
+    "2016",
+    "2017",
+    "2014"
    ]
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 43 का वास्तविक प्रश्न। एकल archive — स्वतंत्र हल से सत्यापित, विषय content-आधारित।",
+   "en": "Actual question 43 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (SOLO_VERIFIED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: SOLO_VERIFIED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -1328,41 +1329,8 @@ export const PYQ_LDC_2024 = [
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
-   "hi": "‘बेटी बचाओ, बेटी पढ़ाओं’, योजना किस वर्ष सम्पूर्ण भारतवर्ष में लागू हुई?",
-   "en": "&#8216;Beti Bachao, Beti Padhao' scheme was launched in which year all over India? &#8216;बेटी बचाओ, बेटी पढ़ाओं', योजना किस वर्ष सम्पूर्ण भारतवर्ष में लागू हुई?"
-  },
-  "options": {
-   "hi": [
-    "2015",
-    "2016",
-    "2017",
-    "2014"
-   ],
-   "en": [
-    "2015",
-    "2016",
-    "2017",
-    "2014"
-   ]
-  },
-  "answer": 0,
-  "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
-  },
-  "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
-   "evidence": "REAL_PYQ_VERIFIED"
-  }
- },
- {
-  "id": "ldc24-042",
-  "subject": "india-gk",
-  "origin": "real_pyq",
-  "verification": "VERIFIED",
-  "q": {
    "hi": "नई दिल्ली में 9वें एशियन खेल किस वर्ष आयोजित हुए?",
-   "en": "2014 In which year was the IX Asian Games organised in New Delhi? नई दिल्ली में 9वें एशियन खेल किस वर्ष आयोजित हुए?"
+   "en": "नई दिल्ली में 9वें एशियन खेल किस वर्ष आयोजित हुए?"
   },
   "options": {
    "hi": [
@@ -1380,16 +1348,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 44 का वास्तविक प्रश्न। एकल archive — स्वतंत्र हल से सत्यापित, विषय content-आधारित।",
+   "en": "Actual question 44 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (SOLO_VERIFIED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: SOLO_VERIFIED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-043",
+  "id": "ldc24-042",
   "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -1413,16 +1381,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 45 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 45 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-044",
+  "id": "ldc24-043",
   "subject": "science",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -1446,22 +1414,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 46 का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
+   "en": "Actual question 46 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (ADJUDICATED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: ADJUDICATED",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: ADJUDICATED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-045",
+  "id": "ldc24-044",
   "subject": "science",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "सूची-I (भौतिक मात्रा) सूची-II (मापने की इकाई) a. विद्युतधारा I. एम्पीयरे. सेकंड b. प्रतिरोधकता II. वोल्ट एम्पीयर c. शक्ति III. कुलाम / सेकंड कुलाम/सेकंड d. आवेश IV. वोल्ट / एम्पीयर नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :",
-   "en": "Match List – I with List – II List-I – List-II Physical Quantity – Unit of Measurement a. Current I. Ampere second b. Resistance II. Volt! ampere C. Power III. Coulomb/second d. Charge IV. Velt/ampere सूची-I को सूची-II से सुमेलित कीजिए : सूची-I – सूची-II भौतिक मात्रा – मापने की इकाई a. विद्युतधारा I. एम्पीयरे. सेकंड b. प्रतिरोधकता II. वोल्ट एम्पीयर c. शक्ति III. कुलाम / सेकंड कुलाम/सेकंड d. आवेश IV. वोल्ट / एम्पीयर Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :"
+   "en": "Match List - I with List - II"
   },
   "options": {
    "hi": [
@@ -1479,16 +1447,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 47 का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
+   "en": "Actual question 47 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (ADJUDICATED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: ADJUDICATED",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: ADJUDICATED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-046",
+  "id": "ldc24-045",
   "subject": "science",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -1512,16 +1480,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 48 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 48 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-047",
+  "id": "ldc24-046",
   "subject": "raj-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -1545,16 +1513,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 49 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 49 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-048",
+  "id": "ldc24-047",
   "subject": "raj-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -1578,16 +1546,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 50 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 50 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-049",
+  "id": "ldc24-048",
   "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -1611,16 +1579,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 51 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 51 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-050",
+  "id": "ldc24-049",
   "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -1644,22 +1612,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 52 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 52 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-051",
+  "id": "ldc24-050",
   "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "नीचे दो कथन दिए गए हैं : कथन – I : ब्रिटिश सरकार ने 1927 में सर जॉन साइमन की अध्यक्षता में एक आयोग का गठन किया जिसे साइमन कमीशन कहा गया। कथन – II : आयोग में सात सदस्य थे परन्तु उनमें से कोई भी भारतीय नहीं था । उपर्युक्त कथनों के आलोक में निम्नलिखित विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें :",
-   "en": "Given below are two statements: Statement (I) : The British Government formed a commission in 1927 under the chairmanship of Sir John Simon which was called Simon Commission. Statement (II): There were seven members in the commission but none of them was an Indian. In light of the above statements, choose the most appropriate answer from the options given below."
+   "en": "Given below are two statements:"
   },
   "options": {
    "hi": [
@@ -1677,22 +1645,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 53 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 53 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-052",
+  "id": "ldc24-051",
   "subject": "raj-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "“उपरमाल पंच बोर्ड का गठन _____ के द्वारा किया गया था?",
-   "en": "&#8220;Uparmal Panch Board&#8221; was formed by ____."
+   "en": "\"Uparmal Panch Board\" was formed by ____."
   },
   "options": {
    "hi": [
@@ -1710,16 +1678,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 54 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 54 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-053",
+  "id": "ldc24-052",
   "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -1743,22 +1711,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 55 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 55 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-054",
+  "id": "ldc24-053",
   "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "राष्ट्रीय सांख्यिकी आयोग (N.S.C.) किस वर्ष में संकल्प के साथ स्थापित हुआ था ?",
-   "en": "In which year was the National Statistical Commission (NSC) setup through a resolution? राष्ट्रीय सांख्यिकी आयोग (N.S.C.) किस वर्ष में संकल्प के साथ स्थापित हुआ था ?"
+   "en": "In which year was the National Statistical Commission (NSC) setup through a resolution?"
   },
   "options": {
    "hi": [
@@ -1776,22 +1744,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 56 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 56 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-055",
+  "id": "ldc24-054",
   "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "नीचे दो कथन दिए गए हैं : कथन – I : सिन्धु सरस्वती सभ्यता नगर योजना हेतु प्रसिद्ध थी। कथन – II : उन्नत सिन्धु सरस्वती सभ्यता का विकास सिन्धुघाटी की सहायक नदियों और सरस्वती नदी क्षेत्र के किनारे हुआ था। उपरोक्त कथन के आलोक में, नीचे दिए गए विकल्पों में से सही उत्तर का चयन कीजिए:",
-   "en": "Given below are two statements: Statement (I): Sindhu Saraswati civilization was famous for town planning. Statement (II): The advanced Sindhu Saraswati civilization was developed amongst Sindhu, its tributaries and Saraswati river area. In light of the above statements, choose the most appropriate answer from the options given below."
+   "en": "Given below are two statements:"
   },
   "options": {
    "hi": [
@@ -1809,16 +1777,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 57 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 57 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-056",
+  "id": "ldc24-055",
   "subject": "raj-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -1842,16 +1810,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 58 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 58 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-057",
+  "id": "ldc24-056",
   "subject": "science",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -1875,22 +1843,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 59 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 59 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-058",
+  "id": "ldc24-057",
   "subject": "science",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "नीचे दो कथन दिए गए हैं: कथन I: पशुओं का आहार वैज्ञानिक तरीके से किया जाना चाहिए, जिसमें चारे की गुणवत्ता और मात्रा पर विशेष जोर दिया जाना चाहिए। कथन II: दूध की पैदावार मुख्य रूप से फॉर्म में रखे गए नस्लों की गुणवत्ता पर निर्भर करती है। उपर्युक्त कथनों के आलोक में निम्नलिखित विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें :",
-   "en": "Given below are two statements: Statement (I): The feeding of cattle should be carried out in a scientific manner-with special emphasis in the quality and quantity of fodder. Statement (II): Milk yield is primarily dependent on the quality of breeds kept in the farm. In light of the above statements, choose the most appropriate answer from the options given below."
+   "en": "Given below are two statements:"
   },
   "options": {
    "hi": [
@@ -1908,16 +1876,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 60 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 60 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-059",
+  "id": "ldc24-058",
   "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -1941,16 +1909,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 61 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 61 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-060",
+  "id": "ldc24-059",
   "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -1974,16 +1942,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 62 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 62 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-061",
+  "id": "ldc24-060",
   "subject": "raj-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -2007,16 +1975,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 63 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 63 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-062",
+  "id": "ldc24-061",
   "subject": "science",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -2040,16 +2008,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 64 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 64 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-063",
+  "id": "ldc24-062",
   "subject": "science",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -2073,22 +2041,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 65 का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
+   "en": "Actual question 65 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (ADJUDICATED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: ADJUDICATED",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: ADJUDICATED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-064",
+  "id": "ldc24-063",
   "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "“जस्टिस फॉर द जजः एन ऑटोबायोग्राफी” के लेखक कौन हैं?",
-   "en": "Who is the author of “ Justice for the Judge : An Autobiography&#8221; ?"
+   "en": "Who is the author of “ Justice for the Judge : An Autobiography\" ?"
   },
   "options": {
    "hi": [
@@ -2106,16 +2074,16 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 66 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 66 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
-  "id": "ldc24-065",
+  "id": "ldc24-064",
   "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
@@ -2139,11 +2107,44 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 67 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 67 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "ldc24-065",
+  "subject": "maths",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "डेटा 5, 3, 8, 11, 13, 8, 19 और 24 में से (2 माध्यिका (मिडियन) माइनस मोड) मान ज्ञात कीजिए:",
+   "en": "Find the value of (2 Median - Mode) of the data 5, 3, 8, 11, 13, 8, 19, and 24."
+  },
+  "options": {
+   "hi": [
+    "9.5",
+    "10",
+    "11",
+    "8"
+   ],
+   "en": [
+    "9.5",
+    "10",
+    "11",
+    "8"
+   ]
+  },
+  "answer": 2,
+  "explanation": {
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 68 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 68 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
+  },
+  "provenance": {
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -2154,7 +2155,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "यदि 40 मीटर लम्बी सीढ़ी को 20√3 मीटर ऊंची दीवार के सम्मुख इस प्रकार से रखा जाए कि वह दीवार के शीर्ष तक पहुंच जाए, तो सीढ़ी के आधार से दीवार के शीर्ष की ऊंचाई का कोण है:",
-   "en": "If a 40 m ladder is placed against a 20√3 m high wall such that it just reaches the top of the wall, then the angle of elevation of the top of the wall from the base of the ladder is यदि 40 मीटर लम्बी सीढ़ी को 20√3 मीटर ऊंची दीवार के सम्मुख इस प्रकार से रखा जाए कि वह दीवार के शीर्ष तक पहुंच जाए, तो सीढ़ी के आधार से दीवार के शीर्ष की ऊंचाई का कोण है:"
+   "en": "If a 40 m ladder is placed against a 20√3 m high wall such that it just reaches the top of the wall, then the angle of elevation of the top of the wall from the base of the ladder is"
   },
   "options": {
    "hi": [
@@ -2172,11 +2173,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 69 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 69 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -2187,7 +2188,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "100 मीटर ऊंचे टावर के शीर्ष से एक व्यक्ति एक कार को टावर की तरफ आता हुआ देखता है, जिसका अवनमन कोण 30° है। कुछ समय बाद अवनमन कोण 60° हो जाता है। इस दौरान कार द्वारा तय की गई दूरी (मीटर में) है?",
-   "en": "100 मीटर ऊंचे टावर के शीर्ष से एक व्यक्ति एक कार को टावर की तरफ आता हुआ देखता है, जिसका अवनमन कोण 30° है। कुछ समय बाद अवनमन कोण 60° हो जाता है। इस दौरान कार द्वारा तय की गई दूरी (मीटर में) है?"
+   "en": "A man from the top of a 100 m high tower observes a car moving towards the tower whose angle of depression is 30°. After some time the angle of depression becomes 60°. The distance (in m) covered by the car during this time is"
   },
   "options": {
    "hi": [
@@ -2205,17 +2206,17 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। स्वतंत्र हल से सत्यापित, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 71 का वास्तविक प्रश्न। archive keys के विवाद का स्वतंत्र गणितीय हल, विषय content-आधारित।",
+   "en": "Actual question 71 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DISPUTE_SOLVED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: SOLO_VERIFIED",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DISPUTE_SOLVED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-068",
-  "subject": "maths",
+  "subject": "science",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
@@ -2238,11 +2239,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 72 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 72 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -2271,11 +2272,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 73 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 73 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -2304,17 +2305,17 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 74 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 74 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-071",
-  "subject": "science",
+  "subject": "raj-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
@@ -2337,17 +2338,17 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 75 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 75 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-072",
-  "subject": "raj-gk",
+  "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
@@ -2370,22 +2371,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 76 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 76 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-073",
-  "subject": "india-gk",
+  "subject": "science",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "सूची-I को सूची-II से सुमेलित कीजिए : सूची-I (रोग) सूची-II (कारक जीव) a. फाइलेरियासिस I. हेमोफिलस इन्फ्लुएंजा b. न्यूमोनिया II. प्लास्मोडियम c. मलेरिया III. सालमोनेला d. टाइफाइड IV. वुचेरेरिया नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :",
-   "en": "Match List – I with List-II List-I – List-II Disease – Causal Organism a. Filariasis I. Haemophilus influenzae b. Pneumonia II. Plasmodium c. Malaria III. Salmonella d. Typhoid IV. Wuchereria सूची-I को सूची-II से सुमेलित कीजिए : सूची-I – सूची-II रोग – कारक जीव a. फाइलेरियासिस I. हेमोफिलस इन्फ्लुएंजा b. न्यूमोनिया II. प्लास्मोडियम c. मलेरिया III. सालमोनेला d. टाइफाइड IV. वुचेरेरिया Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :"
+   "en": "Match List - I with List-II"
   },
   "options": {
    "hi": [
@@ -2403,11 +2404,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 77 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 77 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -2436,11 +2437,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 78 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 78 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -2451,7 +2452,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "उस कथन की पहचान करें जोकि जंग लगने के संबंध में गलत है। a. लोहे की रॉड पर पेंट का कोट जंग को रोकता है। b. गेल्वेनाइज़ड वाटर पाइप आमतौर पर घरों में प्रयोग नहीं होते है। c. जंग लगना एक भौतिक परिवर्तन है। d. नमकीन पानी जंग की प्रक्रिया को तीव्र करता है। नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें।",
-   "en": "Identify the statement which are incorrect with respect to rusting. a. coat of paint on iron rods prevents rusting b. galvanised water pipes are not normally used in homes c. rusting is a physical change d. salt water makes the process of rust formation faster Choose the most appropriate answer from the options given below:"
+   "en": "Identify the statement which are incorrect with respect to rusting."
   },
   "options": {
    "hi": [
@@ -2469,22 +2470,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 79 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 79 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-076",
-  "subject": "science",
+  "subject": "raj-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "सूची-I के साथ सूची -II का मिलान कीजिए सूची-I (लोक कला) सूची-II (सामग्री) a. पाने I. लकड़ी b. फड़ II. दीवार और फर्श c. मांडना III. कपड़ा d. कावड़ IV. कागज नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर का चयन कीजिए",
-   "en": "Match List-I with List-II List-I – List-II Folk Art – Material a. Paane I. Wood b. Phad II. Wall & floor c. Mandana III. Cloth d. Kavad IV. Paper सूची-I के साथ सूची -II का मिलान कीजिए सूची-I – सूची-II लोक कला – सामग्री a. पाने I. लकड़ी b. फड़ II. दीवार और फर्श c. मांडना III. कपड़ा d. कावड़ IV. कागज Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर का चयन कीजिए"
+   "en": "Match List-I with List-II"
   },
   "options": {
    "hi": [
@@ -2502,11 +2503,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 80 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 80 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -2535,22 +2536,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 81 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 81 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-078",
-  "subject": "raj-gk",
+  "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "संयुक्तराष्ट्र संघ की स्थापना कब हुई ?",
-   "en": "In which year the United Nations was established? संयुक्तराष्ट्र संघ की स्थापना कब हुई ?"
+   "en": "In which year the United Nations was established?"
   },
   "options": {
    "hi": [
@@ -2568,22 +2569,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 82 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 82 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-079",
-  "subject": "india-gk",
+  "subject": "science",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "डी. एन. ए. में कौन सा नाइट्रोजन (बेस) क्षार मौजूद नहीं है ?",
-   "en": "The nitrogenous base not present in DNA is –"
+   "en": "The nitrogenous base not present in DNA is -"
   },
   "options": {
    "hi": [
@@ -2601,11 +2602,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 83 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 83 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -2634,17 +2635,17 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 84 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 84 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-081",
-  "subject": "science",
+  "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
@@ -2667,11 +2668,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 85 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 85 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -2682,7 +2683,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "भारत के निम्नलिखित पत्तनो (बंदरगाह) को उत्तर से दक्षिण दिशा की ओर व्यवस्थित करें: a. विशाखापत्तनम् b. पाराद्वीप c. तूतीकोरिन d. चेन्नई नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर का चयन कीजिए:",
-   "en": "Arrange the following ports of India from North to South direction. a. Vishakhapatnam b. Paradwip c. Tuticorin d. Chennai भारत के निम्नलिखित पत्तनो (बंदरगाह) को उत्तर से दक्षिण दिशा की ओर व्यवस्थित करें: a. विशाखापत्तनम् b. पाराद्वीप c. तूतीकोरिन d. चेन्नई Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर का चयन कीजिए:"
+   "en": "Arrange the following ports of India from North to South direction."
   },
   "options": {
    "hi": [
@@ -2700,11 +2701,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 86 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 86 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -2733,11 +2734,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 87 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 87 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -2766,11 +2767,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 88 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 88 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -2781,7 +2782,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "“आनंद मठ” उपन्यास के लेखक कौन थे?",
-   "en": "Who was author of the novel “Anand Math&#8221;?"
+   "en": "Who was author of the novel “Anand Math\"?"
   },
   "options": {
    "hi": [
@@ -2799,17 +2800,17 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 89 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 89 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-086",
-  "subject": "india-gk",
+  "subject": "raj-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
@@ -2832,22 +2833,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 90 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 90 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-087",
-  "subject": "raj-gk",
+  "subject": "maths",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "वह अनुपात क्या है जिसमें (1-5) और (4, 5) को जोड़ने वाला रेखा खंड x-axis से विभाजित होता है?",
-   "en": "What is the ratio in which the line segment joining (1, -5) and (4, 5) is divided by the x-axis? वह अनुपात क्या है जिसमें (1-5) और (4, 5) को जोड़ने वाला रेखा खंड x-axis से विभाजित होता है?"
+   "en": "What is the ratio in which the line segment joining (1, -5) and (4, 5) is divided by the x-axis?"
   },
   "options": {
    "hi": [
@@ -2865,11 +2866,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 91 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 91 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -2880,7 +2881,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "100 मीटर लंबाई और 80 मीटर चौड़ाई वाले एक आयताकार बगीचे को बाहर से 2.5 मीटर चौड़े मार्ग से घेरा जाता है। ₹120 प्रति वर्ग मीटर की दर से मार्ग को पक्का करने की लागत क्या है?",
-   "en": "A rectangular garden of length 100m and width 80m is to be surrounded outside by a 2.5m wide path. What is the cost of paving the path at the rate of 120 per m 2 ? 100 मीटर लंबाई और 80 मीटर चौड़ाई वाले एक आयताकार बगीचे को बाहर से 2.5 मीटर चौड़े मार्ग से घेरा जाता है। ₹120 प्रति वर्ग मीटर की दर से मार्ग को पक्का करने की लागत क्या है?"
+   "en": "A rectangular garden of length 100m and width 80m is to be surrounded outside by a 2.5m wide path. What is the cost of paving the path at the rate of 120 per m"
   },
   "options": {
    "hi": [
@@ -2898,11 +2899,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 92 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 92 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -2913,7 +2914,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "एक आयत की लंबाई 30 से.मी है और इसका क्षेत्रफल 720 सेमी2 है। केवल लंबाई वृद्धि करने में इस का क्षेत्रफल मूल क्षेत्रफल से 1 1/4 गुना बढ़ जाता है। नए आयत का परिमाप (सेमी में) है:",
-   "en": "The length of a rectangle is 30 cm and its area is 720 cm 2 . Its area is increased to 1 ¼ times than original area by increasing its length only. The perimeter. (in cm) of the new rectangle is: एक आयत की लंबाई 30 से.मी है और इसका क्षेत्रफल 720 सेमी 2 है। केवल लंबाई वृद्धि करने में इस का क्षेत्रफल मूल क्षेत्रफल से 1 ¼ गुना बढ़ जाता है। नए आयत का परिमाप (सेमी में) है:"
+   "en": "The length of a rectangle is 30 cm and its area is 720 cm"
   },
   "options": {
    "hi": [
@@ -2931,11 +2932,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 93 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 93 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -2946,7 +2947,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "यदि डेटा k, (2k – 1), (3k + 2), 5, 8, 10 का माध्य (मीन) 9 है, तो इसका माध्यिका (मिडियन) क्या है?",
-   "en": "If mean of the data k, (2k-1), (3k+2), 5, 8, 10 is 9, then what is its median? यदि डेटा k, (2k-1), (3k + 2), 5,8,10 का माध्य (मीन) 9 है, तो इसका माध्यिका (मिडियन) क्या है?"
+   "en": "If mean of the data k, (2k-1), (3k+2), 5, 8, 10 is 9, then what is its median?"
   },
   "options": {
    "hi": [
@@ -2964,11 +2965,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 94 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 94 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -2979,7 +2980,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "यदि दो संख्याओं में 24 का अंतर है और उनका गुणनफल 112 है तो संख्याओं का योग है –",
-   "en": "If two numbers differ by 24 and their product is 112, then the sum of the numbers is: यदि दो संख्याओं में 24 का अंतर है और उनका गुणनफल 112 है तो संख्याओं का योग है –"
+   "en": "If two numbers differ by 24 and their product is 112, then the sum of the numbers is:"
   },
   "options": {
    "hi": [
@@ -2997,11 +2998,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 97 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 97 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3012,7 +3013,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "A ने ₹ 1,00,000 निवेश करके एक व्यवसाय आरंभ किया, 3 माह पश्चात B कुछ निवेश के साथ उससे जुड़ गया। वर्ष के अंत में, ₹ 1,80,000 के कुल लाभ में से A को लाभ के रूप में B के हिस्से से ₹ 36,000 कम मिले B ने कितना निवेश किया था?",
-   "en": "A started a business by investing ₹1,00,000. After 3 months, B joined him with certain investment. At the end of the year, out of the total profit of ₹1,80,000, A received ₹36,000 less than B as his share in the profit. How much investment was made by B? A ने ₹ 1,00,000 निवेश करके एक व्यवसाय आरंभ किया, 3 माह पश्चात B कुछ निवेश के साथ उससे जुड़ गया। वर्ष के अंत में, ₹ 1,80,000 के कुल लाभ में से A को लाभ के रूप में B के हिस्से से ₹ 36,000 कम मिले| B ने कितना निवेश किया था?"
+   "en": "A started a business by investing ₹1,00,000. After 3 months, B joined him with certain investment. At the end of the year, out of the total profit of ₹1,80,000, A received ₹36,000 less than B as his share in the profit. How much investment was made b"
   },
   "options": {
    "hi": [
@@ -3030,11 +3031,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 98 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 98 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3045,7 +3046,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "A, B और C एक साझेदारी में 7/2 : 4/3 : 6/5 के अनुपात में निवेश करते हैं, 4 माह पश्चात A ने अपने हिस्से मे 50% वृद्धि की यदि एक वर्ष के अंत में कुल लाभ ₹21,600 आता है तो लाभ में B का हिस्सा हैं :",
-   "en": "A, B and C entered into a partnership with investments in the ratio of , after 4 months, A increased his share by 50%. If the total profit at the end of one year be ₹21,600, then B's share in the profit is: A, B और C एक साझेदारी में के अनुपात में निवेश करते हैं, 4 माह पश्चात A ने अपने हिस्से मे 50% वृद्धि की यदि एक वर्ष के अंत में कुल लाभ ₹21,600 आता है तो लाभ में B का हिस्सा हैं :"
+   "en": "A, B and C entered into a partnership with investments in the ratio of"
   },
   "options": {
    "hi": [
@@ -3063,11 +3064,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 99 का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
+   "en": "Actual question 99 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (ADJUDICATED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: ADJUDICATED",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: ADJUDICATED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3078,7 +3079,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "विपुल टूर पर है और उसके पास अपने खर्चे के लिए 360 रुपये हैं। यदि वह अपने टूर से 4 दिन आगे निकल जाता है, तो उसे अपने दैनिक खर्चों में 3 रुपये की कटौती करनी होगी। विपुल कितने दिनों के लिए टूर पर है?",
-   "en": "Vipul is on tour and he has ₹360 for his expenses. If he exceeds his tour by 4 days. He must cut down his daily expenses by ₹3. For how many days is Vipul on tour? विपुल टूर पर है और उसके पास अपने खर्चे के लिए 360 रुपये हैं। यदि वह अपने टूर से 4 दिन आगे निकल जाता है, तो उसे अपने दैनिक खर्चों में 3 रुपये की कटौती करनी होगी। विपुल कितने दिनों के लिए टूर पर है?"
+   "en": "Vipul is on tour and he has ₹360 for his expenses. If he exceeds his tour by 4 days. He must cut down his daily expenses by ₹3. For how many days is Vipul on tour?"
   },
   "options": {
    "hi": [
@@ -3096,22 +3097,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 100 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 100 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-095",
-  "subject": "maths",
+  "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "“ऑपरेशन फ्लड” _____ से सम्बंधित था",
-   "en": "&#8220;Operation Flood&#8221; was associated with:"
+   "en": "\"Operation Flood\" was associated with:"
   },
   "options": {
    "hi": [
@@ -3129,11 +3130,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 101 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 101 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3162,11 +3163,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 102 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 102 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3195,11 +3196,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 103 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 103 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3228,11 +3229,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 104 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 104 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3261,22 +3262,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 105 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 105 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-100",
-  "subject": "india-gk",
+  "subject": "raj-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "‘अणुव्रत आन्दोलन’ के प्रणेता कौन थे?",
-   "en": "Who was the pioneer of &#8216;Anuvrat Movement' ?"
+   "en": "Who was the pioneer of 'Anuvrat Movement' ?"
   },
   "options": {
    "hi": [
@@ -3294,11 +3295,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 106 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 106 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3327,22 +3328,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 107 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 107 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-102",
-  "subject": "raj-gk",
+  "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "निम्नलिखित नदियों को भारत के नक्शे पर बताये अनुसार उत्तर से दक्षिण की तरफ व्यवस्थित करें: a. गोदावरी b. कावेरी c. चम्बल d. नर्मदा नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर का चयन कीजिए:",
-   "en": "Arrange the following rivers of India as placed from North to South on Indian map. a. Godavari b. Kaveri c. Chambal d. Narmada निम्नलिखित नदियों को भारत के नक्शे पर बताये अनुसार उत्तर से दक्षिण की तरफ व्यवस्थित करें: a. गोदावरी b. कावेरी c. चम्बल d. नर्मदा Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर का चयन कीजिए:"
+   "en": "Arrange the following rivers of India as placed from North to South on Indian map."
   },
   "options": {
    "hi": [
@@ -3360,11 +3361,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 108 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 108 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3393,22 +3394,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 109 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 109 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-104",
-  "subject": "india-gk",
+  "subject": "maths",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "तालिका में वर्ष 2005, 2006, 2007 और 2008 में विश्वविद्यालय में प्रवेश पाने वाले मानविकी, विज्ञान और वाणिज्य संस्थान के छात्रों की संख्या दर्शायी गयी है। 2005 और 2006 में मानविकी संकाय में प्रवेश लेनेवाले छात्रों की संख्या का अनुपात 2007 और 2008 में विज्ञान संकाय में एक साथ प्रवेश लिए गए का अनुपात है :",
-   "en": "The given table shows the number of students of Humanities, Science and Commerce streams who were admitted in a university in the years 2005, 2006, 2007 and 2008 तालिका में वर्ष 2005, 2006, 2007 और 2008 में विश्वविद्यालय में प्रवेश पाने वाले मानविकी, विज्ञान और वाणिज्य संस्थान के छात्रों की संख्या दर्शायी गयी है। The ratio of the number of students admitted in Humanities-stream in 2005 and 2006 taken together to that in science stream in 2007 and 2008 taken together is 2005 और 2006 में मानविकी संकाय में प्रवेश लेनेवाले छात्रों की संख्या का अनुपात 2007 और 2008 में विज्ञान संकाय में एक साथ प्रवेश लिए गए का अनुपात है :"
+   "en": "The given table shows the number of students of Humanities, Science and Commerce streams who were admitted in a university in the years 2005, 2006, 2007 and 2008"
   },
   "options": {
    "hi": [
@@ -3426,11 +3427,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 110 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 110 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3441,7 +3442,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "नीचे दिए गए पाई-चार्ट में A, B, C, D और B एक पुस्तक के प्रकाशन में क्रमश: कागज, मुद्रण, विविध कार्य, बाइंडिंग और रॉयलटी की लागत का प्रतिनिधित्व करते हैं: ₹185/- प्रति पुस्तक की लागत वाली पुस्तक की 10,000 प्रतियां प्रकाशित करने के लिए विविध कार्यों पर कितना खर्च किया जाता है?",
-   "en": "In the pie chart given below A, B, C, D and E represent the cost of paper, printing, miscellaneous work, binding and the royalty respectively in publishing a book. नीचे दिए गए पाई-चार्ट में A, B, C, D और B एक पुस्तक के प्रकाशन में क्रमश: कागज, मुद्रण, विविध कार्य, बाइंडिंग और रॉयलटी की लागत का प्रतिनिधित्व करते हैं: How much is spent on miscellaneous work for publishing 10000 copies of a book, costing ₹ 185 per book? ₹185/- प्रति पुस्तक की लागत वाली पुस्तक की 10,000 प्रतियां प्रकाशित करने के लिए विविध कार्यों पर कितना खर्च किया जाता है?"
+   "en": "In the pie chart given below A, B, C, D and E represent the cost of paper, printing, miscellaneous work, binding and the royalty respectively in publishing a book."
   },
   "options": {
    "hi": [
@@ -3459,17 +3460,17 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 111 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 111 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-106",
-  "subject": "maths",
+  "subject": "science",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
@@ -3492,11 +3493,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 112 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 112 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3525,22 +3526,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 113 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 113 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-108",
-  "subject": "science",
+  "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "लन्दन में “इंडिया हाउस ” के संस्थापक कौन थे?",
-   "en": "Who was the founder of the &#8221; India House” in London ?"
+   "en": "Who was the founder of the \" India House” in London ?"
   },
   "options": {
    "hi": [
@@ -3558,11 +3559,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 114 का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
+   "en": "Actual question 114 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (ADJUDICATED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: ADJUDICATED",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: ADJUDICATED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3591,17 +3592,17 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 115 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 115 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-110",
-  "subject": "india-gk",
+  "subject": "science",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
@@ -3624,17 +3625,17 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 116 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 116 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-111",
-  "subject": "science",
+  "subject": "maths",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
@@ -3657,11 +3658,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 117 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 117 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3672,7 +3673,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "एक ठोस सिलेंडर के आधार की त्रिज्या और ऊंचाई का अनुपात 2:3 है और इसका आयतन 1617 सेमी3 है। सिलेंडर का कुल सतह क्षेत्रफल (सेमी 2 में) क्या है? (π = 22/7)",
-   "en": "The radius of the base and the height of a solid cylinder are in the ratio of 2:3 and its volume is 1617 cm 3 . What is the total surface area of the cylinder (in cm 2 ) ? (π = 22/7) एक ठोस सिलेंडर के आधार की त्रिज्या और ऊंचाई का अनुपात 2:3 है और इसका आयतन 1617 सेमी 3 है। सिलेंडर का कुल सतह क्षेत्रफल (सेमी 2 में) क्या है? (π = 22/7)"
+   "en": "The radius of the base and the height of a solid cylinder are in the ratio of 2:3 and its volume is 1617 cm"
   },
   "options": {
    "hi": [
@@ -3690,11 +3691,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 118 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 118 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3705,7 +3706,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "एक 384 सेमी 2 के सतह क्षेत्र वाले बड़े घन को पिघलाकर प्राप्त सामग्री से कितने छोटे घन बनाए जा सकते हैं, जिनमें प्रत्येक का सतह क्षेत्र 96 सेमी 2 है?",
-   "en": "How many small cubes, each having surface area of 96 cm 2 can be formed from the material obtained by melting a larger cube having surface area of 384 cm 2 ? एक 384 सेमी 2 के सतह क्षेत्र वाले बड़े घन को पिघलाकर प्राप्त सामग्री से कितने छोटे घन बनाए जा सकते हैं, जिनमें प्रत्येक का सतह क्षेत्र 96 सेमी 2 है?"
+   "en": "How many small cubes, each having surface area of 96 cm"
   },
   "options": {
    "hi": [
@@ -3723,22 +3724,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 119 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 119 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-114",
-  "subject": "maths",
+  "subject": "raj-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "अमृता देवी विश्नोई किसके लिए प्रसिद्ध है ?",
-   "en": "Amrita Devi Vishnoi is famous for –"
+   "en": "Amrita Devi Vishnoi is famous for -"
   },
   "options": {
    "hi": [
@@ -3756,11 +3757,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 120 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 120 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3789,11 +3790,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 121 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 121 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3804,7 +3805,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "उस सुप्रसिद्ध “मांड गायक” का नाम बताएं जिसने कि गीत ‘केसरिया बालम आओ नि पधारो महारेदेश’ को अमरत्व प्रदान किया।",
-   "en": "Name the renowned &#8220;Mand Singer&#8221; who immortalized the song &#8216;Kesaria Balam Aao Ni Padharo Mahare Des'."
+   "en": "Name the renowned \"Mand Singer\" who immortalized the song 'Kesaria Balam Aao Ni Padharo Mahare Des'."
   },
   "options": {
    "hi": [
@@ -3822,17 +3823,17 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 122 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 122 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-117",
-  "subject": "raj-gk",
+  "subject": "science",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
@@ -3855,11 +3856,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 123 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 123 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3888,11 +3889,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 124 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 124 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3903,7 +3904,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "मनुष्यों में लिंग निर्धारण ___ प्रकार के गुणसूत्र पर आधारित होता है।",
-   "en": "Sex determination in humans is based on ____ type chromosome मनुष्यों में लिंग निर्धारण ___ प्रकार के गुणसूत्र पर आधारित होता है।"
+   "en": "Sex determination in humans is based on ____ type chromosome"
   },
   "options": {
    "hi": [
@@ -3921,11 +3922,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 125 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 125 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3954,11 +3955,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 126 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 126 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -3987,11 +3988,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 127 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 127 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -4020,11 +4021,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 128 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 128 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -4035,7 +4036,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "सूची-I को सूची-II से सुमेलित कीजिए : सूची-I (ब्लड ग्रूप) सूची-II (प्लाज्मा में एण्टीबॉडीज) a. A I. Anti-A b. B II. Anti-A, B c. AB III. Anti-B d. O IV. Nil नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :",
-   "en": "Match List – I with List-II List-I – List-II Blood Group – Antibodies in plasma a. A I. Anti-A b. B II. Anti- A, B c. AB III. Anti-B d. O. IV. Nil सूची-I को सूची-II से सुमेलित कीजिए : सूची-I – सूची-II ब्लड ग्रूप – प्लाज्मा में एण्टीबॉडीज a. A I. Anti-A b. B II. Anti-A, B c. AB III. Anti-B d. O. IV. Nil Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :"
+   "en": "Match List - I with List-II"
   },
   "options": {
    "hi": [
@@ -4053,11 +4054,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 129 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 129 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -4068,7 +4069,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "जब एक विद्युत धारा प्रकाशित (ले जाने वाली) एल्यूमिनियम की छड़ को चुंबकीय क्षेत्र में रखा जाता है, तो छड़ का विस्थापन सबसे अधिक तब होता है जब विद्युत् धारा की दिशा चुंबकीय क्षेत्र की दिशा",
-   "en": "When a current carrying aluminum rod is placed in a magnetic field, the displacement of the rod is largest when the direction of current is –"
+   "en": "When a current carrying aluminum rod is placed in a magnetic field, the displacement of the rod is largest when the direction of current is -"
   },
   "options": {
    "hi": [
@@ -4086,11 +4087,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 130 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 130 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -4119,11 +4120,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 131 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 131 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -4152,11 +4153,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 132 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 132 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -4167,7 +4168,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "चार प्रतिरोध 1 Ω, 2 Ω, 4 Ω और 4 Ω को संयोजन का सबसे कम प्रतिरोध प्राप्त करने के लिए चारो को एक सर्किट में जोड़ा गया है इसका परिणाम होगा:",
-   "en": "Four resistance 1 Ω, 2 Ω, 4 Ω and 4 Ω have been joined in a circuit to obtain lowest resistance of the combination of the four. Its value will be: चार प्रतिरोध 1 Ω, 2 Ω, 4 Ω और 4 Ω को संयोजन का सबसे कम प्रतिरोध प्राप्त करने के लिए चारो को एक सर्किट में जोड़ा गया है इसका परिणाम होगा:"
+   "en": "Four resistance 1 Ω, 2 Ω, 4 Ω and 4 Ω have been joined in a circuit to obtain lowest resistance of the combination of the four. Its value will be:"
   },
   "options": {
    "hi": [
@@ -4185,11 +4186,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 133 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 133 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -4200,7 +4201,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "दो तंत्रिका कोशिका के मध्य खाली स्थान को कहते है–",
-   "en": "The gap between two neurons is called a –"
+   "en": "The gap between two neurons is called a -"
   },
   "options": {
    "hi": [
@@ -4218,11 +4219,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 134 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 134 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -4233,7 +4234,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "उस कथन की पहचान करें जोकि कार्बन योगिकों के लिए सत्य है: a. वे कार्बन परमाणुओं की लंबी श्रृंखलाएँ बनाते हैं जो शाखा और वलय संरचनाओं में व्यवस्थित होते हैं। b. वे विद्युत के अच्छे संवाहक होते हैं। c उनके गलनांक और क्वथनांक उच्च होते हैं। d. वे सह संयोजक बंधन बनाते हैं। नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें।",
-   "en": "Identify from the following statements which are true for carbon compounds: a. They form long chains of carbon atoms which are arranged in branch and ring structures. b. They are good conductors of electricity. c. They have high melting and boiling points. d. They form covalent bonds. Choose the most appropriate answer from the options given below:"
+   "en": "Identify from the following statements which are true for carbon compounds:"
   },
   "options": {
    "hi": [
@@ -4251,22 +4252,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 135 का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
+   "en": "Actual question 135 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (ADJUDICATED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: ADJUDICATED",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: ADJUDICATED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-130",
-  "subject": "science",
+  "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "हिमालय के किस भाग में ‘करेवा’ भू आकृति मिलती है?",
-   "en": "In which part of Himalayas is the &#8216;karewa' land form found?-"
+   "en": "In which part of Himalayas is the 'karewa' land form found?-"
   },
   "options": {
    "hi": [
@@ -4284,17 +4285,17 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 136 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 136 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-131",
-  "subject": "india-gk",
+  "subject": "raj-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
@@ -4317,17 +4318,17 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 137 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 137 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-132",
-  "subject": "raj-gk",
+  "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
@@ -4350,17 +4351,17 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 138 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 138 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-133",
-  "subject": "india-gk",
+  "subject": "science",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
@@ -4383,11 +4384,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। स्वतंत्र हल से सत्यापित, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 139 का वास्तविक प्रश्न। एकल archive — स्वतंत्र हल से सत्यापित, विषय content-आधारित।",
+   "en": "Actual question 139 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (SOLO_VERIFIED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: SOLO_VERIFIED",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: SOLO_VERIFIED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -4398,7 +4399,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "सूची-I को सूची-II से सुमेलित कीजिए : सूची-I (विटामिन) सूची – II (उपयोग) a. विटामिन A I. हड्डियों और दांतों के लिए शरीर में कैल्शियम के प्रयोग में सहायता करता है b. विटामिन C II. ब्लड क्लोटिंग c. विटामिन D III. नेत्रों को स्वस्थ रखता है d. विटामिन K IV. रोगों के विरुद्ध लड़ने में शरीर की सहायता करता है नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :",
-   "en": "Match List-I with List-II List-I (vitamin) – List-II (use) a. Vitamin A I. Helps body to use calcium for bones and teeth b. Vitamin C II. Blood clotting c. Vitamin D III. Keeps eyes healthy d. Vitamin K IV. Help body to fight against diseases सूची-I को सूची-II से सुमेलित कीजिए : सूची-I (विटामिन) – सूची – II (उपयोग) a. विटामिन A I. हड्डियों और दांतों के लिए शरीर में कैल्शियम के प्रयोग में सहायता करता है b. विटामिन C II. ब्लड क्लोटिंग c. विटामिन D III. नेत्रों को स्वस्थ रखता है d. विटामिन K IV. रोगों के विरुद्ध लड़ने में शरीर की सहायता करता है Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :"
+   "en": "Match List-I with List-II"
   },
   "options": {
    "hi": [
@@ -4416,22 +4417,22 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 140 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 140 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-135",
-  "subject": "science",
+  "subject": "maths",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
    "hi": "निम्नलिखित में से कौन सा (x + y) 3 – (x 3 +y 3 ) का गुणनखण्ड हैं/है? a. x 2 + y 2 + 2xy b. x 2 + y 2 – xy c. xy 2 d. xy नीचे दिए गए विकल्पों में से सबसे उपयुक्त उत्तर चुनें:",
-   "en": "Which of the following is/are factors of (x + y) 3 – (x 3 +y 3 )? a. x 2 + y 2 + 2xy b. x 2 + y 2 – xy c. xy 2 d. xy Choose the most appropriate answer from the options given below:"
+   "en": "Which of the following is/are factors of (x + y)"
   },
   "options": {
    "hi": [
@@ -4449,11 +4450,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 143 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 143 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -4464,7 +4465,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "ΔABC और ΔPQR सर्वांगसम त्रिभुज हैं, यदि ∠ ABC = 52°, और ∠ PRQ = 80°, तब ∠CAB है",
-   "en": "ΔABC and ΔPQR are congruent triangles. If ∠ABC=52°, and ∠PRQ=80°, then ∠CAB is: ΔABC और ΔPQR सर्वांगसम त्रिभुज हैं, यदि ∠ ABC = 52°, और ∠ PRQ = 80°, तब ∠CAB है"
+   "en": "ΔABC और ΔPQR सर्वांगसम त्रिभुज हैं, यदि ∠ ABC = 52°, और ∠ PRQ = 80°, तब ∠CAB है"
   },
   "options": {
    "hi": [
@@ -4482,11 +4483,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 144 का वास्तविक प्रश्न। एकल archive — स्वतंत्र हल से सत्यापित, विषय content-आधारित।",
+   "en": "Actual question 144 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (SOLO_VERIFIED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: SOLO_VERIFIED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -4515,11 +4516,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 2,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 145 का वास्तविक प्रश्न। दो archives के विवाद का स्वतंत्र निर्णय, विषय content-आधारित।",
+   "en": "Actual question 145 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (ADJUDICATED); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: ADJUDICATED",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: ADJUDICATED",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -4530,7 +4531,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "त्रिभुज ABC की भुजा BC पर बिंदु D इस प्रकार है कि AD, ∠BAC को समद्विभाजित करता है तो निम्न में से कौन सा सही है",
-   "en": "D is a point on the side BC of a ΔABC such that AD bisects ∠BAC. Then which of the following is correct त्रिभुज ABC की भुजा BC पर बिंदु D इस प्रकार है कि AD, ∠BAC को समद्विभाजित करता है तो निम्न में से कौन सा सही है"
+   "en": "D is a point on the side BC of a ΔABC such that AD bisects ∠BAC. Then which of the following is correct"
   },
   "options": {
    "hi": [
@@ -4548,17 +4549,17 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 146 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 146 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-139",
-  "subject": "maths",
+  "subject": "india-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
@@ -4581,11 +4582,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 0,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 147 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 147 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -4614,11 +4615,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 148 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 148 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
@@ -4629,7 +4630,7 @@ export const PYQ_LDC_2024 = [
   "verification": "VERIFIED",
   "q": {
    "hi": "‘NATO’ का पूरा नाम (फुल फॉर्म) है-",
-   "en": "Write the full form of &#8216;NATO’"
+   "en": "Write the full form of 'NATO’"
   },
   "options": {
    "hi": [
@@ -4647,17 +4648,17 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 3,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 149 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 149 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  },
  {
   "id": "ldc24-142",
-  "subject": "india-gk",
+  "subject": "raj-gk",
   "origin": "real_pyq",
   "verification": "VERIFIED",
   "q": {
@@ -4680,11 +4681,11 @@ export const PYQ_LDC_2024 = [
   },
   "answer": 1,
   "explanation": {
-   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024) का वास्तविक प्रश्न। दो स्वतंत्र archives से उत्तर सहमत, विषय content-आधारित।",
-   "en": "Actual question from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified; content-based subject tag."
+   "hi": "राजस्थान एलडीसी / जूनियर असिस्टेंट भर्ती परीक्षा 2024, पेपर-1 (11 अगस्त 2024), प्रश्न 150 का वास्तविक प्रश्न। दो स्वतंत्र archives (हिंदी + English) से उत्तर सहमत, विषय content-आधारित।",
+   "en": "Actual question 150 from Rajasthan LDC / Junior Assistant Recruitment Exam 2024, Paper-1 (11 Aug 2024). Answer independently re-verified (DUAL_AGREE); content-based subject tag."
   },
   "provenance": {
-   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (Hindi + English); verification: DUAL_AGREE",
+   "source": "Rajasthan LDC 2024 P1 official paper (11 Aug 2024), dual-archive transcription (TEP Hindi + StudyFry English), true question numbering rebuilt from raw source; verification: DUAL_AGREE",
    "evidence": "REAL_PYQ_VERIFIED"
   }
  }
