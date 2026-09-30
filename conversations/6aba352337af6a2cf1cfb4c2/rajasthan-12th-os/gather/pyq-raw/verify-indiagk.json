@@ -1,0 +1,1250 @@
+[
+  {
+    "i": 0,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 1,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 3,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 4,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 6,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 7,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 23,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 25,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 26,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 27,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 29,
+    "verdict": "UNSURE",
+    "corrected_ans": null,
+    "note": "Broken: Decision making criteria definitions missing from prompt",
+    "time_sensitive": false,
+    "broken": true
+  },
+  {
+    "i": 32,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 54,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 62,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": true,
+    "broken": false
+  },
+  {
+    "i": 63,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": true,
+    "broken": false
+  },
+  {
+    "i": 64,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 68,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 70,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 71,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 72,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 73,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 74,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 78,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 79,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 80,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 81,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 82,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 88,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 96,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 97,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 100,
+    "verdict": "UNSURE",
+    "corrected_ans": null,
+    "note": "Broken: Missing figure / diagram referenced in question",
+    "time_sensitive": false,
+    "broken": true
+  },
+  {
+    "i": 106,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 107,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 123,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 128,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 129,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 131,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 132,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 136,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 137,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": true,
+    "broken": false
+  },
+  {
+    "i": 140,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 141,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 142,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 143,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 144,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 150,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 159,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 166,
+    "verdict": "UNSURE",
+    "corrected_ans": null,
+    "note": "Broken: Missing figure / diagram referenced in question",
+    "time_sensitive": false,
+    "broken": true
+  },
+  {
+    "i": 168,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 174,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 196,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 198,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 202,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 203,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 205,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 207,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 210,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 213,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 215,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 217,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 219,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 222,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 223,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 226,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 228,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 230,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": true,
+    "broken": false
+  },
+  {
+    "i": 234,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 236,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 238,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 241,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 244,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 294,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 314,
+    "verdict": "UNSURE",
+    "corrected_ans": null,
+    "note": "Broken: Missing figure / diagram referenced in question",
+    "time_sensitive": false,
+    "broken": true
+  },
+  {
+    "i": 315,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 318,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 319,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 325,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 347,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 353,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": true,
+    "broken": false
+  },
+  {
+    "i": 356,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 357,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": true,
+    "broken": false
+  },
+  {
+    "i": 359,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 361,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 362,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": true,
+    "broken": false
+  },
+  {
+    "i": 369,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 370,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 371,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 373,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 375,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 378,
+    "verdict": "UNSURE",
+    "corrected_ans": null,
+    "note": "Broken: Truncated question / incomplete matching table",
+    "time_sensitive": false,
+    "broken": true
+  },
+  {
+    "i": 380,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 381,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 382,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 383,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 384,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 385,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 387,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 388,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 391,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 397,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 425,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 431,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 440,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 449,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 450,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 458,
+    "verdict": "UNSURE",
+    "corrected_ans": null,
+    "note": "Broken: Missing figure / diagram referenced in question",
+    "time_sensitive": false,
+    "broken": true
+  },
+  {
+    "i": 459,
+    "verdict": "UNSURE",
+    "corrected_ans": null,
+    "note": "Broken: Missing figure / diagram referenced in question",
+    "time_sensitive": false,
+    "broken": true
+  },
+  {
+    "i": 460,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 461,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 463,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 466,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 468,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 475,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 478,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 484,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 485,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 486,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 487,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 490,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 491,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 493,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 497,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 500,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 501,
+    "verdict": "UNSURE",
+    "corrected_ans": null,
+    "note": "Broken: Truncated question / incomplete matching table",
+    "time_sensitive": false,
+    "broken": true
+  },
+  {
+    "i": 502,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 503,
+    "verdict": "UNSURE",
+    "corrected_ans": null,
+    "note": "Broken: Truncated question / incomplete matching table",
+    "time_sensitive": false,
+    "broken": true
+  },
+  {
+    "i": 507,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 510,
+    "verdict": "UNSURE",
+    "corrected_ans": null,
+    "note": "Broken: Truncated question / incomplete matching table",
+    "time_sensitive": false,
+    "broken": true
+  },
+  {
+    "i": 513,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 514,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 517,
+    "verdict": "UNSURE",
+    "corrected_ans": null,
+    "note": "Broken: Truncated question / incomplete matching table",
+    "time_sensitive": false,
+    "broken": true
+  },
+  {
+    "i": 521,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": true,
+    "broken": false
+  },
+  {
+    "i": 525,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": true,
+    "broken": false
+  },
+  {
+    "i": 526,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 531,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 534,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 540,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 572,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 580,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 583,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 587,
+    "verdict": "UNSURE",
+    "corrected_ans": null,
+    "note": "Broken: Missing figure / diagram referenced in question",
+    "time_sensitive": false,
+    "broken": true
+  },
+  {
+    "i": 601,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 602,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 603,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 604,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 605,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 606,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 607,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 608,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 609,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 610,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 611,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 612,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 613,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  },
+  {
+    "i": 614,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": true,
+    "broken": false
+  },
+  {
+    "i": 617,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Independently verified correct answer",
+    "time_sensitive": false,
+    "broken": false
+  }
+]

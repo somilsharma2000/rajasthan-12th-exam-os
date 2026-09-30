@@ -1,0 +1,828 @@
+[
+  {
+    "i": 5,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 8,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 13,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 14,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 15,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 16,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 17,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 18,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 20,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 22,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 28,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 47,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 67,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 69,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 76,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 77,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 84,
+    "verdict": "WRONG",
+    "corrected_ans": 3,
+    "note": "Statement c is false as cursor movement is controlled by navigation/arrow keys, not 'central keys'.",
+    "broken": false
+  },
+  {
+    "i": 85,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 86,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 87,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 91,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 93,
+    "verdict": "WRONG",
+    "corrected_ans": 0,
+    "note": ".org top-level domain denotes an organizational domain (संगठनात्मक डोमेन), not educational.",
+    "broken": false
+  },
+  {
+    "i": 94,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 95,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 101,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 117,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 130,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 135,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 147,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 157,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 167,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 169,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 171,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 173,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 176,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 177,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 178,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 180,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 181,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 182,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 183,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 184,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 185,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 186,
+    "verdict": "WRONG",
+    "corrected_ans": 3,
+    "note": "Drum printer is a line printer, not an inkjet printer.",
+    "broken": false
+  },
+  {
+    "i": 187,
+    "verdict": "WRONG",
+    "corrected_ans": 1,
+    "note": "VDT stands for Video Display Terminal, not Video Display Tabular.",
+    "broken": false
+  },
+  {
+    "i": 188,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 189,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 190,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 193,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 195,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 197,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 211,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 216,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 233,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 235,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 237,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 239,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 240,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 303,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 316,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 317,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 322,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 323,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 324,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 327,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 328,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 329,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 330,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 331,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 332,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 333,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 336,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 338,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 341,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 342,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 344,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 346,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 351,
+    "verdict": "WRONG",
+    "corrected_ans": 1,
+    "note": "PMJJBY is for age group 18-50 years (not 18-70) and provides Rs 2 lakh life insurance cover (option 1).",
+    "broken": false
+  },
+  {
+    "i": 379,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 404,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 412,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 432,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 443,
+    "verdict": "UNSURE",
+    "corrected_ans": null,
+    "note": "garbled",
+    "broken": true
+  },
+  {
+    "i": 462,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 464,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 465,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 467,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 469,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 472,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 474,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 476,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 477,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 479,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 480,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 481,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 483,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 488,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 489,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 509,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 529,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 530,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 532,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 533,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 581,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 586,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 588,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 589,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 590,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 591,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 592,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 593,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 594,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 595,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 597,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 598,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 599,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 600,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  },
+  {
+    "i": 615,
+    "verdict": "CONFIRMED",
+    "corrected_ans": null,
+    "note": "Answer verified correct",
+    "broken": false
+  }
+]
