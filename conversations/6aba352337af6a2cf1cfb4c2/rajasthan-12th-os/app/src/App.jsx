@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect, useCallback, useRef } from 'react'
 import { EXAMS, SHELF } from './data/exams.js'
-import { QUESTIONS } from './data/questions.js'
-import { ALL_QUESTIONS, BANK_STATS } from './data/bank/index.js'
+import { BANK_META } from './data/bank-meta.js'
 import { HUBS, AS_OF } from './data/hubs.js'
 import { GLOSSARY } from './data/glossary.js'
 import { T } from './i18n.js'
@@ -58,6 +57,12 @@ export default function App() {
   const [resumable, setResumable] = useState(null)
   const [bms, setBms] = useState([])
   useEffect(() => { setBms(loadBM()) }, [])
+  // LAZY BANK: heavy question-bank chunk loads after first paint; shell renders from tiny BANK_META.
+  const bankRef = useRef(null)
+  const [bank, setBank] = useState(null)
+  const [bankLoading, setBankLoading] = useState(false)
+  const ensureBank = useCallback(() => { bankRef.current ||= import('./data/bank/index.js'); return bankRef.current }, [])
+  useEffect(() => { ensureBank().then(setBank) }, [ensureBank])
   const toggleBookmark = (id) => setBms(prev => {
     const next = prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]
     saveBM(next); return next
@@ -74,10 +79,11 @@ export default function App() {
     })
   }
   useEffect(() => { const a = loadActive(); if (a && a.ids && a.ids.length) setResumable(a) }, [])
-  const resumeMock = () => {
+  const resumeMock = async () => {
     const ex = EXAMS.find(e => e.id === resumable.examId)
     if (!ex) { clearActive(); setResumable(null); return }
-    const byId = Object.fromEntries(ALL_QUESTIONS.map(q => [q.id, q]))
+    const b = await ensureBank()
+    const byId = Object.fromEntries(b.ALL_QUESTIONS.map(q => [q.id, q]))
     const questions = resumable.ids.map(id => byId[id]).filter(Boolean)
     // Resume from REMAINING time: rebuild startedAt from saved active-elapsed so backgrounded/sleep time is not counted (fixes instant auto-submit)
     setSession({ examId: ex.id, mode: 'mock', lang, questions, answers: resumable.answers || {}, startedAt: Date.now() - (resumable.elapsedMs || 0), submitted: false, config: ex })
@@ -87,24 +93,28 @@ export default function App() {
   const toggleLang = () => setLang(l => l === 'hi' ? 'en' : 'hi')
 
   const ex_ok = q => q.verification !== 'UNVERIFIED' && !(q.provenance && q.provenance.evidence && String(q.provenance.evidence).includes('QUARANTINED'))
-  const availFor = ex => ALL_QUESTIONS.filter(q => ex_ok(q) && ex.subjects.includes(q.subject)).length
+  const availFor = ex => ex.subjects.reduce((n, s) => n + (BANK_META.bySubject[s] || 0), 0)
   const pyqFor = ex => {
     const pre = PYQ_PREFIX[ex.id]
-    return pre ? ALL_QUESTIONS.filter(q => ex_ok(q) && q.origin === 'real_pyq' && q.id.startsWith(pre)).length : 0
+    return pre ? (BANK_META.pyqByIdPrefix[pre] || 0) : 0
   }
-  const startSession = (mode, subject) => {
+  const startSession = async (mode, subject) => {
+    setBankLoading(true)
+    const b = await ensureBank()
+    setBankLoading(false)
     const target = mode === 'mock' ? exam.pattern.totalQuestions : 10
-    const pool = subject ? ALL_QUESTIONS.filter(q => ex_ok(q) && q.subject === subject) : ALL_QUESTIONS
+    const pool = subject ? b.ALL_QUESTIONS.filter(q => ex_ok(q) && q.subject === subject) : b.ALL_QUESTIONS
     const s = buildSession(exam, pool, mode, lang, target)
     if (!s.questions.length) return
     s.config = exam
     setSession(s); setScreen('player')
   }
 
-  const startErrSession = () => {
+  const startErrSession = async () => {
     const eb = Object.values(loadErr())
     if (!eb.length) return
-    const byId = Object.fromEntries(ALL_QUESTIONS.map(q => [q.id, q]))
+    const b = await ensureBank()
+    const byId = Object.fromEntries(b.ALL_QUESTIONS.map(q => [q.id, q]))
     const dueIds = eb.filter(e => e.nextReviewAt <= Date.now()).map(e => e.id)
     const ids = (dueIds.length ? dueIds : eb.map(e => e.id)).filter(id => byId[id] && ex_ok(byId[id]))
     if (!ids.length) return
@@ -119,7 +129,7 @@ export default function App() {
   if (screen === 'player') return <Player session={session} setSession={setSession} lang={lang} bookmarks={bms} toggleBookmark={toggleBookmark} onFinish={() => setScreen('result')} onExit={() => { setSession(null); setScreen('hub') }} />
   if (screen === 'result') return <Result session={session} lang={lang} onRecord={recordAttempt} onHome={() => { setSession(null); setScreen('home') }} onRetry={() => { const mode = session.mode; startSession(mode) }} />
   if (screen === 'progress') return <Progress lang={lang} onHome={() => setScreen('home')} />
-  if (screen === 'saved') return <Saved lang={lang} bookmarks={bms} toggleBookmark={toggleBookmark} onHome={() => setScreen('home')} />
+  if (screen === 'saved') return <Saved lang={lang} bookmarks={bms} toggleBookmark={toggleBookmark} bank={bank} onHome={() => setScreen('home')} />
   if (screen === 'errorbook') return <ErrorBook lang={lang} onHome={() => setScreen('home')} onPractice={startErrSession} />
   const avail = exam ? availFor(exam) : 0
   if (screen === 'setup') return (
@@ -142,13 +152,14 @@ export default function App() {
       <p className="sectionTitle">{lang === 'hi' ? 'विषय-वार अभ्यास' : 'Subject-wise practice'}</p>
       <div className="subjects">
         {exam.subjects.map(sub => {
-          const n = ALL_QUESTIONS.filter(q => ex_ok(q) && q.subject === sub).length
+          const n = BANK_META.bySubject[sub] || 0
           return <button key={sub} className="subBtn" onClick={() => startSession('practice', sub)}>
             <span>{SUBJECT_LABELS[sub] ? SUBJECT_LABELS[sub][lang] : sub}</span><em>{n}</em>
           </button>
         })}
       </div>
       <p className="note">{VERSION_NOTE[lang]}</p>
+      {bankLoading && <div className="note" style={{ textAlign: 'center' }}>{lang === 'hi' ? 'प्रश्न-बैंक लोड हो रहा है…' : 'Loading question bank…'}</div>}
       <div className="dock"><div className="row">
         <button className="ghost" onClick={() => setScreen('hub')}>{t.back}</button>
       </div></div>
@@ -238,7 +249,7 @@ export default function App() {
         })}
       </div>
       <p className="note">{VERSION_NOTE[lang]}</p>
-      <p className="note">{lang === 'hi' ? 'सत्यापित प्रश्न-बैंक' : 'Verified question bank'}: {BANK_STATS.shippable} ({lang === 'hi' ? 'असत्यापित कभी शामिल नहीं' : 'unverified never included'}) · {SHELF.map(s => s.name[lang]).join(' · ')}</p>
+      <p className="note">{lang === 'hi' ? 'सत्यापित प्रश्न-बैंक' : 'Verified question bank'}: {BANK_META.shippable} ({lang === 'hi' ? 'असत्यापित कभी शामिल नहीं' : 'unverified never included'}) · {SHELF.map(s => s.name[lang]).join(' · ')}</p>
     </div>
   )
 }
@@ -312,9 +323,9 @@ function Progress({ lang, onHome }) {
   )
 }
 
-function Saved({ lang, bookmarks, toggleBookmark, onHome }) {
+function Saved({ lang, bookmarks, toggleBookmark, bank, onHome }) {
   const t = T(lang)
-  const qs = ALL_QUESTIONS.filter(q => bookmarks.includes(q.id))
+  const qs = (bank ? bank.ALL_QUESTIONS : []).filter(q => bookmarks.includes(q.id))
   return (
     <div className="wrap">
       <TopBar title={lang === 'hi' ? 'सहेजे गए प्रश्न' : 'Saved Questions'} t={t} lang={lang} toggleLang={() => {}} onHome={onHome} />
