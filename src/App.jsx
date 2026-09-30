@@ -59,9 +59,10 @@ export default function App() {
   const toggleLang = () => setLang(l => l === 'hi' ? 'en' : 'hi')
 
   const availFor = ex => ALL_QUESTIONS.filter(q => q.verification !== 'UNVERIFIED' && !(q.provenance && q.provenance.evidence && String(q.provenance.evidence).includes('QUARANTINED')) && ex.subjects.includes(q.subject)).length
-  const startSession = (mode) => {
+  const startSession = (mode, subject) => {
     const target = mode === 'mock' ? exam.pattern.totalQuestions : 10
-    const s = buildSession(exam, ALL_QUESTIONS, mode, lang, target)
+    const pool = subject ? ALL_QUESTIONS.filter(q => ex_ok(q) && q.subject === subject) : ALL_QUESTIONS
+    const s = buildSession(exam, pool, mode, lang, target)
     if (!s.questions.length) return
     s.config = exam
     setSession(s); setScreen('player')
@@ -79,8 +80,15 @@ export default function App() {
         <h2>{exam.name[lang]}</h2>
         <PatternCard exam={exam} lang={lang} />
         <div className="row">
-          <button className="big primary" onClick={() => startSession('practice')}>{t.practice}</button>
+          <button className="big primary" onClick={() => startSession('practice')}>{t.practice} ({lang === 'hi' ? 'मिश्रित' : 'mixed'})</button>
           <button className="big" onClick={() => startSession('mock')}>{t.mock}</button>
+        </div>
+        <h3>{lang === 'hi' ? 'विषय-वार अभ्यास' : 'Subject-wise practice'}</h3>
+        <div className="palette">
+          {exam.subjects.map(sub => {
+            const n = ALL_QUESTIONS.filter(q => ex_ok(q) && q.subject === sub).length
+            return <button key={sub} className="pal" onClick={() => startSession('practice', sub)}>{SUBJECT_LABELS[sub] ? SUBJECT_LABELS[sub][lang] : sub} <small>({n})</small></button>
+          })}
         </div>
         <p className="note">{VERSION_NOTE[lang]}</p>
       </div>
