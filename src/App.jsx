@@ -320,7 +320,7 @@ function Player({ session, setSession, lang, bookmarks, toggleBookmark, onFinish
   )
 }
 
-function Result({ session, lang, onRecord }) {
+function Result({ session, lang, onRecord, onHome, onRetry }) {
   const t = T(lang)
   const r = scoreSession(session)
   const conf = session.config
@@ -340,7 +340,7 @@ function Result({ session, lang, onRecord }) {
   })
   return (
     <div className="wrap">
-      <div className="bar"><b style={{color:'#fff'}}>{t.result}</b><span /></div>
+      <div className="bar"><button className="ghost" onClick={onHome}>←</button><b style={{color:'#fff'}}>{t.result}</b><span /></div>
       <div className="card">
         <h2>{session.config.name[lang]}</h2>
         <p>{t.score}: <b>{Math.round(r.score * 100) / 100}</b> / {r.total * conf.pattern.marksPerQuestion}</p>
@@ -362,6 +362,10 @@ function Result({ session, lang, onRecord }) {
             </div>
           ))}
         </div>}
+        <div style={{display:'flex', gap:'10px', marginTop:'16px'}}>
+          <button className="big" onClick={onRetry} style={{flex:1}}>{lang === 'hi' ? 'फिर से करें' : 'Retry'}</button>
+          <button className="big primary" onClick={onHome} style={{flex:1}}>{lang === 'hi' ? 'होम पर जाएँ' : 'Go Home'}</button>
+        </div>
       </div>
     </div>
   )
