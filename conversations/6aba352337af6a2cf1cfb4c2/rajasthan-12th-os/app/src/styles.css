@@ -318,3 +318,14 @@ button:disabled { opacity: .35; pointer-events: none; }
 
 /* Dark scrollbar */
 ::-webkit-scrollbar { width: 6px; } ::-webkit-scrollbar-thumb { background: var(--elev); border-radius: 3px; }
+
+/* ---- Typing module ---- */
+.typeArea {
+  width: 100%; min-height: 26vh; resize: vertical;
+  background: var(--card); color: var(--tx); border: 1px solid var(--bd);
+  border-radius: 10px; padding: 14px; font-size: 15px; line-height: 2;
+  font-family: inherit; outline: none;
+}
+.typeArea:focus { border-color: var(--pr); }
+.subBtn.on { background: var(--pr); color: var(--pr-tx); border-color: var(--pr); }
+.subBtn.on em { color: var(--pr-tx); }

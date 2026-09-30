@@ -1,9 +1,10 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react'
+import React, { useState, useEffect, useCallback, useRef, lazy, Suspense } from 'react'
 import { EXAMS, SHELF } from './data/exams.js'
 import { BANK_META } from './data/bank-meta.js'
 import { HUBS, AS_OF } from './data/hubs.js'
 import { GLOSSARY } from './data/glossary.js'
 import { T } from './i18n.js'
+const TypingTest = lazy(() => import('./typing/TypingTest.jsx'))
 import { SUBJECT_LABELS, buildSession, scoreSession, fmtTime } from './engine.js'
 
 const VERSION_NOTE = { hi: 'डेटा स्नैपशॉट: 30 सितंबर 2026 · प्रश्न-बैंक पाइपलाइन से बढ़ रहा है', en: 'Data snapshot: 30 Sep 2026 · question bank growing via pipeline' }
@@ -130,6 +131,7 @@ export default function App() {
   if (screen === 'result') return <Result session={session} lang={lang} onRecord={recordAttempt} onHome={() => { setSession(null); setScreen('home') }} onRetry={() => { const mode = session.mode; startSession(mode) }} />
   if (screen === 'progress') return <Progress lang={lang} onHome={() => setScreen('home')} />
   if (screen === 'saved') return <Saved lang={lang} bookmarks={bms} toggleBookmark={toggleBookmark} bank={bank} onHome={() => setScreen('home')} />
+  if (screen === 'typing') return <Suspense fallback={<div className="wrap"><p className="note">{lang === 'hi' ? 'लोड हो रहा है…' : 'Loading…'}</p></div>}><TypingTest lang={lang} onHome={() => setScreen('home')} /></Suspense>
   if (screen === 'errorbook') return <ErrorBook lang={lang} onHome={() => setScreen('home')} onPractice={startErrSession} />
   const avail = exam ? availFor(exam) : 0
   if (screen === 'setup') return (
@@ -229,6 +231,7 @@ export default function App() {
         </div>
       )}
       <div className="tiles">
+        <button className="tile" onClick={() => setScreen('typing')}><span className="ic">⌨</span>{lang === 'hi' ? 'टाइपिंग' : 'Typing'}</button>
         <button className="tile" onClick={() => setScreen('glossary')}><span className="ic">📖</span>{lang === 'hi' ? 'शब्दावली' : 'Glossary'}</button>
         <button className="tile" onClick={() => setScreen('progress')}><span className="ic">📈</span>{lang === 'hi' ? 'प्रगति' : 'Progress'}</button>
         <button className="tile" onClick={() => setScreen('saved')}><span className="ic">★</span>{lang === 'hi' ? 'सहेजे' : 'Saved'} {bms.length ? `(${bms.length})` : ''}</button>
