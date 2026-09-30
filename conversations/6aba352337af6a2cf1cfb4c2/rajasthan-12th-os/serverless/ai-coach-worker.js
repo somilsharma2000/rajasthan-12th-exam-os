@@ -1,8 +1,13 @@
-// AI COACH PROXY — Cloudflare Worker
-// Deploy: wrangler deploy (requires: GEMINI_API_KEY secret, ALLOWED_ORIGIN var)
-// Security: the LLM key lives ONLY in this Worker's secrets. The static app
-// (GitHub Pages) never sees it. Per-IP daily cap enforced here as the real
-// cost control; the client cap (15/day) is UX only.
+// AI COACH PROXY + OWNER ADMIN API — Cloudflare Worker
+// Deploy: wrangler deploy (requires: GEMINI_API_KEY + ADMIN_TOKEN secrets, ALLOWED_ORIGIN var)
+// Security model:
+//  - The LLM key and the admin token live ONLY in this Worker's secrets. The static
+//    app (GitHub Pages) never sees them.
+//  - Backend/operational config (enable-coach, daily cap) is admin-only, gated by a
+//    Bearer token checked HERE on every request — never trusted from the client.
+//    This is why it's a real admin panel and not a client-side toggle.
+//  - Per-IP daily cap enforced BEFORE the upstream LLM call — a capped/disabled
+//    request can never burn a token, regardless of what the client sends.
 //
 // wrangler.toml:
 //   name = "rajasthan-exam-coach"
@@ -13,6 +18,13 @@
 //   DAILY_CAP = "15"
 //   MODEL = "gemini-2.0-flash"
 //   wrangler secret put GEMINI_API_KEY
+//   wrangler secret put ADMIN_TOKEN     (any long random string you choose — this is your admin password)
+//
+// Routes:
+//   POST /              -> student coach reply (unauthenticated, origin-gated, rate-limited)
+//   GET  /public/config -> { enabled }                         (no auth — safe to expose)
+//   GET  /admin/status  -> full status                          (Bearer ADMIN_TOKEN required)
+//   POST /admin/config  -> { enabled?, dailyCap? }              (Bearer ADMIN_TOKEN required)
 
 const SYSTEM_PROMPT = `You are the AI Coach of a Rajasthan government-exam preparation app (12th-level: LDC, CET, Stenographer, Police Constable, Forest Guard etc.).
 Rules:
@@ -23,20 +35,48 @@ Rules:
 5. Never invent exam facts, dates or rules. If unsure, say you are unsure.`
 
 const memCap = {}
+const memCfg = {} // KV-less fallback for admin config (per-isolate; KV is the durable store)
 
 export default {
   async fetch(request, env) {
+    const url = new URL(request.url)
     if (request.method === 'OPTIONS') return cors(new Response(null, { status: 204 }), env)
-    if (request.method !== 'POST') return cors(new Response('method not allowed', { status: 405 }), env)
+
+    if (url.pathname === '/public/config' && request.method === 'GET') {
+      return cors(json({ enabled: await getEnabled(env) }), env)
+    }
+    if (url.pathname === '/admin/status' && request.method === 'GET') {
+      if (!isAdmin(request, env)) return cors(json({ error: 'unauthorized' }, 401), env)
+      const today = new Date().toISOString().slice(0, 10)
+      const total = env.COACH_KV ? parseInt((await env.COACH_KV.get(`coach:total:${today}`)) || '0', 10) : (memCap.total?.[today] || 0)
+      return cors(json({
+        enabled: await getEnabled(env),
+        dailyCapPerStudent: await getCap(env),
+        requestsToday: total,
+        kvBound: !!env.COACH_KV,
+        model: env.MODEL || 'gemini-2.0-flash',
+      }), env)
+    }
+    if (url.pathname === '/admin/config' && request.method === 'POST') {
+      if (!isAdmin(request, env)) return cors(json({ error: 'unauthorized' }, 401), env)
+      let body; try { body = await request.json() } catch { return cors(json({ error: 'bad_json' }, 400), env) }
+      if (typeof body.enabled === 'boolean') await setKV(env, 'cfg:enabled', body.enabled ? '1' : '0')
+      if (typeof body.dailyCap === 'number' && body.dailyCap > 0 && body.dailyCap <= 200) await setKV(env, 'cfg:cap', String(Math.floor(body.dailyCap)))
+      return cors(json({ enabled: await getEnabled(env), dailyCapPerStudent: await getCap(env) }), env)
+    }
+
+    if (url.pathname !== '/' || request.method !== 'POST') return cors(new Response('not found', { status: 404 }), env)
 
     const origin = request.headers.get('Origin') || ''
     if (env.ALLOWED_ORIGIN && origin !== env.ALLOWED_ORIGIN) {
       return cors(new Response('forbidden', { status: 403 }), env)
     }
 
+    if (!(await getEnabled(env))) return cors(json({ error: 'coach_disabled' }, 503), env)
+
     const ip = request.headers.get('CF-Connecting-IP') || 'unknown'
     const today = new Date().toISOString().slice(0, 10)
-    const cap = parseInt(env.DAILY_CAP || '15', 10)
+    const cap = await getCap(env)
 
     // Per-IP daily counting (KV namespace: COACH_KV; falls back to per-isolate Map)
     let used = 0
@@ -45,6 +85,9 @@ export default {
       used = parseInt((await env.COACH_KV.get(key)) || '0', 10)
       if (used >= cap) return cors(json({ error: 'daily_limit' }), env)
       await env.COACH_KV.put(key, String(used + 1), { expirationTtl: 86400 })
+      const totalKey = `coach:total:${today}`
+      const total = parseInt((await env.COACH_KV.get(totalKey)) || '0', 10)
+      await env.COACH_KV.put(totalKey, String(total + 1), { expirationTtl: 86400 })
     } else {
       // Fallback cap (per-isolate Map): best-effort but NEVER unlimited
       memCap.count ||= {}
@@ -52,6 +95,7 @@ export default {
       used = memCap.count[k] || 0
       if (used >= cap) return cors(json({ error: 'daily_limit' }), env)
       memCap.count[k] = used + 1
+      memCap.total ||= {}; memCap.total[today] = (memCap.total[today] || 0) + 1
     }
 
     let body
@@ -95,12 +139,37 @@ Official explanation: ${context.explanation || '-'}`
   }
 }
 
+// --- admin config, KV-backed with in-memory fallback (never crashes without KV) ---
+async function getKV(env, key) {
+  if (env.COACH_KV) return await env.COACH_KV.get(key)
+  return memCfg[key] ?? null
+}
+async function setKV(env, key, val) {
+  if (env.COACH_KV) return await env.COACH_KV.put(key, val)
+  memCfg[key] = val
+}
+async function getEnabled(env) {
+  const v = await getKV(env, 'cfg:enabled')
+  return v === null ? true : v === '1' // default ON until an admin explicitly disables
+}
+async function getCap(env) {
+  const v = await getKV(env, 'cfg:cap')
+  const n = v === null ? parseInt(env.DAILY_CAP || '15', 10) : parseInt(v, 10)
+  return Number.isFinite(n) && n > 0 ? n : 15
+}
+function isAdmin(request, env) {
+  if (!env.ADMIN_TOKEN) return false // no token configured -> admin routes stay fully closed
+  const auth = request.headers.get('Authorization') || ''
+  const m = auth.match(/^Bearer (.+)$/)
+  return !!m && m[1] === env.ADMIN_TOKEN
+}
+
 function json(obj, status = 200) {
   return new Response(JSON.stringify(obj), { status, headers: { 'Content-Type': 'application/json' } })
 }
 function cors(res, env) {
   if (env.ALLOWED_ORIGIN) res.headers.set('Access-Control-Allow-Origin', env.ALLOWED_ORIGIN)
-  res.headers.set('Access-Control-Allow-Methods', 'POST, OPTIONS')
-  res.headers.set('Access-Control-Allow-Headers', 'Content-Type')
+  res.headers.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+  res.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization')
   return res
 }

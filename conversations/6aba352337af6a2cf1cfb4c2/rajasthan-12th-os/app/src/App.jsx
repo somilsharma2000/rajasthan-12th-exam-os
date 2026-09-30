@@ -6,6 +6,7 @@ import { GLOSSARY } from './data/glossary.js'
 import { T } from './i18n.js'
 const TypingTest = lazy(() => import('./typing/TypingTest.jsx'))
 const Coach = lazy(() => import('./coach/Coach.jsx'))
+const OwnerConsole = lazy(() => import('./coach/OwnerConsole.jsx'))
 import { SUBJECT_LABELS, buildSession, scoreSession, fmtTime } from './engine.js'
 
 const VERSION_NOTE = { hi: 'डेटा स्नैपशॉट: 30 सितंबर 2026 · प्रश्न-बैंक पाइपलाइन से बढ़ रहा है', en: 'Data snapshot: 30 Sep 2026 · question bank growing via pipeline' }
@@ -77,6 +78,8 @@ export default function App() {
   const [appToast, setAppToast] = useState('')
   const [onboardDone, setOnboardDone] = useState(() => { try { return !!localStorage.getItem('rjx-onboard') } catch { return true } }) // hooks-rule: must run before any conditional return
   const appToastTimer = useRef(null)
+  const ownerTapAt = useRef(0)
+  const ownerTapCount = useRef(0)
   const toastApp = (msg) => { setAppToast(msg); clearTimeout(appToastTimer.current); appToastTimer.current = setTimeout(() => setAppToast(''), 3000) }
   const [bms, setBms] = useState([])
   useEffect(() => { setBms(loadBM()) }, [])
@@ -190,6 +193,7 @@ export default function App() {
   if (screen === 'typing') return <Suspense fallback={<div className="wrap"><p className="note">{lang === 'hi' ? 'लोड हो रहा है…' : 'Loading…'}</p></div>}><TypingTest lang={lang} onHome={() => setScreen('home')} /></Suspense>
   if (screen === 'errorbook') return <ErrorBook lang={lang} onHome={() => setScreen('home')} onPractice={startErrSession} />
   const avail = exam ? availFor(exam) : 0
+  if (screen === 'owner') return <Suspense fallback={<div className="wrap"><p className="note">…</p></div>}><OwnerConsole lang={lang} onHome={() => setScreen('home')} toggleLang={toggleLang} t={t} /></Suspense>
   if (screen === 'setup') return (
     <div className="wrap">
       <TopBar title={exam.name[lang]} t={t} lang={lang} toggleLang={toggleLang} onHome={() => setScreen('home')} />
@@ -320,7 +324,13 @@ export default function App() {
           </button>
         })}
       </div>
-      <p className="note">{VERSION_NOTE[lang]}</p>
+      <p className="note" style={{ cursor: 'default', userSelect: 'none' }} onClick={() => {
+        // Hidden Owner Console entry: 5 quick taps on the data line. Students never land here by accident.
+        const now = Date.now()
+        if (now - (ownerTapAt.current || 0) > 3000) { ownerTapAt.current = now; ownerTapCount.current = 1; return }
+        ownerTapCount.current += 1
+        if (ownerTapCount.current >= 5) { ownerTapCount.current = 0; setScreen('owner') }
+      }} aria-hidden="true">{VERSION_NOTE[lang]}</p>
       <p className="note">{lang === 'hi' ? 'सत्यापित प्रश्न-बैंक' : 'Verified question bank'}: {BANK_META.shippable} ({lang === 'hi' ? 'असत्यापित कभी शामिल नहीं' : 'unverified never included'}) · {SHELF.map(s => s.name[lang]).join(' · ')}</p>
       {appToast && <div className="toast" role="status" aria-live="polite">{appToast}</div>}
     </div>
@@ -348,7 +358,7 @@ function useTrap(open) {
   return ref
 }
 
-function TopBar({ title, t, lang, toggleLang, onHome }) {
+export function TopBar({ title, t, lang, toggleLang, onHome }) {
   return <div className="bar">
     {onHome ? <button className="iconBtn" onClick={onHome}>←</button> : <span />}
     <b>{title}</b>
@@ -388,7 +398,7 @@ function ErrorBook({ lang, onHome, onPractice }) {
 function Progress({ lang, onHome }) {
   const [confirmWipe, setConfirmWipe] = useState(false)
   const wipeAll = () => {
-    try { ['examos-history', 'examos-bookmarks', 'examos-error-book', 'examos-active-mock', 'examos-typing-history', 'examos-coach-usage', 'examos-errlog'].forEach(k => localStorage.removeItem(k)) } catch {}
+    try { ['examos-history', 'examos-bookmarks', 'examos-error-book', 'examos-active-mock', 'examos-typing-history', 'examos-coach-usage', 'examos-coach-endpoint', 'examos-errlog'].forEach(k => localStorage.removeItem(k)) } catch {}
     location.reload()
   }
   const hist = loadHist()

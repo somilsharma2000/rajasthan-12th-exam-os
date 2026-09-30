@@ -41,7 +41,10 @@ Worker is production-ready: `serverless/ai-coach-worker.js` (hardened + 14 unit 
 1. `cd serverless && wrangler login`
 2. `wrangler kv namespace create COACH_KV` → paste the printed id into wrangler.toml (uncomment the `[[kv_namespaces]]` block)
 3. `wrangler secret put GEMINI_API_KEY` (Google AI Studio key)
-4. `wrangler deploy` → note the workers.dev URL
-5. Tell the agent the URL → agent sets `VITE_COACH_URL` in `app/.env.production`, rebuilds, redeploys gh-pages. Until then the Coach panel shows the honest setup state (paste URL or hidden) — never fake replies.
+4. `wrangler secret put ADMIN_TOKEN` (any long random string — this is your admin password)
+5. `wrangler deploy` → note the workers.dev URL
+6. Tell the agent the URL → agent sets `VITE_COACH_URL` in `app/.env.production`, rebuilds, redeploys gh-pages. Until then the Coach panel shows an honest "not available" message — never a setup form, never fake replies.
+
+**Admin panel (Owner Console)**: open the app, tap the footer "डेटा स्नैपशॉट" line 5x quickly → Owner Console. Paste your ADMIN_TOKEN (session-only, never saved to disk). From there: enable/disable the AI Coach for all students, change the per-student daily cap, see today's total request count — live, no redeploy. All admin actions are verified server-side by the Worker (wrong token = 401, and with no ADMIN_TOKEN configured the admin routes stay fully closed).
 
 Security model: LLM key lives ONLY in Worker secrets. Per-IP daily cap (KV, 15/day default) enforced BEFORE upstream call — a capped request cannot burn tokens. History bounded to last 8 messages, inputs sliced, 20s upstream timeout. Foreign origins 403.

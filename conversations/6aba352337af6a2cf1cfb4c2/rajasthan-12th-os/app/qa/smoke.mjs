@@ -63,6 +63,37 @@ try {
   await p.reload({ waitUntil: 'networkidle0' }); await new Promise(r => setTimeout(r, 700))
   ok('ghost resume state silently cleaned', await p.evaluate(() => !!document.querySelector('.examCard') && !/जारी रखें|Resume/.test(document.body.textContent)))
 
+  // coach panel: student NEVER sees backend config (no URL input, no setup form)
+  await p.evaluate(() => { [...document.querySelectorAll('button')].find(x => /स्टेनोग्राफर/.test(x.textContent))?.click() })
+  await new Promise(r => setTimeout(r, 500))
+  await p.evaluate(() => { [...document.querySelectorAll('button')].find(x => /शुरू करें/.test(x.textContent))?.click() })
+  await new Promise(r => setTimeout(r, 500))
+  await p.evaluate(() => { [...document.querySelectorAll('button')].find(x => /अभ्यास मोड/.test(x.textContent))?.click() })
+  await new Promise(r => setTimeout(r, 1200))
+  await p.keyboard.press('1'); await new Promise(r => setTimeout(r, 500)) // answer → explanation view exposes the coach button
+  await p.evaluate(() => { [...document.querySelectorAll('button')].find(x => /AI कोच से पूछें|Ask AI Coach/.test(x.textContent))?.click() })
+  await new Promise(r => setTimeout(r, 800))
+  ok('coach panel shows NO backend config to students', await p.evaluate(() => {
+    const sheet = document.querySelector('.paletteSheet'); if (!sheet) return false
+    const hasUrlInput = !!sheet.querySelector('input[placeholder*="workers.dev"], input[placeholder*="https://"]')
+    const hasSetupCopy = /serverless|ai-coach-worker|proxy/i.test(sheet.textContent)
+    return !hasUrlInput && !hasSetupCopy
+  }))
+  await p.evaluate(() => { [...document.querySelectorAll('.paletteSheet .iconBtn')].find(x => /बंद|Close/.test(x.getAttribute('aria-label') || ''))?.click() })
+  await new Promise(r => setTimeout(r, 400))
+
+  // hidden Owner Console: 5 quick taps on the footer data line opens it; 2 taps must NOT
+  await p.reload({ waitUntil: 'networkidle0' }); await new Promise(r => setTimeout(r, 700)) // back to home (practice session isn't persisted; reload lands clean on home)
+  await p.evaluate(() => { const note = [...document.querySelectorAll('p.note')].find(x => /स्नैपशॉट|snapshot/i.test(x.textContent)); if (!note) return false; for (let i = 0; i < 2; i++) note.click() })
+  await new Promise(r => setTimeout(r, 400))
+  ok('2 footer taps do NOT open Owner Console', await p.evaluate(() => !document.body.textContent.includes('एडमिन टोकन डालें') && !document.body.textContent.includes('Enter admin token')))
+  await p.evaluate(() => { const note = [...document.querySelectorAll('p.note')].find(x => /स्नैपशॉट|snapshot/i.test(x.textContent)); if (!note) return false; for (let i = 0; i < 5; i++) note.click() })
+  await new Promise(r => setTimeout(r, 600))
+  ok('5 quick footer taps open Owner Console (honest state)', await p.evaluate(() =>
+    document.body.textContent.includes('एडमिन टोकन डालें') || document.body.textContent.includes('Enter admin token')
+    || document.body.textContent.includes('बैकएंड वर्कर अभी') || document.body.textContent.includes('No backend worker connected')))
+  ok('Owner Console has no admin-token in localStorage (session-only)', await p.evaluate(() => !Object.keys(localStorage).includes('rjx-owner-token')))
+
   ok('zero page errors', errors.length === 0)
   if (errors.length) console.log('errors:', errors)
   await b.close()

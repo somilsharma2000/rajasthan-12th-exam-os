@@ -1,23 +1,22 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { T } from '../i18n.js'
 
-const LS_EP = 'examos-coach-endpoint'
 const LS_USAGE = 'examos-coach-usage'
-const DAILY_CAP = 15
+const LOCAL_DAILY_CAP = 15 // client-side UX cap only; the worker's own cap is the real cost control
 
 // AI COACH — doubt-resolution panel. Security model: the LLM API key NEVER lives
 // in this client. The client talks to a serverless proxy (Cloudflare Worker in
 // serverless/ai-coach-worker.js) that holds the key, enforces per-student daily
-// caps, and scopes answers to the current question. Until the proxy endpoint is
-// configured, the panel shows an honest setup state — no fake replies.
+// caps, and scopes answers to the current question. The endpoint is baked in at
+// build time (VITE_COACH_URL) once the worker is deployed — students never see
+// or configure any backend detail. If the endpoint isn't set, or the owner has
+// disabled the coach from the Owner Console, this panel shows a plain,
+// non-technical "unavailable" message — never a setup form, never a fake reply.
 export default function Coach({ lang, context, onClose }) {
   const t = T(lang)
-  // Endpoint priority: owner-pasted override > build-time baked URL (VITE_COACH_URL, set after the
-  // Cloudflare worker is deployed) > empty. Empty = honest setup state, never fake replies.
-  const [endpoint, setEndpoint] = useState(() => {
-    try { return localStorage.getItem(LS_EP) || (import.meta.env.VITE_COACH_URL || '') } catch { return (import.meta.env.VITE_COACH_URL || '') }
-  })
-  const [draftEp, setDraftEp] = useState('')
+  const endpoint = import.meta.env.VITE_COACH_URL || ''
+  const [remoteEnabled, setRemoteEnabled] = useState(true) // optimistic; corrected by /public/config below
+  const [checkedRemote, setCheckedRemote] = useState(false)
   const [msgs, setMsgs] = useState([])
   const [input, setInput] = useState('')
   const [busy, setBusy] = useState(false)
@@ -33,6 +32,18 @@ export default function Coach({ lang, context, onClose }) {
     try { localStorage.setItem(LS_USAGE, JSON.stringify(u)) } catch {}
     setUsed(u.count)
   }
+
+  // Check the (unauthenticated, safe-to-expose) public flag so a coach the owner
+  // has paused from the Owner Console shows the same honest state immediately.
+  useEffect(() => {
+    if (!endpoint) { setCheckedRemote(true); return }
+    let done = false
+    fetch(endpoint.replace(/\/$/, '') + '/public/config').then(r => r.json()).then(d => {
+      if (done) return
+      setRemoteEnabled(d?.enabled !== false)
+    }).catch(() => { /* network hiccup: stay optimistic, the real gate is server-side anyway */ }).finally(() => { if (!done) setCheckedRemote(true) })
+    return () => { done = true }
+  }, [endpoint])
 
   useEffect(() => { boxRef.current?.scrollTo(0, 1e6) }, [msgs.length, busy])
   useEffect(() => {
@@ -56,8 +67,10 @@ export default function Coach({ lang, context, onClose }) {
     return () => el.removeEventListener('keydown', onKey)
   }, [])
 
+  const available = !!endpoint && remoteEnabled
+
   const send = async () => {
-    const text = input.trim(); if (!text || busy || used >= DAILY_CAP) return
+    const text = input.trim(); if (!text || busy || used >= LOCAL_DAILY_CAP || !available) return
     setInput(''); setErr('')
     const next = [...msgs, { role: 'user', text }]
     setMsgs(next); setBusy(true)
@@ -66,6 +79,7 @@ export default function Coach({ lang, context, onClose }) {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ context, history: next.slice(-6), lang })
       })
+      if (r.status === 503) { setRemoteEnabled(false); throw new Error('disabled') }
       if (!r.ok) throw new Error('HTTP ' + r.status)
       const data = await r.json()
       if (!data.reply) throw new Error('no reply')
@@ -83,19 +97,17 @@ export default function Coach({ lang, context, onClose }) {
     <div className="paletteOverlay" onClick={onClose}>
       <div className="paletteSheet" ref={panelRef} onClick={e => e.stopPropagation()} style={{ maxWidth: 640 }}>
         <div className="row" style={{ justifyContent: 'space-between', alignItems: 'center' }}>
-          <h3 style={{ margin: 0 }}>{hi ? 'AI कोच' : 'AI Coach'} <span className="note" style={{ display: 'inline' }}>· {used}/{DAILY_CAP}</span></h3>
-          <button className="iconBtn" onClick={onClose}>✕</button>
+          <h3 style={{ margin: 0 }}>{hi ? 'AI कोच' : 'AI Coach'} {available && <span className="note" style={{ display: 'inline' }}>· {used}/{LOCAL_DAILY_CAP}</span>}</h3>
+          <button className="iconBtn" onClick={onClose} aria-label={hi ? 'बंद करें' : 'Close'}>✕</button>
         </div>
 
-        {!endpoint ? (
+        {!checkedRemote ? (
+          <p className="note" style={{ marginTop: 14 }}>{hi ? 'लोड हो रहा है…' : 'Loading…'}</p>
+        ) : !available ? (
           <div style={{ marginTop: 14 }}>
             <p className="note">{hi
-              ? 'कोच अभी सेट नहीं है। यह ऐप बिना बैकएंड के चलता है, इसलिए AI की API key सुरक्षित रखने के लिए एक छोटा सर्वर-प्रॉक्सी चाहिए (कोड रिपो में serverless/ai-coach-worker.js)। प्रॉक्सी का URL यहाँ डालें:'
-              : 'Coach not configured. This app runs without a backend, so the AI key must stay behind a serverless proxy (code: serverless/ai-coach-worker.js in the repo). Paste your proxy URL:'}</p>
-            <div className="row">
-              <input className="coachInput" placeholder="https://…workers.dev" value={draftEp} onChange={e => setDraftEp(e.target.value)} />
-              <button className="primary" onClick={() => { if (draftEp.startsWith('https://')) { try { localStorage.setItem(LS_EP, draftEp); setEndpoint(draftEp) } catch {} } }}>{hi ? 'सेव' : 'Save'}</button>
-            </div>
+              ? 'AI कोच अभी उपलब्ध नहीं है। कृपया थोड़ी देर बाद कोशिश करें।'
+              : 'AI Coach isn\u2019t available right now. Please check back soon.'}</p>
           </div>
         ) : (
           <>
@@ -109,10 +121,10 @@ export default function Coach({ lang, context, onClose }) {
               <input className="coachInput" value={input} onChange={e => setInput(e.target.value)}
                 onKeyDown={e => { if (e.key === 'Enter') send() }}
                 placeholder={hi ? 'अपना सवाल लिखें…' : 'Type your question…'}
-                disabled={used >= DAILY_CAP} />
-              <button className="primary" onClick={send} disabled={busy || used >= DAILY_CAP || !input.trim()}>{hi ? 'भेजें' : 'Send'}</button>
+                disabled={used >= LOCAL_DAILY_CAP} />
+              <button className="primary" onClick={send} disabled={busy || used >= LOCAL_DAILY_CAP || !input.trim()}>{hi ? 'भेजें' : 'Send'}</button>
             </div>
-            {used >= DAILY_CAP && <p className="note" style={{ color: 'var(--danger)' }}>{hi ? 'आज की सीमा पूरी हो गई। कल फिर पूछें।' : 'Daily limit reached. Come back tomorrow.'}</p>}
+            {used >= LOCAL_DAILY_CAP && <p className="note" style={{ color: 'var(--danger)' }}>{hi ? 'आज की सीमा पूरी हो गई। कल फिर पूछें।' : 'Daily limit reached. Come back tomorrow.'}</p>}
           </>
         )}
       </div>

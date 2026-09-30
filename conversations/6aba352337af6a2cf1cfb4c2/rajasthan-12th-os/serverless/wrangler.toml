@@ -11,8 +11,9 @@ MODEL = "gemini-2.0-flash"
 #   1. wrangler login
 #   2. wrangler kv namespace create COACH_KV   -> put the printed id below, uncomment
 #   3. wrangler secret put GEMINI_API_KEY       (paste Google AI Studio key)
-#   4. wrangler deploy
-#   5. Send Somil the deployed URL -> set VITE_COACH_URL in app/.env.production -> rebuild app
+#   4. wrangler secret put ADMIN_TOKEN          (any long random string — this opens the Owner Console)
+#   5. wrangler deploy
+#   6. Send the agent the deployed URL -> VITE_COACH_URL baked into the app -> rebuild -> redeploy
 # [[kv_namespaces]]
 # binding = "COACH_KV"
 # id = "REPLACE_WITH_PRINTED_ID"
