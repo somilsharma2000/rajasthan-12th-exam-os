@@ -1,0 +1,13 @@
+// AUTO-GENERATED — do not edit. Regenerated on every build.
+import * as m0 from './agriculture.js'
+import * as m1 from './current-affairs.js'
+import * as m2 from './india-gk.js'
+import * as m3 from './lang-computer.js'
+import * as m4 from './library-science.js'
+import * as m5 from './maths.js'
+import * as m6 from './raj-gk-geo.js'
+import * as m7 from './raj-gk-polity.js'
+import * as m8 from './reasoning.js'
+import * as m9 from './reet-pedagogy.js'
+import * as m10 from './science.js'
+export const MODULES = [m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10]
