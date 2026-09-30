@@ -1,14 +1,11 @@
 import json
-import os
 
-input_path = '/app/conversations/6aba352337af6a2cf1cfb4c2/rajasthan-12th-os/gather/pyq-raw/steno-2025-verify-input.json'
-output_path = '/app/conversations/6aba352337af6a2cf1cfb4c2/rajasthan-12th-os/gather/pyq-raw/steno-va-results.json'
-
-with open(input_path, 'r', encoding='utf-8') as f:
+with open('/app/conversations/6aba352337af6a2cf1cfb4c2/rajasthan-12th-os/gather/pyq-raw/steno-2025-verify-input.json') as f:
     data = json.load(f)
 
 my_range = [r for r in data if 1 <= r['n'] <= 64]
 
+# Verification dictionary mapping n -> (verdict, final_ans, note)
 verifications = {
     1: ("AGREE", 2, "Guhila, Gehlot, Parmar, and Sinsinwar are dynasties of Rajasthan, whereas Harihar was of Vijayanagara."),
     2: ("AGREE", 0, "Typhoid Mary was the nickname of Mary Mallon, an asymptomatic carrier of Salmonella Typhi."),
@@ -69,55 +66,7 @@ verifications = {
     64: ("CORRECT", 0, "Mount Abu has sub-tropical evergreen forests (uposhna katibandhiya), whereas Bikaner, Pali, Jodhpur have tropical thorn forests.")
 }
 
-results = []
-for r in my_range:
-    n = r['n']
-    shift = r.get('shift', 's1')
-    verdict, final_ans, note = verifications[n]
-    results.append({
-        "shift": shift,
-        "n": n,
-        "verdict": verdict,
-        "final_ans": final_ans,
-        "note": note
-    })
-
-# Ensure output directory exists
-os.makedirs(os.path.dirname(output_path), exist_ok=True)
-
-with open(output_path, 'w', encoding='utf-8') as f:
-    json.dump(results, f, ensure_ascii=False, indent=2)
-
-print(f"Successfully generated {len(results)} results at {output_path}")
-
-# VALIDATION
-with open(output_path, 'r', encoding='utf-8') as f:
-    out_data = json.load(f)
-
-assert len(out_data) == len(my_range), f"Expected {len(my_range)} entries, got {len(out_data)}"
-
-valid_verdicts = {"AGREE", "CORRECT", "UNSURE"}
-counts = {"AGREE": 0, "CORRECT": 0, "UNSURE": 0}
-
-for entry in out_data:
-    v = entry["verdict"]
-    ans = entry["final_ans"]
-    n = entry["n"]
-    assert v in valid_verdicts, f"Invalid verdict {v} at n={n}"
-    counts[v] += 1
-    if v == "UNSURE":
-        assert ans is None, f"final_ans must be null for UNSURE at n={n}"
-    else:
-        assert isinstance(ans, int) and 0 <= ans <= 3, f"final_ans must be int 0-3 for {v} at n={n}"
-
-print("\n--- VALIDATION PASSED ---")
-print(f"Total entries: {len(out_data)}")
-print(f"AGREE: {counts['AGREE']}")
-print(f"CORRECT: {counts['CORRECT']}")
-print(f"UNSURE: {counts['UNSURE']}")
-
-print("\n--- CORRECT ENTRIES LIST ---")
-for entry in out_data:
-    if entry["verdict"] == "CORRECT":
-        print(f"Q{entry['n']}: {entry['note']} [Correct final_ans: {entry['final_ans']}]")
+print(f"Total verifications defined: {len(verifications)}")
+missing = [r['n'] for r in my_range if r['n'] not in verifications]
+print(f"Missing question verifications: {missing}")
 
