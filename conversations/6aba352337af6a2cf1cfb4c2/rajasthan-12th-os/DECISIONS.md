@@ -104,3 +104,5 @@ D-003 (Patwari = graduate-level, excluded from the 12th-level OS) is CONFIRMED f
 - **Chosen:** Razorpay (UPI-first) order->checkout->signature-verify flow in a Cloudflare Worker; HMAC-signed license keys stored in Worker KV; client unlocks PRO locally. Doc: docs/payments-plan.md.
 - **Reason:** Static host cannot custody Razorpay secrets or handle webhooks; Razorpay is the India-standard UPI checkout.
 - **Consequences:** Blocked on founder Razorpay account + keys. ~1 day build + adversarial tests once keys exist.
+- D-2026-10-01-07: Modular QA protocol v3 (00-25 modules with applicability status) adopted as the master operating standard; single-blob prompts retired.
+- D-2026-10-01-08: app/index.html un-gitignored and committed — build-entry + SEO head must never again depend on snapshot restore; deploy = rsync --delete + live chunk-hash verify; npm run release (unit→build→smoke) is the mandatory pre-deploy gate.
