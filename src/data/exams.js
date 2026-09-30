@@ -84,8 +84,8 @@ export const EXAMS = [
   {
     id: 'agriculture-supervisor',
     name: { hi: 'कृषि पर्यवेक्षक', en: 'Agriculture Supervisor' },
-    family: 'DIRECT', verification: 'OFFICIAL_CONFIRMED',
-    pattern: { totalQuestions: 150, marksPerQuestion: 2, totalMarks: 300, durationMin: 150, negative: { wrong: '1-mark-per-wrong', noteHi: 'गलत उत्तर पर 1 अंक कटौती', noteEn: '1 mark per wrong answer' }, fifthOptionRule: null },
+    family: 'DIRECT', verification: 'CROSS_CHECKED', // 100Q/300M/120min/1-3rd negative per multiple coaching sources incl. 2026 notification coverage; official notification PDF pending
+    pattern: { totalQuestions: 100, marksPerQuestion: 3, totalMarks: 300, durationMin: 120, negative: { wrong: '1/3', noteHi: 'गलत उत्तर पर 1/3 अंक कटौती', noteEn: '1/3 negative marking' }, fifthOptionRule: null },
     subjects: ['agriculture', 'raj-gk', 'india-gk', 'maths', 'science', 'hindi']
   },
   {

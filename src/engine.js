@@ -21,8 +21,18 @@ export function availableQuestions(bank, exam) {
   return bank.filter(q => q.verification !== 'UNVERIFIED' && !q.provenance.evidence.includes('QUARANTINED') && exam.subjects.includes(q.subject))
 }
 
-export function buildSession(exam, bank, mode, lang, count) {
-  const pool = availableQuestions(bank, exam)
+export function shuffle(arr) {
+  const a = arr.slice()
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
+export function buildSession(exam, bank, mode, lang, count, onlyIds) {
+  // Random sampling so the FULL bank is reachable across sessions (was: static first-N)
+  const pool = onlyIds ? shuffle(bank.filter(q => onlyIds.includes(q.id))) : shuffle(availableQuestions(bank, exam))
   const target = count || exam.pattern.totalQuestions
   const questions = pool.slice(0, Math.min(target, pool.length))
   // Scaled duration: short mocks get proportional time (honest timing, min 5 min)

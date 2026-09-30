@@ -13,12 +13,33 @@ const LS_KEY = 'examos-active-mock'
 function saveActive(session, idx) {
   try {
     if (!session || session.mode !== 'mock') return
-    localStorage.setItem(LS_KEY, JSON.stringify({ examId: session.examId, mode: session.mode, ids: session.questions.map(q => q.id), answers: session.answers, idx, startedAt: session.startedAt }))
+    localStorage.setItem(LS_KEY, JSON.stringify({ examId: session.examId, mode: session.mode, ids: session.questions.map(q => q.id), answers: session.answers, idx, startedAt: session.startedAt, elapsedMs: Date.now() - session.startedAt }))
   } catch {}
 }
 function loadActive() { try { return JSON.parse(localStorage.getItem(LS_KEY)) } catch { return null } }
 function clearActive() { try { localStorage.removeItem(LS_KEY) } catch {} }
-const LS_HIST = 'examos-history', LS_BM = 'examos-bookmarks'
+const LS_HIST = 'examos-history', LS_BM = 'examos-bookmarks', LS_ERR = 'examos-error-book'
+function loadErr() { try { return JSON.parse(localStorage.getItem(LS_ERR)) || {} } catch { return {} } }
+function saveErr(eb) { try { localStorage.setItem(LS_ERR, JSON.stringify(eb)) } catch {} }
+const REV_LADDER = [1, 3, 7, 15, 30] // days; wrongCount picks the rung (capped)
+function updateErrorBook(session) {
+  try {
+    const eb = loadErr()
+    for (const q of session.questions) {
+      const a = session.answers[q.id]
+      const attempted = a && a.choice !== null && a.choice !== undefined
+      const wasWrong = attempted ? a.choice !== q.answer : true // skipped also lands in revision
+      if (!wasWrong) continue
+      const rec = eb[q.id] || { wrongCount: 0, subject: q.subject }
+      rec.wrongCount++
+      rec.lastWrongAt = Date.now()
+      rec.nextReviewAt = Date.now() + (REV_LADDER[Math.min(rec.wrongCount - 1, REV_LADDER.length - 1)] * 86400000)
+      rec.skipped = !attempted
+      eb[q.id] = rec
+    }
+    saveErr(eb)
+  } catch {}
+}
 function loadHist() { try { return JSON.parse(localStorage.getItem(LS_HIST)) || [] } catch { return [] } }
 function pushHist(rec) { try { const h = loadHist(); if (h.some(x => x.key === rec.key)) return; h.unshift(rec); localStorage.setItem(LS_HIST, JSON.stringify(h.slice(0, 50))) } catch {} }
 function loadBM() { try { return JSON.parse(localStorage.getItem(LS_BM)) || [] } catch { return [] } }
@@ -37,6 +58,7 @@ export default function App() {
     saveBM(next); return next
   })
   const recordAttempt = (session, r) => {
+    updateErrorBook(session) // persistent error book + revision schedule, all modes
     if (session.mode !== 'mock') return
     pushHist({
       key: session.startedAt + '-' + session.examId,
@@ -52,7 +74,8 @@ export default function App() {
     if (!ex) { clearActive(); setResumable(null); return }
     const byId = Object.fromEntries(ALL_QUESTIONS.map(q => [q.id, q]))
     const questions = resumable.ids.map(id => byId[id]).filter(Boolean)
-    setSession({ examId: ex.id, mode: 'mock', lang, questions, answers: resumable.answers || {}, startedAt: resumable.startedAt, submitted: false, config: ex })
+    // Resume from REMAINING time: rebuild startedAt from saved active-elapsed so backgrounded/sleep time is not counted (fixes instant auto-submit)
+    setSession({ examId: ex.id, mode: 'mock', lang, questions, answers: resumable.answers || {}, startedAt: Date.now() - (resumable.elapsedMs || 0), submitted: false, config: ex })
     setResumable(null); setScreen('player')
   }
   const t = T(lang)
@@ -69,10 +92,26 @@ export default function App() {
     setSession(s); setScreen('player')
   }
 
+  const startErrSession = () => {
+    const eb = Object.values(loadErr())
+    if (!eb.length) return
+    const byId = Object.fromEntries(ALL_QUESTIONS.map(q => [q.id, q]))
+    const dueIds = eb.filter(e => e.nextReviewAt <= Date.now()).map(e => e.id)
+    const ids = (dueIds.length ? dueIds : eb.map(e => e.id)).filter(id => byId[id] && ex_ok(byId[id]))
+    if (!ids.length) return
+    const pool = ids.map(id => byId[id])
+    const ex = exam || EXAMS.find(e => e.id === 'cet-12th') || EXAMS[0]
+    const s = buildSession(ex, pool, 'practice', lang, Math.min(10, ids.length), ids)
+    if (!s.questions.length) return
+    s.config = ex
+    setSession(s); setScreen('player')
+  }
+
   if (screen === 'player') return <Player session={session} setSession={setSession} lang={lang} bookmarks={bms} toggleBookmark={toggleBookmark} onFinish={() => setScreen('result')} onExit={() => { setSession(null); setScreen('hub') }} />
   if (screen === 'result') return <Result session={session} lang={lang} onRecord={recordAttempt} onHome={() => { setSession(null); setScreen('home') }} onRetry={() => { const mode = session.mode; startSession(mode) }} />
   if (screen === 'progress') return <Progress lang={lang} onHome={() => setScreen('home')} />
   if (screen === 'saved') return <Saved lang={lang} bookmarks={bms} toggleBookmark={toggleBookmark} onHome={() => setScreen('home')} />
+  if (screen === 'errorbook') return <ErrorBook lang={lang} onHome={() => setScreen('home')} onPractice={startErrSession} />
   const avail = exam ? availFor(exam) : 0
   if (screen === 'setup') return (
     <div className="wrap">
@@ -153,6 +192,7 @@ export default function App() {
         <button onClick={() => setScreen('glossary')}>{lang === 'hi' ? 'शब्दावली' : 'Glossary'}</button>
         <button onClick={() => setScreen('progress')}>{lang === 'hi' ? 'प्रगति रिपोर्ट' : 'Progress'}</button>
         <button onClick={() => setScreen('saved')}>{lang === 'hi' ? 'सहेजे गए' : 'Saved'} ({bms.length})</button>
+        <button onClick={() => setScreen('errorbook')}>{lang === 'hi' ? 'त्रुटि-पुस्तक' : 'Error Book'}{(() => { const due = Object.values(loadErr()).filter(e => e.nextReviewAt <= Date.now()).length; return due ? ` (${due})` : '' })()}</button>
       </div>
       <h2>{t.chooseExam}</h2>
       {EXAMS.map(ex => (
@@ -163,6 +203,35 @@ export default function App() {
       ))}
       <p className="note">{VERSION_NOTE[lang]}</p>
       <p className="note">{lang === 'hi' ? 'सत्यापित प्रश्न-बैंक' : 'Verified question bank'}: {BANK_STATS.shippable} ({lang === 'hi' ? 'असत्यापित कभी शामिल नहीं' : 'unverified never included'}) · {SHELF.map(s => s.name[lang]).join(' · ')}</p>
+    </div>
+  )
+}
+
+function ErrorBook({ lang, onHome, onPractice }) {
+  const eb = Object.values(loadErr())
+  const now = Date.now()
+  const due = eb.filter(e => e.nextReviewAt <= now)
+  const later = eb.filter(e => e.nextReviewAt > now).sort((a, b) => a.nextReviewAt - b.nextReviewAt)
+  const bySub = {}
+  eb.forEach(e => { bySub[e.subject] = (bySub[e.subject] || 0) + 1 })
+  const fmtDue = (ts) => new Date(ts).toLocaleDateString(lang === 'hi' ? 'hi-IN' : 'en-IN')
+  return (
+    <div className="wrap">
+      <div className="bar"><button className="ghost" onClick={onHome}>←</button><b style={{color:'#fff'}}>{lang === 'hi' ? 'त्रुटि-पुस्तक' : 'Error Book'}</b><span /></div>
+      <div className="card">
+        {!eb.length && <p>{lang === 'hi' ? 'अभी कोई त्रुटि दर्ज नहीं हुई। प्रश्न हल करने पर गलत/छूटे प्रश्न यहाँ आते हैं और 1-3-7-15-30 दिन के revision schedule पर लौटते हैं।' : 'No errors logged yet. Wrong/skipped questions land here and return on a 1-3-7-15-30 day revision schedule.'}</p>}
+        {eb.length > 0 && <div>
+          <p><b>{lang === 'hi' ? 'कुल' : 'Total'}:</b> {eb.length} · <b>{lang === 'hi' ? 'आज दोहराने हेतु' : 'Due now'}:</b> {due.length}</p>
+          {Object.entries(bySub).map(([s, n]) => <span key={s} className="badge" style={{marginRight:6}}>{SUBJECT_LABELS[s] ? SUBJECT_LABELS[s][lang] : s} ({n})</span>)}
+          <div className="row" style={{marginTop:12}}>
+            <button className="big primary" onClick={onPractice}>{lang === 'hi' ? 'त्रुटियाँ अभ्यास करें' : 'Practice errors'} ({Math.min(10, due.length || eb.length)})</button>
+            <button onClick={() => { saveErr({}); onHome() }}>{lang === 'hi' ? 'साफ़ करें' : 'Clear all'}</button>
+          </div>
+          <h3>{lang === 'hi' ? 'दोहराव अनुसूची' : 'Revision schedule'}</h3>
+          {due.slice(0, 12).map(e => <div key={e.lastWrongAt} className="hubRow"><span className="badge">Due</span> {SUBJECT_LABELS[e.subject] ? SUBJECT_LABELS[e.subject][lang] : e.subject} · {lang === 'hi' ? 'गलत' : 'wrong'} ×{e.wrongCount}</div>)}
+          {later.slice(0, 8).map(e => <div key={e.lastWrongAt} className="hubRow">{fmtDue(e.nextReviewAt)} · {SUBJECT_LABELS[e.subject] ? SUBJECT_LABELS[e.subject][lang] : e.subject} · ×{e.wrongCount}</div>)}
+        </div>}
+      </div>
     </div>
   )
 }
@@ -247,9 +316,9 @@ function Player({ session, setSession, lang, bookmarks, toggleBookmark, onFinish
   const endAt = session.startedAt + (session.durationMin || session.config.pattern.durationMin) * 60000
   useEffect(() => {
     if (session.mode !== 'mock') return
-    const iv = setInterval(() => setNow(Date.now()), 1000)
+    const iv = setInterval(() => { setNow(Date.now()); saveActive(session, idx) }, 1000)
     return () => clearInterval(iv)
-  }, [session.mode])
+  }, [session.mode, session, idx])
   useEffect(() => {
     if (session.mode === 'mock' && Date.now() >= endAt) finish()
   })

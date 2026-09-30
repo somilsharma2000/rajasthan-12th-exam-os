@@ -45,7 +45,8 @@
   ],
   "src_n": 3,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "india-gk"
  },
  {
   "q": "भारत सरकार द्वारा देश के विभिन्न भागों में मृदा संरक्षण के लिए किस बोर्ड की स्थापना की गई थी?",
@@ -77,7 +78,8 @@
   ],
   "src_n": 5,
   "subject": "india-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "maths"
  },
  {
   "q": "कपास को अपनी वृद्धि के लिए उच्च तापमान, हल्की वर्षा, पाले से मुक्त और तेज धूप युक्त लगभग ______ दिनों की आवश्यकता होती है।",
@@ -157,7 +159,8 @@
   ],
   "src_n": 10,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "computer"
  },
  {
   "q": "MS-Word में, वर्तमान स्थिति से वर्तमान पैराग्राफ़ के अंत तक टेक्स्ट और ग्राफ़िक्स का चयन करने के लिए, निम्नलिखित में से किस की-बोर्ड शॉर्टकट का उपयोग किया जाता है?",
@@ -189,7 +192,8 @@
   ],
   "src_n": 12,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "computer"
  },
  {
   "q": "MS-Word में, जूम इन करने पर पूर्वावलोकन पृष्ठ (प्रीव्यू पेज) के चारों तरफ़ घूमने के लिए निम्नलिखित में से किस की-बोर्ड शॉर्टकट का उपयोग किया जाता है?",
@@ -381,7 +385,8 @@
   ],
   "src_n": 25,
   "subject": "india-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "reasoning"
  },
  {
   "q": "T20 विकल्पों में दिया गया कौन सा शब्द निम्नलिखित शब्दों से संबंधित है? सीस्मोमीटर, वोल्टमीटर, स्पीडोमीटर",
@@ -413,7 +418,8 @@
   ],
   "src_n": 29,
   "subject": "india-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "reasoning"
  },
  {
   "q": "नीचे दी गई अक्षरांकीय शृंखला में कोई एक पद ग़लत है। उस ग़लत पद का चयन करें। SBL, SBL1, SB1L1, SB1L2, S1B1L2, S1B2L2, S2B2L2",
@@ -445,7 +451,8 @@
   ],
   "src_n": 31,
   "subject": "india-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "maths"
  },
  {
   "q": "यदि W का अर्थ ‘गुणा’ है, X का अर्थ ‘घटाना’ है, Y का अर्थ ‘जोड़’ है और Z का अर्थ ‘भाग’ है, तो निम्न व्यंजक का मान ज्ञात करें। 32 Z 8 W 7 X 6 Y 4 = ?",
@@ -476,7 +483,8 @@
    "13may-s2"
   ],
   "src_n": 3,
-  "subject": "india-gk"
+  "subject": "india-gk",
+  "subject_new": "maths"
  },
  {
   "q": "नीचे एक कथन और उसके बाद दो निष्कर्ष दिए गए हैं। उपयुक्त विकल्प चुनकर बताएं कि कौन से निष्कर्ष कथन का अनुसरण करते हैं। कथन : इस नौकरी के लिए केवल परिश्रमी और बुद्धिमान उम्मीदवार पर विचार किया जाएगा। शिखा को यह नौकरी दी गई है। निष्कर्षः I. शिखा परिश्रमी है। II. शिखा बुद्धिमान है।",
@@ -492,7 +500,8 @@
   ],
   "src_n": 34,
   "subject": "reasoning",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "maths"
  },
  {
   "q": "दिए गए विकल्पों में से उस संख्या का चयन कीजिए जो निम्नलिखित संख्याओं के साथ संगत हो। 725, 978, 989, 376",
@@ -524,7 +533,8 @@
   ],
   "src_n": 36,
   "subject": "india-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "reasoning"
  },
  {
   "q": "निम्नलिखित चार विकल्पों में से तीन शब्द किसी तरीके से आपस में संगत हैं जबकि कोई एक उनसे असंगत है, उस असंगत शब्द का चयन कीजिए।",
@@ -540,7 +550,8 @@
   ],
   "src_n": 38,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "reasoning"
  },
  {
   "q": "यदि किसी कूट भाषा में ‘SCHOOL’ को ‘ROOM’ कहा जाता है, ‘ROOM’ को ‘APARTMENT’ कहा जाता है, ‘APARTMENT’ को ‘CITY’ कहा जाता है और ‘CITY’ को ‘BUS’ कहा जाता है, तो हमें शिक्षा लेने के लिए कहां जाना होगा?",
@@ -798,7 +809,8 @@
   ],
   "src_n": 54,
   "subject": "raj-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "maths"
  },
  {
   "q": "2011 की जनगणना के अनुसार राजस्थान में बाल लिंगानुपात कितना है?",
@@ -831,7 +843,8 @@
   "src_n": 56,
   "subject": "raj-gk",
   "time_sensitive": true,
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "maths"
  },
  {
   "q": "2020-21 में राजस्थान की अर्थव्यवस्था के लिए राज्य के सकल राज्य मूल्य वर्धित (GSVA) में तृतीयक क्षेत्र की हिस्सेदारी कितनी थी?",
@@ -897,7 +910,8 @@
   ],
   "src_n": 60,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "india-gk"
  },
  {
   "q": "कालीबंगा उत्तरी राजस्थान के हनुमानगढ़ जिले में ______ नदी के किनारे स्थित है।",
@@ -977,7 +991,8 @@
   ],
   "src_n": 65,
   "subject": "raj-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "india-gk"
  },
  {
   "q": "राजस्थान में गोविंदगिरी के भगत आंदोलन का विस्तार मुख्यतः ______ समुदाय के बीच था।",
@@ -1171,7 +1186,8 @@
   ],
   "src_n": 77,
   "subject": "india-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "reasoning"
  },
  {
   "q": "भारतीय संविधान का अनुच्छेद 40 ______ से संबंधित है।",
@@ -1364,7 +1380,8 @@
   "src_n": 89,
   "subject": "science",
   "fix_note": "Statement c is false as cursor movement is controlled by navigation/arrow keys, not 'central keys'.",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "computer"
  },
  {
   "q": "निम्न में से कौन सा विकल्प एक प्रोजेक्टर का एक प्रकार नहीं है?",
@@ -1444,7 +1461,8 @@
   ],
   "src_n": 94,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "computer"
  },
  {
   "q": "टर्मिनल या कंसोल विंडो में कमांड टाइप करके, निम्न में से कौन आमतौर पर उपयोगकर्ताओं (युज़र्स) को ऑपरेटिंग सिस्टम के साथ इंटरैक्ट (सहभागिता) करने की अनुमति देता है?",
@@ -1573,7 +1591,8 @@
   ],
   "src_n": 102,
   "subject": "india-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "computer"
  },
  {
   "q": "यदि + का अर्थ × है, – का अर्थ + है, × का अर्थ ÷ है और ÷ का अर्थ – है, तो निम्न व्यंजक का मान ज्ञात करें। 51 × 3 + 4 – 6 ÷ 2 – 3 = ?",
@@ -2261,7 +2280,8 @@
   ],
   "src_n": 147,
   "subject": "india-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "maths"
  },
  {
   "q": "भारत सरकार ने किस वर्ष एक व्यापक परिवार नियोजन कार्यक्रम शुरू किया था?",
@@ -2325,7 +2345,8 @@
   ],
   "src_n": 1,
   "subject": "india-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "reasoning"
  },
  {
   "q": "उस विकल्प का चयन करें जो तीसरे पद से उसी प्रकार संबंधित है जैसे दूसरा पद पहले पद से संबंधित है। RKP : VHS : : UJM : ?",
@@ -2408,7 +2429,8 @@
   ],
   "src_n": 7,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "reasoning"
  },
  {
   "q": "यदि ‘रवि’, ‘प्रिया’ का भाई है, ‘प्रिया’, ‘सविता’ की पुत्री है, और ‘वैभव’, ‘नोनू’ के पिता है, जो ‘सविता’ के ससुर का इकलौता पुत्र है। ‘रवि’, ‘वैभव’ से किस प्रकार संबंधित है?",
@@ -2540,7 +2562,8 @@
   ],
   "src_n": 15,
   "subject": "science",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "reasoning"
  },
  {
   "q": "निम्नलिखित चार अक्षर-समूहों में से तीन एक निश्चित तरीके से समान हैं और एक अलग है। जो अलग है उसका चयन करें।",
@@ -2608,7 +2631,8 @@
   ],
   "src_n": 19,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "reasoning"
  },
  {
   "q": "उस पद का चयन करें जो निम्नलिखित श्रृंखला में प्रश्नवाचक चिह्न (?) का स्थान लेगा। VRS, TSO, PUK, NVG, ?",
@@ -2691,7 +2715,8 @@
    "14may-s1"
   ],
   "src_n": 24,
-  "subject": "india-gk"
+  "subject": "india-gk",
+  "subject_new": "maths"
  },
  {
   "q": "अक्षरों का एक समूह दिया गया है जिसकी संख्या 1 से 8 है। नीचे दिए गए चार विकल्प इन संख्याओं के संयोजन को दर्शाते हैं। संख्याओं के उस संयोजन का चयन करें जो उसके अनुसार व्यवस्थित किए गए अक्षरों से एक अर्थपूर्ण शब्द बना सकें। I G S N R A E O 1 2 3 4 5 6 7 8",
@@ -2708,7 +2733,8 @@
   ],
   "src_n": 28,
   "subject": "hindi",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "maths"
  },
  {
   "q": "दिए गए पैटर्न का ध्यानपूर्वक अध्ययन करें और उस संख्या का चयन करें जो पैटर्न में दिए गए प्रश्नवाचक चिह्न (?) का स्थान ले सके। 8 7 6 9 13 ? 4 9 5",
@@ -2843,7 +2869,8 @@
   ],
   "src_n": 37,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "computer"
  },
  {
   "q": "निम्नलिखित में से कौन सा, एक कंप्यूटर है जो इंटरनेट पर एक वेबसाइट को होस्ट करता है?",
@@ -2910,7 +2937,8 @@
   ],
   "src_n": 41,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "computer"
  },
  {
   "q": "कंप्यूटर सिस्टम की निम्नलिखित में से कौन सी इनपुट डिवाइस अधिकांश फोटोकॉपी मशीन की तरह काम करती है?",
@@ -3390,7 +3418,8 @@
   ],
   "src_n": 71,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "india-gk"
  },
  {
   "q": "निम्नलिखित में से कौन सी, एक बागानी फसल नहीं है?",
@@ -3505,7 +3534,8 @@
   ],
   "src_n": 78,
   "subject": "india-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "maths"
  },
  {
   "q": "भारत की आर्द्रभूमि (wetlands) को निम्नलिखित में से कितनी श्रेणियों में बाँटा गया है?",
@@ -3605,7 +3635,8 @@
   ],
   "src_n": 84,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "india-gk"
  },
  {
   "q": "रॉकेट, ______ संरक्षण के सिद्धांत पर कार्य करता है।",
@@ -4343,7 +4374,8 @@
   "src_n": 128,
   "subject": "raj-gk",
   "time_sensitive": true,
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "maths"
  },
  {
   "q": "राज्य निर्वाचन आयोग (एस.ई.सी.), राजस्थान का गठन ______ किया गया था।",
@@ -4394,7 +4426,8 @@
   "src_n": 131,
   "subject": "raj-gk",
   "time_sensitive": true,
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "maths"
  },
  {
   "q": "राजस्थान शहरी अवसंरचना विकास परियोजना (राजस्थान अर्बन इंफ्रास्ट्रक्चर डेवलपमेंट प्रोजेक्ट (आर.यू.आई.डी.पी.)) निम्नलिखित में से किस वर्ष में शुरू की गई थी?",
@@ -4776,7 +4809,8 @@
   ],
   "src_n": 5,
   "subject": "reasoning",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "hindi"
  },
  {
   "q": "यदि किसी कूट भाषा में HE को 26 लिखा जाता है और SHE को 64 लिखा जाता है, तो उसी भाषा में THEY को कैसे लिखा जाएगा?",
@@ -4792,7 +4826,8 @@
   ],
   "src_n": 6,
   "subject": "reasoning",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "hindi"
  },
  {
   "q": "यदि किसी कूट भाषा में CLASS को 81 लिखा जाता है और SECTION को 104 लिखा जाता है, तो उसी भाषा में COLLEGE को कैसे लिखा जाएगा?",
@@ -4808,7 +4843,8 @@
   ],
   "src_n": 7,
   "subject": "reasoning",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "hindi"
  },
  {
   "q": "एक व्यक्ति की तस्वीर की ओर संकेत करते हुए, नेहा ने कहा, “उसकी बहन का भाई मेरे ससुर का इकलौता पुत्र है” । उस व्यक्ति का नेहा से क्या संबंध",
@@ -4920,7 +4956,8 @@
   ],
   "src_n": 14,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "hindi"
  },
  {
   "q": "नीचे दिए गए कथन और दो निष्कर्षों का अध्ययन करें और उन उपयुक्त विकल्पों का चयन करें जो ऐसे निष्कर्षों को इंगित करते हैं जिन्हें उस कथन से निकाला जा सकता है। कथन : किसी देश की जनसंख्या में वृद्धि वहाँ के नीति-निर्माताओं के लिए एक बड़ी चुनौती है। निष्कर्ष : I. एक निश्चित समय के बाद उस देश की जनसंख्या घटेगी। II. बढ़ती जनसंख्या का देश में संसाधनों की उपलब्धता पर प्रभाव पड़ेगा।",
@@ -4936,7 +4973,8 @@
   ],
   "src_n": 15,
   "subject": "reasoning",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "maths"
  },
  {
   "q": "नीचे दिए गए कथन और दो पूर्वानुमान का अध्ययन करें और उन उपयुक्त विकल्पों का चयन करें जो ऐसे पूर्वानुमान को इंगित करते हैं जो कथन में अंतर्निहित हैं। कथन : “उत्पादकता में वृद्धि के लिए प्रत्येक सप्ताह पाँच दिन कार्य करने की नीति अपनाएँ।” पूर्वानुमान : I. उत्पादकता प्रत्यक्ष रूप से सप्ताह में दिनों की संख्या से जुड़ी होती है। II. लोग सप्ताह-प्रणाली में छह कार्य-दिवसों में कड़ा परिश्रम नहीं करते हैं।",
@@ -4952,7 +4990,8 @@
   ],
   "src_n": 16,
   "subject": "reasoning",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "maths"
  },
  {
   "q": "नीचे दिए गए कथन और दो पूर्वानुमान का अध्ययन करें और उन उपयुक्त विकल्पों का चयन करें जो ऐसे पूर्वानुमान को इंगित करते हैं जो कथन में अंतर्निहित हैं। कथन: “एक सॉफ्टवेयर इंजीनियर किसी दूसरे पेशेवर की तुलना में अधिक नौकरियाँ बदलता है।” पूर्वानुमानः I. सॉफ्टवेयर इंजीनियर अधिक लालची होते हैं। II. किसी सॉफ्टवेयर इंजीनियर की कार्य-अपेक्षाएँ अधिक चुनौतीपूर्ण होती है।",
@@ -4984,7 +5023,8 @@
   ],
   "src_n": 18,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "reasoning"
  },
  {
   "q": "उस शब्द-युग्म का चयन कीजिए, जिसमें दो शब्द ठीक उसी प्रकार संबंधित हो, जैसे निम्नलिखित शब्दयुग्म में दो शब्द संबंधित हैं। अनिद्रा रोग : निद्रा",
@@ -5000,7 +5040,8 @@
   ],
   "src_n": 19,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "reasoning"
  },
  {
   "q": "नीचे के चार अक्षर-समूहों में से तीन एक समान हैं और एक भिन्न है। उस भिन्न अक्षर-समूह का पता लगाएँ।",
@@ -5223,7 +5264,8 @@
   ],
   "src_n": 35,
   "subject": "india-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "computer"
  },
  {
   "q": "निम्नलिखित में से कौन-सा, क्लास-B IP एड्रेस का प्रारम्भिक एड्रेस है?",
@@ -6011,7 +6053,8 @@
   ],
   "src_n": 85,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "reasoning"
  },
  {
   "q": "मोडसे भारत के किस राज्य की नृत्यशैली है?",
@@ -6075,7 +6118,8 @@
   ],
   "src_n": 89,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "india-gk"
  },
  {
   "q": "विकल्पों में से पश्चिम से पूर्व की ओर हिमालय के हिमनदों का सही क्रम चुनिए।",
@@ -6810,7 +6854,8 @@
   ],
   "src_n": 136,
   "subject": "raj-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "maths"
  },
  {
   "q": "राज्य निर्वाचन आयोग (SEC), राजस्थान के बारे में निम्नलिखित में से कौन सा कथन गलत है?",
@@ -6906,7 +6951,8 @@
   ],
   "src_n": 142,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "raj-gk"
  },
  {
   "q": "मोजरी का संबंध ______ से है।",
@@ -7002,7 +7048,8 @@
   ],
   "src_n": 148,
   "subject": "raj-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "hindi"
  },
  {
   "q": "नीचे दिए गए विकल्पों में से लेखक और उनके लेखन के साथ सही मिलान की पहचान कीजिए।",
@@ -7050,7 +7097,8 @@
   ],
   "src_n": 1,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "reasoning"
  },
  {
   "q": "उस विकल्प का चयन करें जो तीसरे पद से उसी प्रकार संबंधित है जिस प्रकार दूसरा पद पहले पद से संबंधित है? RTE : NWC :: EUR : ?",
@@ -7082,7 +7130,8 @@
   ],
   "src_n": 3,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "reasoning"
  },
  {
   "q": "एक निश्चित कूट भाषा में, यदि I को P, P को A, A को 0, 0 को N, N को C, C को T और T को I के रूप में लिखा जाता है, तो उसी कूट भाषा में CAPTION को किस रूप में लिखा जाएगा?",
@@ -7130,7 +7179,8 @@
   ],
   "src_n": 7,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "reasoning"
  },
  {
   "q": "एक निश्चित कूट भाषा में, ‘ DESIGN ‘ को ‘EDT JNG’ के रूप में लिखा जाता है, तो उसी कूट भाषा में ‘TAT LOR’ को किस रूप में लिखा जाएगा?",
@@ -7226,7 +7276,8 @@
   "src_n": 13,
   "subject": "raj-gk",
   "time_sensitive": true,
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "maths"
  },
  {
   "q": "एक कथन के बाद दो पूर्वधारणाएं I और IT के रूप में संख्यांकित हैं। कथन को सही मानते हुए निर्णय लें कि दी गई पूर्वधारणाओं में से कौन सी कथन में अंतर्निहित हैं। कथन: “XYZ वॉशिंग मशीन का निष्पादन, अत्यधिक विज्ञापित ABC वॉशिंग मशीन की तुलना में भारतीय परिस्थितियों के लिए काफी बेहतर है।” पूर्वधारणाएं I. ABC वाशिंग मशीन विज्ञापन पर अधिक खर्च करती है क्योंकि उनका उत्पाद अच्छा नहीं है। II. ABC वॉशिंग मशीन विदेशी ब्रांड है।",
@@ -7242,7 +7293,8 @@
   ],
   "src_n": 14,
   "subject": "reasoning",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "maths"
  },
  {
   "q": "एक प्रश्नवाचक कथन के बाद दो तर्क I और IT के रूप में संख्यांकित हैं। निर्णय करें कि निम्नलिखित तर्क में से कौन से तर्क कथन के संबंध में ‘सशक्त’ है। कथन: I. क्या पेड़ों की कटाई को पूर्ण रूप से अवैध कर दिया जाना चाहिए? तर्क: I. हाँ, किसी कानून के अभाव में लोग अंधाधुंध पेड़ काट रहे हैं। II. नहीं, पूर्ण प्रतिबंध व्यावहारिक नहीं है क्योंकि कई स्थितियों में पेड़ों को काटना पड़ता है जैसे कि जब वह सड़क के बीच में हो।",
@@ -7258,7 +7310,8 @@
   ],
   "src_n": 15,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "reasoning"
  },
  {
   "q": "निम्नलिखित चार अक्षर-समूहों में से तीन एक निश्चित तरीके से समान हैं और एक भिन्न है। उस भिन्न अक्षरसमूह का चयन करें।",
@@ -7274,7 +7327,8 @@
   ],
   "src_n": 16,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "reasoning"
  },
  {
   "q": "निम्नलिखित चार शब्द-युग्मों में से तीन एक निश्चित तरीके से समान हैं और एक भिन्न है। उस भिन्न शब्द-युग्म का चयन करें।",
@@ -7322,7 +7376,8 @@
   ],
   "src_n": 19,
   "subject": "india-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "reasoning"
  },
  {
   "q": "उस अक्षर का चयन करें जो निम्नलिखित शृंखला में प्रश्नचिह्न (?) के स्थान पर आ सकता है। K, L, N, ?, U, Z",
@@ -7528,7 +7583,8 @@
   ],
   "src_n": 34,
   "subject": "india-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "computer"
  },
  {
   "q": "‘WWW’ में, दूसरे ‘W’ का पूर्ण रूप क्या है?",
@@ -7640,7 +7696,8 @@
   ],
   "src_n": 41,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "computer"
  },
  {
   "q": "सेंट्रल प्रोसेसिंग यूनिट के भाग निम्नलिखित में से कौन से हैं?",
@@ -7736,7 +7793,8 @@
   ],
   "src_n": 47,
   "subject": "science",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "computer"
  },
  {
   "q": "प्रिंटर की इमेज गुणवत्ता मापने के लिए निम्न में से किस यूनिट का उपयोग किया जाता है?",
@@ -7816,7 +7874,8 @@
   ],
   "src_n": 52,
   "subject": "science",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "computer"
  },
  {
   "q": "निम्नलिखित में से कौन सा एक ऑपरेटिंग सिस्टम है?",
@@ -7912,7 +7971,8 @@
   ],
   "src_n": 58,
   "subject": "india-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "computer"
  },
  {
   "q": "MS-Excel 365 के निम्नलिखित में से किस मेनू में ‘फ़िल्टर्स (Filters)’ विकल्प मौजूद होते हैं?",
@@ -7944,7 +8004,8 @@
   ],
   "src_n": 60,
   "subject": "science",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "computer"
  },
  {
   "q": "गुप्त काल के दौरान ‘मुद्राराक्षस’ की रचना ______ के द्वारा की गई थी।",
@@ -8104,7 +8165,8 @@
   ],
   "src_n": 70,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "india-gk"
  },
  {
   "q": "डॉ. एम. एस. स्वामीनाथन की अध्यक्षता में ______ , 2004 को राष्ट्रीय किसान आयोग का गठन किया गया था।",
@@ -8293,7 +8355,8 @@
   ],
   "src_n": 82,
   "subject": "raj-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "india-gk"
  },
  {
   "q": "भारतीय संविधान के निम्नलिखित में से किस अनुच्छेद के अंतर्गत राष्ट्रपति को विशेष ज्ञान वाले व्यक्तियों को राज्यसभा हेतु नामित करने का अधिकार प्राप्त है।",
@@ -8309,7 +8372,8 @@
   ],
   "src_n": 83,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "india-gk"
  },
  {
   "q": "सोमनाथ चटर्जी लोकसभा के ______ अध्यक्ष थे।",
@@ -8678,7 +8742,8 @@
   ],
   "src_n": 106,
   "subject": "raj-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "maths"
  },
  {
   "q": "इन दिनों जोधपुर के संग्रहालय में रखे उत्तर गुप्त काल से संबंधित लाल बलुआ पत्थर में आदमकद ‘स्थानक’ (खड़े) विष्णु में मिले थे।",
@@ -8726,7 +8791,8 @@
   ],
   "src_n": 109,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "hindi"
  },
  {
   "q": "कोफ्तगिरी, राजस्थान का पारंपरिक शिल्प, एक प्रकार की सजावट है जिसकी उत्पत्ति भारत में _____ साथ हुई है।",
@@ -8774,7 +8840,8 @@
   ],
   "src_n": 112,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "raj-gk"
  },
  {
   "q": "1947 में स्वतंत्रता और भारत के विभाजन के समय, राजपूताना की रियासतों के अधिकांश क्षेत्र समस्यामुक्त रहे, लेकिन निम्नलिखित में से किस राज्य में व्यापक स्तर पर हिंसा हुई?",
@@ -8822,7 +8889,8 @@
   ],
   "src_n": 115,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "india-gk"
  },
  {
   "q": "अरावली पर्वत श्रृंखला की सबसे ऊंची चोटी ‘गुरु शिखर राजस्थान में ______ के पास स्थित है।",
@@ -8870,7 +8938,8 @@
   ],
   "src_n": 118,
   "subject": "raj-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "reasoning"
  },
  {
   "q": "भारत में, राजस्थान निम्नलिखित में से किस खनिज का एकमात्र उत्पादक है?",
@@ -8999,7 +9068,8 @@
   ],
   "src_n": 126,
   "subject": "raj-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "maths"
  },
  {
   "q": "वर्ष 2020-21 के प्रारंभिक पूर्वानुमान के अनुसार राजस्थान में कुल अपेक्षित खाद्यान्न उत्पादन कितना था?",
@@ -9033,7 +9103,8 @@
   "src_n": 128,
   "subject": "raj-gk",
   "time_sensitive": true,
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "maths"
  },
  {
   "q": "2020-21 की स्थिति के अनुसार, भारत में कच्चे तेल के कुल उत्पादन में राजस्थान का देश में कौन सा स्थान है?",
@@ -9067,7 +9138,8 @@
   "src_n": 130,
   "subject": "raj-gk",
   "time_sensitive": true,
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "maths"
  },
  {
   "q": "राजस्थान में ‘बस्ता मुक्त दिवस (नो बैग डे) ‘ पहल निम्नलिखित में से किस क्षेत्र/योजना से संबंधित है?",
@@ -9371,7 +9443,8 @@
   ],
   "src_n": 149,
   "subject": "raj-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "hindi"
  },
  {
   "q": "सूर्यमल्ल मिश्रण (मीसण), जो राजस्थान की एक रियासत के 19वीं सदी के दरबारी कवि थे, उन्होंने एक उत्कृष्ट कृति ‘वंश भास्कर’ लिखी, जिसका मुख्य विषय ______ वंश का इतिहास है।",
@@ -9403,7 +9476,8 @@
   ],
   "src_n": 1,
   "subject": "india-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "reasoning"
  },
  {
   "q": "एक निश्चित कूट भाषा में, यदि ‘टेबल’ को ‘कुर्सी’ कहा जाता है, ‘कुर्सी को’ ब्लैकबोर्ड ‘ कहा जाता है, ‘ब्लैकबोर्ड’ को ‘चॉक’ कहा जाता है, ‘चॉक’ को ‘डस्टर’ कहा जाता है, ‘डस्टर’ को ‘शिक्षक’ कहा जाता है’, तो शिक्षक कहाँ पर लिखता है?",
@@ -9435,7 +9509,8 @@
   ],
   "src_n": 7,
   "subject": "maths",
-  "status": "PENDING_VERIFICATION"
+  "status": "PENDING_VERIFICATION",
+  "subject_new": "reasoning"
  },
  {
   "q": "यदि ‘रवि’, ‘प्रिया’ का भाई है, प्रिया ‘सविता’ की पुत्री है, और ‘वैभव’, ‘नोनू’ के पिता है, जो सविता के ससुर का इकलौता पुत्र है। ‘रवि’, ‘वैभव’ से किस प्रकार संबंधित है?",
@@ -9499,7 +9574,8 @@
   ],
   "src_n": 15,
   "subject": "science",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "reasoning"
  },
  {
   "q": "नीचे दिए गए वेन आरेख में, ‘वृत्त’, ‘महिलाओं को निरूपित करता है; ‘त्रिकोण’, ‘विवाहितों’ को निरूपित करता है, ‘आयत’, ’30 वर्ष से कम’ को निरूपित करता है और ‘वर्ग’, ‘नियोजित लोगों’ को निरूपित करता है। आरेख में दी गई संख्याएं उस श्रेणी विशेष के व्यक्तियों की संख्या दर्शाती हैं। 30 वर्ष से कम आयु के कितने अविवाहित बेरोजगार हैं?",
@@ -9514,7 +9590,8 @@
    "16may-s2"
   ],
   "src_n": 24,
-  "subject": "india-gk"
+  "subject": "india-gk",
+  "subject_new": "maths"
  },
  {
   "q": "ग्राफिकल यूजर इंटरफेस OS (ओएस) में संचार के साथ परस्पर क्रिया करके किया जा सकता है।",
@@ -9834,7 +9911,8 @@
   ],
   "src_n": 78,
   "subject": "india-gk",
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "maths"
  },
  {
   "q": "नीलगिरी, अन्नामलाई और पालनी पहाड़ियों में समशीतोष्ण वन कहलाते ____ हैं।",
@@ -10125,7 +10203,8 @@
   "src_n": 131,
   "subject": "raj-gk",
   "time_sensitive": true,
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "subject_new": "maths"
  },
  {
   "q": "राजस्थान मुख्यमंत्री निःशुल्क जांच योजना, वर्ष ____ में चरणबद्ध तरीके से शुरू की गई थी।",
