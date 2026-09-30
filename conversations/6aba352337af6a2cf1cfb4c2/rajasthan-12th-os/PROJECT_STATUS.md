@@ -68,3 +68,17 @@ Pre-flight self-audit 2026-09-30: research claims spot-checked independently; 2 
 - 105 verified PYQs shipped live with origin=real_pyq + provenance; 40 Hindi/English/passage items in final verification batch (deploy follows verdicts).
 - Bug fixes same session: Result screen dead-end (zero exit buttons) — fixed + browser-verified; white-screen-at-first-deploy class of bugs now covered by real-browser verification standard.
 - Sources secured for next waves: Police Constable 2022 (5 shifts, official archived PDFs downloaded — needs Devanagari normalization), LDC sources mapped.
+
+## Update 2026-10-01 (00:40 IST): PREMIUM DARK-MODE UI/UX SHIPPED — research-driven redesign
+- Founder directive: research presentations & placement → applied as full visual overhaul.
+- Research: 2 missions completed — (1) exam-app teardown (Physics Wallah, Testbook, Adda247, Unacademy: home order, question/result screens, nav, placement tricks), (2) SaaS dark-mode standards (Linear/Vercel/Radix surface elevation, Devanagari typography, 8pt grid, thumb-zone, trust-badge hierarchy). Files: research/presentation-exam-apps.md, research/presentation-saas-standards.md.
+- Shipped in app/src (styles.css fully rewritten + App.jsx presentation layer rebuilt; engine/logic untouched):
+  * 4-tier dark surfaces (#09090B canvas / #141417 cards / elevated / modal), 1px borders instead of shadows; violet accent ≤10% area discipline (#7C3AED fills, #A78BFA text accents).
+  * Devanagari-first: 16px body floor, 1.7x line-height, weights 400-600.
+  * Home: sticky 52px blurred header, resume-mock card above fold, 4 quick-nav tiles, 2-col exam launcher grid (icon avatar + honest per-paper PYQ tag — only CET/LDC/Police/Steno whose own paper PYQs exist in bank).
+  * Hub: featured card + 3-stat grid + inline verified badge; sticky bottom dock CTA (thumb zone).
+  * Player: thin progress bar, 50px option cards with letter key badges, instant explanation with provenance, palette slide-over sheet, exit-CONFIRM modal (fixes accidental session-loss audit bug), timer with <5min red state.
+  * Result: conic-gradient score gauge hero, 4-stat grid, DNA bars (ok/mid/weak coloring), error book with correct-answer highlight.
+- QA (adversarial, real-browser): 7 headless-Chrome flow screenshots + computed-style assertions (surfaces/dock/typography/palette states all PASS) + pixel checks (dark 85-91%, accent discipline) + EN toggle, mock timer 2:59:59, palette states D/C correct, exit-confirm logic both branches correct, bank validation 1794/1794 ZERO issues, vite build green (1,924KB / 439KB gzip; code-splitting flagged as future optimization).
+- Fixes found during QA: exam-id mismatches in icon/PYQ maps (ldc-clerk-g2 → ldc-junior-assistant, steno-pa-g2 → stenographer); my own double-write patch bug caught by dist-bundle inspection.
+- Repo notes: nested repo (re-init during rebuild) has unrelated history vs platform origin (s3://base44-app-repositories) — platform auto-commit snapshots the workspace; do NOT push nested repo (merge attempt aborted cleanly). app/index.html is gitignored — restore via blob 79a07fbfba43b5f248c0d840e8db2f7dead94ba3 when missing.
