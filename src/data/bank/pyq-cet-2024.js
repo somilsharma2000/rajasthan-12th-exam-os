@@ -1,6 +1,105 @@
-// REAL PYQ: Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024) — 105 verified questions
+// REAL PYQ: Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024) — 141 verified questions
 // Source: archived solved paper transcription, answers independently re-verified (compute + web cross-check). Uncertain ones excluded.
 export const PYQ_CET_2024 = [
+ {
+  "id": "cet24-001",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "‘अन्वीक्षण’ में प्रयुक्त स्वर सन्धि है-",
+   "en": "‘अन्वीक्षण’ में प्रयुक्त स्वर सन्धि है-"
+  },
+  "options": {
+   "hi": [
+    "यण्",
+    "दीर्घ",
+    "अयादि",
+    "गुण"
+   ],
+   "en": [
+    "यण्",
+    "दीर्घ",
+    "अयादि",
+    "गुण"
+   ]
+  },
+  "answer": 0,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-002",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "निम्नलिखित में से किसमें स्वर संधि नहीं है ?",
+   "en": "निम्नलिखित में से किसमें स्वर संधि नहीं है ?"
+  },
+  "options": {
+   "hi": [
+    "मतैक्य",
+    "भवन",
+    "नायिका",
+    "शब्द"
+   ],
+   "en": [
+    "मतैक्य",
+    "भवन",
+    "नायिका",
+    "शब्द"
+   ]
+  },
+  "answer": 3,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-003",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "काल के आधार पर क्रिया के कितने मुख्य भेद होते हैं ?",
+   "en": "काल के आधार पर क्रिया के कितने मुख्य भेद होते हैं ?"
+  },
+  "options": {
+   "hi": [
+    "दो",
+    "तीन",
+    "सात",
+    "आठ"
+   ],
+   "en": [
+    "दो",
+    "तीन",
+    "सात",
+    "आठ"
+   ]
+  },
+  "answer": 1,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
  {
   "id": "cet24-004",
   "subject": "reasoning",
@@ -223,6 +322,171 @@ export const PYQ_CET_2024 = [
    ]
   },
   "answer": 2,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-011",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "निम्नलिखित में अन्य पुरुषवाचक सर्वनाम है-",
+   "en": "निम्नलिखित में अन्य पुरुषवाचक सर्वनाम है-"
+  },
+  "options": {
+   "hi": [
+    "हम",
+    "मैं",
+    "वे",
+    "आप"
+   ],
+   "en": [
+    "हम",
+    "मैं",
+    "वे",
+    "आप"
+   ]
+  },
+  "answer": 2,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-012",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "निम्नलिखित में जातिवाचक संज्ञा नहीं है-",
+   "en": "निम्नलिखित में जातिवाचक संज्ञा नहीं है-"
+  },
+  "options": {
+   "hi": [
+    "ठगी",
+    "विद्वान",
+    "गाँव",
+    "सती"
+   ],
+   "en": [
+    "ठगी",
+    "विद्वान",
+    "गाँव",
+    "सती"
+   ]
+  },
+  "answer": 0,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-013",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "सूची-I को सूची-II से सुमेलित कीजिए : सूची-I (वाक्य) सूची-II (क्रिया) (a) राम रोटी खाता है। (I) संयुक्त क्रिया (b) वेदांत पढ़ता है। (II) प्रेरणार्थक क्रिया (c) शिक्षक विद्यार्थी से किताब पढ़वाता है। (III) अकर्मक क्रिया (d) वह लड़का चल बसा। (IV) सकर्मक क्रिया नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :",
+   "en": "सूची-I को सूची-II से सुमेलित कीजिए : सूची-I (वाक्य) सूची-II (क्रिया) (a) राम रोटी खाता है। (I) संयुक्त क्रिया (b) वेदांत पढ़ता है। (II) प्रेरणार्थक क्रिया (c) शिक्षक विद्यार्थी से किताब पढ़वाता है। (III) अकर्मक क्रिया (d) वह लड़का चल बसा। (IV) सकर्मक क्रिया नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :"
+  },
+  "options": {
+   "hi": [
+    "a-II, b-I, c-III, d-IV",
+    "a-IV, b-II, c-I, d-III",
+    "a-IV, b-III, c-II, d-I",
+    "a-III, b-IV, c-I, d-II"
+   ],
+   "en": [
+    "a-II, b-I, c-III, d-IV",
+    "a-IV, b-II, c-I, d-III",
+    "a-IV, b-III, c-II, d-I",
+    "a-III, b-IV, c-I, d-II"
+   ]
+  },
+  "answer": 2,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-014",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "सूची-I को सूची-II से सुमेलित कीजिए : सूची-I (शब्द) सूची-II (विपरीतार्थक शब्द) (a) ऊर्ध्व (I) मधुर (b) अवसान (II) अधः (c) तिक्त (III) आरंभ (d) सुधा (IV) गरल नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :",
+   "en": "सूची-I को सूची-II से सुमेलित कीजिए : सूची-I (शब्द) सूची-II (विपरीतार्थक शब्द) (a) ऊर्ध्व (I) मधुर (b) अवसान (II) अधः (c) तिक्त (III) आरंभ (d) सुधा (IV) गरल नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :"
+  },
+  "options": {
+   "hi": [
+    "a-IV, b-II, c-I, d-III",
+    "a-I, b-III, c-II, d-IV",
+    "a-II, b-III, c-I, d-IV",
+    "a-III, b-IV, c-I, d-II"
+   ],
+   "en": [
+    "a-IV, b-II, c-I, d-III",
+    "a-I, b-III, c-II, d-IV",
+    "a-II, b-III, c-I, d-IV",
+    "a-III, b-IV, c-I, d-II"
+   ]
+  },
+  "answer": 2,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-015",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "‘धीरे-धीरे’ में कौन-सा समास है ?",
+   "en": "‘धीरे-धीरे’ में कौन-सा समास है ?"
+  },
+  "options": {
+   "hi": [
+    "अव्ययीभाव",
+    "कर्मधारय",
+    "द्वन्द्व",
+    "द्विगु"
+   ],
+   "en": [
+    "अव्ययीभाव",
+    "कर्मधारय",
+    "द्वन्द्व",
+    "द्विगु"
+   ]
+  },
+  "answer": 0,
   "explanation": {
    "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
    "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
@@ -596,6 +860,105 @@ export const PYQ_CET_2024 = [
   }
  },
  {
+  "id": "cet24-027",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "‘जिसके समान दूसरा नहीं है, वह’ इस विग्रह के लिए समस्तपद होगा-",
+   "en": "‘जिसके समान दूसरा नहीं है, वह’ इस विग्रह के लिए समस्तपद होगा-"
+  },
+  "options": {
+   "hi": [
+    "अपूर्व",
+    "अद्वितीय",
+    "द्वैत",
+    "द्वापर"
+   ],
+   "en": [
+    "अपूर्व",
+    "अद्वितीय",
+    "द्वैत",
+    "द्वापर"
+   ]
+  },
+  "answer": 1,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-028",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "‘आठ वार नौ त्योहार’ लोकोक्ति का अर्थ है-",
+   "en": "‘आठ वार नौ त्योहार’ लोकोक्ति का अर्थ है-"
+  },
+  "options": {
+   "hi": [
+    "दुगुना लाभ",
+    "तालमेल न होना",
+    "मौजमस्ती से जीवन बिताना",
+    "देखा-देखी परिवर्तन आना"
+   ],
+   "en": [
+    "दुगुना लाभ",
+    "तालमेल न होना",
+    "मौजमस्ती से जीवन बिताना",
+    "देखा-देखी परिवर्तन आना"
+   ]
+  },
+  "answer": 2,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-029",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "कार्यालयी पत्र में अधोलेख में प्रयुक्त होने वाला शब्द है-",
+   "en": "कार्यालयी पत्र में अधोलेख में प्रयुक्त होने वाला शब्द है-"
+  },
+  "options": {
+   "hi": [
+    "सेवा में",
+    "भवदीय",
+    "श्रीमान",
+    "महोदय"
+   ],
+   "en": [
+    "सेवा में",
+    "भवदीय",
+    "श्रीमान",
+    "महोदय"
+   ]
+  },
+  "answer": 1,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
   "id": "cet24-030",
   "subject": "maths",
   "origin": "real_pyq",
@@ -682,6 +1045,204 @@ export const PYQ_CET_2024 = [
     "13/6",
     "1/2",
     "9/5"
+   ]
+  },
+  "answer": 1,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-033",
+  "subject": "english",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "Choose the most appropriate option to fill in the blanks : Do you know __________ in London ? Yes, my friend Arun lives __________ near London. But in case he is out of town, I will have _________ to go.",
+   "en": "Choose the most appropriate option to fill in the blanks : Do you know __________ in London ? Yes, my friend Arun lives __________ near London. But in case he is out of town, I will have _________ to go."
+  },
+  "options": {
+   "hi": [
+    "someone, x, somewhere",
+    "anyone, nowhere, nothing",
+    "anybody, somewhere, nowhere",
+    "nobody, anywhere, something"
+   ],
+   "en": [
+    "someone, x, somewhere",
+    "anyone, nowhere, nothing",
+    "anybody, somewhere, nowhere",
+    "nobody, anywhere, something"
+   ]
+  },
+  "answer": 2,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-034",
+  "subject": "english",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "Choose the most appropriate option to complete the sentence. In an official letter the ‘subject’ is ___________ .",
+   "en": "Choose the most appropriate option to complete the sentence. In an official letter the ‘subject’ is ___________ ."
+  },
+  "options": {
+   "hi": [
+    "as long as possible",
+    "stretched and relevant",
+    "brief, clear and relevant",
+    "vague and precise"
+   ],
+   "en": [
+    "as long as possible",
+    "stretched and relevant",
+    "brief, clear and relevant",
+    "vague and precise"
+   ]
+  },
+  "answer": 2,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-035",
+  "subject": "english",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "Choose the most appropriate word to complete the given sentence : I was advised not to loiter _________ the streets after sunset.",
+   "en": "Choose the most appropriate word to complete the given sentence : I was advised not to loiter _________ the streets after sunset."
+  },
+  "options": {
+   "hi": [
+    "about",
+    "for",
+    "with",
+    "to"
+   ],
+   "en": [
+    "about",
+    "for",
+    "with",
+    "to"
+   ]
+  },
+  "answer": 0,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-036",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "अनेकार्थी शब्द ‘पतंग’ का निम्नलिखित में से एक अर्थ नहीं है-",
+   "en": "अनेकार्थी शब्द ‘पतंग’ का निम्नलिखित में से एक अर्थ नहीं है-"
+  },
+  "options": {
+   "hi": [
+    "पक्षी",
+    "सूर्य",
+    "बादल",
+    "फतिंगा"
+   ],
+   "en": [
+    "पक्षी",
+    "सूर्य",
+    "बादल",
+    "फतिंगा"
+   ]
+  },
+  "answer": 2,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-037",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "क्रिया के अंत में लगने वाले प्रत्यय कहलाते हैं-",
+   "en": "क्रिया के अंत में लगने वाले प्रत्यय कहलाते हैं-"
+  },
+  "options": {
+   "hi": [
+    "तद्धित",
+    "तद्भव",
+    "उपसर्ग",
+    "कृदन्त"
+   ],
+   "en": [
+    "तद्धित",
+    "तद्भव",
+    "उपसर्ग",
+    "कृदन्त"
+   ]
+  },
+  "answer": 3,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-038",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "‘अपितु’ शब्द में निहित उपसर्ग है-",
+   "en": "‘अपितु’ शब्द में निहित उपसर्ग है-"
+  },
+  "options": {
+   "hi": [
+    "अ",
+    "अपि",
+    "तु",
+    "उ"
+   ],
+   "en": [
+    "अ",
+    "अपि",
+    "तु",
+    "उ"
    ]
   },
   "answer": 1,
@@ -850,6 +1411,39 @@ export const PYQ_CET_2024 = [
    ]
   },
   "answer": 1,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-045",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "निम्नलिखित में से ‘जलद-जलज’ शब्द युग्म का संगत अर्थ है-",
+   "en": "निम्नलिखित में से ‘जलद-जलज’ शब्द युग्म का संगत अर्थ है-"
+  },
+  "options": {
+   "hi": [
+    "हाथी – सरोवर",
+    "कपास – लहर",
+    "बादल – कमल",
+    "समुद्र – हाथी"
+   ],
+   "en": [
+    "हाथी – सरोवर",
+    "कपास – लहर",
+    "बादल – कमल",
+    "समुद्र – हाथी"
+   ]
+  },
+  "answer": 2,
   "explanation": {
    "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
    "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
@@ -1246,6 +1840,39 @@ export const PYQ_CET_2024 = [
    ]
   },
   "answer": 2,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-058",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "परिभाषिक शब्द ‘Valid’ का उपयुक्त हिंदी अर्थ है-",
+   "en": "परिभाषिक शब्द ‘Valid’ का उपयुक्त हिंदी अर्थ है-"
+  },
+  "options": {
+   "hi": [
+    "विधिमान्य",
+    "सुयोग्य",
+    "अवैध",
+    "वृति"
+   ],
+   "en": [
+    "विधिमान्य",
+    "सुयोग्य",
+    "अवैध",
+    "वृति"
+   ]
+  },
+  "answer": 0,
   "explanation": {
    "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
    "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
@@ -1949,6 +2576,138 @@ export const PYQ_CET_2024 = [
   }
  },
  {
+  "id": "cet24-080",
+  "subject": "english",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "Choose the most appropriate option to fill in the blank : Aditi has been working here __________ .",
+   "en": "Choose the most appropriate option to fill in the blank : Aditi has been working here __________ ."
+  },
+  "options": {
+   "hi": [
+    "since six months",
+    "six months ago",
+    "six months before",
+    "for six months"
+   ],
+   "en": [
+    "since six months",
+    "six months ago",
+    "six months before",
+    "for six months"
+   ]
+  },
+  "answer": 3,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-081",
+  "subject": "english",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "Choose the most appropriate passive form of the word : ‘declare’ to fill in the blank- The old house in town ______________ unsafe by the authorities.",
+   "en": "Choose the most appropriate passive form of the word : ‘declare’ to fill in the blank- The old house in town ______________ unsafe by the authorities."
+  },
+  "options": {
+   "hi": [
+    "declared",
+    "are declaring",
+    "have been declared",
+    "declare"
+   ],
+   "en": [
+    "declared",
+    "are declaring",
+    "have been declared",
+    "declare"
+   ]
+  },
+  "answer": 2,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-082",
+  "subject": "english",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "Choose the most appropriate option to fill in the blanks : ___________ postman’s little boy said that he’d rather be __________ dentist than ______________ cardiologist, because ____________ dentists don’t get called out at __________ night.",
+   "en": "Choose the most appropriate option to fill in the blanks : ___________ postman’s little boy said that he’d rather be __________ dentist than ______________ cardiologist, because ____________ dentists don’t get called out at __________ night."
+  },
+  "options": {
+   "hi": [
+    "x, a, a, a, the",
+    "The, a, a, x, x",
+    "A, the, the, a, x",
+    "The, the a, x, x"
+   ],
+   "en": [
+    "x, a, a, a, the",
+    "The, a, a, x, x",
+    "A, the, the, a, x",
+    "The, the a, x, x"
+   ]
+  },
+  "answer": 1,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-083",
+  "subject": "english",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "Choose the word which is similar in meaning to RELINQUISH",
+   "en": "Choose the word which is similar in meaning to RELINQUISH"
+  },
+  "options": {
+   "hi": [
+    "residue",
+    "offensive",
+    "persist",
+    "abandon"
+   ],
+   "en": [
+    "residue",
+    "offensive",
+    "persist",
+    "abandon"
+   ]
+  },
+  "answer": 3,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
   "id": "cet24-084",
   "subject": "computer",
   "origin": "real_pyq",
@@ -2203,6 +2962,39 @@ export const PYQ_CET_2024 = [
    ]
   },
   "answer": 2,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-098",
+  "subject": "english",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "Choose the Antonym of the word SURPLUS from the options given :",
+   "en": "Choose the Antonym of the word SURPLUS from the options given :"
+  },
+  "options": {
+   "hi": [
+    "Smother",
+    "Inhibit",
+    "Biased",
+    "Deficit"
+   ],
+   "en": [
+    "Smother",
+    "Inhibit",
+    "Biased",
+    "Deficit"
+   ]
+  },
+  "answer": 3,
   "explanation": {
    "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
    "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
@@ -2906,6 +3698,171 @@ export const PYQ_CET_2024 = [
   }
  },
  {
+  "id": "cet24-120",
+  "subject": "english",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "Choose the most appropriate English translation of the given sentence रुद्र ने किताब क्यों फाड़ी ?",
+   "en": "Choose the most appropriate English translation of the given sentence रुद्र ने किताब क्यों फाड़ी ?"
+  },
+  "options": {
+   "hi": [
+    "Why the book was torn by Rudra?",
+    "The book was torn by Rudra why?",
+    "Why tear the book, Rudra?",
+    "Why did Rudra tear the book?"
+   ],
+   "en": [
+    "Why the book was torn by Rudra?",
+    "The book was torn by Rudra why?",
+    "Why tear the book, Rudra?",
+    "Why did Rudra tear the book?"
+   ]
+  },
+  "answer": 3,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-121",
+  "subject": "english",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "Choose the most appropriate reported form of the sentence given : He said to us, “Don’t walk on ice; it isn’t safe.”",
+   "en": "Choose the most appropriate reported form of the sentence given : He said to us, “Don’t walk on ice; it isn’t safe.”"
+  },
+  "options": {
+   "hi": [
+    "He said not to walk on ice as its not safe.",
+    "He warned us not to walk on ice as it wasn’t safe.",
+    "He ordered us not to walked on ice as it weren’t safe.",
+    "He told us to avoid walking on ice as it isn’t safe."
+   ],
+   "en": [
+    "He said not to walk on ice as its not safe.",
+    "He warned us not to walk on ice as it wasn’t safe.",
+    "He ordered us not to walked on ice as it weren’t safe.",
+    "He told us to avoid walking on ice as it isn’t safe."
+   ]
+  },
+  "answer": 1,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-122",
+  "subject": "english",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "Choose the most appropriate option to fill in the blanks: I _________ her _________ a long time, _________ she was a child.",
+   "en": "Choose the most appropriate option to fill in the blanks: I _________ her _________ a long time, _________ she was a child."
+  },
+  "options": {
+   "hi": [
+    "know, since, for",
+    "knew, x, since",
+    "have known, for, since",
+    "was knowing, since, since"
+   ],
+   "en": [
+    "know, since, for",
+    "knew, x, since",
+    "have known, for, since",
+    "was knowing, since, since"
+   ]
+  },
+  "answer": 2,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-123",
+  "subject": "english",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "Choose the word opposite in meaning to ERUDITE",
+   "en": "Choose the word opposite in meaning to ERUDITE"
+  },
+  "options": {
+   "hi": [
+    "Boring",
+    "Illiterate",
+    "Crude",
+    "Learned"
+   ],
+   "en": [
+    "Boring",
+    "Illiterate",
+    "Crude",
+    "Learned"
+   ]
+  },
+  "answer": 1,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-124",
+  "subject": "english",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "Choose the word closest in meaning to the underlined word : People thronged to pay homage to the departed leader.",
+   "en": "Choose the word closest in meaning to the underlined word : People thronged to pay homage to the departed leader."
+  },
+  "options": {
+   "hi": [
+    "humility",
+    "obedience",
+    "tribute",
+    "alienation"
+   ],
+   "en": [
+    "humility",
+    "obedience",
+    "tribute",
+    "alienation"
+   ]
+  },
+  "answer": 2,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
   "id": "cet24-125",
   "subject": "raj-gk",
   "origin": "real_pyq",
@@ -3160,6 +4117,105 @@ export const PYQ_CET_2024 = [
    ]
   },
   "answer": 3,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-133",
+  "subject": "english",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "Match List-I with List-II List-I List-II (a) Munich is a large city _________ the south of Germany. (I) at (b) Were there many people _________ the concert of Friday? (II) during (c) We shouldn’t speak ________ eating. (III) in (d) We didn’t speak ________ the meal. (IV) while Choose the most appropriate answer from the options given below :",
+   "en": "Match List-I with List-II List-I List-II (a) Munich is a large city _________ the south of Germany. (I) at (b) Were there many people _________ the concert of Friday? (II) during (c) We shouldn’t speak ________ eating. (III) in (d) We didn’t speak ________ the meal. (IV) while Choose the most appropriate answer from the options given below :"
+  },
+  "options": {
+   "hi": [
+    "a-III, b-I, c-IV, d-II",
+    "a-II, b-IV, c-III, d-I",
+    "a-I, b-II, c-III, d-IV",
+    "a-IV, b-III, c-II, d-I"
+   ],
+   "en": [
+    "a-III, b-I, c-IV, d-II",
+    "a-II, b-IV, c-III, d-I",
+    "a-I, b-II, c-III, d-IV",
+    "a-IV, b-III, c-II, d-I"
+   ]
+  },
+  "answer": 0,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-134",
+  "subject": "english",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "Choose the most appropriate English word for the given word- अभिग्रहण.",
+   "en": "Choose the most appropriate English word for the given word- अभिग्रहण."
+  },
+  "options": {
+   "hi": [
+    "Deferred",
+    "Seizure",
+    "Regulation",
+    "Abatement"
+   ],
+   "en": [
+    "Deferred",
+    "Seizure",
+    "Regulation",
+    "Abatement"
+   ]
+  },
+  "answer": 1,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-135",
+  "subject": "english",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "Choose the most appropriate word to complete the following sentence : An inscription on a tombstone is termed as __________ .",
+   "en": "Choose the most appropriate word to complete the following sentence : An inscription on a tombstone is termed as __________ ."
+  },
+  "options": {
+   "hi": [
+    "a cemetery",
+    "a grave",
+    "an epitaph",
+    "a sermon"
+   ],
+   "en": [
+    "a cemetery",
+    "a grave",
+    "an epitaph",
+    "a sermon"
+   ]
+  },
+  "answer": 2,
   "explanation": {
    "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
    "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
@@ -3457,6 +4513,138 @@ export const PYQ_CET_2024 = [
    ]
   },
   "answer": 0,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-147",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "‘पके हुए अन्न की भिक्षा’ इस वाक्यांश के लिए एक शब्द है-",
+   "en": "‘पके हुए अन्न की भिक्षा’ इस वाक्यांश के लिए एक शब्द है-"
+  },
+  "options": {
+   "hi": [
+    "दुर्भिक्ष",
+    "मधुकरी",
+    "दुर्घर्ष",
+    "लोमश"
+   ],
+   "en": [
+    "दुर्भिक्ष",
+    "मधुकरी",
+    "दुर्घर्ष",
+    "लोमश"
+   ]
+  },
+  "answer": 1,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-148",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "निम्नलिखित में शुद्ध वर्तनीयुक्त शब्द है-",
+   "en": "निम्नलिखित में शुद्ध वर्तनीयुक्त शब्द है-"
+  },
+  "options": {
+   "hi": [
+    "विस्मरण",
+    "चर्तुथ",
+    "व्यूत्पत्ती",
+    "पैत्रिक"
+   ],
+   "en": [
+    "विस्मरण",
+    "चर्तुथ",
+    "व्यूत्पत्ती",
+    "पैत्रिक"
+   ]
+  },
+  "answer": 0,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-149",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "शब्द व उसके पर्यायवाची बेमेल जोड़े का चयन करें-",
+   "en": "शब्द व उसके पर्यायवाची बेमेल जोड़े का चयन करें-"
+  },
+  "options": {
+   "hi": [
+    "आम्र – रसाल",
+    "आनंद – वासव",
+    "रमा – लक्ष्मी",
+    "वायुसखा – कृशानु"
+   ],
+   "en": [
+    "आम्र – रसाल",
+    "आनंद – वासव",
+    "रमा – लक्ष्मी",
+    "वायुसखा – कृशानु"
+   ]
+  },
+  "answer": 1,
+  "explanation": {
+   "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
+   "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
+  },
+  "provenance": {
+   "source": "RSSB CET Senior Secondary 2024 Shift-1 official paper (archived solved transcription via shikshanagari.com), answer cross-verified independently",
+   "evidence": "REAL_PYQ_VERIFIED"
+  }
+ },
+ {
+  "id": "cet24-150",
+  "subject": "hindi",
+  "origin": "real_pyq",
+  "verification": "VERIFIED",
+  "q": {
+   "hi": "निम्नलिखित में अशुद्ध लिखित वाक्य है –",
+   "en": "निम्नलिखित में अशुद्ध लिखित वाक्य है –"
+  },
+  "options": {
+   "hi": [
+    "कृपया यहाँ बैठिए।",
+    "जल्दी वापस लौटकर आना।",
+    "मै प्रातः काल घूमने जाता हूँ।",
+    "वह वहाँ से चल दिया।"
+   ],
+   "en": [
+    "कृपया यहाँ बैठिए।",
+    "जल्दी वापस लौटकर आना।",
+    "मै प्रातः काल घूमने जाता हूँ।",
+    "वह वहाँ से चल दिया।"
+   ]
+  },
+  "answer": 1,
   "explanation": {
    "hi": "राजस्थान सीईटी (सीनियर सेकेंडरी) 2024, शिफ्ट-1 (22 अक्टूबर 2024) का वास्तविक प्रश्न। उत्तर स्वतंत्र रूप से पुनः सत्यापित।",
    "en": "Actual question from Rajasthan CET (Senior Secondary) 2024, Shift-1 (22 Oct 2024). Answer independently re-verified."
