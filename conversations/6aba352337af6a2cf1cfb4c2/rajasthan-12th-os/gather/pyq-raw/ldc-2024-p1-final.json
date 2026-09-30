@@ -1,0 +1,2005 @@
+[
+ {
+  "i": 0,
+  "n": 1,
+  "q": "मौर्यकालीन प्रशासनिक प्रणाली में निम्नलिखित में से राजस्व वसूली का प्रभारी कौन था जोकि आय का लेखा रखता था?",
+  "opts": [
+   "पुरोहित",
+   "सन्निधांता",
+   "समाहर्ता",
+   "लुनाध्यक्ष"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Which one of the following was in-charge of collecting revenue, keeping record of income in the Mauryan administrative system?"
+ },
+ {
+  "i": 1,
+  "n": 2,
+  "q": "मल्ल महाजनपद की राजधानी निम्नलिखित में से कौन सी थी?",
+  "opts": [
+   "विदेह और मिथिला",
+   "कौशाम्बी",
+   "कुशावटी (कुशीनारा)",
+   "राजपुर/हटक"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Which of the following was the capital of Malla Mahajanpada?"
+ },
+ {
+  "i": 2,
+  "n": 3,
+  "q": "जैन के प्रथम तीर्थंकर कौन थे?",
+  "opts": [
+   "पार्श्वनाथ",
+   "ऋषभनाथ",
+   "महावीर स्वामी",
+   "पद्मप्रभा"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "डेटा 6, 16, 12, 4, 7, 35, 39 और 3 के माध्य (मीन) और माध्यिका (मिडियन) का अंतर ज्ञात करें:"
+ },
+ {
+  "i": 3,
+  "n": 4,
+  "q": "निम्नलिखित में से कौन सिंथेटिक टेक्सटाइल के लिए एक “नोडल (प्रमुख) उद्योग” के रूप में कार्य करती है ?",
+  "opts": [
+   "प्लास्टिक उद्योग",
+   "पैट्रो रसायन उद्योग",
+   "पेपर उद्योग",
+   "चीनी मिल"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Which one of the following acts as a &#8220;Nodal Industry&#8221; for synthetic textile?"
+ },
+ {
+  "i": 4,
+  "n": 5,
+  "q": "राजस्थान के निम्नलिखित तांबा खदान केन्द्रों को उत्तर से दक्षिण दिशा की ओर व्यवस्थित करें: a. भीलवाड़ा b. उदयपुर c. अलवर d. खेतड़ी नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें :",
+  "opts": [
+   "d, c, a, b",
+   "c, d, a, b",
+   "c, a, b, d",
+   "d, a, c, b"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Arrange the following copper mine centres of Rajasthan, from North to South direction. a. Bhilwara b. Udaipur c. Alwar d. Khetri राजस्थान के निम्नलिखित तांबा खदान केन्द्रों को उत्तर से दक्षिण दिशा की ओर व्यवस्थित करें: a. भीलवाड़ा b. उदयपुर c. अलवर d. खेतड़ी Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें :"
+ },
+ {
+  "i": 5,
+  "n": 6,
+  "q": "निम्नलिखित में से कौन सा बंदरगाह भारत के पश्चिमी तट पर स्थित है?",
+  "opts": [
+   "तूतीकोरिन बंदरगाह",
+   "पाराद्वीप बंदरगाह",
+   "कोची बंदरगाह",
+   "हल्दिया बंदरगाह"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Which one of the following port is situated on the western coast of India?"
+ },
+ {
+  "i": 6,
+  "n": 7,
+  "q": "निम्नलिखित में से कौन सा भारतीय राज्य बांग्लादेश के साथ अपने राज्य की सीमा साझा नहीं करता है ?",
+  "opts": [
+   "मणिपुर",
+   "त्रिपुरा",
+   "मेघालय",
+   "असम"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Which one of the following Indian state does not share its state boundary with Bangladesh?"
+ },
+ {
+  "i": 7,
+  "n": 8,
+  "q": "cosec (65°+θ) – cot (25°–θ) – sec (25°–θ) + tan (65°+θ) =",
+  "opts": [
+   "2",
+   "0",
+   "1-",
+   "-2"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "cosec (65°+θ) – cot (25°–θ) – sec (25°–θ) + tan (65°+θ) ="
+ },
+ {
+  "i": 8,
+  "n": 10,
+  "q": "तालिका में वर्ष 2005, 2006, 2007 और 2008 में विश्वविद्यालय में प्रवेश पाने वाले मानविकी, विज्ञान और वाणिज्य संकाय के छात्रों की संख्या दर्शायी गयी है: दर्शाए गए वर्षों के दौरान प्रति वर्ष वाणिज्य संकाय में प्रवेश पाने वाले छात्रों की प्रति वर्ष औसत संख्या क्या है?",
+  "opts": [
+   "908",
+   "912",
+   "915",
+   "903"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "The table shows the number of students of Humanities, science and commerce streams who were admitted in a University in the years 2005, 2006, 2007 and 2008 तालिका में वर्ष 2005, 2006, 2007 और 2008 में विश्वविद्यालय में प्रवेश पाने वाले मानविकी, विज्ञान और वाणिज्य संकाय के छात्रों की संख्या दर्शायी गयी है: What is the average number of students per year who got admission in Commerce stream during the given years? दर्शाए गए वर्षों के दौरान प्रति वर्ष वाणिज्य संकाय में प्रवेश पाने वाले छात्रों की प्रति वर्ष औसत संख्या क्या है?"
+ },
+ {
+  "i": 9,
+  "n": 11,
+  "q": "लोक कथाएं (1960-1975) के संग्रह से उद्धृत ‘बातां री से फुलवारी’ के लेखक कौन थे?",
+  "opts": [
+   "विजयदान देथा",
+   "कन्हैया लाल सेठिया",
+   "गावरी देवी",
+   "बीरबल सिंह"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "‘Battan Ri Phulwari' from the collection of folk tales (1960-1975) writer was:"
+ },
+ {
+  "i": 10,
+  "n": 12,
+  "q": "निम्नलिखित में से कौन सा नगर भारत का प्रथम आर्द्र भूमि (वेटलैंड) नगर बना?",
+  "opts": [
+   "उदयपुर",
+   "भोपाल",
+   "इंदौर",
+   "शिलांग"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Which one of the following cities has become India's First Wetland city?"
+ },
+ {
+  "i": 11,
+  "n": 13,
+  "q": "किसानों पर “चंवरी कर” किसने अधिरोपित किया था?",
+  "opts": [
+   "हामिद हुसैन",
+   "पृथ्वी सिंह",
+   "राव कृष्णा सिंह",
+   "गंगाराम"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Who imposed tax named &#8220;Chanwari tax&#8221; on the farmers ?"
+ },
+ {
+  "i": 12,
+  "n": 14,
+  "q": "विडाल परीक्षण पुष्टि करता है:",
+  "opts": [
+   "टाइफाइड बुखार",
+   "एड्स (AIDS)",
+   "डेंगू",
+   "मलेरिया"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Widal test is done to confirm which disease?"
+ },
+ {
+  "i": 13,
+  "n": 15,
+  "q": "किसी बिम्ब का वास्तविक तथा समान साइज़ का प्रतिबिम्ब प्राप्त करने के लिए बिम्ब को उत्तल लेंस के सामने कहाँ रखा जाना चाहिए ?",
+  "opts": [
+   "फोकस दूरी के दोगुनी दूरी पर",
+   "अनंत पर",
+   "लेंस के प्रकाशिक केंद्र और उसके मुख्य फोकस के बीच",
+   "लेंस के मुख्य फोकस पर"
+  ],
+  "ans": 0,
+  "via": "ADJUDICATED",
+  "en": "Where should be an object be placed in front of convex lens to get a real image of the size of the object?"
+ },
+ {
+  "i": 14,
+  "n": 16,
+  "q": "यदि एक बहुभुज के प्रत्येक आंतरिक कोण का माप 150° है, तो इसकी भुजाओं की संख्या है:",
+  "opts": [
+   "6",
+   "5",
+   "12",
+   "8"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "If 150% is the measure of each interior angle of a regular polygon, then the number of its sides are: यदि एक बहुभुज के प्रत्येक आंतरिक कोण का माप 150° है, तो इसकी भुजाओं की संख्या है:"
+ },
+ {
+  "i": 15,
+  "n": 17,
+  "q": "एक ∆ ABC में बाह्य कोण ∠B और ∠C के समद्विभाजित बिन्दु O पर मिलते हैं, यदि ∠A = 62°, तब ∠BOC का माप है-",
+  "opts": [
+   "60°",
+   "59°",
+   "56°",
+   "62°"
+  ],
+  "ans": 1,
+  "via": "ADJUDICATED",
+  "en": "In ∆ ABC, bisectors of exterior angles ∠B and ∠C meet at point O. If ∠A= 62°, then the measure of ∠BOC is : एक ∆ ABC में बाह्य कोण ∠B और ∠C के समद्विभाजित बिन्दु O पर मिलते हैं, यदि ∠A = 62°, तब ∠BOC का माप है-"
+ },
+ {
+  "i": 16,
+  "n": 18,
+  "q": "जैसा कि मंडल द्वारा अध्ययन किया गया है, निम्नलिखित में से कौन सा बगान की मटर के प्रमुख गुण नहीं है?",
+  "opts": [
+   "अंतिम पुष्प स्थिति",
+   "पीले बीज का रंग",
+   "हरी फली का रंग",
+   "पूरी / फूली हुई फली"
+  ],
+  "ans": 0,
+  "via": "ADJUDICATED",
+  "en": "Which of the following is NOT a dominant trait in a Garden Pea as studied by Mendal?"
+ },
+ {
+  "i": 17,
+  "n": 19,
+  "q": "नीचे दो कथन दिए गए हैं: कथन I: एक कोशिका प्रोटीन, पशु और पौधों के पोषण के लिए प्रोटीन का एक वैकल्पिक स्रोत है। कथन II : स्पिरुलिना एकल कोशिका प्रोटीन में से एक है जो प्रोटीन, खनिज और विटामिन आदि के समृद्ध स्रोत के रूप में कार्य कर सकता है, परंतु इसकी वृद्धि पर्यावरण प्रदूषण में वृद्धि करती है। उपर्युक्त कथनों के आलोक में निम्नलिखित विकल्पों में से सही उत्तर चुनें :",
+  "opts": [
+   "कथन I और II दोनों असत्य हैं।",
+   "कथन I सत्य है किंतु कथन II असत्य है।",
+   "कथन I असत्य है किंतु कथन II सत्य है।",
+   "कथन I और II दोनों सत्य हैं।"
+  ],
+  "ans": 1,
+  "via": "ADJUDICATED",
+  "en": "Given below are two statements: Statement (I): Single Cell Protein (SCP) is an alternate source of protein for animal and plant nutrition. Statement (II): Spirulina is one of the Single Cell Protein that can serve as a rich source of protein, minerals and vitamins etc but its growth increases environmental pollution. In light of the above statements, choose the most appropriate answer from the options given below."
+ },
+ {
+  "i": 18,
+  "n": 20,
+  "q": "सतीश धवन अंतरिक्ष केंद्र भारत में कहाँ स्थित है?",
+  "opts": [
+   "बेंगलुरु",
+   "श्रीहरिकोटा",
+   "हैदराबाद",
+   "थिरुवनंतपुरम"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Where is Satish Dhawan Space Centre (SDSC) located in India?"
+ },
+ {
+  "i": 19,
+  "n": 21,
+  "q": "साबुन और डिटरजेंट से संबंधित सत्य कथन की पहचान करें। a: साबुन सल्फ्यूरिक एसिड की लंबी श्रृंखला के सोडियम या. पोटैशियम लवण होते हैं जबकि डिटरजेंट आम तौर पर कार्बोक्जिलिक एसिड के सोडियम लवण होते हैं। b. जब साबुन के अणु पानी और गंदगी (तेल) के संपर्क में आते है तो वे मिसेल्स बनाते हैं। c. ये मिसेल्स पानी में मौजूद गंदगी को बाहर निकालने में सक्षम हैं। d. साबुन कठोर जल में भी प्रभावकारी हैं। e. कठोर जल में डिटरजेंट अप्रभावी रहता है। नीचे दिए गए विकल्पों में से सबसे उपयुक्त उत्तर चुनें।",
+  "opts": [
+   "b और e",
+   "b और c",
+   "a और d",
+   "a, bऔर e"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Identify the true statements related to soaps and detergents. a. Soaps are sodium or potassium salts of long chain of sulphuric acids while detergents are generally sodium salts of carboxylic acids b. The soap molecules form micelles when they interact with water and dirt (Oil) c. These micelles are able to pull out the dirt in water d. Soaps are effective in hardwater also e. The detergent remain ineffective in hard water Choose the most appropirate answer from the options given below:"
+ },
+ {
+  "i": 20,
+  "n": 22,
+  "q": "डेटा 6, 16, 12, 4, 7, 35, 39 और 3 के माध्य (मीन) और माध्यिका (मिडियन) का अंतर ज्ञात करें:",
+  "opts": [
+   "4.25",
+   "5.75",
+   "9.75",
+   "0"
+  ],
+  "ans": 1,
+  "via": "SOLO_VERIFIED",
+  "en": ""
+ },
+ {
+  "i": 21,
+  "n": 23,
+  "q": "एक कक्षा में लड़कियों की संख्या लड़कों की संख्या से एक कम है। यदि लड़कों और लड़कियों की संख्या का गुणनफल 272 है, तो कक्षा में लड़कियों की संख्या कितनी है?",
+  "opts": [
+   "14",
+   "16",
+   "17",
+   "15"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "In a class, the number of girls is one less than the number of boys. If the product of the number of boys and that of girls is 272, then the number of girls in the class is: एक कक्षा में लड़कियों की संख्या लड़कों की संख्या से एक कम है। यदि लड़कों और लड़कियों की संख्या का गुणनफल 272 है, तो कक्षा में लड़कियों की संख्या कितनी है?"
+ },
+ {
+  "i": 22,
+  "n": 24,
+  "q": "डेटा 5, 3, 8, 11, 13, 8, 19 और 24 में से (2 माध्यिका (मिडियन) माइनस मोड) मान ज्ञात कीजिए:",
+  "opts": [
+   "9.5",
+   "10",
+   "11",
+   "8"
+  ],
+  "ans": 2,
+  "via": "DUAL_TEXT_MATCH",
+  "en": ""
+ },
+ {
+  "i": 23,
+  "n": 25,
+  "q": "यदि 4x 3 + kx का गुणनखंड 2x + 1 है, तो k का मान होगा?",
+  "opts": [
+   "– ½",
+   "-1",
+   "4",
+   "2"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "If 2x+1 is a factor of 4x 3 + kx , then the value of k is: यदि 4x 3 + kx का गुणनखंड 2x + 1 है, तो k का मान होगा?"
+ },
+ {
+  "i": 24,
+  "n": 27,
+  "q": "निम्नलिखित में से कौन सा मौलिक अधिकार, नागरिकों को न्यायालय में जाने की अनुमति देता है, यदि उन्हें लगता है कि, राज्य द्वारा उनके किसी मौलिक अधिकार का हनन किया गया है",
+  "opts": [
+   "समानता का अधिकार",
+   "संवैधानिक उपचारों का अधिकार",
+   "धर्म की स्वतंत्रता का अधिकार",
+   "शोषण के विरुद्ध अधिकार"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Which of the following fundamental right allows, citizens to move the court, if they believe, that any of their fundamental rights have been violated by the state?"
+ },
+ {
+  "i": 25,
+  "n": 28,
+  "q": "निम्नलिखित में से कौन सा पूंजीवादी अर्थ व्यवस्था का अवगुण है?",
+  "opts": [
+   "आर्थिक स्वतंत्रता",
+   "एकाधिकार का उदय",
+   "संसाधनों का सर्वोत्तम प्रयोग",
+   "उत्पादन की दक्षता और क्षमता में वृद्धि होना"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Which of the following is a demerit of Capitalistic economy?"
+ },
+ {
+  "i": 26,
+  "n": 29,
+  "q": "कौन सा संविधान संशोधन अधिनियम दल बदल विरोधी कानून से सम्बंधित है?",
+  "opts": [
+   "44वाँ संविधान संशोधन – 1978",
+   "52वाँ संविधान संशोधन – 1985",
+   "64वाँ संविधान संशोधन – 1989",
+   "42वाँ संविधान संशोधन – 1976"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Which Constitution Amendment Act is related to anti-defection law?"
+ },
+ {
+  "i": 27,
+  "n": 30,
+  "q": "बिन्दु A के निर्देशक ज्ञात करें जहां पर कि AB एक वृत्त का व्यास है जिसका केंद्र (2, −3) और B (1, 4) है।",
+  "opts": [
+   "(5,-2)",
+   "(3, −10)",
+   "(4, 3)",
+   "(0, 11)"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Find the coordinator of the point A where AB is the diameter of a circle whose centre is (2,-3) and B is (1, 4). बिन्दु A के निर्देशक ज्ञात करें जहां पर कि AB एक वृत्त का व्यास है जिसका केंद्र (2, −3) और B (1, 4) है।"
+ },
+ {
+  "i": 28,
+  "n": 31,
+  "q": "एक कमरे की लंबाई इसकी चौड़ाई से दोगुनी है। छत को रंगने की लागत ₹ 25 प्रति वर्ग मीटर की दर से ₹ 5,000 है और चार दीवारों की रंगाई की लागत ₹ 240 प्रति वर्ग मीटर की दर से ₹ 64,800 है तो कमरे की ऊंचाई है:",
+  "opts": [
+   "4.5 मीटर",
+   "3.5 मीटर",
+   "5 मीटर",
+   "4 मीटर"
+  ],
+  "ans": 0,
+  "via": "ADJUDICATED",
+  "en": "The length of a room is double that of its breadth. The cost of colouring the ceiling at 25 per m2 is ₹ 5000 and the cost of painting the four walls at ₹ 240 per m is ₹ 64,800. The height of the room is:"
+ },
+ {
+  "i": 29,
+  "n": 32,
+  "q": "जमीन से 300 मीटर की ऊंचाई पर उड़ने वाला एक हवाई जहाज उसी क्षण उर्ध्वाधर से दूसरे विमान के उपर से गुजरता है जब जमीन पर एक ही बिन्दु से दो विमानों का उन्नयन कोण 60° और 45° क्रमशः हो। जमीन से निचले विमान की ऊंचाई (मीटर में) है –",
+  "opts": [
+   "100/√3",
+   "100√3",
+   "150(√3+1)",
+   "50"
+  ],
+  "ans": 1,
+  "via": "ADJUDICATED",
+  "en": "An aeroplane flying at a height of 300 m above the ground passes vertically above another plane at an instant when the angles of elevation of the two planes from the same point on the ground are 60° and 45°, respectively. The height of the lower plane from the ground (in m) is: जमीन से 300 मीटर की ऊंचाई पर उड़ने वाला एक हवाई जहाज उसी क्षण उर्ध्वाधर से दूसरे विमान के उपर से गुजरता है जब जमीन पर एक ही बिन्दु से दो विमानों का उन्नयन कोण 60° और 45° क्रमशः हो। जमीन से निचले विमान की ऊंचाई (मीटर में) है –"
+ },
+ {
+  "i": 30,
+  "n": 33,
+  "q": "एक जन्मदिन की टोपी एक शंकु के आकार की है जिसका आधार त्रिज्या 7 से.मी और ऊंचाई 24 से.मी है। ऐसी पांच टोपियां बनाने हेतु आवश्यक शीट का क्षेत्रफल (सेमी2 में) है (π = 22/7)",
+  "opts": [
+   "2700",
+   "2750",
+   "3000",
+   "2640"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "A birthday cap is in the form of a cone having base radius 7 cm and height 24 cm. The area of the sheet (in cm 2 ) required to make five such caps is (π = 22/7) एक जन्मदिन की टोपी एक शंकु के आकार की है जिसका आधार त्रिज्या 7 से.मी और ऊंचाई 24 से.मी है। ऐसी पांच टोपियां बनाने हेतु आवश्यक शीट का क्षेत्रफल (सेमी 2 में) है (π = 22/7)"
+ },
+ {
+  "i": 31,
+  "n": 34,
+  "q": "+ 2 tan11° tan 31° tan 45° tan 59° tan 79° -3 (sin2 20+ sin2 70°) का मान है",
+  "opts": [
+   "-1",
+   "1",
+   "0",
+   "2"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "The value of + 2 tan11° tan 31° tan 45° tan 59° tan 79° -3 (sin 2 20+ sin 2 70°) is – + 2 tan11° tan 31° tan 45° tan 59° tan 79° -3 (sin 2 20+ sin 2 70°) का मान है"
+ },
+ {
+  "i": 32,
+  "n": 35,
+  "q": "गणगौर पर्व समर्पित है _____",
+  "opts": [
+   "देवी पार्वती",
+   "भगवान राम",
+   "भगवान कृष्ण",
+   "देवी लक्ष्मी"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Gangaur festival is devoted to –"
+ },
+ {
+  "i": 33,
+  "n": 36,
+  "q": "लच्छीराम किस लोक नाटक/कला से सम्बंधित है?",
+  "opts": [
+   "हेला खयाल",
+   "कूचामणी खयाल",
+   "शेखावटी खयाल",
+   "जयपुरी ख़याल"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Lacchiram is related to which folk drama art?"
+ },
+ {
+  "i": 34,
+  "n": 37,
+  "q": "निम्नलिखित में से कर्नाटक के किस शहर मे लौह-इस्पात संयंत्र स्थित है?",
+  "opts": [
+   "भद्रावती",
+   "सलेम",
+   "बर्नपुर",
+   "दुर्गापुर"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "In which of the following city iron and steel plant is situated in Karnataka?"
+ },
+ {
+  "i": 35,
+  "n": 38,
+  "q": "‘ट्रिस्ट विद डेस्टिनी’ (Tryst with Destiny) प्रसिद्ध भाषण किसने दिया?",
+  "opts": [
+   "पं. जे. एल. नेहरु",
+   "सरदार वल्लभ भाई पटेल",
+   "डॉ. भीमराव अम्बेडकर",
+   "महात्मा गाँधी"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Who gave the famous speech &#8216;Tryst with Destiny &#8216;?"
+ },
+ {
+  "i": 36,
+  "n": 39,
+  "q": "कोरापुट खनन केंद्र निम्न में से किस राज्य में स्थित है?",
+  "opts": [
+   "महाराष्ट्र",
+   "कर्नाटक",
+   "ओडिशा",
+   "आंध्र-प्रदेश"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Koraput Mining Centre is located in which of the following state.?"
+ },
+ {
+  "i": 37,
+  "n": 40,
+  "q": "निम्नलिखित में से कौन सा घटक आयु-लिंग पिरामिड में परिलक्षित नहीं होता है ?",
+  "opts": [
+   "प्रतिशत में महिला सदस्य",
+   "प्रतिशत में पुरुष सदस्य",
+   "प्रत्येक आयु वर्ग में पुरुषों और महिलाओं का प्रतिशत",
+   "जनसंख्या घनत्व"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "Which one of the following component is NOT reflected in Age-Sex pyramid?"
+ },
+ {
+  "i": 38,
+  "n": 41,
+  "q": "CaO + H 2 O → Ca(OH) 2 + Heat दिया गया रासायनिक समीकरण है: a. एक दोहरी विस्थापन प्रतिक्रिया b. एक संयोजन प्रतिक्रिया c. एक विघटन प्रतिक्रिया d. एक ऊष्माक्षेपी प्रतिक्रिया नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें।",
+  "opts": [
+   "केवल b और d",
+   "केवल b और c",
+   "केवल a और d",
+   "केवल a और c"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "CaO+H 2 O→Ca(OH) 2 + Heat The given chemical equation is: a double displacement reaction b. a combination reaction a decomposition reaction d. exothermic reaction Choose the most appropriate answer from the options given below:"
+ },
+ {
+  "i": 39,
+  "n": 42,
+  "q": "एरीएटेड वाटर आसुत पेय (सोडा पानी) a. गैसों का मिश्रण है। b. तरल घोल में गैस है। c. गैस के घोल में तरल है। d. विलेय के रूप में कार्बन डाइऑक्साइड और विलायक के रूप में पानी। e. विलायक के रूप में कार्बन डाइऑक्साइड और विलेय के रूप में पानी। नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें।",
+  "opts": [
+   "केवल b और d",
+   "केवल a, c और d",
+   "केवल b, d और e",
+   "केवल c और d"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "The aerated drinks (soda water) constitute a. A mixture of gases b. Gas in liquid solution c. Liquid in gas solution d. Carbon dioxide as solute and water as solvent e. Carbon dioxide as solvent and water as solute Choose the most appropriate answer from the options given below:"
+ },
+ {
+  "i": 40,
+  "n": 43,
+  "q": "‘बेटी बचाओ, बेटी पढ़ाओं’, योजना किस वर्ष सम्पूर्ण भारतवर्ष में लागू हुई?",
+  "opts": [
+   "2015",
+   "2016",
+   "2017",
+   "2014"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "&#8216;Beti Bachao, Beti Padhao' scheme was launched in which year all over India? &#8216;बेटी बचाओ, बेटी पढ़ाओं', योजना किस वर्ष सम्पूर्ण भारतवर्ष में लागू हुई?"
+ },
+ {
+  "i": 41,
+  "n": 44,
+  "q": "नई दिल्ली में 9वें एशियन खेल किस वर्ष आयोजित हुए?",
+  "opts": [
+   "1981",
+   "1982)",
+   "1983",
+   "1980)"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "2014 In which year was the IX Asian Games organised in New Delhi? नई दिल्ली में 9वें एशियन खेल किस वर्ष आयोजित हुए?"
+ },
+ {
+  "i": 42,
+  "n": 45,
+  "q": "भारतीय सविंधान के जनक के रूप में किसे जाना जाता है?",
+  "opts": [
+   "सरदार पटेल",
+   "महात्मा गाँधी",
+   "डॉ. बी. आर. अम्बेडकर",
+   "जवाहर लाल नेहरु"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Who is known as the father of the Indian Constitution?"
+ },
+ {
+  "i": 43,
+  "n": 46,
+  "q": "सर्किट में लघु-सरकिटिंग (circuiting) तब होता है जब –",
+  "opts": [
+   "कई उपकरण एक ही साकेट से जुड़े होते हैं।",
+   "लाइव तार और न्यूट्रल तार एक दूसरे से सीधे संपर्क में आते हैं।",
+   "दो उपकरणों के न्यूट्रल तार गलती से एक दूसरे से जुड़ गए हों।",
+   "परिपथ में धारा का प्रवाह अचानक कम हो जाता है"
+  ],
+  "ans": 1,
+  "via": "ADJUDICATED",
+  "en": "Short-Circuiting occurs in the circuit when"
+ },
+ {
+  "i": 44,
+  "n": 47,
+  "q": "सूची-I (भौतिक मात्रा) सूची-II (मापने की इकाई) a. विद्युतधारा I. एम्पीयरे. सेकंड b. प्रतिरोधकता II. वोल्ट एम्पीयर c. शक्ति III. कुलाम / सेकंड कुलाम/सेकंड d. आवेश IV. वोल्ट / एम्पीयर नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :",
+  "opts": [
+   "a-IV, b-III, c-I, d-II",
+   "a-IV, b-lll, c-II, d-I",
+   "a-III, b-I, c-IV, d-I",
+   "a-Ill, b-IV, c-II, d-I"
+  ],
+  "ans": 3,
+  "via": "ADJUDICATED",
+  "en": "Match List – I with List – II List-I – List-II Physical Quantity – Unit of Measurement a. Current I. Ampere second b. Resistance II. Volt! ampere C. Power III. Coulomb/second d. Charge IV. Velt/ampere सूची-I को सूची-II से सुमेलित कीजिए : सूची-I – सूची-II भौतिक मात्रा – मापने की इकाई a. विद्युतधारा I. एम्पीयरे. सेकंड b. प्रतिरोधकता II. वोल्ट एम्पीयर c. शक्ति III. कुलाम / सेकंड कुलाम/सेकंड d. आवेश IV. वोल्ट / एम्पीयर Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :"
+ },
+ {
+  "i": 45,
+  "n": 48,
+  "q": "1981 में इसरो (ISRO) द्वारा प्रक्षेपित किया गया प्रथम भूस्थैतिक उपग्रह कौन सा था ?",
+  "opts": [
+   "आर्यभट्ट",
+   "एप्पल (APPLE)",
+   "जीसैट (GSAT)",
+   "INSAT-B (इनसेट-बी)"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Which one was the first geostationary satellite launched by ISRO in 1981?"
+ },
+ {
+  "i": 46,
+  "n": 49,
+  "q": "निम्न में से किस किले के बारे में कहा गया है कि यह एक आरमर्ड (बख्तर बंद) किला है",
+  "opts": [
+   "तारागढ़",
+   "नाहरगढ़",
+   "रणथम्भौर",
+   "सिवाना"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "About which of the following fort has it been said that it is an armoured (Bakhtarband) fort?"
+ },
+ {
+  "i": 47,
+  "n": 50,
+  "q": "हवा महल का निर्माण किसने करवाया?",
+  "opts": [
+   "सवाई जय सिंह",
+   "राजा मान सिंह",
+   "राजा भाटी",
+   "सवाई प्रताप सिंह"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "Who constructed Hawa Mahal?"
+ },
+ {
+  "i": 48,
+  "n": 51,
+  "q": "किस मुगल बादशाह के दरबार में कैप्टेन हॉकिंस और सर थॉमस ने दौरा किया?",
+  "opts": [
+   "जहाँगीर",
+   "शाहजहां",
+   "हुमायूँ",
+   "अकबर"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Captain Hawkins and Sir Thomas Roe visited the court of which Mughal Emperor?"
+ },
+ {
+  "i": 49,
+  "n": 52,
+  "q": "वेदिका, अमालक, शिखर किससे सम्बंधित हैं?",
+  "opts": [
+   "हवेली",
+   "मंदिर",
+   "किले",
+   "चित्रकारी (पेंटिंग्स)"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Vedika, Amalak, Shikhar are associated with"
+ },
+ {
+  "i": 50,
+  "n": 53,
+  "q": "नीचे दो कथन दिए गए हैं : कथन – I : ब्रिटिश सरकार ने 1927 में सर जॉन साइमन की अध्यक्षता में एक आयोग का गठन किया जिसे साइमन कमीशन कहा गया। कथन – II : आयोग में सात सदस्य थे परन्तु उनमें से कोई भी भारतीय नहीं था । उपर्युक्त कथनों के आलोक में निम्नलिखित विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें :",
+  "opts": [
+   "कथन (I) और (II) दोनों असत्य हैं।",
+   "कथन (I) सत्य है, किन्तु कथन (II) असत्य है ।",
+   "कथन(I) असत्य है, किन्तु कथन (II) सत्य है।",
+   "कथन (I) और (II) दोनों सत्य हैं।"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "Given below are two statements: Statement (I) : The British Government formed a commission in 1927 under the chairmanship of Sir John Simon which was called Simon Commission. Statement (II): There were seven members in the commission but none of them was an Indian. In light of the above statements, choose the most appropriate answer from the options given below."
+ },
+ {
+  "i": 51,
+  "n": 54,
+  "q": "“उपरमाल पंच बोर्ड का गठन _____ के द्वारा किया गया था?",
+  "opts": [
+   "राम मिलन लोहिया",
+   "ब्रह्मदेव",
+   "विजय सिंह पथिक",
+   "राव कृष्णा सिंह"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "&#8220;Uparmal Panch Board&#8221; was formed by ____."
+ },
+ {
+  "i": 52,
+  "n": 55,
+  "q": "अहमदनगर का विलय मुगल साम्राज्य में ____ के शासन काल में हुआ।",
+  "opts": [
+   "जहाँगीर",
+   "शाहजहाँ",
+   "औरंगज़ेब",
+   "अकबर"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Ahmednagar was merged with Mughal Empire during the reign of:"
+ },
+ {
+  "i": 53,
+  "n": 56,
+  "q": "राष्ट्रीय सांख्यिकी आयोग (N.S.C.) किस वर्ष में संकल्प के साथ स्थापित हुआ था ?",
+  "opts": [
+   "2005",
+   "2008",
+   "2009",
+   "2004"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "In which year was the National Statistical Commission (NSC) setup through a resolution? राष्ट्रीय सांख्यिकी आयोग (N.S.C.) किस वर्ष में संकल्प के साथ स्थापित हुआ था ?"
+ },
+ {
+  "i": 54,
+  "n": 57,
+  "q": "नीचे दो कथन दिए गए हैं : कथन – I : सिन्धु सरस्वती सभ्यता नगर योजना हेतु प्रसिद्ध थी। कथन – II : उन्नत सिन्धु सरस्वती सभ्यता का विकास सिन्धुघाटी की सहायक नदियों और सरस्वती नदी क्षेत्र के किनारे हुआ था। उपरोक्त कथन के आलोक में, नीचे दिए गए विकल्पों में से सही उत्तर का चयन कीजिए:",
+  "opts": [
+   "कथन I और II दोनों असत्य हैं।",
+   "कथन I सत्य है, किन्तु कथन II असत्य है ।",
+   "कथन I असत्य है, किन्तु कथन II सत्य है ।",
+   "कथन I और II दोनों सत्य हैं।"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "Given below are two statements: Statement (I): Sindhu Saraswati civilization was famous for town planning. Statement (II): The advanced Sindhu Saraswati civilization was developed amongst Sindhu, its tributaries and Saraswati river area. In light of the above statements, choose the most appropriate answer from the options given below."
+ },
+ {
+  "i": 55,
+  "n": 58,
+  "q": "सन् 1800 ई में वह कौन व्यक्ति था जिसने आज के राजस्थान को राजपूताना कहा?",
+  "opts": [
+   "जेम्स टॉड",
+   "जार्ज कलॉनी",
+   "जेम्स रिजु",
+   "जार्ज थॉमस"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "In 1800 A. D. who was the first person to call present day Rajasthan as Rajputana ?"
+ },
+ {
+  "i": 56,
+  "n": 59,
+  "q": "वायुमंडल की ओजोन परत प्राकृतिक ढाल के रूप में ____ के विरुद्ध कार्य करती है।",
+  "opts": [
+   "गामा विकिरण",
+   "अल्ट्रावायलेट (पराबैंगनी) विकिरण",
+   "एक्स रे",
+   "इंफ्रारेड विकिरण"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Ozone layer of the atmosphere acts as a natural shield against:"
+ },
+ {
+  "i": 57,
+  "n": 60,
+  "q": "नीचे दो कथन दिए गए हैं: कथन I: पशुओं का आहार वैज्ञानिक तरीके से किया जाना चाहिए, जिसमें चारे की गुणवत्ता और मात्रा पर विशेष जोर दिया जाना चाहिए। कथन II: दूध की पैदावार मुख्य रूप से फॉर्म में रखे गए नस्लों की गुणवत्ता पर निर्भर करती है। उपर्युक्त कथनों के आलोक में निम्नलिखित विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें :",
+  "opts": [
+   "कथन (I) और (II) दोनों असत्य हैं।",
+   "कथन (I) सत्य है किंतु कथन (II) असत्य है।",
+   "कथन (I) असत्य है किंतु कथन (II) सत्य है।",
+   "कथन (I) और (II) दोनों सत्य हैं।"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "Given below are two statements: Statement (I): The feeding of cattle should be carried out in a scientific manner-with special emphasis in the quality and quantity of fodder. Statement (II): Milk yield is primarily dependent on the quality of breeds kept in the farm. In light of the above statements, choose the most appropriate answer from the options given below."
+ },
+ {
+  "i": 58,
+  "n": 61,
+  "q": "मौरीशस द्वीप कहाँ स्थित है?",
+  "opts": [
+   "अटलांटिक महासागर",
+   "प्रशांत महासागर",
+   "आर्कटिक महासागर",
+   "हिन्द महासागर"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "Where is Mauritius island located:"
+ },
+ {
+  "i": 59,
+  "n": 62,
+  "q": "निम्नलिखित में से किसने शाही दरबार में सिजदा और पाइबोस की प्रथा आरम्भ की?",
+  "opts": [
+   "जलाल-उद-दीन – फिरोज़ खिलजी",
+   "बलबन",
+   "रजिया सुल्तान",
+   "इल्तुतमिश"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Which one of the following introduced the practice of Sijda and Paibos in the royal court?"
+ },
+ {
+  "i": 60,
+  "n": 63,
+  "q": "सिसोदिया राजपूतों का कौन सा किला गम्भीरी और बेराच (बेड़च) नदी के तट पर स्थित है?",
+  "opts": [
+   "तारागढ़ का किला",
+   "भैंसरोड़गढ़ का किला",
+   "माँडलगढ़ का किला",
+   "चितौड़गढ़ का किला"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "Which fort of the Sisodia Rajputs is situated on the banks of river Gambhiri and Berach?"
+ },
+ {
+  "i": 61,
+  "n": 64,
+  "q": "उस कथन की पहचान करें, जो कि दीर्घ दृष्टि दोष (हाइपरमेट्रोपिक) वाली नेत्र के लिए सही नहीं है:",
+  "opts": [
+   "उपयुक्त क्षमता के उत्तल लैंस का उपयोग कर दोष को ठीक किया जा सकता है।",
+   "प्रकाश किरणें रेटिना के सम्मुख केंद्रित होती हैं।",
+   "व्यक्ति आस-पास की वस्तुओं को स्पष्ट रूप से नहीं देख पाता है।",
+   "नेत्र का निकटतम बिंदु सामान्य निकटतम बिंदु (25 से.मी.) से अधिक दूर है।"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Identify the statement, which is NOT correct for an Hypermetropic eye"
+ },
+ {
+  "i": 62,
+  "n": 65,
+  "q": "फोकल दूरी को परिवर्तित करने की नेत्र लेंस की क्षमता जिसमें विभिन्न स्थानों पर रखी वस्तुओं को देखा जा सकता है, कहलाती है ____",
+  "opts": [
+   "समंजन क्षमता (पावर ऑफ एकॉमोडेशन)",
+   "सामंजस्य शक्ति (पावर ऑफ एडजस्टमेंट)",
+   "विनियमन शक्ति (पावर ऑफ रेगुलेशन)",
+   "देखने की शक्ति (पावर ऑफ विजन)"
+  ],
+  "ans": 0,
+  "via": "ADJUDICATED",
+  "en": "Ability of the eye lens to change its focal length to see objects placed at different places is called:"
+ },
+ {
+  "i": 63,
+  "n": 66,
+  "q": "“जस्टिस फॉर द जजः एन ऑटोबायोग्राफी” के लेखक कौन हैं?",
+  "opts": [
+   "रंजन गोगोई",
+   "संदीप साहू",
+   "नमिता गोखले",
+   "अमृत माथुर"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Who is the author of “ Justice for the Judge : An Autobiography&#8221; ?"
+ },
+ {
+  "i": 64,
+  "n": 67,
+  "q": "आर. टी. आई. (सूचना का अधिकार) विधेयक को राष्ट्रपति की स्वीकृति किस वर्ष मिली?",
+  "opts": [
+   "अप्रैल 2015",
+   "जुलाई 1994",
+   "जून 2000",
+   "जून 2005"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "RTI (Right to Information) bill received Presidential assent in which year?"
+ },
+ {
+  "i": 65,
+  "n": 69,
+  "q": "यदि 40 मीटर लम्बी सीढ़ी को 20√3 मीटर ऊंची दीवार के सम्मुख इस प्रकार से रखा जाए कि वह दीवार के शीर्ष तक पहुंच जाए, तो सीढ़ी के आधार से दीवार के शीर्ष की ऊंचाई का कोण है:",
+  "opts": [
+   "45°",
+   "60°",
+   "50°",
+   "30°"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "If a 40 m ladder is placed against a 20√3 m high wall such that it just reaches the top of the wall, then the angle of elevation of the top of the wall from the base of the ladder is यदि 40 मीटर लम्बी सीढ़ी को 20√3 मीटर ऊंची दीवार के सम्मुख इस प्रकार से रखा जाए कि वह दीवार के शीर्ष तक पहुंच जाए, तो सीढ़ी के आधार से दीवार के शीर्ष की ऊंचाई का कोण है:"
+ },
+ {
+  "i": 66,
+  "n": 70,
+  "q": "का मान है-",
+  "opts": [
+   "15/17",
+   "15/19",
+   "13/20",
+   "13/17"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "The value of is- का मान है-"
+ },
+ {
+  "i": 67,
+  "n": 71,
+  "q": "100 मीटर ऊंचे टावर के शीर्ष से एक व्यक्ति एक कार को टावर की तरफ आता हुआ देखता है, जिसका अवनमन कोण 30° है। कुछ समय बाद अवनमन कोण 60° हो जाता है। इस दौरान कार द्वारा तय की गई दूरी (मीटर में) है?",
+  "opts": [
+   "200√3/3",
+   "100 √3",
+   "200 √3",
+   "100√3/3"
+  ],
+  "ans": 0,
+  "via": "SOLO_VERIFIED",
+  "en": "",
+  "fix_note": "Q71: TEP key wrong (100√3/3 = final distance only); independent solve: 100√3 - 100/√3 = 200√3/3 -> option 0"
+ },
+ {
+  "i": 68,
+  "n": 72,
+  "q": "मनुष्य की आँख में किस प्रकार का लेंस मौजूद होता है?",
+  "opts": [
+   "उभयावतल",
+   "समतलोत्तल",
+   "समतलावतल",
+   "उभयोत्तल"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "What kind of lens is present in the human eye?"
+ },
+ {
+  "i": 69,
+  "n": 73,
+  "q": "कोयले जलाने से कार्बन डाइऑक्साइड बनना एक प्रतिक्रिया है:",
+  "opts": [
+   "विस्थापन",
+   "ऑक्सीकरण",
+   "अपघटन",
+   "अपचयन"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Burning of coal to form carbon dioxide is a/an ____ reaction"
+ },
+ {
+  "i": 70,
+  "n": 74,
+  "q": "नीचे दिए गए पोषक चक्रों में से कौन सा चक्र अवसादी (सेडीमेन्ट्री) प्रकार का होता है? (निम्न में से सबसे उपयुक्त विकल्प चुनें)",
+  "opts": [
+   "कार्बन और नाइट्रोजन चक्र",
+   "फॉस्फोरस और कार्बन चक्र",
+   "सल्फर और फॉस्फोरस चक्र",
+   "कार्बन और सल्फर चक्र"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Which of the given nutrient cycles is sedimentary type? (Choose the most appropriate option from below)"
+ },
+ {
+  "i": 71,
+  "n": 75,
+  "q": "प्रथम चरण में कौन सा जिला इंदिरा गाँधी नहर परियोजना का हिस्सा नहीं था?",
+  "opts": [
+   "गंगानगर",
+   "बीकानेर",
+   "जोधपुर",
+   "हनुमानगढ़"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Which district was NOT a part of Indira Gandhi Canal project in First Stage?"
+ },
+ {
+  "i": 72,
+  "n": 76,
+  "q": "सन 2023 में वर्ल्ड बैंक के अध्यक्ष के रूप में किसका चयन हुआ था?",
+  "opts": [
+   "अमित अग्रवाल",
+   "अजय बंगा",
+   "जनार्दन प्रसाद",
+   "प्रवीण सूद"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Who was selected as a President of the World Bank in 2023?"
+ },
+ {
+  "i": 73,
+  "n": 77,
+  "q": "सूची-I को सूची-II से सुमेलित कीजिए : सूची-I (रोग) सूची-II (कारक जीव) a. फाइलेरियासिस I. हेमोफिलस इन्फ्लुएंजा b. न्यूमोनिया II. प्लास्मोडियम c. मलेरिया III. सालमोनेला d. टाइफाइड IV. वुचेरेरिया नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :",
+  "opts": [
+   "a-II, b-III, c – IV, d – I",
+   "a- IV, b- I, c – II, d – III",
+   "a- I, b- IV, c – III, d – II",
+   "aI, B – III, c – II, d – IV"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Match List – I with List-II List-I – List-II Disease – Causal Organism a. Filariasis I. Haemophilus influenzae b. Pneumonia II. Plasmodium c. Malaria III. Salmonella d. Typhoid IV. Wuchereria सूची-I को सूची-II से सुमेलित कीजिए : सूची-I – सूची-II रोग – कारक जीव a. फाइलेरियासिस I. हेमोफिलस इन्फ्लुएंजा b. न्यूमोनिया II. प्लास्मोडियम c. मलेरिया III. सालमोनेला d. टाइफाइड IV. वुचेरेरिया Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :"
+ },
+ {
+  "i": 74,
+  "n": 78,
+  "q": "निम्नलिखित में से कौन, फैराडे के नियम का उपयोग करके यांत्रिक ऊर्जा को विद्युत ऊर्जा में परिवर्तित करता है?",
+  "opts": [
+   "इलेक्ट्रिक जनरेटर",
+   "बैटरी",
+   "रेक्टिफायर",
+   "इलेक्ट्रिक मोटर"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Which one of the following converts mechanical energy into electrical energy using Faraday's Law?"
+ },
+ {
+  "i": 75,
+  "n": 79,
+  "q": "उस कथन की पहचान करें जोकि जंग लगने के संबंध में गलत है। a. लोहे की रॉड पर पेंट का कोट जंग को रोकता है। b. गेल्वेनाइज़ड वाटर पाइप आमतौर पर घरों में प्रयोग नहीं होते है। c. जंग लगना एक भौतिक परिवर्तन है। d. नमकीन पानी जंग की प्रक्रिया को तीव्र करता है। नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें।",
+  "opts": [
+   "केवल a, b और d",
+   "केवल a, b और c",
+   "(केवल b और C",
+   "केवल a और d"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Identify the statement which are incorrect with respect to rusting. a. coat of paint on iron rods prevents rusting b. galvanised water pipes are not normally used in homes c. rusting is a physical change d. salt water makes the process of rust formation faster Choose the most appropriate answer from the options given below:"
+ },
+ {
+  "i": 76,
+  "n": 80,
+  "q": "सूची-I के साथ सूची -II का मिलान कीजिए सूची-I (लोक कला) सूची-II (सामग्री) a. पाने I. लकड़ी b. फड़ II. दीवार और फर्श c. मांडना III. कपड़ा d. कावड़ IV. कागज नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर का चयन कीजिए",
+  "opts": [
+   "a-I, b-Il, c – III, d – IV",
+   "a – III, b – IV c – II, d – I",
+   "a-II, b-III, C- I, d – Iv",
+   "a- IV, b- Ill, c – II, d – I"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "Match List-I with List-II List-I – List-II Folk Art – Material a. Paane I. Wood b. Phad II. Wall & floor c. Mandana III. Cloth d. Kavad IV. Paper सूची-I के साथ सूची -II का मिलान कीजिए सूची-I – सूची-II लोक कला – सामग्री a. पाने I. लकड़ी b. फड़ II. दीवार और फर्श c. मांडना III. कपड़ा d. कावड़ IV. कागज Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर का चयन कीजिए"
+ },
+ {
+  "i": 77,
+  "n": 81,
+  "q": "थेवा कला राजस्थान के किस स्थान से संबंधित है (आरंभ हुई)?",
+  "opts": [
+   "झालावाड़",
+   "चुरू",
+   "प्रतापगढ़",
+   "उदयपुर"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "To which place of Rajasthan does Theva Art belong?"
+ },
+ {
+  "i": 78,
+  "n": 82,
+  "q": "संयुक्तराष्ट्र संघ की स्थापना कब हुई ?",
+  "opts": [
+   "1945",
+   "1947",
+   "1948",
+   "1944"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "In which year the United Nations was established? संयुक्तराष्ट्र संघ की स्थापना कब हुई ?"
+ },
+ {
+  "i": 79,
+  "n": 83,
+  "q": "डी. एन. ए. में कौन सा नाइट्रोजन (बेस) क्षार मौजूद नहीं है ?",
+  "opts": [
+   "थाइमिन",
+   "गुऑनिन",
+   "एडेनिन",
+   "यूरासिल"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "The nitrogenous base not present in DNA is –"
+ },
+ {
+  "i": 80,
+  "n": 84,
+  "q": "मानव-प्रोटीन समृद्ध दूध देने वाली प्रथम ट्रांसजेनिक गाय का नाम था :",
+  "opts": [
+   "रोजी",
+   "एली लिली",
+   "कामधेनु",
+   "डॉली"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "The name of the first transgenic cow that produced human-protein enriched milk was:"
+ },
+ {
+  "i": 81,
+  "n": 85,
+  "q": "स्वर्णिम चतुर्भुज महा राजमार्ग परियोजना के अंतर्गत, पूर्व-पश्चिम गलियारा, इनमें से किन दो शहरों को जोड़ता है?",
+  "opts": [
+   "इम्फाल – पोरबंदर",
+   "राजकोट – सिलचर",
+   "सिलचर – पोरबंदर",
+   "इम्फाल – राजकोट"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "East-West Corridor connects With reference to the Golden Quadrilateral Super highway-project-"
+ },
+ {
+  "i": 82,
+  "n": 86,
+  "q": "भारत के निम्नलिखित पत्तनो (बंदरगाह) को उत्तर से दक्षिण दिशा की ओर व्यवस्थित करें: a. विशाखापत्तनम् b. पाराद्वीप c. तूतीकोरिन d. चेन्नई नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर का चयन कीजिए:",
+  "opts": [
+   "a, b, d, c",
+   "c, b, a, d",
+   "b, a, d, c",
+   "b, a, c, d"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Arrange the following ports of India from North to South direction. a. Vishakhapatnam b. Paradwip c. Tuticorin d. Chennai भारत के निम्नलिखित पत्तनो (बंदरगाह) को उत्तर से दक्षिण दिशा की ओर व्यवस्थित करें: a. विशाखापत्तनम् b. पाराद्वीप c. तूतीकोरिन d. चेन्नई Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर का चयन कीजिए:"
+ },
+ {
+  "i": 83,
+  "n": 87,
+  "q": "भारत की सबसे ऊंची पर्वत चोटी कौन सी है?",
+  "opts": [
+   "कंचनजंगा पर्वत",
+   "नंदा देवी पर्वत",
+   "अन्नपूर्णा पर्वत",
+   "एवरेस्ट पर्वत"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Which is the highest mountain peak in India?"
+ },
+ {
+  "i": 84,
+  "n": 88,
+  "q": "किस बंदरगाह पर बढ़ते दबाव को कम करने के लिए हल्दिया बंदरगाह को एक सहायक बंदरगाह के रूप में विकसित किया था? गया था?",
+  "opts": [
+   "पाराद्वीप",
+   "कोलकाता",
+   "तूतीकोरिन",
+   "चेन्नई"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Haldia port was developed as a subsidiary port, in order to relieve growing pressure on the which port ?"
+ },
+ {
+  "i": 85,
+  "n": 89,
+  "q": "“आनंद मठ” उपन्यास के लेखक कौन थे?",
+  "opts": [
+   "वीर सावरकर",
+   "लोकमान्य तिलक",
+   "रंग बापूजी",
+   "बंकिम चन्द्र चट्टोपाध्याय"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "Who was author of the novel “Anand Math&#8221;?"
+ },
+ {
+  "i": 86,
+  "n": 90,
+  "q": "राजस्थान राज्य औद्योगिक विकास एवं निवेश निगम लिमिटेड (RIICO) ने निम्न में से किस जिले में एग्रोफूड पार्क विकसित किया है ?",
+  "opts": [
+   "चुरू",
+   "उदयपुर",
+   "कोटा",
+   "जयपुर"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Rajasthan State Industrial Development and Investment Corporation Limited (RIICO) has developed Agro Food Park in which of the following district?"
+ },
+ {
+  "i": 87,
+  "n": 91,
+  "q": "वह अनुपात क्या है जिसमें (1-5) और (4, 5) को जोड़ने वाला रेखा खंड x-axis से विभाजित होता है?",
+  "opts": [
+   "3 : 2",
+   "2 : 3",
+   "1 : 1",
+   "1 : 4"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "What is the ratio in which the line segment joining (1, -5) and (4, 5) is divided by the x-axis? वह अनुपात क्या है जिसमें (1-5) और (4, 5) को जोड़ने वाला रेखा खंड x-axis से विभाजित होता है?"
+ },
+ {
+  "i": 88,
+  "n": 92,
+  "q": "100 मीटर लंबाई और 80 मीटर चौड़ाई वाले एक आयताकार बगीचे को बाहर से 2.5 मीटर चौड़े मार्ग से घेरा जाता है। ₹120 प्रति वर्ग मीटर की दर से मार्ग को पक्का करने की लागत क्या है?",
+  "opts": [
+   "₹1,10,000",
+   "₹1,11,000",
+   "₹1,16,000",
+   "₹1,08,000"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "A rectangular garden of length 100m and width 80m is to be surrounded outside by a 2.5m wide path. What is the cost of paving the path at the rate of 120 per m 2 ? 100 मीटर लंबाई और 80 मीटर चौड़ाई वाले एक आयताकार बगीचे को बाहर से 2.5 मीटर चौड़े मार्ग से घेरा जाता है। ₹120 प्रति वर्ग मीटर की दर से मार्ग को पक्का करने की लागत क्या है?"
+ },
+ {
+  "i": 89,
+  "n": 93,
+  "q": "एक आयत की लंबाई 30 से.मी है और इसका क्षेत्रफल 720 सेमी2 है। केवल लंबाई वृद्धि करने में इस का क्षेत्रफल मूल क्षेत्रफल से 1 1/4 गुना बढ़ जाता है। नए आयत का परिमाप (सेमी में) है:",
+  "opts": [
+   "125",
+   "119",
+   "121",
+   "123"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "The length of a rectangle is 30 cm and its area is 720 cm 2 . Its area is increased to 1 ¼ times than original area by increasing its length only. The perimeter. (in cm) of the new rectangle is: एक आयत की लंबाई 30 से.मी है और इसका क्षेत्रफल 720 सेमी 2 है। केवल लंबाई वृद्धि करने में इस का क्षेत्रफल मूल क्षेत्रफल से 1 ¼ गुना बढ़ जाता है। नए आयत का परिमाप (सेमी में) है:"
+ },
+ {
+  "i": 90,
+  "n": 94,
+  "q": "यदि डेटा k, (2k – 1), (3k + 2), 5, 8, 10 का माध्य (मीन) 9 है, तो इसका माध्यिका (मिडियन) क्या है?",
+  "opts": [
+   "8.5",
+   "7.7",
+   "8",
+   "11"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "If mean of the data k, (2k-1), (3k+2), 5, 8, 10 is 9, then what is its median? यदि डेटा k, (2k-1), (3k + 2), 5,8,10 का माध्य (मीन) 9 है, तो इसका माध्यिका (मिडियन) क्या है?"
+ },
+ {
+  "i": 91,
+  "n": 97,
+  "q": "यदि दो संख्याओं में 24 का अंतर है और उनका गुणनफल 112 है तो संख्याओं का योग है –",
+  "opts": [
+   "40",
+   "32",
+   "36",
+   "28"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "If two numbers differ by 24 and their product is 112, then the sum of the numbers is: यदि दो संख्याओं में 24 का अंतर है और उनका गुणनफल 112 है तो संख्याओं का योग है –"
+ },
+ {
+  "i": 92,
+  "n": 98,
+  "q": "A ने ₹ 1,00,000 निवेश करके एक व्यवसाय आरंभ किया, 3 माह पश्चात B कुछ निवेश के साथ उससे जुड़ गया। वर्ष के अंत में, ₹ 1,80,000 के कुल लाभ में से A को लाभ के रूप में B के हिस्से से ₹ 36,000 कम मिले B ने कितना निवेश किया था?",
+  "opts": [
+   "₹1,90,000",
+   "₹1,95,000",
+   "₹2,00,000",
+   "₹1,84,000"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "A started a business by investing ₹1,00,000. After 3 months, B joined him with certain investment. At the end of the year, out of the total profit of ₹1,80,000, A received ₹36,000 less than B as his share in the profit. How much investment was made by B? A ने ₹ 1,00,000 निवेश करके एक व्यवसाय आरंभ किया, 3 माह पश्चात B कुछ निवेश के साथ उससे जुड़ गया। वर्ष के अंत में, ₹ 1,80,000 के कुल लाभ में से A को लाभ के रूप में B के हिस्से से ₹ 36,000 कम मिले| B ने कितना निवेश किया था?"
+ },
+ {
+  "i": 93,
+  "n": 99,
+  "q": "A, B और C एक साझेदारी में 7/2 : 4/3 : 6/5 के अनुपात में निवेश करते हैं, 4 माह पश्चात A ने अपने हिस्से मे 50% वृद्धि की यदि एक वर्ष के अंत में कुल लाभ ₹21,600 आता है तो लाभ में B का हिस्सा हैं :",
+  "opts": [
+   "₹2400",
+   "₹3600",
+   "₹4000",
+   "₹2100"
+  ],
+  "ans": 2,
+  "via": "ADJUDICATED",
+  "en": "A, B and C entered into a partnership with investments in the ratio of , after 4 months, A increased his share by 50%. If the total profit at the end of one year be ₹21,600, then B's share in the profit is: A, B और C एक साझेदारी में के अनुपात में निवेश करते हैं, 4 माह पश्चात A ने अपने हिस्से मे 50% वृद्धि की यदि एक वर्ष के अंत में कुल लाभ ₹21,600 आता है तो लाभ में B का हिस्सा हैं :"
+ },
+ {
+  "i": 94,
+  "n": 100,
+  "q": "विपुल टूर पर है और उसके पास अपने खर्चे के लिए 360 रुपये हैं। यदि वह अपने टूर से 4 दिन आगे निकल जाता है, तो उसे अपने दैनिक खर्चों में 3 रुपये की कटौती करनी होगी। विपुल कितने दिनों के लिए टूर पर है?",
+  "opts": [
+   "21",
+   "19",
+   "20",
+   "18"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Vipul is on tour and he has ₹360 for his expenses. If he exceeds his tour by 4 days. He must cut down his daily expenses by ₹3. For how many days is Vipul on tour? विपुल टूर पर है और उसके पास अपने खर्चे के लिए 360 रुपये हैं। यदि वह अपने टूर से 4 दिन आगे निकल जाता है, तो उसे अपने दैनिक खर्चों में 3 रुपये की कटौती करनी होगी। विपुल कितने दिनों के लिए टूर पर है?"
+ },
+ {
+  "i": 95,
+  "n": 101,
+  "q": "“ऑपरेशन फ्लड” _____ से सम्बंधित था",
+  "opts": [
+   "हरित क्रांति",
+   "गुलाबी क्रांति",
+   "श्वेत क्रांति",
+   "अपिदा प्रबन्धन"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "&#8220;Operation Flood&#8221; was associated with:"
+ },
+ {
+  "i": 96,
+  "n": 102,
+  "q": "निम्नलिखित में से कौन सी भारत की एक कृषि समस्या नहीं है-",
+  "opts": [
+   "जैविक खेती को प्रोत्साहन",
+   "सिंचाई सुविधाओं का अभाव",
+   "भूमि की उर्वरता में गिरावट",
+   "जुताई भूमि के एक छोटे आकार के भूखण्ड"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Which one of the following is NOT an agricultural problem of India ?"
+ },
+ {
+  "i": 97,
+  "n": 103,
+  "q": "फुटलूज उद्योगों के बारे में निम्नलिखित में से कौन सा कथन सही नहीं है?",
+  "opts": [
+   "वे विशिष्ट कच्चे माल पर निर्भर करते हैं",
+   "वे थोड़ी मात्रा में उत्पादन करते हैं",
+   "ये उद्योग सामान्यतः प्रदूषण नहीं फैलाते हैं",
+   "यह विभिन्न प्रकार के स्थानों पर स्थित हो सकता है"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Which of the following statement is NOT correct about the foot loose industries?"
+ },
+ {
+  "i": 98,
+  "n": 104,
+  "q": "फ्रांसिसी क्रांति के समय फ्रांस का राजा कौन था? –",
+  "opts": [
+   "लुई 18 वाँ",
+   "लुई 19 वाँ",
+   "लुई 20 वाँ",
+   "लुई 16 वाँ"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "Who was the king in France, at the time of French Revolution ?"
+ },
+ {
+  "i": 99,
+  "n": 105,
+  "q": "गौतम बुद्ध ने अपना प्रथम धर्मोपदेश कहाँ दिया था?",
+  "opts": [
+   "कपिलवस्तु",
+   "बोधगया",
+   "सारनाथ",
+   "गया"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Where did Gautam Buddha gave his first sermon ?"
+ },
+ {
+  "i": 100,
+  "n": 106,
+  "q": "‘अणुव्रत आन्दोलन’ के प्रणेता कौन थे?",
+  "opts": [
+   "दयानंद सरस्वती",
+   "विवेकानंद",
+   "आचार्य तुलसी",
+   "केशव चन्द्र सेन"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Who was the pioneer of &#8216;Anuvrat Movement' ?"
+ },
+ {
+  "i": 101,
+  "n": 107,
+  "q": "राजस्थान की शुष्क भूमि के संबंध में निम्न में से कौन सा कथन सही नहीं है? (निम्न में से सबसे उपयुक्त विकल्प चुनें)",
+  "opts": [
+   "शुष्क मृदा सामान्यतः संरचना से बलुई और प्रकृति से लवणीय होती है।",
+   "इसमें नाइट्रोजन और ह्यूमस पर्याप्त मात्रा में होता है।",
+   "ये मृदा अनुर्वर हैं क्योंकि इनमें ह्यूमस कम मात्रा में पाए जाते हैं।",
+   "शुष्क मृदा का रंग लाल से भूरे रंग तक होता है।"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Which of the following statement about the arid soil of Rajasthan is not correct? (Choose the most appropriate option from below)"
+ },
+ {
+  "i": 102,
+  "n": 108,
+  "q": "निम्नलिखित नदियों को भारत के नक्शे पर बताये अनुसार उत्तर से दक्षिण की तरफ व्यवस्थित करें: a. गोदावरी b. कावेरी c. चम्बल d. नर्मदा नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर का चयन कीजिए:",
+  "opts": [
+   "c, d, a, b",
+   "c, a, d, b",
+   "c, b, a, d",
+   "c, a, b, d"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Arrange the following rivers of India as placed from North to South on Indian map. a. Godavari b. Kaveri c. Chambal d. Narmada निम्नलिखित नदियों को भारत के नक्शे पर बताये अनुसार उत्तर से दक्षिण की तरफ व्यवस्थित करें: a. गोदावरी b. कावेरी c. चम्बल d. नर्मदा Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर का चयन कीजिए:"
+ },
+ {
+  "i": 103,
+  "n": 109,
+  "q": "“इलाही एरा” कैलेंडर किसने जारी किया था?",
+  "opts": [
+   "शाहजहाँ",
+   "अख़बर",
+   "जहाँगीर",
+   "हुमायूँ"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Who issued a new Calendar “Ilahi Era”?"
+ },
+ {
+  "i": 104,
+  "n": 110,
+  "q": "तालिका में वर्ष 2005, 2006, 2007 और 2008 में विश्वविद्यालय में प्रवेश पाने वाले मानविकी, विज्ञान और वाणिज्य संस्थान के छात्रों की संख्या दर्शायी गयी है। 2005 और 2006 में मानविकी संकाय में प्रवेश लेनेवाले छात्रों की संख्या का अनुपात 2007 और 2008 में विज्ञान संकाय में एक साथ प्रवेश लिए गए का अनुपात है :",
+  "opts": [
+   "11 : 12",
+   "12 : 13",
+   "13 : 15",
+   "10 : 11"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "The given table shows the number of students of Humanities, Science and Commerce streams who were admitted in a university in the years 2005, 2006, 2007 and 2008 तालिका में वर्ष 2005, 2006, 2007 और 2008 में विश्वविद्यालय में प्रवेश पाने वाले मानविकी, विज्ञान और वाणिज्य संस्थान के छात्रों की संख्या दर्शायी गयी है। The ratio of the number of students admitted in Humanities-stream in 2005 and 2006 taken together to that in science stream in 2007 and 2008 taken together is 2005 और 2006 में मानविकी संकाय में प्रवेश लेनेवाले छात्रों की संख्या का अनुपात 2007 और 2008 में विज्ञान संकाय में एक साथ प्रवेश लिए गए का अनुपात है :"
+ },
+ {
+  "i": 105,
+  "n": 111,
+  "q": "नीचे दिए गए पाई-चार्ट में A, B, C, D और B एक पुस्तक के प्रकाशन में क्रमश: कागज, मुद्रण, विविध कार्य, बाइंडिंग और रॉयलटी की लागत का प्रतिनिधित्व करते हैं: ₹185/- प्रति पुस्तक की लागत वाली पुस्तक की 10,000 प्रतियां प्रकाशित करने के लिए विविध कार्यों पर कितना खर्च किया जाता है?",
+  "opts": [
+   "₹5,25,000",
+   "₹5,40,000",
+   "₹5,55,000",
+   "₹5,00,000"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "In the pie chart given below A, B, C, D and E represent the cost of paper, printing, miscellaneous work, binding and the royalty respectively in publishing a book. नीचे दिए गए पाई-चार्ट में A, B, C, D और B एक पुस्तक के प्रकाशन में क्रमश: कागज, मुद्रण, विविध कार्य, बाइंडिंग और रॉयलटी की लागत का प्रतिनिधित्व करते हैं: How much is spent on miscellaneous work for publishing 10000 copies of a book, costing ₹ 185 per book? ₹185/- प्रति पुस्तक की लागत वाली पुस्तक की 10,000 प्रतियां प्रकाशित करने के लिए विविध कार्यों पर कितना खर्च किया जाता है?"
+ },
+ {
+  "i": 106,
+  "n": 112,
+  "q": "निम्नलिखित में से कौन सी धातु चाकू से सरलतापूर्वक काटी जा सकती है?",
+  "opts": [
+   "मैग्नीशियम",
+   "एल्यूमिनियम",
+   "काँपुर",
+   "लिथियम"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "Which of the following metals can easily be cut with a knife ?"
+ },
+ {
+  "i": 107,
+  "n": 113,
+  "q": "प्रोपेनॉल है:",
+  "opts": [
+   "अल्काइन",
+   "अल्डेहाइड",
+   "अल्कोहल",
+   "अल्केन"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Propanol is an:-"
+ },
+ {
+  "i": 108,
+  "n": 114,
+  "q": "लन्दन में “इंडिया हाउस ” के संस्थापक कौन थे?",
+  "opts": [
+   "बालकृष्ण हरि चापेकर",
+   "श्यामजी कृष्ण वर्मा",
+   "वी.डी. सावरकर",
+   "मदन लाल धींगरा"
+  ],
+  "ans": 1,
+  "via": "ADJUDICATED",
+  "en": "Who was the founder of the &#8221; India House” in London ?"
+ },
+ {
+  "i": 109,
+  "n": 115,
+  "q": "निम्नलिखित में से कौन सा एक कृषि आधारित उद्योग का उदाहरण है?",
+  "opts": [
+   "लौह-इस्पात उद्योग",
+   "पैट्रो रसायन उद्योग",
+   "चीनी उद्योग",
+   "सीमेंट उद्योग"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Which one of the following is an example of Agro-based industry ?"
+ },
+ {
+  "i": 110,
+  "n": 116,
+  "q": "निम्नलिखित में से कौन सा आग्नेय चट्टान का उदाहरण है?",
+  "opts": [
+   "स्लेटी पत्थर",
+   "ग्रेनाइट",
+   "संगमरमर",
+   "बलुआ पत्थर"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Which of the following is an example of Igneous rock ?"
+ },
+ {
+  "i": 111,
+  "n": 117,
+  "q": "एक मीनार के शीर्ष के दो बिंदुओं P और Q. जो मीनार के आधार से एक सीधी रेखा में क्रमशः 10 मी. और 5 मी. की दूरी पर हैं, से उन्नयन कोण पूरक हैं। मीनार की ऊँचाई है :",
+  "opts": [
+   "5√2 मीटर",
+   "5√3 मीटर",
+   "5.5 मीटर",
+   "6 मीटर"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "The angles of elevation of the top of a tower from two points P and Q at distances 10 m and 5 m respectively, from the base and in the same straight line with it, are complimentary. The height of the tower is _____."
+ },
+ {
+  "i": 112,
+  "n": 118,
+  "q": "एक ठोस सिलेंडर के आधार की त्रिज्या और ऊंचाई का अनुपात 2:3 है और इसका आयतन 1617 सेमी3 है। सिलेंडर का कुल सतह क्षेत्रफल (सेमी 2 में) क्या है? (π = 22/7)",
+  "opts": [
+   "616",
+   "770",
+   "786",
+   "462"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "The radius of the base and the height of a solid cylinder are in the ratio of 2:3 and its volume is 1617 cm 3 . What is the total surface area of the cylinder (in cm 2 ) ? (π = 22/7) एक ठोस सिलेंडर के आधार की त्रिज्या और ऊंचाई का अनुपात 2:3 है और इसका आयतन 1617 सेमी 3 है। सिलेंडर का कुल सतह क्षेत्रफल (सेमी 2 में) क्या है? (π = 22/7)"
+ },
+ {
+  "i": 113,
+  "n": 119,
+  "q": "एक 384 सेमी 2 के सतह क्षेत्र वाले बड़े घन को पिघलाकर प्राप्त सामग्री से कितने छोटे घन बनाए जा सकते हैं, जिनमें प्रत्येक का सतह क्षेत्र 96 सेमी 2 है?",
+  "opts": [
+   "50",
+   "80",
+   "4",
+   "8"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "How many small cubes, each having surface area of 96 cm 2 can be formed from the material obtained by melting a larger cube having surface area of 384 cm 2 ? एक 384 सेमी 2 के सतह क्षेत्र वाले बड़े घन को पिघलाकर प्राप्त सामग्री से कितने छोटे घन बनाए जा सकते हैं, जिनमें प्रत्येक का सतह क्षेत्र 96 सेमी 2 है?"
+ },
+ {
+  "i": 114,
+  "n": 120,
+  "q": "अमृता देवी विश्नोई किसके लिए प्रसिद्ध है ?",
+  "opts": [
+   "ग्रामीण विकास के लिए",
+   "खेजड़ी के पेड़ो को बचाने के लिए",
+   "भगत आन्दोलन के लिए",
+   "महिला सशक्तिकरण के लिए"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Amrita Devi Vishnoi is famous for –"
+ },
+ {
+  "i": 115,
+  "n": 121,
+  "q": "तेजाजी का जन्म किस जिले में हुआ था?",
+  "opts": [
+   "नागौर",
+   "सीकर",
+   "जोधपुर",
+   "अजमेर"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Tejaji was born in which district ?"
+ },
+ {
+  "i": 116,
+  "n": 122,
+  "q": "उस सुप्रसिद्ध “मांड गायक” का नाम बताएं जिसने कि गीत ‘केसरिया बालम आओ नि पधारो महारेदेश’ को अमरत्व प्रदान किया।",
+  "opts": [
+   "श्यामल दास",
+   "गावरी देवी",
+   "अल्लाह जिलाई बाई",
+   "पीरु सिंह"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Name the renowned &#8220;Mand Singer&#8221; who immortalized the song &#8216;Kesaria Balam Aao Ni Padharo Mahare Des'."
+ },
+ {
+  "i": 117,
+  "n": 123,
+  "q": "निम्नलिखित में से कौन सी क्षारीय धातु नहीं है?",
+  "opts": [
+   "सोडियम",
+   "पोटैशियम",
+   "पारा",
+   "लिथियम"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Which of the following is not an alkali metal?"
+ },
+ {
+  "i": 118,
+  "n": 124,
+  "q": "आकाश का नीला रंग किस परिघटना के कारण होता है ?",
+  "opts": [
+   "प्रकाश का प्रकीर्णन",
+   "प्रकाश का वायुमंडलीय अपवर्तन",
+   "प्रकाश का प्रतिबिंब",
+   "प्रकाश का फैलाव"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "The blue colour of the sky is because of the phenomenon of"
+ },
+ {
+  "i": 119,
+  "n": 125,
+  "q": "मनुष्यों में लिंग निर्धारण ___ प्रकार के गुणसूत्र पर आधारित होता है।",
+  "opts": [
+   "XX",
+   "XO",
+   "YO",
+   "XY"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "Sex determination in humans is based on ____ type chromosome मनुष्यों में लिंग निर्धारण ___ प्रकार के गुणसूत्र पर आधारित होता है।"
+ },
+ {
+  "i": 120,
+  "n": 126,
+  "q": "डीएनए से प्रोटीन बनने की सही प्रक्रिया की पहचान करें",
+  "opts": [
+   "a: ट्रॉस्क्रिप्शन b : ट्रांसलेशन",
+   "a: रेप्लिकेशन b : ट्रांस्क्रिप्शन",
+   "a. रेप्लिकेशन b : ट्रांसलेशन",
+   "a: ट्रांसलेशन b: ट्रांस्क्रिप्शन"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Identify the correct process for DNA to Protein formation-"
+ },
+ {
+  "i": 121,
+  "n": 127,
+  "q": "निम्न को उनकी खाद्य श्रृंखला में प्राथमिक उपभोक्ता के रूप में चयन करें और सर्वाधिक उपयुक्त विकल्प चुनें:",
+  "opts": [
+   "टिड्डा, हिरण, गन्ना तना भेदक",
+   "गन्ना तना भेदक, मेंढक, बाघ",
+   "सांप, मछली, पक्षी",
+   "मछली, मेंढक, टिड्डा"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Select-the primary consumers from their food chain: (Choose the most appropriate option from below)"
+ },
+ {
+  "i": 122,
+  "n": 128,
+  "q": "निम्नलिखित में से कौन-सी तकनीक फोरेंसिक विज्ञान में पहचान करने के लिये उपयोगी तरीका है?",
+  "opts": [
+   "डी. एन.ए फिंगरप्रिंटिंग",
+   "ऑटोरेडियोग्राफी",
+   "जीन थेरेपी",
+   "आर. एन.ए इंटरफेरेंस"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Which of the following techniques is useful identification tool in forensic science ?"
+ },
+ {
+  "i": 123,
+  "n": 129,
+  "q": "सूची-I को सूची-II से सुमेलित कीजिए : सूची-I (ब्लड ग्रूप) सूची-II (प्लाज्मा में एण्टीबॉडीज) a. A I. Anti-A b. B II. Anti-A, B c. AB III. Anti-B d. O IV. Nil नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :",
+  "opts": [
+   "a-II, b-I, c – IV, d – III",
+   "a- IV, b-I, c – II, d – III",
+   "a-III, b-I, c- IV, d-II",
+   "al, b-IV, c – III, d – II"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Match List – I with List-II List-I – List-II Blood Group – Antibodies in plasma a. A I. Anti-A b. B II. Anti- A, B c. AB III. Anti-B d. O. IV. Nil सूची-I को सूची-II से सुमेलित कीजिए : सूची-I – सूची-II ब्लड ग्रूप – प्लाज्मा में एण्टीबॉडीज a. A I. Anti-A b. B II. Anti-A, B c. AB III. Anti-B d. O. IV. Nil Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :"
+ },
+ {
+  "i": 124,
+  "n": 130,
+  "q": "जब एक विद्युत धारा प्रकाशित (ले जाने वाली) एल्यूमिनियम की छड़ को चुंबकीय क्षेत्र में रखा जाता है, तो छड़ का विस्थापन सबसे अधिक तब होता है जब विद्युत् धारा की दिशा चुंबकीय क्षेत्र की दिशा",
+  "opts": [
+   "के समकोण पर होती है",
+   "से 60° पर होती है",
+   "से 90° से कम होती है",
+   "के समानांतर होती है"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "When a current carrying aluminum rod is placed in a magnetic field, the displacement of the rod is largest when the direction of current is –"
+ },
+ {
+  "i": 125,
+  "n": 131,
+  "q": "निम्नलिखित में से कौन सा ट्रांसजेनिक जीव का नतीजा नहीं है?",
+  "opts": [
+   "बीटी कॉटन",
+   "गोल्डन राइस (सुनहरा चावल)",
+   "पूसा स्वर्णिम् (करन राय)",
+   "टमाटर की फ्लेवर सेवर किस्म"
+  ],
+  "ans": 2,
+  "via": "DUAL_AGREE",
+  "en": "Which of the following is NOT an outcome of transgenic organism ?"
+ },
+ {
+  "i": 126,
+  "n": 132,
+  "q": "अमीबियासिस को ____ रोगों के रूप में वर्गीकृत किया गया है।",
+  "opts": [
+   "फंगल",
+   "बैक्टीरियल",
+   "वायरल",
+   "प्रोटोजोअन"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "The amoebiasis is categorised as a ___ diseases."
+ },
+ {
+  "i": 127,
+  "n": 133,
+  "q": "चार प्रतिरोध 1 Ω, 2 Ω, 4 Ω और 4 Ω को संयोजन का सबसे कम प्रतिरोध प्राप्त करने के लिए चारो को एक सर्किट में जोड़ा गया है इसका परिणाम होगा:",
+  "opts": [
+   "0.25 Ω",
+   "1 Ω",
+   "1.5 Ω",
+   "0.5 Ω"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "Four resistance 1 Ω, 2 Ω, 4 Ω and 4 Ω have been joined in a circuit to obtain lowest resistance of the combination of the four. Its value will be: चार प्रतिरोध 1 Ω, 2 Ω, 4 Ω और 4 Ω को संयोजन का सबसे कम प्रतिरोध प्राप्त करने के लिए चारो को एक सर्किट में जोड़ा गया है इसका परिणाम होगा:"
+ },
+ {
+  "i": 128,
+  "n": 134,
+  "q": "दो तंत्रिका कोशिका के मध्य खाली स्थान को कहते है–",
+  "opts": [
+   "सिनेप्टिक क्लेफ्ट",
+   "एक्सान",
+   "आवेग",
+   "द्रुमिका"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "The gap between two neurons is called a –"
+ },
+ {
+  "i": 129,
+  "n": 135,
+  "q": "उस कथन की पहचान करें जोकि कार्बन योगिकों के लिए सत्य है: a. वे कार्बन परमाणुओं की लंबी श्रृंखलाएँ बनाते हैं जो शाखा और वलय संरचनाओं में व्यवस्थित होते हैं। b. वे विद्युत के अच्छे संवाहक होते हैं। c उनके गलनांक और क्वथनांक उच्च होते हैं। d. वे सह संयोजक बंधन बनाते हैं। नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनें।",
+  "opts": [
+   "केवल a और d",
+   "केवल a, c और त d",
+   "केवल a, b और d",
+   "केवल a और c"
+  ],
+  "ans": 0,
+  "via": "ADJUDICATED",
+  "en": "Identify from the following statements which are true for carbon compounds: a. They form long chains of carbon atoms which are arranged in branch and ring structures. b. They are good conductors of electricity. c. They have high melting and boiling points. d. They form covalent bonds. Choose the most appropriate answer from the options given below:"
+ },
+ {
+  "i": 130,
+  "n": 136,
+  "q": "हिमालय के किस भाग में ‘करेवा’ भू आकृति मिलती है?",
+  "opts": [
+   "कश्मीर हिमालय",
+   "उत्तर पूर्वी हिमालय",
+   "हिमाचल-उत्तराखण्ड हिमालय",
+   "पूर्वी हिमालय"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "In which part of Himalayas is the &#8216;karewa' land form found?-"
+ },
+ {
+  "i": 131,
+  "n": 137,
+  "q": "निम्नलिखित में से कौन सा वन्य जीव अभयारण्य राजस्थान में स्थित है?",
+  "opts": [
+   "गोविन्द",
+   "चिन्नार",
+   "पेरियार",
+   "रामगढ़ विषधारी"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "Which of the following wild life sanctuary is situated in Rajasthan."
+ },
+ {
+  "i": 132,
+  "n": 138,
+  "q": "आइज़ोल राजधानी है",
+  "opts": [
+   "त्रिपुरा की",
+   "मणिपुर-की",
+   "नागालैंड की",
+   "मिजोरम की"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "Aizawl is capital of:"
+ },
+ {
+  "i": 133,
+  "n": 139,
+  "q": "सोडियम धातु ________ में भंडारित होती है:",
+  "opts": [
+   "अल्कोहल",
+   "पेट्रोल",
+   "पानी",
+   "केरोसिन"
+  ],
+  "ans": 3,
+  "via": "SOLO_VERIFIED",
+  "en": ""
+ },
+ {
+  "i": 134,
+  "n": 140,
+  "q": "सूची-I को सूची-II से सुमेलित कीजिए : सूची-I (विटामिन) सूची – II (उपयोग) a. विटामिन A I. हड्डियों और दांतों के लिए शरीर में कैल्शियम के प्रयोग में सहायता करता है b. विटामिन C II. ब्लड क्लोटिंग c. विटामिन D III. नेत्रों को स्वस्थ रखता है d. विटामिन K IV. रोगों के विरुद्ध लड़ने में शरीर की सहायता करता है नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :",
+  "opts": [
+   "a-III, b – IV, c – II, d – I",
+   "a-III, b-IV, c- I, d- II",
+   "a-IV, b – III, c – II, d – I",
+   "a-I, b-II, c – III, d – IV"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Match List-I with List-II List-I (vitamin) – List-II (use) a. Vitamin A I. Helps body to use calcium for bones and teeth b. Vitamin C II. Blood clotting c. Vitamin D III. Keeps eyes healthy d. Vitamin K IV. Help body to fight against diseases सूची-I को सूची-II से सुमेलित कीजिए : सूची-I (विटामिन) – सूची – II (उपयोग) a. विटामिन A I. हड्डियों और दांतों के लिए शरीर में कैल्शियम के प्रयोग में सहायता करता है b. विटामिन C II. ब्लड क्लोटिंग c. विटामिन D III. नेत्रों को स्वस्थ रखता है d. विटामिन K IV. रोगों के विरुद्ध लड़ने में शरीर की सहायता करता है Choose the most appropriate answer from the options given below: नीचे दिए गए विकल्पों में से सर्वाधिक उपयुक्त उत्तर चुनिए :"
+ },
+ {
+  "i": 135,
+  "n": 143,
+  "q": "निम्नलिखित में से कौन सा (x + y) 3 – (x 3 +y 3 ) का गुणनखण्ड हैं/है? a. x 2 + y 2 + 2xy b. x 2 + y 2 – xy c. xy 2 d. xy नीचे दिए गए विकल्पों में से सबसे उपयुक्त उत्तर चुनें:",
+  "opts": [
+   "केवल d",
+   "केवल a, c और d",
+   "केवल a और c",
+   "केवल b और d"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Which of the following is/are factors of (x + y) 3 – (x 3 +y 3 )? a. x 2 + y 2 + 2xy b. x 2 + y 2 – xy c. xy 2 d. xy Choose the most appropriate answer from the options given below:"
+ },
+ {
+  "i": 136,
+  "n": 144,
+  "q": "ΔABC और ΔPQR सर्वांगसम त्रिभुज हैं, यदि ∠ ABC = 52°, और ∠ PRQ = 80°, तब ∠CAB है",
+  "opts": [
+   "48°",
+   "52°",
+   "80°",
+   "40°"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "ΔABC and ΔPQR are congruent triangles. If ∠ABC=52°, and ∠PRQ=80°, then ∠CAB is: ΔABC और ΔPQR सर्वांगसम त्रिभुज हैं, यदि ∠ ABC = 52°, और ∠ PRQ = 80°, तब ∠CAB है"
+ },
+ {
+  "i": 137,
+  "n": 145,
+  "q": "ΔABC और ΔPQR में AB=PQ, ∠B = ∠Q, है तब निम्नलिखित में से कौन सा कथन सत्य है?",
+  "opts": [
+   "ΔABC और ΔPQR समरुप है",
+   "ΔABC और ΔPQR समरुप नहीं है",
+   "ΔABC और ΔPQR समरुप हो सकते हैं अथवा नहीं भी हो सकते हैं",
+   "ΔABC और ΔPQR सर्वागसम है"
+  ],
+  "ans": 2,
+  "via": "ADJUDICATED",
+  "en": "In ΔABC and ΔPQR, AB=PQ, ∠B=∠Q, then which of the following statements is true?"
+ },
+ {
+  "i": 138,
+  "n": 146,
+  "q": "त्रिभुज ABC की भुजा BC पर बिंदु D इस प्रकार है कि AD, ∠BAC को समद्विभाजित करता है तो निम्न में से कौन सा सही है",
+  "opts": [
+   "BD = CD",
+   "BA &gt; BD",
+   "BA = BD",
+   "BD &gt; BA"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "D is a point on the side BC of a ΔABC such that AD bisects ∠BAC. Then which of the following is correct त्रिभुज ABC की भुजा BC पर बिंदु D इस प्रकार है कि AD, ∠BAC को समद्विभाजित करता है तो निम्न में से कौन सा सही है"
+ },
+ {
+  "i": 139,
+  "n": 147,
+  "q": "निम्नलिखित में से कौन सा औद्योगिक क्रांति का राजनीतिक परिणाम है?",
+  "opts": [
+   "औद्योगिक क्रांति के माध्यम से औपनिवेशिक प्रतिस्पर्धा को गति मिली।",
+   "उत्पादन और वाणिज्य में बड़े पैमाने पर वृद्धि हुई और आर्थिक असंतुलन पैदा हुआ।",
+   "एक नवीन सामाजिक वर्ग का उदय हुआ, नैतिक मूल्यों का हास हुआ और संयुक्त परिवार व्यवस्था बिखर गई ।",
+   "कुटीर उद्योग नष्ट हो गए।"
+  ],
+  "ans": 0,
+  "via": "DUAL_AGREE",
+  "en": "Which of the following is a poitical consequence of industrial revolution?"
+ },
+ {
+  "i": 140,
+  "n": 148,
+  "q": "सार्क (SAARC) का सचिवालय कहाँ पर स्थित है?",
+  "opts": [
+   "थिम्पू (भूटान)",
+   "काठमांडू (नेपाल)",
+   "ढाका (बांग्लादेश)",
+   "नई दिल्ली (भारत)"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Where is the secretariat of SAARC, located?"
+ },
+ {
+  "i": 141,
+  "n": 149,
+  "q": "‘NATO’ का पूरा नाम (फुल फॉर्म) है-",
+  "opts": [
+   "न्यू अटलांटिक ट्रीटी ऑफिस",
+   "न्यू अटलांटिक ट्रीटी आर्गेनाईजेशन",
+   "नॉर्थ एशियन ट्रीटी आर्गेनाईजेशन",
+   "नॉर्थ अटलांटिक ट्रीटी आर्गेनाईजेशन"
+  ],
+  "ans": 3,
+  "via": "DUAL_AGREE",
+  "en": "Write the full form of &#8216;NATO’"
+ },
+ {
+  "i": 142,
+  "n": 150,
+  "q": "राजस्थान के विभिन्न लोक नृत्य रूपों के बारे में निम्नलिखित में से कौन सा कथन सही नहीं है?",
+  "opts": [
+   "बम नृत्य अलवर और भरतपुर क्षेत्र का एक प्रसिद्ध नृत्य है।",
+   "वर्ष 2022 में यूनेस्को ने वालर नृत्य शैली को अपनी अमूर्त सांस्कृतिक धरोहर में शामिल किया था।",
+   "जसनाथी पंथ का अग्नि नृत्य रूप बीकानेर के कतरियासर गाँव में उत्पन्न हुआ।",
+   "घुड़ला नृत्य केवल महिलाओं के द्वारा किया जाता है।"
+  ],
+  "ans": 1,
+  "via": "DUAL_AGREE",
+  "en": "Which of the following statement is NOT correct about various folk dance forms of Rajasthan?"
+ }
+]
