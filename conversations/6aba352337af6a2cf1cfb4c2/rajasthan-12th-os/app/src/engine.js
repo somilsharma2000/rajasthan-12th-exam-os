@@ -207,3 +207,164 @@ export function fmtTime(ms) {
   const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), sec = s % 60
   return (h > 0 ? h + ':' : '') + String(m).padStart(2, '0') + ':' + String(sec).padStart(2, '0')
 }
+
+// FREE UTILITY CALCULATORS (Tools tab) — pure, testable math & logic.
+
+export function calcNegativeMarks(input = {}, examConfig = null) {
+  const pattern = examConfig?.pattern || {}
+  const totalQuestions = Math.max(1, Number(input.totalQuestions ?? pattern.totalQuestions ?? 100))
+  const marksPerQuestion = Number(input.marksPerQuestion ?? pattern.marksPerQuestion ?? 1)
+  const negativeScheme = input.negativeScheme ?? input.negativeFraction ?? pattern.negative?.wrong ?? '1/3'
+
+  const correct = Math.max(0, Number(input.correct || 0))
+  const wrong = Math.max(0, Number(input.wrong || 0))
+  const attempted = input.attempted !== undefined && input.attempted !== null
+    ? Math.max(0, Number(input.attempted))
+    : correct + wrong
+
+  const unattempted = Math.max(0, totalQuestions - attempted)
+
+  let penaltyPerWrong = 0
+  if (negativeScheme === 'none' || negativeScheme === 0 || negativeScheme === '0') {
+    penaltyPerWrong = 0
+  } else if (negativeScheme === '1-mark-per-wrong') {
+    penaltyPerWrong = 1
+  } else if (negativeScheme === '1/4') {
+    penaltyPerWrong = marksPerQuestion / 4
+  } else if (negativeScheme === '1/3') {
+    penaltyPerWrong = marksPerQuestion / 3
+  } else if (typeof negativeScheme === 'number') {
+    penaltyPerWrong = negativeScheme
+  } else if (typeof negativeScheme === 'string' && negativeScheme.includes('/')) {
+    const [num, den] = negativeScheme.split('/').map(Number)
+    if (den) penaltyPerWrong = marksPerQuestion * (num / den)
+  } else {
+    const num = Number(negativeScheme)
+    penaltyPerWrong = isNaN(num) ? marksPerQuestion / 3 : num
+  }
+
+  const correctMarks = correct * marksPerQuestion
+  const totalPenalty = wrong * penaltyPerWrong
+  const netScore = Math.round((correctMarks - totalPenalty) * 100) / 100
+  const maxScore = Math.round((totalQuestions * marksPerQuestion) * 100) / 100
+  const accuracy = attempted > 0 ? Math.round((correct / attempted) * 100) : 0
+
+  return {
+    totalQuestions,
+    marksPerQuestion,
+    negativeScheme,
+    attempted,
+    correct,
+    wrong,
+    unattempted,
+    correctMarks: Math.round(correctMarks * 100) / 100,
+    totalPenalty: Math.round(totalPenalty * 100) / 100,
+    netScore,
+    maxScore,
+    accuracy,
+    noteHi: pattern.negative?.noteHi || null,
+    noteEn: pattern.negative?.noteEn || null,
+    fifthOptionNoteHi: pattern.fifthOptionRule?.noteHi || null,
+    fifthOptionNoteEn: pattern.fifthOptionRule?.noteEn || null
+  }
+}
+
+export function calcAge(dobStr, refDateStr) {
+  if (!dobStr || !refDateStr) return null
+  const dob = new Date(dobStr)
+  const ref = new Date(refDateStr)
+  if (isNaN(dob.getTime()) || isNaN(ref.getTime()) || ref < dob) return null
+
+  let y1 = dob.getUTCFullYear(), m1 = dob.getUTCMonth() + 1, d1 = dob.getUTCDate()
+  let y2 = ref.getUTCFullYear(), m2 = ref.getUTCMonth() + 1, d2 = ref.getUTCDate()
+
+  let years = y2 - y1
+  let months = m2 - m1
+  let days = d2 - d1
+
+  if (days < 0) {
+    months -= 1
+    const prevMonth = m2 - 1 === 0 ? 12 : m2 - 1
+    const prevYear = m2 - 1 === 0 ? y2 - 1 : y2
+    const daysInPrevMonth = new Date(Date.UTC(prevYear, prevMonth, 0)).getUTCDate()
+    if (d1 > daysInPrevMonth) {
+      days = d2
+    } else {
+      days += daysInPrevMonth
+    }
+  }
+
+  if (months < 0) {
+    years -= 1
+    months += 12
+  }
+
+  return { years, months, days }
+}
+
+export function calcAgeEligibility(age, category = 'GEN', ageLimitCfg = null) {
+  if (!ageLimitCfg || ageLimitCfg.verification !== 'OFFICIAL_CONFIRMED' || !ageLimitCfg.minAge || !ageLimitCfg.maxAge) {
+    return {
+      verdict: 'UNVERIFIED',
+      reasonHi: 'इस परीक्षा की उम्र सीमा अभी सत्यापित नहीं है',
+      reasonEn: 'Age limit for this exam is not yet verified'
+    }
+  }
+
+  if (!age || typeof age.years !== 'number') {
+    return {
+      verdict: 'INVALID',
+      reasonHi: 'कृपया वैध जन्मतिथि दर्ज करें',
+      reasonEn: 'Please enter a valid date of birth'
+    }
+  }
+
+  const catUpper = (category || 'GEN').toUpperCase()
+  const minAge = ageLimitCfg.minAge
+  const maxAge = ageLimitCfg.maxAge[catUpper] ?? ageLimitCfg.maxAge.GEN ?? 40
+
+  const { years, months, days } = age
+
+  if (years < minAge) {
+    return {
+      verdict: 'UNDERAGE',
+      minAge,
+      maxAge,
+      category: catUpper,
+      reasonHi: `आपकी आयु (${years} वर्ष ${months} माह) न्यूनतम आयु (${minAge} वर्ष) से कम है।`,
+      reasonEn: `Your age (${years}y ${months}m) is below the minimum age (${minAge} years).`
+    }
+  }
+
+  if (years > maxAge || (years === maxAge && (months > 0 || days > 0))) {
+    return {
+      verdict: 'OVERAGE',
+      minAge,
+      maxAge,
+      category: catUpper,
+      reasonHi: `आपकी आयु (${years} वर्ष ${months} माह ${days} दिन) अधिकतम आयु (${maxAge} वर्ष - ${catUpper} वर्ग) से अधिक है।`,
+      reasonEn: `Your age (${years}y ${months}m ${days}d) exceeds the maximum age limit (${maxAge} years for ${catUpper}).`
+    }
+  }
+
+  return {
+    verdict: 'ELIGIBLE',
+    minAge,
+    maxAge,
+    category: catUpper,
+    reasonHi: `आप पात्र हैं! आपकी आयु (${years} वर्ष ${months} माह ${days} दिन) निर्धारित सीमा (${minAge}-${maxAge} वर्ष) के अंतर्गत है।`,
+    reasonEn: `Eligible! Your age (${years}y ${months}m ${days}d) is within the allowed limit (${minAge}-${maxAge} years).`
+  }
+}
+
+export function calcCountdown(expectedDateStr, nowMs = Date.now()) {
+  if (!expectedDateStr) return null
+  const exp = new Date(expectedDateStr)
+  if (isNaN(exp.getTime())) return null
+  const today = new Date(nowMs)
+  today.setHours(0, 0, 0, 0)
+  exp.setHours(0, 0, 0, 0)
+  const diffMs = exp.getTime() - today.getTime()
+  const days = Math.round(diffMs / (1000 * 60 * 60 * 24))
+  return { days, isPast: days < 0, isToday: days === 0 }
+}

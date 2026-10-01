@@ -31,5 +31,6 @@ Findings land in `gather/radar-settle-*.md`; after 2-source cross-check they mov
 | Date (IST) | Source | Result |
 |---|---|---|
 | 2026-10-02 | (pilot start) | Radar created; 3 focused research missions launched on the 5 disputed facts |
+| 2026-10-02 | RSSB Adv 08/2024, RHCJ 2022, RSSB Adv 17/2024 | PILOT COMPLETE: 5/5 disputed facts settled + shipped live (configs + qa/config.test.mjs locks). HC JA + DC clerk excluded (graduate). Librarian stays (12th + C.Lib.Sc — re-verify exact advt no. next sweep, RSSB PDFs geo-blocked from sandbox). WATCH: CET 2026 cycle rumors of negative-marking introduction — act only on official advt text |
 
-Last checked: 2026-10-02 (pilot creation, no sweep yet)
+Last checked: 2026-10-02 03:25 IST (pilot settle wave complete; first scheduled sweep = Monday 2026-10-05 10:00 IST)
