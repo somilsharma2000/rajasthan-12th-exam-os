@@ -5,6 +5,20 @@ project alongside PROJECT_MASTER_SPEC.md (which remains the product spec). When 
 says "Think bigger", execute §49. Nothing here authorizes skipping the verification gates,
 honesty rules, or QA protocol defined in the spec and QA-MASTER-PROMPT.md.*
 
+## PRODUCT SPINE (D-2026-10-01-16 — the one path; founder-locked)
+
+Be ruthless about feature bloat. The goal is NOT "the biggest Rajasthan project with 100
+features". The strongest path is to become the place where a Rajasthan aspirant can
+reliably go:
+
+```text
+EXAM DISCOVERED → AM I ELIGIBLE? → HOW DO I PREPARE? → WHAT SHOULD I DO TODAY? →
+WHERE AM I WEAK? → HOW AM I IMPROVING? → WHAT SHOULD I DO NEXT?
+```
+
+Every feature proposal must name the spine link it strengthens. Features that don't sit
+on the spine wait, no matter how creative.
+
 ## 0. STRATEGIC AMBITION
 
 Do NOT optimize this project merely to become:
@@ -218,5 +232,12 @@ needs time-pressure/guessing signals — start capturing the signals now.
 **LATER (blocked: backend / accounts / scale):** teacher OS, coaching distribution, WhatsApp
 notification loops, community, percentile, B2B2C, cloud sync.
 
+**Spine coverage as of 2026-10-01 (cycle 6):** DISCOVERED = hub (strong, radar pilot next);
+ELIGIBLE = hub eligibility verified (exam finder queued); PREPARE = practice/mocks/revision
+(strong); TODAY = plan card (shipped cycle 6); WEAK = error book + speed analytics (heatmap
+needs topic tags — roadmap A3); IMPROVING = progress trends (shipped); NEXT = momentum CTA +
+plan (shipped). Weakest spine links today: discovery-notification (radar) and weak-topic
+identification (topic-tag pass).
+
 **REJECT (per existing constitution):** fake urgency, SEO spam tools, invented benchmarks,
-features without a student problem.
+features without a student problem, anything that grows page count instead of spine depth.
