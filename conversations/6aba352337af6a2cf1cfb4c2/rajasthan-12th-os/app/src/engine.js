@@ -194,9 +194,9 @@ export function speedStats(session, r) {
     insights.push({ hi: `जहाँ ज़्यादा समय लगा वहीं गलती हुई: गलत प्रश्नों पर औसत ${sec(wrongAvgMs)}s, सही प्रश्नों पर ${sec(correctAvgMs)}s।`, en: `Slow meant wrong: ${sec(wrongAvgMs)}s avg on wrong vs ${sec(correctAvgMs)}s on correct.` })
   }
   if (correctAvgMs && wrongAvgMs && wrongAvgMs < correctAvgMs * 0.6 && wrongAvgMs > 0) {
-    insights.push({ hi: `जल्दबाज़ी में गलतियाँ: गलत प्रश्नों पर सिर्फ ${sec(wrongAvgMs)}s लगा (सही प्रश्नों पर ${sec(correctAvgMs)}s)। भरोसे से तय करें, अंदाज़े से नहीं।`, en: `Rushed answers: only ${sec(wrongAvgMs)}s on wrong questions vs ${sec(correctAvgMs)}s on correct — decide, don't guess.` })
+    insights.push({ hi: `जल्दबाज़ी में गलतियाँ: गलत प्रश्नों पर औसत ${sec(wrongAvgMs)}s (सही प्रश्नों पर ${sec(correctAvgMs)}s)। ध्यान से पढ़ें।`, en: `Rushed errors: ${sec(wrongAvgMs)}s avg on wrong vs ${sec(correctAvgMs)}s on correct.` })
   }
-  if (slowest && slowest.ms > avgMs * 2.5 && slowest.ms > 60000) {
+  if (slowest && slowest.ms > 180000) {
     insights.push({ hi: `प्रश्न ${slowest.n} पर सबसे ज़्यादा समय (${Math.floor(slowest.ms / 60000)}:${String(sec(slowest.ms % 60000)).padStart(2, '0')}) — ऐसे प्रश्न परीक्षा में छोड़ना सीखें।`, en: `Question ${slowest.n} ate ${sec(slowest.ms)}s — learn to skip time sinks in the real exam.` })
   }
   return { perQ, avgMs, budgetSec, correctAvgMs, wrongAvgMs, insights, hasData: answeredTimed.length > 0, timedCount: answeredTimed.length }
@@ -212,17 +212,29 @@ export function fmtTime(ms) {
 
 export function calcNegativeMarks(input = {}, examConfig = null) {
   const pattern = examConfig?.pattern || {}
-  const totalQuestions = Math.max(1, Number(input.totalQuestions ?? pattern.totalQuestions ?? 100))
-  const marksPerQuestion = Number(input.marksPerQuestion ?? pattern.marksPerQuestion ?? 1)
+  const rawTotal = Number(input.totalQuestions ?? pattern.totalQuestions ?? 100)
+  const totalQuestions = Math.max(1, Number.isFinite(rawTotal) ? rawTotal : 100)
+
+  const rawMarks = Number(input.marksPerQuestion ?? pattern.marksPerQuestion ?? 1)
+  const marksPerQuestion = Number.isFinite(rawMarks) ? rawMarks : 1
+
   const negativeScheme = input.negativeScheme ?? input.negativeFraction ?? pattern.negative?.wrong ?? '1/3'
 
-  const correct = Math.max(0, Number(input.correct || 0))
-  const wrong = Math.max(0, Number(input.wrong || 0))
-  const attempted = input.attempted !== undefined && input.attempted !== null
+  const rawCorrect = Number(input.correct || 0)
+  const correct = Math.max(0, Number.isFinite(rawCorrect) ? rawCorrect : 0)
+
+  const rawWrong = Number(input.wrong || 0)
+  const wrong = Math.max(0, Number.isFinite(rawWrong) ? rawWrong : 0)
+
+  let attempted = input.attempted !== undefined && input.attempted !== null && Number.isFinite(Number(input.attempted))
     ? Math.max(0, Number(input.attempted))
     : correct + wrong
 
-  const unattempted = Math.max(0, totalQuestions - attempted)
+  // attempted cannot be less than correct + wrong
+  attempted = Math.max(attempted, correct + wrong)
+
+  const finalTotalQuestions = Math.max(totalQuestions, attempted)
+  const unattempted = Math.max(0, finalTotalQuestions - attempted)
 
   let penaltyPerWrong = 0
   if (negativeScheme === 'none' || negativeScheme === 0 || negativeScheme === '0') {
@@ -246,11 +258,11 @@ export function calcNegativeMarks(input = {}, examConfig = null) {
   const correctMarks = correct * marksPerQuestion
   const totalPenalty = wrong * penaltyPerWrong
   const netScore = Math.round((correctMarks - totalPenalty) * 100) / 100
-  const maxScore = Math.round((totalQuestions * marksPerQuestion) * 100) / 100
+  const maxScore = Math.round((finalTotalQuestions * marksPerQuestion) * 100) / 100
   const accuracy = attempted > 0 ? Math.round((correct / attempted) * 100) : 0
 
   return {
-    totalQuestions,
+    totalQuestions: finalTotalQuestions,
     marksPerQuestion,
     negativeScheme,
     attempted,
@@ -280,25 +292,32 @@ export function calcAge(dobStr, refDateStr) {
 
   let years = y2 - y1
   let months = m2 - m1
-  let days = d2 - d1
 
-  if (days < 0) {
+  function getTarget(y, m, d, addY, addM) {
+    let targetY = y + addY
+    let targetM = m + addM
+    while (targetM > 12) { targetM -= 12; targetY += 1 }
+    while (targetM < 1) { targetM += 12; targetY -= 1 }
+    const daysInMonth = new Date(Date.UTC(targetY, targetM, 0)).getUTCDate()
+    const targetD = Math.min(d, daysInMonth)
+    return { y: targetY, m: targetM, d: targetD }
+  }
+
+  let target = getTarget(y1, m1, d1, years, months)
+  let targetUtc = Date.UTC(target.y, target.m - 1, target.d)
+  let refUtc = Date.UTC(y2, m2 - 1, d2)
+
+  if (targetUtc > refUtc) {
     months -= 1
-    const prevMonth = m2 - 1 === 0 ? 12 : m2 - 1
-    const prevYear = m2 - 1 === 0 ? y2 - 1 : y2
-    const daysInPrevMonth = new Date(Date.UTC(prevYear, prevMonth, 0)).getUTCDate()
-    if (d1 > daysInPrevMonth) {
-      days = d2
-    } else {
-      days += daysInPrevMonth
+    if (months < 0) {
+      years -= 1
+      months += 12
     }
+    target = getTarget(y1, m1, d1, years, months)
+    targetUtc = Date.UTC(target.y, target.m - 1, target.d)
   }
 
-  if (months < 0) {
-    years -= 1
-    months += 12
-  }
-
+  const days = Math.round((refUtc - targetUtc) / (24 * 3600 * 1000))
   return { years, months, days }
 }
 
@@ -311,7 +330,7 @@ export function calcAgeEligibility(age, category = 'GEN', ageLimitCfg = null) {
     }
   }
 
-  if (!age || typeof age.years !== 'number') {
+  if (!age || typeof age.years !== 'number' || isNaN(age.years)) {
     return {
       verdict: 'INVALID',
       reasonHi: 'कृपया वैध जन्मतिथि दर्ज करें',
@@ -319,11 +338,15 @@ export function calcAgeEligibility(age, category = 'GEN', ageLimitCfg = null) {
     }
   }
 
-  const catUpper = (category || 'GEN').toUpperCase()
+  const catUpper = typeof category === 'string' ? category.toUpperCase() : 'GEN'
   const minAge = ageLimitCfg.minAge
-  const maxAge = ageLimitCfg.maxAge[catUpper] ?? ageLimitCfg.maxAge.GEN ?? 40
+  const maxAge = typeof ageLimitCfg.maxAge === 'number'
+    ? ageLimitCfg.maxAge
+    : (ageLimitCfg.maxAge[catUpper] ?? ageLimitCfg.maxAge.GEN ?? 40)
 
-  const { years, months, days } = age
+  const years = age.years
+  const months = Number(age.months) || 0
+  const days = Number(age.days) || 0
 
   if (years < minAge) {
     return {

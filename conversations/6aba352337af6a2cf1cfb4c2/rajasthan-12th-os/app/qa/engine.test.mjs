@@ -1,6 +1,6 @@
 // ENGINE UNIT TESTS — pure functions, node only (no browser needed).
 // Run: npm test   (part of the release gate; see docs/QA-MASTER-PROMPT.md module 20_TESTING)
-import { buildSession, scoreSession, speedStats, fmtTime, availableQuestions, shuffle, REV_LADDER, reviseErrorRecord, buildTodayPlan, mergeTopicStats, weakTopics, MIN_TOPIC_ATTEMPTS, buildShareData } from '../src/engine.js'
+import { buildSession, scoreSession, speedStats, fmtTime, availableQuestions, shuffle, REV_LADDER, reviseErrorRecord, buildTodayPlan, mergeTopicStats, weakTopics, MIN_TOPIC_ATTEMPTS, buildShareData, calcNegativeMarks, calcAge, calcAgeEligibility } from '../src/engine.js'
 import assert from 'node:assert'
 
 // shapes mirror the real bank: q.answer is a number; pattern carries scoring config
@@ -132,4 +132,114 @@ assert.ok(sd.dateHi.includes('अक्टूबर'), 'date formatted in Hindi'
 assert.ok(sd.shareText.includes('https://somilsharma2000.github.io'), 'share text carries real URL')
 assert.ok(!/topper|टॉपर|rank|रैंक/i.test(JSON.stringify(sd)), 'no invented rank/badge language')
 
-console.log('engine tests: ALL PASS (12 groups)')
+// 13. calculators: pure utility functions (calcNegativeMarks, calcAge, calcAgeEligibility)
+// 13a. calcNegativeMarks schemes and configs
+// Jail Prahari style config: 100Q x 4 marks, -1 per wrong: 60 correct + 20 wrong = 220 net score
+const jpRes = calcNegativeMarks(
+  { correct: 60, wrong: 20 },
+  { pattern: { totalQuestions: 100, marksPerQuestion: 4, negative: { wrong: '1-mark-per-wrong' } } }
+)
+assert.equal(jpRes.correctMarks, 240)
+assert.equal(jpRes.totalPenalty, 20)
+assert.equal(jpRes.netScore, 220)
+assert.equal(jpRes.maxScore, 400)
+assert.equal(jpRes.attempted, 80)
+assert.equal(jpRes.unattempted, 20)
+assert.equal(jpRes.accuracy, 75)
+
+// CET style config: negative 'none' + fifthOptionRule
+const cetRes = calcNegativeMarks(
+  { correct: 80, wrong: 20 },
+  {
+    pattern: {
+      totalQuestions: 150,
+      marksPerQuestion: 2,
+      negative: { wrong: 'none', noteHi: 'कोई नकारात्मक अंकन नहीं', noteEn: 'No negative marking' },
+      fifthOptionRule: { enabled: true, noteHi: '5वां विकल्प अनुत्तरित हेतु', noteEn: '5th option for unattempted' }
+    }
+  }
+)
+assert.equal(cetRes.totalPenalty, 0)
+assert.equal(cetRes.correctMarks, 160)
+assert.equal(cetRes.netScore, 160)
+assert.equal(cetRes.noteHi, 'कोई नकारात्मक अंकन नहीं')
+assert.equal(cetRes.fifthOptionNoteHi, '5वां विकल्प अनुत्तरित हेतु')
+
+// Standard negative schemes: '1/3', '1/4', 'none', custom fraction '1/5'
+assert.equal(calcNegativeMarks({ correct: 30, wrong: 12, negativeScheme: '1/3', marksPerQuestion: 1 }).totalPenalty, 4)
+assert.equal(calcNegativeMarks({ correct: 30, wrong: 12, negativeScheme: '1/4', marksPerQuestion: 1 }).totalPenalty, 3)
+assert.equal(calcNegativeMarks({ correct: 30, wrong: 12, negativeScheme: 'none', marksPerQuestion: 1 }).totalPenalty, 0)
+assert.equal(calcNegativeMarks({ correct: 50, wrong: 10, negativeScheme: '1/5', marksPerQuestion: 1 }).totalPenalty, 2)
+
+// Adversarial attempted < correct + wrong: attempted corrected to at least correct + wrong
+const attRes = calcNegativeMarks({ correct: 10, wrong: 5, attempted: 8, totalQuestions: 100 })
+assert.equal(attRes.attempted, 15, 'attempted auto-corrected from 8 to 10+5=15')
+assert.equal(attRes.accuracy, 67, 'accuracy calculated using corrected attempted = 15')
+assert.equal(attRes.unattempted, 85, 'unattempted = total (100) - attempted (15)')
+
+// 13b. calcAge date arithmetic & leap years
+// Leap year DOB: 2000-02-29
+const leapNonLeap = calcAge('2000-02-29', '2021-02-28')
+assert.deepEqual(leapNonLeap, { years: 21, months: 0, days: 0 })
+const leapToLeap = calcAge('2000-02-29', '2024-02-29')
+assert.deepEqual(leapToLeap, { years: 24, months: 0, days: 0 })
+
+// Month boundary date math: 2000-08-31 to 2024-09-30 (exactly 24y 1m 0d)
+const augToSep = calcAge('2000-08-31', '2024-09-30')
+assert.deepEqual(augToSep, { years: 24, months: 1, days: 0 })
+
+// Min age exact boundary: 2006-01-01 to 2024-01-01 = 18y 0m 0d
+const exact18 = calcAge('2006-01-01', '2024-01-01')
+assert.deepEqual(exact18, { years: 18, months: 0, days: 0 })
+
+// Invalid dates / null / ref < dob
+assert.equal(calcAge(null, '2024-01-01'), null)
+assert.equal(calcAge('2024-01-01', null), null)
+assert.equal(calcAge('invalid-date', '2024-01-01'), null)
+assert.equal(calcAge('2024-01-01', '2023-01-01'), null, 'ref < dob returns null')
+
+// 13c. calcAgeEligibility boundaries, categories, unverified config
+const ageCfg = {
+  verification: 'OFFICIAL_CONFIRMED',
+  minAge: 18,
+  maxAge: { GEN: 40, OBC: 43, SC: 45, ST: 45 }
+}
+
+// Min age boundary: 18y 0m 0d -> ELIGIBLE, 17y 11m 29d -> UNDERAGE
+const elMin = calcAgeEligibility({ years: 18, months: 0, days: 0 }, 'GEN', ageCfg)
+assert.equal(elMin.verdict, 'ELIGIBLE')
+const elUnder = calcAgeEligibility({ years: 17, months: 11, days: 29 }, 'GEN', ageCfg)
+assert.equal(elUnder.verdict, 'UNDERAGE')
+
+// Max age boundary for GEN: 40y 0m 0d -> ELIGIBLE, 40y 0m 1d -> OVERAGE
+const elMaxGen = calcAgeEligibility({ years: 40, months: 0, days: 0 }, 'GEN', ageCfg)
+assert.equal(elMaxGen.verdict, 'ELIGIBLE')
+const elOverGen = calcAgeEligibility({ years: 40, months: 0, days: 1 }, 'GEN', ageCfg)
+assert.equal(elOverGen.verdict, 'OVERAGE')
+
+// Category-specific maxAge map (OBC max 43)
+const elMaxObc = calcAgeEligibility({ years: 43, months: 0, days: 0 }, 'OBC', ageCfg)
+assert.equal(elMaxObc.verdict, 'ELIGIBLE')
+assert.equal(elMaxObc.maxAge, 43)
+const elOverObc = calcAgeEligibility({ years: 43, months: 0, days: 1 }, 'OBC', ageCfg)
+assert.equal(elOverObc.verdict, 'OVERAGE')
+
+// Category fallback to GEN maxAge for unlisted category (e.g. EWS)
+const elEws = calcAgeEligibility({ years: 41, months: 0, days: 0 }, 'EWS', ageCfg)
+assert.equal(elEws.verdict, 'OVERAGE')
+assert.equal(elEws.maxAge, 40)
+
+// Primitive maxAge number (e.g. maxAge = 35)
+const primitiveCfg = { verification: 'OFFICIAL_CONFIRMED', minAge: 18, maxAge: 35 }
+assert.equal(calcAgeEligibility({ years: 35, months: 0, days: 0 }, 'GEN', primitiveCfg).verdict, 'ELIGIBLE')
+assert.equal(calcAgeEligibility({ years: 35, months: 0, days: 1 }, 'GEN', primitiveCfg).verdict, 'OVERAGE')
+
+// Null or unverified ageLimitCfg
+assert.equal(calcAgeEligibility({ years: 25 }, 'GEN', null).verdict, 'UNVERIFIED')
+assert.equal(calcAgeEligibility({ years: 25 }, 'GEN', { verification: 'UNVERIFIED' }).verdict, 'UNVERIFIED')
+
+// Invalid age input
+assert.equal(calcAgeEligibility(null, 'GEN', ageCfg).verdict, 'INVALID')
+assert.equal(calcAgeEligibility({ years: 'invalid' }, 'GEN', ageCfg).verdict, 'INVALID')
+
+console.log('engine tests: ALL PASS (13 groups)')
