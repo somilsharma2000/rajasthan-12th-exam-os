@@ -21,6 +21,8 @@ try {
   ok('strip dismissed + persists across reload', await p.evaluate(() => !document.querySelector('.onboard')) && (await p.reload({ waitUntil: 'networkidle0' }), await p.evaluate(() => !document.querySelector('.onboard'))))
   await p.evaluate(() => { localStorage.setItem('rjx-onboard', '1'); localStorage.removeItem('examos-history') }) // keep deterministic practice state for flow below
   ok('icons are SVG (no emoji glyphs)', await p.evaluate(() => !!document.querySelector('.tile svg') && !['⌨', '📖', '▦'].some(e => document.body.textContent.includes(e))))
+  // today-plan: TRUE cold start → plan card with pick-exam (no exam, no history, no errors yet)
+  ok('cold start shows आज का प्लान with pick-exam', await p.evaluate(() => !!document.body.textContent.match(/आज का प्लान/) && !!document.body.textContent.match(/परीक्षा चुनें/)))
 
   // practice flow: answer via keyboard
   await click('Stenographer|स्टेनोग्राफर'); await click('शुरू|Start')
@@ -58,6 +60,14 @@ try {
     return errs > 0 ? /एरर रिव्यू|Review errors/.test(next.textContent) : /फिर से करें|Retry/.test(next.textContent)
   }))
 
+  // today-plan: 9-day mock gap → cadence nudge with honest reason (exam selection persists across reload now)
+  const planBefore = await p.evaluate(() => document.body.textContent.includes('1 मॉक टेस्ट दें'))
+  await p.evaluate(() => { const h = JSON.parse(localStorage.getItem('examos-history') || '[]'); h.unshift({ key: 'k1', examId: 'steno', examName: 'x', date: Date.now() - 9 * 86400000, score: 50, max: 100, accuracy: 50, correct: 25, wrong: 25, total: 50 }); localStorage.setItem('examos-history', JSON.stringify(h)) })
+  await p.reload({ waitUntil: 'networkidle0' }); await new Promise(r => setTimeout(r, 700))
+  const planAfter = await p.evaluate(() => document.body.textContent.includes('1 मॉक टेस्ट दें') && document.body.textContent.includes('पिछले मॉक को 9 दिन'))
+  ok('today-plan reacts to 9-day mock gap (cadence nudge, honest reason)', !planBefore && planAfter)
+  await p.evaluate(() => localStorage.removeItem('examos-history')); await p.reload({ waitUntil: 'networkidle0' }); await new Promise(r => setTimeout(r, 700))
+
   // spaced revision E2E: mock made real error records (+1d, not due). Age one → home card → revision session → ladder updates
   const revQid = await p.evaluate(() => {
     const eb = JSON.parse(localStorage.getItem('examos-error-book') || '{}')
@@ -67,8 +77,8 @@ try {
   })
   ok('mock created real error-book records', !!revQid)
   await p.reload({ waitUntil: 'networkidle0' }); await new Promise(r => setTimeout(r, 800))
-  ok('home shows आज का रिवीजन card when items are due', await p.evaluate(() => !!document.body.textContent.match(/आज का रिवीजन/) && [...document.querySelectorAll('button')].some(b2 => /रिवीजन शुरू करें|Start revision/.test(b2.textContent))))
-  await p.evaluate(() => { [...document.querySelectorAll('button')].find(b2 => /रिवीजन शुरू करें|Start revision/.test(b2.textContent)).click() })
+  ok('home plan card shows आज का रिवीजन when items are due', await p.evaluate(() => !!document.body.textContent.match(/आज का रिवीजन/) && [...document.querySelectorAll('button')].some(b2 => /आज का रिवीजन:|Today's revision/.test(b2.textContent))))
+  await p.evaluate(() => { [...document.querySelectorAll('button')].find(b2 => /आज का रिवीजन:|Today's revision/.test(b2.textContent)).click() })
   await new Promise(r => setTimeout(r, 1500))
   ok('one-tap revision opens a practice session', await p.evaluate(() => /अभ्यास मोड|Practice/.test(document.body.textContent) && !!document.querySelector('.opt')))
   await p.keyboard.press('1'); await new Promise(r => setTimeout(r, 400))

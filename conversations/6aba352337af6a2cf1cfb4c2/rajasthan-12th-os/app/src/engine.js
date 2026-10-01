@@ -81,6 +81,26 @@ export function scoreSession(session) {
     accuracy: attempted ? Math.round((correct / attempted) * 100) : 0 }
 }
 
+// TODAY PLAN (v4 cycle 6) — "what should I prepare today?" Pure and explainable: every item
+// exists because of a measured signal, and the cap is 3 so it stays an action list, not a dashboard.
+// Priority: resume unfinished mock → due revision → mock cadence → error practice → new practice.
+export function buildTodayPlan(s = {}) {
+  const items = []
+  const push = (id, n) => items.push({ id, n: n || 0 })
+  const dueRev = s.dueRevision || 0
+  const errors = s.errors || 0
+  const dsm = (s.daysSinceMock === null || s.daysSinceMock === undefined) ? null : s.daysSinceMock
+  if (s.unfinishedMock) push('resume')
+  if (dueRev > 0) push('revise', dueRev)
+  if (s.hasExam) {
+    if (dsm === null) { push('mock-first'); push('practice') } // no baseline yet: first mock + light practice
+    else if (dsm >= 7) push('mock-due', Math.floor(dsm)) // cadence: mock weekly
+  }
+  if (dueRev === 0 && errors >= 5) push('err-practice', errors) // errors exist but none due yet today
+  if (!items.length) push(s.hasExam ? 'practice' : 'pick-exam')
+  return items.slice(0, 3)
+}
+
 // SPACED REVISION (v4 cycle 5) — the 1-3-7-15-30 ladder, pure and testable.
 // Wrong again → rung resets to 0 (1 day). Correct → rung advances (3,7,15,30 days).
 // Correct past the 30-day rung → MASTERED: returns null (record deleted — the question earned its exit).

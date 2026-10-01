@@ -1,6 +1,6 @@
 // ENGINE UNIT TESTS — pure functions, node only (no browser needed).
 // Run: npm test   (part of the release gate; see docs/QA-MASTER-PROMPT.md module 20_TESTING)
-import { buildSession, scoreSession, speedStats, fmtTime, availableQuestions, shuffle, REV_LADDER, reviseErrorRecord } from '../src/engine.js'
+import { buildSession, scoreSession, speedStats, fmtTime, availableQuestions, shuffle, REV_LADDER, reviseErrorRecord, buildTodayPlan } from '../src/engine.js'
 import assert from 'node:assert'
 
 // shapes mirror the real bank: q.answer is a number; pattern carries scoring config
@@ -87,4 +87,20 @@ const relapse = reviseErrorRecord(rec, true, true, T0 + 40 * DAY) // wrong at th
 assert.ok(relapse && relapse.rung === 0 && relapse.skipped === true, 'relapse resets rung and flags skipped')
 assert.deepEqual(REV_LADDER, [1, 3, 7, 15, 30], 'ladder contract unchanged')
 
-console.log('engine tests: ALL PASS (9 groups)')
+// 10. today-plan: every item has a reason, capped at 3, priority order stable
+assert.deepEqual(buildTodayPlan({}).map(i => i.id), ['pick-exam'], 'cold start, no exam picked → pick-exam')
+assert.deepEqual(buildTodayPlan({ hasExam: true }).map(i => i.id), ['mock-first', 'practice'], 'exam picked, never mocked → baseline mock + practice')
+assert.deepEqual(buildTodayPlan({ hasExam: true, daysSinceMock: 2, errors: 12, dueRevision: 0 }).map(i => i.id), ['err-practice'], 'errors logged, none due, recent mock → error practice')
+assert.deepEqual(buildTodayPlan({ hasExam: true, daysSinceMock: 2, errors: 3 }).map(i => i.id), ['practice'], 'nothing special due → default practice')
+const due = buildTodayPlan({ hasExam: true, daysSinceMock: 2, dueRevision: 4, errors: 20 })
+assert.deepEqual(due.map(i => i.id), ['revise'], 'due revision outranks error practice')
+assert.equal(due[0].n, 4)
+const cadence = buildTodayPlan({ hasExam: true, daysSinceMock: 9.6, dueRevision: 2 })
+assert.deepEqual(cadence.map(i => i.id), ['revise', 'mock-due'], '7+ days without mock → cadence nudge')
+assert.equal(cadence[1].n, 9, 'days rounded down in the label data')
+const capped = buildTodayPlan({ hasExam: true, unfinishedMock: true, dueRevision: 2, daysSinceMock: 9, errors: 20 })
+assert.deepEqual(capped.map(i => i.id), ['resume', 'revise', 'mock-due'], 'resume first; cap at 3 cuts err-practice')
+assert.deepEqual(buildTodayPlan({ hasExam: true, daysSinceMock: 0 }).map(i => i.id), ['practice'], 'mocked today → no nudge')
+assert.deepEqual(buildTodayPlan({ unfinishedMock: true }).map(i => i.id), ['resume'], 'unfinished mock outranks everything, even without exam')
+
+console.log('engine tests: ALL PASS (10 groups)')

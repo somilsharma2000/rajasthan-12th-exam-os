@@ -7,7 +7,7 @@ import { T } from './i18n.js'
 const TypingTest = lazy(() => import('./typing/TypingTest.jsx'))
 const Coach = lazy(() => import('./coach/Coach.jsx'))
 const OwnerConsole = lazy(() => import('./coach/OwnerConsole.jsx'))
-import { SUBJECT_LABELS, buildSession, scoreSession, speedStats, fmtTime, REV_LADDER, reviseErrorRecord } from './engine.js'
+import { SUBJECT_LABELS, buildSession, scoreSession, speedStats, fmtTime, REV_LADDER, reviseErrorRecord, buildTodayPlan } from './engine.js'
 
 const VERSION_NOTE = { hi: 'डेटा स्नैपशॉट: 30 सितंबर 2026 · प्रश्न-बैंक पाइपलाइन से बढ़ रहा है', en: 'Data snapshot: 30 Sep 2026 · question bank growing via pipeline' }
 
@@ -75,7 +75,8 @@ export const IcTimer = () => <Ic d={<><circle cx="12" cy="13" r="8" /><path d="M
 export default function App() {
   const [lang, setLang] = useState(() => { try { return localStorage.getItem('rjx-lang') === 'en' ? 'en' : 'hi' } catch { return 'hi' } })
   const [screen, setScreen] = useState('home') // home | hub | setup | player | result | glossary | progress | saved | errorbook
-  const [exam, setExam] = useState(null)
+  const [exam, setExam] = useState(() => { try { return EXAMS.find(e => e.id === localStorage.getItem('examos-last-exam')) || null } catch { return null } }) // persist last exam (cycle 6): today-plan needs context after reload
+  const pickExam = (ex) => { setExam(ex); try { localStorage.setItem('examos-last-exam', ex.id) } catch {} }
   const [session, setSession] = useState(null)
   const [resumable, setResumable] = useState(null)
   const [appToast, setAppToast] = useState('')
@@ -306,13 +307,37 @@ export default function App() {
           </div>
         </div>
       )}
-      {dueErr > 0 && (
-        <div className="card" style={{ padding: 14 }}>
-          <b style={{ fontSize: 14 }}>{lang === 'hi' ? `आज का रिवीजन: ${dueErr} प्रश्न` : `Today's revision: ${dueErr} questions`}</b>
-          <p className="note" style={{ margin: '6px 0 10px' }}>{lang === 'hi' ? 'त्रुटि-बुक से दोहराने का समय आ गया है — एक टैप में शुरू करें।' : 'Due from your error book — start in one tap.'}</p>
-          <button className="primary big" onClick={startErrSession}>{lang === 'hi' ? 'रिवीजन शुरू करें' : 'Start revision'}</button>
-        </div>
-      )}
+      {(() => { // TODAY PLAN (v4 cycle 6): every item comes from a measured signal — see engine buildTodayPlan()
+        const ebN = Object.keys(loadErr()).length
+        const hist0 = loadHist()[0]
+        const plan = buildTodayPlan({
+          unfinishedMock: !!resumable, dueRevision: dueErr, errors: ebN,
+          daysSinceMock: hist0 ? (Date.now() - hist0.date) / 86400000 : null,
+          hasExam: !!exam
+        })
+        const itemN = (id) => { const it = plan.find(x => x.id === id); return it ? it.n : 0 } // lazy: PLAN_TXT must never evaluate counts for items not in today's plan (crash pre-fix)
+        const PLAN_TXT = {
+          resume: { hi: ['अधूरा मॉक पूरा करें', 'आधा छोड़ा हुआ मॉक अगली कोशिश की तैयारी कमजोर करता है'], en: ['Finish your unfinished mock', 'A half-done mock weakens your next attempt'] },
+          revise: { hi: [`आज का रिवीजन: ${itemN('revise')} प्रश्न`, 'त्रुटि-बुक की 1-3-7-15-30 दिन की लड्डर पर ये प्रश्न आज दोहराने हैं'], en: [`Today's revision: ${itemN('revise')} questions`, 'Due today on your error-book 1-3-7-15-30 day ladder'] },
+          'mock-first': { hi: ['पहला मॉक देकर बेसलाइन बनाएँ', 'पहला पूरा मॉक बताता है कि तैयारी कहाँ खड़ी है'], en: ['Take your first mock to set a baseline', 'Your first full mock shows where your preparation stands'] },
+          'mock-due': { hi: ['1 मॉक टेस्ट दें', `पिछले मॉक को ${itemN('mock-due')} दिन हो गए — पैटर्न की पकड़ बनाए रखने के लिए`], en: ['Take a mock test', `${itemN('mock-due')} days since your last mock — keep your exam-pattern grip`] },
+          'err-practice': { hi: [`त्रुटियाँ अभ्यास करें (${itemN('err-practice')})`, 'दर्ज त्रुटियों का अभ्यास ही सबसे तेज़ अंक-बचाव है'], en: [`Practice your errors (${itemN('err-practice')})`, 'Practicing logged errors is the fastest score recovery'] },
+          practice: { hi: ['नए प्रश्नों का अभ्यास करें', 'आज कोई विशेष देयता नहीं — नए प्रश्न आगे बढ़ाते हैं'], en: ['Practice new questions', 'Nothing due today — new questions move you forward'] },
+          'pick-exam': { hi: ['परीक्षा चुनें और अभ्यास शुरू करें', 'नीचे किसी भी परीक्षा का कार्ड दबाएँ'], en: ['Pick an exam and start practicing', 'Tap any exam card below'] }
+        }
+        const planAction = { resume: resumeMock, revise: startErrSession, 'err-practice': startErrSession, 'mock-first': () => setScreen('setup'), 'mock-due': () => setScreen('setup'), practice: () => setScreen('setup'), 'pick-exam': () => document.querySelector('.grid')?.scrollIntoView({ behavior: 'smooth' }) }
+        return (
+          <div className="card" style={{ padding: 14 }}>
+            <b style={{ fontSize: 14 }}>{lang === 'hi' ? 'आज का प्लान' : 'Today\'s plan'}</b>
+            {plan.map(it => (
+              <div key={it.id} className="listRow" style={{ display: 'block', marginTop: 10 }}>
+                <button className="ghost" style={{ padding: '6px 12px', fontSize: 13.5, marginBottom: 4 }} onClick={planAction[it.id]}>{PLAN_TXT[it.id][lang][0]}</button>
+                <div style={{ fontSize: 12, color: 'var(--tx2)', lineHeight: 1.5 }}>{PLAN_TXT[it.id][lang][1]}</div>
+              </div>
+            ))}
+          </div>
+        )
+      })()}
       <div className="tiles">
         <button className="tile" onClick={() => setScreen('typing')}><span className="ic"><IcKeyboard /></span>{lang === 'hi' ? 'टाइपिंग' : 'Typing'}</button>
         <button className="tile" onClick={() => setScreen('glossary')}><span className="ic"><IcBook /></span>{lang === 'hi' ? 'शब्दावली' : 'Glossary'}</button>
@@ -324,7 +349,7 @@ export default function App() {
       <div className="grid">
         {EXAMS.map(ex => {
           const pyq = pyqFor(ex)
-          return <button key={ex.id} className="examCard" onClick={() => { setExam(ex); setScreen('hub') }}>
+          return <button key={ex.id} className="examCard" onClick={() => { pickExam(ex); setScreen('hub') }}>
             <span className="top">
               <span className="ic">{(EXAM_ICON[lang] || {})[ex.id] || (lang === 'hi' ? 'प' : '?')}</span>
               {pyq > 0 && <span className="pyqTag">PYQ ✓</span>}
@@ -408,7 +433,7 @@ function ErrorBook({ lang, onHome, onPractice }) {
 function Progress({ lang, onHome }) {
   const [confirmWipe, setConfirmWipe] = useState(false)
   const wipeAll = () => {
-    try { ['examos-history', 'examos-bookmarks', 'examos-error-book', 'examos-active-mock', 'examos-typing-history', 'examos-coach-usage', 'examos-coach-endpoint', 'examos-errlog'].forEach(k => localStorage.removeItem(k)) } catch {}
+    try { ['examos-history', 'examos-bookmarks', 'examos-error-book', 'examos-active-mock', 'examos-typing-history', 'examos-coach-usage', 'examos-coach-endpoint', 'examos-errlog', 'examos-last-exam'].forEach(k => localStorage.removeItem(k)) } catch {}
     location.reload()
   }
   const hist = loadHist()
