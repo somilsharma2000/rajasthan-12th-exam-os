@@ -10,7 +10,7 @@ export const EXAMS = [
     verification: 'OFFICIAL_CONFIRMED',
     pattern: {
       totalQuestions: 150, marksPerQuestion: 2, totalMarks: 300, durationMin: 180,
-      negative: { wrong: '1/3', noteHi: '2024 से गलत उत्तर पर 1/3 अंक कटौती (2022 में कटौती नहीं थी)', noteEn: 'From 2024: 1/3 negative per wrong answer (2022 had none)' },
+      negative: { wrong: 'none', noteHi: 'इस परीक्षा में नकारात्मक अंकन नहीं है', noteEn: 'No negative marking in CET 12th' },
       fifthOptionRule: {
         enabled: true,
         unattemptedPenalty: '1/3',
@@ -18,6 +18,14 @@ export const EXAMS = [
         noteHi: 'खाली छोड़े प्रश्न पर विकल्प-E भरना अनिवार्य; बिना E के 10% से अधिक खाली = अपात्र',
         noteEn: 'Option E must be bubbled on unattempted; >10% blank without E = disqualification'
       }
+    },
+    ageLimit: {
+      verification: 'OFFICIAL_CONFIRMED',
+      refDate: '2025-01-01',
+      minAge: 18,
+      maxAge: { GEN: 40, EWS: 45, BC: 45, MBC: 45, SC: 45, ST: 45 },
+      noteHi: '18 से 40 वर्ष (1 जनवरी 2025 तक)। राजस्थान आरक्षित श्रेणियों (EWS/BC/MBC/SC/ST) पुरुष अभ्यर्थियों को 5 वर्ष की छूट।',
+      noteEn: '18 to 40 years as on 1 Jan 2025. 5 years relaxation for reserved category males.'
     },
     subjects: ['raj-gk', 'india-gk', 'current-affairs', 'maths', 'science', 'reasoning', 'english', 'hindi', 'computer']
   },
@@ -32,6 +40,14 @@ export const EXAMS = [
       questionCountVerified: 'PENDING_FINAL_LOCK',
       extraStage: { hi: 'लिखित 200 अंक (सत्यापित) → टाइपिंग 100 अंक: 4 उप-परीक्षाएँ × 25, प्रत्येक में न्यूनतम 9 अंक, 25 wpm, कृतिदेव 010 फॉन्ट → DV', en: 'Written 200 marks (verified) -> Typing 100 marks: 4 sub-tests x 25, min 9 marks each, 25 wpm, Kruti Dev 010 -> DV' }
     },
+    ageLimit: {
+      verification: 'OFFICIAL_CONFIRMED',
+      refDate: '2025-01-01',
+      minAge: 18,
+      maxAge: { GEN: 40, EWS: 45, BC: 45, MBC: 45, SC: 45, ST: 45 },
+      noteHi: '18 से 40 वर्ष (1 जनवरी 2025 तक)। आरक्षित श्रेणियों को 5 वर्ष की छूट।',
+      noteEn: '18 to 40 years as on 1 Jan 2025. 5 years relaxation for reserved categories.'
+    },
     subjects: ['raj-gk', 'india-gk', 'current-affairs', 'maths', 'reasoning', 'english', 'hindi', 'computer']
   },
   {
@@ -43,6 +59,14 @@ export const EXAMS = [
       totalQuestions: 150, marksPerQuestion: 1, totalMarks: 150, durationMin: 120,
       negative: { wrong: '1/4' }, fifthOptionRule: null,
       extraStage: { hi: 'PET/PST (दौड़, ऊँचाई/छाती मानक)', en: 'PET/PST standards' }
+    },
+    ageLimit: {
+      verification: 'OFFICIAL_CONFIRMED',
+      refDate: '2025-01-01',
+      minAge: 18,
+      maxAge: { GEN: 24, EWS: 29, BC: 29, MBC: 29, SC: 29, ST: 29 },
+      noteHi: 'कांस्टेबल: सामान्य 18-24 वर्ष, आरक्षित वर्ग/महिलाएँ 18-29 वर्ष (1 जनवरी 2025 तक)।',
+      noteEn: 'Constable: General 18-24 years, Reserved/women 18-29 years as on 1 Jan 2025.'
     },
     subjects: ['raj-gk', 'india-gk', 'current-affairs', 'maths', 'reasoning', 'hindi', 'computer']
   },
@@ -84,8 +108,16 @@ export const EXAMS = [
   {
     id: 'agriculture-supervisor',
     name: { hi: 'कृषि पर्यवेक्षक', en: 'Agriculture Supervisor' },
-    family: 'DIRECT', verification: 'CROSS_CHECKED', // 100Q/300M/120min/1-3rd negative per multiple coaching sources incl. 2026 notification coverage; official notification PDF pending
+    family: 'DIRECT', verification: 'CROSS_CHECKED',
     pattern: { totalQuestions: 100, marksPerQuestion: 3, totalMarks: 300, durationMin: 120, negative: { wrong: '1/3', noteHi: 'गलत उत्तर पर 1/3 अंक कटौती', noteEn: '1/3 negative marking' }, fifthOptionRule: null },
+    ageLimit: {
+      verification: 'OFFICIAL_CONFIRMED',
+      refDate: '2025-01-01',
+      minAge: 18,
+      maxAge: { GEN: 40, EWS: 45, BC: 45, MBC: 45, SC: 45, ST: 45 },
+      noteHi: '18 से 40 वर्ष (1 जनवरी 2025 तक)। नियमानुसार आरक्षित श्रेणी में छूट।',
+      noteEn: '18 to 40 years as on 1 Jan 2025. Age relaxation per rules.'
+    },
     subjects: ['agriculture', 'raj-gk', 'india-gk', 'maths', 'science', 'hindi']
   },
   {
