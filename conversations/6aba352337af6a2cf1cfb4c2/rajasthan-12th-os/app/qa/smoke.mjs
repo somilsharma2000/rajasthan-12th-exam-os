@@ -60,6 +60,33 @@ try {
     return errs > 0 ? /एरर रिव्यू|Review errors/.test(next.textContent) : /फिर से करें|Retry/.test(next.textContent)
   }))
 
+  // A4 share card: button on result, PNG canvas really drawn, Web Share receives a real file
+  await p.evaluate(() => {
+    window.__sharePayloads = []
+    navigator.canShare = () => true
+    navigator.share = async (payload) => { window.__sharePayloads.push(payload) }
+    const orig = HTMLCanvasElement.prototype.toBlob
+    HTMLCanvasElement.prototype.toBlob = function (cb, type) {
+      // verify the card canvas has really painted pixels before handing off
+      const ctx = this.getContext('2d')
+      let painted = 0
+      try {
+        const img = ctx.getImageData(0, 0, this.width, this.height).data
+        for (let k = 3; k < img.length; k += 400) if (img[k] > 0) painted++
+      } catch {}
+      window.__cardPaintedPx = painted
+      return orig.call(this, cb, type)
+    }
+  })
+  ok('result has share button (aria-labelled)', await p.evaluate(() => !!document.querySelector('button[aria-label*="साझा"]') || !!document.querySelector('button[aria-label*="Share"]')))
+  await p.evaluate(() => { const b = document.querySelector('button[aria-label*="साझा"]') || document.querySelector('button[aria-label*="Share"]'); if (b) b.click() })
+  await new Promise(r => setTimeout(r, 700))
+  ok('share card canvas painted real pixels', await p.evaluate(() => (window.__cardPaintedPx || 0) > 5000))
+  ok('Web Share received PNG file + honest text (no invented rank)', await p.evaluate(() => {
+    const s = window.__sharePayloads[0]
+    return !!s && s.files && s.files[0] && s.files[0].type === 'image/png' && !/topper|rank|रैंक/i.test(s.text || '') && (s.text || '').includes('https://')
+  }))
+
   // today-plan: 9-day mock gap → cadence nudge with honest reason (exam selection persists across reload now)
   const planBefore = await p.evaluate(() => document.body.textContent.includes('1 मॉक टेस्ट दें'))
   await p.evaluate(() => { const h = JSON.parse(localStorage.getItem('examos-history') || '[]'); h.unshift({ key: 'k1', examId: 'steno', examName: 'x', date: Date.now() - 9 * 86400000, score: 50, max: 100, accuracy: 50, correct: 25, wrong: 25, total: 50 }); localStorage.setItem('examos-history', JSON.stringify(h)) })

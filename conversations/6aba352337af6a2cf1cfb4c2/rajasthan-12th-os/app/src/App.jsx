@@ -8,6 +8,7 @@ const TypingTest = lazy(() => import('./typing/TypingTest.jsx'))
 const Coach = lazy(() => import('./coach/Coach.jsx'))
 const OwnerConsole = lazy(() => import('./coach/OwnerConsole.jsx'))
 import { SUBJECT_LABELS, buildSession, scoreSession, speedStats, fmtTime, REV_LADDER, reviseErrorRecord, buildTodayPlan, mergeTopicStats, weakTopics, MIN_TOPIC_ATTEMPTS } from './engine.js'
+import { shareResultCard } from './shareCard.js'
 
 const VERSION_NOTE = { hi: 'डेटा स्नैपशॉट: 30 सितंबर 2026 · प्रश्न-बैंक पाइपलाइन से बढ़ रहा है', en: 'Data snapshot: 30 Sep 2026 · question bank growing via pipeline' }
 
@@ -84,6 +85,7 @@ export const IcRefresh = () => <Ic d={<><path d="M21 12a9 9 0 1 1-2.6-6.4" /><pa
 export const IcGrid = () => <Ic d={<><rect x="3" y="3" width="7" height="7" rx="1" /><rect x="14" y="3" width="7" height="7" rx="1" /><rect x="3" y="14" width="7" height="7" rx="1" /><rect x="14" y="14" width="7" height="7" rx="1" /></>} />
 export const IcPencil = () => <Ic d={<><path d="M12 20h9" /><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z" /></>} />
 export const IcTimer = () => <Ic d={<><circle cx="12" cy="13" r="8" /><path d="M12 9v4l2.5 2.5M9 2h6" /></>} />
+export const IcShare = () => <Ic d={<><circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" /><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4" /></>} />
 
 export default function App() {
   const [lang, setLang] = useState(() => { try { return localStorage.getItem('rjx-lang') === 'en' ? 'en' : 'hi' } catch { return 'hi' } })
@@ -731,6 +733,13 @@ function Result({ session, lang, onRecord, onHome, onRetry, onErrorReview }) {
   const t = T(lang)
   const r = scoreSession(session)
   const conf = session.config
+  const [sharing, setSharing] = useState(false)
+  const handleShare = async () => { // A4 distribution loop: share the MEASURED result, not a marketing fantasy
+    if (sharing) return
+    setSharing(true)
+    try { await shareResultCard(session, r, lang) } catch {}
+    setSharing(false)
+  }
   useEffect(() => { if (onRecord) onRecord(session, r) }, [])
   // EXAM DNA: per-subject breakdown
   const bySub = {}
@@ -818,8 +827,10 @@ function Result({ session, lang, onRecord, onHome, onRetry, onErrorReview }) {
           <button className="ghost" onClick={onHome}>{lang === 'hi' ? 'होम पर जाएँ' : 'Go Home'}</button>
           <button className="ghost" onClick={onRetry}>{lang === 'hi' ? 'फिर से करें' : 'Retry'}</button>
           <button className="primary big dockNext" onClick={onErrorReview}>{lang === 'hi' ? `एरर रिव्यू करें (${wrongQs.length})` : `Review errors (${wrongQs.length})`}</button>
+          <button className="ghost" style={{ flex: '0 0 auto', padding: '12px 14px' }} onClick={handleShare} disabled={sharing} aria-label={lang === 'hi' ? 'रिज़ल्ट कार्ड साझा करें' : 'Share result card'} title={lang === 'hi' ? 'रिज़ल्ट कार्ड साझा करें' : 'Share result card'}><IcShare size={16} /></button>
         </>) : (<>
           <button className="ghost" onClick={onHome}>{lang === 'hi' ? 'होम पर जाएँ' : 'Go Home'}</button>
+          <button className="ghost" style={{ flex: '0 0 auto', padding: '12px 14px' }} onClick={handleShare} disabled={sharing} aria-label={lang === 'hi' ? 'रिज़ल्ट कार्ड साझा करें' : 'Share result card'} title={lang === 'hi' ? 'रिज़ल्ट कार्ड साझा करें' : 'Share result card'}><IcShare size={16} /></button>
           <button className="primary big dockNext" onClick={onRetry}>{lang === 'hi' ? 'फिर से करें' : 'Retry'}</button>
         </>)}
       </div></div>

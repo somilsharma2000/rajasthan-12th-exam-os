@@ -1,6 +1,6 @@
 // ENGINE UNIT TESTS — pure functions, node only (no browser needed).
 // Run: npm test   (part of the release gate; see docs/QA-MASTER-PROMPT.md module 20_TESTING)
-import { buildSession, scoreSession, speedStats, fmtTime, availableQuestions, shuffle, REV_LADDER, reviseErrorRecord, buildTodayPlan, mergeTopicStats, weakTopics, MIN_TOPIC_ATTEMPTS } from '../src/engine.js'
+import { buildSession, scoreSession, speedStats, fmtTime, availableQuestions, shuffle, REV_LADDER, reviseErrorRecord, buildTodayPlan, mergeTopicStats, weakTopics, MIN_TOPIC_ATTEMPTS, buildShareData } from '../src/engine.js'
 import assert from 'node:assert'
 
 // shapes mirror the real bank: q.answer is a number; pattern carries scoring config
@@ -120,4 +120,16 @@ assert.equal(wt[0].topic, 'नदियां एवं अपवाह तं�
 assert.equal(wt[1].accuracy, 6 / 7, 'accuracy is correct/attempted')
 assert.ok(!mergeTopicStats({}, [{ correct: true }])['undefined::'], 'outcome without subject/topic is ignored')
 
-console.log('engine tests: ALL PASS (11 groups)')
+// 12. share data: only measured numbers, honest counts, real URL
+const shSess = { startedAt: new Date('2026-10-01T10:30:00').getTime(), config: { name: { hi: 'राजस्थान पुलिस कांस्टेबल' }, pattern: { marksPerQuestion: 1 } } }
+const sd = buildShareData(shSess, { score: 52.5, total: 100, attempted: 90, correct: 60, wrong: 30, accuracy: 67 }, 'hi')
+assert.equal(sd.score, 52.5, 'share carries exact measured score')
+assert.equal(sd.max, 100, 'share max = total x marks')
+assert.equal(sd.pct, 53, 'pct = score/max')
+assert.equal(sd.skipped, 10, 'skipped = total - attempted')
+assert.equal(sd.correct + sd.wrong + sd.skipped, 100, 'stacked bar segments sum to total')
+assert.ok(sd.dateHi.includes('अक्टूबर'), 'date formatted in Hindi')
+assert.ok(sd.shareText.includes('https://somilsharma2000.github.io'), 'share text carries real URL')
+assert.ok(!/topper|टॉपर|rank|रैंक/i.test(JSON.stringify(sd)), 'no invented rank/badge language')
+
+console.log('engine tests: ALL PASS (12 groups)')

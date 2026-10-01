@@ -81,6 +81,39 @@ export function scoreSession(session) {
     accuracy: attempted ? Math.round((correct / attempted) * 100) : 0 }
 }
 
+// SHARE DATA (v4 cycle 8) — pure assembly for the result share card. Only MEASURED numbers:
+// no percentile (we have no population), no invented rank, no motivational badge (D-12/D-18).
+const SHARE_URL = 'somilsharma2000.github.io/rajasthan-12th-exam-os'
+const HI_MONTHS = ['जनवरी', 'फ़रवरी', 'मार्च', 'अप्रैल', 'मई', 'जून', 'जुलाई', 'अगस्त', 'सितंबर', 'अक्टूबर', 'नवंबर', 'दिसंबर']
+export function buildShareData(session, r, lang) {
+  const started = new Date(session.startedAt || Date.now())
+  const dateHi = started.getDate() + ' ' + HI_MONTHS[started.getMonth()] + ' ' + started.getFullYear()
+  const max = Math.round(r.total * session.config.pattern.marksPerQuestion * 100) / 100
+  const skipped = r.total - r.attempted
+  return {
+    appHi: 'राजस्थान 12th लेवल एग्जाम OS',
+    reportLabel: 'मॉक टेस्ट रिपोर्ट',
+    examHi: session.config.name.hi,
+    dateHi,
+    score: Math.round(r.score * 100) / 100,
+    max,
+    pct: max > 0 ? Math.round((r.score / max) * 100) : 0,
+    accuracy: r.accuracy,
+    correct: r.correct,
+    wrong: r.wrong,
+    skipped,
+    total: r.total,
+    correctHi: 'सही',
+    wrongHi: 'गलत',
+    skippedHi: 'छोड़े',
+    accuracyHi: 'शुद्धता',
+    ctaHi: 'मुफ़्त मॉक टेस्ट खुद दें',
+    url: SHARE_URL,
+    shareTitle: 'राजस्थान 12th लेवल एग्जाम OS',
+    shareText: `मैंने ${session.config.name.hi} का मॉक दिया — स्कोर ${Math.round(r.score * 100) / 100}/${max}, शुद्धता ${r.accuracy}%। आप भी मुफ़्त में ट्राई करें: https://${SHARE_URL}`
+  }
+}
+
 // TOPIC STATS (v4 cycle 7) — the "where am I weak?" spine link. Honesty rule: a topic needs
 // MIN_TOPIC_ATTEMPTS real attempts before it can appear in the weakness list — small samples mislead.
 export const MIN_TOPIC_ATTEMPTS = 5
