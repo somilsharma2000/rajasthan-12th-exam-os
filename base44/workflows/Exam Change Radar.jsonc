@@ -1,0 +1,44 @@
+{
+  "name": "Exam Change Radar",
+  "description": "Weekly agent-side Exam Change Radar for rajasthan-12th-os: checks official RSSB/High Court/Jail/REET sources for new notices and pattern changes affecting tracked Rajasthan 12th-level exams; verifies findings, logs to docs/RADAR.md, and alerts the owner only when something actually changed.",
+  "trigger": {
+    "condition": null,
+    "config": {
+      "trigger_type": "scheduled",
+      "events": [],
+      "schedule_mode": "recurring",
+      "cron_expression": "0 10 * * 1",
+      "one_time_date": null,
+      "timezone": "Asia/Calcutta",
+      "interval_value": null,
+      "interval_unit": null,
+      "interval_anchor": null,
+      "ends_type": "never",
+      "ends_on_date": null,
+      "ends_after_count": null
+    }
+  },
+  "definition": {
+    "do": [
+      {
+        "radar_sweep": {
+          "call": "invoke_superagent_step",
+          "then": "end",
+          "with": {
+            "message": "EXAM CHANGE RADAR \u2014 weekly agent-side monitoring sweep for the rajasthan-12th-os exam-prep project (Rajasthan 12th-level exams).\n\nProtocol (follow docs/RADAR.md in the repo):\n1. Read the radar state file at /app/conversations/6aba352337af6a2cf1cfb4c2/rajasthan-12th-os/docs/RADAR.md \u2014 it lists watched official sources, tracked exams, watched disputed facts, and the sweep log with its Last checked date.\n2. Check each watched source (rssb.rajasthan.gov.in, Rajasthan High Court hcraj.nic.in, Jail Department, REET board) for NEW notices, corrigendum, amendments, exam-pattern changes, or date announcements published since the Last checked date, affecting the tracked exams.\n3. If a new notice is found: verify it against the official document itself (never trust coaching-site summaries; never invent URLs). Append the verified finding to the RADAR.md log table, update the exam config in the repo if load-bearing, and send the owner a short delta report (what changed, source, product impact).\n4. If nothing new is found: update only the 'Last checked' line in RADAR.md and do NOT message the owner \u2014 a no-change sweep stays silent, no fake urgency.\n5. If any watched disputed fact is still NOT VERIFIED in RADAR.md, make one focused verification attempt from official sources this run and record the outcome (SETTLED with sources, or still NOT VERIFIED).\n6. Never present unverified information as fact. If official sites are unreachable, record that honestly in the log and finish the run."
+          },
+          "x-base44": {
+            "description": "Check official sources for exam notices",
+            "title": "Exam Change Radar sweep"
+          }
+        }
+      }
+    ],
+    "document": {
+      "dsl": "1.0.0",
+      "name": "exam_change_radar",
+      "namespace": "base44",
+      "version": "1"
+    }
+  }
+}
