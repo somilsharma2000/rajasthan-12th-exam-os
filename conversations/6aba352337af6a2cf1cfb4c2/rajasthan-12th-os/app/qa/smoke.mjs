@@ -66,7 +66,6 @@ try {
   await p.reload({ waitUntil: 'networkidle0' }); await new Promise(r => setTimeout(r, 700))
   const planAfter = await p.evaluate(() => document.body.textContent.includes('1 मॉक टेस्ट दें') && document.body.textContent.includes('पिछले मॉक को 9 दिन'))
   ok('today-plan reacts to 9-day mock gap (cadence nudge, honest reason)', !planBefore && planAfter)
-  await p.evaluate(() => localStorage.removeItem('examos-history')); await p.reload({ waitUntil: 'networkidle0' }); await new Promise(r => setTimeout(r, 700))
 
   // weak-topic signals: real attempts write topic stats; progress shows honest state until 5+ samples
   const tsAfter = await p.evaluate(() => JSON.parse(localStorage.getItem('examos-topic-stats') || '{}'))
@@ -82,6 +81,17 @@ try {
   if (onProgress) ok('progress shows honest not-enough-data state (no invented bars)', await p.evaluate(() => document.body.textContent.includes('काफ़ी डेटा नहीं') || document.body.textContent.includes('Not enough data')))
   await p.goBack(); await new Promise(r => setTimeout(r, 600))
 
+  // positive path: a topic with 5+ real attempts renders as a weak-topic bar (data shape contract)
+  await p.evaluate(() => { const s = JSON.parse(localStorage.getItem('examos-topic-stats') || '{}'); s['maths::प्रतिशत'] = { subject: 'maths', topic: 'प्रतिशत', a: 6, c: 2 }; localStorage.setItem('examos-topic-stats', JSON.stringify(s)) })
+  await p.evaluate(() => { const x = [...document.querySelectorAll('button')].find(b => /प्रगति|Progress/.test(b.textContent)); if (x) x.click() })
+  await new Promise(r => setTimeout(r, 600))
+  ok('weak topic with 5+ attempts renders bar with measured accuracy', await p.evaluate(() => {
+    const row = [...document.querySelectorAll('.listRow')].find(r => r.textContent.includes('प्रतिशत'))
+    return !!row && row.textContent.includes('33%') && !!row.querySelector('.tFill')
+  }))
+  await p.goBack(); await new Promise(r => setTimeout(r, 500))
+
+  await p.evaluate(() => localStorage.removeItem('examos-history')); await p.reload({ waitUntil: 'networkidle0' }); await new Promise(r => setTimeout(r, 700))
   // spaced revision E2E: mock made real error records (+1d, not due). Age one → home card → revision session → ladder updates
   const revQid = await p.evaluate(() => {
     const eb = JSON.parse(localStorage.getItem('examos-error-book') || '{}')
