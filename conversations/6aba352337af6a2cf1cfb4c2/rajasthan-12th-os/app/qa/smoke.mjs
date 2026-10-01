@@ -68,6 +68,20 @@ try {
   ok('today-plan reacts to 9-day mock gap (cadence nudge, honest reason)', !planBefore && planAfter)
   await p.evaluate(() => localStorage.removeItem('examos-history')); await p.reload({ waitUntil: 'networkidle0' }); await new Promise(r => setTimeout(r, 700))
 
+  // weak-topic signals: real attempts write topic stats; progress shows honest state until 5+ samples
+  const tsAfter = await p.evaluate(() => JSON.parse(localStorage.getItem('examos-topic-stats') || '{}'))
+  ok('topic stats written by real session attempts', Object.keys(tsAfter).length > 0 && Object.values(tsAfter).some(v => v.a >= 1))
+  ok('no topic appears weak below 5 attempts (honesty)', await p.evaluate(() => {
+    const s = JSON.parse(localStorage.getItem('examos-topic-stats') || '{}')
+    return Object.values(s).every(v => v.a < 5) // the smoke mock answers < 5 per topic
+  }))
+  await p.evaluate(() => { const x = [...document.querySelectorAll('button')].find(b => /प्रगति|Progress/.test(b.textContent)); if (x) x.click() })
+  await new Promise(r => setTimeout(r, 600))
+  const onProgress = await p.evaluate(() => document.body.textContent.includes('प्रगति रिपोर्ट') || document.body.textContent.includes('Progress Report'))
+  ok('progress screen opens', onProgress)
+  if (onProgress) ok('progress shows honest not-enough-data state (no invented bars)', await p.evaluate(() => document.body.textContent.includes('काफ़ी डेटा नहीं') || document.body.textContent.includes('Not enough data')))
+  await p.goBack(); await new Promise(r => setTimeout(r, 600))
+
   // spaced revision E2E: mock made real error records (+1d, not due). Age one → home card → revision session → ladder updates
   const revQid = await p.evaluate(() => {
     const eb = JSON.parse(localStorage.getItem('examos-error-book') || '{}')

@@ -81,6 +81,26 @@ export function scoreSession(session) {
     accuracy: attempted ? Math.round((correct / attempted) * 100) : 0 }
 }
 
+// TOPIC STATS (v4 cycle 7) — the "where am I weak?" spine link. Honesty rule: a topic needs
+// MIN_TOPIC_ATTEMPTS real attempts before it can appear in the weakness list — small samples mislead.
+export const MIN_TOPIC_ATTEMPTS = 5
+export function mergeTopicStats(stats, outcomes) {
+  const out = { ...(stats || {}) }
+  for (const o of outcomes) {
+    if (!o.topic || !o.subject) continue
+    const k = o.subject + '::' + o.topic
+    const cur = out[k] || { subject: o.subject, topic: o.topic, a: 0, c: 0 }
+    out[k] = { subject: o.subject, topic: o.topic, a: cur.a + 1, c: cur.c + (o.correct ? 1 : 0) }
+  }
+  return out
+}
+export function weakTopics(stats, min = MIN_TOPIC_ATTEMPTS) {
+  return Object.values(stats || {})
+    .filter(s => s.a >= min)
+    .map(s => ({ subject: s.subject, topic: s.topic, attempts: s.a, accuracy: s.c / s.a }))
+    .sort((x, y) => x.accuracy - y.accuracy) // weakest first
+}
+
 // TODAY PLAN (v4 cycle 6) — "what should I prepare today?" Pure and explainable: every item
 // exists because of a measured signal, and the cap is 3 so it stays an action list, not a dashboard.
 // Priority: resume unfinished mock → due revision → mock cadence → error practice → new practice.

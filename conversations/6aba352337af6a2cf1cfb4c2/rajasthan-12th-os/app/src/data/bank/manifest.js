@@ -18,4 +18,5 @@ import * as m15 from './reasoning-depth.js'
 import * as m16 from './reasoning.js'
 import * as m17 from './reet-pedagogy.js'
 import * as m18 from './science.js'
-export const MODULES = [m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18]
+import * as m19 from './topic-overlay.js'
+export const MODULES = [m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16, m17, m18, m19]

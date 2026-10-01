@@ -1,6 +1,6 @@
 // ENGINE UNIT TESTS — pure functions, node only (no browser needed).
 // Run: npm test   (part of the release gate; see docs/QA-MASTER-PROMPT.md module 20_TESTING)
-import { buildSession, scoreSession, speedStats, fmtTime, availableQuestions, shuffle, REV_LADDER, reviseErrorRecord, buildTodayPlan } from '../src/engine.js'
+import { buildSession, scoreSession, speedStats, fmtTime, availableQuestions, shuffle, REV_LADDER, reviseErrorRecord, buildTodayPlan, mergeTopicStats, weakTopics, MIN_TOPIC_ATTEMPTS } from '../src/engine.js'
 import assert from 'node:assert'
 
 // shapes mirror the real bank: q.answer is a number; pattern carries scoring config
@@ -103,4 +103,21 @@ assert.deepEqual(capped.map(i => i.id), ['resume', 'revise', 'mock-due'], 'resum
 assert.deepEqual(buildTodayPlan({ hasExam: true, daysSinceMock: 0 }).map(i => i.id), ['practice'], 'mocked today → no nudge')
 assert.deepEqual(buildTodayPlan({ unfinishedMock: true }).map(i => i.id), ['resume'], 'unfinished mock outranks everything, even without exam')
 
-console.log('engine tests: ALL PASS (10 groups)')
+// 11. topic stats: merge correctness, honest minimum sample, weakest-first ordering
+let ts = mergeTopicStats({}, [
+  { subject: 'maths', topic: 'प्रतिशत', correct: true }, { subject: 'maths', topic: 'प्रतिशत', correct: false },
+  { subject: 'raj-gk', topic: 'नदियां एवं अपवाह तंत्र', correct: false },
+  { subject: 'maths', topic: 'LCM-HCF', correct: true }
+])
+assert.equal(ts['maths::प्रतिशत'].a, 2, 'merge counts attempts')
+assert.equal(ts['maths::प्रतिशत'].c, 1, 'merge counts correct')
+assert.equal(weakTopics(ts).length, 0, 'below minimum sample → nothing shown (honesty)')
+ts = mergeTopicStats(ts, Array.from({ length: MIN_TOPIC_ATTEMPTS - 1 }, () => ({ subject: 'raj-gk', topic: 'नदियां एवं अपवाह तंत्र', correct: false })))
+assert.equal(weakTopics(ts).length, 1, 'topic reaches 5 attempts → appears')
+ts = mergeTopicStats(ts, Array.from({ length: MIN_TOPIC_ATTEMPTS }, () => ({ subject: 'maths', topic: 'प्रतिशत', correct: true })))
+const wt = weakTopics(ts)
+assert.equal(wt[0].topic, 'नदियां एवं अपवाह तंत्र', 'weakest first (0% before 66%)')
+assert.equal(wt[1].accuracy, 6 / 7, 'accuracy is correct/attempted')
+assert.ok(!mergeTopicStats({}, [{ correct: true }])['undefined::'], 'outcome without subject/topic is ignored')
+
+console.log('engine tests: ALL PASS (11 groups)')

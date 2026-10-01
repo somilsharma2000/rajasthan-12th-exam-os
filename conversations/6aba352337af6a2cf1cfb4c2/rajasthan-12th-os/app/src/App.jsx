@@ -7,7 +7,7 @@ import { T } from './i18n.js'
 const TypingTest = lazy(() => import('./typing/TypingTest.jsx'))
 const Coach = lazy(() => import('./coach/Coach.jsx'))
 const OwnerConsole = lazy(() => import('./coach/OwnerConsole.jsx'))
-import { SUBJECT_LABELS, buildSession, scoreSession, speedStats, fmtTime, REV_LADDER, reviseErrorRecord, buildTodayPlan } from './engine.js'
+import { SUBJECT_LABELS, buildSession, scoreSession, speedStats, fmtTime, REV_LADDER, reviseErrorRecord, buildTodayPlan, mergeTopicStats, weakTopics, MIN_TOPIC_ATTEMPTS } from './engine.js'
 
 const VERSION_NOTE = { hi: 'डेटा स्नैपशॉट: 30 सितंबर 2026 · प्रश्न-बैंक पाइपलाइन से बढ़ रहा है', en: 'Data snapshot: 30 Sep 2026 · question bank growing via pipeline' }
 
@@ -48,6 +48,19 @@ function updateErrorBook(session) {
 function loadHist() { try { return JSON.parse(localStorage.getItem(LS_HIST)) || [] } catch { return [] } }
 function pushHist(rec) { try { const h = loadHist(); if (h.some(x => x.key === rec.key)) return; h.unshift(rec); localStorage.setItem(LS_HIST, JSON.stringify(h.slice(0, 50))) } catch {} }
 function loadBM() { try { return JSON.parse(localStorage.getItem(LS_BM)) || [] } catch { return [] } }
+function loadTS() { try { return JSON.parse(localStorage.getItem('examos-topic-stats')) || {} } catch { return {} } }
+function saveTS(ts) { try { localStorage.setItem('examos-topic-stats', JSON.stringify(ts)) } catch {} }
+function updateTopicStats(session) { // weak-topic signals (cycle 7): only REAL attempted answers count (no skip inflation)
+  try {
+    const outcomes = []
+    for (const q of session.questions) {
+      const a = session.answers[q.id]
+      if (!a || a.choice === null || a.choice === undefined) continue
+      outcomes.push({ subject: q.subject, topic: q.topic, correct: a.choice === q.answer })
+    }
+    if (outcomes.length) saveTS(mergeTopicStats(loadTS(), outcomes))
+  } catch {}
+}
 function saveBM(ids) { try { localStorage.setItem(LS_BM, JSON.stringify(ids)) } catch {} }
 
 // Only exams whose OWN paper's real PYQs exist in bank (id prefixes: cet24-, ldc24-, pol22-, sten24-)
@@ -118,6 +131,7 @@ export default function App() {
   })
   const recordAttempt = (session, r) => {
     updateErrorBook(session) // persistent error book + revision schedule, all modes
+    updateTopicStats(session) // weak-topic signals, all modes
     if (session.mode !== 'mock') return
     pushHist({
       key: session.startedAt + '-' + session.examId,
@@ -433,7 +447,7 @@ function ErrorBook({ lang, onHome, onPractice }) {
 function Progress({ lang, onHome }) {
   const [confirmWipe, setConfirmWipe] = useState(false)
   const wipeAll = () => {
-    try { ['examos-history', 'examos-bookmarks', 'examos-error-book', 'examos-active-mock', 'examos-typing-history', 'examos-coach-usage', 'examos-coach-endpoint', 'examos-errlog', 'examos-last-exam'].forEach(k => localStorage.removeItem(k)) } catch {}
+    try { ['examos-history', 'examos-bookmarks', 'examos-error-book', 'examos-active-mock', 'examos-typing-history', 'examos-coach-usage', 'examos-coach-endpoint', 'examos-errlog', 'examos-last-exam', 'examos-topic-stats'].forEach(k => localStorage.removeItem(k)) } catch {}
     location.reload()
   }
   const hist = loadHist()
@@ -457,6 +471,23 @@ function Progress({ lang, onHome }) {
           {Object.entries(byExam).map(([id, e]) => (
             <div key={id} className="listRow"><b>{e.name}</b><div>{e.n} {lang === 'hi' ? 'मॉक' : 'mocks'} · {lang === 'hi' ? 'सर्वश्रेष्ठ' : 'Best'}: {e.best} · {lang === 'hi' ? 'औसत शुद्धता' : 'avg acc'}: {Math.round(e.sumAcc / e.n)}%</div></div>
           ))}
+          {(() => { // weak-topic heatmap (cycle 7) — honest: only topics with 5+ real attempts
+            const wt = weakTopics(loadTS()).slice(0, 5)
+            return <div>
+              <h3 style={{ marginTop: 18, marginBottom: 8 }}>{lang === 'hi' ? 'कमज़ोर टॉपिक (सबसे कमज़ोर पहले)' : 'Weak topics (weakest first)'}</h3>
+              {wt.length === 0 && <p className="note" style={{ margin: 0, fontSize: 13.5 }}>{lang === 'hi' ? `अभी काफ़ी डेटा नहीं। हर टॉपिक पर ${MIN_TOPIC_ATTEMPTS}+ सवाल होने पर ही कमज़ोरी दिखाते हैं — छोटे नमूने भ्रमित करते हैं।` : `Not enough data yet. Weakness shows only after ${MIN_TOPIC_ATTEMPTS}+ real attempts per topic — small samples mislead.`}</p>}
+              {wt.map(w => (
+                <div key={w.subject + w.topic} className="listRow">
+                  <b style={{ fontSize: 13.5 }}>{w.topic} <span style={{ color: 'var(--tx2)', fontWeight: 400 }}>({(SUBJECT_LABELS[w.subject] || w.subject)[lang === 'hi' ? 'hi' : 'en'] || SUBJECT_LABELS[w.subject] || w.subject})</span></b>
+                  <div className="timeRow" style={{ marginTop: 6 }} role="img" aria-label={`${w.topic}: ${Math.round(w.accuracy * 100)}%`}>
+                    <span className="tN" style={{ width: 'auto', flex: 'none' }}>{w.attempts}</span>
+                    <span className="tTrack"><span className={w.accuracy >= 0.7 ? 'tFill correct' : w.accuracy >= 0.4 ? 'tFill skipped' : 'tFill wrong'} style={{ display: 'block', width: Math.round(w.accuracy * 100) + '%' }} /></span>
+                    <span className="tS">{Math.round(w.accuracy * 100)}%</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          })()}
           <h3 style={{ marginTop: 18, marginBottom: 8 }}>{lang === 'hi' ? 'हाल के प्रयास' : 'Recent attempts'}</h3>
           {hist.slice(0, 10).map(h => (
             <div key={h.key} className="listRow"><b>{h.examName}</b> <div>{new Date(h.date).toLocaleDateString('hi-IN')} · {h.score}/{h.max} · {h.accuracy}%</div></div>
