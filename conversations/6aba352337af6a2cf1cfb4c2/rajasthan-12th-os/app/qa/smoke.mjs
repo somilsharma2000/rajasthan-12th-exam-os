@@ -183,6 +183,49 @@ try {
     || document.body.textContent.includes('बैकएंड वर्कर अभी') || document.body.textContent.includes('No backend worker connected')))
   ok('Owner Console has no admin-token in localStorage (session-only)', await p.evaluate(() => !Object.keys(localStorage).includes('rjx-owner-token')))
 
+  // TOOLS (cycle 10): three calculators, honest states
+  await p.evaluateOnNewDocument(() => { window.setVal = (el, v) => { const proto = el.tagName === 'SELECT' ? HTMLSelectElement.prototype : HTMLInputElement.prototype; Object.getOwnPropertyDescriptor(proto, 'value').set.call(el, v); el.dispatchEvent(new Event(el.tagName === 'SELECT' ? 'change' : 'input', { bubbles: true })) } }) // survives reloads
+  await p.reload({ waitUntil: 'networkidle0' }); await new Promise(r => setTimeout(r, 600))
+  await click('टूल्स|Tools')
+  await new Promise(r => setTimeout(r, 900)) // lazy chunk
+  ok('tools screen renders with all three calculators', await p.evaluate(() =>
+    !!document.querySelector('#toolNeg') && !!document.querySelector('#toolAge') && !!document.querySelector('#toolCd')))
+  // negative calc: pick jail-prahari (100Q x 4M, -1/wrong), 60 correct + 20 wrong = 220 net
+  await p.evaluate(() => { const s = document.querySelector('#toolNeg select'); s.value = 'jail-prahari'; s.dispatchEvent(new Event('change', { bubbles: true })) })
+  await new Promise(r => setTimeout(r, 300))
+  ok('negative calc pre-fills jail-prahari verified pattern (100Q/4M/-1)', await p.evaluate(() => {
+    const c = document.querySelector('#toolNeg'); const i = [...c.querySelectorAll('input')]
+    return i[0].value === '100' && i[1].value === '4'
+  }))
+  await p.evaluate(() => { const c = document.querySelector('#toolNeg'); const i = [...c.querySelectorAll('input')]
+    setVal(i[2], '60'); setVal(i[3], '20') })
+  await new Promise(r => setTimeout(r, 400))
+  ok('negative calc computes 220/400 net for 60 correct + 20 wrong', await p.evaluate(() =>
+    document.querySelector('#toolNeg .toolScore').textContent.replace(/\s+/g, ' ').trim().startsWith('220 / 400')))
+  // age calc: exam without verified ageLimit must show honest unverified state (pick typing-less exam; find one w/o OFFICIAL_CONFIRMED ageLimit)
+  await p.evaluate(() => {
+    const cards = [...document.querySelectorAll('#toolAge select')]; const examSel = cards[0]
+    const opt = [...examSel.options].find(o => o.value === 'stenographer' || o.value === 'forest-guard') // these two have NO verified ageLimit (audited)
+    examSel.value = opt.value; examSel.dispatchEvent(new Event('change', { bubbles: true }))
+    const d = document.querySelector('#toolAge input[type=date]'); setVal(d, '2005-06-15')
+  })
+  await new Promise(r => setTimeout(r, 400))
+  ok('age calc shows honest unverified state for exam without verified age limit', await p.evaluate(() => {
+    const c = document.querySelector('#toolAge')
+    const unverified = [...c.querySelectorAll('.warn')].some(w => /सत्यापित नहीं|not yet verified/i.test(w.textContent))
+    return unverified
+  }))
+  // countdown persists after reload
+  await p.evaluate(() => { const c = document.querySelector('#toolCd'); const d = c.querySelector('input[type=date]')
+    setVal(d, '2026-12-31') })
+  await new Promise(r => setTimeout(r, 300))
+  await p.evaluate(() => [...document.querySelectorAll('#toolCd button')].find(b => /सेव करें|Save/.test(b.textContent)).click())
+  await p.reload({ waitUntil: 'networkidle0' }); await new Promise(r => setTimeout(r, 600))
+  await click('टूल्स|Tools'); await new Promise(r => setTimeout(r, 900))
+  ok('countdown choice persists across reload', await p.evaluate(() => {
+    const d = document.querySelector('#toolCd input[type=date]'); return !!d && d.value === '2026-12-31'
+  }))
+
   ok('zero page errors', errors.length === 0)
   if (errors.length) console.log('errors:', errors)
   await b.close()
