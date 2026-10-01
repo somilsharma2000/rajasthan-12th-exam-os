@@ -8,7 +8,7 @@
     "build": "node scripts/gen-bank-manifest.mjs && node scripts/ensure-index.js && vite build",
     "preview": "vite preview",
     "manifest": "node scripts/gen-bank-manifest.mjs",
-    "test": "node qa/engine.test.mjs",
+    "test": "node qa/engine.test.mjs && node qa/config.test.mjs",
     "qa": "node qa/smoke.mjs",
     "release": "npm test && npm run build && npm run qa"
   },

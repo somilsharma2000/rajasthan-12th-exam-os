@@ -29,7 +29,7 @@ export const HUBS = {
   },
   'jail-prahari': {
     qualification: { hi: '12वीं उत्तीर्ण + देवनागरी हिंदी व राजस्थानी संस्कृति + CET 12th लेवल 2024 स्कोरकार्ड', en: '12th pass + Devanagari Hindi & Raj culture + CET 12th level 2024 scorecard' },
-    stages: { hi: 'लिखित (200 प्रश्न / 400 अंक) → PST/PET → DV → मेडिकल', en: 'Written (200 questions / 400 marks) -> PST/PET -> DV -> medical' },
+    stages: { hi: 'लिखित (100 प्रश्न / 400 अंक, 2 घंटे, गलत पर -1) → PST/PET → DV → मेडिकल', en: 'Written (100 questions / 400 marks, 2 hours, -1 per wrong) -> PST/PET -> DV -> medical' },
     pay: { hi: 'पे लेवल L-5 (ग्रेड पे 2400) · प्रोबेशन स्टाइपेंड ₹14,600/माह', en: 'Pay level L-5 (GP 2400); probation stipend Rs 14,600/month' },
     official: 'https://rssb.rajasthan.gov.in'
   },

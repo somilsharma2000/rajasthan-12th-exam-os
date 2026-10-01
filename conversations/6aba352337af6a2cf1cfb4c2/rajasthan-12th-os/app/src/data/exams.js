@@ -81,7 +81,9 @@ export const EXAMS = [
     id: 'jail-prahari',
     name: { hi: 'जेल प्रहरी', en: 'Jail Prahari' },
     family: 'DIRECT', verification: 'OFFICIAL_CONFIRMED',
-    pattern: { totalQuestions: 200, marksPerQuestion: 2, totalMarks: 400, durationMin: 180, negative: { wrong: '1/3' }, fifthOptionRule: null, extraStage: { hi: 'PST/PET: 5 किमी दौड़, ऊँचाई/छाती मानक', en: 'PST/PET: 5km run, height/chest standards' } },
+    // SETTLED 2026-10-02 from विज्ञापन सं. 17/2024 (दिनांक 11.12.2024, RSSB): 100 प्रश्न / 400 अंक / 2 घंटे, प्रत्येक प्रश्न 4 अंक, गलत उत्तर पर 1 अंक कटौती
+    // खण्ड: भाग-अ विवेचना/तार्किक 45Q·180M, भाग-ब सामान्य ज्ञान/विज्ञान/समसामयिक 25Q·100M, भाग-स राजस्थान GK 30Q·120M
+    pattern: { totalQuestions: 100, marksPerQuestion: 4, totalMarks: 400, durationMin: 120, negative: { wrong: '1-mark-per-wrong', noteHi: 'गलत उत्तर पर 1 अंक कटौती (प्रश्न 4 अंक का)', noteEn: '1 mark deducted per wrong answer (question carries 4 marks)' }, fifthOptionRule: null, extraStage: { hi: 'PST/PET: 5 किमी दौड़, ऊँचाई/छाती मानक', en: 'PST/PET: 5km run, height/chest standards' } },
     subjects: ['raj-gk', 'india-gk', 'current-affairs', 'maths', 'reasoning', 'hindi', 'computer']
   },
   {
