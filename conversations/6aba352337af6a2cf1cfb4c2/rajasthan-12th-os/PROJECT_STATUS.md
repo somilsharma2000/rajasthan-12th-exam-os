@@ -1,7 +1,7 @@
 # PROJECT_STATUS.md — Rajasthan 12th-Level Exam OS
 *Living document. Honest status only. Never report planned work as completed.*
 
-**Last updated:** 2026-10-01 23:59 IST (v4 cycle 7: topic tags + weak-topic heatmap live)
+**Last updated:** 2026-10-02 00:40 IST (v4 cycle 8: WhatsApp share card live)
 **Current phase:** Phase 2 — BUILD + CONTENT (app LIVE on GitHub Pages; bank 1794 shippable; real-PYQ waves live: CET 2024 (149) + Police 2022 (608) + LDC 2024 P1 (142) + Stenographer 2024 (128); graduate waves EXCLUDED: Patwari 2025, CET 28-Sep — D-2026-09-30-05/06)
 
 ## Snapshot (verified 2026-09-30)
@@ -12,6 +12,7 @@
 
 
 ## Completed (verified)
+- 2026-10-02 v4 cycle 8: WhatsApp share card (A4 distribution loop) — measured-numbers-only canvas card + Web Share with download fallback. Live-verified (9/9 accept, 32/32 viewport, 30-check smoke, 12 engine groups, 320px dock clean).
 - 2026-10-01 v4 cycle 7: topic-tag pass (734 PYQs classified, bank 100% covered) + weak-topic heatmap with honest 5-attempt minimum. Live-verified (7/7 accept, 32/32 viewport, 27-check smoke, 11 engine groups). Spine: all 7 links now covered; weakest remaining = discovery-notification (radar).
 - 2026-10-01 v4 cycle 6: today-plan engine + exam persistence shipped + live-verified (7/7 accept, 32/32 viewport, 22-check smoke). Next: share card → change-radar pilot → utility calculators.
 - 2026-10-01 v4 cycle 5: spaced revision ladder shipped + live-verified (7/7 accept, 32/32 viewport). Latent 'Practice errors' no-op bug found & fixed. Next: share card → topic heatmap.

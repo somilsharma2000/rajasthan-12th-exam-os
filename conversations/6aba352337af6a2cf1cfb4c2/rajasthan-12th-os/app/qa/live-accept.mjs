@@ -25,6 +25,26 @@ await new Promise(r => setTimeout(r, 400))
 await p.evaluate(() => { const x = [...document.querySelectorAll('.dock button')].find(b2 => /जमा/.test(b2.textContent)); for (let i = 0; i < 6; i++) x.click() })
 await new Promise(r => setTimeout(r, 1500))
 ok('live: result renders', await p.evaluate(() => !!document.querySelector('.gauge')))
+// A4 share card on live: button present, PNG really drawn and handed to Web Share
+await p.evaluate(() => {
+  window.__sharePayloads = []
+  navigator.canShare = () => true
+  navigator.share = async (payload) => { window.__sharePayloads.push(payload) }
+  const orig = HTMLCanvasElement.prototype.toBlob
+  HTMLCanvasElement.prototype.toBlob = function (cb, type) {
+    const ctx = this.getContext('2d'); let painted = 0
+    try { const img = ctx.getImageData(0, 0, this.width, this.height).data; for (let k = 3; k < img.length; k += 400) if (img[k] > 0) painted++ } catch {}
+    window.__cardPaintedPx = painted
+    return orig.call(this, cb, type)
+  }
+})
+ok('live: share button on result', await p.evaluate(() => !!document.querySelector('button[aria-label*="साझा"]')))
+await p.evaluate(() => { const b2 = document.querySelector('button[aria-label*="साझा"]'); if (b2) b2.click() })
+await new Promise(r => setTimeout(r, 900))
+ok('live: share card PNG drawn + Web Share file + honest text', await p.evaluate(() => {
+  const s = window.__sharePayloads[0]
+  return (window.__cardPaintedPx || 0) > 5000 && !!s && s.files && s.files[0] && s.files[0].type === 'image/png' && !/topper|rank|रैंक/i.test(s.text || '') && (s.text || '').includes('https://')
+}))
 ok('live: speed analytics card renders with measured bars', await p.evaluate(() => {
     const card = [...document.querySelectorAll('.card h3')].find(h => /गति विश्लेषण|Speed analysis/.test(h.textContent))
     return card ? card.closest('.card').querySelectorAll('.timeRow').length > 0 : false
