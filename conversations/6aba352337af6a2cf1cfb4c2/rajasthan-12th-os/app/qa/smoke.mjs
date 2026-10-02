@@ -226,6 +226,35 @@ try {
     const d = document.querySelector('#toolCd input[type=date]'); return !!d && d.value === '2026-12-31'
   }))
 
+  // ── Tricks screen (cycle 11) ──
+  await p.evaluate(() => document.querySelector('.bar .iconBtn')?.click()) // back to home from tools
+  await new Promise(r => setTimeout(r, 600))
+  await click('ट्रिक्स|Tricks'); await new Promise(r => setTimeout(r, 1200))
+  ok('tricks screen renders with trick count', await p.evaluate(() => {
+    const c = document.querySelector('#tricksScreen .trickCount')
+    return !!c && /\d+/.test(c.textContent) && document.querySelectorAll('.trickCard').length > 40
+  }))
+  ok('subject filter works (geo)', await p.evaluate(() => {
+    const chips = [...document.querySelectorAll('#tricksScreen .chip')]
+    const geo = chips.find(c => /भूगोल|Geography/.test(c.textContent)); if (!geo) return false
+    geo.click(); return true
+  })); await new Promise(r => setTimeout(r, 400))
+  ok('geo filter shows only geo tricks', await p.evaluate(() => {
+    const n = Number(document.querySelector('#tricksScreen .trickCount').textContent.match(/\d+/)[0])
+    return n > 0 && n < 55
+  }))
+  ok('accordion opens + verif badge visible', await p.evaluate(() => {
+    const head = document.querySelector('#tricksScreen .trickHead'); if (!head) return false
+    head.click(); return true
+  })); await new Promise(r => setTimeout(r, 400))
+  ok('trick detail shows mnemonic + chain + verif badge', await p.evaluate(() => {
+    const sc = document.querySelector('#tricksScreen')
+    return !!sc.querySelector('.trickMnemonic') && sc.querySelectorAll('.trickChain li').length > 0
+      && !!sc.querySelector('.trickVerif') && /सत्यापित/.test(sc.querySelector('.trickVerif').textContent)
+  }))
+  await p.evaluate(() => document.querySelector('.bar .iconBtn')?.click()) // back home
+  await new Promise(r => setTimeout(r, 500))
+
   ok('zero page errors', errors.length === 0)
   if (errors.length) console.log('errors:', errors)
   await b.close()

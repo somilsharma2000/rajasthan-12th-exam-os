@@ -8,6 +8,7 @@ const TypingTest = lazy(() => import('./typing/TypingTest.jsx'))
 const Coach = lazy(() => import('./coach/Coach.jsx'))
 const OwnerConsole = lazy(() => import('./coach/OwnerConsole.jsx'))
 const ToolsScreen = lazy(() => import('./tools/ToolsScreen.jsx'))
+const TricksScreen = lazy(() => import('./tricks/TricksScreen.jsx'))
 import { SUBJECT_LABELS, buildSession, scoreSession, speedStats, fmtTime, REV_LADDER, reviseErrorRecord, buildTodayPlan, mergeTopicStats, weakTopics, MIN_TOPIC_ATTEMPTS } from './engine.js'
 import { shareResultCard } from './shareCard.js'
 
@@ -86,6 +87,7 @@ export const IcRefresh = () => <Ic d={<><path d="M21 12a9 9 0 1 1-2.6-6.4" /><pa
 export const IcGrid = () => <Ic d={<><rect x="3" y="3" width="7" height="7" rx="1" /><rect x="14" y="3" width="7" height="7" rx="1" /><rect x="3" y="14" width="7" height="7" rx="1" /><rect x="14" y="14" width="7" height="7" rx="1" /></>} />
 export const IcPencil = () => <Ic d={<><path d="M12 20h9" /><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z" /></>} />
 export const IcCalc = () => <Ic d={<><rect x="4" y="2" width="16" height="20" rx="2" /><path d="M8 6h8M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h4" /></>} />
+export const IcBolt = () => <Ic d={<path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" />} />
 export const IcTimer = () => <Ic d={<><circle cx="12" cy="13" r="8" /><path d="M12 9v4l2.5 2.5M9 2h6" /></>} />
 export const IcShare = () => <Ic d={<><circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" /><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4" /></>} />
 
@@ -215,6 +217,7 @@ export default function App() {
   if (screen === 'typing') return <Suspense fallback={<div className="wrap"><p className="note">{lang === 'hi' ? 'लोड हो रहा है…' : 'Loading…'}</p></div>}><TypingTest lang={lang} onHome={() => setScreen('home')} /></Suspense>
   if (screen === 'errorbook') return <ErrorBook lang={lang} onHome={() => setScreen('home')} onPractice={startErrSession} />
   if (screen === 'tools') return <Suspense fallback={<div className="wrap"><p className="note">{lang === 'hi' ? 'लोड हो रहा है…' : 'Loading…'}</p></div>}><ToolsScreen lang={lang} onHome={() => setScreen('home')} /></Suspense>
+  if (screen === 'tricks') return <Suspense fallback={<div className="wrap"><p className="note">{lang === 'hi' ? 'लोड हो रहा है…' : 'Loading…'}</p></div>}><TricksScreen lang={lang} onHome={() => setScreen('home')} /></Suspense>
   const avail = exam ? availFor(exam) : 0
   if (screen === 'owner') return <Suspense fallback={<div className="wrap"><p className="note">…</p></div>}><OwnerConsole lang={lang} onHome={() => setScreen('home')} toggleLang={toggleLang} t={t} /></Suspense>
   if (screen === 'setup') return (
@@ -364,6 +367,7 @@ export default function App() {
         <button className="tile" onClick={() => setScreen('saved')}><span className="ic"><IcStar /></span>{lang === 'hi' ? 'सहेजे' : 'Saved'} {bms.length ? `(${bms.length})` : ''}</button>
         <button className="tile" onClick={() => setScreen('errorbook')}><span className="ic"><IcRefresh /></span>{lang === 'hi' ? 'त्रुटि' : 'Errors'}{dueErr ? ` (${dueErr})` : ''}</button>
         <button className="tile" onClick={() => setScreen('tools')}><span className="ic"><IcCalc /></span>{lang === 'hi' ? 'टूल्स' : 'Tools'}</button>
+        <button className="tile" onClick={() => setScreen('tricks')}><span className="ic"><IcBolt /></span>{lang === 'hi' ? 'ट्रिक्स' : 'Tricks'}</button>
       </div>
       <p className="sectionTitle">{t.chooseExam}</p>
       <div className="grid">
