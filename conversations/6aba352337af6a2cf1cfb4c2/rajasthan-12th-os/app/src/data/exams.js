@@ -84,6 +84,16 @@ export const EXAMS = [
     // SETTLED 2026-10-02 from विज्ञापन सं. 17/2024 (दिनांक 11.12.2024, RSSB): 100 प्रश्न / 400 अंक / 2 घंटे, प्रत्येक प्रश्न 4 अंक, गलत उत्तर पर 1 अंक कटौती
     // खण्ड: भाग-अ विवेचना/तार्किक 45Q·180M, भाग-ब सामान्य ज्ञान/विज्ञान/समसामयिक 25Q·100M, भाग-स राजस्थान GK 30Q·120M
     pattern: { totalQuestions: 100, marksPerQuestion: 4, totalMarks: 400, durationMin: 120, negative: { wrong: '1-mark-per-wrong', noteHi: 'गलत उत्तर पर 1 अंक कटौती (प्रश्न 4 अंक का)', noteEn: '1 mark deducted per wrong answer (question carries 4 marks)' }, fifthOptionRule: null, extraStage: { hi: 'PST/PET: 5 किमी दौड़, ऊँचाई/छाती मानक', en: 'PST/PET: 5km run, height/chest standards' } },
+    // SETTLED 2026-10-02 (coordinator-verified from Adv 17/2024 PDF + indexed text): आयु 01.01.2026 के अनुसार 18-26 (GEN पुरुष)
+    ageLimit: {
+      verification: 'OFFICIAL_CONFIRMED',
+      refDate: '2026-01-01',
+      minAge: 18,
+      maxAge: { GEN: 26, EWS: 31, BC: 31, MBC: 31, SC: 31, ST: 31, WOMEN: 31 },
+      noteHi: '18 से 26 वर्ष (1 जनवरी 2026 तक, GEN पुरुष)। राजस्थान आरक्षित श्रेणियों के पुरुष +5 वर्ष; सभी महिलाएँ GEN +5, आरक्षित महिलाएँ +10 वर्ष (स्थानीय संस्करण)। वर्दीधारी पद — सामान्य 18-40 वाली भर्तियों से अलग।',
+      noteEn: '18 to 26 years as on 1 Jan 2026 (GEN male; uniformed post). Reserved males +5; women GEN +5, reserved women +10.',
+      source: 'Adv 17/2024 (11.12.2024), rssb.rajasthan.gov.in/storage/advertisement_item/1734001071.pdf'
+    },
     subjects: ['raj-gk', 'india-gk', 'current-affairs', 'maths', 'reasoning', 'hindi', 'computer']
   },
   {
@@ -98,6 +108,16 @@ export const EXAMS = [
     name: { hi: 'जमादार ग्रेड-II (आबकारी)', en: 'Jamadar Grade-II (Excise)' },
     family: 'CET', verification: 'OFFICIAL_CONFIRMED',
     pattern: { totalQuestions: 150, marksPerQuestion: 2, totalMarks: 300, durationMin: 180, negative: { wrong: '1/3' }, fifthOptionRule: null },
+    // SETTLED 2026-10-02 (coordinator-verified from Adv 07/2025 PDF indexed text): आयु 01.01.2026 के अनुसार 18-40 (GEN पुरुष)
+    ageLimit: {
+      verification: 'OFFICIAL_CONFIRMED',
+      refDate: '2026-01-01',
+      minAge: 18,
+      maxAge: { GEN: 40, EWS: 45, BC: 45, MBC: 45, SC: 45, ST: 45, WOMEN: 45 },
+      noteHi: '18 से 40 वर्ष (1 जनवरी 2026 तक, GEN पुरुष)। आरक्षित श्रेणियाँ पुरुष +5; महिलाएँ GEN +5, आरक्षित महिलाएँ +10 वर्ष (स्थानीय संस्करण)।',
+      noteEn: '18 to 40 years as on 1 Jan 2026 (GEN male). Reserved males +5; women GEN +5, reserved women +10.',
+      source: 'Adv 07/2025, rssb.rajasthan.gov.in/storage/advertisement_item/1760618283.pdf'
+    },
     subjects: ['raj-gk', 'india-gk', 'current-affairs', 'maths', 'reasoning', 'hindi', 'computer']
   },
   {

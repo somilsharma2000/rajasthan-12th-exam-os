@@ -30,4 +30,13 @@ for (const ex of ['high-court-ja', 'district-court-clerk']) {
 // 4. Librarian Grade-3 stays IN scope: 12th + Certificate in Library Science qualifies (RSSB advt)
 assert.ok(src.includes("id: 'librarian-grade3'"), 'Librarian G-3 must remain an included exam (12th-level post)')
 
-console.log('config tests: ALL PASS (4 settled-fact locks)')
+
+// 5. AgeLimit locks (settled 2026-10-02, ageLimit wave) — Jail Prahari 18-26 / Jamadar 18-40 (Adv 17/2024, Adv 07/2025)
+const jailAge = jail
+assert.ok(jailAge.includes("refDate: '2026-01-01'") && jailAge.includes('GEN: 26'), 'Jail Prahari age = 18-26 as on 01.01.2026 (Adv 17/2024)')
+assert.ok(jailAge.includes('WOMEN: 31') && jailAge.includes('SC: 31'), 'Jail Prahari reserved/women max = 31 (base 26 + 5)')
+const jam = src.slice(src.indexOf("id: 'jamadar-excise'"), src.indexOf("id: 'lab-assistant'"))
+assert.ok(jam.includes("refDate: '2026-01-01'") && jam.includes('GEN: 40') && jam.includes('ST: 45'), 'Jamadar age = 18-40, reserved 45 (Adv 07/2025)')
+assert.ok(jam.includes('WOMEN: 45'), 'Jamadar women GEN max = 45')
+
+console.log('config tests: ALL PASS (6 settled-fact locks)')
