@@ -34,7 +34,7 @@ function TrickCard({ t, lang, open, onToggle }) {
         aria-label={(hi ? 'ट्रिक खोलें/बंद करें: ' : 'Open/close trick: ') + t.title}>
         <span className="trickTitle">{t.title}</span>
         <span className="trickVerif" data-verif={t.verif}>{hi ? v.hi : v.en}</span>
-        <span className="trickArrow">{open ? '▾' : '▸'}</span>
+        <svg className={open ? 'trickArrow open' : 'trickArrow'} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg>
       </button>
       {open && <>
         <p className="trickMnemonic">{t.mnemonic}</p>

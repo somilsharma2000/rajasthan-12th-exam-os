@@ -279,6 +279,30 @@ try {
   await p.evaluate(() => document.querySelector('.bar .iconBtn')?.click()) // back home
   await new Promise(r => setTimeout(r, 500))
 
+  // APP SHELL (cycle 13): tab bar + profile placements
+  ok('tab bar renders 4 tabs on home', await p.evaluate(() => {
+    const tabs = [...document.querySelectorAll('.tabBar .tab')].map(t => t.textContent.trim())
+    return tabs.length === 4 && /होम|Home/.test(tabs[0]) && /अभ्यास|Practice/.test(tabs[1]) && /प्रगति|Progress/.test(tabs[2]) && /प्रोफ़ाइल|Profile/.test(tabs[3])
+  }))
+  ok('avatar chip in header opens profile', await p.evaluate(() => { document.querySelector('.avatarChip')?.click(); return true }) && await new Promise(r => setTimeout(r, 500)).then(() => p.evaluate(() => !!document.querySelector('.avatarLg') && /सेटिंग्स|Settings/.test(document.body.textContent))))
+  ok('profile shows honest measured stats + device-only data note', await p.evaluate(() => /आँकड़े|Your stats/.test(document.body.textContent) && /localStorage|डिवाइस/.test(document.body.textContent)))
+  ok('data wipe lives in profile (moved from progress)', await p.evaluate(() => { const t = document.body.textContent; return /सारा डेटा मिटाएँ|Clear all data/.test(t) }))
+  await p.evaluate(() => { const x = [...document.querySelectorAll('.tabBar .tab')].find(t => /प्रगति|Progress/.test(t.textContent)); if (x) x.click() })
+  await new Promise(r => setTimeout(r, 600))
+  ok('progress tab: analytics intact, wipe gone, profile pointer shown', await p.evaluate(() => {
+    const t = document.body.textContent
+    return (/प्रगति रिपोर्ट|Progress Report/.test(t)) && !/सारा डेटा मिटाएँ|Clear all data/.test(t) && /प्रोफ़ाइल टैब|Profile tab/.test(t)
+  }))
+  await p.evaluate(() => { const x = [...document.querySelectorAll('.tabBar .tab')].find(t => /होम|Home/.test(t.textContent)); if (x) x.click() })
+  await new Promise(r => setTimeout(r, 600))
+  ok('practice tab with exam chosen opens exam hub', await p.evaluate(() => { document.querySelector('.examCard')?.click(); return true }) && await new Promise(r => setTimeout(r, 500)).then(async () => {
+    await p.evaluate(() => { const x = [...document.querySelectorAll('button')].find(b => b.getAttribute('aria-label') === 'होम' || b.getAttribute('aria-label') === 'Home'); if (x) x.click() })
+    await new Promise(r => setTimeout(r, 500))
+    await p.evaluate(() => { const x = [...document.querySelectorAll('.tabBar .tab')].find(t => /अभ्यास|Practice/.test(t.textContent)); if (x) x.click() })
+    await new Promise(r => setTimeout(r, 600))
+    return p.evaluate(() => /पात्रता|Qualification/.test(document.body.textContent))
+  }))
+
   ok('zero page errors', errors.length === 0)
   if (errors.length) console.log('errors:', errors)
   await b.close()

@@ -103,7 +103,7 @@ export default function TypingTest({ lang, onHome }) {
       <TopBar title={lang === 'hi' ? 'टाइपिंग परिणाम' : 'Typing Result'} onHome={onHome} lang={lang} />
       <div className="featured">
         <div className="head"><h2>{r.marks}/25 {lang === 'hi' ? 'अंक' : 'marks'}</h2>
-          <span className={r.qualifying ? 'trust' : ''} style={r.qualifying ? {} : { color: 'var(--danger)' }}>{r.qualifying ? (lang === 'hi' ? '✓ उत्तीर्ण (36%)' : '✓ Qualifying (36%)') : (lang === 'hi' ? '✗ अनुत्तीर्ण' : '✗ Not qualifying')}</span></div>
+          <span className={r.qualifying ? 'trust' : ''} style={r.qualifying ? {} : { color: 'var(--danger)' }}>{r.qualifying ? (lang === 'hi' ? 'उत्तीर्ण (36%)' : 'Qualifying (36%)') : (lang === 'hi' ? 'अनुत्तीर्ण' : 'Not qualifying')}</span></div>
         <div className="stats">
           <div className="stat"><b>{r.netKdph}</b><span>{lang === 'hi' ? 'शुद्ध KDPH (लक्ष्य 8000)' : 'Net KDPH (target 8000)'}</span></div>
           <div className="stat"><b>{r.grossKdph}</b><span>{lang === 'hi' ? 'सकल KDPH' : 'Gross KDPH'}</span></div>

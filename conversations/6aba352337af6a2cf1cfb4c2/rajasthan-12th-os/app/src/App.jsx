@@ -312,7 +312,7 @@ export default function App() {
   const dueErr = Object.values(loadErr()).filter(e => e.nextReviewAt <= Date.now()).length
   const firstVisit = !onboardDone && !loadHist().length && !Object.keys(loadErr()).length && !loadBM().length
   const dismissOnboard = () => { try { localStorage.setItem('rjx-onboard', '1') } catch {} setOnboardDone(true) }
-  el = (
+  if (screen === 'home') el = (
     <div className="wrap">
       <TopBar title={t.appName} t={t} lang={lang} toggleLang={toggleLang} profile={<button className="avatarChip" aria-label={lang === 'hi' ? 'प्रोफ़ाइल' : 'Profile'} onClick={() => setScreen('profile')}>{(userName || (lang === 'hi' ? 'अ' : 'A')).trim().charAt(0).toUpperCase()}</button>} />
       <div className="hero">
@@ -404,6 +404,20 @@ export default function App() {
       {appToast && <div className="toast" role="status" aria-live="polite">{appToast}</div>}
     </div>
   )
+  // APP SHELL (cycle 13): persistent bottom tab bar on top-level screens
+  const TAB_SCREENS = ['home', 'progress', 'profile']
+  const showTabs = TAB_SCREENS.includes(screen)
+  const goTab = (id) => {
+    if (id === 'home') setScreen('home')
+    else if (id === 'practice') { if (exam) setScreen('hub'); else { setScreen('home'); setTimeout(() => document.querySelector('.grid')?.scrollIntoView({ behavior: 'smooth' }), 60) } }
+    else setScreen(id)
+  }
+  return (
+    <div className={showTabs ? 'appRoot hasTabs' : 'appRoot'}>
+      {el}
+      {showTabs && <TabBar lang={lang} screen={screen} onGo={goTab} />}
+    </div>
+  )
 }
 
 // A11Y: trap Tab focus inside overlays (modal/palette/coach) + focus first control on open
@@ -425,20 +439,6 @@ function useTrap(open) {
     return () => el.removeEventListener('keydown', onKey)
   }, [open])
   return ref
-  // APP SHELL (cycle 13): persistent bottom tab bar on top-level screens
-  const TAB_SCREENS = ['home', 'progress', 'profile']
-  const showTabs = TAB_SCREENS.includes(screen)
-  const goTab = (id) => {
-    if (id === 'home') setScreen('home')
-    else if (id === 'practice') { if (exam) setScreen('hub'); else { setScreen('home'); setTimeout(() => document.querySelector('.grid')?.scrollIntoView({ behavior: 'smooth' }), 60) } }
-    else setScreen(id)
-  }
-  return (
-    <div className={showTabs ? 'appRoot hasTabs' : 'appRoot'}>
-      {el}
-      {showTabs && <TabBar lang={lang} screen={screen} onGo={goTab} />}
-    </div>
-  )
 }
 
 const TABS = (lang) => lang === 'hi'

@@ -98,7 +98,7 @@ export default function Coach({ lang, context, onClose }) {
       <div className="paletteSheet" ref={panelRef} onClick={e => e.stopPropagation()} style={{ maxWidth: 640 }}>
         <div className="row" style={{ justifyContent: 'space-between', alignItems: 'center' }}>
           <h3 style={{ margin: 0 }}>{hi ? 'AI कोच' : 'AI Coach'} {available && <span className="note" style={{ display: 'inline' }}>· {used}/{LOCAL_DAILY_CAP}</span>}</h3>
-          <button className="iconBtn" onClick={onClose} aria-label={hi ? 'बंद करें' : 'Close'}>✕</button>
+          <button className="iconBtn" onClick={onClose} aria-label={hi ? 'बंद करें' : 'Close'}><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg></button>
         </div>
 
         {!checkedRemote ? (
