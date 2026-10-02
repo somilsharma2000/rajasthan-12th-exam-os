@@ -27,7 +27,7 @@
   3. मोहनलाल सुखाड़िया (13 नवंबर 1954 से प्रथम कार्यकाल प्रारंभ)
 - **English Gloss:** Tika Ram Paliwal (1st elected CM) → Jaynarayan Vyas (2nd elected CM) → Mohanlal Sukhadia (took charge Nov 1954).
 - **Difficulty / Chronology Note:** जयनारायण व्यास राजस्थान के एकमात्र ऐसे नेता हैं जो **मनोनीत एवं निर्वाचित दोनों** रूपों में मुख्यमंत्री रहे। जयनारायण व्यास के निर्वाचित मुख्यमंत्री बनने पर टीकाराम पालीवाल राज्य के प्रथम **उप-मुख्यमंत्री** बने।
-- **Source-check:** `raj-gk-polity.js` (rgp-010), `raj-gk-depth.js` (rgd-2392, rgd-2411) — Bank-verified.
+- **Source-check:** `raj-gk-polity.js` (rgp-010), `raj-gk-depth.js` (rgd-2392) — Bank-verified.
 
 ### Trick 1.3: Multi-Term CMs & Maximum Tenure Pegs (सर्वाधिक कार्यकाल व बहु-कार्यकाल मुख्यमंत्री)
 - **Hindi Mnemonic (सूत्र):** "मोहन 4, अशोक-भैरों-हरि 3, शिव-वसुंधरा 2"
@@ -41,7 +41,7 @@
   7. वसुंधरा राजे (2 बार - 2003-2008, 2013-2018 - प्रथम महिला मुख्यमंत्री)
 - **English Gloss:** Mohanlal Sukhadia served 4 terms (17 yrs) → Gehlot, Shekhawat, Haridev Joshi served 3 terms each → Shiv Charan Mathur & Vasundhara Raje served 2 terms each.
 - **Difficulty / Chronology Note:** हरिदेव जोशी, भैरोंसिंह शेखावत तथा अशोक गहलोत तीनों ने 3-3 बार मुख्यमंत्री पद की शपथ ली; किंतु **हरिदेव जोशी** ने कभी भी अपना 5 वर्ष का कार्यकाल पूरा नहीं किया, जबकि अशोक गहलोत ने तीनों बार 5-5 वर्ष का पूर्ण कार्यकाल पूरा किया।
-- **Source-check:** `raj-gk-polity.js` (rgp-017), `raj-gk-depth.js` (rgd-2465, rgd-2479) — Bank-verified.
+- **Source-check:** `raj-gk-polity.js` (rgp-017), `raj-gk-depth.js` (rgd-2465) — Bank-verified.
 
 ---
 
