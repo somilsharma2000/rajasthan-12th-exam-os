@@ -156,4 +156,6 @@
 - [x] RESTORED app/index.html (was deleted by a workspace auto-commit; caught when build failed).
 
 - [x] A5 short-tricks wave PASS 1 (2026-10-02): PYQ trick-target analysis (545 raj-gk PYQs: dynasty 49 > rivers/dams 43 > CM/Gov 39 > formation-years 36 > battles 32 > districts 26 > 1857 19 > integration 15 > folk-deities 10) + history chronology tricks draft (24 tricks, 5 clusters) 4-pass audited: 3 corrections (1848 typo, Raimal-gap note, false bank-claims → WEB-VERIFIED tags). File: gather/tricks-draft-history.md.
-- [~] A5 NEXT: geography/polity/CM-list tricks draft (ranked targets: rivers/dams 43, CM/Gov 39, formation 36) → Tricks tab UI ingestion (cycle 11).
+- [x] A5 pass 2 (2026-10-02): geo tricks (rivers/dams/salt-lakes/divisions/2023-50-districts) + polity tricks (CM chains/term-count pegs/firsts/Governors) drafted and 4-pass audited. Corrections: fabricated rgd-id citations purged (bank holds rgd-001..080 only), load-bearing facts web-verified (शेखावत/जोशी/गहलोत terms, 50-district reorg Aug 2023, लूणी origin, first Governor/Speaker). Files: gather/tricks-draft-geo.md, gather/tricks-draft-polity.md.
+- [~] A5 NEXT: Tricks tab UI ingestion (cycle 11) — content packs ready (history 24 + geo ~14 + polity ~14 tricks).
+
