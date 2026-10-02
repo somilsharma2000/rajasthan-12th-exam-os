@@ -322,6 +322,13 @@ export function calcAge(dobStr, refDateStr) {
 }
 
 export function calcAgeEligibility(age, category = 'GEN', ageLimitCfg = null) {
+  if (ageLimitCfg && ageLimitCfg.verification === 'OFFICIAL_CONFIRMED' && ageLimitCfg.noAgeLimit) {
+    return {
+      verdict: 'NO_LIMIT',
+      reasonHi: ageLimitCfg.noteHi || 'इस परीक्षा में कोई आयु सीमा नहीं (आधिकारिक रूप से सत्यापित)',
+      reasonEn: ageLimitCfg.noteEn || 'No age limit for this exam (officially verified)'
+    }
+  }
   if (!ageLimitCfg || ageLimitCfg.verification !== 'OFFICIAL_CONFIRMED' || !ageLimitCfg.minAge || !ageLimitCfg.maxAge) {
     return {
       verdict: 'UNVERIFIED',

@@ -99,9 +99,9 @@ function AgeCalc({ lang }) {
   const [cat, setCat] = useState('GEN')
   const exam = EXAMS.find(e => e.id === examId) || EXAMS[0]
   const cfg = exam?.ageLimit
-  const verified = cfg?.verification === 'OFFICIAL_CONFIRMED' && cfg.minAge && cfg.maxAge
+  const verified = cfg?.verification === 'OFFICIAL_CONFIRMED' && (cfg.noAgeLimit || (cfg.minAge && cfg.maxAge))
   const todayIso = new Date().toISOString().slice(0, 10)
-  const age = dob ? calcAge(dob, verified ? cfg.refDate : todayIso) : null
+  const age = dob ? calcAge(dob, verified && !cfg.noAgeLimit ? cfg.refDate : todayIso) : null
   const v = verified ? calcAgeEligibility(age, cat, cfg) : null
   const ageStr = age ? `${age.years} ${hi ? 'वर्ष' : 'y'} ${age.months} ${hi ? 'माह' : 'm'} ${age.days} ${hi ? 'दिन' : 'd'}` : (hi ? '—' : '—')
   return (
@@ -126,11 +126,13 @@ function AgeCalc({ lang }) {
         <div className="toolOut" aria-label={hi ? 'आयु परिणाम' : 'Age result'}>
           <div className="toolScore"><b>{ageStr}</b></div>
           <div className="toolMeta">
-            <span>{verified
+            <span>{verified && !cfg.noAgeLimit
               ? (hi ? `संदर्भ तिथि: ${cfg.refDate}` : `As on ${cfg.refDate}`)
-              : (hi ? 'आज की तिथि तक (सीमा असत्यापित)' : 'As on today (limit unverified)')}</span>
+              : verified && cfg.noAgeLimit
+                ? (hi ? 'आयु सीमा: लागू नहीं (आधिकारिक)' : 'Age limit: none (official)')
+                : (hi ? 'आज की तिथि तक (सीमा असत्यापित)' : 'As on today (limit unverified)')}</span>
           </div>
-          {v && <p className={v.verdict === 'ELIGIBLE' ? 'toolOk' : 'warn'}>{hi ? v.reasonHi : v.reasonEn}</p>}
+          {v && <p className={(v.verdict === 'ELIGIBLE' || v.verdict === 'NO_LIMIT') ? 'toolOk' : 'warn'}>{hi ? v.reasonHi : v.reasonEn}</p>}
           {!verified && (
             <p className="warn">{hi
               ? 'इस परीक्षा की उम्र सीमा अभी सत्यापित नहीं है — अधिकारिक विज्ञापन देखें।'

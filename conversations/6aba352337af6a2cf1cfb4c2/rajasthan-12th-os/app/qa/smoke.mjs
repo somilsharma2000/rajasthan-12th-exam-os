@@ -205,7 +205,7 @@ try {
   // age calc: exam without verified ageLimit must show honest unverified state (pick typing-less exam; find one w/o OFFICIAL_CONFIRMED ageLimit)
   await p.evaluate(() => {
     const cards = [...document.querySelectorAll('#toolAge select')]; const examSel = cards[0]
-    const opt = [...examSel.options].find(o => o.value === 'stenographer' || o.value === 'forest-guard') // these two have NO verified ageLimit (audited)
+    const opt = [...examSel.options].find(o => o.value === 'lab-assistant') // lab-assistant has NO verified ageLimit (audited; stenographer is now settled)
     examSel.value = opt.value; examSel.dispatchEvent(new Event('change', { bubbles: true }))
     const d = document.querySelector('#toolAge input[type=date]'); setVal(d, '2005-06-15')
   })
@@ -214,6 +214,30 @@ try {
     const c = document.querySelector('#toolAge')
     const unverified = [...c.querySelectorAll('.warn')].some(w => /सत्यापित नहीं|not yet verified/i.test(w.textContent))
     return unverified
+  }))
+  // age calc: REET L1 officially has NO age limit -> must show the official no-limit state
+  await p.evaluate(() => {
+    const examSel = [...document.querySelectorAll('#toolAge select')][0]
+    examSel.value = 'reet-level1'; examSel.dispatchEvent(new Event('change', { bubbles: true }))
+    const d = document.querySelector('#toolAge input[type=date]'); setVal(d, '1970-01-01')
+  })
+  await new Promise(r => setTimeout(r, 400))
+  ok('age calc REET shows official no-age-limit state', await p.evaluate(() => {
+    const c = document.querySelector('#toolAge')
+    const ok = [...c.querySelectorAll('.toolOk')].some(w => /आयु सीमा नहीं|No age limit/i.test(w.textContent))
+    return ok
+  }))
+  // age calc: jail prahari (18-26 uniformed) now gives verdicts
+  await p.evaluate(() => {
+    const examSel = [...document.querySelectorAll('#toolAge select')][0]
+    examSel.value = 'jail-prahari'; examSel.dispatchEvent(new Event('change', { bubbles: true }))
+    const d = document.querySelector('#toolAge input[type=date]'); setVal(d, '2003-06-15')
+  })
+  await new Promise(r => setTimeout(r, 400))
+  ok('age calc jail prahari renders verified verdict (18-26 @ 01.01.2026)', await p.evaluate(() => {
+    const c = document.querySelector('#toolAge')
+    const txt = c.textContent
+    return /संदर्भ तिथि: 2026-01-01|As on 2026-01-01/.test(txt) && !/सत्यापित नहीं|not yet verified/i.test(txt)
   }))
   // countdown persists after reload
   await p.evaluate(() => { const c = document.querySelector('#toolCd'); const d = c.querySelector('input[type=date]')

@@ -242,4 +242,14 @@ assert.equal(calcAgeEligibility({ years: 25 }, 'GEN', { verification: 'UNVERIFIE
 assert.equal(calcAgeEligibility(null, 'GEN', ageCfg).verdict, 'INVALID')
 assert.equal(calcAgeEligibility({ years: 'invalid' }, 'GEN', ageCfg).verdict, 'INVALID')
 
-console.log('engine tests: ALL PASS (13 groups)')
+
+// GROUP 14: noAgeLimit exams (REET L1 — officially no age bar for eligibility test)
+const noLimitCfg = { verification: 'OFFICIAL_CONFIRMED', noAgeLimit: true, noteHi: 'कोई आयु सीमा नहीं', noteEn: 'No age limit' }
+const nl17 = calcAgeEligibility({ years: 17, months: 0, days: 0 }, 'GEN', noLimitCfg)
+const nl60 = calcAgeEligibility({ years: 60, months: 0, days: 0 }, 'SC', noLimitCfg)
+assert.equal(nl17.verdict, 'NO_LIMIT'); assert.ok(nl17.reasonHi.includes('आयु सीमा नहीं'))
+assert.equal(nl60.verdict, 'NO_LIMIT')
+// a noAgeLimit block must win over missing minAge/maxAge (guard order in the function)
+assert.equal(calcAgeEligibility({ years: 45 }, 'GEN', { verification: 'OFFICIAL_CONFIRMED', noAgeLimit: true }).verdict, 'NO_LIMIT')
+
+console.log('engine tests: ALL PASS (14 groups)')
