@@ -17,7 +17,7 @@
   3. जयनारायण व्यास (26 अप्रैल 1951 - 3 मार्च 1952, तृतीय मनोनीत मुख्यमंत्री)
 - **English Gloss:** Hiralal Shastri (1st nominated CM) → C.S. Venkatachari (2nd nominated CM, ICS bureaucrat) → Jaynarayan Vyas (3rd nominated CM).
 - **Difficulty / Chronology Note:** परीक्षा भ्रम निवारण - राजस्थान के मुख्यमंत्रियों में 'टी. एस. राघवन' या 'मीरा' नाम का कोई व्यक्ति नहीं रहा है। द्वितीय मनोनीत मुख्यमंत्री सी. एस. वेंकटचारी केंद्र द्वारा नियुक्त आई.सी.एस. अधिकारी थे।
-- **Source-check:** `raj-gk-polity.js` (rgp-010), `raj-gk-depth.js` (rgd-2390); सी. एस. वेंकटचारी कार्यकाल तिथि: WEB-VERIFIED (rajras.in, 2026-10-02) — Bank-verified for Hiralal & Jaynarayan.
+- **Source-check:** `raj-gk-polity.js` (rgp-010), `raj-gk-depth.js`; सी. एस. वेंकटचारी कार्यकाल तिथि: WEB-VERIFIED (rajras.in, 2026-10-02) — Bank-verified for Hiralal & Jaynarayan.
 
 ### Trick 1.2: Elected CMs & Electoral Transition 1952–1954 (प्रथम निर्वाचित मुख्यमंत्री व नेतृत्व परिवर्तन)
 - **Hindi Mnemonic (सूत्र):** "टीका लगाकर व्यास सुखी हुए"
@@ -92,7 +92,7 @@
   7. प्रथम महिला सांसद (राज्यसभा): शारदा भार्गव (1952)
 - **English Gloss:** Vasundhara Raje (1st woman CM) → Pratibha Patil (1st woman Governor) → Sumitra Singh (1st woman Speaker) → Yashoda Devi (1st woman MLA 1953) → Kamla Beniwal (1st woman Minister) → Gayatri Devi (1st Lok Sabha MP) → Sharda Bhargava (1st Rajya Sabha MP).
 - **Difficulty / Chronology Note:** यशोदा देवी 1952 के आम चुनाव में नहीं, बल्कि 1953 के उप-चुनाव में बांसवाड़ा सीट से जीतकर प्रथम महिला विधायक बनी थीं।
-- **Source-check:** `current-affairs.js` (ca-009, ca-010), `raj-gk-depth.js` (rgd-2324); यशोदा देवी, गायत्री देवी, शारदा भार्गव: WEB-VERIFIED (patrika.com / bhaskar.com / rajrevision.vercel.app, 2026-10-02).
+- **Source-check:** `current-affairs.js` (ca-009, ca-010), `raj-gk-depth.js`; यशोदा देवी, गायत्री देवी, शारदा भार्गव: WEB-VERIFIED (patrika.com / bhaskar.com / rajrevision.vercel.app, 2026-10-02).
 
 ---
 
@@ -106,7 +106,7 @@
   3. पद से त्यागपत्र देने वाले (2 राज्यपाल): मदन लाल खुराना (2004), प्रतिभा पाटिल (2007 - राष्ट्रपति चुनाव हेतु)
 - **English Gloss:** Gurumukh Nihal Singh (longest tenure ~5.5 yrs) → 4 Governors died in office (Darbara Singh 1st) → 2 Governors resigned (Khurana & Pratibha Patil).
 - **Difficulty / Chronology Note:** पद पर रहते हुए निधन होने वाले प्रथम राज्यपाल दरबारा सिंह (1998) थे। प्रभा राव राजस्थान की एकमात्र महिला राज्यपाल हैं जिनका पद पर रहते हुए निधन हुआ।
-- **Source-check:** `raj-gk-polity.js` (rgp-011), `raj-gk-depth.js` (rgd-2324); पद पर निधन व त्यागपत्र तथ्य: WEB-VERIFIED (lokbhavan.rajasthan.gov.in, 2026-10-02).
+- **Source-check:** `raj-gk-polity.js` (rgp-011), `raj-gk-depth.js`; पद पर निधन व त्यागपत्र तथ्य: WEB-VERIFIED (lokbhavan.rajasthan.gov.in, 2026-10-02).
 
 ### Trick 3.2: Four President's Rules in Rajasthan 1967–1992 (चारों राष्ट्रपति शासन - वर्ष, राज्यपाल व मुख्यमंत्री)
 - **Hindi Mnemonic (सूत्र):** "67-77-80-92: संपूर्ण त्याग में तिलका रेड्डी"
