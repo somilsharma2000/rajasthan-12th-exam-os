@@ -88,6 +88,14 @@ export const IcGrid = () => <Ic d={<><rect x="3" y="3" width="7" height="7" rx="
 export const IcPencil = () => <Ic d={<><path d="M12 20h9" /><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z" /></>} />
 export const IcCalc = () => <Ic d={<><rect x="4" y="2" width="16" height="20" rx="2" /><path d="M8 6h8M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h4" /></>} />
 export const IcBolt = () => <Ic d={<path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" />} />
+export const IcHome = () => <Ic d={<><path d="M3 10.5L12 3l9 7.5" /><path d="M5 9.5V21h14V9.5" /><path d="M9 21v-6h6v6" /></>} />
+export const IcTarget = () => <Ic d={<><circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="4.5" /><circle cx="12" cy="12" r="0.5" fill="currentColor" /></>} />
+export const IcUser = () => <Ic d={<><circle cx="12" cy="8" r="4" /><path d="M4 21c1.2-4 4.4-6 8-6s6.8 2 8 6" /></>} />
+export const IcX = () => <Ic d={<><path d="M6 6l12 12M18 6L6 18" /></>} />
+export const IcCheck = ({ size = 16 }) => <Ic size={size} d={<path d="M4 12.5l5 5L20 6.5" />} />
+export const IcPlay = ({ size = 14 }) => <Ic size={size} fill="currentColor" d={<path d="M7 4l13 8-13 8z" />} />
+export const IcBack = () => <Ic d={<path d="M15 4l-8 8 8 8" />} />
+export const IcGear = () => <Ic d={<><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.7l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-1.7-.3 1.6 1.6 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.2a1.6 1.6 0 0 0-1-1.5 1.6 1.6 0 0 0-1.7.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0 .3-1.7 1.6 1.6 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.2a1.6 1.6 0 0 0 1.5-1 1.6 1.6 0 0 0-.3-1.7l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 1.7.3h.0a1.6 1.6 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.2a1.6 1.6 0 0 0 1 1.5 1.6 1.6 0 0 0 1.7-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0-.3 1.7v.0a1.6 1.6 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.2a1.6 1.6 0 0 0-1.5 1z" /></>} />
 export const IcTimer = () => <Ic d={<><circle cx="12" cy="13" r="8" /><path d="M12 9v4l2.5 2.5M9 2h6" /></>} />
 export const IcShare = () => <Ic d={<><circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" /><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4" /></>} />
 
@@ -100,6 +108,7 @@ export default function App() {
   const [resumable, setResumable] = useState(null)
   const [appToast, setAppToast] = useState('')
   const [onboardDone, setOnboardDone] = useState(() => { try { return !!localStorage.getItem('rjx-onboard') } catch { return true } }) // hooks-rule: must run before any conditional return
+  const [userName, setUserName] = useState(() => { try { return localStorage.getItem('examos-user-name') || '' } catch { return '' } })
   const appToastTimer = useRef(null)
   const ownerTapAt = useRef(0)
   const ownerTapCount = useRef(0)
@@ -210,17 +219,19 @@ export default function App() {
     setSession(s); setScreen('player')
   }
 
-  if (screen === 'player') return <Player session={session} setSession={setSession} lang={lang} bookmarks={bms} toggleBookmark={toggleBookmark} onFinish={() => setScreen('result')} onExit={() => { setSession(null); setScreen('hub') }} />
-  if (screen === 'result') return <Result session={session} lang={lang} onRecord={recordAttempt} onHome={() => { setSession(null); setScreen('home') }} onErrorReview={() => { setSession(null); setScreen('errorbook') }} onRetry={() => { const mode = session.mode; startSession(mode) }} />
-  if (screen === 'progress') return <Progress lang={lang} onHome={() => setScreen('home')} />
-  if (screen === 'saved') return <Saved lang={lang} bookmarks={bms} toggleBookmark={toggleBookmark} bank={bank} onHome={() => setScreen('home')} />
-  if (screen === 'typing') return <Suspense fallback={<div className="wrap"><p className="note">{lang === 'hi' ? 'लोड हो रहा है…' : 'Loading…'}</p></div>}><TypingTest lang={lang} onHome={() => setScreen('home')} /></Suspense>
-  if (screen === 'errorbook') return <ErrorBook lang={lang} onHome={() => setScreen('home')} onPractice={startErrSession} />
-  if (screen === 'tools') return <Suspense fallback={<div className="wrap"><p className="note">{lang === 'hi' ? 'लोड हो रहा है…' : 'Loading…'}</p></div>}><ToolsScreen lang={lang} onHome={() => setScreen('home')} /></Suspense>
-  if (screen === 'tricks') return <Suspense fallback={<div className="wrap"><p className="note">{lang === 'hi' ? 'लोड हो रहा है…' : 'Loading…'}</p></div>}><TricksScreen lang={lang} onHome={() => setScreen('home')} /></Suspense>
+  let el = null
+  if (screen === 'player') el = <Player session={session} setSession={setSession} lang={lang} bookmarks={bms} toggleBookmark={toggleBookmark} onFinish={() => setScreen('result')} onExit={() => { setSession(null); setScreen('hub') }} />
+  if (screen === 'result') el = <Result session={session} lang={lang} onRecord={recordAttempt} onHome={() => { setSession(null); setScreen('home') }} onErrorReview={() => { setSession(null); setScreen('errorbook') }} onRetry={() => { const mode = session.mode; startSession(mode) }} />
+  if (screen === 'progress') el = <Progress lang={lang} onHome={() => setScreen('home')} />
+  if (screen === 'profile') el = <Profile lang={lang} onHome={() => setScreen('home')} exam={exam} />
+  if (screen === 'saved') el = <Saved lang={lang} bookmarks={bms} toggleBookmark={toggleBookmark} bank={bank} onHome={() => setScreen('home')} />
+  if (screen === 'typing') el = <Suspense fallback={<div className="wrap"><p className="note">{lang === 'hi' ? 'लोड हो रहा है…' : 'Loading…'}</p></div>}><TypingTest lang={lang} onHome={() => setScreen('home')} /></Suspense>
+  if (screen === 'errorbook') el = <ErrorBook lang={lang} onHome={() => setScreen('home')} onPractice={startErrSession} />
+  if (screen === 'tools') el = <Suspense fallback={<div className="wrap"><p className="note">{lang === 'hi' ? 'लोड हो रहा है…' : 'Loading…'}</p></div>}><ToolsScreen lang={lang} onHome={() => setScreen('home')} /></Suspense>
+  if (screen === 'tricks') el = <Suspense fallback={<div className="wrap"><p className="note">{lang === 'hi' ? 'लोड हो रहा है…' : 'Loading…'}</p></div>}><TricksScreen lang={lang} onHome={() => setScreen('home')} /></Suspense>
   const avail = exam ? availFor(exam) : 0
-  if (screen === 'owner') return <Suspense fallback={<div className="wrap"><p className="note">…</p></div>}><OwnerConsole lang={lang} onHome={() => setScreen('home')} toggleLang={toggleLang} t={t} /></Suspense>
-  if (screen === 'setup') return (
+  if (screen === 'owner') el = <Suspense fallback={<div className="wrap"><p className="note">…</p></div>}><OwnerConsole lang={lang} onHome={() => setScreen('home')} toggleLang={toggleLang} t={t} /></Suspense>
+  if (screen === 'setup') el = (
     <div className="wrap">
       <TopBar title={exam.name[lang]} t={t} lang={lang} toggleLang={toggleLang} onHome={() => setScreen('home')} />
       <div className="card">
@@ -262,7 +273,7 @@ export default function App() {
         <div className="featured">
           <div className="head">
             <h2>{exam.name[lang]}</h2>
-            {exam.verification === 'OFFICIAL_CONFIRMED' && <span className="trust">✓ {t.verified}</span>}
+            {exam.verification === 'OFFICIAL_CONFIRMED' && <span className="trust"><IcCheck size={12} /> {t.verified}</span>}
           </div>
           <div className="stats">
             <div className="stat"><b>{exam.pattern.totalQuestions}</b><span>{lang === 'hi' ? 'प्रश्न' : 'Qs'}</span></div>
@@ -285,7 +296,7 @@ export default function App() {
       </div>
     )
   }
-  if (screen === 'glossary') return (
+  if (screen === 'glossary') el = (
     <div className="wrap">
       <TopBar title={lang === 'hi' ? 'परीक्षा शब्दावली' : 'Exam Glossary'} t={t} lang={lang} toggleLang={toggleLang} onHome={() => setScreen('home')} />
       {GLOSSARY.map((g, i) => (
@@ -301,9 +312,9 @@ export default function App() {
   const dueErr = Object.values(loadErr()).filter(e => e.nextReviewAt <= Date.now()).length
   const firstVisit = !onboardDone && !loadHist().length && !Object.keys(loadErr()).length && !loadBM().length
   const dismissOnboard = () => { try { localStorage.setItem('rjx-onboard', '1') } catch {} setOnboardDone(true) }
-  return (
+  el = (
     <div className="wrap">
-      <TopBar title={t.appName} t={t} lang={lang} toggleLang={toggleLang} />
+      <TopBar title={t.appName} t={t} lang={lang} toggleLang={toggleLang} profile={<button className="avatarChip" aria-label={lang === 'hi' ? 'प्रोफ़ाइल' : 'Profile'} onClick={() => setScreen('profile')}>{(userName || (lang === 'hi' ? 'अ' : 'A')).trim().charAt(0).toUpperCase()}</button>} />
       <div className="hero">
         <h1>{t.appName}</h1>
         <p>{t.tagline} · {t.disclaimer}</p>
@@ -312,9 +323,9 @@ export default function App() {
         <div className="onboard" role="note">
           <div className="onbHead">
             <b>{lang === 'hi' ? 'पहली बार? तरीका 30 सेकंड में' : 'New here? The method in 30 seconds'}</b>
-            <button className="iconBtn" aria-label={lang === 'hi' ? 'बंद करें' : 'Dismiss'} onClick={dismissOnboard}>✕</button>
+            <button className="iconBtn" aria-label={lang === 'hi' ? 'बंद करें' : 'Dismiss'} onClick={dismissOnboard}><IcX size={14} /></button>
           </div>
-          <div className="onbStep"><span className="onbKey">1</span><span>{lang === 'hi' ? <>परीक्षा चुनें — पैटर्न, पात्रता और नकारात्मक अंकन हर कार्ड पर सत्यापित (✓)</> : <>Pick your exam — pattern, eligibility and negative marking verified (✓) on every card</>}</span></div>
+          <div className="onbStep"><span className="onbKey">1</span><span>{lang === 'hi' ? <>परीक्षा चुनें — पैटर्न, पात्रता और नकारात्मक अंकन हर कार्ड पर सत्यापित </> : <>Pick your exam — pattern, eligibility and negative marking verified on every card</>}</span></div>
           <div className="onbStep"><span className="onbKey">2</span><span>{lang === 'hi' ? <>सत्यापित PYQ पर अभ्यास (तुरंत व्याख्या) या पूर्ण-पैटर्न मॉक टेस्ट</> : <>Practice on verified PYQs (instant explanations) or take full-pattern mocks</>}</span></div>
           <div className="onbStep"><span className="onbKey">3</span><span>{lang === 'hi' ? <>गलत/छूटे प्रश्न अपने-आप त्रुटि-बुक में — 1-3-7-15-30 दिन के रिवीजन schedule पर लौटते हैं</> : <>Wrong/skipped questions auto-enter the error book and return on a 1-3-7-15-30 day revision schedule</>}</span></div>
         </div>
@@ -324,7 +335,7 @@ export default function App() {
           <b>{lang === 'hi' ? 'अधूरा मॉक टेस्ट' : 'Unfinished mock test'}</b>
           <div className="meta">{(EXAMS.find(e => e.id === resumable.examId) || { name: { hi: '' } }).name[lang]} · {Object.values(resumable.answers || {}).filter(a => a && a.choice !== null && a.choice !== undefined).length}/{resumable.ids.length} {lang === 'hi' ? 'प्रश्न' : 'Qs'}</div>
           <div className="row">
-            <button className="primary" onClick={resumeMock}>{lang === 'hi' ? '▶ जारी रखें' : '▶ Resume'}</button>
+            <button className="primary" onClick={resumeMock}><><IcPlay size={12} /> {lang === 'hi' ? 'जारी रखें' : 'Resume'}</></button>
             <button className="ghost" onClick={() => { clearActive(); setResumable(null) }}>{lang === 'hi' ? 'हटाएँ' : 'Discard'}</button>
           </div>
         </div>
@@ -363,7 +374,6 @@ export default function App() {
       <div className="tiles">
         <button className="tile" onClick={() => setScreen('typing')}><span className="ic"><IcKeyboard /></span>{lang === 'hi' ? 'टाइपिंग' : 'Typing'}</button>
         <button className="tile" onClick={() => setScreen('glossary')}><span className="ic"><IcBook /></span>{lang === 'hi' ? 'शब्दावली' : 'Glossary'}</button>
-        <button className="tile" onClick={() => setScreen('progress')}><span className="ic"><IcChart /></span>{lang === 'hi' ? 'प्रगति' : 'Progress'}</button>
         <button className="tile" onClick={() => setScreen('saved')}><span className="ic"><IcStar /></span>{lang === 'hi' ? 'सहेजे' : 'Saved'} {bms.length ? `(${bms.length})` : ''}</button>
         <button className="tile" onClick={() => setScreen('errorbook')}><span className="ic"><IcRefresh /></span>{lang === 'hi' ? 'त्रुटि' : 'Errors'}{dueErr ? ` (${dueErr})` : ''}</button>
         <button className="tile" onClick={() => setScreen('tools')}><span className="ic"><IcCalc /></span>{lang === 'hi' ? 'टूल्स' : 'Tools'}</button>
@@ -376,7 +386,7 @@ export default function App() {
           return <button key={ex.id} className="examCard" onClick={() => { pickExam(ex); setScreen('hub') }}>
             <span className="top">
               <span className="ic">{(EXAM_ICON[lang] || {})[ex.id] || (lang === 'hi' ? 'प' : '?')}</span>
-              {pyq > 0 && <span className="pyqTag">PYQ ✓</span>}
+              {pyq > 0 && <span className="pyqTag"><IcCheck size={10} /> PYQ</span>}
             </span>
             <span className="name">{ex.name[lang]}</span>
             <span className="meta">{ex.pattern.totalQuestions} {lang === 'hi' ? 'प्रश्न' : 'Qs'} · {ex.pattern.durationMin}m · −{ex.pattern.negative.wrong === 'none' ? (lang === 'hi' ? 'नेगेटिव नहीं' : 'none') : ex.pattern.negative.wrong}</span>
@@ -415,13 +425,134 @@ function useTrap(open) {
     return () => el.removeEventListener('keydown', onKey)
   }, [open])
   return ref
+  // APP SHELL (cycle 13): persistent bottom tab bar on top-level screens
+  const TAB_SCREENS = ['home', 'progress', 'profile']
+  const showTabs = TAB_SCREENS.includes(screen)
+  const goTab = (id) => {
+    if (id === 'home') setScreen('home')
+    else if (id === 'practice') { if (exam) setScreen('hub'); else { setScreen('home'); setTimeout(() => document.querySelector('.grid')?.scrollIntoView({ behavior: 'smooth' }), 60) } }
+    else setScreen(id)
+  }
+  return (
+    <div className={showTabs ? 'appRoot hasTabs' : 'appRoot'}>
+      {el}
+      {showTabs && <TabBar lang={lang} screen={screen} onGo={goTab} />}
+    </div>
+  )
 }
 
-export function TopBar({ title, t, lang, toggleLang, onHome }) {
+const TABS = (lang) => lang === 'hi'
+  ? [{ id: 'home', label: 'होम', icon: IcHome }, { id: 'practice', label: 'अभ्यास', icon: IcTarget }, { id: 'progress', label: 'प्रगति', icon: IcChart }, { id: 'profile', label: 'प्रोफ़ाइल', icon: IcUser }]
+  : [{ id: 'home', label: 'Home', icon: IcHome }, { id: 'practice', label: 'Practice', icon: IcTarget }, { id: 'progress', label: 'Progress', icon: IcChart }, { id: 'profile', label: 'Profile', icon: IcUser }]
+
+function TabBar({ lang, screen, onGo }) {
+  const hi = lang === 'hi'
+  const active = screen === 'home' ? 'home' : screen === 'progress' ? 'progress' : 'profile'
+  return (
+    <nav className="tabBar" aria-label={hi ? 'मुख्य नेविगेशन' : 'Main navigation'}>
+      {TABS(lang).map(tb => {
+        const Ico = tb.icon
+        return (
+          <button key={tb.id} className={'tab' + (active === tb.id ? ' on' : '')} aria-current={active === tb.id ? 'page' : undefined} onClick={() => onGo(tb.id)}>
+            <Ico /><span>{tb.label}</span>
+          </button>
+        )
+      })}
+    </nav>
+  )
+}
+
+function streakFromHist(hist) { // honest streak: consecutive calendar days ending today, each with >=1 completed session
+  const days = new Set(hist.map(h => new Date(h.date).toDateString()))
+  let n = 0
+  const cur = new Date()
+  while (days.has(cur.toDateString())) { n++; cur.setDate(cur.getDate() - 1) }
+  return n
+}
+
+function Profile({ lang, onHome, exam }) {
+  const hi = lang === 'hi'
+  const t = T(lang)
+  const [name, setName] = useState(() => { try { return localStorage.getItem('examos-user-name') || '' } catch { return '' } })
+  const [editing, setEditing] = useState(false)
+  const [draft, setDraft] = useState('')
+  const [confirmWipe, setConfirmWipe] = useState(false)
+  const hist = loadHist()
+  const eb = Object.values(loadErr())
+  const bms = loadBM()
+  const mocks = hist.length
+  const avgAcc = mocks ? Math.round(hist.reduce((s, h) => s + h.accuracy, 0) / mocks) : null
+  const dueErr = eb.filter(e => e.nextReviewAt <= Date.now()).length
+  const streak = streakFromHist(hist)
+  const activeDays = new Set(hist.map(h => new Date(h.date).toDateString())).size
+  const saveName = () => { try { localStorage.setItem('examos-user-name', draft.trim().slice(0, 24)) } catch {} setName(draft.trim().slice(0, 24)); setEditing(false) }
+  const wipeAll = () => {
+    try { ['examos-history', 'examos-bookmarks', 'examos-error-book', 'examos-active-mock', 'examos-typing-history', 'examos-coach-usage', 'examos-coach-endpoint', 'examos-errlog', 'examos-last-exam', 'examos-topic-stats'].forEach(k => localStorage.removeItem(k)) } catch {}
+    location.reload()
+  }
+  const initial = (name || (hi ? 'अ' : 'A')).trim().charAt(0).toUpperCase()
+  return (
+    <div className="wrap">
+      <TopBar title={hi ? 'प्रोफ़ाइल' : 'Profile'} t={t} lang={lang} toggleLang={() => {}} onHome={onHome} />
+      <div className="card profHead">
+        <div className="avatarLg" aria-hidden="true">{initial}</div>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          {editing ? (
+            <div className="row" style={{ marginTop: 0 }}>
+              <input value={draft} onChange={e => setDraft(e.target.value)} placeholder={hi ? 'आपका नाम' : 'Your name'} maxLength={24} style={{ flex: 1 }} aria-label={hi ? 'नाम' : 'Name'} />
+              <button className="primary" style={{ padding: '8px 14px', minHeight: 0 }} onClick={saveName}>{t.save || (hi ? 'सेव' : 'Save')}</button>
+            </div>
+          ) : (
+            <button className="nameEdit" onClick={() => { setDraft(name); setEditing(true) }}>
+              <b style={{ fontSize: 16 }}>{name || (hi ? 'अनामित छात्र' : 'Unnamed student')}</b>
+              <span className="tx3" style={{ fontSize: 11 }}>{hi ? 'नाम बदलें' : 'Edit name'}</span>
+            </button>
+          )}
+          <div className="meta" style={{ marginTop: 4 }}>{exam ? exam.name[lang] : (hi ? 'कोई परीक्षा नहीं चुनी' : 'No exam selected')} · {streak > 0 ? `${hi ? 'स्ट्रीक' : 'Streak'}: ${streak}${hi ? ' दिन' : 'd'}` : (hi ? 'आज कोई सेशन नहीं' : 'No session today')}</div>
+        </div>
+      </div>
+      <div className="card">
+        <b style={{ fontSize: 14 }}>{hi ? 'आँकड़े (वास्तविक, आपके डेटा से)' : 'Your stats (measured, from your data)'}</b>
+        <div className="statGrid" style={{ marginTop: 12 }}>
+          <div className="statCell"><b>{mocks}</b><span>{hi ? 'पूर्ण प्रयास' : 'Attempts'}</span></div>
+          <div className="statCell"><b>{avgAcc === null ? '—' : avgAcc + '%'}</b><span>{hi ? 'औसत शुद्धता' : 'Avg accuracy'}</span></div>
+          <div className="statCell"><b>{activeDays}</b><span>{hi ? 'सक्रिय दिन' : 'Active days'}</span></div>
+          <div className="statCell"><b>{bms.length}</b><span>{hi ? 'सहेजे प्रश्न' : 'Saved'}</span></div>
+        </div>
+        <div className="listRow" style={{ marginTop: 12 }}><span>{hi ? 'त्रुटि-पुस्तक में' : 'In error book'}: <b>{eb.length}</b></span><span>{hi ? 'आज दोहराने हेतु' : 'Due today'}: <b>{dueErr}</b></span></div>
+      </div>
+      <div className="card">
+        <b style={{ fontSize: 14 }}>{hi ? 'सेटिंग्स' : 'Settings'}</b>
+        <div className="listRow"><span>{hi ? 'भाषा / Language' : 'Language'}</span><button className="ghost" style={{ padding: '6px 12px', minHeight: 0 }} onClick={() => { const cur = localStorage.getItem('examos-lang') || 'hi'; localStorage.setItem('examos-lang', cur === 'hi' ? 'en' : 'hi'); location.reload() }}>{hi ? 'हिंदी → English' : 'English → हिंदी'}</button></div>
+        <div className="listRow"><span>{hi ? 'परीक्षा बदलें' : 'Change exam'}</span><button className="ghost" style={{ padding: '6px 12px', minHeight: 0 }} onClick={onHome}>{hi ? 'सूची' : 'List'}</button></div>
+        <p className="sectionTitle" style={{ marginTop: 18 }}>{hi ? 'डेटा' : 'Data'}</p>
+        <p className="note" style={{ fontSize: 12.5, margin: '6px 0 10px' }}>{hi ? 'सारा डेटा केवल इस डिवाइस पर (localStorage) है — कहीं अपलोड नहीं होता।' : 'All data lives on this device only (localStorage) — nothing is uploaded.'}</p>
+        <button className="danger" onClick={() => setConfirmWipe(true)}>{hi ? 'सारा डेटा मिटाएँ' : 'Clear all data'}</button>
+        {confirmWipe && (
+          <div className="scrim" onClick={() => setConfirmWipe(false)}>
+            <div className="modal" onClick={e => e.stopPropagation()}>
+              <p style={{ margin: '0 0 14px' }}>{hi ? 'पक्का? इतिहास, बुकमार्क, एरर बुक, टाइपिंग स्कोर और सेव सत्र — सब हमेशा के लिए मिट जाएंगे।' : 'Sure? History, bookmarks, error book, typing scores and any saved session will be permanently deleted.'}</p>
+              <div className="row"><div className="row" style={{ flex: 1 }}>
+                <button className="ghost" onClick={() => setConfirmWipe(false)}>{hi ? 'रद्द करें' : 'Cancel'}</button>
+                <button className="danger" onClick={wipeAll}>{hi ? 'हाँ, मिटाएँ' : 'Yes, delete'}</button>
+              </div></div>
+            </div>
+          </div>
+        )}
+      </div>
+      <p className="note" style={{ fontSize: 11.5, marginTop: 4 }}>{VERSION_NOTE[lang]} · v4</p>
+    </div>
+  )
+}
+
+export function TopBar({ title, t, lang, toggleLang, onHome, profile }) {
   return <div className="bar">
-    {onHome ? <button className="iconBtn" onClick={onHome}>←</button> : <span />}
+    {onHome ? <button className="iconBtn" aria-label={lang === 'hi' ? 'होम' : 'Home'} onClick={onHome}><IcBack /></button> : <span />}
     <b>{title}</b>
-    <button className="ghost" onClick={toggleLang} style={{ padding: '6px 12px', minHeight: 0 }}>{lang === 'hi' ? 'EN' : 'हिं'}</button>
+    <span className="barRight">
+      {profile}
+      <button className="ghost" onClick={toggleLang} style={{ padding: '6px 12px', minHeight: 0 }}>{lang === 'hi' ? 'EN' : 'हिं'}</button>
+    </span>
   </div>
 }
 
@@ -455,11 +586,6 @@ function ErrorBook({ lang, onHome, onPractice }) {
 }
 
 function Progress({ lang, onHome }) {
-  const [confirmWipe, setConfirmWipe] = useState(false)
-  const wipeAll = () => {
-    try { ['examos-history', 'examos-bookmarks', 'examos-error-book', 'examos-active-mock', 'examos-typing-history', 'examos-coach-usage', 'examos-coach-endpoint', 'examos-errlog', 'examos-last-exam', 'examos-topic-stats'].forEach(k => localStorage.removeItem(k)) } catch {}
-    location.reload()
-  }
   const hist = loadHist()
   const t = T(lang)
   const mocks = hist.length
@@ -503,21 +629,7 @@ function Progress({ lang, onHome }) {
             <div key={h.key} className="listRow"><b>{h.examName}</b> <div>{new Date(h.date).toLocaleDateString('hi-IN')} · {h.score}/{h.max} · {h.accuracy}%</div></div>
           ))}
         </div>}
-        <p className="sectionTitle" style={{ marginTop: 28 }}>{lang === 'hi' ? 'डेटा' : 'Data'}</p>
-        <div className="row" style={{ marginTop: 0 }}>
-          <button className="danger" onClick={() => setConfirmWipe(true)}>{lang === 'hi' ? 'सारा डेटा मिटाएँ' : 'Clear all data'}</button>
-        </div>
-        {confirmWipe && (
-          <div className="scrim" onClick={() => setConfirmWipe(false)}>
-            <div className="modal" onClick={e => e.stopPropagation()}>
-              <p style={{ margin: '0 0 14px' }}>{lang === 'hi' ? 'पक्का? इससे इतिहास, बुकमार्क, एरर बुक, टाइपिंग स्कोर और सेव सत्र — सब हमेशा के लिए मिट जाएंगे।' : 'Sure? History, bookmarks, error book, typing scores and any saved session will be permanently deleted.'}</p>
-              <div className="row"><div className="row" style={{ flex: 1 }}>
-                <button className="ghost" onClick={() => setConfirmWipe(false)}>{lang === 'hi' ? 'रद्द करें' : 'Cancel'}</button>
-                <button className="danger" onClick={wipeAll}>{lang === 'hi' ? 'हाँ, मिटाएँ' : 'Yes, delete'}</button>
-              </div></div>
-            </div>
-          </div>
-        )}
+        <p className="note" style={{ marginTop: 18, fontSize: 12 }}>{lang === 'hi' ? 'डेटा प्रबंधन प्रोफ़ाइल टैब में है।' : 'Data management lives in the Profile tab.'}</p>
       </div>
     </div>
   )
