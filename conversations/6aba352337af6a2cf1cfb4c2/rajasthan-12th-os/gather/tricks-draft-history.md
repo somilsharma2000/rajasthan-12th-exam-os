@@ -1,5 +1,8 @@
 # Rajasthan GK Short-Tricks: High-Certainty Chronology Clusters (A5 Wave)
 
+> **ADVERSARIAL AUDIT (4-pass, 2026-10-02, coordinator):** PASS with 3 corrections applied.
+> (1) Fixed typo '18 मार्च 1848' → '18 मार्च 1948' (Trick 4.2 note). (2) Added missing Raimal-gap honesty note to Trick 1.2 (कुंभा→सांगा chain skips उदय हमीर व राणा रायमल; mnemonic is exam-scoped, रायमल = सांगा के पिता). (3) Corrected source-check lines that claimed bank verification for facts NOT present in the bank (समरसिंह, बख्तावर सिंह, मोहम्मद अली बेग) — now marked WEB-VERIFIED with source. Web-verified (2026-10-02): समरसिंह 1273-1302 (rajras.in), भूताला युद्ध 1227 जैत्रसिंह vs इल्तुतमिश (pratahkal.com), नसीराबाद 28 मई 1857 15वीं बंगाल NI (RSMSSB-prep sources), नीमच 3 जून 1857 मोहम्मद अली बेग/हीरा सिंह/कर्नल एबॉट (rajras.in, maargx.com), एकीकरण 7-चरण dates (rajras.in). Bank-verified: रणथंभौर 1301 साका, मत्स्य 18 मार्च 1948, केसर कालमी।
+
 ## CLUSTER 1: Rajput Dynasty Successions (राजपूत राजवंश कालक्रम एवं वंशावली)
 
 ### Trick 1.1: Guhil / Early Rawal Line of Mewar (मेवाड़ का गुहिल/रावल राजवंश कालक्रम)
@@ -12,7 +15,7 @@
   5. रावल रतनसिंह (1302-1303 ई. - 1303 ई. का चित्तौड़ का प्रथम साका)
 - **English Gloss:** Bappa Rawal captured Chittor (734 AD) → Jaitra Singh made Chittor capital (1227) → Tej Singh commissioned first painted manuscript (1260) → Samar Singh ruled till 1302 → Rawal Ratan Singh faced the 1303 Chittor siege.
 - **Difficulty / Chronology Note:** बापा रावल (कालभोज) के बाद खुमाण व अलट जैसे शासक हुए, किंतु परीक्षा की दृष्टि से जैत्रसिंह-तेजसिंह-समरसिंह-रतनसिंह का क्रम सबसे अधिक पूछा जाता है।
-- **Source-check:** RBSE Class 10/12 Rajasthan History Textbook (Ch 2) / BSER Rajasthan Adhyayan; verified against bank file `pyq-steno-2024.js` (Samar Singh 1273-1302 CE) and `gk-research-1-history-culture.md`.
+- **Source-check:** RBSE Class 10/12 Rajasthan History Textbook (Ch 2) / BSER Rajasthan Adhyayan; समरसिंह 1273-1302 ई.: WEB-VERIFIED (rajras.in, 2026-10-02) — NOT present in the current bank. If ingesting, tag WEB_VERIFIED.
 
 ### Trick 1.2: Sisodia Line of Mewar - Great Ranas (मेवाड़ का सिसोड़िया/राणा राजवंश कालक्रम)
 - **Hindi Mnemonic (सूत्र):** "हम्मीर खेत से लाखा मोकल कुंभा, सांगा उदय प्रताप अमर हुए"
@@ -27,7 +30,7 @@
   8. महाराणा प्रताप (1572-1597 ई. - हल्दीघाटी युद्ध 1576 ई.)
   9. महाराणा अमरसिंह I (1597-1620 ई. - मेवाड़-मुगल संधि 1615 ई.)
 - **English Gloss:** Hammir founded Sisodia line (1326) → Kshetra Singh → Lakha (Zawar mines) → Mokal → Kumbha (Vijay Stambha) → Sanga (Khanwa 1527) → Udai Singh (founded Udaipur 1559) → Pratap (Haldighati 1576) → Amar Singh I (1615 Mughal treaty).
-- **Difficulty / Chronology Note:** सांगा और उदयसिंह के बीच रतनसिंह II, विक्रमादित्य और बनवीर का संक्षिप्त व अस्थिर काल रहा, जिसे मुख्य वंशावली श्रृंखला में गौण माना जाता है।
+- **Difficulty / Chronology Note:** सांगा और उदयसिंह के बीच रतनसिंह II, विक्रमादित्य और बनवीर का संक्षिप्त व अस्थिर काल रहा, जिसे मुख्य वंशावली श्रृंखला में गौण माना जाता है। **(AUDIT NOTE):** कुंभा (1468) और सांगा (1509) के बीच उदय हमीर तथा राणा रायमल (1473-1509, सांगा के पिता) का शासन रहा — यह सूत्र परीक्षा-प्रमुख शासकों की केंद्रित श्रृंखला है; यदि प्रश्न 'कुंभा के तत्काल बाद' पूछा जाए तो उत्तर रायमल हो सकता है।
 - **Source-check:** RBSE Class 10 Rajasthan History (Ch 2); Dr. Gopinath Sharma "Rajasthan ka Itihas"; verified against bank files `raj-gk-history.js` and `gk-research-1-history-culture.md`.
 
 ### Trick 1.3: Chauhan Dynasty of Ajmer (अजमेर का चौहान राजवंश कालक्रम)
@@ -147,7 +150,7 @@
   - घटना: मेजर स्पॉटिसवुड तथा कर्नल न्यूबरी की हत्या कर क्रांतिकारी दिल्ली की ओर रवाना हुए।
 - **English Gloss:** Nasirabad (28 May 1857) was led by Bakhtawar Singh & 15th Native Infantry, killing Spottiswoode and Newbery.
 - **Difficulty / Chronology Note:** राजस्थान में 1857 की क्रांति का पहला विस्फोट नसीराबाद में 28 मई को हुआ था (मेरठ विद्रोह 10 मई की सूचना 19 मई को एजीजी जॉर्ज लॉरेंस को माउंट आबू में मिली थी)।
-- **Source-check:** RBSE Class 9/10 Rajasthan History (Ch 1); verified against bank files `pyq-steno-2024.js` and `raj-gk-history.js`.
+- **Source-check:** RBSE Class 9/10 Rajasthan History (Ch 1); नसीराबाद तथ्य WEB-VERIFIED (RSMSSB-prep sources, 2026-10-02); बख्तावर सिंह NOT in bank — tag WEB_VERIFIED if ingesting.
 
 ### Trick 3.2: Neemuch Outbreak 3 June 1857 (नीमच छावनी)
 - **Hindi Mnemonic (सूत्र):** "नीमच में मोहम्मद अली बेग और हीरा चमके, डूंगला में अंग्रेज थरपके"
@@ -158,7 +161,7 @@
   - घटना: कर्नल एबॉट को शपथ लेने से इनकार कर विद्रोह किया। नीमच से भागे 40 अंग्रेज अधिकारियों/परिवारों को चित्तौड़गढ़ के डूंगला गाँव में रूंघाराम जाट के घर शरण मिली, जिन्हें मेवाड़ पीए मेजर शावर्स ने सुरक्षित पहुँचाया।
 - **English Gloss:** Neemuch (3 June 1857) was led by Mohammad Ali Beg & Subedar Hira Singh; 40 fleeing British were sheltered at Dungla village.
 - **Difficulty / Chronology Note:** नीमच राजस्थान की 6 छावनियों में से एकमात्र छावनी थी जो वर्तमान राजस्थान की भौगोलिक सीमा से बाहर स्थित थी।
-- **Source-check:** RBSE Class 9/10 Rajasthan History; verified against bank files `raj-gk-history.js` and `gk-research-1-history-culture.md`.
+- **Source-check:** RBSE Class 9/10 Rajasthan History; नीमच तथ्य WEB-VERIFIED (rajras.in / maargx.com, 2026-10-02); मोहम्मद अली बेग NOT in bank — tag WEB_VERIFIED if ingesting.
 
 ### Trick 3.3: Erinpura & Auwa Revolt 21 Aug 1857 (एरिनपुरा छावनी एवं आउवा)
 - **Hindi Mnemonic (सूत्र):** "एरिनपुरा से चले दिल्ली, आउवा में कुशल सिंह ने काटा मोक मैसन का सिर"
@@ -229,7 +232,7 @@
   - प्रधानमंत्री: शोभा राम कुमावत (अलवर)
   - उद्घाटनकर्ता: एन.वी. गाडगिल (नरहरि विष्णु गाडगिल - लोहागढ़ दुर्ग भरतपुर में)
 - **English Gloss:** Matsya Sangh (18 Mar 1948) merged Alwar, Bharatpur, Karauli, Dholpur (ABCD) + Neemrana with Rajpramukh Udaibhan Singh and PM Shobha Ram Kumawat.
-- **Difficulty / Chronology Note:** कुछ पुस्तकों में उद्घाटन की तिथि 17 मार्च दी जाती है, परंतु आधिकारिक सरकारी रिकॉर्ड एवं आरबीएसई अनुसार 18 मार्च 1848 सर्वमान्य है।
+- **Difficulty / Chronology Note:** कुछ पुस्तकों में उद्घाटन की तिथि 17 मार्च दी जाती है, परंतु आधिकारिक सरकारी रिकॉर्ड एवं आरबीएसई अनुसार 18 मार्च 1948 सर्वमान्य है।
 - **Source-check:** RBSE Class 10 Rajasthan History; verified against bank files `pyq-police-2022.js` and `raj-gk-history.js`.
 
 ### Trick 4.3: Stage 2 & 3 - Rajasthan Union & United Rajasthan (द्वितीय व तृतीय चरण)
